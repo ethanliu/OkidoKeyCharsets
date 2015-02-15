@@ -1,0 +1,11 @@
+{
+    "name": "bpmf-hsu",
+    "description": "",
+    "charsets":
+    [
+        "[Q][W:ㄠ][E:ㄧ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ]",
+        "[A:ㄘ][S:ㄙ][D:ㄉ][F:ㄈ][G:ㄍ][H:ㄏ][J:ㄐ][K:ㄎ][L:ㄌ]",
+        "[shift][Z:ㄗ][X:ㄨ][C:ㄒ][V:ㄑ][B:ㄅ][N:ㄋ][M:ㄇ][del]",
+        "[next][globe][space][return]"
+    ]
+}

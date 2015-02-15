@@ -1,0 +1,12 @@
+{
+    "name": "qwerty",
+    "description": "標準 QWERTY 鍵盤",
+    "font":"",
+    "charsets":
+    [
+         "[Q][W][E][R][T][Y][U][I][O][P]",
+         "[A][S][D][F][G][H][J][K][L]",
+         "[shift][Z][X][C][B][V][N][M][del]",
+         "[next][globe][space][return]"
+     ]
+}
