@@ -5,7 +5,7 @@ baker.app is the next generation of zhim! extended for iOS8+ which supports syst
 
 CharsetsList is a collection of charsets for baker.app  custom keyboards.
 
-Each .charset.json mucst have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
+Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
 
     {
         "name": "bpmf",
@@ -19,10 +19,10 @@ Each .charset.json mucst have `name`, `charsets` and an optional `description` p
             "[next][globe][space][return]"
         ]
     }
-    
-Each key syntax is wrapper by `[]` and use `:` as separator.  For example `[1:ㄅ]` represent a key with character `1` and label `ㄅ`, if the character and label is the same, you may ignore the label, i.e. `[A]`. The character must be 1 character only, but the label has no length limit. 
 
-A rew reserved combinations represent special keys.
+Each key syntax is wrapper by `[]` and use `:` as separator.  For example `[1:ㄅ]` represent a key with character `1` and label `ㄅ`, if the character and label is the same, you may ignore the label, i.e. `[A]`. The character must be 1 character only, but the label has no length limit.
+
+A few reserved combinations represent special keys.
 
 - `[del]` — backspace key
 - `[globe]` — switch to system keyboard
@@ -30,7 +30,7 @@ A rew reserved combinations represent special keys.
 - `[return]` — return key
 - `[shift]` — shift key
 - `[space]` — space key
-
+- `[dismiss]` — dismiss keyboard for iPad
 
 
 
