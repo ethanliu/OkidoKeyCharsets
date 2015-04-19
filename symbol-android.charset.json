@@ -1,6 +1,6 @@
 {
     "name": "symbol-android",
-    "description": "",
+    "description": "符號鍵盤 (Android 配置)",
     "charsets":
     [
         "[~][`][|][·][√][π][÷][×][¶][∆]",
