@@ -1,6 +1,6 @@
 {
     "name": "qwerty",
-    "description": "標準 QWERTY 鍵盤",
+    "description": "QWERTY 含數字鍵盤 (iPad 配置)",
     "font":"",
     "charsets":
     [

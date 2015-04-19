@@ -1,6 +1,6 @@
 {
     "name": "corners",
-    "description": "",
+    "description": "四角號碼",
     "charsets":
     [
         "[1][2][3]",

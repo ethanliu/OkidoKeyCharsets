@@ -1,6 +1,6 @@
 {
     "name": "symbol",
-    "description": "",
+    "description": "符號鍵盤",
     "charsets":
     [
         "[[][]][{][}][#][%][^][*][+][=]",
