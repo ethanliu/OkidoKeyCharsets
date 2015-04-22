@@ -1,9 +1,9 @@
-# baker.charsetslist
-Collections of Charsets for baker.app
+# OkidoKeyCharsets
+Collections of Charsets for OkidoKey.app
 
-baker.app is the next generation of zhim! extended for iOS8+ which supports system wide custom keyboards.
+OkidoKey.app is the next generation of zhim! extended for iOS8+ which supports system wide custom keyboards.
 
-CharsetsList is a collection of charsets for baker.app  custom keyboards.
+OkidoKeyCharsets is a collection of charsets for OkidoKey.app custom keyboards.
 
 Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
 
@@ -26,7 +26,7 @@ A few reserved combinations represent special keys.
 
 - `[del]` — backspace key
 - `[globe]` — switch to system keyboard
-- `[next]` — switch to next charset in baker.app keyboards
+- `[next]` — switch to next charset in OkidoKey.app keyboards
 - `[return]` — return key
 - `[shift]` — shift key
 - `[space]` — space key

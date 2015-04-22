@@ -1,6 +1,6 @@
 <?php
 /**
- * CharsetsList.json builder
+ * Charsets.json builder
  *
  * @author Ethan Liu <ethan@creativecrap.com>
  * @copyright Creativecrap.com, 15 February, 2015
@@ -9,7 +9,7 @@
 error_reporting(0);
 ini_set("error_reporting", FALSE);
 
-$destinationPath = "./CharsetsList.json";
+$destinationPath = "./Charsets.json";
 
 $charsetPaths = glob('./*.charset.json', GLOB_NOSORT);
 $uniqueNames = array();
