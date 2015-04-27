@@ -33,4 +33,8 @@ A few reserved combinations represent special keys.
 - `[dismiss]` — dismiss keyboard for iPad
 
 
+## DataTables
 
+Collection of common data tables, start by a clone of OpenVanilla DataTables.
+
+Fore data table licensing, please go through each data table file.
