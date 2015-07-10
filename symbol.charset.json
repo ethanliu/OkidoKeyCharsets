@@ -1,11 +1,25 @@
-{
-    "name": "symbol",
-    "description": "符號鍵盤",
-    "charsets":
-    [
-        "[[][]][{][}][#][%][^][*][+][=]",
-        "[_][\\][|][~][<][>][€][£][¥][·]",
-        "[shift][.][,][?][!]['][del]",
-        "[next][globe][space][return]"
-    ]
-}
+[
+    {
+        "name": "symbol",
+        "description": "符號鍵盤",
+        "charsets":
+        [
+            "[[][]][{][}][#][%][^][*][+][=]",
+            "[_][\\][|][~][<][>][€][£][¥][·]",
+            "[shift][.][,][?][!]['][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "symbol-pad",
+        "description": "符號鍵盤",
+        "charsets":
+        [
+            "[[][]][{][}][#][%][^][*][+][=][del]",
+            "[_][\\][|][~][<][>][€][£][¥][return]",
+            "[shift][.][,][?][!]['][\"][·][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+
+]
