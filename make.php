@@ -19,19 +19,21 @@ $contents = array(
 );
 
 foreach ($charsetPaths as $path) {
-    $charset = json_decode(file_get_contents($path));
-    if ($charset && $charset->name && $charset->charsets) {
-        if (!in_array($charset->name, $uniqueNames)) {
-            echo "Adding {$path} [{$charset->name}]\n";
-            $contents['charsets'][] = $charset;
-            $uniqueNames[] = $charset->name;
+    $charsets = json_decode(file_get_contents($path));
+    foreach ($charsets as $charset) {
+        if ($charset && $charset->name && $charset->charsets) {
+            if (!in_array($charset->name, $uniqueNames)) {
+                echo "Adding {$path} [{$charset->name}]\n";
+                $contents['charsets'][] = $charset;
+                $uniqueNames[] = $charset->name;
+            }
+            else {
+                echo "Skipped, charset already exists. {$path} [{$charset->name}]\n";
+            }
         }
         else {
-            echo "Skipped, charset already exists. {$path} [{$charset->name}]\n";
+            echo "Skipped, invalid json or charset structure: {$path}\n";
         }
-    }
-    else {
-        echo "Skipped, invalid json or charset structure: {$path}\n";
     }
 }
 
