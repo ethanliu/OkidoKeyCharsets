@@ -40,5 +40,5 @@ foreach ($charsetPaths as $path) {
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
 fwrite($f, json_encode($contents));
 fclose($f);
-echo "\nExported {$destinationPath} verions: {$contents['version']}\n";
+echo "\nExported {$destinationPath} version: {$contents['version']}\n";
 
