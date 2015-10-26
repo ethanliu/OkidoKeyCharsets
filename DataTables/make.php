@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * DataTables.json builder
  *
  * @author Ethan Liu <***REMOVED***>
  * @copyright Creativecrap.com, 10 July, 2015
@@ -25,8 +25,10 @@ foreach ($filenames as $filename) {
     //     continue;
     // }
 
-    $item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
     $checkComments = true;
+    $beginKeyname = false;
+    $keyname = '';
+    $item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
     $contents = explode("\n", file_get_contents($filename), 100);
 
     foreach ($contents as $line) {
@@ -39,6 +41,8 @@ foreach ($filenames as $filename) {
         }
 
         $rows = explode(' ', str_replace("\t", " ", $line), 2);
+        $rows[0] = trim($rows[0]);
+        $rows[1] = trim($rows[1]);
         switch ($rows[0]) {
             case '%ename':
             case '%cname':
@@ -49,43 +53,38 @@ foreach ($filenames as $filename) {
                 break;
 
             case '%chardef':
+                break;
             case '%keyname':
                 $checkComments = false;
+                if ($rows[1] == 'begin') {
+                    $beginKeyname = true;
+                    continue;
+                }
+                else if ($rows[1] == 'end') {
+                    $beginKeyname = false;
+                    continue;
+                }
                 continue;
 
             default:
+                if ($beginKeyname) {
+                    $keyname .= trim($rows[0]);
+                }
                 break;
         }
 
     }
 
-    $result['datatables'][] = $item;
-    echo "Adding {$filename} -> {$item['ename']} {$item['cname']}\n";
+    if (!empty($keyname)) {
+        $result['datatables'][] = $item;
+        echo "Adding {$filename} -> {$item['ename']} {$item['cname']}\n";
+    }
+    else {
+        echo "Skipping {$filename} -> {$item['ename']} {$item['cname']}\n";
+    }
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
 fwrite($f, json_encode($result));
 fclose($f);
-echo "\nExported {$destinationPath} verions: {$result['version']}\n";
-//
-
-// $data = [];
-//
-// foreach (glob('OkidoKeyCharsets/DataTables/*.cin') as $path) {
-// 	$filename = str_replace('OkidoKeyCharsets/DataTables/', '', $path);
-// 	$contents = explode("\n", file_get_contents($path), 100);
-// 	foreach ($contents as $line) {
-// 		$line = trim($line);
-// 		$rows = explode(' ', $line, 2);
-// 		if ($rows[0] == '%ename' || $rows[0] == '%cname' || $rows[0] == '%name') {
-// 			$data[$filename] .= trim($rows[1]) . ' ';
-// 		}
-// 		else if ($rows[0] == '%chardef' || $rows[0] == '%keyname') {
-// 			break;
-// 		}
-// 	}
-// }
-//
-// $data = array_flip($data);
-// print_r($data);
-//
+echo "\nExported {$destinationPath} version: {$result['version']}\n";
