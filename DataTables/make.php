@@ -12,6 +12,8 @@ ini_set("error_reporting", FALSE);
 $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
 $destinationPath = "./DataTables.json";
 
+$excludes = ['array30_OkidoKey-big_0.75.cin', 'array30.cin', 'klingon.cin'];
+
 $filenames = glob('*.cin', GLOB_NOSORT);
 $result = array(
     'version' => date("YmdHis"),
@@ -21,9 +23,10 @@ $result = array(
 $items = [];
 
 foreach ($filenames as $filename) {
-    // if (strpos($filename, 'lookup') !== false) {
-    //     continue;
-    // }
+    if (in_array($filename, $excludes)) {
+        echo "Exclude: {$filename}\n";
+        continue;
+    }
 
     $checkComments = true;
     $beginKeyname = false;
@@ -77,10 +80,10 @@ foreach ($filenames as $filename) {
 
     if (!empty($keyname)) {
         $result['datatables'][] = $item;
-        echo "Adding {$filename} -> {$item['ename']} {$item['cname']}\n";
+        echo "Add: {$filename} -> {$item['ename']} {$item['cname']}\n";
     }
     else {
-        echo "Skipping {$filename} -> {$item['ename']} {$item['cname']}\n";
+        echo "Ignore: {$filename}\n";
     }
 }
 
