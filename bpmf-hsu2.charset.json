@@ -1,7 +1,7 @@
 [
     {
         "name": "bpmf-hsu2",
-        "description": "許氏注音2",
+        "description": "許氏注音(2)",
         "charsets":
         [
             "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ]",
@@ -12,7 +12,7 @@
     },
     {
         "name": "bpmf-hsu2-pad",
-        "description": "許氏注音2",
+        "description": "許氏注音(2)",
         "charsets":
         [
             "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][del]",
