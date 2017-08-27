@@ -23,7 +23,8 @@ $result = array(
 $items = [];
 
 foreach ($filenames as $filename) {
-    if (in_array($filename, $excludes)) {
+	$fn = str_replace('./DataTables/', '', $filename);
+    if (in_array($fn, $excludes)) {
         echo "Exclude: {$filename}\n";
         continue;
     }
