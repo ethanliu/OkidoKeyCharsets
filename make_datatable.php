@@ -10,11 +10,11 @@ error_reporting(0);
 ini_set("error_reporting", FALSE);
 
 $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
-$destinationPath = "./DataTables/DataTables.json";
+$destinationPath = "./DataTables.json";
 
 $excludes = ['array30_OkidoKey-big_0.75.cin', 'array30.cin', 'klingon.cin'];
 
-$filenames = glob('*.cin', GLOB_NOSORT);
+$filenames = glob('./DataTables/*.cin', GLOB_NOSORT);
 $result = array(
     'version' => date("YmdHis"),
     'datatables' => [],
