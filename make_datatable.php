@@ -22,9 +22,9 @@ $result = array(
 
 $items = [];
 
-foreach ($filenames as $filename) {
-	$fn = str_replace('./DataTables/', '', $filename);
-    if (in_array($fn, $excludes)) {
+foreach ($filenames as $path) {
+	$filename = str_replace('./DataTables/', '', $path);
+    if (in_array($filename, $excludes)) {
         echo "Exclude: {$filename}\n";
         continue;
     }
@@ -33,7 +33,7 @@ foreach ($filenames as $filename) {
     $beginKeyname = false;
     $keyname = '';
     $item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
-    $contents = explode("\n", file_get_contents($filename), 100);
+    $contents = explode("\n", file_get_contents($path), 1000);
 
     foreach ($contents as $line) {
         $line = trim($line);
@@ -91,4 +91,5 @@ foreach ($filenames as $filename) {
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
 fwrite($f, json_encode($result));
 fclose($f);
+// var_dump($result);
 echo "\nExported {$destinationPath} version: {$result['version']}\n";
