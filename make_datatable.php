@@ -10,7 +10,7 @@ error_reporting(0);
 ini_set("error_reporting", FALSE);
 
 $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
-$destinationPath = "./DataTables.json";
+$destinationPath = "./DataTables/DataTables.json";
 
 $excludes = ['array30_OkidoKey-big_0.75.cin', 'array30.cin', 'klingon.cin'];
 

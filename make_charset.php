@@ -11,7 +11,7 @@ ini_set("error_reporting", FALSE);
 
 $destinationPath = "./Charsets.json";
 
-$charsetPaths = glob('./*.charset.json', GLOB_NOSORT);
+$charsetPaths = glob('./Charsets/*.charset.json', GLOB_NOSORT);
 $uniqueNames = array();
 $contents = array(
     'version' => date("YmdHis"),
