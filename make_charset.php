@@ -9,7 +9,7 @@
 error_reporting(0);
 ini_set("error_reporting", FALSE);
 
-$destinationPath = "./Charsets.json";
+$destinationPath = "./KeyboardLayouts.json";
 
 $charsetPaths = glob('./Charsets/*.charset.json', GLOB_NOSORT);
 $uniqueNames = array();
