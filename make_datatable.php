@@ -15,6 +15,8 @@ $destinationPath = "./DataTables.json";
 $excludes = ['array30_OkidoKey-big_0.75.cin', 'array30.cin', 'klingon.cin'];
 
 $filenames = glob('./DataTables/*.cin', GLOB_NOSORT);
+natsort($filenames);
+
 $result = array(
     'version' => date("YmdHis"),
     'datatables' => [],
