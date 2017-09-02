@@ -12,6 +12,8 @@ ini_set("error_reporting", FALSE);
 $destinationPath = "./KeyboardLayouts.json";
 
 $charsetPaths = glob('./Charsets/*.charset.json', GLOB_NOSORT);
+natsort($charsetPaths);
+
 $uniqueNames = array();
 $contents = array(
     'version' => date("YmdHis"),
