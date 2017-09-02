@@ -20,6 +20,8 @@ $mapNames = ["%keyname", "%chardef"];
 $isArray = false;
 
 $filenames = glob('./DataTables/*.cin', GLOB_NOSORT);
+// $filenames = glob('./DataTables/array*.cin', GLOB_NOSORT);
+
 foreach ($filenames as $path) {
 
 	// $path = './DataTables/array30.cin';
@@ -211,7 +213,7 @@ foreach ($filenames as $path) {
 
 		foreach (['array-special.cin', 'array-shortcode.cin'] as $filename) {
 			echo "{$filename}...";
-
+			$path = './DataTables/' . $filename;
 			$subffix = str_replace(['array-', '.cin'], '', $filename);
 			$section = '';
 			$contents = explode("\n", file_get_contents($path));
