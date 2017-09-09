@@ -14,29 +14,27 @@ $destinationPath = "./KeyboardLayouts.json";
 $charsetPaths = glob('./Charsets/*.charset.json', GLOB_NOSORT);
 natsort($charsetPaths);
 
-$uniqueNames = array();
 $contents = array(
-    'version' => date("YmdHis"),
-    'charsets' => array(),
+	'version' => date("YmdHis"),
+	'charsets' => array(),
 );
 
 foreach ($charsetPaths as $path) {
-    $charsets = json_decode(file_get_contents($path));
-    foreach ($charsets as $charset) {
-        if ($charset && $charset->name && $charset->charsets) {
-            if (!in_array($charset->name, $uniqueNames)) {
-                echo "Adding {$path} [{$charset->name}]\n";
-                $contents['charsets'][] = $charset;
-                $uniqueNames[] = $charset->name;
-            }
-            else {
-                echo "Skipped, charset already exists. {$path} [{$charset->name}]\n";
-            }
-        }
-        else {
-            echo "Skipped, invalid json or charset structure: {$path}\n";
-        }
-    }
+	$charsets = json_decode(file_get_contents($path));
+	foreach ($charsets as $charset) {
+		if (empty($charset) || empty($charset->name) || empty($charset->charsets)) {
+			echo "Skipped, invalid json or charset structure: {$path}\n";
+			continue;
+		}
+		// $names = array_map('strrev', array_reverse(explode('-', $charset->name, 2)));
+		$name = $charset->name;
+		if (isset($contents['charsets'][$name])) {
+			echo "Skipped, charset already exists. {$path} [{$name}]\n";
+			continue;
+		}
+		unset($charset->name);
+		$contents['charsets'][$name] = $charset;
+	}
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
