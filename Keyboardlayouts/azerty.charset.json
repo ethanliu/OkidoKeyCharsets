@@ -1,0 +1,24 @@
+[
+    {
+        "name": "azerty",
+        "description": "AZERTY",
+        "charsets":
+        [
+             "[A][Z][E][R][T][Y][U][I][O][P]",
+             "[Q][S][D][F][G][H][J][K][L][M]",
+             "[shift][W][X][C][V][B][N][del]",
+             "[next][globe][space][return]"
+         ]
+    },
+    {
+        "name": "azerty-pad",
+        "description": "AZERTY",
+        "charsets":
+        [
+            "[A][Z][E][R][T][Y][U][I][O][P][del]",
+            "[Q][S][D][F][G][H][J][K][L][M][return]",
+            "[shift][W][X][C][V][B][N][,][.]['][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]

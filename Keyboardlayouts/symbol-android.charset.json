@@ -1,0 +1,25 @@
+[
+	{
+	    "name": "symbol-android",
+	    "description": "符號 (Android)",
+	    "charsets":
+	    [
+	        "[~][`][|][·][√][π][÷][×][¶][∆]",
+	        "[£][¢][€][¥][^][°][=][{][}]",
+	        "[shift][\\][©][®][™][℅][[][]][del]",
+	        "[next][globe][<][>][space][,][.][return]"
+	    ]
+	},
+	{
+	    "name": "symbol-android-pad",
+	    "description": "符號 (Android)",
+	    "charsets":
+	    [
+	        "[~][`][|][·][√][π][÷][×][¶][∆]",
+	        "[£][¢][€][¥][^][°][=][{][}][del]",
+	        "[shift][\\][©][®][™][℅][[][]][return]",
+	        "[next][globe][<][>][space][,][.][dismiss]"
+	    ]
+	}
+]
+
