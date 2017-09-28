@@ -12,86 +12,94 @@ ini_set("error_reporting", FALSE);
 $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
 $destinationPath = "./DataTables.json";
 
-$excludes = ['array30_OkidoKey-big_0.75.cin', 'array30.cin', 'klingon.cin'];
+$excludes = [
+	'array30_OkidoKey-big_0.75.cin',
+	'array30.cin',
+	'klingon.cin',
+	'bpmf_punctuation.cin',
+	'esperanto.cin',
+	'kk.cin',
+	'kks.cin',
+	'morse.cin',
+];
 
 $filenames = glob('./DataTables/*.cin', GLOB_NOSORT);
 natsort($filenames);
 
 $result = array(
-    'version' => date("YmdHis"),
-    'datatables' => [],
+	'version' => date("YmdHis"),
+	'datatables' => [],
 );
 
 $items = [];
 
+function stripComments($string) {
+	$pattern = '/(.*)(#.*)/';
+	$replacement = '\1';
+	return trim(preg_replace($pattern, $replacement, $string));
+}
+
 foreach ($filenames as $path) {
 	$filename = str_replace('./DataTables/', '', $path);
-    if (in_array($filename, $excludes)) {
-        echo "Exclude: {$filename}\n";
-        continue;
-    }
+	if (in_array($filename, $excludes)) {
+		echo "Exclude: {$filename}\n";
+		continue;
+	}
 
-    $checkComments = true;
-    $beginKeyname = false;
-    $keyname = '';
-    $item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
-    $contents = explode("\n", file_get_contents($path), 1000);
+	$beginKeyname = false;
+	$keyname = '';
+	$item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
+	$contents = explode("\n", file_get_contents($path), 1000);
 
-    foreach ($contents as $line) {
-        $line = trim($line);
+	foreach ($contents as $line) {
+		$line = trim($line);
+		$rows = explode(' ', str_replace("\t", " ", $line), 2);
+		$key = trim($rows[0]);
+		$value = stripComments($rows[1]);
 
-        if ($checkComments && strpos($line, '#') === 0) {
-            // echo $line . "\n";
-            $item['license'] .= $line . "\n";
-            continue;
-        }
+		if ($key == '%chardef') {
+			break;
+		}
+		else if (in_array($key, ['%ename', '%cname', '%name', '%tcname', '%scname'])) {
+			$key = str_replace('%', '', $key);
+			$item[$key] = $value;
+		}
+		else if ($key == '%keyname') {
+			if ($value == 'begin') {
+				$beginKeyname = true;
+				continue;
+			}
+			else if ($value == 'end') {
+				$beginKeyname = false;
+				break;
+			}
+		}
+		else {
+			if ($beginKeyname) {
+				$keyname .= trim($rows[0]);
+			}
+			else if (strpos($line, '%') === 0) {
+				// echo "ignore: ". $line . "\n";
+				continue;
+			}
+			else {
+				$line = str_replace(['#', '　'], '', $line);
+				$line = trim($line);
+				$item['license'] .= $line . "\n";
+			}
+		}
+	}
 
-        $rows = explode(' ', str_replace("\t", " ", $line), 2);
-        $rows[0] = trim($rows[0]);
-        $rows[1] = trim($rows[1]);
-        switch ($rows[0]) {
-            case '%ename':
-            case '%cname':
-            case '%name':
-                $checkComments = false;
-                $key = str_replace('%', '', $rows[0]);
-                $item[$key] = trim($rows[1]);
-                break;
-
-            case '%chardef':
-                break;
-            case '%keyname':
-                $checkComments = false;
-                if ($rows[1] == 'begin') {
-                    $beginKeyname = true;
-                    continue;
-                }
-                else if ($rows[1] == 'end') {
-                    $beginKeyname = false;
-                    continue;
-                }
-                continue;
-
-            default:
-                if ($beginKeyname) {
-                    $keyname .= trim($rows[0]);
-                }
-                break;
-        }
-
-    }
-
-    if (!empty($keyname)) {
-        $result['datatables'][] = $item;
-        echo "Add: {$filename} -> {$item['ename']} {$item['cname']}\n";
-    }
-    else {
-        echo "Ignore: {$filename}\n";
-    }
+	if (!empty($keyname)) {
+		$result['datatables'][] = $item;
+		echo "Add: {$filename} -> {$item['ename']} {$item['cname']}\n";
+	}
+	else {
+		echo "Ignore: {$filename}\n";
+	}
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
 fwrite($f, json_encode($result));
 fclose($f);
-// var_dump($result);
 echo "\nExported {$destinationPath} version: {$result['version']}\n";
