@@ -1,0 +1,24 @@
+[
+    {
+        "name": "qwertz",
+        "description": "QWERTZ",
+        "charsets":
+        [
+             "[Q][W][E][R][T][Z][U][I][O][P]",
+             "[dummy:2][A][S][D][F][G][H][J][K][L][dummy:2]",
+             "[shift][Y][X][C][V][B][N][M][del]",
+             "[next][globe][space][return]"
+         ]
+    },
+    {
+        "name": "qwertz-pad",
+        "description": "QWERTZ",
+        "charsets":
+        [
+            "[Q][W][E][R][T][Z][U][I][O][P][del]",
+            "[A][S][D][F][G][H][J][K][L][return]",
+            "[shift][Y][X][C][V][B][N][M][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]
