@@ -1,0 +1,24 @@
+[
+    {
+        "name": "lxsy",
+        "description": "lxsy4.0",
+        "charsets":
+        [
+             "[Q][W][E][R][T][Y][U][I][O][P][del]",
+             "[A][S][D][F][G][H][J][K][L][η][Λ]",
+             "[shift][Z][X][C][V][B][N][M][э][π][я]",
+             "[next][globe][space][return]"
+         ]
+    },
+    {
+        "name": "lxsy-pad",
+        "description": "lxsy4.0",
+        "charsets":
+        [
+            "[Q][W][E][R][T][Y][U][I][O][P][del]",
+            "[A][S][D][F][G][H][J][K][L][η][Λ]",
+            "[shift][Z][X][C][V][B][N][M][э][π][я]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]
