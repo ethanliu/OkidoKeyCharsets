@@ -1,0 +1,24 @@
+[
+    {
+        "name": "dvorak",
+        "description": "DVORAK",
+        "charsets":
+        [
+             "['][,][.][P][Y][F][G][C][R][L]",
+             "[A][O][E][U][I][D][H][T][N][S]",
+             "[shift][Q][J][K][X][B][M][W][V][Z][del]",
+             "[next][globe][space][return]"
+         ]
+    },
+    {
+        "name": "dvorak-pad",
+        "description": "DVORAK",
+        "charsets":
+        [
+            "['][,][.][P][Y][F][G][C][R][L][/][del]",
+            "[A][O][E][U][I][D][H][T][N][S][-][return]",
+            "[shift][Q][J][K][X][B][M][W][V][Z][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]
