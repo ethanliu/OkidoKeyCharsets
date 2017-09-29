@@ -17,8 +17,8 @@
         [
             "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][del]",
             "[A:ㄘㄟ][S:ㄙ˙][D:ㄉˊ][F:ㄈˇ][G:ㄍㄐㄜ][H:ㄏㄛ][J:ㄐㄓˋ][K:ㄎㄤ][L:ㄌㄥㄦ][return]",
-            "[shift][Z:ㄗ][X:ㄨ][C:ㄒㄕ][V:ㄑㄔ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][shift]",
-            "[next][globe][,][space][,][next][dismiss]"
+            "[shift][Z:ㄗ][X:ㄨ][C:ㄒㄕ][V:ㄑㄔ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
         ]
     }
 ]
