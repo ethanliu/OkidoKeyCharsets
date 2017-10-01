@@ -6,23 +6,11 @@
  * @copyright Creativecrap.com
  */
 
-// error_reporting(0);
-// ini_set("error_reporting", FALSE);
+include dirname(__FILE__) . "/config.php";
 
 function sqlite_escape_string($string){
 	return SQLite3::escapeString($string);
 }
-
-$excludes = [
-	'array30_OkidoKey-big_0.75.cin',
-	'array30.cin',
-	'klingon.cin',
-	'bpmf_punctuation.cin',
-	'esperanto.cin',
-	'kk.cin',
-	'kks.cin',
-	'morse.cin',
-];
 
 $propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
 $mapNames = ["%keyname", "%chardef"];
@@ -35,7 +23,7 @@ foreach ($filenames as $path) {
 
 	// $path = './DataTables/array30.cin';
 	$filename = str_replace('./DataTables/', '', $path);
-	if (in_array($filename, $excludes)) {
+	if (in_array($filename, $excludeDatables)) {
 		// echo "Exclude: {$filename}\n";
 		continue;
 	}
