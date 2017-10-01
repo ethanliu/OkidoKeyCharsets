@@ -9,7 +9,9 @@
 error_reporting(0);
 ini_set("error_reporting", FALSE);
 
-$link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
+// $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
+$link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/v2/DataTables/';
+
 $destinationPath = "./DataTables.json";
 
 $excludes = [
