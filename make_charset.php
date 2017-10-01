@@ -6,8 +6,7 @@
  * @copyright Creativecrap.com, 15 February, 2015
  */
 
-error_reporting(0);
-ini_set("error_reporting", FALSE);
+include dirname(__FILE__) . "/config.php";
 
 $destinationPath = "./Charsets.json";
 

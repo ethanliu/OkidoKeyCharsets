@@ -6,24 +6,9 @@
  * @copyright Creativecrap.com, 10 July, 2015
  */
 
-error_reporting(0);
-ini_set("error_reporting", FALSE);
-
-// $link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
-$link = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/v2/DataTables/';
+include dirname(__FILE__) . "/config.php";
 
 $destinationPath = "./DataTables.json";
-
-$excludes = [
-	'array30_OkidoKey-big_0.75.cin',
-	'array30.cin',
-	'klingon.cin',
-	'bpmf_punctuation.cin',
-	'esperanto.cin',
-	'kk.cin',
-	'kks.cin',
-	'morse.cin',
-];
 
 $filenames = glob('./DataTables/*.cin', GLOB_NOSORT);
 natsort($filenames);
@@ -43,14 +28,14 @@ function stripComments($string) {
 
 foreach ($filenames as $path) {
 	$filename = str_replace('./DataTables/', '', $path);
-	if (in_array($filename, $excludes)) {
+	if (in_array($filename, $excludeDatables)) {
 		echo "Exclude: {$filename}\n";
 		continue;
 	}
 
 	$beginKeyname = false;
 	$keyname = '';
-	$item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $link . $filename, 'license' => '');
+	$item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => $rawURL . $filename, 'license' => '');
 	$contents = explode("\n", file_get_contents($path), 1000);
 
 	foreach ($contents as $line) {
