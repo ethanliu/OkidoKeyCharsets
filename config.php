@@ -6,8 +6,8 @@
  * @copyright Creativecrap.com
  */
 
-error_reporting(0);
-ini_set("error_reporting", FALSE);
+// error_reporting(0);
+// ini_set("error_reporting", FALSE);
 
 // $rawURL = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/master/DataTables/';
 $rawURL = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/v2/DataTables/';

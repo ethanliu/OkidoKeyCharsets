@@ -7,10 +7,8 @@
  */
 
 include dirname(__FILE__) . "/config.php";
+include dirname(__FILE__) . "/functions.php";
 
-function sqlite_escape_string($string){
-	return SQLite3::escapeString($string);
-}
 
 $propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
 $mapNames = ["%keyname", "%chardef"];
@@ -140,58 +138,21 @@ foreach ($filenames as $path) {
 				// echo "\n{$query} {$key} {$value}";
 			}
 			else if ($section == '%chardef') {
-				$query = "SELECT rowid FROM keydef WHERE key = ?";
-				$st = $db->prepare($query);
-				$st->bindParam(1, $key, SQLITE3_TEXT);
-				$result = $st->execute();
-				$rows = $result->fetchArray(SQLITE3_ASSOC);
-				$keydefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+				$keydefRowId = getKeydefId($db, $key);
 
 				if (!$keydefRowId) {
-					$query = "INSERT INTO keydef (`key`) VALUES (?)";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $key, SQLITE3_TEXT);
-					$st->execute();
-					// echo "\n{$query} {$key}";
-
-					$query = "SELECT rowid FROM keydef WHERE key = ?";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $key, SQLITE3_TEXT);
-					$result = $st->execute();
-					$rows = $result->fetchArray(SQLITE3_ASSOC);
-					$keydefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+					addKeydef($db, $key);
+					$keydefRowId = getKeydefId($db, $key);
 				}
 
-				$query = "SELECT rowid FROM chardef WHERE char = ?";
-				$st = $db->prepare($query);
-				$st->bindParam(1, $value, SQLITE3_TEXT);
-				$result = $st->execute();
-				$rows = $result->fetchArray(SQLITE3_ASSOC);
-				$chardefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+				$chardefRowId = getChardefId($db, $value);
 
 				if (!$chardefRowId) {
-					$query = "INSERT INTO chardef (`char`) VALUES (?);";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $value, SQLITE3_TEXT);
-					$st->execute();
-					// echo "\n{$query} {$value}";
-
-					$query = "SELECT rowid FROM chardef WHERE char = ?";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $value, SQLITE3_TEXT);
-					$result = $st->execute();
-					$rows = $result->fetchArray(SQLITE3_ASSOC);
-					$chardefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+					addChardef($db, $value);
+					$chardefRowId = getChardefId($db, $value);
 				}
 
-				if ($keydefRowId > 0 && $chardefRowId > 0) {
-					$query = "INSERT INTO entry (`keydef_id`, `chardef_id`) VALUES (?, ?)";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $keydefRowId, SQLITE3_INTEGER);
-					$st->bindParam(2, $chardefRowId, SQLITE3_INTEGER);
-					$st->execute();
-					// echo "\n{$query} {$keydefRowId} {$chardefRowId}";
-				}
+				addKeyChar($db, $keydefRowId, $chardefRowId);
 			}
 			else {
 				echo "Unknown section: {$line}\n";
@@ -211,7 +172,7 @@ foreach ($filenames as $path) {
 		foreach (['array-special.cin', 'array-shortcode.cin'] as $filename) {
 			echo "{$filename}...";
 			$path = './DataTables/' . $filename;
-			$subffix = str_replace(['array-', '.cin'], '', $filename);
+			$suffix = '_' . str_replace(['array-', '.cin'], '', $filename);
 			$section = '';
 			$contents = explode("\n", file_get_contents($path));
 
@@ -256,60 +217,21 @@ foreach ($filenames as $path) {
 
 				// echo "{$key} = {$value}\n";
 
-				$query = "SELECT rowid FROM keydef_{$subffix} WHERE key = ?";
-				$st = $db->prepare($query);
-				$st->bindParam(1, $key, SQLITE3_TEXT);
-				$result = $st->execute();
-				$rows = $result->fetchArray(SQLITE3_ASSOC);
-				$keydefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+				$keydefRowId = getKeydefId($db, $key, $suffix);
 
 				if (!$keydefRowId) {
-					$query = "INSERT INTO keydef_{$subffix} (`key`) VALUES (?)";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $key, SQLITE3_TEXT);
-					$st->execute();
-					// echo "\n{$query} {$key}";
-
-					$query = "SELECT rowid FROM keydef_{$subffix} WHERE key = ?";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $key, SQLITE3_TEXT);
-					$result = $st->execute();
-					$rows = $result->fetchArray(SQLITE3_ASSOC);
-					$keydefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+					addKeydef($db, $key, $suffix);
+					$keydefRowId = getKeydefId($db, $key, $suffix);
 				}
 
-				$query = "SELECT rowid FROM chardef WHERE char = ?";
-				$st = $db->prepare($query);
-				$st->bindParam(1, $value, SQLITE3_TEXT);
-				$result = $st->execute();
-				$rows = $result->fetchArray(SQLITE3_ASSOC);
-				$chardefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+				$chardefRowId = getChardefId($db, $value);
 
 				if (!$chardefRowId) {
-					$query = "INSERT INTO chardef (`char`) VALUES (?);";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $value, SQLITE3_TEXT);
-					$st->execute();
-					// echo "\n{$query} {$value}";
-
-					$query = "SELECT rowid FROM chardef WHERE char = ?";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $value, SQLITE3_TEXT);
-					$result = $st->execute();
-					$rows = $result->fetchArray(SQLITE3_ASSOC);
-					$chardefRowId = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
+					addChardef($db, $value);
+					$chardefRowId = getChardefId($db, $value);
 				}
 
-				if ($keydefRowId > 0 && $chardefRowId > 0) {
-					$query = "INSERT INTO entry_{$subffix} (`keydef_{$subffix}_id`, `chardef_id`) VALUES (?, ?)";
-					$st = $db->prepare($query);
-					$st->bindParam(1, $keydefRowId, SQLITE3_INTEGER);
-					$st->bindParam(2, $chardefRowId, SQLITE3_INTEGER);
-					$st->execute();
-					// echo "\n{$query} {$keydefRowId} {$chardefRowId}";
-				}
-
-
+				addKeyChar($db, $keydefRowId, $chardefRowId, $suffix);
 
 			}
 		}
