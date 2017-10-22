@@ -1,5 +1,6 @@
 # OkidoKeyCharsets
-Collections of Charsets for OkidoKey.app
+
+Collections of Charsets for OkidoKey.app v2 series.
 
 OkidoKey.app is the next generation of zhim! extended for iOS8+ which supports system wide custom keyboards.
 
@@ -31,4 +32,5 @@ A few reserved combinations represent special keys.
 - `[shift]` — shift key
 - `[space]` — space key
 - `[dismiss]` — dismiss keyboard for iPad
+- `[dummy]` — Spacing between keys, [dummy] or [dummy:1] for one key width, [dummy:2] for half key width, only 1 or 2 is valid.
 
