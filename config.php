@@ -17,6 +17,7 @@ $excludeDatables = [
 	'array30.cin',
 	'klingon.cin',
 	'bpmf_punctuation.cin',
+	'bpmf-symbol.cin',
 	'esperanto.cin',
 	'kk.cin',
 	'kks.cin',
