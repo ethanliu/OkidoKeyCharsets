@@ -42,7 +42,7 @@ foreach ($filenames as $path) {
 		$line = trim($line);
 		$rows = explode(' ', str_replace("\t", " ", $line), 2);
 		$key = trim($rows[0]);
-		$value = stripComments($rows[1]);
+		$value = count($rows) > 1 ? stripComments($rows[1]) : '';
 
 		if ($key == '%chardef') {
 			break;
