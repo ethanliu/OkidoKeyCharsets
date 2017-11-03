@@ -1,7 +1,7 @@
 [
     {
         "name": "bpmf-et26",
-        "description": "倚天 26 鍵",
+        "description": "注音-倚天26鍵盤",
         "charsets":
         [
             "[Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ]",
@@ -12,7 +12,7 @@
     },
     {
         "name": "bpmf-et26-pad",
-        "description": "倚天 26 鍵",
+        "description": "注音-倚天26鍵盤",
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
