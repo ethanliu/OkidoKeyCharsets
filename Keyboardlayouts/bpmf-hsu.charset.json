@@ -1,7 +1,7 @@
 [
     {
         "name": "bpmf-hsu",
-        "description": "許氏注音",
+        "description": "注音-許氏鍵盤",
         "charsets":
         [
             "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ]",
@@ -12,7 +12,7 @@
     },
     {
         "name": "bpmf-hsu-pad",
-        "description": "許氏注音",
+        "description": "注音-許氏鍵盤",
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
