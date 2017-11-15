@@ -18,8 +18,10 @@ $excludeDatables = [
 	'klingon.cin',
 	'bpmf_punctuation.cin',
 	'bpmf-symbol.cin',
+	'egyptian.cin',
 	'esperanto.cin',
 	'kk.cin',
 	'kks.cin',
 	'morse.cin',
+	'telecode.cin',
 ];
