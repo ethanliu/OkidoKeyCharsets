@@ -34,7 +34,11 @@ foreach ($filenames as $path) {
 	}
 
 	$output = "./Databases/{$filename}.db";
-	@unlink($output);
+	if (file_exists($output)) {
+		echo "{$filename} -> [exists]\n";
+		continue;
+	}
+	// @unlink($output);
 
 	try {
 		$db = new SQLite3($output);
