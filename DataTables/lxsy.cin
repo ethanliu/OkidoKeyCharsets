@@ -15,6 +15,8 @@ b 除
 c 双
 d 本
 e 一
+f 石
+g 土
 h 王
 i 丨
 j 火
@@ -38,7 +40,10 @@ z 折
 %chardef begin
 э	,
 π	.
-я	/
+e	e
+i	i
+o	o
+u	u
 a	从
 aλ	式
 aЯ	落
