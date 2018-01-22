@@ -221,7 +221,7 @@ OPTIONS:
 		echo "Generate KeyboardLayouts.json\n\n";
 
 		$destinationPath = self::$baseDir . "KeyboardLayouts.json";
-		$charsetPaths = glob(self::$baseDir . 'KeyboardLayouts/*.charset.json', GLOB_NOSORT);
+		$charsetPaths = glob(self::$baseDir . 'Keyboardlayouts/*.charset.json', GLOB_NOSORT);
 		natsort($charsetPaths);
 
 		$contents = array(
@@ -231,6 +231,14 @@ OPTIONS:
 
 		foreach ($charsetPaths as $path) {
 			$charsets = json_decode(file_get_contents($path));
+			$error = json_last_error();
+
+			if ($error !== JSON_ERROR_NONE) {
+				var_dump($error);
+				echo "Syntax error: {$path}\n";
+				continue;
+			}
+
 			foreach ($charsets as $charset) {
 				if (empty($charset) || empty($charset->name) || empty($charset->charsets)) {
 					echo "Skipped, invalid json or charset structure: {$path}\n";
