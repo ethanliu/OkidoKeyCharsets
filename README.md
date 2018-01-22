@@ -1,10 +1,10 @@
-# OkidoKeyCharsets
+# OkidoKey Charsets
 
 Collections of Keyboard layouts and cin data table for OkidoKey.app v2 series.
 
 OkidoKey includes in-app keyboard with plain text editor and keyboard extension for system-wide usage. And auto-copy Clipboard for typing without create or open a document.
 
-OkidoKeyCharsets is a collection of cin data table and keyboard layouts for OkidoKey.app custom keyboards.
+OkidoKey Charsets is a collection of cin data table and keyboard layouts for OkidoKey.app custom keyboards.
 
 Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections, and with `-pad` suffix present for iPad.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
 
@@ -25,6 +25,7 @@ Each key format is wrapping by `[]` and use `:` as separator.  For example `[1:�
 
 A few reserved combinations represent special keys.
 
+- `[capslock]` — caps lock key
 - `[del]` — backspace key
 - `[dismiss]` — dismiss keyboard for iPad
 - `[dummy]` — Spacing between keys, [dummy] or [dummy:1] for one key width, [dummy:2] for half key width, only 1 or 2 is valid.

@@ -16,8 +16,8 @@
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][[][]][del]",
-            "['][,][.][P][Y][F][G][C][R][L][/][=][\\]",
-            "[tab][A][O][E][U][I][D][H][T][N][S][-][return]",
+            "[tab]['][,][.][P][Y][F][G][C][R][L][/][=][\\]",
+            "[capslock][A][O][E][U][I][D][H][T][N][S][-][return]",
             "[shift][;][Q][J][K][X][B][M][W][V][Z][shift]",
             "[next][globe][space][next][dismiss]"
         ]
