@@ -16,9 +16,32 @@
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
-            "[Q:手][W:田][E:水][R:口][T:廿][Y:卜][U:山][I:戈][O:人][P:心][[][]][\\]",
-            "[tab][A:日][S:尸][D:木][F:火][G:土][H:竹][J:十][K:大][L:中][;]['][return]",
+            "[tab][Q:手][W:田][E:水][R:口][T:廿][Y:卜][U:山][I:戈][O:人][P:心][[][]][\\]",
+            "[capslock][A:日][S:尸][D:木][F:火][G:土][H:竹][J:十][K:大][L:中][;]['][return]",
             "[shift][Z:重][X:難][C:金][V:女][B:月][N:弓][M:一][,][.][/][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "cangjie6",
+        "description": "倉六",
+        "charsets":
+        [
+            "[Q:手][W:田][E:水][R:口][T:廿][Y:卜][U:山][I:戈][O:人][P:心]",
+            "[A:日][S:尸][D:木][F:火][G:土][H:的][J:十][K:大][L:中]",
+            "[shift][Z:片][X:止][C:金][V:女][B:月][N:弓][M:一][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "cangjie6-pad",
+        "description": "倉六",
+        "charsets":
+        [
+            "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
+            "[tab][Q:手][W:田][E:水][R:口][T:廿][Y:卜][U:山][I:戈][O:人][P:心][[][]][\\]",
+            "[capslock][A:日][S:尸][D:木][F:火][G:土][H:的][J:十][K:大][L:中][;]['][return]",
+            "[shift][Z:片][X:止][C:金][V:女][B:月][N:弓][M:一][,][.][/][shift]",
             "[next][globe][space][next][dismiss]"
         ]
     }
