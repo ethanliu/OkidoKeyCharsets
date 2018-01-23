@@ -12,7 +12,6 @@
 
 class Builder {
 	private static $shared;
-	private static $repoURL = 'https://raw.githubusercontent.com/ethanliu/OkidoKeyCharsets/v2/DataTables/';
 	private static $excludeDatables = [
 		'array30_OkidoKey-big_0.75.cin',
 		'array30.cin',
@@ -94,7 +93,7 @@ class Builder {
 	}
 
 	private static function init() {
-		$baseDir = realpath(dirname(__FIle__) . '/../') . '/';
+		self::$baseDir = realpath(dirname(__FIle__) . '/../') . '/';
 	}
 
 	private static function usage() {
@@ -214,6 +213,12 @@ OPTIONS:
 		return $type;
 	}
 
+	function stripComments($string) {
+		$pattern = '/(.*)(#.*)/';
+		$replacement = '\1';
+		return trim(preg_replace($pattern, $replacement, $string));
+	}
+
 
 	// interface
 
@@ -221,7 +226,7 @@ OPTIONS:
 		echo "Generate KeyboardLayouts.json\n\n";
 
 		$destinationPath = self::$baseDir . "KeyboardLayouts.json";
-		$charsetPaths = glob(self::$baseDir . 'Keyboardlayouts/*.charset.json', GLOB_NOSORT);
+		$charsetPaths = glob(self::$baseDir . 'charset/*.charset.json', GLOB_NOSORT);
 		natsort($charsetPaths);
 
 		$contents = array(
@@ -256,7 +261,7 @@ OPTIONS:
 		}
 
 		$f = fopen($destinationPath, "w") or die("Unable to create file.");
-		fwrite($f, json_encode($contents));
+		fwrite($f, json_encode($contents, JSON_UNESCAPED_UNICODE));
 		fclose($f);
 		echo "...version: {$contents['version']}\n\n";
 	}
@@ -265,7 +270,7 @@ OPTIONS:
 		echo "Generate DataTables.json\n\n";
 
 		$destinationPath = self::$baseDir . "DataTables.json";
-		$filenames = glob(self::$baseDir . 'DataTables/*.cin', GLOB_NOSORT);
+		$filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
 		natsort($filenames);
 
 		$result = array(
@@ -275,14 +280,8 @@ OPTIONS:
 
 		$items = [];
 
-		function stripComments($string) {
-			$pattern = '/(.*)(#.*)/';
-			$replacement = '\1';
-			return trim(preg_replace($pattern, $replacement, $string));
-		}
-
 		foreach ($filenames as $path) {
-			$filename = str_replace('DataTables/', '', $path);
+			$filename = basename($path);
 			if (in_array($filename, self::$excludeDatables)) {
 				echo "Exclude: {$filename}\n";
 				continue;
@@ -290,14 +289,21 @@ OPTIONS:
 
 			$beginKeyname = false;
 			$keyname = '';
-			$item = array('ename' => '', 'cname' => '', 'name' => '', 'link' => self::$repoURL . $filename, 'license' => '');
+			$item = array(
+				'ename' => '',
+				'cname' => '',
+				'name' => '',
+				'cin' => "table/{$filename}",
+				'db' => "db/{$filename}.db",
+				'license' => '',
+			);
 			$contents = explode("\n", file_get_contents($path), 5000);
 
 			foreach ($contents as $line) {
 				$line = trim($line);
 				$rows = explode(' ', str_replace("\t", " ", $line), 2);
 				$key = trim($rows[0]);
-				$value = count($rows) > 1 ? stripComments($rows[1]) : '';
+				$value = count($rows) > 1 ? self::stripComments($rows[1]) : '';
 
 				if ($key == '%chardef') {
 					break;
@@ -342,7 +348,7 @@ OPTIONS:
 		}
 
 		$f = fopen($destinationPath, "w") or die("Unable to create file.");
-		fwrite($f, json_encode($result));
+		fwrite($f, json_encode($result, JSON_UNESCAPED_UNICODE));
 		fclose($f);
 		echo "...version: {$result['version']}\n\n";
 
@@ -355,13 +361,13 @@ OPTIONS:
 		$mapNames = ["%keyname", "%chardef"];
 		$isArray = false;
 
-		$filenames = glob(self::$baseDir . 'DataTables/*.cin', GLOB_NOSORT);
+		$filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
 		// $filenames = glob('./DataTables/array*.cin', GLOB_NOSORT);
 
 		foreach ($filenames as $path) {
 
 			// $path = './DataTables/array30.cin';
-			$filename = str_replace('DataTables/', '', $path);
+			$filename = basename($path);
 			if (in_array($filename, self::$excludeDatables)) {
 				// echo "Exclude: {$filename}\n";
 				continue;
@@ -374,7 +380,7 @@ OPTIONS:
 				$isArray = false;
 			}
 
-			$output = self::$baseDir . "Databases/{$filename}.db";
+			$output = self::$baseDir . "db/{$filename}.db";
 			if (file_exists($output)) {
 				echo "{$filename} -> [exists]\n";
 				continue;
@@ -516,7 +522,7 @@ OPTIONS:
 
 				foreach (['array-special.cin', 'array-shortcode.cin'] as $filename) {
 					echo "{$filename}...";
-					$path = self::$baseDir . 'DataTables/' . $filename;
+					$path = self::$baseDir . 'table/' . $filename;
 					$suffix = '_' . str_replace(['array-', '.cin'], '', $filename);
 					$section = '';
 					$contents = explode("\n", file_get_contents($path));
