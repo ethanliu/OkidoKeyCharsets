@@ -394,7 +394,7 @@ OPTIONS:
 				exit;
 			}
 
-			echo "{$filename} -> {$output}...";
+			echo "{$filename} -> " . basename($output) . "...";
 
 			$query = "CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '');";
 			$db->exec($query);
