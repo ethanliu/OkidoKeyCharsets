@@ -1,10 +1,18 @@
-# OkidoKey Charsets
+# About OkidoKey
 
-Collections of Keyboard layouts and cin data table for OkidoKey.app v2 series.
+OkidoKey is an input method kit for iOS.  
+It includes in-app keyboard with plain text editor and keyboard extension for system-wide usage. And auto-copy Clipboard for typing without create or open a document.
 
-OkidoKey includes in-app keyboard with plain text editor and keyboard extension for system-wide usage. And auto-copy Clipboard for typing without create or open a document.
+https://itunes.apple.com/us/app/okidokey/id945116579?ls=1&mt=8
 
-OkidoKey Charsets is a collection of cin data table and keyboard layouts for OkidoKey.app custom keyboards.
+# About this repo
+
+This repo contains:  
+charset - Keyboard layouts configs of OkidoKey.app  
+db - Pre-compiled database for OkidoKey.app  
+table - Input method data tables in cin format
+
+## Charset format
 
 Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections, and with `-pad` suffix present for iPad.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
 
@@ -23,6 +31,8 @@ Each .charset.json must have `name`, `charsets` and an optional `description` pr
 
 Each key format is wrapping by `[]` and use `:` as separator.  For example `[1:ㄅ]` represent a key with character `1` and label `ㄅ`, if the character and label is the same, you may ignore the label, i.e. `[A]`. The character must be 1 character only, but the label has no length limit, however it's recommend less then 3 characters.
 
+### Reserved keys
+
 A few reserved combinations represent special keys.
 
 - `[capslock]` — caps lock key
@@ -36,6 +46,26 @@ A few reserved combinations represent special keys.
 - `[space]` — space key
 - `[tab]` — tab key
 
-OkidoKey app:
+## Build
 
-https://itunes.apple.com/us/app/okidokey/id945116579?ls=1&mt=8
+    > php bin/make.php
+    
+    NAME
+    	make.php -- OkidoKey Package Tools
+
+    SYNOPSIS
+    	make.php [options]
+    	make.php -x [level] input.cin > output.cin
+
+    OPTIONS:
+    	-k	Generate KeyboardLayouts.json
+    	-t	Generate DataTables.json
+    	-d	Generate Databases
+
+    	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
+        			level 0: strip all blocks (default)
+        			level 1: strip all blocks except CJK-ExtA
+        			level 2: strip SPUA blocks
+        			level 3: strip CJK-Ext A~D blocks
+    
+
