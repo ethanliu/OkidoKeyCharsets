@@ -61,7 +61,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     bpmf-ext.cin - 注音
     bpmf-Hsu.cin - 注音-許氏鍵盤
     bpmf.cin - 注音
-    cangjie6.cin - 蒼頡六代
+    cangjie6.cin - 倉頡六代
     cj-ext.cin - 倉頡（大字集）
     cj-j.cin - 倉頡-J
     cj-wildcard.cin - 倉頡（萬用字元版）
@@ -73,6 +73,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     dayi3-patched.cin - 大易 (標點符號版)
     dayi3.cin - 大易
     ehq-symbols.cin - 漁村符號及日文假名
+    freenewcj.cin - 自由大新
     jidianwubi.cin - 极点五笔
     jinjin.cin - 晶晶碼
     jtcj.cin - 简体仓颉
