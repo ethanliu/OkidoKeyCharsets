@@ -1,7 +1,7 @@
 #
 # bpmf-cns.cin for OkidoKey, 2018-01-18
 # 本表依全字庫注音輸入法表格檔 CnsPhonetic2016-08_GCINv2.cin 簡化
-# 删除 Private Use Area BMP, Area-A, Area-B 及 CJK Ext-B/C/D/E/F 字集
+# 删除 Private Use Area BMP, Area-A/B 及 CJK Ext-B/C/D/E/F 字集
 #
 #-----------------------------------------------------------
 #文件名稱：全字庫注音輸入法表格檔2016-08 { CnsPhonetic2016-08_GCINv2.cin (全都錄版) for Debian Linux v8.5 (AMD64) + GNOME + gcin 2.8.2 }
