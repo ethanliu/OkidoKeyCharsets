@@ -1,7 +1,7 @@
 [
     {
         "name": "symbol",
-        "description": "符號鍵盤 5row",
+        "description": "符號鍵盤(5)",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0]",
@@ -13,7 +13,7 @@
     },
     {
         "name": "symbol-pad",
-        "description": "符號鍵盤 5row",
+        "description": "符號鍵盤(5)",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0]",
@@ -25,7 +25,7 @@
     },
     {
         "name": "symbol2",
-        "description": "符號鍵盤",
+        "description": "符號鍵盤(4)",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0]",
@@ -36,7 +36,7 @@
     },
     {
         "name": "symbol2-pad",
-        "description": "符號鍵盤",
+        "description": "符號鍵盤(4)",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0][del]",
