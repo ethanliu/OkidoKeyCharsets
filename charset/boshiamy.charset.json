@@ -10,17 +10,5 @@
              "[shift][Z][X][C][V][B][N][M][del]",
              "[next][globe][,][space][.][return]"
          ]
-    },
-    {
-        "name": "boshiamy-pad",
-        "description": "嘸蝦米鍵盤",
-        "charsets":
-        [
-            "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
-            "[tab][Q][W][E][R][T][Y][U][I][O][P][[][]][\\]",
-            "[capslock][A][S][D][F][G][H][J][K][L][;]['][return]",
-            "[shift][Z][X][C][V][B][N][M][,][.][/][shift]",
-            "[next][globe][space][next][dismiss]"
-        ]
     }
 ]
