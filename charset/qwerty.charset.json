@@ -11,8 +11,43 @@
          ]
     },
     {
+        "name": "qwerty-number",
+        "description": "QWERTY 數字鍵盤",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0]",
+            "[Q][W][E][R][T][Y][U][I][O][P]",
+            "[dummy:2][A][S][D][F][G][H][J][K][L][dummy:2]",
+            "[shift][Z][X][C][V][B][N][M][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
         "name": "qwerty-pad",
         "description": "QWERTY",
+        "charsets":
+        [
+            "[Q][W][E][R][T][Y][U][I][O][P][del]",
+            "[dummy:2][A][S][D][F][G][H][J][K][L][return]",
+            "[shift][Z][X][C][V][B][N][M][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "qwerty-number-pad",
+        "description": "QWERTY 數字鍵盤",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][-][=]",
+            "[Q][W][E][R][T][Y][U][I][O][P][del]",
+            "[dummy:2][A][S][D][F][G][H][J][K][L][return]",
+            "[shift][Z][X][C][V][B][N][M][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "qwerty-fullsize",
+        "description": "QWERTY 全尺寸鍵盤",
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
