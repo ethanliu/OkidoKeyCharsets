@@ -146,7 +146,7 @@ OPTIONS:
 	}
 
 	function addChardef($db, $value, $suffix = "") {
-		$query = "INSERT INTO chardef{$suffix} (`char`) VALUES (?);";
+		$query = "INSERT INTO chardef{$suffix} (`char`) VALUES (?)";
 		$st = $db->prepare($query);
 		$st->bindParam(1, $value, SQLITE3_TEXT);
 		$st->execute();
@@ -159,7 +159,7 @@ OPTIONS:
 		$st->execute();
 	}
 
-	function addKeyChar($db, $key_id, $char_id, $suffix = "") {
+	function addEntry($db, $key_id, $char_id, $suffix = "") {
 		if ($key_id < 1 || $char_id < 1) {
 			return false;
 		}
@@ -169,6 +169,24 @@ OPTIONS:
 		$st->bindParam(1, $key_id, SQLITE3_INTEGER);
 		$st->bindParam(2, $char_id, SQLITE3_INTEGER);
 		$st->execute();
+	}
+
+	function addInfo($db, $name, $value) {
+		$query = "INSERT OR IGNORE INTO info (`name`, `value`) VALUES (?, ?)";
+		$st = $db->prepare($query);
+		$st->bindParam(1, $name, SQLITE3_TEXT);
+		$st->bindParam(2, $value, SQLITE3_TEXT);
+		$st->execute();
+		// echo "\n{$query} {$_key} {$value}";
+	}
+
+	function addKeyname($db, $key, $value) {
+		$query = "INSERT OR IGNORE INTO keyname (`key`, `value`) VALUES (?, ?);";
+		$st = $db->prepare($query);
+		$st->bindParam(1, $key, SQLITE3_TEXT);
+		$st->bindParam(2, $value, SQLITE3_TEXT);
+		$st->execute();
+		// echo "\n{$query} {$key} {$value}";
 	}
 
 	// utilities
@@ -456,13 +474,8 @@ OPTIONS:
 				$value = trim($rows[1]);
 
 				if (in_array($key, $propertyNames)) {
-					$query = "INSERT INTO info (`name`, `value`) VALUES (?, ?);";
-					$st = $db->prepare($query);
 					$_key = str_replace('%', '', $key);
-					$st->bindParam(1, $_key, SQLITE3_TEXT);
-					$st->bindParam(2, $value, SQLITE3_TEXT);
-					$st->execute();
-					// echo "\n{$query} {$_key} {$value}";
+					self::addInfo($db, $_key, $value);
 				}
 				else if (in_array($key, $mapNames)) {
 					if ($value == 'begin') {
@@ -481,12 +494,7 @@ OPTIONS:
 				}
 				else {
 					if ($section == '%keyname') {
-						$query = "INSERT INTO keyname (`key`, `value`) VALUES (?, ?);";
-						$st = $db->prepare($query);
-						$st->bindParam(1, $key, SQLITE3_TEXT);
-						$st->bindParam(2, $value, SQLITE3_TEXT);
-						$st->execute();
-						// echo "\n{$query} {$key} {$value}";
+						self::addKeyname($db, $key, $value);
 					}
 					else if ($section == '%chardef') {
 						$keydefRowId = self::getKeydefId($db, $key);
@@ -503,7 +511,7 @@ OPTIONS:
 							$chardefRowId = self::getChardefId($db, $value);
 						}
 
-						self::addKeyChar($db, $keydefRowId, $chardefRowId);
+						self::addEntry($db, $keydefRowId, $chardefRowId);
 					}
 					else {
 						// echo "Unknown section: {$line}\n";
@@ -511,7 +519,18 @@ OPTIONS:
 				}
 			}
 
-			$db->exec("COMMIT;");
+			$db->exec("COMMIT TRANSACTION");
+
+			// $query = "CREATE INDEX keydef_keys ON keydef (key)";
+			// $db->exec($query);
+			// $query = "CREATE INDEX chardef_chars ON chardef (char)";
+			// $db->exec($query);
+			// $query = "CREATE INDEX entry_index ON entry (keydef_id, chardef_id)";
+			// $db->exec($query);
+			// $query = "CREATE INDEX entry_keydefs ON entry (keydef_id)";
+			// $db->exec($query);
+			// $query = "CREATE INDEX entry_chardefs ON entry (chardef_id)";
+			// $db->exec($query);
 
 			if ($isArray) {
 
@@ -582,12 +601,12 @@ OPTIONS:
 							$chardefRowId = self::getChardefId($db, $value);
 						}
 
-						self::addKeyChar($db, $keydefRowId, $chardefRowId, $suffix);
+						self::addEntry($db, $keydefRowId, $chardefRowId, $suffix);
 
 					}
 				}
 
-				$db->exec("COMMIT;");
+				$db->exec("COMMIT TRANSACTION");
 			}
 
 			$db->close();
