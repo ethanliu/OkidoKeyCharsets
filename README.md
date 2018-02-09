@@ -14,7 +14,7 @@ table - Input method data tables in cin format
 
 ## Charset format
 
-Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections, and with `-pad` suffix present for iPad.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
+Each .charset.json must have `name`, `charsets` and an optional `description` properties. The `name` property must be unique in the whole collections.  `charsets` can has multiple strings, each string present one row of custom keyboard, it's best to keep in 3 to 4 rows per charset.
 
     {
         "name": "bpmf",
@@ -30,6 +30,12 @@ Each .charset.json must have `name`, `charsets` and an optional `description` pr
     }
 
 Each key format is wrapping by `[]` and use `:` as separator.  For example `[1:ㄅ]` represent a key with character `1` and label `ㄅ`, if the character and label is the same, you may ignore the label, i.e. `[A]`. The character must be 1 character only, but the label has no length limit, however it's recommend less then 3 characters.
+
+Charset separates into 3 categories:
+
+name has `-pad` suffix: regular layout for iPad, without tab, capslock keys in general.  
+name has `-fullsize` suffix: full size keyboard layout brought by iPad Pro 12.9  
+name without any suffix: regular layout for iPhone  
 
 ### Reserved keys
 
