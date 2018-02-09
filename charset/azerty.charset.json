@@ -15,6 +15,18 @@
         "description": "AZERTY",
         "charsets":
         [
+            "[1][2][3][4][5][6][7][8][9][0][-][=]",
+            "[A][Z][E][R][T][Y][U][I][O][P][del]",
+            "[Q][S][D][F][G][H][J][K][L][M][return]",
+            "[shift][W][X][C][V][B][N][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+    {
+        "name": "azerty-fullsize",
+        "description": "AZERTY",
+        "charsets":
+        [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
             "[tab][A][Z][E][R][T][Y][U][I][O][P][[][]][\\]",
             "[capslock][Q][S][D][F][G][H][J][K][L][M][;]['][return]",
