@@ -257,9 +257,9 @@ OPTIONS:
 			$error = json_last_error();
 
 			if ($error !== JSON_ERROR_NONE) {
-				var_dump($error);
 				echo "Syntax error: {$path}\n";
-				continue;
+				// continue;
+				exit;
 			}
 
 			foreach ($charsets as $charset) {
