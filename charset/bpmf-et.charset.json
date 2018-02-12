@@ -1,5 +1,40 @@
 [
     {
+        "name": "bpmf-et26",
+        "description": "注音-倚天26鍵盤",
+        "charsets":
+        [
+            "[Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ]",
+            "[A:ㄚ][S:ㄙ][D:ㄉ˙][F:ㄈˊ][G:ㄐㄓ][H:ㄏㄦ][J:ㄖˇ][K:ㄎˋ][L:ㄌㄥ]",
+            "[shift][Z:ㄠ][X:ㄨ][C:ㄒㄕ][V:ㄍㄑ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "bpmf-et26-pad",
+        "description": "注音-倚天26鍵盤",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][-][=]",
+            "[Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ][del]",
+            "[dummy:2][A:ㄚ][S:ㄙ][D:ㄉ˙][F:ㄈˊ][G:ㄐㄓ][H:ㄏㄦ][J:ㄖˇ][K:ㄎˋ][L:ㄌㄥ][return]",
+            "[shift][Z:ㄠ][X:ㄨ][C:ㄒㄕ][V:ㄍㄑ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "bpmf-et26-fullsize",
+        "description": "注音-倚天26鍵盤",
+        "charsets":
+        [
+            "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
+            "[tab][Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ][[][]][\\]",
+            "[capslock][A:ㄚ][S:ㄙ][D:ㄉ˙][F:ㄈˊ][G:ㄐㄓ][H:ㄏㄦ][J:ㄖˇ][K:ㄎˋ][L:ㄌㄥ][;]['][return]",
+            "[shift][Z:ㄠ][X:ㄨ][C:ㄒㄕ][V:ㄍㄑ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][,][.][/][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
         "name": "bpmf-et41",
         "description": "注音-倚天41鍵盤",
         "charsets":
@@ -35,6 +70,4 @@
             "[next][globe][space][next][dismiss]"
         ]
     }
-
 ]
-
