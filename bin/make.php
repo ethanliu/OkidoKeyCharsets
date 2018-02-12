@@ -273,6 +273,7 @@ OPTIONS:
 					echo "Skipped, charset already exists. {$path} [{$name}]\n";
 					continue;
 				}
+				echo "{$charset->name}\n";
 				unset($charset->name);
 				$contents['charsets'][$name] = $charset;
 			}
