@@ -18,6 +18,8 @@ class Builder {
 		'klingon.cin',
 		'bpmf_punctuation.cin',
 		'bpmf-symbol.cin',
+		'bpmf-cns.cin',
+		'CnsPhonetic2016-08_GCINv2.cin',
 		'egyptian.cin',
 		'esperanto.cin',
 		'kk.cin',
