@@ -47,6 +47,17 @@
         ]
     },
     {
+        "name": "symbol3",
+        "description": "符號鍵盤2(4)",
+        "charsets":
+        [
+            "[[][]][{][}][#][%][^][*][+][=]",
+            "[_][\\][|][~][<][>][€][£][¥][•]",
+            "[shift][.][,][?][!]['][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
         "name": "symbol2-pad",
         "description": "符號鍵盤(4)",
         "charsets":
@@ -54,6 +65,17 @@
             "[1][2][3][4][5][6][7][8][9][0][del]",
             "[@][#][$][&][*][(][)][,][\"][return]",
             "[shift][%][-][+][=][/][;][:][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "symbol3-pad",
+        "description": "符號鍵盤2(4)",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][del]",
+            "[€][£][¥][_][^][[][]][{][}][return]",
+            "[shift][§][|][~][...][\\][<][>][!][?][shift]",
             "[next][globe][space][next][dismiss]"
         ]
     }
