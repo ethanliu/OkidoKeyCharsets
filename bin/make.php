@@ -85,6 +85,7 @@ class Builder {
 			}
 			if (isset($argv['d'])) {
 				$invalid = false;
+				//isset($argv['s']
 				self::databases();
 			}
 
@@ -375,8 +376,13 @@ OPTIONS:
 
 	}
 
-	private function databases() {
+	private function databases($skipSC = false) {
 		echo "Generate Database\n\n";
+		// $skipSC = true;
+		$words = [];
+		if ($skipSC) {
+			$words = include(dirname(__FILE__) . "/words.php");
+		}
 
 		$propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
 		$mapNames = ["%keyname", "%chardef"];
@@ -472,9 +478,13 @@ OPTIONS:
 					continue;
 				}
 
-
 				$key = trim($rows[0]);
 				$value = trim($rows[1]);
+
+				if ($skipSC && in_array($value, $words)) {
+					// echo "skip: {$value}\n";
+					continue;
+				}
 
 				if (in_array($key, $propertyNames)) {
 					$_key = str_replace('%', '', $key);
@@ -612,10 +622,10 @@ OPTIONS:
 				$db->exec("COMMIT TRANSACTION");
 			}
 
+			$db->exec('vacuum;');
 			$db->close();
 
 			// $db->open();
-			// $db->exec('vacuum;');
 
 			echo "[done]\n";
 			// exit;
