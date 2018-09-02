@@ -4,12 +4,45 @@
         "description": "keypad",
         "charsets":
         [
-            "[1][2:ABC][3:DEF]",
+            "[1:QZ][2:ABC][3:DEF]",
             "[4:GHI][5:JKL][6:MNO]",
-            "[7:PQRS][8:TUV][9:WXYZ]",
+            "[7:PRS][8:TUV][9:WXY]",
             "[,][0:+][.]",
-            "[next][shift][globe][space][del][return]"
+            "[next][globe][space][del][return]"
         ]
+    },
+    {
+        "name": "keypad-test-flick",
+        "description": "keypad-test-flick",
+        "charsets":
+        [
+            "[b][c][d][f][del]",
+            "[g][h][j][k][return]",
+            "[l][m][n][p][q]",
+            "[r][s][t][v][w]",
+            "[next][globe][space][shift][,]"
+        ],
+        "flicks": {
+            "b": {"down": "a", "up": ""},
+            "c": {"down": "e", "up": ""},
+            "d": {"down": "i", "up": ""},
+            "f": {"down": "o", "up": ""},
+            "g": {"down": "u", "up": ""},
+            "h": {"down": "x", "up": ""},
+            "j": {"down": "y", "up": ""},
+            "k": {"down": "z", "up": ""},
+            "l": {"down": "1", "up": ""},
+            "m": {"down": "2", "up": ""},
+            "n": {"down": "3", "up": ""},
+            "p": {"down": "4", "up": ""},
+            "q": {"down": "5", "up": ""},
+            "r": {"down": "6", "up": ""},
+            "s": {"down": "7", "up": ""},
+            "t": {"down": "8", "up": ""},
+            "v": {"down": "9", "up": ""},
+            "w": {"down": "0", "up": ""},
+            ",": {"down": "", "up": "."}
+        }
     },
     {
         "name": "keypad-pad",
