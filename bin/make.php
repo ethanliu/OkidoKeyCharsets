@@ -400,7 +400,7 @@ OPTIONS:
 				continue;
 			}
 
-			if (strpos($filename, "array") !== false && strpos($filename, "array10") === false) {
+			if (strpos($filename, "array30") !== false) {
 				$isArray = true;
 			}
 			else {
