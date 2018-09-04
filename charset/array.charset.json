@@ -40,10 +40,10 @@
         "description": "行列(滑動鍵盤)",
         "charsets":
         [
-            "[(][1:QAZ][2:WSX][3:EDC][del]",
-            "[)][4:RFV][5:TGB][6:YHN][⇡*]",
-            "[，][7:UJM][8:IK,][9:OL.][–*]",
-            "[。][,][0:P;/][.][⇣*]",
+            "[+][1:QAZ][2:WSX][3:EDC][del]",
+            "[-][4:RFV][5:TGB][6:YHN][⇡*]",
+            "[。][7:UJM][8:IK,][9:OL.][–*]",
+            "[，][,][0:P;/][.][⇣*]",
             "[next][globe][space][w*:w][return]"
         ],
         "flicks": {
@@ -56,7 +56,9 @@
             "7": {"down": "7⇣", "up": "7⇡"},
             "8": {"down": "8⇣", "up": "8⇡"},
             "9": {"down": "9⇣", "up": "9⇡"},
-            "0": {"down": "0⇣", "up": "0⇡"}
+            "0": {"down": "0⇣", "up": "0⇡"},
+            "+": {"down": "("},
+            "-": {"down": ")"}
         }
     },
     {
@@ -65,26 +67,14 @@
         "charsets":
         [
             "[w*:w][1:QAZ][2:WSX][3:EDC][del]",
-            "[⇡*][4:RFV][5:TGB][6:YHN][，]",
-            "[⇣*][7:UJM][8:IK,][9:OL.][。]",
+            "[+][4:RFV][5:TGB][6:YHN][，]",
+            "[-][7:UJM][8:IK,][9:OL.][。]",
             "[globe][,][0:P;/][.][space]",
             "[next][⇡*][–*][⇣*][return]"
         ]
     },
     {
-        "name": "array-position2-choco",
-        "description": "行列(方向鍵2)",
-        "charsets":
-        [
-            "[del][1:QAZ][2:WSX][3:EDC]",
-            "[globe][4:RFV][5:TGB][6:YHN]",
-            "[space][7:UJM][8:IK,][9:OL.]",
-            "[return][,][0:P;/][.]",
-            "[next][⇡*][–*][⇣*]"
-        ]
-    },
-    {
-        "name": "array10a",
+        "name": "array10-choco",
         "description": "行列10",
         "charsets":
         [
