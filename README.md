@@ -33,8 +33,9 @@ Each key format is wrapping by `[]` and use `:` as separator.  For example `[1:ã
 
 Charset separates into 3 categories:
 
-name has `-pad` suffix: regular layout for iPad, without tab, capslock keys in general.  
+name has `-pad` suffix: regular layout for iPad, without tab, capslock keys in general  
 name has `-fullsize` suffix: full size keyboard layout brought by iPad Pro 12.9  
+name has `-choco` suffix: telephone keypad layout (chocolate), every key in the keyboard is the same size  
 name without any suffix: regular layout for iPhone  
 
 ### Reserved keys
