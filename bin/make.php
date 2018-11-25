@@ -13,17 +13,19 @@
 class Builder {
 	private static $shared;
 	private static $excludeDatables = [
-		'array30_OkidoKey-big_0.75.cin',
 		'array30.cin',
-		'klingon.cin',
-		'bpmf_punctuation.cin',
-		'bpmf-symbol.cin',
+		'array30_OkidoKey-big_0.75.cin',
 		'bpmf-cns.cin',
+		'bpmf-symbol.cin',
+		'bpmf_punctuation.cin',
+		'cj-ext.cin',
+		'cj-wildcard.cin',
 		'CnsPhonetic2016-08_GCINv2.cin',
 		'egyptian.cin',
 		'esperanto.cin',
 		'kk.cin',
 		'kks.cin',
+		'klingon.cin',
 		'morse.cin',
 		'telecode.cin',
 	];
