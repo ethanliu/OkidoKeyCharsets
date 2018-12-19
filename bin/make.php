@@ -13,7 +13,7 @@
 class Builder {
 	private static $shared;
 	private static $excludeDatables = [
-		'array30.cin',
+		// 'array30.cin',
 		'array30_OkidoKey-big_0.75.cin',
 		'bpmf-cns.cin',
 		'bpmf-symbol.cin',
