@@ -1,14 +1,15 @@
 <?php
 /**
- * builder command line
+ * builder - cli
  *
  * @author Ethan Liu <ethan@creativecrap.com>
  * @copyright Creativecrap.com
- * @package default
  */
 
 // error_reporting(0);
 // ini_set("error_reporting", FALSE);
+
+include __DIR__ . "/database.php";
 
 class Builder {
 	private static $shared;
@@ -43,7 +44,7 @@ class Builder {
 	}
 
 	public static function run() {
-		$argv = getopt("tdkx:");
+		$argv = getopt("tdkmx:");
 		// var_dump($argv);
 		// var_dump($_SERVER['argv']);
 
@@ -79,16 +80,20 @@ class Builder {
 
 			if (isset($argv['k'])) {
 				$invalid = false;
-				self::keyboardLayouts();
+				self::generateKeyboardLayouts();
 			}
 			if (isset($argv['t'])) {
 				$invalid = false;
-				self::dataTables();
+				self::generateDataTables();
 			}
 			if (isset($argv['d'])) {
 				$invalid = false;
 				//isset($argv['s']
-				self::databases();
+				self::buildTableDatabase();
+			}
+			if (isset($argv['m'])) {
+				$invalid = false;
+				self::buildLexiconDatabase();
 			}
 
 			if ($invalid) {
@@ -129,39 +134,19 @@ OPTIONS:
 	// database
 
 	function getChardefId($db, $value, $suffix = "") {
-		$query = "SELECT rowid FROM chardef{$suffix} WHERE char = ?";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $value, SQLITE3_TEXT);
-		$result = $st->execute();
-		$rows = $result->fetchArray(SQLITE3_ASSOC);
-
-		$id = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
-		return $id;
+		return $db->getOne("SELECT rowid FROM chardef{$suffix} WHERE char = :value", [":value" => $value]) ?? 0;
 	}
 
 	function getKeydefId($db, $value, $suffix = "") {
-		$query = "SELECT rowid FROM keydef{$suffix} WHERE key = ?";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $value, SQLITE3_TEXT);
-		$result = $st->execute();
-		$rows = $result->fetchArray(SQLITE3_ASSOC);
-
-		$id = ($rows && $rows["rowid"]) ? $rows["rowid"] : 0;
-		return $id;
+		return $db->getOne("SELECT rowid FROM keydef{$suffix} WHERE key = :value", [":value" => $value]) ?? 0;
 	}
 
 	function addChardef($db, $value, $suffix = "") {
-		$query = "INSERT INTO chardef{$suffix} (`char`) VALUES (?)";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $value, SQLITE3_TEXT);
-		$st->execute();
+		$db->exec("INSERT INTO chardef{$suffix} (`char`) VALUES (:value)", [":value" => $value]);
 	}
 
 	function addKeydef($db, $value, $suffix = "") {
-		$query = "INSERT INTO keydef{$suffix} (`key`) VALUES (?)";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $value, SQLITE3_TEXT);
-		$st->execute();
+		$db->exec("INSERT INTO keydef{$suffix} (`key`) VALUES (:value)", [":value" => $value]);
 	}
 
 	function addEntry($db, $key_id, $char_id, $suffix = "") {
@@ -169,29 +154,15 @@ OPTIONS:
 			return false;
 		}
 
-		$query = "INSERT INTO entry{$suffix} (`keydef{$suffix}_id`, `chardef_id`) VALUES (?, ?)";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $key_id, SQLITE3_INTEGER);
-		$st->bindParam(2, $char_id, SQLITE3_INTEGER);
-		$st->execute();
+		$db->exec("INSERT INTO entry{$suffix} (`keydef{$suffix}_id`, `chardef_id`) VALUES (:v1, :v2)", [":v1" => $key_id, ":v2" => $char_id]);
 	}
 
 	function addInfo($db, $name, $value) {
-		$query = "INSERT OR IGNORE INTO info (`name`, `value`) VALUES (?, ?)";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $name, SQLITE3_TEXT);
-		$st->bindParam(2, $value, SQLITE3_TEXT);
-		$st->execute();
-		// echo "\n{$query} {$_key} {$value}";
+		$db->exec("INSERT OR IGNORE INTO info (`name`, `value`) VALUES (:name, :value)", [":name" => $name, ":value" => $value]);
 	}
 
 	function addKeyname($db, $key, $value) {
-		$query = "INSERT OR IGNORE INTO keyname (`key`, `value`) VALUES (?, ?);";
-		$st = $db->prepare($query);
-		$st->bindParam(1, $key, SQLITE3_TEXT);
-		$st->bindParam(2, $value, SQLITE3_TEXT);
-		$st->execute();
-		// echo "\n{$query} {$key} {$value}";
+		$db->exec("INSERT OR IGNORE INTO keyname (`key`, `value`) VALUES (:key, :value)", [":key" => $key, ":value" => $value]);
 	}
 
 	// utilities
@@ -245,7 +216,7 @@ OPTIONS:
 
 	// interface
 
-	private function keyboardLayouts() {
+	private function generateKeyboardLayouts() {
 		echo "Generate KeyboardLayouts.json\n\n";
 
 		$destinationPath = self::$baseDir . "KeyboardLayouts.json";
@@ -290,7 +261,7 @@ OPTIONS:
 		echo "...version: {$contents['version']}\n\n";
 	}
 
-	private function dataTables() {
+	private function generateDataTables() {
 		echo "Generate DataTables.json\n\n";
 
 		$destinationPath = self::$baseDir . "DataTables.json";
@@ -378,7 +349,7 @@ OPTIONS:
 
 	}
 
-	private function databases($skipSC = false) {
+	private function buildTableDatabase($skipSC = false) {
 		echo "Generate Database\n\n";
 		// $skipSC = true;
 		$words = [];
@@ -416,39 +387,24 @@ OPTIONS:
 			}
 			// @unlink($output);
 
-			try {
-				$db = new SQLite3($output);
-			} catch (Exception $e) {
-				echo $e->getmessage();
-				exit;
-			}
+			$db = new Database($output);
+			$db->exec("PRAGMA synchronous = OFF");
+			$db->exec("PRAGMA journal_mode = MEMORY");
 
 			echo "{$filename} -> " . basename($output) . "...";
 
-			$query = "CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '');";
-			$db->exec($query);
-			$query = "CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '');";
-			$db->exec($query);
-			$query = "CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL);";
-			$db->exec($query);
-			$query = "CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL);";
-			$db->exec($query);
-			$query = "CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL);";
-			$db->exec($query);
+			$db->exec("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')");
+			$db->exec("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')");
+			$db->exec("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)");
+			$db->exec("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)");
+			$db->exec("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
 
 			if ($isArray) {
-				$query = "CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)";
-				$db->exec($query);
-				$query = "CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)";
-				$db->exec($query);
-				$query = "CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)";
-				$db->exec($query);
-				$query = "CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)";
-				$db->exec($query);
+				$db->exec("CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)");
+				$db->exec("CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)");
+				$db->exec("CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
+				$db->exec("CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
 			}
-
-			$db->exec("PRAGMA synchronous = OFF");
-			$db->exec("PRAGMA journal_mode = MEMORY");
 
 			$section = '';
 			$contents = explode("\n", file_get_contents($path));
@@ -636,6 +592,57 @@ OPTIONS:
 		echo "\n";
 	}
 
+	function buildLexiconDatabase() {
+		echo "Build Lexicon Database\n\n";
+
+		$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
+		foreach ($filenames as $path) {
+			$filename = basename($path);
+			$output = self::$baseDir . "db/lexicon-{$filename}.db";
+			if (file_exists($output)) {
+				echo "{$filename} -> [exists]\n";
+				continue;
+			}
+			// @unlink($output);
+
+			echo "{$filename} -> " . basename($output) . "...";
+
+			$db = new Database($output);
+			$db->exec("PRAGMA synchronous = OFF");
+			$db->exec("PRAGMA journal_mode = MEMORY");
+
+	        $db->exec("CREATE TABLE IF NOT EXISTS pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)");
+	        $db->exec("CREATE TABLE IF NOT EXISTS lexicon (`phrase` CHAR(255) UNIQUE NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0)");
+
+			$db->exec("BEGIN TRANSACTION");
+
+			$contents = explode("\n", file_get_contents($path));
+			foreach ($contents as $row) {
+				$items = explode("\t", $row);
+				$phrase = isset($items[0]) ? trim($items[0]) : "";
+				$weight = isset($items[1]) ? intval($items[1]) : 0;
+				$pinyin = isset($items[2]) ? trim($items[2]) : "";
+				$pinyin_id = 0;
+
+				if (!empty($pinyin)) {
+					$db->exec("INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)", [":pinyin" => $pinyin]);
+				}
+
+				$pinyin_id = $db->getOne("SELECT rowid FROM pinyin WHERE pinyin = :pinyin", [":pinyin" => $pinyin]) ?? 0;
+	            $db->exec("INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin_id) VALUES (:phrase, :weight, :pinyin_id)", [":phrase" => $phrase, ":weight" => $weight, ":pinyin_id" => $pinyin_id]);
+			}
+
+			$db->exec("COMMIT TRANSACTION");
+			$db->exec('vacuum;');
+			$db->close();
+
+			echo "[done]\n";
+		}
+
+		echo "\n";
+	}
+
+
 	private function tiny($src, $level = 0) {
 		include_once dirname(__FILE__) . "/portable-utf8.php";
 		// echo "Tiny {$src} by level: {$level}\n";
@@ -719,6 +726,7 @@ OPTIONS:
 
 
 	}
+
 
 }
 
