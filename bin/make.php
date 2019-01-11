@@ -17,18 +17,20 @@ class Builder {
 		// 'array30.cin',
 		'array30_OkidoKey-big_0.75.cin',
 		'bpmf-cns.cin',
+		'bpmf-ext.cin',
 		'bpmf-symbol.cin',
 		'bpmf_punctuation.cin',
 		'cj-ext.cin',
 		'cj-wildcard.cin',
 		'CnsPhonetic2016-08_GCINv2.cin',
 		'egyptian.cin',
+		'ehq-symbols.cin',
 		'esperanto.cin',
 		'kk.cin',
-		'kks.cin',
 		'klingon.cin',
+		'simplex-ext.cin',
 		'morse.cin',
-		'telecode.cin',
+		// 'telecode.cin',
 	];
 	private static $baseDir = "";
 
@@ -119,7 +121,8 @@ SYNOPSIS
 OPTIONS:
 	-k	Generate KeyboardLayouts.json
 	-t	Generate DataTables.json
-	-d	Generate Databases
+	-d	Build Data Table Databases
+	-m	Build Lexicon Databases
 
 	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
 			level 0: strip all blocks (default)
