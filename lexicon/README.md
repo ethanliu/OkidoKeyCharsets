@@ -13,5 +13,5 @@ MoE-Revised.csv - 教育部《重編國語辭典 修訂本》，版本編號：2
 
 ### Resources
 
-https://resources.publicense.moe.edu.tw
-https://github.com/openvanilla/McBopomofo/tree/master/Source/Data
+https://resources.publicense.moe.edu.tw  
+https://github.com/openvanilla/McBopomofo/tree/master/Source/Data  
