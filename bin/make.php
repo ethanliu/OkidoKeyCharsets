@@ -10,6 +10,7 @@
 // ini_set("error_reporting", FALSE);
 
 include __DIR__ . "/database.php";
+include __DIR__ . "/EmojiReader.php";
 
 class Builder {
 	private static $shared;
@@ -46,7 +47,7 @@ class Builder {
 	}
 
 	public static function run() {
-		$argv = getopt("tdkmx:");
+		$argv = getopt("tdkmex:");
 		// var_dump($argv);
 		// var_dump($_SERVER['argv']);
 
@@ -90,12 +91,15 @@ class Builder {
 			}
 			if (isset($argv['d'])) {
 				$invalid = false;
-				//isset($argv['s']
 				self::buildTableDatabase();
 			}
 			if (isset($argv['m'])) {
 				$invalid = false;
 				self::buildLexiconDatabase();
+			}
+			if (isset($argv['e'])) {
+				$invalid = false;
+				self::buildEmojiDatabase();
 			}
 
 			if ($invalid) {
@@ -123,6 +127,7 @@ OPTIONS:
 	-t	Generate DataTables.json
 	-d	Build Data Table Databases
 	-m	Build Lexicon Databases
+	-e	Build Emoji Databases
 
 	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
 			level 0: strip all blocks (default)
@@ -643,6 +648,28 @@ OPTIONS:
 		}
 
 		echo "\n";
+	}
+
+	function buildEmojiDatabase() {
+		echo "Build Emoji Database\n\n";
+		// pull
+		$url = "https://unicode.org/emoji/charts/emoji-list.html";
+
+		if (!file_exists(self::$baseDir . "/tmp/emoji-list.txt")) {
+			$contents = file_get_contents($url);
+			$contents = strip_tags($contents);
+			file_put_contents(self::$baseDir . "/tmp/emoji-list.txt", $contents);
+		}
+
+		$reader = new Reader();
+		$reader->listPath = self::$baseDir . "/tmp/emoji-list.txt";
+		// $reader->jsonPath = self::$baseDir . "/tmp/emoji-list.json";
+		$reader->dbPath = self::$baseDir . "/tmp/emoji.db";
+		// $reader->test = 100;
+		$reader->parse();
+		$reader->build();
+
+		echo "[done]\n\n";
 	}
 
 
