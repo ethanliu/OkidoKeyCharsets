@@ -31,7 +31,14 @@
 include __DIR__ . "/portable-utf8.php";
 
 class Builder {
-	var $openDataBasePath = __DIR__ . "/../tmp/Open_Data/";
+	var $cnsPhoneticPath = __DIR__ . "/../tmp/Open_Data/Properties/CNS_phonetic.txt";
+	var $cnsUnicodeBmpPath = __DIR__ . "/../tmp/Open_Data/MapingTables/Unicode/CNS2UNICODE_Unicode BMP.txt";
+	var $cnsUnicode2Path = __DIR__ . "/../tmp/Open_Data/MapingTables/Unicode/CNS2UNICODE_Unicode 2.txt";
+	var $cnsUnicode15Path = __DIR__ . "/../tmp/Open_Data/MapingTables/Unicode/CNS2UNICODE_Unicode 15.txt";
+
+	var $includeSymbol = false;
+
+	var $orders = ["radical", "common", "1", "q", "a", "z", "2", "w", "s", "x", "3", "e", "d", "c", "4", "r", "f", "v", "5", "t", "g", "b", "6", "y", "h", "n", "7", "u", "j", "m", "8", "i", "k", ",", "9", "o", "l", ".", "0", "p", ";", "/", "-", "symbol"];
 
 	var $symbols = [
 		"。" => "`.",
@@ -63,12 +70,23 @@ class Builder {
 
 	function main() {
 
+		$commonWords = include __DIR__ . "/words-common.php";
 		$keydef = $this->getKeydef();
 		$version = date("Y/m/d H:i:s", time());
 
 		$tmp = [];
+		$tmp["common"] = [];
+		$tmp["radical"] = [];
+		$tmp["symbol"] = [];
+
 		$data = "# version: {$version}
 # 本注音表格資料來源取自全字庫中文標準交換碼 https://www.cns11643.gov.tw
+# 不包含未能賦予注音的字元，如標點符號、日文、藏文等等字元，
+# 並以字根、常用字，注音順序、符號 (若包含) 順序重新排序。
+#
+# 本資料「常用字」欄係指民國 71 年 9 月 1 日教育部公告的「常用國字標準字體表」所收錄之常用字。
+# 如：一、丁、七、三、下、丈、上等等，共計 4808 個常用字。
+#
 %gen_inp
 %ename\tPhoneticCNS
 %cname\t全字庫注音
@@ -92,13 +110,18 @@ class Builder {
 
 				if (!isset($phonetic[$code])) {
 					// $char .= "\t{$code}";
-					// $tmp["symbol"][] = ",,\t{$char}";
+					if ($this->includeSymbol) {
+						$tmp["symbol"][] = ",,\t{$char}";
+					}
 				}
 				else {
-					// var_dump($phonetic[$code]);exit;
+					$isCommonWord = in_array($char, $commonWords) ? true : false;
 					foreach ($phonetic[$code] as $bpmf) {
 						$chardef = $this->toChardef($bpmf, $keydef);
-						$key = mb_substr($chardef, 0, 1);
+						$key = $isCommonWord ? "common" : mb_substr($chardef, 0, 1);
+						// if ($isCommonWord) {
+						// 	echo "{$chardef}\t{$bpmf}\t{$char}\n";
+						// }
 
 						if (!isset($tmp[$key])) {
 							$tmp[$key] = [];
@@ -110,16 +133,9 @@ class Builder {
 				}
 			}
 
-			// if ($code == "3-313A") {
-			// 	echo "fin";
-			// 	// exit;
-			// 	break;
-			// }
 		}
 
-		$orders = ["radical", "1", "q", "a", "z", "2", "w", "s", "x", "3", "e", "d", "c", "4", "r", "f", "v", "5", "t", "g", "b", "6", "y", "h", "n", "7", "u", "j", "m", "8", "i", "k", ",", "9", "o", "l", ".", "0", "p", ";", "/", "-", "symbol"];
-
-		foreach ($orders as $key) {
+		foreach ($this->orders as $key) {
 			if (!isset($tmp[$key])) {
 				continue;
 			}
@@ -132,14 +148,10 @@ class Builder {
 	}
 
 	function getData($phonetic = true) {
-		$cnsPhoneticPath = $this->openDataBasePath . "Properties/CNS_phonetic.txt";
-		$cnsUnicodeBmpPath = $this->openDataBasePath . "MapingTables/Unicode/CNS2UNICODE_Unicode BMP.txt";
-		$cnsUnicode2Path = $this->openDataBasePath . "MapingTables/Unicode/CNS2UNICODE_Unicode 2.txt";
-		$cnsUnicode15Path = $this->openDataBasePath . "MapingTables/Unicode/CNS2UNICODE_Unicode 15.txt";
 
 		$data = [];
 		if ($phonetic) {
-			$contents = explode("\n", file_get_contents($cnsPhoneticPath));
+			$contents = explode("\n", file_get_contents($this->cnsPhoneticPath));
 			foreach ($contents as $line) {
 				$items = explode("\t", $line);
 				$items[0] = trim($items[0]);
@@ -154,7 +166,7 @@ class Builder {
 			}
 		}
 		else {
-			$paths = [$cnsUnicodeBmpPath, $cnsUnicode2Path, $cnsUnicode15Path];
+			$paths = [$this->cnsUnicodeBmpPath, $this->cnsUnicode2Path, $this->cnsUnicode15Path];
 			foreach ($paths as $path) {
 				$contents = explode("\n", file_get_contents($path));
 				foreach ($contents as $line) {
