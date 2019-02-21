@@ -68,6 +68,8 @@ A few reserved combinations represent special keys.
     	-k	Generate KeyboardLayouts.json
     	-t	Generate DataTables.json
     	-d	Generate Databases
+    	-m	Build Lexicon Databases
+    	-e	Build Emoji Databases
 
     	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
         			level 0: strip all blocks (default)
