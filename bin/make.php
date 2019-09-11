@@ -603,15 +603,28 @@ OPTIONS:
 	function buildLexiconDatabase() {
 		echo "Build Lexicon Database\n\n";
 
+		// load accents
+		$accents = [];
+		$contents = explode("\n", file_get_contents("lexicon/accents.txt"));
+		foreach ($contents as $row) {
+			$items = explode("\t", $row);
+			$phrase = isset($items[0]) ? trim($items[0]) : "";
+			$pinyin = isset($items[1]) ? trim($items[1]) : "";
+			if (empty($phrase) || empty($pinyin)) {
+				continue;
+			}
+			$accents[$phrase][] = strtolower($pinyin);
+		}
+
 		$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
 		foreach ($filenames as $path) {
 			$filename = basename($path);
 			$output = self::$baseDir . "db/lexicon-{$filename}.db";
+			// @unlink($output);
 			if (file_exists($output)) {
 				echo "{$filename} -> [exists]\n";
 				continue;
 			}
-			// @unlink($output);
 
 			echo "{$filename} -> " . basename($output) . "...";
 
@@ -631,6 +644,17 @@ OPTIONS:
 				$weight = isset($items[1]) ? intval($items[1]) : 0;
 				$pinyin = isset($items[2]) ? trim($items[2]) : "";
 				$pinyin_id = 0;
+
+				if (isset($accents[$phrase])) {
+					foreach ($accents[$phrase] as $p) {
+						if (strcmp($pinyin, $p) !== 0) {
+							// echo "change: {$phrase} {$pinyin} -> {$p}\n";
+							$pinyin = $p;
+							break;
+						}
+					}
+				}
+
 
 				if (!empty($pinyin)) {
 					$db->exec("INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)", [":pinyin" => $pinyin]);
