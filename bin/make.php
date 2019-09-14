@@ -603,9 +603,9 @@ OPTIONS:
 	function buildLexiconDatabase() {
 		echo "Build Lexicon Database\n\n";
 
-		// load accents
-		$accents = [];
-		$contents = explode("\n", file_get_contents("lexicon/accents.txt"));
+		// load pronunciation
+		$pronunciation = [];
+		$contents = explode("\n", file_get_contents("lexicon/pronunciation.txt"));
 		foreach ($contents as $row) {
 			$items = explode("\t", $row);
 			$phrase = isset($items[0]) ? trim($items[0]) : "";
@@ -613,7 +613,7 @@ OPTIONS:
 			if (empty($phrase) || empty($pinyin)) {
 				continue;
 			}
-			$accents[$phrase][] = strtolower($pinyin);
+			$pronunciation[$phrase][] = strtolower($pinyin);
 		}
 
 		$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
@@ -645,8 +645,8 @@ OPTIONS:
 				$pinyin = isset($items[2]) ? trim($items[2]) : "";
 				$pinyin_id = 0;
 
-				if (isset($accents[$phrase])) {
-					foreach ($accents[$phrase] as $p) {
+				if (isset($pronunciation[$phrase])) {
+					foreach ($pronunciation[$phrase] as $p) {
 						if (strcmp($pinyin, $p) !== 0) {
 							// echo "change: {$phrase} {$pinyin} -> {$p}\n";
 							$pinyin = $p;
