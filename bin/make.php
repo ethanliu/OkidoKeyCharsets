@@ -215,7 +215,7 @@ OPTIONS:
 		return $type;
 	}
 
-	function stripComments($string) {
+	private static function stripComments($string) {
 		$pattern = '/(.*)(#.*)/';
 		$replacement = '\1';
 		return trim(preg_replace($pattern, $replacement, $string));
@@ -224,7 +224,7 @@ OPTIONS:
 
 	// interface
 
-	private function generateKeyboardLayouts() {
+	private static function generateKeyboardLayouts() {
 		echo "Generate KeyboardLayouts.json\n\n";
 
 		$destinationPath = self::$baseDir . "KeyboardLayouts.json";
@@ -269,7 +269,7 @@ OPTIONS:
 		echo "...version: {$contents['version']}\n\n";
 	}
 
-	private function generateDataTables() {
+	private static function generateDataTables() {
 		echo "Generate DataTables.json\n\n";
 
 		$destinationPath = self::$baseDir . "DataTables.json";
@@ -357,7 +357,7 @@ OPTIONS:
 
 	}
 
-	private function buildTableDatabase($skipSC = false) {
+	private static function buildTableDatabase($skipSC = false) {
 		echo "Generate Database\n\n";
 		// $skipSC = true;
 		$words = [];
@@ -600,7 +600,7 @@ OPTIONS:
 		echo "\n";
 	}
 
-	function buildLexiconDatabase() {
+	private static function buildLexiconDatabase() {
 		echo "Build Lexicon Database\n\n";
 
 		// load pronunciation
@@ -674,7 +674,7 @@ OPTIONS:
 		echo "\n";
 	}
 
-	function buildEmojiDatabase() {
+	private static function buildEmojiDatabase() {
 		echo "Build Emoji Database\n\n";
 		// pull
 		$url = "https://unicode.org/emoji/charts/emoji-list.html";
