@@ -90,6 +90,30 @@
         ]
     },
     {
+        "name": "array10-layout2-choco",
+        "description": "行列10",
+        "charsets":
+        [
+            "[next][1:QAZ][2:WSX][3:EDC][del]",
+            "[(][4:RFV][5:TGB][6:YHN][：]",
+            "[\"][7:UJM][8:IK,][9:OL.][？]",
+            "[，][,][0:P;/][.][。]",
+            "[globe][space][return]"
+        ]
+    },
+    {
+        "name": "array10-symbol2-choco",
+        "description": "行列10符號鍵盤",
+        "charsets":
+        [
+            "[next][，][。][？][del]",
+            "[；][：][、][“][…]",
+            "[（][「][『][《][【]",
+            "[〈][．][ー][～][﹏]",
+            "[globe][space][return]"
+        ]
+    },
+    {
         "name": "array10-pad",
         "description": "行列10",
         "charsets":
