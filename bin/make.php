@@ -645,6 +645,11 @@ OPTIONS:
 				$pinyin = isset($items[2]) ? trim($items[2]) : "";
 				$pinyin_id = 0;
 
+				if (mb_strlen($phrase) <= 1) {
+					// echo "[ignore_short] {$phrase}\n";
+					continue;
+				}
+
 				if (isset($pronunciation[$phrase])) {
 					foreach ($pronunciation[$phrase] as $p) {
 						if (strcmp($pinyin, $p) !== 0) {
