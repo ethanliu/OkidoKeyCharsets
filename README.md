@@ -46,6 +46,7 @@ A few reserved combinations represent special keys.
 - `[del]` — backspace key
 - `[dismiss]` — dismiss keyboard for iPad
 - `[dummy]` — Spacing between keys, [dummy] or [dummy:1] for one key width, [dummy:2] for half key width, only 1 or 2 is valid.
+- `[esc]` - escape key
 - `[globe]` — switch to system keyboard
 - `[next]` — switch to next charset in OkidoKey.app keyboards
 - `[return]` — return key
