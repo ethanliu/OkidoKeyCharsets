@@ -1,9 +1,10 @@
 {
-	"version": "1547110594",
+	"version": "1570181277",
 	"resources": [
 		{"name": "教育部《重編國語辭典 修訂本》", "db": "db/lexicon-MoE-Revised.csv.db"},
 		{"name": "教育部《國語辭典簡編本》", "db": "db/lexicon-MoE-concised.csv.db"},
 		{"name": "教育部《成語典》", "db": "db/lexicon-MoE-idioms.csv.db"},
-		{"name": "小麥注音輸入法詞庫", "db": "db/lexicon-McBopomofo-phrase.csv.db"}
+		{"name": "小麥注音輸入法詞庫", "db": "db/lexicon-McBopomofo-phrase.csv.db"},
+		{"name": "结巴中文分词简体词库", "db": "db/lexicon-hans-jieba-dict.csv.db"}
 	]
 }
