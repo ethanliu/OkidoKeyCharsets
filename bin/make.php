@@ -141,23 +141,23 @@ OPTIONS:
 
 	// database
 
-	function getChardefId($db, $value, $suffix = "") {
+	static function getChardefId($db, $value, $suffix = "") {
 		return $db->getOne("SELECT rowid FROM chardef{$suffix} WHERE char = :value", [":value" => $value]) ?? 0;
 	}
 
-	function getKeydefId($db, $value, $suffix = "") {
+	static function getKeydefId($db, $value, $suffix = "") {
 		return $db->getOne("SELECT rowid FROM keydef{$suffix} WHERE key = :value", [":value" => $value]) ?? 0;
 	}
 
-	function addChardef($db, $value, $suffix = "") {
+	static function addChardef($db, $value, $suffix = "") {
 		$db->exec("INSERT INTO chardef{$suffix} (`char`) VALUES (:value)", [":value" => $value]);
 	}
 
-	function addKeydef($db, $value, $suffix = "") {
+	static function addKeydef($db, $value, $suffix = "") {
 		$db->exec("INSERT INTO keydef{$suffix} (`key`) VALUES (:value)", [":value" => $value]);
 	}
 
-	function addEntry($db, $key_id, $char_id, $suffix = "") {
+	static function addEntry($db, $key_id, $char_id, $suffix = "") {
 		if ($key_id < 1 || $char_id < 1) {
 			return false;
 		}
@@ -165,11 +165,11 @@ OPTIONS:
 		$db->exec("INSERT INTO entry{$suffix} (`keydef{$suffix}_id`, `chardef_id`) VALUES (:v1, :v2)", [":v1" => $key_id, ":v2" => $char_id]);
 	}
 
-	function addInfo($db, $name, $value) {
+	static function addInfo($db, $name, $value) {
 		$db->exec("INSERT OR IGNORE INTO info (`name`, `value`) VALUES (:name, :value)", [":name" => $name, ":value" => $value]);
 	}
 
-	function addKeyname($db, $key, $value) {
+	static function addKeyname($db, $key, $value) {
 		$db->exec("INSERT OR IGNORE INTO keyname (`key`, `value`) VALUES (:key, :value)", [":key" => $key, ":value" => $value]);
 	}
 
