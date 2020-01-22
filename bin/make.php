@@ -237,11 +237,15 @@ OPTIONS:
 		);
 
 		foreach ($charsetPaths as $path) {
-			$charsets = json_decode(file_get_contents($path));
+			// $charsets = json_decode(file_get_contents($path));
+			// allows comments inside json
+			$charsets = preg_replace('~//?\s*\*[\s\S]*?\*\s*//?~', '', file_get_contents($path));
+			$charsets = json_decode($charsets);
 			$error = json_last_error();
 
 			if ($error !== JSON_ERROR_NONE) {
-				echo "Syntax error: {$path}\n";
+				echo "Syntax error: {$path}\n" . json_last_error_msg() . "\n";
+				// var_dump($error);
 				// continue;
 				exit;
 			}
