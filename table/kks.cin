@@ -1,7 +1,7 @@
-﻿# 台語羅馬字漢羅詞庫輸入法 KKS-V1.90
+# 台語羅馬字漢羅詞庫輸入法 KKS-V1.90
 %gen_inp
 %ename KKS POJ Hanlo IME
-%cname KKS教羅漢羅輸入法 
+%cname KKS教羅漢羅輸入法
 %tcname KKS教羅漢羅輸入法
 %scname KKS教羅漢羅輸入法
 %encoding UTF-8
