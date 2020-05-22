@@ -72,6 +72,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     daibuun.cin - 普實台文
     dayi3-patched.cin - 大易 (標點符號版)
     dayi3.cin - 大易
+    dayi4.cin - 大易四碼
     ehq-symbols.cin - 漁村符號及日文假名
     freenewcj.cin - 自由大新
     jidianwubi.cin - 极点五笔
