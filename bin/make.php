@@ -27,6 +27,8 @@ class Builder {
 		'egyptian.cin',
 		'ehq-symbols.cin',
 		'esperanto.cin',
+		'jyutping.cin',
+		'jyutping-toneless.cin',
 		'kk.cin',
 		'klingon.cin',
 		'simplex-ext.cin',
