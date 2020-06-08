@@ -7,21 +7,18 @@
     一了百了	0	yilebaile
 
 除了因格式轉換所需的內容變更，另外也排除僅有一個字的字詞  
-來源無拼音資料時，則另產生無調號漢語拼音(CFStringTransform)  
+來源無拼音資料時，則另產生無調號漢語拼音 (CFStringTransform)  
+無另外標識時，為繁體中文字詞  
 
 #### 教育部相關詞典
 刪除部份異體字/缺字的字詞。  
 重編國語辭典則參考酷音詞庫，取其相同字詞的比重。  
 
-#### 结巴中文分词
+#### 结巴中文分词 (簡體)
 保留字詞比重，刪除詞性標記。
 
-#### 開放粵語詞典
-以粵併繁體詞典，刪除國語解釋。
-合併粵典的語料庫x詞表使用頻率做比重。
-
-#### 粵典
-以粵典詞表，取第一個拼音方式，搭配語料庫x詞表使用頻率做為比重。
+#### Rime 粵語拼音方案
+取自 Rime 粵語拼音方案 jyut6ping3.dict.yaml 中的詞彙內容。  
 
 ## Resources
 
@@ -30,8 +27,7 @@ MoE-concised.csv - 教育部《國語辭典簡編本》，版本編號：2014_20
 MoE-idioms.csv - 教育部《成語典》，版本編號：2011_20180517  
 McBopomofo-phrase.csv - 小麥注音輸入法 phrase.occ  
 Jieba-hans.csv - 结巴中文分词 dict.txt  
-kfcd-yp.csv - 開放粵語詞典（粵拼版）cidian_zhyue-ft-kfcd-yp-2019623.txt  
-wordshk.csv - 粵典詞表 2020/05/15 wordslist.json, existingwordcount.json
+Rime-cantonese.csv - Rime 粵語拼音方案，版本: 2020.05.19  
 
 ## License
 
@@ -44,8 +40,6 @@ https://github.com/openvanilla/McBopomofo/tree/master/Source/Data
 结巴中文分词 - MIT  
 https://github.com/fxsjy/jieba  
 
-開放粵語詞典 - CC 3.0  
-http://www.kaifangcidian.com  
+Rime 粵語拼音方案 - CC 4.0  
+https://github.com/rime/rime-cantonese  
 
-粵典詞表 - Public Domain  
-https://words.hk  
