@@ -135,13 +135,13 @@ v v
 w w
 x x
 y y
-z z
+z z" . ($toneless ? "" : "
 1 1
 2 2
 3 3
 4 4
 5 5
-6 6
+6 6") . "
 %keyname end
 %chardef begin
 ";
