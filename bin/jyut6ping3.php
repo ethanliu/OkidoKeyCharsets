@@ -4,6 +4,7 @@
  *
  * https://github.com/rime/rime-cantonese/
  * https://raw.githubusercontent.com/rime/rime-cantonese/blob/master/jyut6ping3.dict.yaml
+ * https://words.hk/faiman/analysis/existingwordcount.json
  *
  * @author Ethan Liu
  * @copyright Creativecrap.com, 3 June, 2020
@@ -11,6 +12,7 @@
 
 
 $src = __DIR__ . "/../tmp/jyut6ping3.dict.yaml";
+$src2 = __DIR__ . "/../tmp/existingwordcount.json";
 
 // table/jyut6ping3.cin
 // table/jyut6ping3-toneless.cin
@@ -21,14 +23,13 @@ if (!file_exists($src)) {
 	exit;
 }
 
-
 $raw = explode("\n", file_get_contents($src));
 $argv = getopt("pt");
 // $stripPhraseSection = isset($argv["p"]) ? true : false;
 // $stripTone = isset($argv["t"]) ? true : false;
 
 if (isset($argv["p"])) {
-	parsePhrase($raw);
+	parsePhrase($raw, $src2);
 }
 else {
 	parseRadical($raw, isset($argv["t"]));
@@ -161,7 +162,9 @@ z z" . ($toneless ? "" : "
 	echo "%chardef end\n";
 }
 
-function parsePhrase($raw) {
+function parsePhrase($raw, $wordcountPath) {
+	$weights = json_decode(file_get_contents($wordcountPath), true);
+
 	$radicals = [];
 	$parsing = false;
 
@@ -187,7 +190,12 @@ function parsePhrase($raw) {
 
 		$phrase = trim($row[0]);
 		$radical = trim(str_replace(" ", "", $row[1]));
+		$radical = str_replace(['1', '2', '3', '4', '5', '6'], '', $radical);
 		$weight = 0;
+
+		if (isset($weights[$phrase])) {
+			$weight = intval($weights[$phrase]) * 1000;
+		}
 
 		echo "{$phrase}\t{$weight}\t{$radical}\n";
 	}
