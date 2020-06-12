@@ -11,28 +11,38 @@
  */
 
 
-$src = __DIR__ . "/../tmp/jyut6ping3.dict.yaml";
-$src2 = __DIR__ . "/../tmp/existingwordcount.json";
+// $srcPath = __DIR__ . "/../tmp/jyut6ping3.dict.yaml";
+// $src2 = __DIR__ . "/../tmp/existingwordcount.json";
+//
+// // table/jyut6ping3.cin
+// // table/jyut6ping3-toneless.cin
+// // lexicon/rime-cantonese.csv
+//
+// // if (!file_exists($srcPath)) {
+// // 	echo "File Not Found";
+// // 	exit;
+// // }
+//
+$raw = explode("\n", file_get_contents($srcPath));
+// $argv = getopt("pt");
+// // $stripPhraseSection = isset($argv["p"]) ? true : false;
+// // $stripTone = isset($argv["t"]) ? true : false;
+//
+// if (isset($argv["p"])) {
+// 	parsePhrase($raw, $src2);
+// }
+// else {
+// 	parseRadical($raw, isset($argv["t"]));
+// }
 
-// table/jyut6ping3.cin
-// table/jyut6ping3-toneless.cin
-// lexicon/rime-cantonese.csv
+// echo $mode . "\n";
+// echo $toneless . "\n";
 
-if (!file_exists($src)) {
-	echo "File Not Found";
-	exit;
+if ($mode == 'radical') {
+	parseRadical($raw, $toneless);
 }
-
-$raw = explode("\n", file_get_contents($src));
-$argv = getopt("pt");
-// $stripPhraseSection = isset($argv["p"]) ? true : false;
-// $stripTone = isset($argv["t"]) ? true : false;
-
-if (isset($argv["p"])) {
-	parsePhrase($raw, $src2);
-}
-else {
-	parseRadical($raw, isset($argv["t"]));
+else if ($mode == 'phrase') {
+	parsePhrase($raw, $toneless);
 }
 
 function parseRadical($raw, $toneless = false) {
@@ -41,6 +51,10 @@ function parseRadical($raw, $toneless = false) {
 
 	$radicals = [];
 	$parsing = false;
+
+	$validations = [];
+	$key = "";
+	$errors = "";
 
 	foreach ($raw as $line) {
 		if ($line === "# 單字音") {
@@ -68,26 +82,31 @@ function parseRadical($raw, $toneless = false) {
 
 		$phrase = trim($row[0]);
 		$radical = trim(str_replace(" ", "", $row[1]));
+		$key = $phrase . "_" . $radical;
+
+		if (isset($validations[$key])) {
+			$errors .= $validations[$key] . "\n";
+		}
+
 		if ($toneless) {
 			$radical = str_replace(['1', '2', '3', '4', '5', '6'], '', $radical);
 		}
 
-		// $weight = intval(str_replace("%", "", ($row[2] ?? "0"))) / 100;
-
-		$weight = 0;
-		if (!isset($row[2])) {
-			$weight = 100;
-		}
-		else {
-			$weight = intval(str_replace("%", "", $row[2])) * 100;
-			$weight = ($weight == 0) ? 10 : $weight;
-		}
+		// some frequency values may not containt % that means high priority, same result as 10000.0%
+		// however 0% belogns to lowest priority
+		$weight = isset($row[2]) ? (($row[2] == "0%") ? 10 : intval(str_replace("%", "", $row[2])) * 100) : 100;
 
 		$radicals[$radical][] = ["r" => $phrase, "w" => $weight];
+		$validations[$key] = $line;
 
 		// if ($index > 30) {
 		// 	break;
 		// }
+	}
+
+	if (!empty($errors)) {
+		echo $errors;
+		exit;
 	}
 
 	// dump
@@ -162,11 +181,15 @@ z z" . ($toneless ? "" : "
 	echo "%chardef end\n";
 }
 
-function parsePhrase($raw, $wordcountPath) {
-	$weights = json_decode(file_get_contents($wordcountPath), true);
-
-	$radicals = [];
+function parsePhrase($raw, $toneless, $wordcountPath = '') {
+	// $weights = json_decode(file_get_contents($wordcountPath), true);
 	$parsing = false;
+	$result = "";
+	// $toneless = true;
+
+	$validations = [];
+	$key = "";
+	$errors = "";
 
 	foreach ($raw as $line) {
 		if ($line === "# 詞彙") {
@@ -190,14 +213,62 @@ function parsePhrase($raw, $wordcountPath) {
 
 		$phrase = trim($row[0]);
 		$radical = trim(str_replace(" ", "", $row[1]));
-		$radical = str_replace(['1', '2', '3', '4', '5', '6'], '', $radical);
-		$weight = 0;
+		$key = $phrase . "_" . $radical;
 
-		if (isset($weights[$phrase])) {
-			$weight = intval($weights[$phrase]) * 1000;
+		if (isset($validations[$key])) {
+			$errors .= $validations[$key] . "\n" . $line . "\n";
+			continue;
 		}
 
-		echo "{$phrase}\t{$weight}\t{$radical}\n";
+		if (!$toneless) {
+			if (preg_match('/[1-6]/', $radical) === false) {
+				$errors .= $line . "\n";
+			}
+		}
+		// if ($toneless) {
+		else {
+			$radical = str_replace(['1', '2', '3', '4', '5', '6'], '', $radical);
+		}
+
+		// follow the same frequency rules
+		$weight = !isset($row[2]) ? 100 : (($row[2] == "0%") ? 10 : intval(str_replace("%", "", $row[2])) * 100);
+
+		// if (isset($weights[$phrase])) {
+		// 	$weight = intval($weights[$phrase]) * 1000;
+		// }
+
+
+		// if ($debug) {
+		// 	// echo $key . "\n";
+		// 	if (isset($check[$key])) {
+		// 		echo $line . "\n";
+		// 	}
+		//
+		// 	// $cond = ($weight < 100);
+		// 	// $cond = ($weight == 100);
+		// 	// $cond = ($weight > 100);
+		// 	// $cond = isset($row[2]);
+		// 	// $cond = (isset($row[2]) && (strpos($row[2], '%') === false));
+		// 	// if ($cond) {
+		// 	// 	// echo "{$phrase}\t{$weight}\t{$radical} => {$line}\n";
+		// 	// 	echo $line . "\n";
+		// 	// }
+		// }
+		// else {
+		// }
+
+		$result .= "{$phrase}\t{$weight}\t{$radical}\n";
+		$validations[$key] = $line;
+
 	}
+
+	if (!empty($errors)) {
+		echo $errors;
+	}
+	else {
+		echo $result;
+	}
+
+
 }
 
