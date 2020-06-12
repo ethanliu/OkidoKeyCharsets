@@ -2,31 +2,20 @@
 echo "Build Lexicon Database\n\n";
 
 // load pronunciation
-$pronunciation = [];
-$contents = explode("\n", file_get_contents("lexicon/pronunciation.txt"));
-foreach ($contents as $row) {
-	$items = explode("\t", $row);
-	$phrase = isset($items[0]) ? trim($items[0]) : "";
-	$pinyin = isset($items[1]) ? trim($items[1]) : "";
-	if (empty($phrase) || empty($pinyin)) {
-		continue;
-	}
-	$pronunciation[$phrase][] = strtolower($pinyin);
-}
+// $pronunciation = [];
+// $contents = explode("\n", file_get_contents("lexicon/pronunciation.txt"));
+// foreach ($contents as $row) {
+// 	$items = explode("\t", $row);
+// 	$phrase = isset($items[0]) ? trim($items[0]) : "";
+// 	$pinyin = isset($items[1]) ? trim($items[1]) : "";
+// 	if (empty($phrase) || empty($pinyin)) {
+// 		continue;
+// 	}
+// 	$pronunciation[$phrase][] = strtolower($pinyin);
+// }
 
-$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
-foreach ($filenames as $path) {
-	$filename = basename($path);
-	$output = self::$baseDir . "db/lexicon-{$filename}.db";
-	// @unlink($output);
-	if (file_exists($output)) {
-		echo "{$filename} -> [exists]\n";
-		continue;
-	}
 
-	echo "{$filename} -> " . basename($output) . "...";
-
-	$db = new Database($output);
+function createDatabase($db, $path) {
 	$db->exec("PRAGMA synchronous = OFF");
 	$db->exec("PRAGMA journal_mode = MEMORY");
 
@@ -48,16 +37,15 @@ foreach ($filenames as $path) {
 			continue;
 		}
 
-		if (isset($pronunciation[$phrase])) {
-			foreach ($pronunciation[$phrase] as $p) {
-				if (strcmp($pinyin, $p) !== 0) {
-					// echo "change: {$phrase} {$pinyin} -> {$p}\n";
-					$pinyin = $p;
-					break;
-				}
-			}
-		}
-
+		// if (isset($pronunciation[$phrase])) {
+		// 	foreach ($pronunciation[$phrase] as $p) {
+		// 		if (strcmp($pinyin, $p) !== 0) {
+		// 			// echo "change: {$phrase} {$pinyin} -> {$p}\n";
+		// 			$pinyin = $p;
+		// 			break;
+		// 		}
+		// 	}
+		// }
 
 		if (!empty($pinyin)) {
 			$db->exec("INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)", [":pinyin" => $pinyin]);
@@ -69,9 +57,59 @@ foreach ($filenames as $path) {
 
 	$db->exec("COMMIT TRANSACTION");
 	$db->exec('vacuum;');
-	$db->close();
-
-	echo "[done]\n";
 }
 
-echo "\n";
+$json = ["version" => time(), "resources" => []];
+
+$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
+natsort($filenames);
+
+foreach ($filenames as $path) {
+	$filename = basename($path);
+	$output = self::$baseDir . "db/lexicon-{$filename}.db";
+	// @unlink($output);
+
+	$db = new Database($output);
+	echo "{$filename} -> " . basename($output) . "...";
+
+	if (!file_exists($output)) {
+		createDatabase($db, $path);
+		echo "[new]";
+	}
+	else {
+		echo "[exists]";
+	}
+
+	$description = explode("\n", file_get_contents($path . ".txt"));
+	if (empty($description)) {
+		echo "{$filename} -> [txt missing]\n";
+	}
+	else {
+		$name = array_shift($description);
+		$description = trim(implode("\n", $description));
+		$description .= "\n\n詞庫範例\n=======\n";
+
+		$sql = "SELECT phrase, pinyin FROM lexicon, pinyin WHERE lexicon.pinyin_id = pinyin.rowid ORDER BY RANDOM() LIMIT 10";
+		$result = $db->getAll($sql);
+		foreach ($result as $row) {
+			$description .= $row["phrase"] . " " . $row["pinyin"] . "\n";
+		}
+
+		$json["resources"][] = [
+			"name" => $name,
+			"db" => "db/lexicon-{$filename}.db",
+			"description" => $description,
+		];
+	}
+
+
+	$db->close();
+
+	echo "\n";
+}
+
+$jsonPath = self::$baseDir . "Lexicon.json";
+$f = fopen($jsonPath, "w") or die("Unable to create file.");
+fwrite($f, json_encode($json, JSON_UNESCAPED_UNICODE));
+fclose($f);
+echo "...version: {$json['version']}\n\n";

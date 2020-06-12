@@ -168,6 +168,7 @@ NAME
 SYNOPSIS
 	{$basename} [options]
 	{$basename} -x [level] input.cin > output.cin
+	{$basename} -c moe-concised src/dict_concised.csv > lexicon/MoE-concised.csv
 
 OPTIONS:
 	-k	Generate KeyboardLayouts.json
@@ -175,12 +176,17 @@ OPTIONS:
 	-d	Build Data Table Databases
 	-m	Build Lexicon Databases
 	-e	Build Emoji Databases
+	-c	Run sub-module
 
 	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
 			level 0: strip all blocks (default)
 			level 1: strip all blocks except CJK-ExtA
 			level 2: strip SPUA blocks
 			level 3: strip CJK-Ext A~D blocks
+
+MODULES:
+	jyut6ping3, jyut6ping3-tonless, jyut6ping3-phrase,
+	moe-idioms, moe-concised, moe-revised,
 
 ";
 		exit;
