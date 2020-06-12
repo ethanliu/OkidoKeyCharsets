@@ -24,19 +24,19 @@ while (($row = fgetcsv($handle)) !== FALSE) {
 	$pinyin = isset($row[5]) ? trim($row[5]) : "";
 	$extra = isset($row[9]) ? trim($row[9]) : "";
 
-	if (strpos($phrase, "<img") !== false) {
-		// echo "https://idiom.wlps.kl.edu.tw/dict_idioms/{index}.html";
-		preg_match_all($pattern1, $phrase, $matches, PREG_SET_ORDER, 0);
-		foreach ($matches as $match) {
-			$word = $map[$match[1]];
-			if (empty($word)) {
-				// not exists in unicode
-				var_dump($row);exit;
-				continue;
-			}
-			$phrase = str_replace($match[0], $word, $phrase);
-		}
-	}
+	// if (strpos($phrase, "<img") !== false) {
+	// 	// echo "https://idiom.wlps.kl.edu.tw/dict_idioms/{index}.html";
+	// 	preg_match_all($pattern1, $phrase, $matches, PREG_SET_ORDER, 0);
+	// 	foreach ($matches as $match) {
+	// 		$word = $map[$match[1]];
+	// 		if (empty($word)) {
+	// 			// not exists in unicode
+	// 			var_dump($row);exit;
+	// 			continue;
+	// 		}
+	// 		$phrase = str_replace($match[0], $word, $phrase);
+	// 	}
+	// }
 
 	if ($index <= 0 || empty($phrase) || empty($pinyin)) {
 		// var_dump($row);
