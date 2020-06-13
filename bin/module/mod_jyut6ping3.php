@@ -96,7 +96,25 @@ function parseRadical($raw, $toneless = false) {
 		// however 0% belogns to lowest priority
 		$weight = isset($row[2]) ? (($row[2] == "0%") ? 10 : intval(str_replace("%", "", $row[2])) * 100) : 100;
 
-		$radicals[$radical][] = ["r" => $phrase, "w" => $weight];
+		// $radicals[$radical][] = ["r" => $phrase, "w" => $weight];
+		$found = false;
+
+		if (isset($radicals[$radical])) {
+			foreach ($radicals[$radical] as $i => $item) {
+				if ($item["r"] == $phrase) {
+					$weight = max($item["w"], $weight);
+					$radicals[$radical][$i] = ["r" => $phrase, "w" => $weight];
+					$found = true;
+					continue;
+				}
+			}
+		}
+
+		if (!$found) {
+			$radicals[$radical][] = ["r" => $phrase, "w" => $weight];
+		}
+
+
 		$validations[$key] = $line;
 
 		// if ($index > 30) {
@@ -113,7 +131,7 @@ function parseRadical($raw, $toneless = false) {
 
 	echo "#
 # Jyut6ping3 - " . $cname . "
-# Version: 2020.05.19
+# Version: 2020.06.11
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
