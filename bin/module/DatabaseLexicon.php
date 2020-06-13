@@ -59,7 +59,7 @@ function createDatabase($db, $path) {
 	$db->exec('vacuum;');
 }
 
-$json = ["version" => time(), "resources" => []];
+$json = ["version" => date("YmdHis"), "resources" => []];
 
 $filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
 natsort($filenames);
