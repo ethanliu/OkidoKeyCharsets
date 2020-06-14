@@ -135,7 +135,7 @@ function parseRadical($raw, $toneless = false) {
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
-# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權。
+# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權，不含 % 之詞頻仍視為 % 比例，屬高優先權詞彙。
 #
 # 本檔案與原始來源相同，採共享創意 - 姓名標示 4.0 國際 (CC BY 4.0) 協議。
 #
@@ -200,6 +200,7 @@ z z" . ($toneless ? "" : "
 }
 
 function parsePhrase($raw, $toneless, $wordcountPath = '') {
+	$debug = false;
 	// $weights = json_decode(file_get_contents($wordcountPath), true);
 	$parsing = false;
 	$result = "";
@@ -280,7 +281,7 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 
 	}
 
-	if (!empty($errors)) {
+	if ($debug && !empty($errors)) {
 		echo $errors;
 	}
 	else {
