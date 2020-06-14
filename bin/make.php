@@ -168,7 +168,7 @@ NAME
 SYNOPSIS
 	{$basename} [options]
 	{$basename} -x [level] input.cin > output.cin
-	{$basename} -c moe-concised src/dict_concised.csv > lexicon/MoE-concised.csv
+	{$basename} -c module input.file > output.csv
 
 OPTIONS:
 	-k	Generate KeyboardLayouts.json
@@ -187,6 +187,7 @@ OPTIONS:
 MODULES:
 	jyut6ping3, jyut6ping3-tonless, jyut6ping3-phrase,
 	moe-idioms, moe-concised, moe-revised,
+	mcbpmf,
 
 ";
 		exit;

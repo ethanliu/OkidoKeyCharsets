@@ -69,14 +69,15 @@ foreach ($filenames as $path) {
 	$output = self::$baseDir . "db/lexicon-{$filename}.db";
 	// @unlink($output);
 
-	$db = new Database($output);
 	echo "{$filename} -> " . basename($output) . "...";
 
 	if (!file_exists($output)) {
+		$db = new Database($output);
 		createDatabase($db, $path);
 		echo "[new]";
 	}
 	else {
+		$db = new Database($output);
 		echo "[exists]";
 	}
 
