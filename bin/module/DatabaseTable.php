@@ -1,9 +1,9 @@
 <?php
 echo "Generate Database\n\n";
-// $skipSC = true;
+$skipSC = false;
 $words = [];
 if ($skipSC) {
-	$words = include(dirname(__FILE__) . "/words.php");
+	$words = include(__DIR__ . "/ref/words-hans.php");
 }
 
 $propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
