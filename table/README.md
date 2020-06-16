@@ -78,6 +78,8 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     jidianwubi.cin - 极点五笔
     jinjin.cin - 晶晶碼
     jtcj.cin - 简体仓颉
+    jyut6ping3-toneless.cin - 粵語拼音 (無調號版)
+    jyut6ping3.cin - 粵語拼音
     jyutping-toneless.cin - 粵語拼音 (無調號版)
     jyutping.cin - 粵語拼音
     lxsy_0.40.cin - 灵形速影
