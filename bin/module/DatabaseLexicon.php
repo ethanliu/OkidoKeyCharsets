@@ -90,8 +90,18 @@ foreach ($filenames as $path) {
 		$description = trim(implode("\n", $description));
 		$description .= "\n\n詞庫範例\n=======\n";
 
-		$sql = "SELECT phrase, pinyin FROM lexicon, pinyin WHERE lexicon.pinyin_id = pinyin.rowid ORDER BY RANDOM() LIMIT 10";
+		$w = $db->getOne("SELECT MAX(weight) FROM lexicon");
+		$cond = ($w > 0) ? " ORDER BY weight DESC LIMIT 100" : " ORDER BY RANDOM() LIMIT 10";
+
+		// $sql = "SELECT phrase, pinyin FROM lexicon, pinyin WHERE lexicon.pinyin_id = pinyin.rowid ORDER BY RANDOM() LIMIT 10";
+		$sql = "SELECT phrase, pinyin, weight FROM lexicon, pinyin WHERE lexicon.pinyin_id = pinyin.rowid" . $cond;
 		$result = $db->getAll($sql);
+		shuffle($result);
+		$result = array_slice($result, 0, 10);
+		usort($result, function($l, $r) {
+			return $l["pinyin"] <=> $r["pinyin"];
+		});
+		// print_r($result);
 		foreach ($result as $row) {
 			$description .= $row["phrase"] . " " . $row["pinyin"] . "\n";
 		}
@@ -101,6 +111,7 @@ foreach ($filenames as $path) {
 			"db" => "db/lexicon-{$filename}.db",
 			"description" => $description,
 		];
+
 	}
 
 
