@@ -1,45 +1,25 @@
 # Lexicon
 
-字詞庫 CSV 檔案不含欄位名稱，分為字詞、比重及拼音(不含空白)三欄，以 Tab 區分  
+字詞 CSV 檔案不含欄位名稱，分為字詞、比重及拼音(不含空白)三欄，應以 Tab 區分。  
 
+    氓	0	mang
+    氓	0	meng
+    盲從	0	mangcong
+    盲人摸象	0	mangrenmoxiang
+    盲人	0	mangren
+    盲腸	0	mangchang
+    盲腸炎	0	mangchangyan
+    盲點	0	mangdian
+    盲目	0	mangmu
+    盲胞	0	mangbao
+    芒刺在背	0	mangcizaibei
     一丁不識	0	yidingbushi
     一丘之貉	0	yiqiuzhihao
     一了百了	0	yilebaile
 
-除了因格式轉換所需的內容變更，另外也排除僅有一個字的字詞  
-來源無拼音資料時，則另產生無調號漢語拼音 (CFStringTransform)  
-無另外標識時，為繁體中文字詞  
+比重為數值，數值越大優先權越高。    
+拼音並不限於漢語拼音，但仍應為連續不含空白及調號的英文為主。  
+若來源無資訊可供轉換拼音時，則另以 CFStringTransform 產生無調號漢語拼音，但此方式無法兼顧多音字詞，所以並不能保證全部正確。  
+若無另行標識時，其內容為繁體中文字詞  
 
-#### 教育部相關詞典
-刪除部份異體字/缺字的字詞。  
-重編國語辭典則參考酷音詞庫，取其相同字詞的比重。  
-
-#### 结巴中文分词 (簡體)
-保留字詞比重，刪除詞性標記。
-
-#### Rime 粵語拼音方案
-取自 Rime 粵語拼音方案 jyut6ping3.dict.yaml 中的詞彙內容。  
-
-## Resources
-
-MoE-Revised.csv - 教育部《重編國語辭典 修訂本》，版本編號：2015_20180409  
-MoE-concised.csv - 教育部《國語辭典簡編本》，版本編號：2014_20180611  
-MoE-idioms.csv - 教育部《成語典》，版本編號：2011_20180517  
-McBopomofo-phrase.csv - 小麥注音輸入法 phrase.occ  
-Jieba-hans.csv - 结巴中文分词 dict.txt  
-Rime-cantonese.csv - Rime 粵語拼音方案，版本: 2020.05.19  
-
-## License
-
-教育部國語辭典公眾授權網 - CCPL  
-https://resources.publicense.moe.edu.tw  
-
-OpenVanilla McBopomofo 小麥注音輸入法 - MIT  
-https://github.com/openvanilla/McBopomofo/tree/master/Source/Data  
-
-结巴中文分词 - MIT  
-https://github.com/fxsjy/jieba  
-
-Rime 粵語拼音方案 - CC 4.0  
-https://github.com/rime/rime-cantonese  
-
+所有字詞各別的說明及其授權方式，請參閱同檔名的 .txt 文件。  
