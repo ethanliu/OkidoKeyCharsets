@@ -1,10 +1,10 @@
 #
 # Jyut6ping3 - 粵拼
-# Version: 2020.06.11
+# Version: 2020.06.12
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
-# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權。
+# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權，不含 % 之詞頻仍視為 % 比例，屬高優先權詞彙。
 #
 # 本檔案與原始來源相同，採共享創意 - 姓名標示 4.0 國際 (CC BY 4.0) 協議。
 #
@@ -944,40 +944,41 @@ bei1	埤	#10
 bei1	錃	#10
 bei1	䙓	#10
 bei2	媲	#300
-bei2	髀
-bei2	貏
-bei2	舭
 bei2	肶
-bei2	粃
 bei2	秕
+bei2	舭
+bei2	貏
 bei2	畀
 bei2	沘
 bei2	比
-bei2	柀
 bei2	㗗
+bei2	朼
 bei2	彼
 bei2	崥
-bei2	朼
+bei2	柀
 bei2	妣
-bei2	䃾
+bei2	髀
 bei2	吡
 bei2	匕
 bei2	俾
 bei2	佊
 bei2	䯗
-bei2	㠲
-bei2	䀝
 bei2	䣥
 bei2	䏢
+bei2	䃾
+bei2	䀝
+bei2	㠲
+bei2	粃
 bei2	鞸	#10
 bei2	鞞	#10
-bei2	疕	#10
+bei2	㑭	#10
 bei2	聛	#10
-bei2	夶	#10
+bei2	疕	#10
 bei2	畁	#10
 bei2	毘	#10
 bei2	毗	#10
-bei2	㑭	#10
+bei2	夶	#10
+bei2	脾	#10
 bei3	畀	#9000
 bei3	跛	#300
 bei3	陂	#300
@@ -4149,6 +4150,7 @@ cou1	麤
 cou1	怚	#10
 cou1	蔍	#10
 cou2	娶	#300
+cou2	取	#300
 cou2	懆
 cou2	草
 cou2	騲
@@ -5574,6 +5576,7 @@ din2	䓦
 din2	典
 din2	婰
 din2	捵
+din2	跈
 din2	痶
 din2	碘
 din2	蕇
@@ -5588,6 +5591,7 @@ din3	瑱	#10
 din6	唸	#300
 din6	㞟
 din6	淀
+din6	跈
 din6	靛
 din6	電
 din6	鈿
@@ -6800,7 +6804,8 @@ fan6	份
 fan6	分
 fan6	秎
 fan6	坋	#10
-fang4	揈	#10
+fang3	揈	#300
+fang4	揈
 fat1	掘	#300
 fat1	沸	#300
 fat1	刜	#300
@@ -8267,8 +8272,8 @@ gai1	嗘	#10
 gai1	筓	#10
 gai1	鳮	#10
 gai1	鶏	#10
+gai2	計	#1000
 gai2	偈
-gai2	計
 gai3	炔	#300
 gai3	繫	#300
 gai3	㡭
@@ -8569,6 +8574,7 @@ gat1	裓	#10
 gat1	郆	#10
 gat1	鴶	#10
 gat3	圪
+gat6	曱
 gat6	㔕
 gat6	㡮
 gat6	䞘
@@ -8707,23 +8713,29 @@ ge2	嘅	#300
 ge2	𠸏
 ge3	嘅	#9700
 gei1	犄	#300
+gei1	其	#300
 gei1	居	#300
 gei1	碁	#300
 gei1	吱	#300
-gei1	其	#300
-gei1	萁
+gei1	蟣	#300
+gei1	飢
+gei1	簊
 gei1	璣
 gei1	畸
 gei1	畿
+gei1	𥕛
+gei1	𣻺
 gei1	磯
 gei1	禨
 gei1	稘
 gei1	箕
-gei1	簊
+gei1	𢖯
 gei1	羈
+gei1	鞿
 gei1	肌
-gei1	𧝞
+gei1	萁
 gei1	㙨
+gei1	饑
 gei1	觭
 gei1	諅
 gei1	譏
@@ -8731,13 +8743,7 @@ gei1	踑
 gei1	鄿
 gei1	錤
 gei1	鐖
-gei1	鞿
-gei1	飢
-gei1	饑
-gei1	𢖯
-gei1	𣻺
-gei1	𥕛
-gei1	蟣
+gei1	𧝞
 gei1	機
 gei1	几
 gei1	䥓
@@ -8776,7 +8782,6 @@ gei1	耭	#10
 gei1	羇	#10
 gei1	巬	#10
 gei1	㙋	#10
-gei2	蟣	#300
 gei2	𨥈
 gei2	㞆
 gei2	𣊉
@@ -8786,6 +8791,7 @@ gei2	麂
 gei2	魢
 gei2	邔
 gei2	踦
+gei2	蟣
 gei2	虮
 gei2	紀
 gei2	穖
@@ -9016,7 +9022,9 @@ geoi6	簴	#10
 geoi6	巪	#10
 geoi6	怇	#10
 geoi6	衐	#10
+gep1	喼
 gep6	夾	#10
+kep1	喼	#10
 gi1	嘰	#500
 gi1	𠼻
 gik1	極	#300
@@ -11469,6 +11477,7 @@ han4	拫	#300
 han4	㯊
 han4	痕
 han4	鞎
+han3	睏
 han6	恨
 han6	拫	#10
 hang1	𩣪
@@ -16801,18 +16810,19 @@ kai2	綮
 kai2	棨
 kai2	契
 kai2	𣘼
+kai2	呇
 kai2	启
 kai2	䭬
 kai2	䭫
 kai2	䏿
 kai2	唘	#10
-kai2	啔	#10
 kai2	㬖	#10
+kai2	啟	#10
 kai2	晵	#10
 kai2	䡔	#10
 kai2	諬	#10
 kai2	闙	#10
-kai2	啟	#10
+kai2	啔	#10
 kai3	揭	#300
 kai3	瘈	#300
 kai3	㓞
@@ -16830,6 +16840,7 @@ kai3	栔	#10
 kai3	瘛	#10
 kak1	㩿
 kak1	𠸉
+kak1	揢
 kam1	䘳
 kam1	禁
 kam1	菳
@@ -17449,6 +17460,7 @@ king4	凝	#10
 king4	璚	#10
 king4	瓗	#10
 kip1	𥈲
+kip1	喼	#10
 kit3	渴	#300
 kit3	桔	#300
 kit3	頁	#300
@@ -17512,6 +17524,7 @@ kiu2	蹻
 kiu2	轎
 kiu2	巧	#10
 kiu2	矯	#10
+kiu2	竅	#10
 kiu3	翹	#300
 kiu3	㚁
 kiu3	䆻
@@ -17926,6 +17939,7 @@ kwai3	歸	#10
 kwai3	騩	#10
 kwai4	㔒
 kwai4	馗
+kwai4	聧
 kwai4	蠵
 kwai4	觿
 kwai4	躨
@@ -17937,7 +17951,7 @@ kwai4	隗
 kwai4	頄
 kwai4	頯
 kwai4	騤
-kwai4	纗
+kwai4	睽
 kwai4	驨
 kwai4	𡋣
 kwai4	𡖂
@@ -17949,10 +17963,10 @@ kwai4	𧃍
 kwai4	𧤤
 kwai4	𩓚
 kwai4	𪆴
-kwai4	聧
+kwai4	纗
 kwai4	葵
-kwai4	睽
-kwai4	戣
+kwai4	畦
+kwai4	奊
 kwai4	㙺
 kwai4	㩗
 kwai4	㩦
@@ -17962,28 +17976,28 @@ kwai4	䕫
 kwai4	䙵
 kwai4	䟸
 kwai4	䤆
+kwai4	喹
 kwai4	䥴
 kwai4	䧶
 kwai4	䳫
 kwai4	夔
-kwai4	奊
-kwai4	揆
-kwai4	畦
+kwai4	戣
 kwai4	楑
+kwai4	檇
 kwai4	犪
 kwai4	携
-kwai4	檇
-kwai4	暌
-kwai4	攜
 kwai4	擕
-kwai4	讗	#10
-kwai4	觽	#10
-kwai4	觹	#10
-kwai4	鍨	#10
-kwai4	虁	#10
-kwai4	蘷	#10
+kwai4	攜
+kwai4	暌
+kwai4	揆
 kwai4	㙓	#10
+kwai4	蘷	#10
+kwai4	虁	#10
 kwai4	瓗	#10
+kwai4	觹	#10
+kwai4	觽	#10
+kwai4	讗	#10
+kwai4	鍨	#10
 kwai4	䕫	#10
 kwai5	揆
 kwai5	湀
@@ -21137,6 +21151,7 @@ man1	燜	#10
 man1	蚉	#10
 man2	抆
 man2	聞	#10
+man3	呇
 man3	𠍁
 man3	𠽊
 man4	𦐐
@@ -22581,8 +22596,9 @@ nak6	䎪
 nak6	䭆
 nak6	疒	#10
 nam1	𥻚
-nam2	惗
 nam2	諗
+nam2	恁
+nam2	惗
 nam4	淰	#300
 nam4	䋻
 nam4	煁
@@ -23148,6 +23164,7 @@ ngam4	䜙	#10
 ngam4	吟	#10
 ngam4	啽	#10
 ngam4	扲	#10
+ngam4	唅	#10
 ngam5	㜝
 ngam6	喑	#300
 ngam6	䯥
@@ -23552,8 +23569,8 @@ nin2	䟢
 nin2	捻
 nin2	撚
 nin2	簐
+nin2	跈
 nin2	拈	#10
-nin2	跈	#10
 nin4	䄭
 nin4	䄹
 nin4	哖
@@ -30459,22 +30476,22 @@ wo2	婑
 wo2	捰
 wo2	䰀	#10
 wo3	喎	#9000
+wo3	啝
 wo3	涴
-wo3	啝	#10
 wo4	龢
-wo4	盉
+wo4	禾
 wo4	䒩
 wo4	鉌
 wo4	和
 wo4	訸
+wo4	啝
 wo4	姀
 wo4	㴕
-wo4	禾
 wo4	澕
+wo4	盉
 wo4	萂	#10
 wo4	㕿	#10
 wo4	柇	#10
-wo4	啝	#10
 wo4	咼	#10
 wo4	咊	#10
 wo4	惒	#10
@@ -31418,6 +31435,7 @@ zaat3	猰	#10
 zaat3	箚	#10
 zaat3	鍘	#10
 zaat3	沯	#10
+zaat6	甴
 zaat6	㳐
 zaat6	囋
 zaat6	嫉	#10
@@ -31818,37 +31836,38 @@ zat1	劕	#10
 zat1	隲	#10
 zat1	厔	#10
 zat1	庢	#10
-zat6	𡜍
-zat6	㑵
-zat6	銍
-zat6	郅
-zat6	蟄
-zat6	螏
-zat6	蛭
+zat6	甴
+zat6	桎
 zat6	蒺
 zat6	膣
 zat6	窒
+zat6	蟄
 zat6	祑
 zat6	礩
 zat6	疾
+zat6	㑵
 zat6	洷
 zat6	槉
-zat6	桎
-zat6	㜼
-zat6	䱃
-zat6	侄
-zat6	厔
-zat6	姪
-zat6	嫉
-zat6	庢
 zat6	挃
-zat6	秷	#10
-zat6	妷	#10
-zat6	愱	#10
+zat6	螏
+zat6	郅
+zat6	庢
+zat6	嫉
+zat6	姪
+zat6	銍
+zat6	厔
+zat6	侄
+zat6	䱃
+zat6	𡜍
+zat6	㜼
+zat6	蛭
+zat6	㑑	#10
 zat6	螲	#10
+zat6	秷	#10
+zat6	愱	#10
+zat6	妷	#10
 zat6	䟈	#10
 zat6	潌	#10
-zat6	㑑	#10
 zau1	㖄
 zau1	輖
 zau1	珘
