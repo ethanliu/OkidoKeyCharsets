@@ -3,7 +3,7 @@
  * rime-cantonese cin converter
  *
  * https://github.com/rime/rime-cantonese/
- * https://raw.githubusercontent.com/rime/rime-cantonese/blob/master/jyut6ping3.dict.yaml
+ * https://raw.githubusercontent.com/rime/rime-cantonese/master/jyut6ping3.dict.yaml
  * https://words.hk/faiman/analysis/existingwordcount.json
  *
  * @author Ethan Liu
@@ -48,6 +48,7 @@ else if ($mode == 'phrase') {
 function parseRadical($raw, $toneless = false) {
 	$ename = "Jyut6ping3" . ($toneless ? " (Toneless)" : "");
 	$cname = "粵拼" . ($toneless ? " (無調號)" : "");
+	$version = "";
 
 	$radicals = [];
 	$parsing = false;
@@ -57,6 +58,11 @@ function parseRadical($raw, $toneless = false) {
 	$errors = "";
 
 	foreach ($raw as $line) {
+		if (strpos($line, "version:") !== false) {
+			$version = trim(str_replace(["version:", "\""], "", $line));
+			continue;
+		}
+
 		if ($line === "# 單字音") {
 			$parsing = true;
 			continue;
@@ -92,7 +98,7 @@ function parseRadical($raw, $toneless = false) {
 			$radical = str_replace(['1', '2', '3', '4', '5', '6'], '', $radical);
 		}
 
-		// some frequency values may not containt % that means high priority, same result as 10000.0%
+		// some frequency values may not containt % that means higher priority, same result as 10000.0%
 		// however 0% belogns to lowest priority
 		$weight = isset($row[2]) ? (($row[2] == "0%") ? 10 : intval(str_replace("%", "", $row[2])) * 100) : 100;
 
@@ -116,10 +122,6 @@ function parseRadical($raw, $toneless = false) {
 
 
 		$validations[$key] = $line;
-
-		// if ($index > 30) {
-		// 	break;
-		// }
 	}
 
 	if (!empty($errors)) {
@@ -131,7 +133,7 @@ function parseRadical($raw, $toneless = false) {
 
 	echo "#
 # Jyut6ping3 - " . $cname . "
-# Version: 2020.06.11
+# Version: " . $version . "
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -204,13 +206,18 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 	// $weights = json_decode(file_get_contents($wordcountPath), true);
 	$parsing = false;
 	$result = "";
-	// $toneless = true;
+	$version = "";
 
 	$validations = [];
 	$key = "";
 	$errors = "";
 
 	foreach ($raw as $line) {
+		if (strpos($line, "version:") !== false) {
+			$version = trim(str_replace(["version:", "\""], "", $line));
+			continue;
+		}
+
 		if ($line === "# 詞彙") {
 			$parsing = true;
 			continue;
@@ -286,8 +293,15 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 	}
 	else {
 		echo $result;
+
+		// update version
+
+		$path = realpath(__DIR__ . "/../../lexicon/Rime-cantonese.csv.txt");
+		if (file_exists($path)) {
+			$content = file_get_contents($path);
+			$content = preg_replace("/版本 (\d{4}.\d{2}.\d{2})/", "版本 {$version}", $content);
+			file_put_contents($path, $content);
+		}
 	}
-
-
 }
 
