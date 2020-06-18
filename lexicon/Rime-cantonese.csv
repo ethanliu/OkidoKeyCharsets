@@ -1,5 +1,6 @@
 丫巴兒	100	aabaaji
 吖笨	100	aaban
+啊邊個	100	aabingo
 丫叉	100	aacaa
 丫杈	100	aacaa
 椏杈	100	aacaa
@@ -103,6 +104,10 @@
 阿鼻地獄	100	aabeideijuk
 阿邊個	100	aabingo
 阿扁	100	aabin
+亞便	100	aabin
+亞邊	100	aabin
+阿便	100	aabin
+阿邊	100	aabin
 阿兵哥	100	aabinggo
 阿炳	100	aabing
 阿波羅	100	aabolo
@@ -163,6 +168,8 @@
 亞斗官	100	aadaugun
 阿斗官	100	aadaugun
 阿爹	100	aade
+亞啲	100	aadi
+阿啲	100	aadi
 阿的平	100	aadikping
 亞的斯亞貝巴	100	aadiksiaabuibaa
 阿迪達斯	100	aadikdaatsi
@@ -174,8 +181,6 @@
 阿頂	100	aading
 阿多尼斯	100	aadoneisi
 阿多諾	100	aadonok
-亞駝	100	aado
-阿駝	100	aado
 亞當	100	aadong
 亞當斯	100	aadongsi
 亞當斯敦	100	aadongsideon
@@ -877,25 +882,12 @@
 嗌通街	100	aaitunggaai
 嗌痛	100	aaitung
 唉唉聲	100	aaiaaiseng
-呃呃騙騙	100	aakaakpinpin
-呃呃氹氹	100	aakaaktamtam
-呃呃𠱁𠱁	100	aakaaktamtam
 握別	100	aakbit
-呃錢	100	aakcin
-呃秤	100	aakcing
-呃稱	100	aakcing
-呃飯食	100	aakfaansik
 扼頸	100	aakgeng
 厄境	100	aakging
 厄瓜多	100	aakgwaado
 厄瓜多爾	100	aakgwaadoji
-呃鬼	100	aakgwai
-呃鬼食豆腐	100	aakgwaisikdaufu
-呃蝦條	100	aakhaatiu
 扼喉撫背	100	aakhaufubui
-呃飲呃食	100	aakjamaaksik
-呃人	100	aakjan
-呃人喎	100	aakjanwo
 握有	100	aakjau
 厄爾布魯士	100	aakjiboulousi
 厄爾尼諾	100	aakjineinok
@@ -910,9 +902,7 @@
 握力	100	aaklik
 厄洛斯	100	aakloksi
 厄難	100	aaknaan
-呃晒	100	aaksaai
 扼殺	100	aaksaat
-呃神騙鬼	100	aaksanpingwai
 厄什塔	100	aaksaptaap
 握實	100	aaksat
 扼守	100	aaksau
@@ -1102,6 +1092,7 @@
 搲爆頭	100	aaubaautau
 搲痕	100	aauhan
 抓撈	100	aaulou
+嗷嗚	100	aauwu
 坳胡	100	aauwu
 拗胡	100	aauwu
 坳胡婆	100	aauwupo
@@ -1216,17 +1207,14 @@
 縊殺	100	aisaat
 縊死	100	aisei
 翳滯	100	aizai
-呃錢	100	akcin
 齷齪	100	akcuk
-呃得就呃	100	akdakzauak
 厄瓜多爾	100	akgwaadoji
-呃人	100	akjan
+呃逆	100	akjik
 啞然無生	100	akjinmousang
 啞然失笑	100	akjinsatsiu
 扼要	100	akjiu
 厄勒布魯	100	aklakboulou
 厄利垂亞	100	akleiseoiaa
-呃嗮	100	aksaai
 扼殺	100	aksaat
 握實	100	aksat
 扼守	100	aksau
@@ -1252,7 +1240,11 @@
 黯然	100	amjin
 黯然失色	100	amjinsatsik
 黯然銷魂	100	amjinsiuwan
+揞脈	100	ammak
 揞密鑼鼓	100	ammatlogu
+揞住	100	amzyu
+揞住良心	100	amzyuloengsam
+揞住嘴笑	100	amzyuzeoisiu
 暗啞	100	amaa
 暗啞底	100	amaadai
 暗啞抵	100	amaadai
@@ -1369,6 +1361,7 @@
 㾘㾘聲	100	angangseng
 罨耷	100	apdap
 罨汁	100	apzap
+腌臢	100	apzap
 醃臢	100	apzap
 歐亞	100	auaa
 歐亞大陸	100	auaadaailuk
@@ -2032,6 +2025,7 @@
 拜五臟廟	100	baaingzongmiu
 拜五臟神	100	baaingzongsaan
 拜五臟神	100	baaingzongsan
+拜眼睏	100	baaingaanhan
 拜偶像	100	baaingauzoeng
 拜年	100	baainin
 拜年卡	100	baaininkaak
@@ -3573,13 +3567,13 @@
 苞米	100	baaumai
 胞嘧啶	100	baaumatding
 包尾	100	baaumei
-包尾	100	baaumei
-包尾油	100	baaumeijau
 包尾大班	100	baaumeidaaibaan
 包尾大幡	100	baaumeidaaifaan
 包尾大翻	100	baaumeidaaifaan
 包尾殺	100	baaumeisaat
 包尾殺	100	baaumeisaat
+包尾	100	baaumei
+包尾油	100	baaumeijau
 胞妹	100	baaumui
 包拗頸	100	baaungaaugeng
 包銀	100	baaungan
@@ -3896,8 +3890,8 @@
 閉上嘴巴	100	baisoengzeoibaa
 閉圖象定理	100	baitouzoengdinglei
 閉域	100	baiwik
-閉會祈禱	100	baiwuikeitou
 閉會	100	baiwui
+閉會祈禱	100	baiwuikeitou
 閉集	100	baizaap
 閉嘴	100	baizeoi
 閉子集	100	baizizaap
@@ -4245,9 +4239,6 @@
 賓朋滿座	100	banpangmunzo
 賓婆	100	banpo
 賓西法尼亞	100	bansaifaatneiaa
-稟神	100	bansan
-稟神都冇句真	100	bansandoumougeoizan
-稟神噉聲	100	bansangamseng
 奔瀉	100	banse
 賓士	100	bansi
 檳城	100	bansing
@@ -4331,8 +4322,11 @@
 品目	100	banmuk
 品牌	100	banpaai
 品評	100	banping
+稟神	100	bansan
 禀神都冇句真	100	bansandoumougeoizan
+稟神都冇句真	100	bansandoumougeoizan
 稟神咁聲	100	bansangamseng
+稟神噉聲	100	bansangamseng
 品色	100	bansik
 品性	100	bansing
 稟性	100	bansing
@@ -5917,6 +5911,7 @@
 畀人賣豬仔	100	beijanmaaizyuzai
 畀人鬧	100	beijannaau
 畀人呃	100	beijanngaak
+畀人呃	100	beijanngak
 畀人拼沉	100	beijanpengcam
 畀人使	100	beijansai
 畀人識穿	100	beijansikcyun
@@ -6617,6 +6612,8 @@
 鞭蟲	100	bincung
 邊處	100	bincyu
 鞭打	100	bindaa
+邊墶	100	bindaat
+邊笪	100	bindaat
 萹豆	100	bindau
 邊地	100	bindei
 邊啲	100	bindi
@@ -6660,8 +6657,6 @@
 邊個來㗎	100	bingolaigaa
 邊個嚟㗎	100	bingolaigaa
 邊個靚	100	bingoleng
-邊笪	100	bindaat
-邊墶	100	bindaat
 邊彊	100	bingoeng
 邊疆	100	bingoeng
 邊角科	100	bingokfo
@@ -6787,11 +6782,11 @@
 扁撻撻	100	bintettet
 扁踢踢	100	bintettet
 扁桃	100	bintou
+扁桃果	100	bintougwo
 扁桃腺	100	bintousin
 扁桃體	100	bintoutai
 扁桃體炎	100	bintoutaijim
 貶謫	100	binzaak
-扁舟	100	binzau
 扁嘴	100	binzeoi
 扁嘴海雀	100	binzeoihoizoek
 貶職	100	binzik
@@ -7296,11 +7291,13 @@
 併集	100	bingzaap
 並臻	100	bingzeon
 柄政	100	bingzing
-砰嘭	100	bingbaang
 乒嘭	100	bingbaang
-𠹶嘭	100	bingbam
-砰嘭	100	bingbam
+砰嘭	100	bingbaang
 乒嘭	100	bingbam
+砰嘭	100	bingbam
+𠹶嘭	100	bingbam
+乒乒嘭嘭	100	bingbingbaangbaang
+𠹶𠹶嘭嘭	100	bingbingbaangbaang
 乒鈴嘭唥	100	binglingbaanglaang
 乒鈴𠾴唥	100	binglingbaanglaang
 砰呤嘭唥	100	binglingbaanglaang
@@ -8038,11 +8035,11 @@
 膊巾	100	bokgan
 搏擊	100	bokgik
 駁腳	100	bokgoek
+駁腳差佬	100	bokgoekcaailou
 駁腳經紀	100	bokgoekginggei
 駁腳公司	100	bokgoekgungsi
 駁腳偵緝	100	bokgoekzingcap
 駁腳偵探	100	bokgoekzingtaam
-駁腳差佬	100	bokgoekcaailou
 博古	100	bokgu
 博古通今	100	bokgutunggam
 駁骨	100	bokgwat
@@ -8261,7 +8258,6 @@
 幫辦	100	bongbaan
 幫辦仔	100	bongbaanzai
 幫辦	100	bongbaan
-綳綳緊	100	maangmaanggan
 幫補	100	bongbou
 幫寶適	100	bongbousik
 幫襯	100	bongcan
@@ -9540,9 +9536,9 @@
 濮陽	100	bukjoeng
 濮陽縣	100	bukjoengjyun
 濮陽市	100	bukjoengsi
+曝露	100	buklou
 伏匿匿	100	bukneinei
 蹼匿匿	100	bukneinei
-曝露	100	buklou
 仆你個街	100	bukneigogaai
 曝曬	100	buksaai
 仆直	100	bukzik
@@ -9786,9 +9782,7 @@
 半價	100	bungaa
 半間不界	100	bungaanbatgaai
 半金屬	100	bungamsuk
-半斤八両	100	bunganbaatloeng
 半斤八兩	100	bunganbaatloeng
-半斤八両	100	bunganbaatloeng
 半斤八兩	100	bunganbaatloeng
 半句	100	bungeoi
 半腱肌	100	bungingei
@@ -10118,6 +10112,7 @@
 差動齒輪	100	caadungcileon
 差分	100	caafan
 差分方程	100	caafanfongcing
+差伙	100	caafo
 叉架	100	caagaa
 差價	100	caagaa
 差咁遠	100	caagamjyun
@@ -10139,6 +10134,7 @@
 差遠	100	caajyun
 差距	100	caakeoi
 差強人意	100	caakoengjanji
+叉能廚	100	caalancyu
 差利	100	caalei
 差唔多	100	caamdo
 差唔多啦	100	caamdolaa
@@ -10149,7 +10145,6 @@
 叉尾太陽鳥	100	caameitaaijoengniu
 差冇幾多	100	caamougeido
 差妹	100	caamui
-叉能廚	100	caanangcyu
 差唔耐	100	caangnoi
 差誤	100	caang
 差額	100	caangaak
@@ -10407,7 +10402,6 @@
 猜呈尋	100	caaicingcam
 猜呈沉	100	caaicingcam
 猜情尋	100	caaicingcam
-踩場	100	caaicoeng
 猜得透	100	caaidaktau
 猜度	100	caaidok
 差房	100	caaifong
@@ -10437,7 +10431,6 @@
 差使	100	caaisi
 差事	100	caaisi
 猜想	100	caaisoeng
-踩雪屐	100	caaisyutkek
 差仔	100	caaizai
 搋子	100	caaizi
 猜着	100	caaizoek
@@ -10445,8 +10438,8 @@
 猜中	100	caaizung
 踩冰	100	caaibing
 踩波車	100	caaiboce
-踩親……條尾	100	caaicantiumei
 踩親條尾	100	caaicantiumei
+踩親條尾噉	100	caaicantiumeigam
 踩嚫條尾	100	caaicantiumei
 踩車	100	caaice
 踩錯腳	100	caaicogoek
@@ -10456,7 +10449,6 @@
 踩踏	100	caaidaap
 踩低	100	caaidai
 踩低人哋，擡高自己	100	caaidaijandeitoigouzigei
-踩……地盤	100	caaideipun
 踩地盤	100	caaideipun
 踩道	100	caaidou
 踩動	100	caaidung
@@ -11172,8 +11164,8 @@
 插線板	100	caapsinbaan
 插燒	100	caapsiu
 插銷	100	caapsiu
-插銷仔	100	caapsiuzai
 插燒仔	100	caapsiuzai
+插銷仔	100	caapsiuzai
 插鎖	100	caapso
 插上	100	caapsoeng
 插蘇	100	caapsou
@@ -11302,6 +11294,7 @@
 抄考	100	caauhaau
 抄後路	100	caauhaulou
 抄橋	100	caaukiu
+抄竅	100	caaukiu
 抄錄	100	caauluk
 抄唔切	100	caaumcit
 抄網	100	caaumong
@@ -12319,25 +12312,25 @@
 七折八扣	100	catzitbaatkau
 七張幾	100	catzoenggei
 七早八早	100	catzoubaatzou
-𨳍到盡頭便是型	100	catdouzeontaubinsijing
 柒到盡頭便是型	100	catdouzeontaubinsijing
-𨳍揈揈	100	catfingfing
+𨳍到盡頭便是型	100	catdouzeontaubinsijing
 柒揈揈	100	catfingfing
-𨳍咕碌	100	catguluk
+𨳍揈揈	100	catfingfing
 柒咕碌	100	catguluk
 柒菇碌	100	catguluk
 柒軲轆	100	catguluk
-𨳍下𨳍下	100	cathaacathaa
+𨳍咕碌	100	catguluk
 柒下柒下	100	cathaacathaa
 柒吓柒吓	100	cathaacathaa
+𨳍下𨳍下	100	cathaacathaa
 柒碌	100	catluk
 柒撚矇矇	100	catnanmungmung
 柒撚懵懵	100	catnanmungmung
 𨳍婆	100	catpo
-𨳍頭	100	cattau
 柒頭	100	cattau
-𨳍頭皮	100	cattaupei
+𨳍頭	100	cattau
 柒頭皮	100	cattaupei
+𨳍頭皮	100	cattaupei
 柒就	100	catzau
 𨳍就	100	catzau
 秋波	100	caubo
@@ -12571,8 +12564,12 @@
 臭豆腐	100	caudaufu
 臭檔	100	caudong
 臭花	100	caufaa
+臭花㞓	100	caufaahai
+臭花閪	100	caufaahai
 溴化氰	100	caufaacing
 溴化鉀	100	caufaagaap
+臭化㞓	100	caufaahai
+臭化閪	100	caufaahai
 湊返學	100	caufaanhok
 臭燻燻	100	caufanfan
 湊份子	100	caufanzi
@@ -12607,6 +12604,7 @@
 臭氧層	100	caujoengcang
 臭丸	100	caujyun
 臭棋	100	caukei
+湊巧	100	caukiu
 湊蹺	100	caukiu
 臭臉	100	caulim
 臭𤓓	100	caulo
@@ -12781,6 +12779,8 @@
 車公廟	100	cegungmiu
 車公廟站	100	cegungmiuzaam
 車軌	100	cegwai
+車行	100	cehaang
+車行	100	cehang
 車行道	100	cehangdou
 車行通道	100	cehangtungdou
 車後箱	100	cehausoeng
@@ -13156,9 +13156,9 @@
 青白	100	cengbaak
 青斑	100	cengbaan
 青BB	100	cengbibi
+青咇咇	10	cengbibi
 青啤啤	100	cengbibi
 青嗶嗶	10	cengbibi
-青咇咇	10	cengbibi
 青茶	100	cengcaa
 青菜	100	cengcoi
 青豆	100	cengdau
@@ -14426,6 +14426,7 @@
 黐黐𣲷𣲷	100	cicinapnap
 黐黐𥹉𥹉	100	cicinapnap
 癡癡呆呆，坐埋一檯	100	cicingoingoicomaaijattoi
+黐黐脤脤	100	cicisansan
 嘁嘁喳喳	100	cicizaazaa
 癡纏	100	cicin
 黐纏	100	cicin
@@ -14443,6 +14444,7 @@
 笞擊	100	cigik
 雌激素	100	cigiksou
 黐腳	100	cigoek
+黐閪	100	cihai
 鴟梟	100	cihiu
 鴟鴞	100	cihiu
 癡漢	100	cihon
@@ -14467,6 +14469,7 @@
 黐脷筋	100	cileigan
 黐力	100	cilik
 笞掠	100	ciloek
+黐佬	100	cilou
 雌鹿	100	ciluk
 黐孖筋	100	cimaagan
 笞罵	100	cimaa
@@ -14477,6 +14480,7 @@
 黐咩筋	100	cimegan
 魑魅	100	cimei
 魑魅魍魎	100	cimeimongloeng
+黐妹	100	cimui
 眵目糊	100	cimukwu
 黐𥹉𥹉	100	cinapnap
 黐湆	100	cinap
@@ -14501,7 +14505,6 @@
 黐手黐腳	100	cisaucigoek
 黐手𥹉腳	100	cisaunapgoek
 雌獅	100	cisi
-癡線	100	cisin
 癡綫	100	cisin
 癡線	100	cisin
 黐綫	100	cisin
@@ -14509,7 +14512,8 @@
 黐線褲	100	cisinfu
 黐線佬	100	cisinlou
 黐線仔	100	cisinzai
-黐線佬	100	cisinlou
+黐線蜘蛛	100	cisinzizyu
+黐線蜘蛛啲蜘蛛絲黐住枝樹枝	100	cisinzizyudizizyusicizyuzisyuzi
 雌性	100	cising
 雌性動物	100	cisingdungmat
 雌性激素	100	cisinggiksou
@@ -14525,8 +14529,10 @@
 笞臀	100	cityun
 雌黃	100	ciwong
 笞責	100	cizaak
+黐仔	100	cizai
 癡醉	100	cizeoi
 嗤之以鼻	100	cizijibei
+黐咗	100	cizo
 癡長	100	cizoeng
 笞杖	100	cizoeng
 黐總制	100	cizungzai
@@ -14538,7 +14544,6 @@
 此處	100	cicyu
 此地	100	cidei
 此地無銀	100	cideimoungan
-此地無銀三百両	100	cideimoungansaambaakloeng
 此地無銀三百兩	100	cideimoungansaambaakloeng
 始點	100	cidim
 此電腦	100	cidinnou
@@ -14827,9 +14832,6 @@
 治家	100	cigaa
 辭格	100	cigaak
 遲交	100	cigaau
-雉雞	100	cigai
-雉雞尾	100	cigaimei
-雉雞尾扇	100	cigaimeisin
 磁感應	100	cigamjing
 磁感應強度	100	cigamjingkoengdou
 磁感線	100	cigamsin
@@ -15105,6 +15107,7 @@
 似足	100	cizuk
 始終不變	100	cizungbatbin
 始終如一	100	cizungjyujat
+芝娃娃	100	ciwaawaa
 叱咤	100	cikcaak
 叱吒風雲	100	cikcaakfungwan
 叱咤風雲	100	cikcaakfungwan
@@ -15143,7 +15146,6 @@
 叱責	100	cikzaak
 斥責	100	cikzaak
 斥資	100	cikzi
-摵咗	100	cikzo
 戚族	100	cikzuk
 刺客	100	cikhaak
 刺殺	100	ciksaat
@@ -15619,10 +15621,8 @@
 纏結	100	cingit
 前嗰輪	100	cingoleon
 前嗰排	100	cingopaai
-前個排	100	cingopaai
 前嗰排	100	cingopaai
 前嗰牌	100	cingopaai
-前個排	100	cingopaai
 前腳	100	cingoek
 纏腳	100	cingoek
 纏腳帶	100	cingoekdaai
@@ -17070,21 +17070,17 @@
 初級小學	100	cokapsiuhok
 初級中學	100	cokapzunghok
 初期	100	cokei
+初嚟埗到，唔知鑊竈	100	colaibouboumziwokzou
 初來報到	100	colaiboudou
 初嚟報到	100	colaiboudou
-初嚟埗到，唔知鑊竈	100	colaiboudoumziwokzou
 初嚟報到，唔知鑊竈	100	colaiboudoumziwokzou
-初嚟甫到，唔知鑊竈	100	colaiboudoumziwokzou
-初來暴到	100	colaiboudou
 初來甫到	100	colaiboudou
+初嚟埗到	100	colaiboudou
 初嚟甫到	100	colaiboudou
-初嚟埗到	100	colaifaudou
-初嚟甫到	100	colaipoudou
+初嚟甫到，唔知鑊竈	100	colaiboudoumziwokzou
 初嚟報到	100	coleiboudou
 初嚟埗到	100	coleiboudou
 初嚟甫到	100	coleiboudou
-初嚟埗到	100	coleifaudou
-初嚟甫到	100	coleipoudou
 芻糧	100	coloeng
 初來乍到	100	coloizaadou
 初露	100	colou
@@ -17328,6 +17324,7 @@
 桌案	100	coekon
 戳破	100	coekpo
 戳心灌髓	100	coeksamgunseoi
+焯水	100	coekseoi
 卓識	100	coeksik
 灼燒	100	coeksiu
 灼傷	100	coeksoeng
@@ -17498,7 +17495,6 @@
 搶風	100	coengfung
 搶風航行	100	coengfunghonghang
 搶風頭	100	coengfungtau
-鋹雞	100	coenggai
 搶救	100	coenggau
 搶鏡	100	coenggeng
 搶鏡頭	100	coenggengtau
@@ -18818,7 +18814,6 @@
 粗口	100	couhau
 粗口歌	100	couhaugo
 粗口爛舌	100	couhaulaansit
-粗口爛舌	100	couhaulaansit
 粗口橫飛	100	couhauwaangfei
 粗糠	100	couhong
 操航	100	couhong
@@ -18943,6 +18938,7 @@
 草鞋	100	couhaai
 草鴞	100	couhiu
 草海	100	couhoi
+取耳	100	couji
 草擬	100	couji
 草約	100	coujoek
 草藥	100	coujoek
@@ -20807,6 +20803,7 @@
 打鐵趁熱	100	daatitcanjit
 打啞語	100	daaaajyu
 打啞謎	100	daaaamai
+打呃	100	daaaak
 打壓	100	daaaat
 打呃	100	daaak
 打暗號	100	daaamhou
@@ -20911,7 +20908,6 @@
 打衝鋒	100	daacungfung
 打從	100	daacung
 打蟲	100	daacung
-打緊	100	daadaa
 打打鬧鬧	100	daadaanaaunaau
 打打殺殺	100	daadaasaatsaat
 打大赤腳	100	daadaaicekgoek
@@ -21051,6 +21047,7 @@
 打雞血	100	daagaihyut
 打筋斗	100	daagandau
 打跟頭	100	daagantau
+打緊	100	daagan
 打緊字	100	daaganzi
 打更	100	daagang
 打鳩	100	daagau
@@ -22000,6 +21997,7 @@
 大分子	100	daaifanzi
 大糞	100	daaifan
 大份	100	daaifan
+大揈	300	daaifang
 大揈	100	daaifang
 大佛	100	daaifat
 大佛寺	100	daaifatzi
@@ -22186,7 +22184,6 @@
 大櫃	100	daaigwai
 大軍	100	daaigwan
 大軍區	100	daaigwankeoi
-大揈	100	daaigwang
 大過	100	daaigwo
 大國	100	daaigwok
 大國家黨	100	daaigwokgaadong
@@ -22534,7 +22531,7 @@
 大霖頭	100	daailamtau
 大林鎮	100	daailamzan
 大撚鑊	100	daailanwok
-大粒	10	daailap
+大粒	100	daailap
 大粒嘢	10	daailapje
 大粒佬	10	daailaplou
 大粒墨	10	daailapmak
@@ -23312,7 +23309,6 @@
 大轉彎	100	daaizyunwaan
 大絕滅	100	daaizyutmit
 擔餅	100	daambeng
-耽波鐘	100	daambozung
 擔保	100	daambou
 擔保信	100	daambouseon
 擔茶	100	daamcaa
@@ -23790,8 +23786,8 @@
 蛋卷	100	daangyun
 蛋卷兒	100	daangyunji
 彈坑	100	daanhaang
+彈匣	100	daanhaap
 彈痕	100	daanhan
-彈匣	100	daanhap
 彈開	100	daanhoi
 彈殼	100	daanhok
 蛋殼	100	daanhok
@@ -25203,7 +25199,6 @@
 抌咗都冇人執	100	damzodoumoujanzap
 揼波鐘	100	dambozung
 泵波鐘	100	dambozung
-耽波鐘	100	dambozung
 𨂽波鐘	100	dambozung
 髧兜	100	damdau
 揼雞	100	damgai
@@ -25220,8 +25215,9 @@
 揼揼轉	100	damdamzyun
 氹氹轉	100	damdamzyun
 氹波拿	100	dambonaa
+揼波鐘	100	dambozung
 𨂽波鐘	100	dambozung
-䂿䂿趯	100	damdamdek
+𨂽𨂽趯	100	damdamdek
 䂿地	100	damdei
 䂿腳	100	damgoek
 趻腳	100	damgoek
@@ -26248,6 +26244,7 @@
 趯路	100	deklou
 趯路	100	deklou
 趯唔切	100	dekmcit
+趯走	100	dekzau
 笛卡兒	100	dekkaaji
 笛卡兒座標制	100	dekkaajizobiuzai
 笛卡爾	100	dekkaaji
@@ -26278,9 +26275,7 @@
 釘梢	100	dengsaau
 釘死	100	dengsei
 釘上釘	100	dengsoengdeng
-訂書釘	100	dengsyudeng
 釘書釘	100	dengsyudeng
-訂書機	100	dengsyugei
 釘書機	100	dengsyugei
 釘書針	100	dengsyuzam
 釘頭	100	dengtau
@@ -26325,7 +26320,8 @@
 掟嘢	100	dengje
 掟球	100	dengkau
 掟死狗	100	dengseigau
-訂書針	100	dengsyuzam
+訂書釘	100	dengsyudeng
+訂書機	100	dengsyugei
 掟彎	100	dengwaan
 訂場	100	dengcoeng
 訂單	100	dengdaan
@@ -26345,6 +26341,7 @@
 訂購者	100	dengkauze
 訂票	100	dengpiu
 訂檯	100	dengtoi
+訂位	100	dengwai
 訂戶	100	dengwu
 訂雜誌	100	dengzaapzi
 訂製	100	dengzai
@@ -27121,6 +27118,7 @@
 捵牀捵席	100	dincongdinzek
 痶牀痶席	100	dincongdinzek
 捵地	100	dindei
+跈地	100	dindei
 捵地沙	100	dindeisaa
 典當	100	dindong
 碘化鉀	100	dinfaagaap
@@ -27218,6 +27216,7 @@
 電燈架	100	dindanggaa
 電燈泡	100	dindangpaau
 電燈總掣	100	dindangzungzai
+跈地	100	dindei
 奠定	100	dinding
 奠都	100	dindou
 電導	100	dindou
@@ -27628,7 +27627,6 @@
 丁青縣	100	dingcingjyun
 丁寵家庭	100	dingcunggaating
 丁醛	100	dingcyun
-叮揼	100	dingdam
 丁等	100	dingdang
 丁點	100	dingdim
 丁丁	100	dingding
@@ -27685,7 +27683,6 @@
 丁未	100	dingmei
 丁麪	100	dingmin
 叮咬	100	dingngaau
-叮拎等㨢	100	dingningdangnang
 丁寧	100	dingning
 叮嚀	100	dingning
 耵聹	100	dingning
@@ -27723,6 +27720,8 @@
 頂戴	100	dingdaai
 頂得順	100	dingdakseon
 頂得住	100	dingdakzyu
+叮揼	100	dingdam
+叮沊	100	dingdam
 頂點	100	dingdim
 鼎鼎	100	dingding
 鼎鼎大名	100	dingdingdaaiming
@@ -27849,6 +27848,7 @@
 訂明	100	dingming
 矴死狗	100	dingseigau
 訂書機	100	dingsyugei
+訂書針	100	dingsyuzam
 訂位	100	dingwai
 叮叮揼揼	100	dingdingdamdam
 叮叮髧髧	100	dingdingdamdam
@@ -27856,6 +27856,7 @@
 叮叮髧髧	100	dingdingdamdam
 丁零襶褦	100	dinglingdaailang
 椗呤鄧㨢	100	dinglingdanglang
+叮拎等㨢	100	dingningdangnang
 定邊	100	dingbin
 定邊縣	100	dingbinjyun
 定必	100	dingbit
@@ -28127,7 +28128,7 @@
 跌至谷底	100	ditzigukdai
 跌咗	100	ditzo
 跌咗個橙執返個桔	100	ditzogocaangzapfaangogat
-跌咗落地揦番乍沙	100	ditzolokdeilaafaanzaasaa
+跌咗落地揦返拃沙	100	ditzolokdeilaafaanzaasaa
 跌足	100	ditzuk
 迭部	100	ditbou
 迭部縣	100	ditboujyun
@@ -28258,14 +28259,12 @@
 屌你	100	diunei
 屌你娘親	100	diuneiloengcan
 屌你老味	100	diuneiloumei
+屌你老尾	100	diuneiloumei
 屌你鹵味	100	diuneiloumei
 𨳒你老味	100	diuneiloumei
 𨳒你鹵味	100	diuneiloumei
 屌你老尾冚家剷	100	diuneiloumeihamgaacaan
-燒你收簿	100	diuneiloumoi
-你鹵味	100	diuneiloumou
 屌你老母	100	diuneiloumou
-拮埋你老母	100	diuneiloumou
 𨳒你老母	100	diuneiloumou
 屌你老母臭閪	100	diuneiloumoucauhai
 屌你老母個臭花閪	100	diuneiloumougocaufaahai
@@ -28273,7 +28272,7 @@
 屌你老母個仆街冚家鏟	100	diuneiloumougopukgaaihamgaacaan
 屌你老母個仆街仔	100	diuneiloumougopukgaaizai
 屌你老母爛花閪	100	diuneiloumoulaanfaahai
-屌你老母撚鳩閪柒未撚屌過呀	100	diuneiloumoulangauhaicatmeilandiugwoaa
+屌你老母撚鳩閪𨳍未撚屌過呀	100	diuneiloumoulangauhaicatmeilandiugwoaa
 屌票	100	diupiu
 屌晒鬼	100	diusaaigwai
 屌絲	100	diusi
@@ -28628,6 +28627,7 @@
 多國公司	100	dogwokgungsi
 多哈	100	dohaa
 多哈回合	100	dohaawuihap
+多閪餘	100	dohaijyu
 多行不義必自斃	100	dohangbatjibitzibai
 多口	100	dohau
 多口水	100	dohauseoi
@@ -30986,7 +30986,6 @@
 動作片	100	dungzokpin
 動作指導	100	dungzokzidou
 侗族	100	dungzuk
-短樁	100	dyuzong
 端詳	100	dyuncoeng
 端菜	100	dyuncoi
 端的	100	dyundik
@@ -31066,6 +31065,7 @@
 短衣	100	dyunji
 短衣幫	100	dyunjibong
 短耳鴞	100	dyunjihiu
+短噎噎	100	dyunjitjit
 短語	100	dyunjyu
 短薳	100	dyunjyun
 短期	100	dyunkei
@@ -31372,7 +31372,6 @@
 花拳繡腿	100	faakyunsauteoi
 花籃	100	faalaam
 花冧	100	faalam
-花柳病	100	faalaubeng
 花柳	100	faalau
 花柳病	100	faalaubeng
 花呢碌	100	faaleluk
@@ -31486,7 +31485,6 @@
 花市	100	faasi
 花士令	100	faasiling
 花士苓	100	faasiling
-花士令	100	faasiling
 花式	100	faasik
 花色	100	faasik
 花飾	100	faasik
@@ -31895,7 +31893,6 @@
 番人	100	faanjan
 返夜	100	faanje
 返夜	100	faanje
-返閏	100	faanjeon
 繙譯	100	faanjik
 翻譯	100	faanjik
 翻譯表	100	faanjikbiu
@@ -32503,7 +32500,6 @@
 繁重	100	faanzung
 販毒	100	faanduk
 販賣	100	faanmaai
-帆船牌	100	faansyunpaai
 販子	100	faanzi
 梵啞鈴	100	faanaaling
 梵唄	100	faanbaai
@@ -32743,7 +32739,6 @@
 發短信	100	faatdyunseon
 發花癡	100	faatfaaci
 發花癲	100	faatfaadin
-發花癩	100	faatfaalaai
 發揮	100	faatfai
 發昏	100	faatfan
 發粉	100	faatfan
@@ -32834,7 +32829,6 @@
 法赫德	100	faathaakdak
 發酵	100	faathaau
 發姣	100	faathaau
-發姣發躉	100	faathaaufaatdan
 發姣發扽	100	faathaaufaatdan
 發姣發燉	100	faathaaufaatdan
 法克	100	faathak
@@ -32945,6 +32939,7 @@
 法拉利	100	faatlaailei
 法拉利	100	faatlaailei
 法拉盛	100	faatlaaising
+法蘭西	100	faatlaansai
 法蘭西皇帝	100	faatlaansaiwongdai
 法蘭	100	faatlaan
 法蘭德斯	100	faatlaandaksi
@@ -33161,7 +33156,7 @@
 發送器	100	faatsunghei
 法書	100	faatsyu
 法塔赫	100	faattaaphaak
-發蹄騰	100	faattaitang
+發𢚖騰	100	faattitang
 法庭	100	faatting
 發帖	100	faattip
 發貼	100	faattip
@@ -35738,9 +35733,7 @@
 放誕不羈	100	fongdaanbatgei
 放誕不拘	100	fongdaanbatkeoi
 放低	100	fongdai
-放低幾両	100	fongdaigeiloeng
 放低幾兩	100	fongdaigeiloeng
-放低二両	100	fongdaijiloeng
 放低二兩	100	fongdaijiloeng
 放低二兩	100	fongdaijiloeng
 放得下	100	fongdakhaa
@@ -36763,7 +36756,6 @@
 符串	100	fucyun
 蚨蝶	100	fudip
 蚨蝶	100	fudip
-符法	100	fufaat
 符弗	100	fufit
 扶風	100	fufung
 扶風縣	100	fufungjyun
@@ -37087,6 +37079,7 @@
 灰背隼	100	fuibuizeon
 灰塵	100	fuican
 灰赤楊	100	fuicekjoeng
+灰匙	100	fuici
 灰柿	100	fuici
 灰翅鷗	100	fuiciau
 灰翅噪鶥	100	fuicicoumei
@@ -38133,10 +38126,12 @@
 風水輪流轉	100	fungseoileonlauzyun
 風水輪流轉	100	fungseoileonlauzyun
 風水佬	100	fungseoilou
-風水佬呃你十年八年	100	fungseoilouakneisapninbaatnin
-風水佬呃你十年八年，唔呃得一世	100	fungseoilouakneisapninbaatninmakdakjatsai
-風水佬唔呃得十年八年	100	fungseoiloumaakdaksapninbaatnin
+風水佬唔呃得十年八年	100	fungseoiloumngaakdaksapninbaatnin
+風水佬唔呃得十年八年	100	fungseoiloumngakdaksapninbaatnin
 風水佬呃你十年八年	100	fungseoiloungaakneisapninbaatnin
+風水佬呃你十年八年，唔呃得一世	100	fungseoiloungaakneisapninbaatninmngaakdakjatsai
+風水佬呃你十年八年	100	fungseoiloungakneisapninbaatnin
+風水佬呃你十年八年，唔呃得一世	100	fungseoiloungakneisapninbaatninmngakdakjatsai
 風水尾	100	fungseoimei
 風水尾	100	fungseoimei
 風水生	100	fungseoisang
@@ -39089,6 +39084,7 @@
 假手於人	100	gaasaujyujan
 假死	100	gaasei
 假石山	100	gaaseksaan
+假石屎樓	100	gaaseksilau
 假聲	100	gaaseng
 賈思勰	100	gaasihip
 假使	100	gaasi
@@ -39249,7 +39245,6 @@
 架勢	100	gaasai
 架勢堂	100	gaasaitong
 架勢堂	100	gaasaitong
-假石屎樓	100	gaaseksilau
 稼穡	100	gaasik
 駕艇	100	gaateng
 假條	100	gaatiu
@@ -39312,6 +39307,7 @@
 街斗	100	gaaidau
 街鬥	100	gaaidau
 階地	100	gaaideng
+街渡	100	gaaidou
 街艔	100	gaaidou
 街渡	100	gaaidou
 街艔	100	gaaidou
@@ -39918,8 +39914,9 @@
 緘口	100	gaamhau
 緘口不言	100	gaamhaubatjin
 監控	100	gaamhung
+監人勑厚	100	gaamjanlaaihau
 監人賴厚	100	gaamjanlaaihau
-監人乃後	100	gaamjannaaihau
+監人賴逅	100	gaamjanlaaihau
 監人乃後	100	gaamjannaaihau
 監人食死貓	100	gaamjansikseimaau
 監獄	100	gaamjuk
@@ -40520,13 +40517,14 @@
 戛然而止	100	gaatjinjizi
 戛納	100	gaatnaap
 曱甴	100	gaatzaat
-甴曱	100	gaatzaat
-曱甴屎	100	gaatzaatsi
-甴曱屎	100	gaatzaatsi
-曱甴屋	100	gaatzaatuk
-甴曱屋	100	gaatzaatuk
 曱甴屎	100	gaatzaatsi
 曱甴箱	100	gaatzaatsoeng
+曱甴屋	100	gaatzaatuk
+曱甴仔	100	gaatzaatzai
+曱甴	100	gaatzaat
+曱甴屎	100	gaatzaatsi
+曱甴箱	100	gaatzaatsoeng
+曱甴屋	100	gaatzaatuk
 曱甴仔	100	gaatzaatzai
 交拜	100	gaaubaai
 茭白	100	gaaubaak
@@ -40830,7 +40828,6 @@
 搞錢	100	gaaucin
 搞錯	100	gaauco
 攪錯	100	gaauco
-有冇芥菜	100	gaauco
 攪腸痧	100	gaaucoengsaa
 絞腸痧	100	gaaucoengsaa
 搞得掂	100	gaaudakdim
@@ -41086,6 +41083,7 @@
 教育部	100	gaaujukbou
 教育部長	100	gaaujukbouzoeng
 教育背景	100	gaaujukbuiging
+教育署	100	gaaujukcyu
 教育電視	100	gaaujukdinsi
 教育方針	100	gaaujukfongzam
 教育家	100	gaaujukgaa
@@ -41100,7 +41098,6 @@
 教育路	100	gaaujuklou
 教育性	100	gaaujuksing
 教育相談	100	gaaujuksoengtaam
-教育署	100	gaaujuksyu
 教育體制	100	gaaujuktaizai
 教育廳	100	gaaujukting
 教育廳長	100	gaaujuktingzoeng
@@ -41203,7 +41200,7 @@
 教主	100	gaauzyu
 較著	100	gaauzyu
 覺覺豬	100	gaaugaauzyu
-覺覺豬	100	gaaugokzyu
+覺覺豬	100	gaaugaauzyu
 雞巴	100	gaibaa
 雞掰	100	gaibaai
 雞包	100	gaibaau
@@ -41211,11 +41208,18 @@
 雞肶	100	gaibei
 雞脾	100	gaibei
 雞髀	100	gaibei
+雞肶鎚	100	gaibeiceoi
 雞脾鎚	100	gaibeiceoi
+雞髀鎚	100	gaibeiceoi
+雞肶打人牙骹軟	100	gaibeidaajanngaagaaujyun
 雞脾打人牙骹軟	100	gaibeidaajanngaagaaujyun
 雞髀打人牙骹軟	100	gaibeidaajanngaagaaujyun
 雞肶菇	100	gaibeigu
+雞脾菇	100	gaibeigu
 雞髀菇	100	gaibeigu
+雞肶位	100	gaibeiwai
+雞脾位	100	gaibeiwai
+雞髀位	100	gaibeiwai
 雞賊	100	gaicaak
 雞搥	100	gaiceoi
 雞搥	100	gaiceoi
@@ -41314,6 +41318,8 @@
 雞翼袖	100	gaijikzau
 雞肉	100	gaijuk
 雞哽頸	100	gaikanggeng
+雞骾頸	100	gaikanggeng
+雞鯁頸	100	gaikanggeng
 雞咳	100	gaikat
 雞球	100	gaikau
 雞肋	100	gailak
@@ -41336,7 +41342,6 @@
 雞毛鴨血	100	gaimouaaphyut
 雞毛撢子	100	gaimoudaanzi
 雞毛店	100	gaimoudim
-雞毛䒬皮	100	gaimoumokpei
 雞毛掃	100	gaimousou
 雞毛蒜皮	100	gaimousyunpei
 雞毛帚	100	gaimouzau
@@ -41357,9 +41362,7 @@
 雞排	100	gaipaai
 雞批	100	gaipai
 雞皮	100	gaipei
-雞脾	100	gaipei
-雞皮疙瘩	100	gaipeigatdaap
-雞脾位	100	gaipeiwai
+雞皮疙瘩	100	gaipeingatdaap
 雞皮紙	100	gaipeizi
 雞片	100	gaipin
 雞婆	100	gaipo
@@ -41850,6 +41853,7 @@
 金文	100	gamman
 今文經	100	gammanging
 今文經學	100	gammanginghok
+今日	100	gammat
 金茂大廈	100	gammaudaaihaa
 甘美	100	gammei
 甘味	100	gammei
@@ -41876,7 +41880,7 @@
 金額絲雀	100	gamngaaksizoek
 金額雀鶥	100	gamngaakzoekmei
 金額	100	gamngaak
-金眼鶥雀	100	gamngaanzoekzoek
+金眼鶥雀	100	gamngaanmeizoek
 金銀	100	gamngan
 金銀箔	100	gamnganbok
 金銀島	100	gamngandou
@@ -42306,7 +42310,6 @@
 敢做敢當	100	gamzougamdong
 感觸	100	gamzuk
 噉仲得掂	100	gamzungdakdim
-咁啱得咁橋	100	gamaamdakgamkiu
 咁晏	100	gamaan
 咁白	100	gambaak
 禁閉	100	gambai
@@ -42326,7 +42329,6 @@
 咁大把	100	gamdaaibaa
 咁大個仔	100	gamdaaigozai
 咁大隻蛤乸隨街跳	100	gamdaaizekgaapnaaceoigaaitiu
-咁大隻蛤乸隨街跳	100	gamdaaizekgaplaaceoigaaitiu
 咁大隻蛤乸隨街跳	100	gamdaaizekgapnaaceoigaaitiu
 咁得閒	100	gamdakhaan
 禁地	100	gamdei
@@ -42383,6 +42385,7 @@
 咁近城隍廟都唔求支好籤	100	gamkansingwongmiudoumkauzihoucim
 贛劇	100	gamkek
 禁區	100	gamkeoi
+咁巧	100	gamkiu
 咁橋	100	gamkiu
 咁蹺	100	gamkiu
 咁撈	100	gamlaau
@@ -42395,9 +42398,9 @@
 咁盟塞	100	gammangsak
 咁忙	100	gammong
 咁啱	100	gamngaam
+咁啱得咁巧	100	gamngaamdakgamkiu
 咁啱得咁橋	100	gamngaamdakgamkiu
 咁啱得咁蹺	100	gamngaamdakgamkiu
-咁啱得咁竅	100	gamngaamdakgamkiu
 咁啱嘅	100	gamngaamge
 咁啱嘅	100	gamngaamge
 咁啱線	100	gamngaamsin
@@ -42535,7 +42538,6 @@
 斤嘢	100	ganje
 筋肉	100	ganjuk
 根源	100	ganjyun
-斤両	100	ganloeng
 斤兩	100	ganloeng
 筋絡	100	ganlok
 跟佬	100	ganlou
@@ -42937,6 +42939,7 @@
 敆埋一齊去	100	gapmaaijatcaiheoi
 敆埋有幾多	100	gapmaaijaugeido
 蛤乸	100	gapnaa
+蛤乸衣	100	gapnaaji
 敆手	100	gapsau
 夾手夾腳	100	gapsaugapgoek
 敆手敆脚	100	gapsaugapgoek
@@ -43017,6 +43020,7 @@
 吉隆	100	gatlung
 吉隆坡	100	gatlungbo
 吉隆縣	100	gatlungjyun
+㓤埋你老母	100	gatmaaineiloumou
 吉米	100	gatmai
 吉莫	100	gatmok
 吉木乃	100	gatmuknaai
@@ -43176,7 +43180,7 @@
 九點鐘	100	gaudimzung
 九鼎	100	gauding
 九代單傳	100	gaudoidaancyun
-狗都唔吼	100	gaudoumhau
+狗都唔睺	100	gaudoumhau
 九反地	100	gaufaandei
 九反之地	100	gaufaanzidei
 狗吠	100	gaufai
@@ -44055,6 +44059,7 @@
 基址	100	geizi
 機子	100	geizi
 箕子	100	geizi
+蟣子	300	geizi
 機智	100	geizi
 基座	100	geizo
 機長	100	geizoeng
@@ -44245,6 +44250,7 @@
 紀昀	100	geiwan
 幾盞	100	geizaan
 杞子	100	geizi
+蟣子	100	geizi
 杞梓之林	100	geizizilam
 幾至	100	geizi
 己巳	100	geizi
@@ -44441,7 +44447,6 @@
 妓寨	100	geizaai
 妓寨	100	geizaai
 技職	100	geizik
-喼帽	100	gekmou
 吃口吃舌	100	gekhaugeksit
 驚死	100	gensei
 驚青	100	gengceng
@@ -44478,6 +44483,7 @@
 頸渴	100	genghot
 頸圈	100	genghyun
 頸箍	100	gengku
+頸癧	100	genglek
 頸癧	100	genglik
 頸鍊	100	genglin
 頸鏈	100	genglin
@@ -44499,7 +44505,6 @@
 鏡片	100	gengpin
 鏡屏	100	gengping
 鏡屏	100	gengping
-鏡錫	100	gengsek
 鏡頭	100	gengtau
 鏡檯	100	gengtoi
 鏡湖	100	gengwu
@@ -44520,7 +44525,6 @@
 居第	100	geoidai
 居多	100	geoido
 居家	100	geoigaa
-居家兵	100	geoigaabing
 居間	100	geoigaan
 居經	100	geoiging
 居高不下	100	geoigoubathaa
@@ -44796,6 +44800,8 @@
 鉅著	100	geoizyu
 巨鑽	100	geoizyun
 喼帽	100	gepmou
+喼帽	100	gepmou
+喼汁	100	gepzap
 夾腳	100	gepgoek
 挾腳	100	gepgoek
 夾腳拖鞋	100	gepgoektohaai
@@ -44804,19 +44810,13 @@
 夾斷	100	geptyun
 夾娃娃	100	gepwaawaa
 顧住	100	geuzyu
-叽趷	100	gigat
-嘰屹	500	gigat
-嘰訖	10	gigat
 嘰趷	100	gigat
 嘰嘰趷趷	100	gigigatgat
 嘰哩咕嚕	100	giligulu
-嘰哩咕嚕	100	giligulu
-嘰兀	100	gingat
 嘰嘰咭咭	100	gigigatgat
 嘰嘰趷趷	100	gigigatgat
 嘰哩咕嚕	100	giligulu
 嘰哩咕嚕	100	giligulu
-激奀	100	gikan
 擊敗	100	gikbaai
 擊斃	100	gikbai
 棘鼻青島龍	100	gikbeicingdoulung
@@ -44849,6 +44849,8 @@
 亟亟奔走	100	gikgikbanzau
 擊劍	100	gikgim
 擊劍者	100	gikgimze
+撠腳	100	gikgoek
+棘腳	100	gikgoek
 擊鼓	100	gikgu
 擊鼓鳴金	100	gikguminggam
 激鬼氣	100	gikgwaihei
@@ -45110,7 +45112,6 @@
 劍尖	100	gimzim
 儉薄	100	gimbok
 儉腹	100	gimfuk
-勤儉	100	gimgim
 儉學	100	gimhok
 儉以防匱	100	gimjifonggwai
 儉以養廉	100	gimjijoenglim
@@ -46018,6 +46019,7 @@
 喼槍	100	gipcoeng
 喼頓	100	gipdeon
 喼帽	100	gipmou
+喼帽	100	gipmou
 喼汁	100	gipzap
 喼紙	100	gipzi
 劫波	100	gipbo
@@ -46218,8 +46220,8 @@
 結帳	100	gitzoeng
 結賬	100	gitzoeng
 傑出	100	gitceot
+傑凸凸	100	gitdatdat
 傑𠱂𠱂	100	gitdatdat
-杰凸凸	100	gitdatdat
 傑弗遜	100	gitfatseon
 傑佛茲	100	gitfatzi
 傑斐遜城	100	gitfeiseonsing
@@ -46229,6 +46231,8 @@
 傑克森	100	githaksam
 傑克遜	100	githakseon
 傑野	100	gitje
+渴嘢	100	gitje
+竭嘢	100	gitje
 𠹳嘢	100	gitje
 傑伊漢港	100	gitjihongong
 傑拉	100	gitlaai
@@ -46338,7 +46342,6 @@
 矯飾	100	giusik
 撟舌	100	giusit
 繳銷	100	giusiu
-蕌頭	100	giutau
 繳獲	100	giuwok
 矯枉過直	100	giuwonggwozik
 矯枉過正	100	giuwonggwozing
@@ -46521,8 +46524,8 @@
 嗰次	100	goci
 嗰單嘢	100	godaanje
 嗰單畸士	100	godaankeisi
-嗰笪	100	godaat
 嗰墶	100	godaat
+嗰笪	100	godaat
 嗰𠱂	100	godat
 嗰兜友	100	godaujau
 嗰啲	100	godi
@@ -46564,14 +46567,14 @@
 嗰隻嘢	100	gozekje
 嗰隻衰嘢	100	gozekseoije
 嗰種	100	gozung
-個啲	100	godi
-箇啲	100	godi
 個把	100	gobaa
 個包	100	gobaau
 個別	100	gobit
 個噃	100	gobo
 個半	100	gobun
 個唱	100	gocoeng
+個啲	100	godi
+箇啲	100	godi
 個袋	100	godoi
 個舊	100	gogau
 個舊市	100	gogausi
@@ -46613,6 +46616,7 @@
 個肚有啲唔妥	100	gotoujaudimto
 個喎	100	gowaa
 個位	100	gowai
+個啝	100	gowo
 個喎	100	gowo
 個啝	100	gowo
 個喎	100	gowo
@@ -46629,8 +46633,12 @@
 個中人	100	gozungjan
 哥哥	100	gogo
 哥哥仔	100	gogozai
+啹喀	100	goegaa
+啹嘎	100	goegaa
+踞喀	100	goegaa
+啹喀兵	100	goegaabing
+啹嘎兵	100	goegaabing
 踞喀兵	100	goegaabing
-啹喀	100	goehaak
 鋸齒	100	goeci
 鋸齒形	100	goecijing
 鋸到一頸血	100	goedoujatgenghyut
@@ -46695,13 +46703,8 @@
 腳桿	100	goekgon
 腳孤拐	100	goekgugwaai
 腳瓜	100	goekgwaa
-腳瓜眈	100	goekgwaadaam
 腳瓜䏙	100	goekgwaadam
-腳瓜眈	100	goekgwaadam
-腳瓜啷	100	goekgwaalong
-腳瓜瓤	100	goekgwaalong
 腳瓜囊	100	goekgwaanong
-腳瓜瓤	100	goekgwaanong
 腳瓜瓤	100	goekgwaanong
 腳骨	100	goekgwat
 腳骨力	100	goekgwatlik
@@ -46819,8 +46822,6 @@
 羌族	100	goengzuk
 僵住	100	goengzyu
 僵住症	100	goengzyuzing
-講耶穌	100	goengjesou
-講數口	100	goengsouhau
 犟勁	100	goengging
 犟勁兒	100	goenggingji
 糨糊	100	goengwu
@@ -48148,6 +48149,7 @@
 高行健	100	gouhanggin
 高起	100	gouhei
 高興	100	gouhing
+高蹺	100	gouhiu
 高學歷	100	gouhoklik
 高看	100	gouhon
 高寒	100	gouhon
@@ -48222,7 +48224,6 @@
 高球杯	100	goukaubui
 高球場	100	goukaucoeng
 高企	100	goukei
-高蹺	100	goukiu
 高蹺	100	goukiu
 高蹺鷸	100	goukiuwat
 高橋留美子	100	goukiulaumeizi
@@ -48662,6 +48663,7 @@
 鼓吹	100	guceoi
 鼓槌	100	guceoi
 古馳	100	guci
+古纖道	100	gucimdou
 估錯	100	guco
 鼓噪	100	gucou
 鼓譟	100	gucou
@@ -48731,7 +48733,6 @@
 古傑拉特邦	100	gugitlaaidakbong
 古傑拉爾	100	gugitlaaiji
 估歌仔	100	gugozai
-古蠱	100	gugu
 鼓鼓	100	gugu
 估估下	100	guguhaa
 鼓鼓囊囊	100	gugunongnong
@@ -48756,7 +48757,6 @@
 鼓氣袋	100	guheidoi
 鼓氣袋	100	guheidoi
 古氣候學	100	guheihauhok
-古縴道	100	guhindou
 古音	100	gujam
 古人	100	gujan
 古人	100	gujan
@@ -48902,7 +48902,6 @@
 蠱惑友	100	guwaakjau
 古惑女	100	guwaakneoi
 古惑仔	100	guwaakzai
-古蠱仔	100	guwaakzai
 蠱惑仔	100	guwaakzai
 古爲今用	100	guwaigamjung
 古韻	100	guwan
@@ -49681,6 +49680,7 @@
 供佛花	100	gungfatfaa
 工科	100	gungfo
 工科大學	100	gungfodaaihok
+工科學校	100	gungfohokhaau
 工科學生	100	gungfohoksaang
 工科學生	100	gungfohoksang
 供貨	100	gungfo
@@ -50511,6 +50511,9 @@
 瓜老襯	100	gwaaloucan
 瓜無滾圓，人無十全	100	gwaamougwanjyunjanmousapcyun
 瓜拿納	100	gwaanaanaap
+瓜褦藤藤褦瓜	100	gwaanaaitangtangnaaigwaa
+瓜𠮨藤藤𠮨瓜	100	gwaanaaitangtangnaaigwaa
+瓜褦藤藤褦瓜	100	gwaanangtangtangnanggwaa
 瓜褦藤，藤褦瓜	100	gwaanangtangtangnanggwaa
 瓜農	100	gwaanung
 瓜皮帽	100	gwaapeimou
@@ -51209,11 +51212,9 @@
 鬼話連篇	100	gwaiwaalinpin
 鬼畫符	100	gwaiwaakfu
 鬼魂	100	gwaiwan
-鬼魂都失	100	gwaiwandousat
 鬼魂啊失	100	gwaiwanaasat
+鬼魂都失	100	gwaiwandousat
 鬼魂失	100	gwaiwansat
-嚇得鬼魂都失	100	haakdakgwaiwandousat
-嚇得鬼魂啊失	100	haakdakgwaiwanaasat
 鬼混	100	gwaiwan
 鬼搰	100	gwaiwat
 詭蜮	100	gwaiwik
@@ -51388,11 +51389,6 @@
 貴族社會	100	gwaizuksewui
 貴族政治	100	gwaizukzingzi
 貴重	100	gwaizung
-葵花	100	gwaifaa
-葵瓜子	100	gwaigwaazi
-葵心扇	100	gwaisamsin
-葵扇	100	gwaisin
-葵鼠	100	gwaisyu
 跪拜	100	gwaibaai
 跪玻璃	100	gwaibolei
 跪低	100	gwaidai
@@ -51851,6 +51847,7 @@
 骨燼	100	gwatzeon
 橘子	100	gwatzi
 骨子	100	gwatzi
+骨緻	100	gwatzi
 骨子裏	100	gwatzileoi
 骨子裡	100	gwatzileoi
 橘子水	100	gwatziseoi
@@ -52067,6 +52064,7 @@
 過界	100	gwogaai
 過膠	100	gwogaau
 過繼	100	gwogai
+過緊	100	gwogan
 過基甲	100	gwogeigaap
 過基峽	100	gwogeihaap
 過基峽	100	gwogeihap
@@ -52084,7 +52082,6 @@
 過骨	100	gwogwat
 過過	100	gwogwo
 過過癮	100	gwogwojan
-過街老鼠	100	gwogwolousyu
 過吓癮	100	gwohaajan
 過下	100	gwohaa
 過客	100	gwohaak
@@ -52869,7 +52866,7 @@
 光頭仔	100	gwongtauzai
 光天化日	100	gwongtinfaajat
 光天化日之下	100	gwongtinfaajatzihaa
-光禿碌	100	gwongtuklok
+光禿碌	100	gwongtukluk
 光禿禿	100	gwongtuktuk
 光通量	100	gwongtungloeng
 光脫脫	100	gwongtyuttyut
@@ -53269,6 +53266,7 @@
 蝦瘌	100	haalaat
 蝦蝲	100	haalaat
 瘕淋咳嗽	100	haalamkatsau
+哈嘍	100	haalau
 哈利	100	haalei
 哈里	100	haalei
 哈里發帝國	100	haaleifaatdaigwok
@@ -53282,9 +53280,10 @@
 哈雷	100	haaleoi
 哈雷彗星	100	haaleoiwaising
 哈靈根	100	haalinggan
-哈羅	100	haalo
 哈囉	100	haalo
+哈羅	100	haalo
 哈囉德	100	haalodak
+哈羅德	100	haalodak
 哈萊姆	100	haaloimou
 哈嘍	100	haalou
 哈佬	100	haalou
@@ -53793,6 +53792,7 @@
 嚡霎霎	100	haaisaapsaap
 嚡𤆣𤆣	100	haaisaapsaap
 嚡澀澀	100	haaisapsap
+嚡霎霎	100	haaisapsap
 嚡烚烚	100	haaisepsep
 嚡煠煠	100	haaisepsep
 嚡熠熠	100	haaisepsep
@@ -53841,7 +53841,6 @@
 蟹鉗	100	haaikim
 蟹柳	100	haailau
 駭浪	100	haailong
-蟹槓	100	haailung
 蟹民	100	haaiman
 蟹獴	100	haaimung
 駭怕	100	haaipaa
@@ -54014,6 +54013,7 @@
 刻劃	100	haakwaak
 刻畫	100	haakwaak
 黑胡椒	100	haakwuziu
+黑渣	100	haakzaa
 黑仔	100	haakzai
 克制	100	haakzai
 克盡己任	100	haakzeongeijam
@@ -54029,7 +54029,6 @@
 黑種人	100	haakzungjan
 喀布爾	100	haakbouji
 嚇餐飽	100	haakcaanbaau
-喀擦	100	haakcaat
 嚇親	100	haakcan
 喀秋莎	100	haakcausaa
 客車	100	haakce
@@ -54041,6 +54040,8 @@
 客串	100	haakcyun
 嚇大	100	haakdaai
 嚇得發抖	100	haakdakfaatdau
+嚇得鬼魂啊失	100	haakdakgwaiwanaasat
+嚇得鬼魂都失	100	haakdakgwaiwandousat
 客隊	100	haakdeoi
 客店	100	haakdim
 嚇倒	100	haakdou
@@ -54527,7 +54528,11 @@
 行得通	100	haangdaktung
 行得走得	100	haangdakzaudak
 行得正企得正	100	haangdakzengkeidakzeng
+行得正徛得正	100	haangdakzengkeidakzeng
 行得正，企得正	100	haangdakzengkeidakzeng
+行得正，徛得正	100	haangdakzengkeidakzeng
+行得正，企得正，唔怕雷公喺天顶	100	haangdakzengkeidakzengmpaaleoigunghaitindeng
+行得正，徛得正，唔怕雷公喺天顶	100	haangdakzengkeidakzengmpaaleoigunghaitindeng
 行地方	100	haangdeifong
 行多	100	haangdo
 行到	100	haangdou
@@ -54545,7 +54550,6 @@
 行經	100	haangging
 桁角	100	haanggok
 行古惑	100	haangguwaak
-行古蠱	100	haangguwaak
 行蠱惑	100	haangguwaak
 行公司	100	haanggungsi
 行逛	100	haanggwaang
@@ -54879,10 +54883,9 @@
 姣婆守唔到寡	100	haauposaumdougwaa
 姣婆守唔到寡	100	haauposaumdougwaa
 姣婆紫	100	haaupozi
+姣屍扽㞘	100	haausidanduk
 姣屍扽督	100	haausidanduk
 姣屍扽篤	100	haausidanduk
-姣思扽㞘	100	haausidanduk
-姣屍燉篤	100	haausidanduk
 校巴	100	haaubaa
 校巴站	100	haaubaazaam
 校車	100	haauce
@@ -54945,50 +54948,45 @@
 校長	100	haauzoeng
 效忠	100	haauzung
 效忠誓詞	100	haauzungsaici
-閪鳩撚屌呀	100	haigaulandiuaa
-閪口閪面	100	haihauhaimin
-閪冧	100	hailam
-閪冧	100	hailam
-閪窿	100	hailung
-閪面	100	haimin
-閪毛	100	haimou
-閪水	100	haiseoi
-閪吱	100	haizi
-閪魂	100	haiwan
-閪魂失	100	haiwansat
-閪聲	100	haiseng
-閪人	100	haijan
-閪鬼	100	haigwai
-閪驚	100	haigeng
-閪晒	100	haisaai
-閪嗮	100	haisaai
-閪嘢	100	haije
-臭花閪	100	caufaahai
-臭化閪	100	caufaahai
-有閪用	100	jauhaijung
 㞓鳩撚屌呀	100	haigaulandiuaa
-㞓口㞓面	100	haihauhaimin
-㞓冧	100	hailam
-㞓冧	100	hailam
-㞓窿	100	hailung
-㞓面	100	haimin
-㞓毛	100	haimou
-㞓水	100	haiseoi
-㞓吱	100	haizi
-㞓魂	100	haiwan
-㞓魂失	100	haiwansat
-㞓聲	100	haiseng
-㞓人	100	haijan
-㞓鬼	100	haigwai
+閪鳩撚屌呀	100	haigaulandiuaa
 㞓驚	100	haigeng
-㞓晒	100	haisaai
+閪驚	100	haigeng
+㞓鬼	100	haigwai
+閪鬼	100	haigwai
+㞓口㞓面	100	haihauhaimin
+閪口閪面	100	haihauhaimin
+㞓人	100	haijan
+閪人	100	haijan
+閪嘢	100	haije
+㞓冧	100	hailam
+閪冧	100	hailam
+㞓冧	100	hailam
+閪冧	100	hailam
+㞓窿	100	hailung
+閪窿	100	hailung
+㞓面	100	haimin
+閪面	100	haimin
+㞓毛	100	haimou
+閪毛	100	haimou
 㞓嗮	100	haisaai
-臭花㞓	100	caufaahai
-臭化㞓	100	caufaahai
-有㞓用	100	jauhaijung
+㞓晒	100	haisaai
+閪嗮	100	haisaai
+閪晒	100	haisaai
+㞓聲	100	haiseng
+閪聲	100	haiseng
+㞓水	100	haiseoi
+閪水	100	haiseoi
+㞓魂	100	haiwan
+閪魂	100	haiwan
+㞓魂失	100	haiwansat
+閪魂失	100	haiwansat
+㞓吱	100	haizi
+閪吱	100	haizi
 喺邊	100	haibin
 喺邊度	100	haibindou
 喺邊道	100	haibindou
+喺啲	100	haidi
 喺度	1000000	haidou
 喺道	100	haidou
 喺度食	100	haidousik
@@ -55003,7 +55001,6 @@
 喺呢	100	hainei
 喺嗮	100	haisaai
 喺處	100	haisyu
-喺啲	100	haidi
 喺屋企	100	haiukkei
 徯徑	100	haiging
 蹊徑	100	haiging
@@ -55256,11 +55253,11 @@
 黑客文	100	hakhaakman
 黑函	100	hakhaam
 黑鷳	100	hakhaan
+黑匣子	100	hakhaapzi
 黑黑實實	100	hakhaksatsat
 刻痕	100	hakhan
 黑盒	100	hakhap
 黑盒	100	hakhap
-黑匣子	100	hakhapzi
 黑瞎子	100	hakhatzi
 黑瞎子島	100	hakhatzidou
 黑口黑面	100	hakhauhakmin
@@ -55608,7 +55605,7 @@
 扻崩頭	100	hambangtau
 扻親	100	hamcan
 砍大山	100	hamdaaisaan
-撼低	100	hamdai
+扻低	100	hamdai
 坎特伯雷故事集	100	hamdakbaakleoigusizaap
 砍刀	100	hamdou
 砍斷	100	hamdyun
@@ -55634,14 +55631,9 @@
 砍傷	100	hamsoeng
 砍樹	100	hamsyu
 坎塔布里亞	100	hamtaapbouleiaa
-坎頭埋牆	100	hamtaumaaicoeng
-撼頭埋牆	100	hamtaumaaicoeng
-扻頭埋牆	100	hamtaumaaicoeng
-撼頭埋牆	100	hamtaumaaicoeng
 砍頭	100	hamtau
 砍頭不過風吹帽	100	hamtaubatgwofungceoimou
 扻頭埋牆	100	hamtaumaaicoeng
-撼頭埋牆	100	hamtaumaaicoeng
 莰酮	100	hamtung
 坎子	100	hamzi
 坎貝爾	100	hambuiji
@@ -55689,6 +55681,7 @@
 含金	100	hamgam
 含垢忍辱	100	hamgaujanjuk
 含宮咀徵	100	hamgungzeoizing
+冚冚聲	100	hamhamseng
 含含聲	100	hamhamseng
 唅唅聲	100	hamhamseng
 坎坎聲	100	hamhamseng
@@ -55713,7 +55706,6 @@
 含冤而死	100	hamjyunjisei
 含冤莫白	100	hamjyunmokbaak
 含冤受屈	100	hamjyunsauwat
-冚冚聲	100	hamkamseng
 含鈣	100	hamkoi
 含撚	100	hamlan
 含撚	100	hamlan
@@ -55774,7 +55766,6 @@
 冚家富貴	100	hamgaacaan
 冚家鏟	100	hamgaacaan
 咸家鏟	100	hamgaacaan
-杏色加橙色	100	hamgaacaan
 冚家祥	100	hamgaacoeng
 冚家富貴	100	hamgaafugwai
 冚家伶	100	hamgaaling
@@ -55840,6 +55831,7 @@
 很真	100	hanzan
 懇摯	100	hanzi
 墾殖	100	hanzik
+睏覺	100	hangaau
 痕痕哋	100	hanhandei
 痕癢	100	hanjoeng
 痕跡	100	hanzik
@@ -56210,6 +56202,7 @@
 杏脯	100	hangpou
 幸甚	100	hangsam
 幸事	100	hangsi
+杏色加橙色	100	hangsikgaacaangsik
 杏霜	100	hangsoeng
 杏樹	100	hangsyu
 杏壇	100	hangtaan
@@ -56239,8 +56232,9 @@
 洽購	100	hapkau
 瞌埋眼	100	hapmaaingaan
 翕眼	100	hapngaan
-瞌眼瞓	100	hapngaanfan
 瞌眼睏	100	hapngaanfan
+瞌眼瞓	100	hapngaanfan
+瞌眼睏	100	hapngaanhan
 恰帕斯州	100	happaaksizau
 恰西	100	hapsai
 恰死	100	hapsei
@@ -56472,18 +56466,16 @@
 乞降	100	hatgong
 乞人	100	hatjan
 乞人憎	100	hatjanzang
-非洲和尚	100	hatjanzang
 乞休	100	hatjau
 乞兒	100	hatji
 乞衣	100	hatji
 乞兒兜度搶飯食	100	hatjidaudoucoengfaansik
 乞兒兜度揦飯食	100	hatjidaudoulaafaansik
+乞兒雞	100	hatjigai
+乞衣雞	100	hatjigai
 乞兒公	100	hatjigung
 乞兒相	100	hatjisoeng
 乞兒仔	100	hatjizai
-乞衣雞	100	hatjigai
-乞兒雞	100	hatjigai
-乞兒相	100	hatjisoeng
 乞求	100	hatkau
 乞丐	100	hatkoi
 乞力馬扎羅山	100	hatlikmaazaatlosaan
@@ -56875,8 +56867,8 @@
 口條	100	hautiu
 口吐白沫	100	hautoubaakmut
 口吐毒焰	100	hautoudukjim
+口同鼻拗	100	hautungbeiaau
 口同鼻詏	100	hautungbeiaau
-口同鼻拗	100	hautungbeingaau
 口𡄴𡄴	100	hauwaakwaak
 口胃	100	hauwai
 口惠而實不至	100	hauwaijisatbatzi
@@ -57237,7 +57229,6 @@
 後庭藏毒	100	hautingcongduk
 後臺	100	hautoi
 後臺硬朗	100	hautoingaanglong
-後臺	100	hautoi
 後唐	100	hautong
 后土	100	hautou
 後土	100	hautou
@@ -57930,7 +57921,6 @@
 棄世	100	heisai
 氣勢	100	heisai
 氣勢不凡	100	heisaibatfaan
-氣勢磅礴	100	heisaibongbok
 氣勢洶洶	100	heisaihunghung
 氣勢如虹	100	heisaijyuhung
 氣勢凌人	100	heisailingjan
@@ -59216,7 +59206,6 @@
 可望而不可及	100	homongjibathokap
 可望而不可即	100	homongjibathozik
 可望而不可及	100	homongjifauhokap
-可惱也	100	honaauje
 可能	100	honang
 可能係	100	honanghai
 可能性	100	honangsing
@@ -59372,7 +59361,6 @@
 何日	100	hojat
 何以	100	hoji
 何以見得	100	hojigindak
-荷爾蒙	100	hojimung
 何以自處	100	hojizicyu
 何應欽	100	hojingjam
 荷葉	100	hojip
@@ -59491,7 +59479,6 @@
 何靜雅	100	hozingngaa
 何在	100	hozoi
 何足掛齒	100	hozukgwaaci
-荷包	100	hobaau
 賀詞	100	hoci
 賀辭	100	hoci
 賀朝	100	hociu
@@ -59536,8 +59523,6 @@
 荷載	100	hozoi
 靴褲	100	hoefu
 靴咁大隻腳	100	hoegamdaaizekgoek
-㗾㗾聲	100	hoehoeseng
-靴靴聲	100	hoehoeseng
 靴掖子	100	hoejikzi
 靴籬鶯	100	hoeleiang
 靴隼鵰	100	hoezeondiu
@@ -62021,6 +62006,8 @@
 好逑	100	houkau
 好期待	100	houkeidoi
 好傾	100	houking
+好巧	100	houkiu
+好竅	100	houkiu
 好嘅唔靈醜嘅靈	100	houkoimlingcaukoiling
 好窮	100	houkung
 好啦	100	houlaa
@@ -62501,7 +62488,6 @@
 凶荒	100	hungfong
 空防	100	hungfong
 空房間	100	hungfonggaan
-紅鮪	100	hungfui
 空腹	100	hungfuk
 空腹高心	100	hungfukgousam
 凶服	100	hungfuk
@@ -62888,7 +62874,6 @@
 控罪	100	hungzeoi
 紅矮星	100	hungaising
 紅白	100	hungbaak
-紅蔔蔔	100	hungbaakbaak
 紅白機	100	hungbaakgei
 紅白喜事	100	hungbaakheisi
 紅白藍	100	hungbaaklaam
@@ -62919,7 +62904,6 @@
 紅背伯勞	100	hungbuibaaklou
 紅背紅尾鴝	100	hungbuihungmeikeoi
 紅背蜘蛛	100	hungbuizizyu
-紅卜卜	100	hungbukbuk
 熊本	100	hungbun
 熊本熊	100	hungbunhung
 熊本縣	100	hungbunjyun
@@ -62992,6 +62976,7 @@
 紅褲仔	100	hungfuzai
 紅褲仔出身	100	hungfuzaiceotsan
 紅褲子出身	100	hungfuziceotsan
+紅鮪	100	hungfui
 洪福	100	hungfuk
 鴻福	100	hungfuk
 紅腹濱鷸	100	hungfukbanwat
@@ -63006,6 +62991,7 @@
 熊蜂	100	hungfung
 雄蜂	100	hungfung
 雄風	100	hungfung
+紅封包	100	hungfungbaau
 洪家	100	hunggaa
 紅交嘴雀	100	hunggaauzeoizoek
 紅雞	100	hunggai
@@ -63048,7 +63034,6 @@
 紅灌木茶	100	hunggunmukcaa
 紅寡婦鳥	100	hunggwaafuniu
 雄關	100	hunggwaan
-紅轟轟	100	hunggwaanggwaang
 紅軍	100	hunggwan
 洪棍	100	hunggwan
 紅棍	100	hunggwan
@@ -64037,7 +64022,6 @@
 飲桶	100	jamtung
 窨井	100	jamzeng
 淫賊	100	jamcaak
-唫青	100	jamceng
 淫詞褻語	100	jamcisitjyu
 淫詞穢語	100	jamciwaijyu
 檐前仙姑	100	jamcinsingu
@@ -64171,7 +64155,6 @@
 任職期間	100	jamzikkeigaan
 衽席	100	jamzik
 任重道遠	100	jamzungdoujyun
-恁住	100	jamzyu
 姻婭	100	janaa
 甄拔	100	janbat
 恩比天大	100	janbeitindaai
@@ -64766,6 +64749,7 @@
 人人得以誅之	100	janjandakjizyuzi
 人人皆知	100	janjangaaizi
 仁人君子	100	janjangwanzi
+人人喊打	100	janjanhaamdaa
 人人有責	100	janjanjauzaak
 仁人義士	100	janjanjisi
 人人網	100	janjanmong
@@ -65537,10 +65521,12 @@
 一親芳澤	100	jatcanfongzaak
 一塵不染	100	jatcanbatjim
 一層	100	jatcang
-一揪一掕	100	jatcaujatlang
+一抽一掕	100	jatcaujatlang
+一搊一掕	100	jatcaujatlang
 一抽二掕	100	jatcaujilang
-一搊二掕	100	jatcaujiling
+一搊二掕	100	jatcaujilang
 一抽二褦	100	jatcaujinang
+一搊二褦	100	jatcaujinang
 一籌莫展	100	jatcaumokzin
 一槌	100	jatceoi
 一槌定音	100	jatceoidingjam
@@ -65787,6 +65773,7 @@
 一舊雲	100	jatgauwan
 一己之見	100	jatgeizigin
 一己之私	100	jatgeizisi
+一技傍身	100	jatgeibongsan
 一技傍身	100	jatgeipongsan
 一技旁身	100	jatgeipongsan
 一技之長	100	jatgeizicoeng
@@ -66040,7 +66027,6 @@
 一樣	100	jatjoeng
 一樣嘢	100	jatjoengje
 一樣米養百樣人	100	jatjoengmaijoengbaakjoengjan
-一樣米樣百樣人	100	jatjoengmaijoengbaakjoengjan
 一擁而入	100	jatjungjijap
 一擁而上	100	jatjungjisoeng
 一於	100	jatjyu
@@ -66098,7 +66084,6 @@
 一蹶不振	100	jatkyutbatzan
 一決雌雄	100	jatkyutcihung
 一決勝負	100	jatkyutsingfu
-一覽表	100	jatlaambiu
 一覽	100	jatlaam
 一覽表	100	jatlaambiu
 一覽無餘	100	jatlaammoujyu
@@ -66291,11 +66276,11 @@
 一疋布咁長	100	jatpatbougamcoeng
 一皮	100	jatpei
 一皮嘢	100	jatpeije
+一擗	100	jatpek
 一劈泥	100	jatpeknai
 一擗泥	100	jatpeknai
 一劈屎	100	jatpeksi
 一坺	100	jatpet
-一噼泥	100	jatpiknai
 一篇文章	100	jatpinmanzoeng
 一片	100	jatpin
 一遍	100	jatpin
@@ -66555,6 +66540,7 @@
 一就一，二就二	100	jatzaujatjizauji
 一姐	100	jatze
 一姐	100	jatze
+一借冇回頭	100	jatzemouwuitau
 一隻狗噉	100	jatzekgaugam
 一隻二隻	100	jatzekjizek
 一隻屐	100	jatzekkek
@@ -66836,7 +66822,6 @@
 日南郡	100	jatnaamgwan
 日你媽	100	jatneimaa
 日捱夜捱	100	jatngaaijengaai
-日鵝夜鵝	100	jatngojaango
 日哦夜哦	100	jatngojengo
 日鵝夜鵝	100	jatngojengo
 日𠹷夜𠹷	100	jatngojengo
@@ -66974,7 +66959,7 @@
 呦呦	100	jaujau
 幽幽	100	jaujau
 悠悠閑閑	100	jaujauhaanhaan
-髹油	100	jaujau
+髹油	10	jaujau
 優悠	100	jaujau
 優柔	100	jaujau
 優遊	100	jaujau
@@ -67141,6 +67126,7 @@
 糗糧	100	jauloeng
 柚木	100	jaumuk
 油門	100	jaumun
+友女	100	jauneoi
 柚皮	100	jaupei
 友仔	100	jauzai
 柚子	100	jauzi
@@ -67364,6 +67350,7 @@
 柔韌	100	jaujan
 遊刃有餘	100	jaujanjaujyu
 油油	100	jaujau
+髹油	100	jaujau
 悠悠	100	jaujau
 油油	100	jaujau
 悠悠蕩蕩	100	jaujaudongdong
@@ -67853,6 +67840,7 @@
 有感而發	100	jaugamjifaat
 有咁大搞咁大	100	jaugamdaaigaaugamdaai
 有咁好死咩	100	jaugamhouseime
+有咁啱得咁巧	100	jaugamngaamdakgamkiu
 有咁啱得咁蹺	100	jaugamngaamdakgamkiu
 有根有據	100	jauganjaugeoi
 有根有蔃	100	jauganjaukoeng
@@ -67940,6 +67928,8 @@
 有效率	100	jauhaauleot
 有效性	100	jauhaausing
 有效數字	100	jauhaausouzi
+有㞓用	100	jauhaijung
+有閪用	100	jauhaijung
 有系統	100	jauhaitung
 有行	100	jauhang
 有幸	100	jauhang
@@ -68173,6 +68163,7 @@
 有冇	1000000	jaumou
 有冇帶袋	100	jaumoudaaidoiaa
 有冇得	100	jaumoudak
+有冇芥菜	100	jaumougaaicoi
 有冇搞錯	100	jaumougaauco
 有冇攪錯	100	jaumougaauco
 有冇人	100	jaumoujan
@@ -68999,7 +68990,9 @@
 依附	100	jifu
 衣服	100	jifuk
 衣服縫邊	100	jifukfungbin
+伊家	100	jigaa
 依家	100	jigaa
+咿家	100	jigaa
 醫家	100	jigaa
 𠵱家	100	jigaa
 衣架	100	jigaa
@@ -69010,9 +69003,9 @@
 伊金霍洛旗	100	jigamfoklokkei
 依舊	100	jigau
 依據	100	jigeoi
-咿個	100	jigo
 伊個	100	jigo
 依個	100	jigo
+咿個	100	jigo
 咿個時候	100	jigosihau
 醫改	100	jigoi
 衣冠	100	jigun
@@ -69045,20 +69038,16 @@
 醫學專家	100	jihokzyungaa
 醫好	100	jihou
 咿㕭	100	jijaau
+咿呦	100	jijaau
 伊人	100	jijan
-咿唈	100	jijap
 伊挹	100	jijap
 依挹	100	jijap
 依揖	100	jijap
 依泣	100	jijap
+咿唈	100	jijap
 咿挹	100	jijap
 咿邑	100	jijap
 咿呦	100	jijau
-咿呦	100	jijaau
-咿家	100	jigaa
-伊家	100	jigaa
-咿陣	100	jizansi
-咿陣時	100	jizansi
 依依	100	jiji
 姨姨	100	jiji
 依依不捨	100	jijibatse
@@ -69274,6 +69263,8 @@
 醫護人員	100	jiwujanjyun
 依偎	100	jiwui
 姨仔	100	jizai
+咿陣	100	jizansi
+咿陣時	100	jizansi
 伊州	100	jizau
 衣袖	100	jizau
 醫者父母心	100	jizefumousam
@@ -70781,7 +70772,6 @@
 淹死	100	jimsei
 淹水	100	jimseoi
 閹豎	100	jimsyu
-腌臢	100	apzap
 㤿憸	100	jimzim
 奄尖	100	jimzim
 淹尖	100	jimzim
@@ -71226,8 +71216,8 @@
 燕山	100	jinsaan
 煙樨餅	100	jinsaibeng
 菸絲	100	jinsi
-菸屎	100	jinsi
 煙士	100	jinsi
+菸屎	100	jinsi
 菸屎喉	100	jinsihau
 菸屎牙	100	jinsingaa
 煙士	100	jinsi
@@ -72467,7 +72457,6 @@
 認同	100	jingtung
 認同感	100	jingtunggam
 認爲	100	jingwai
-認眞	100	jingzan
 認真	100	jingzan
 認罪	100	jingzeoi
 認罪協商	100	jingzeoihipsoeng
@@ -74164,7 +74153,7 @@
 玉林	100	juklam
 玉林地區	100	juklamdeikeoi
 玉林市	100	juklamsi
-肉粒	10	juklap
+肉粒	100	juklap
 肉瘤	100	juklau
 玉里	100	juklei
 玉里鎮	100	jukleizan
@@ -75699,6 +75688,8 @@
 愈來愈	100	jyuloijyu
 預埋	100	jyumaai
 預埋我	100	jyumaaingo
+御米	100	jyumai
+御米油	100	jyumaijau
 裕民	100	jyuman
 裕民縣	100	jyumanjyun
 預謀	100	jyumau
@@ -76462,7 +76453,7 @@
 原子核	100	jyunzihat
 原子核反應堆	100	jyunzihatfaanjingdeoi
 原子印	100	jyunzijan
-原子粒	10	jyunzilap
+原子粒	100	jyunzilap
 原子論	100	jyunzileon
 原子量	100	jyunziloeng
 原子爐	100	jyunzilou
@@ -77064,6 +77055,7 @@
 卡脖子	100	kaabutzi
 咔嚓	100	kaacaat
 喀嚓	100	kaacaat
+喀擦	100	kaacaat
 卡秋莎	100	kaacausaa
 卡車	100	kaace
 卡尺	100	kaacek
@@ -77217,7 +77209,6 @@
 簡簡糊	100	kaankaanwu
 卡冚卡	100	kaatkamkaat
 咭冚咭	100	kaatkamkaat
-卡拉OK	100	kaatlaaoukei
 卡牌	100	kaatpaai
 卡片	100	kaatpin
 咭片	100	kaatpin
@@ -77228,7 +77219,6 @@
 卡債	100	kaatzaai
 咭紙	100	kaatzi
 交叉	100	kaaucaa
-靠呃	100	kaauak
 靠北	100	kaaubak
 靠不住	100	kaaubatzyu
 靠邊	100	kaaubin
@@ -77251,6 +77241,8 @@
 靠腰	100	kaaujiu
 靠夭	100	kaaujiu
 靠攏	100	kaaulung
+靠呃	100	kaaungaak
+靠呃	100	kaaungak
 靠岸	100	kaaungon
 靠惡	100	kaauok
 靠鋪牛力	100	kaaupoungaulik
@@ -77279,6 +77271,7 @@
 溪口	100	kaihau
 溪口鄉	100	kaihauhoeng
 蹊蹺	100	kaihiu
+蹊蹺	100	kaikiu
 溪壑	100	kaikok
 溪流	100	kailau
 稽留	100	kailau
@@ -77500,6 +77493,7 @@
 勤奮刻苦	100	kanfanhakfu
 勤苦	100	kanfu
 勤謹	100	kangan
+勤儉	100	kangim
 勤儉辦學	100	kangimbaanhok
 勤儉辦企業	100	kangimbaankeijip
 勤儉辦社	100	kangimbaanse
@@ -77704,6 +77698,7 @@
 勼亂	100	kaulyun
 摳亂	100	kaulyun
 溝亂	100	kaulyun
+勼埋	100	kaumaai
 摳門	100	kaumun
 摳門兒	100	kaumunji
 媾女	100	kauneoi
@@ -78304,7 +78299,6 @@
 旗子	100	keizi
 期指	100	keizi
 棋子	100	keizi
-蟣子	100	keizi
 奇志	100	keizi
 其自身	100	keizisan
 奇跡	100	keizik
@@ -78329,6 +78323,7 @@
 徛櫃	100	keigwai
 企櫃面	100	keigwaimin
 企起身	100	keiheisan
+徛起身	100	keiheisan
 企響個邊	100	keihoenggobin
 企人邊	100	keijanbin
 企人旁	100	keijanpong
@@ -78385,9 +78380,12 @@
 徛桶	100	keitung
 企劃	100	keiwaak
 企位	100	keiwai
+徛位	100	keiwai
 企穩	100	keiwan
+徛穩	100	keiwan
 跂訾	100	keizi
 跂坐	100	keizo
+徛住	100	keizyu
 𠽤叻𡃈嘞	100	keklekgwaaklaak
 劇變	100	kekbin
 劇本	100	kekbun
@@ -78560,7 +78558,6 @@
 佢坐十碌	100	keoicosapluk
 佢哋嘅	100	keoideige
 佢哋	1000000	keoidei
-佢地	100	keoidei
 佢哋嘅	100	keoideige
 佢哋自己	100	keoideizigei
 佢哋自己嘅	100	keoideizigeige
@@ -78620,11 +78617,16 @@
 畸卡	100	kikaa
 畸卡咁笑	100	kikaagamsiu
 畸畸卡卡	100	kikikaakaa
-撠腳	100	kikgoek
+揢腳	100	kikgoek
+棘腳	100	kikgoek
+𠽤腳	100	kikgoek
+揢喉	100	kikhau
+棘喉	100	kikhau
 𠽤喉	100	kikhau
 𠽤嚦𡃈嘞	100	kiklikkaaklaak
 𠽤嚦𡃈嘞	100	kiklikkwaaklaak
 棘馬腳	100	kikmaagoek
+揢手	100	kiksau
 棘手	100	kiksau
 𠽤手	100	kiksau
 𠽤住	100	kikzyu
@@ -78889,9 +78891,9 @@
 巧妙	100	kiumiu
 竅妙	100	kiumiu
 蹺妙	100	kiumiu
+巧妙處	100	kiumiucyu
 蹺妙處	100	kiumiucyu
 蕎頭	100	kiutau
-藠頭	100	kiutau
 喬巴山	100	kiubaasaan
 翹班	100	kiubaan
 翹板	100	kiubaan
@@ -78964,6 +78966,7 @@
 橋上倒涼茶	100	kiusoengdouloengcaa
 橋頭	100	kiutau
 礄頭	100	kiutau
+蕎頭	100	kiutau
 橋頭堡	100	kiutaubou
 橋頭鄉	100	kiutauhoeng
 喬宏	100	kiuwang
@@ -78986,6 +78989,7 @@
 翹足	100	kiuzuk
 翹足引領	100	kiuzukjanling
 翹足而待	100	kiuzukjidoi
+藠菜	100	kiucoi
 繑火牛	100	kiufongau
 繑口	100	kiuhau
 繞口	100	kiuhau
@@ -78998,7 +79002,7 @@
 繑絲邊	100	kiusibin
 繞絲邊	100	kiusibin
 繞絲底	100	kiusidai
-蕎頭	100	kiutau
+藠頭	100	kiutau
 繑住手	100	kiuzyusau
 可惱也	100	konaauje
 紶紶貢	100	koekoegung
@@ -79697,7 +79701,9 @@
 葵興	100	kwaihing
 睽異	100	kwaiji
 夔夔	100	kwaikwai
+喹啉	100	kwailam
 犪牛	100	kwaingau
+葵心扇	100	kwaisamsin
 攜手	100	kwaisau
 攜手並肩	100	kwaisaubinggin
 攜手同行	100	kwaisautunghang
@@ -80235,14 +80241,13 @@
 喇喇臨	100	laalaalam
 喇喇聲	100	laalaaseng
 喇臨	100	laalam
-拿手	100	laasau
 啦聲	100	laaseng
-剌𠛱	100	laazaa
 嗱喳	100	laazaa
 揦苴	100	laazaa
 揦鮓	100	laazaa
 藞䕢	100	laazaa
 揦鮓麪	100	laazaamin
+藞䕢麪	100	laazaamin
 拉巴	100	laaibaa
 拉巴特	100	laaibaadak
 拉巴斯	100	laaibaasi
@@ -80462,24 +80467,23 @@
 拉錯	100	laaizo
 拉住	100	laaizyu
 瀨大鑊	100	laaidaaiwok
-𦧺鞋底	100	laaihaaidai
 舐鞋底	100	laaihaaidai
-𦧺閪	100	laaihai
+𦧺鞋底	100	laaihaaidai
 舐閪	100	laaihai
-𦧺閪仔	100	laaihaizai
+𦧺閪	100	laaihai
 舐閪仔	100	laaihaizai
-𦧺嘢	100	laaije
-舐嘢	100	laaije
+𦧺閪仔	100	laaihaizai
 攋嘢	100	laaije
 瀨嘢	100	laaije
-𦧺屎忽	100	laaisifat
+舐嘢	100	laaije
+𦧺嘢	100	laaije
 舐屎忽	100	laaisifat
+𦧺屎忽	100	laaisifat
 𦧺屎窟	100	laaisifat
 𦧺屎𦜇	100	laaisifat
 舐屎眼	100	laaisingaan
-奶撻	100	naaitaat
-𦧺撻	100	laaitaat
 舐撻	100	laaitaat
+𦧺撻	100	laaitaat
 𦧺嘴唇	100	laaizeoiseon
 癩瘡	100	laaicong
 癩蝦蟆	100	laaihaamaa
@@ -81424,6 +81428,7 @@
 辣醬	100	laatzoeng
 辣醬油	100	laatzoengjau
 撈歌	100	laaugo
+撈閪	100	laauhai
 撈人	100	laaujan
 撈佬	100	laaulou
 撈妹	100	laaumui
@@ -82875,7 +82880,6 @@
 咧啡	100	lefe
 哩啡	100	lefe
 褦㹃	100	lefe
-呢個	100	neigo
 匿埋	100	leimaai
 喱埋	100	leimaai
 厘士	100	leisi
@@ -83718,7 +83722,6 @@
 旅程	100	leoicing
 旅程表	100	leoicingbiu
 鋁窗	100	leoicoeng
-蕌菜	100	leoicoi
 呂塞爾斯海姆	100	leoicoijisihoimou
 履帶	100	leoidaai
 裏帶	100	leoidaai
@@ -83831,7 +83834,6 @@
 呂宋海峽	100	leoisunghoihaap
 呂宋菸	100	leoisungjin
 呂宋芒	100	leoisungmong
-蕌頭	100	leoitau
 裏頭	100	leoitau
 鋁土	100	leoitou
 旅途	100	leoitou
@@ -87087,6 +87089,9 @@
 撈汁	100	louzap
 撈靜水	100	louzingseoi
 爐灰	100	loufui
+嚕便	100	loubin
+嚕邊	100	loubin
+嚕啲	100	loudi
 牢不可破	100	loubathopo
 盧比	100	loubei
 盧比安納	100	loubeionnaap
@@ -87471,6 +87476,7 @@
 老坑婆	100	louhaangpo
 老閪	100	louhai
 老閪都	100	louhaidou
+老閪殼	100	louhaihok
 老黑	100	louhak
 老行尊	100	louhangzyun
 老戲骨	100	louheigwat
@@ -89072,8 +89078,7 @@
 唔抵幫	100	mdaibong
 唔抵得	100	mdaidak
 唔抵得頸	100	mdaidakgeng
-唔抵得諗	100	mdaidaklam
-唔……得	100	mdak
+唔抵得諗	100	mdaidaknam
 唔得	100	mdak
 唔得切	100	mdakcit
 唔得撤	100	mdakcit
@@ -89104,7 +89109,6 @@
 唔到	100	mdou
 唔到你	100	mdounei
 唔到你唔	100	mdouneim
-唔到你唔……	100	mdouneim
 唔到位	100	mdouwai
 唔道德	100	mdoudak
 唔凍	100	mdung
@@ -89248,7 +89252,6 @@
 唔係嘅話	100	mhaigewaa
 唔係嘅話	100	mhaigewaa
 唔係幾	100	mhaigei
-唔係幾……	100	mhaigei
 唔係幾似	100	mhaigeici
 唔係嗰皮	100	mhaigopei
 唔係講玩	100	mhaigongwaan
@@ -89415,7 +89418,7 @@
 唔啱	100	mngaam
 唔啱合尺	100	mngaamhoce
 唔啱傾	100	mngaamking
-唔啱蕎	100	mngaamkiu
+唔啱巧	100	mngaamkiu
 唔啱路	100	mngaamlou
 唔啱牙	100	mngaamngaa
 唔啱牙	100	mngaamngaa
@@ -91042,6 +91045,7 @@
 掹瘕	100	maanghaa
 繃臉	100	maanglim
 掹掹緊	100	maangmaanggan
+綳綳緊	100	maangmaanggan
 繃繃緊	100	maangmaanggan
 繃繃繄	100	maangmaangji
 掹貓尾	100	maangmaaumei
@@ -91528,7 +91532,6 @@
 米字旗	100	maizikei
 米漿	100	maizoeng
 米粥	100	maizuk
-咪……住	100	maizyu
 咪住	100	maizyu
 咪得	100	maidak
 咪到	100	maidou
@@ -96385,6 +96388,7 @@
 舞劇	100	moukek
 冇拘論	100	moukeoileon
 冇橋	100	moukiu
+冇竅	100	moukiu
 武強	100	moukoeng
 武強縣	100	moukoengjyun
 舞曲	100	moukuk
@@ -98132,6 +98136,7 @@
 那種事	100	naazungsi
 奶奶	100	naainaai
 奶屎眼	100	naaisingaan
+奶撻	100	naaitaat
 奶奶	100	naainaai
 奶奶的	100	naainaaidik
 奶爸	100	naaibaa
@@ -99002,6 +99007,7 @@
 諗真	100	namzan
 諗真啲	100	namzandi
 諗咗下	100	namzohaa
+恁住	100	namzyu
 諗住	100	namzyu
 腍啤啤	100	nambebe
 腍啤啤	100	nambebe
@@ -99257,8 +99263,8 @@
 呢層	100	neicang
 呢次	100	neici
 呢處	100	neicyu
-呢笪	100	neidaat
 呢墶	100	neidaat
+呢笪	100	neidaat
 呢啲	100	neidi
 呢啲人	100	neidijan
 呢啲事	100	neidisi
@@ -99271,6 +99277,7 @@
 呢款	100	neifun
 呢家嘢	100	neigaaje
 呢件事	100	neiginsi
+呢個	100	neigo
 呢下	100	neihaa
 匿去邊度	100	neiheoibindou
 呢項	100	neihong
@@ -99498,6 +99505,7 @@
 你老闆	100	neiloubaan
 你老粗	100	neiloucou
 你老豆	100	neiloudau
+你老尾	100	neiloumei
 你鹵味	100	neiloumei
 你老母	100	neiloumou
 你老母唔襟屌	100	neiloumoumkamdiu
@@ -100565,17 +100573,23 @@
 艾炷灸	100	ngaaizyugau
 呃錢	100	ngaakcin
 呃錢呃糧票	100	ngaakcinngaakloengpiu
+呃錢	100	ngaakcin
 呃秤	100	ngaakcing
 呃稱	100	ngaakcing
+呃得就呃	100	ngaakdakzaungaak
 呃飯食	100	ngaakfaansik
 呃鬼	100	ngaakgwai
 呃鬼食豆腐	100	ngaakgwaisikdaufu
 呃蝦條	100	ngaakhaatiu
 呃飲呃食	100	ngaakjamngaaksik
 呃人	100	ngaakjan
+呃人喎	100	ngaakjanwo
 呃呃騙騙	100	ngaakngaakpinpin
 呃呃氹氹	100	ngaakngaaktamtam
 呃呃𠱁𠱁	100	ngaakngaaktamtam
+呃呃𧨾𧨾	100	ngaakngaaktamtam
+呃嗮	100	ngaaksaai
+呃晒	100	ngaaksaai
 呃神騙鬼	100	ngaaksanpingwai
 呃食	100	ngaaksik
 額滿	100	ngaakmun
@@ -100620,10 +100634,9 @@
 啱好	100	ngaamhou
 啱飲	100	ngaamjam
 啱用	100	ngaamjung
-啱key	100	ngaamki
 啱傾	100	ngaamking
+啱巧	100	ngaamkiu
 啱竅	100	ngaamkiu
-啱蕎	100	ngaamkiu
 啱蹺	100	ngaamkiu
 啱唔啱	100	ngaammngaam
 啱唔啱使	100	ngaammngaamsai
@@ -100771,6 +100784,7 @@
 眼花	100	ngaanfaa
 眼花花	100	ngaanfaafaa
 眼花繚亂	100	ngaanfaaliulyun
+眼睏	100	ngaanfan
 眼瞓	100	ngaanfan
 眼科	100	ngaanfo
 眼科學	100	ngaanfohok
@@ -100833,6 +100847,7 @@
 眼光光	100	ngaangwonggwong
 眼下	100	ngaanhaa
 眼坑淺	100	ngaanhaangcin
+眼睏	100	ngaanhan
 眼瞎耳聾	100	ngaanhatjilung
 眼看	100	ngaanhon
 眼眶	100	ngaanhong
@@ -100957,8 +100972,6 @@
 贗品	100	ngaanban
 雁蕩	100	ngaandong
 雁蕩山	100	ngaandongsaan
-眼睏	100	ngaanfan
-眼瞓	100	ngaanfan
 雁喙	100	ngaanfui
 雁峯	100	ngaanfung
 雁峯區	100	ngaanfungkeoi
@@ -101095,6 +101108,7 @@
 𢯎晒頭	100	ngaausaaitau
 𢯎水吹	100	ngaauseoiceoi
 𢯎頭	100	ngaautau
+嗷嗚	100	ngaauwu
 毆幾多棍	100	ngaaugeidogwan
 毆幾多碌	100	ngaaugeidoluk
 牛百葉	100	ngaaubaakjip
@@ -101109,8 +101123,6 @@
 淆老襯	100	ngaauloucan
 熬老襯	100	ngaauloucan
 淆亂	100	ngaaulyun
-嗷嗚	100	aauwu
-嗷嗚	100	ngaauwu
 嗷嗷聲	100	ngaaungaauseng
 殽晒框	100	ngaausaaigwaang
 殽嗮框	100	ngaausaaikwaang
@@ -101343,15 +101355,27 @@
 僞造品	100	ngaizouban
 僞造者	100	ngaizouze
 魏忠賢	100	ngaizungjin
+呃錢	100	ngakcin
+呃錢呃糧票	100	ngakcinngakloengpiu
+呃錢	100	ngakcin
+呃秤	100	ngakcing
+呃稱	100	ngakcing
+呃得就呃	100	ngakdakzaungak
+呃飯食	100	ngakfaansik
+呃鬼	100	ngakgwai
+呃鬼食豆腐	100	ngakgwaisikdaufu
+呃蝦條	100	ngakhaatiu
+呃飲呃食	100	ngakjamngaksik
+呃人	100	ngakjan
+呃人喎	100	ngakjanwo
+呃呃騙騙	100	ngakngakpinpin
+呃呃氹氹	100	ngakngaktamtam
+呃呃𠱁𠱁	100	ngakngaktamtam
+呃呃𧨾𧨾	100	ngakngaktamtam
+呃嗮	100	ngaksaai
+呃晒	100	ngaksaai
 呃神騙鬼	100	ngaksanpingwai
-奄列	100	ngamlit
-揞脈	100	ngammak
-揞住	100	ngamzyu
-揞住良心	100	ngamzyuloengsam
-揞住嘴笑	100	ngamzyuzeoisiu
-暗啞底	100	ngamaadai
-暗渠	100	ngamkeoi
-暗啞抵	100	ngamngaadai
+呃食	100	ngaksik
 吟噆	100	ngamcam
 吟沉	100	ngamcam
 唅沈	100	ngamcam
@@ -101483,7 +101507,6 @@
 銀樓	100	nganlau
 銀臉長尾山雀	100	nganlimcoengmeisaanzoek
 銀蓮花	100	nganlinfaa
-銀両	100	nganloeng
 銀兩	100	nganloeng
 銀兩	100	nganloeng
 銀亮	100	nganloeng
@@ -102691,8 +102714,8 @@
 呢齣	100	niceot
 呢次	100	nici
 呢處	100	nicyu
-呢笪	100	nidaat
 呢墶	100	nidaat
+呢笪	100	nidaat
 呢𠱂	100	nidat
 呢啲	100	nidi
 呢啲嘢	100	nidije
@@ -102876,7 +102899,6 @@
 𢆡罅	100	ninlaa
 脌頭	100	nintau
 𢆡頭	100	nintau
-跈地	100	nindei
 捻頸	100	ningeng
 捻乾	100	ningon
 捻軍	100	ningwan
@@ -104995,9 +105017,8 @@
 趴街	100	paagaai
 趴下	100	paahaa
 趴晒地	100	paasaaidei
-派士砵	100	paasibut
 趴時	100	paasi
-扒啼	100	paati
+扒𢚖	100	paati
 扒飯	100	paafaan
 扒房	100	paafong
 怕醜	100	paacau
@@ -105023,6 +105044,7 @@
 怕死	100	paasei
 怕死鬼	100	paaseigwai
 怕事	100	paasi
+派士砵	100	paasibut
 派士鉢	100	paasibut
 扒艇	100	paateng
 扒仔	100	paazai
@@ -105048,6 +105070,7 @@
 爬竿	100	paagon
 扒糕	100	paagou
 扒高踩低	100	paagoucaaidai
+扒高踩低	100	paagoucoidai
 爬行	100	paahang
 爬行動物	100	paahangdungmat
 爬行類	100	paahangleoi
@@ -106556,8 +106579,6 @@
 偏疼	100	pintang
 偏頭痛	100	pintautung
 偏聽偏信	100	pintingpinseon
-扁桃腺	100	pintousin
-扁桃腺炎	100	pintousinjim
 篇韻	100	pinwan
 偏護	100	pinwu
 編撰	100	pinzaan
@@ -106677,14 +106698,12 @@
 拼音	100	pingjam
 怦然	100	pingjin
 怦然心動	100	pingjinsamdung
-砰鈴𠾴唥	100	pinglingbaanglaang
 砰呤嘭唥	100	pinglingbaanglaang
+砰鈴𠾴唥	100	pinglingbaanglaang
 砰鈴嘭唥	100	pinglingpaanglaang
 拼命	100	pingmeng
 怦怦	100	pingping
 砰砰	100	pingping
-𠹶𠹶嘭嘭	100	bingbingbaangbaang
-乒乒嘭嘭	100	bingbingbaangbaang
 砰砰嘭嘭	100	pingpingpaangpaang
 乒乒乓乓	100	pingpingpongpong
 乒乓	100	pingpong
@@ -108981,7 +109000,7 @@
 三九四零五二	100	saamgauseilingngji
 三九天	100	saamgautin
 三幾	100	saamgei
-三幾両	100	saamgeiloeng
+三幾兩	100	saamgeiloeng
 三句不離	100	saamgeoibatlei
 三句不離本行	100	saamgeoibatleibunhong
 三句話不離本行	100	saamgeoiwaabatleibunhong
@@ -113789,10 +113808,10 @@
 失威	100	satwai
 室溫	100	satwan
 失魂	100	satwan
-失魂魚	100	satwanjyu
-失魂雞	100	satwangai
 失魂車	100	satwance
 失魂倒戶	100	satwandouwu
+失魂雞	100	satwangai
+失魂魚	100	satwanjyu
 失魂落魄	100	satwanlokpaak
 失運	100	satwan
 失和	100	satwo
@@ -115946,7 +115965,6 @@
 四輪馬車	100	seileonmaace
 四靈	100	seiling
 四兩撥千斤	100	seiloengbutcingan
-四両撥千斤	100	seiloengbutcingan
 四兩撥千斤	100	seiloengbutcingan
 四六七零九三九四	100	seilukcatlinggausaamgausei
 四氯化碳	100	seilukfaataan
@@ -117164,6 +117182,7 @@
 瑞芳鎮	100	seoifongzan
 睡房	100	seoifong
 睡覺	100	seoigaau
+睡覺覺	100	seoigaaugaau
 瑞金	100	seoigam
 瑞金市	100	seoigamsi
 穗鵖	100	seoigip
@@ -118375,6 +118394,7 @@
 屎橋	100	sikiu
 屎竅	100	sikiu
 死橋	100	sikiu
+死竅	100	sikiu
 使困擾	100	sikwanjiu
 屎淋尿瀨	100	silamniulaai
 史料	100	siliu
@@ -118658,7 +118678,7 @@
 時期	100	sikei
 時區	100	sikeoi
 噝哩沙啦	100	silisaalaa
-㖷哩𡄽𠼱	100	silisoeloe
+噝哩𡄽𠼱	100	silisoeloe
 時令	100	siling
 蒔籮	100	silo
 蒔羅	100	silo
@@ -120094,7 +120114,7 @@
 仙姿玉色	100	sinzijuksik
 先知先覺	100	sinzisingok
 仙子	100	sinzi
-先至	100	sinzi
+先至	1000000	sinzi
 先至得	100	sinzidak
 先至唔會	100	sinzimwui
 先哲	100	sinzit
@@ -121725,6 +121745,7 @@
 燒毛	100	siumou
 燒煤	100	siumui
 燒腩仔	100	siunaamzai
+燒你收簿	100	siuneisaubou
 燒你數簿	100	siuneisoubou
 燒你數簿	100	siuneisoubou
 燒硬	100	siungaang
@@ -125861,6 +125882,7 @@
 宣恩	100	syunjan
 宣恩縣	100	syunjanjyun
 孫逸仙	100	syunjatsin
+酸嘢	100	syunje
 孫兒	100	syunji
 酸鹽	100	syunjim
 孫燕姿	100	syunjinzi
@@ -127580,7 +127602,8 @@
 睇少	100	taisiu
 睇相佬	100	taisoenglou
 睇相	100	taisoeng
-睇相佬呃你十年八年	100	taisoenglouaakneisapninbaatnin
+睇相佬呃你十年八年	100	taisoengloungaakneisapninbaatnin
+睇相佬呃你十年八年	100	taisoengloungakneisapninbaatnin
 睇上眼	100	taisoengngaan
 睇數	100	taisou
 睇餸食飯	100	taisungsikfaan
@@ -128001,8 +128024,6 @@
 佮佮冚	100	taptapham
 塔塔冚	100	taptapham
 甩拖	100	tatto
-偷呃拐騙	100	tauaakgwaaipin
-偷呃拐騙	100	tauakgwaaipin
 偷薄	100	taubok
 透薄	100	taubok
 偷步	100	taubou
@@ -128054,6 +128075,7 @@
 偷龍轉鳳	100	taulungzyunfung
 偷呃拐騙	100	taungaakgwaaipin
 偷眼	100	taungaan
+偷呃拐騙	100	taungakgwaaipin
 偷安	100	tauon
 偷拍	100	taupaak
 偷跑	100	taupaau
@@ -128849,7 +128871,6 @@
 丅裇	100	tiseot
 剔除	100	tikceoi
 剔出	100	tikceot
-趯更	100	tikgaang
 剔號	100	tikhou
 剔號	100	tikhou
 惕然	100	tikjin
@@ -130581,7 +130602,7 @@
 臺型	100	toijing
 擡轎	100	toikiu
 擡轎佬	100	toikiulou
-擡橋	100	toikiu
+擡轎	100	toikiu
 擡拳	100	toikyun
 擡拳道	100	toikyundou
 跆拳道	100	toikyundou
@@ -136292,6 +136313,7 @@
 黃金桃	100	wonggamtou
 黃金屋	100	wonggamuk
 黃金週	100	wonggamzau
+黃黚黚	100	wonggamgam
 黃巾	100	wonggan
 黃巾軍	100	wonggangwan
 黃巾起義	100	wongganheiji
@@ -138098,7 +138120,6 @@
 渣打	100	zaadaa
 渣打銀行	100	zaadaanganhong
 揸大膽車	100	zaadaaidaamce
-揸大葵扇	100	zaadaaigwaisin
 揸大旗	100	zaadaaikei
 揸大葵扇	100	zaadaaikwaisin
 揸兜	100	zaadau
@@ -138239,12 +138260,9 @@
 炸雷	100	zaaleoi
 詐領	100	zaaling
 炸裂	100	zaalit
-炸両	100	zaaloeng
 炸兩	100	zaaloeng
-炸両	100	zaaloeng
 炸兩	100	zaaloeng
 詐聾扮啞	100	zaalungbaanaa
-詐聾扮啞	100	zaalungbaanngaa
 詐唔知	100	zaamzi
 詐媽嬌	100	zaamaagiu
 咋嘛	100	zaamaa
@@ -138702,6 +138720,7 @@
 爭論	100	zaangleon
 爭兩個人	100	zaangloenggojan
 爭唔落	100	zaangmlok
+爭生爭死	100	zaangsangzaangsei
 爭成條墟	100	zaangsengtiuheoi
 爭食	100	zaangsik
 爭先	100	zaangsin
@@ -139757,6 +139776,7 @@
 珍禽異獸	100	zankamjisau
 珍禽奇獸	100	zankamkeisau
 珍奇	100	zankei
+真巧	100	zankiu
 真蹺	100	zankiu
 真確	100	zankok
 真菌	100	zankwan
@@ -140142,7 +140162,6 @@
 曾參	100	zangsam
 爭臣	100	zangsan
 增生	100	zangsang
-爭生爭死	100	zangsangzangsei
 憎死	100	zangsei
 增色	100	zangsik
 爭先	100	zangsin
@@ -141268,7 +141287,7 @@
 藉故	100	zegu
 柘弓	100	zegung
 借過	100	zegwo
-借……過橋	100	zegwokiu
+借過橋	100	zegwokiu
 借過橋	100	zegwokiu
 借光	100	zegwong
 蔗蝦	100	zehaa
@@ -147242,7 +147261,6 @@
 着衫	100	zoeksaam
 著衫	100	zoeksaam
 酌收	100	zoeksau
-焯水	100	coekseoi
 爵士	100	zoeksi
 爵士音樂	100	zoeksijamngok
 爵士舞	100	zoeksimou
@@ -148486,6 +148504,7 @@
 狀元紅	100	zongjyunhung
 撞球	100	zongkau
 撞期	100	zongkei
+撞巧	100	zongkiu
 撞蹺	100	zongkiu
 撞爛	100	zonglaan
 撞臉	100	zonglim
@@ -150880,7 +150899,7 @@
 重孝	100	zunghaau
 仲喺	100	zunghai
 仲喺度	100	zunghaidou
-仲係	100000	zunghai
+仲係	1000000	zunghai
 重係	100	zunghai
 重器	100	zunghei
 仲可能	100	zunghonang
@@ -150899,7 +150918,6 @@
 重要問題	100	zungjiumantai
 重要性	100	zungjiusing
 頌揚	100	zungjoeng
-縱容	100	zungjung
 重用	100	zungjung
 重於泰山	100	zungjyutaaisaan
 仲遠	100	zungjyun
@@ -152173,6 +152191,7 @@
 絕緣線	100	zyutjyunsin
 絕緣體	100	zyutjyuntai
 絕橋	100	zyutkiu
+絕竅	100	zyutkiu
 絕橋	100	zyutkiu
 絕倫	100	zyutleon
 絕糧	100	zyutloeng
@@ -152196,7 +152215,8 @@
 絕殺	100	zyutsaat
 絕世	100	zyutsai
 絕世佳人	100	zyutsaigaaijan
-絕世好轎	100	zyutsaihoukiu
+絕世好橋	100	zyutsaihoukiu
+絕世好竅	100	zyutsaihoukiu
 絕詩	100	zyutsi
 絕色	100	zyutsik
 絕食	100	zyutsik
