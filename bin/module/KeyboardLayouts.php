@@ -42,6 +42,6 @@ foreach ($charsetPaths as $path) {
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
-fwrite($f, json_encode($contents, JSON_UNESCAPED_UNICODE));
+fwrite($f, json_encode($contents, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
 fclose($f);
 echo "...version: {$contents['version']}\n\n";
