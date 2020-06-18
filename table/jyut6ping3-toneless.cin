@@ -1,10 +1,10 @@
 #
 # Jyut6ping3 - 粵拼 (無調號)
-# Version: 2020.06.11
+# Version: 2020.06.12
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
-# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權。
+# 詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權，不含 % 之詞頻仍視為 % 比例，屬高優先權詞彙。
 #
 # 本檔案與原始來源相同，採共享創意 - 姓名標示 4.0 國際 (CC BY 4.0) 協議。
 #
@@ -915,79 +915,80 @@ bei	𠳓
 bei	㿫
 bei	䎵
 bei	𡀠
-bei	藣
 bei	佊
+bei	妣
+bei	鵯
+bei	裨
+bei	犤
+bei	碑
+bei	吡
+bei	俾
 bei	䯗
+bei	𦱔
 bei	䣥
 bei	䏢
 bei	䃾
+bei	羆
+bei	䀝
 bei	㠲
 bei	㗗
-bei	𦱔
-bei	鵯
-bei	詖
-bei	裨
-bei	蓖
-bei	吡
-bei	萆
-bei	羆
-bei	碑
-bei	犤
-bei	椑
-bei	悲
-bei	屄
-bei	埤
-bei	卑
-bei	䥸
-bei	䥯
-bei	俾
-bei	䀝
-bei	粃
-bei	彼
-bei	秕
-bei	柀
-bei	沘
-bei	朼
-bei	比
 bei	崥
-bei	妣
-bei	肶
-bei	舭
+bei	彼
+bei	朼
+bei	卑
+bei	藣
 bei	貏
+bei	舭
+bei	肶
+bei	䥯
+bei	粃
+bei	秕
+bei	䥸
+bei	萆
+bei	柀
+bei	埤
+bei	詖
+bei	沘
+bei	屄
+bei	悲
+bei	椑
+bei	蓖
+bei	比
+bei	嬶	#10
+bei	萞	#10
 bei	薜	#10
-bei	怶	#10
 bei	箆	#10
 bei	絥	#10
-bei	枈	#10
-bei	費	#10
 bei	渒	#10
 bei	毴	#10
-bei	疕	#10
 bei	鎞	#10
-bei	聛	#10
 bei	䙓	#10
+bei	僃	#10
+bei	鞸	#10
+bei	偹	#10
+bei	琲	#10
+bei	脾	#10
+bei	聛	#10
+bei	疕	#10
+bei	怶	#10
+bei	枈	#10
 bei	畁	#10
+bei	毘	#10
 bei	毗	#10
-bei	萞	#10
-bei	䑄	#10
-bei	輩	#10
-bei	芘	#10
-bei	夶	#10
+bei	珌	#10
 bei	肹	#10
-bei	飶	#10
+bei	俻	#10
+bei	夶	#10
+bei	芘	#10
+bei	貱	#10
+bei	費	#10
+bei	輩	#10
 bei	鞞	#10
 bei	㑭	#10
+bei	䑄	#10
 bei	䕗	#10
-bei	嬶	#10
 bei	錃	#10
-bei	琲	#10
-bei	俻	#10
-bei	偹	#10
-bei	珌	#10
-bei	僃	#10
-bei	貱	#10
-bei	毘	#10
-bei	鞸	#10
+bei	飶	#10
 bek	壁
 beng	鉼
 beng	餅
@@ -3884,12 +3885,14 @@ cong	賶	#10
 cong	䢢	#10
 cong	濸	#10
 cong	戃	#10
-cou	氉	#300
 cou	造	#300
+cou	氉	#300
 cou	錯	#300
 cou	娶	#300
+cou	取	#300
 cou	䎭
-cou	䢐
+cou	䐬
+cou	躁
 cou	鄵
 cou	酢
 cou	醋
@@ -3898,8 +3901,8 @@ cou	㜖
 cou	㯥
 cou	䄚
 cou	䏆
-cou	䐬
 cou	䣯
+cou	䢐
 cou	肏
 cou	嘈
 cou	嶆
@@ -3914,46 +3917,45 @@ cou	襙
 cou	𥕢
 cou	𢲵
 cou	譟
-cou	躁
+cou	𢵄
 cou	糙
-cou	厝
-cou	撡
-cou	操
-cou	粗
-cou	觕
-cou	麁
+cou	噪
 cou	麄
-cou	麤
 cou	懆
+cou	麁
+cou	觕
 cou	草
 cou	騲
-cou	𢵄
+cou	厝
 cou	喿
-cou	澡
-cou	矂
+cou	粗
 cou	慥
 cou	措
+cou	澡
 cou	燥
-cou	噪
-cou	趮	#10
-cou	鏪	#10
-cou	怚	#10
+cou	操
+cou	矂
+cou	撡
+cou	麤
+cou	曺	#10
 cou	褿	#10
 cou	蔍	#10
+cou	鏪	#10
 cou	蓸	#10
-cou	瘄	#10
-cou	曺	#10
-cou	煰	#10
+cou	傮	#10
 cou	愺	#10
 cou	晠	#10
 cou	慅	#10
 cou	艸	#10
-cou	傮	#10
 cou	簉	#10
-cou	髞	#10
+cou	且	#10
 cou	䆆	#10
 cou	䥄	#10
-cou	且	#10
+cou	髞	#10
+cou	煰	#10
+cou	瘄	#10
+cou	怚	#10
+cou	趮	#10
 coufaatau	艹	#10
 cuk	欻	#300
 cuk	趣	#300
@@ -5192,16 +5194,17 @@ dim	奌	#10
 dim	磹	#10
 dim	嚸	#10
 dim	袩	#10
-din	滇	#300
 din	唸	#300
-din	婝
+din	滇	#300
+din	㒹
+din	奠
+din	痶
 din	碘
 din	蕇
 din	靦
 din	㞟
 din	佃
-din	奠
-din	㒹
+din	婝
 din	捵
 din	殿
 din	淀
@@ -5210,7 +5213,7 @@ din	癜
 din	鈿
 din	電
 din	靛
-din	痶
+din	跈
 din	𤩱
 din	婰
 din	顛
@@ -6355,7 +6358,7 @@ fan	餴	#10
 fanhak	兝	#10
 fanngaa	瓰	#10
 fansing	竕	#10
-fang	揈	#10
+fang	揈	#300
 fat	沸	#300
 fat	刜	#300
 fat	魆	#300
@@ -7726,36 +7729,36 @@ gaau	賋	#10
 gaau	皦	#10
 gaau	虠	#10
 gaaucaasei	罓	#10
+gai	計	#1000
 gai	揭	#300
 gai	結	#300
 gai	炔	#300
 gai	繫	#300
-gai	蘮
 gai	薊
 gai	罽
-gai	蘻
+gai	蘮
 gai	繼
-gai	丯
+gai	㛷
 gai	紒
 gai	筀
 gai	瞉
+gai	蘻
 gai	髻
 gai	瀱
 gai	檵
 gai	彐
-gai	㛷
 gai	㚻
-gai	䦇
+gai	丯
 gai	銈
-gai	㲅
+gai	㾵
 gai	㮷
+gai	㲅
 gai	㡭
-gai	計
 gai	偈
 gai	枅
 gai	鷄
 gai	笄
-gai	㾵
+gai	䦇
 gai	雞
 gai	嗘	#10
 gai	葪	#10
@@ -7990,35 +7993,36 @@ gat	吃	#300
 gat	屹	#300
 gat	詰	#300
 gat	㓤
-gat	㰟
+gat	肐
 gat	趷
 gat	趌
 gat	䞘
 gat	㡮
 gat	㔕
+gat	曱
 gat	圪
 gat	銡
 gat	郅
 gat	訖
 gat	虼
-gat	肐
 gat	紇
-gat	疙
+gat	㰟
 gat	咭
+gat	狤
 gat	䓀
 gat	䰴
 gat	桔
 gat	仡
-gat	姞
 gat	佶
-gat	狤
+gat	姞
+gat	疙
 gat	吉
-gat	嘎	#10
 gat	鴶	#10
+gat	嘎	#10
 gat	郆	#10
 gat	拮	#10
-gat	裓	#10
 gat	橘	#10
+gat	裓	#10
 gat	跀	#10
 gau	穀	#300
 gau	艽	#300
@@ -8429,7 +8433,9 @@ geoi	岠	#10
 geoi	巪	#10
 geoi	怇	#10
 geoi	乬	#10
+gep	喼
 gep	夾	#10
+kep	喼	#10
 gi	嘰	#500
 gi	𠼻
 gik	隔	#300
@@ -10731,23 +10737,24 @@ ham	魽	#10
 ham	澏	#10
 ham	娢	#10
 ham	惂	#10
-han	齦	#300
 han	拫	#300
+han	齦	#300
 han	䓳
-han	豤
+han	佷
+han	睏
 han	鞎
 han	痕
 han	㯊
-han	恨
-han	佷
+han	豤
 han	狠
 han	懇
 han	很
 han	墾
+han	恨
+han	詪	#10
 han	貇	#10
 han	啃	#10
 han	哏	#10
-han	詪	#10
 hang	啃	#300
 hang	𢔛
 hang	烆
@@ -15669,8 +15676,8 @@ kai	䫔
 kai	碶
 kai	罊
 kai	蟿
+kai	呇
 kai	啓
-kai	𧡘
 kai	䭬
 kai	鸂
 kai	䳶
@@ -15678,28 +15685,30 @@ kai	嵇
 kai	溪
 kai	磎
 kai	谿
+kai	䭫
 kai	蹊
 kai	㒅
-kai	䭫
 kai	䏿
-kai	嵠	#10
-kai	䆌	#10
-kai	嵆	#10
-kai	瘛	#10
-kai	䡔	#10
-kai	栔	#10
-kai	渓	#10
-kai	愒	#10
-kai	諬	#10
-kai	啟	#10
-kai	晵	#10
-kai	唘	#10
-kai	鑙	#10
+kai	𧡘
 kai	㬖	#10
+kai	鑙	#10
+kai	晵	#10
 kai	闙	#10
+kai	啟	#10
 kai	啔	#10
+kai	諬	#10
+kai	愒	#10
+kai	嵠	#10
+kai	栔	#10
+kai	䡔	#10
+kai	瘛	#10
+kai	嵆	#10
+kai	唘	#10
+kai	䆌	#10
+kai	渓	#10
 kak	㩿
 kak	𠸉
+kak	揢
 kam	䘳
 kam	耹
 kam	捦
@@ -16305,6 +16314,7 @@ king	請	#10
 king	䔛	#10
 king	凝	#10
 kip	𥈲
+kip	喼	#10
 kit	渴	#300
 kit	桔	#300
 kit	頁	#300
@@ -16383,13 +16393,13 @@ kiu	䎗
 kiu	䀉
 kiu	㝯
 kiu	躈
-kiu	竅
 kiu	繑
 kiu	䆻
 kiu	㚁
 kiu	轎
 kiu	蹻
 kiu	蹺
+kiu	竅
 kiu	𣾷
 kiu	皛	#10
 kiu	勪	#10
@@ -16715,11 +16725,11 @@ kwai	夔
 kwai	䳫
 kwai	䧶
 kwai	䥴
+kwai	喹
 kwai	䤆
 kwai	䟸
-kwai	䙵
 kwai	䖯
-kwai	䀘
+kwai	䕫
 kwai	纗
 kwai	觿
 kwai	蠵
@@ -16734,7 +16744,7 @@ kwai	𣋒
 kwai	𢹂
 kwai	𡖂
 kwai	驨
-kwai	㩦
+kwai	㽯
 kwai	騤
 kwai	馗
 kwai	頯
@@ -16745,10 +16755,10 @@ kwai	酅
 kwai	鄈
 kwai	逵
 kwai	躨
-kwai	㽯
-kwai	䕫
+kwai	䀘
+kwai	䙵
+kwai	㩦
 kwai	㩗
-kwai	㙺
 kwai	嶲
 kwai	闚
 kwai	鍷
@@ -16768,6 +16778,7 @@ kwai	嫢
 kwai	鬹
 kwai	䞨
 kwai	䶯
+kwai	㙺
 kwai	㔒
 kwai	觖
 kwai	硊
@@ -19643,8 +19654,7 @@ man	聞	#300
 man	舋	#300
 man	鰶	#300
 man	䘇
-man	𦅙
-man	刎
+man	𣐀
 man	僶
 man	䲄
 man	䐇
@@ -19654,22 +19664,23 @@ man	㛧
 man	㗃
 man	㖧
 man	𦐐
-man	鼆
-man	𣐀
-man	鼤
-man	吻
+man	𦅙
 man	鳼
+man	鼤
+man	鼆
+man	刡
 man	魰
 man	駇
 man	雯
-man	閺
+man	閿
 man	閩
 man	鈱
 man	螡
 man	苠
-man	刡
+man	芠
+man	刎
 man	愍
-man	惽
+man	吻
 man	閔
 man	絻
 man	妏
@@ -19683,7 +19694,7 @@ man	𡢄
 man	黽
 man	鰵
 man	蠠
-man	罠
+man	惽
 man	脗
 man	紊
 man	簢
@@ -19695,90 +19706,91 @@ man	暋
 man	敏
 man	憫
 man	慜
-man	芠
-man	閿
 man	緡
-man	䃉
-man	抿
+man	罠
+man	閺
+man	䟨
 man	忞
+man	旻
+man	㞶
+man	敯
+man	㟩
+man	㟭
+man	抿
+man	㨉
+man	䁕
 man	彣
+man	民
+man	䂥
+man	岷
+man	䃉
+man	紋
+man	䋋
+man	䎹
+man	䎽
 man	䰚
 man	䪸
 man	䡑
-man	䟨
-man	䎽
-man	䎹
-man	䋋
-man	䂥
-man	旻
-man	䁕
-man	㨉
-man	㟭
-man	㟩
-man	㞶
-man	𠽊
-man	𠍁
-man	抆
-man	蟁
-man	蚊
-man	炆
-man	敯
-man	岷
-man	珉
-man	璺
-man	琝
-man	痻
-man	玟
-man	汶
-man	氓
 man	旼
+man	氓
+man	炆
+man	痻
+man	蟁
+man	汶
+man	璺
 man	瑉
-man	紋
-man	民
+man	琝
+man	抆
+man	呇
+man	𠍁
+man	珉
+man	𠽊
+man	玟
+man	蚊
+man	䝧	#10
+man	潣	#10
+man	歾	#10
+man	燜	#10
+man	渂	#10
 man	肳	#10
-man	闅	#10
-man	錉	#10
-man	甿	#10
+man	蚉	#10
+man	免	#10
+man	䠺	#10
+man	㭣	#10
 man	㣊	#10
-man	鍲	#10
-man	㖴	#10
-man	砇	#10
 man	㐎	#10
+man	緍	#10
+man	姄	#10
+man	敃	#10
+man	鴖	#10
+man	碈	#10
+man	砇	#10
+man	蕄	#10
 man	盿	#10
 man	鈫	#10
-man	㭣	#10
-man	蕄	#10
-man	䠺	#10
-man	免	#10
-man	碈	#10
-man	蚉	#10
-man	渂	#10
-man	燜	#10
+man	錉	#10
+man	鍲	#10
+man	甿	#10
+man	闅	#10
 man	馼	#10
-man	䝧	#10
 man	琘	#10
-man	呅	#10
-man	㥗	#10
+man	珳	#10
+man	鴍	#10
+man	㖴	#10
+man	搵	#10
 man	捪	#10
+man	㥗	#10
 man	㫣	#10
 man	怋	#10
 man	忟	#10
 man	冺	#10
 man	崏	#10
 man	勄	#10
-man	緍	#10
+man	呅	#10
 man	呡	#10
-man	潣	#10
 man	惛	#10
-man	姄	#10
 man	垊	#10
-man	鴖	#10
-man	搵	#10
-man	敃	#10
 man	䦩	#10
-man	鴍	#10
-man	歾	#10
-man	珳	#10
 man	莬	#10
 mang	䫤
 mang	䑅
@@ -20976,8 +20988,9 @@ nak	䭆
 nak	疒	#10
 nam	淰	#300
 nam	𥻚
-nam	惗
 nam	諗
+nam	恁
+nam	惗
 nam	䋻
 nam	煁
 nam	腍
@@ -21506,6 +21519,7 @@ ngam	䜙	#10
 ngam	吟	#10
 ngam	啽	#10
 ngam	扲	#10
+ngam	唅	#10
 ngan	韌	#300
 ngan	訢	#300
 ngan	仁	#300
@@ -21880,29 +21894,29 @@ nim	艌	#10
 nin	輾	#300
 nin	碾	#300
 nin	棯	#300
+nin	姩
 nin	哖
 nin	躎
 nin	涊
 nin	𥝝
-nin	㬗
+nin	㲽
 nin	秊
 nin	年
 nin	𢆡
-nin	姩
 nin	䄹
-nin	𨃨
-nin	㲽
+nin	㬗
+nin	䄭
+nin	跈
 nin	簐
 nin	撚
 nin	捻
 nin	䟢
 nin	㮟
 nin	㞋
-nin	䄭
+nin	𨃨
 nin	晛	#10
 nin	脌	#10
 nin	鵇	#10
-nin	跈	#10
 nin	拈	#10
 nin	榐	#10
 ning	拎
@@ -28323,15 +28337,16 @@ wing	柡	#10
 wo	喎	#9000
 wo	倭	#300
 wo	㹻
-wo	盉
+wo	澕
 wo	䆧
+wo	啝
 wo	涴
 wo	㴕
 wo	䒩
 wo	和
 wo	姀
-wo	澕
 wo	禾
+wo	盉
 wo	䂺
 wo	訸
 wo	鉌
@@ -28357,21 +28372,20 @@ wo	渦
 wo	濄
 wo	旤
 wo	煱
-wo	薶
 wo	猧
-wo	踒
 wo	窠
-wo	蝸
 wo	窩
 wo	萵
-wo	俰	#10
-wo	唩	#10
-wo	㕿	#10
-wo	啝	#10
+wo	薶
+wo	蝸
+wo	踒
 wo	惒	#10
-wo	萂	#10
-wo	咊	#10
 wo	咼	#10
+wo	咊	#10
+wo	萂	#10
+wo	㕿	#10
+wo	唩	#10
+wo	俰	#10
 wo	柇	#10
 wok	矱	#300
 wok	約	#300
@@ -29592,8 +29606,7 @@ zap	集	#10
 zat	枳	#300
 zat	侄	#300
 zat	㗌
-zat	嫉
-zat	銍
+zat	挃
 zat	鑕
 zat	騭
 zat	𨑨
@@ -29601,10 +29614,10 @@ zat	㑵
 zat	㜼
 zat	䱃
 zat	姪
-zat	槉
-zat	挃
-zat	質
+zat	嫉
 zat	洷
+zat	槉
+zat	郅
 zat	疾
 zat	祑
 zat	窒
@@ -29613,10 +29626,11 @@ zat	蒺
 zat	蛭
 zat	螏
 zat	蟄
-zat	㗧
-zat	郅
 zat	𡜍
-zat	晊
+zat	㗧
+zat	銍
+zat	質
+zat	桎
 zat	㘍
 zat	㜱
 zat	䑇
@@ -29624,26 +29638,27 @@ zat	䜠
 zat	䬹
 zat	厔
 zat	庢
-zat	螲
 zat	揤
-zat	桎
-zat	聜
+zat	晊
+zat	甴
 zat	楖
+zat	螲
+zat	聜
 zat	礩
-zat	儨	#10
-zat	秷	#10
+zat	妷	#10
 zat	㩫	#10
 zat	隲	#10
-zat	瓆	#10
+zat	秷	#10
+zat	儨	#10
 zat	劕	#10
-zat	妷	#10
-zat	潌	#10
 zat	㑑	#10
+zat	潌	#10
 zat	堲	#10
+zat	瓆	#10
 zat	櫍	#10
-zat	愱	#10
-zat	䟈	#10
 zat	貭	#10
+zat	䟈	#10
+zat	愱	#10
 zau	啄	#300
 zau	帚	#300
 zau	謅	#300
