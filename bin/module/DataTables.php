@@ -80,6 +80,6 @@ foreach ($filenames as $path) {
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
-fwrite($f, json_encode($result, JSON_UNESCAPED_UNICODE));
+fwrite($f, json_encode($result, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
 fclose($f);
 echo "...version: {$result['version']}\n\n";
