@@ -192,7 +192,8 @@ z z" . ($toneless ? "" : "
 		});
 
 		foreach ($items as $item) {
-			$comment = ($item['w'] == 100) ? '' : "\t#{$item['w']}";
+			// $comment = ($item['w'] == 100) ? '' : "\t#{$item['w']}";
+			$comment = '';
 			$phrase = trim($item['r']);
 			echo "{$radical}\t{$phrase}{$comment}\n";
 		}
@@ -258,30 +259,6 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 
 		// follow the same frequency rules
 		$weight = !isset($row[2]) ? 100 : (($row[2] == "0%") ? 10 : intval(str_replace("%", "", $row[2])) * 100);
-
-		// if (isset($weights[$phrase])) {
-		// 	$weight = intval($weights[$phrase]) * 1000;
-		// }
-
-
-		// if ($debug) {
-		// 	// echo $key . "\n";
-		// 	if (isset($check[$key])) {
-		// 		echo $line . "\n";
-		// 	}
-		//
-		// 	// $cond = ($weight < 100);
-		// 	// $cond = ($weight == 100);
-		// 	// $cond = ($weight > 100);
-		// 	// $cond = isset($row[2]);
-		// 	// $cond = (isset($row[2]) && (strpos($row[2], '%') === false));
-		// 	// if ($cond) {
-		// 	// 	// echo "{$phrase}\t{$weight}\t{$radical} => {$line}\n";
-		// 	// 	echo $line . "\n";
-		// 	// }
-		// }
-		// else {
-		// }
 
 		$result .= "{$phrase}\t{$weight}\t{$radical}\n";
 		$validations[$key] = $line;
