@@ -78,5 +78,18 @@
             "[shift][§][|][~][...][\\][<][>][!][?][shift]",
             "[next][globe][space][next][dismiss]"
         ]
+    },
+
+    {
+        "name": "symbol-keypad1-choco",
+        "description": "符號鍵盤 (Keypad)",
+        "charsets":
+        [
+            "[@][#][$][%][del]",
+            "[（][「][『][《][【]",
+            "[〈][．][ー][～][…]",
+            "[；][：][！][、][“]",
+            "[next][，][。][？][return]"
+        ]
     }
 ]
