@@ -2,6 +2,7 @@
     {
         "name": "qwerty-k14",
         "description": "QWERTY (small)",
+        "keynameType": "label",
         "charsets":
         [
              "[1:QW][2:ER][3:TY][4:UI][5:OP]",

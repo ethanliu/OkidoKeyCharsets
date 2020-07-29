@@ -1,7 +1,8 @@
 [
     {
-        "name": "keypad-choco",
-        "description": "keypad",
+        "name": "keypad-qz-choco",
+        "description": "Keypad (1)",
+        "keynameType": "label",
         "charsets":
         [
             "[1:QZ][2:ABC][3:DEF]",
@@ -12,8 +13,21 @@
         ]
     },
     {
-        "name": "keypad-pad",
-        "description": "keypad",
+        "name": "keypad-pinyin-choco",
+        "description": "Keypad (2)",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[,][1][2:ABC][3:DEF][del]",
+            "[.][4:GHI][5:JKL][6:MNO][esc]",
+            "[?][7:PQRS][8:TUV][9:WXYZ][0]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "keypad-qz-pad",
+        "description": "keypad (1)",
+        "keynameType": "label",
         "charsets":
         [
             "[，][1:QZ][2:ABC][3:DEF][『]",
