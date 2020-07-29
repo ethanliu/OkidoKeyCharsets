@@ -2,6 +2,7 @@
     {
         "name": "bpmf-ibm",
         "description": "注音-IBM鍵盤",
+        "keynameType": "label",
         "charsets":
         [
             "[1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ]",
@@ -14,6 +15,7 @@
     {
         "name": "bpmf-ibm-pad",
         "description": "注音-IBM鍵盤",
+        "keynameType": "label",
         "charsets":
         [
             "[1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ][=]",
@@ -26,6 +28,7 @@
     {
         "name": "bpmf-ibm-fullsize",
         "description": "注音-IBM鍵盤",
+        "keynameType": "label",
         "charsets":
         [
             "[`][1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ][=][del]",
