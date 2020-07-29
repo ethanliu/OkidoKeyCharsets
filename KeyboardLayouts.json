@@ -1,5 +1,5 @@
 {
-    "version": "20200618171256",
+    "version": "20200729150040",
     "charsets": {
         "array": {
             "description": "行列",
@@ -34,8 +34,8 @@
         "array-flick-choco": {
             "description": "行列(滑動鍵盤)",
             "charsets": [
-                "[\"][1][2][3][del]",
-                "['][4][5][6][⇡*]",
+                "[esc][1][2][3][del]",
+                "[\"][4][5][6][⇡*]",
                 "[!][7][8][9][–*]",
                 "[?][,][0][.][⇣*]",
                 "[next][globe][space][w*:w][return]"
@@ -81,21 +81,19 @@
                     "down": "0⇣",
                     "up": "0⇡"
                 },
+                "\"": {
+                    "down": "(",
+                    "up": "["
+                },
+                "!": {
+                    "down": "！",
+                    "up": "、"
+                },
                 ",": {
                     "down": "，"
                 },
                 ".": {
                     "down": "。"
-                },
-                "\"": {
-                    "down": "(",
-                    "up": "「"
-                },
-                "'": {
-                    "down": "、"
-                },
-                "!": {
-                    "down": "！"
                 },
                 "?": {
                     "down": "？"
@@ -105,11 +103,30 @@
         "array-position1-choco": {
             "description": "行列(方向鍵1)",
             "charsets": [
-                "[w*:w][1][2][3][del]",
-                "[+][4][5][6][，]",
+                "[esc][1][2][3][del]",
+                "[w*:w][4][5][6][，]",
                 "[-][7][8][9][。]",
                 "[globe][,][0][.][space]",
                 "[next][⇡*][–*][⇣*][return]"
+            ]
+        },
+        "array-keypad1-choco": {
+            "description": "行列(數字1)",
+            "charsets": [
+                "[esc][1][2][3][del]",
+                "[w*:w][4][5][6][(]",
+                "[globe][7][8][9][space]",
+                "[next][,][0][.][return]"
+            ]
+        },
+        "array-keypad2-choco": {
+            "description": "行列(數字2)",
+            "charsets": [
+                "[esc][1][2][3][del]",
+                "[(][4][5][6][：]",
+                "[\"][7][8][9][？]",
+                "[，][,][0][.][。]",
+                "[next][globe][space][w*:w][return]"
             ]
         },
         "array10-choco": {
@@ -129,16 +146,6 @@
                 "[(][4][5][6][：]",
                 "[\"][7][8][9][？]",
                 "[，][,][0][.][。]",
-                "[next][globe][space][return]"
-            ]
-        },
-        "array10-symbol2-choco": {
-            "description": "行列10符號鍵盤",
-            "charsets": [
-                "[，][。][？][！][del]",
-                "[；][：][、][“][…]",
-                "[（][「][『][《][【]",
-                "[〈][．][ー][～][﹏]",
                 "[next][globe][space][return]"
             ]
         },
@@ -193,6 +200,7 @@
         },
         "bpmf-et26": {
             "description": "注音-倚天26鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ]",
                 "[A:ㄚ][S:ㄙ][D:ㄉ˙][F:ㄈˊ][G:ㄐㄓ][H:ㄏㄦ][J:ㄖˇ][K:ㄎˋ][L:ㄌㄥ]",
@@ -202,6 +210,7 @@
         },
         "bpmf-et26-pad": {
             "description": "注音-倚天26鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1][2][3][4][5][6][7][8][9][0][-][=]",
                 "[Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ][del]",
@@ -212,6 +221,7 @@
         },
         "bpmf-et26-fullsize": {
             "description": "注音-倚天26鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
                 "[tab][Q:ㄗㄟ][W:ㄘㄝ][E:ㄧ][R:ㄜ][T:ㄊㄤ][Y:ㄔ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆㄡ][[][]][\\]",
@@ -222,6 +232,7 @@
         },
         "bpmf-et41": {
             "description": "注音-倚天41鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1:˙][2:ˊ][3:ˇ][4:ˋ][5][6][7:ㄑ][8:ㄢ][9:ㄣ][0:ㄤ][-:ㄥ][=:ㄦ]",
                 "[Q:ㄟ][W:ㄝ][E:ㄧ][R:ㄜ][T:ㄊ][Y:ㄡ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆ]",
@@ -232,6 +243,7 @@
         },
         "bpmf-et41-pad": {
             "description": "注音-倚天41鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1:˙][2:ˊ][3:ˇ][4:ˋ][5][6][7:ㄑ][8:ㄢ][9:ㄣ][0:ㄤ][-:ㄥ][=:ㄦ]",
                 "[Q:ㄟ][W:ㄝ][E:ㄧ][R:ㄜ][T:ㄊ][Y:ㄡ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆ][del]",
@@ -242,6 +254,7 @@
         },
         "bpmf-et41-fullsize": {
             "description": "注音-倚天41鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[`][1:˙][2:ˊ][3:ˇ][4:ˋ][5][6][7:ㄑ][8:ㄢ][9:ㄣ][0:ㄤ][-:ㄥ][=:ㄦ][del]",
                 "[tab][Q:ㄟ][W:ㄝ][E:ㄧ][R:ㄜ][T:ㄊ][Y:ㄡ][U:ㄩ][I:ㄞ][O:ㄛ][P:ㄆ][[][]][\\]",
@@ -252,6 +265,7 @@
         },
         "bpmf-hsu": {
             "description": "注音-許氏鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ]",
                 "[A:ㄘㄟ][S:ㄙ˙][D:ㄉˊ][F:ㄈˇ][G:ㄍㄜ][H:ㄏㄛ][J:ㄐㄓˋ][K:ㄎㄤ][L:ㄌㄥㄦ]",
@@ -261,6 +275,7 @@
         },
         "bpmf-hsu-pad": {
             "description": "注音-許氏鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1][2][3][4][5][6][7][8][9][0][-][=]",
                 "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][del]",
@@ -271,6 +286,7 @@
         },
         "bpmf-hsu-fullsize": {
             "description": "注音-許氏鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
                 "[tab][Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][[][]][\\]",
@@ -281,6 +297,7 @@
         },
         "bpmf-hsu-dvorak": {
             "description": "注音-許氏鍵盤(dvorak)",
+            "keynameType": "label",
             "charsets": [
                 "['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ]",
                 "[dummy:2][A:ㄘㄟ][O:ㄡ][E:ㄧㄝ][U:ㄩ][I:ㄞ][D:ㄉˊ][H:ㄏㄛ][T:ㄊ][N:ㄋㄣ][S:ㄙ˙][dummy:2]",
@@ -290,6 +307,7 @@
         },
         "bpmf-hsu-dvorak-pad": {
             "description": "注音-許氏鍵盤(dvorak)",
+            "keynameType": "label",
             "charsets": [
                 "[1][2][3][4][5][6][7][8][9][0][[][]]",
                 "['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ][\/][=][\\][del]",
@@ -300,6 +318,7 @@
         },
         "bpmf-hsu-dvorak-fullsize": {
             "description": "注音-許氏鍵盤(dvorak)",
+            "keynameType": "label",
             "charsets": [
                 "[`][1][2][3][4][5][6][7][8][9][0][[][]][del]",
                 "[tab]['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ][\/][=][\\]",
@@ -310,6 +329,7 @@
         },
         "bpmf-ibm": {
             "description": "注音-IBM鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ]",
                 "[q:ㄐ][w:ㄑ][e:ㄒ][r:ㄓ][t:ㄔ][y:ㄕ][u:ㄖ][i:ㄗ][o:ㄘ][p:ㄙ]",
@@ -320,6 +340,7 @@
         },
         "bpmf-ibm-pad": {
             "description": "注音-IBM鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ][=]",
                 "[q:ㄐ][w:ㄑ][e:ㄒ][r:ㄓ][t:ㄔ][y:ㄕ][u:ㄖ][i:ㄗ][o:ㄘ][p:ㄙ][del]",
@@ -330,6 +351,7 @@
         },
         "bpmf-ibm-fullsize": {
             "description": "注音-IBM鍵盤",
+            "keynameType": "label",
             "charsets": [
                 "[`][1:ㄅ][2:ㄆ][3:ㄇ][4:ㄈ][5:ㄉ][6:ㄊ][7:ㄋ][8:ㄌ][9:ㄍ][0:ㄎ][-:ㄏ][=][del]",
                 "[tab][q:ㄐ][w:ㄑ][e:ㄒ][r:ㄓ][t:ㄔ][y:ㄕ][u:ㄖ][i:ㄗ][o:ㄘ][p:ㄙ][[][]][\\]",
@@ -370,12 +392,57 @@
         },
         "bpmf-gcin21-choco": {
             "description": "注音 21 鍵",
+            "keynameType": "label",
             "charsets": [
                 "[7:ㄅㄧ][8:ㄉㄛ][9:ㄍㄟ][+:ㄑㄢ][,:ㄕ˙]",
                 "[4:ㄆㄨ][5:ㄊㄜ][6:ㄎㄠ][-:ㄒㄤ][;:ㄖˊ]",
                 "[1:ㄇㄩ][2:ㄋㄝ][3:ㄏㄡ][x:ㄓㄥ][(:ㄗˇ]",
                 "[0:ㄈㄚ][\/:ㄌㄞ][.:ㄐㄣ][%:ㄔㄦ][):ㄘˋ]",
                 "[next][globe][space][del][return][*:ㄙ]"
+            ]
+        },
+        "bpmf-keypad1-choco": {
+            "description": "注音(Keypad1)",
+            "keynameType": "label",
+            "charsets": [
+                "[esc][1:ㄅㄉㄚ][2:ㄍㄐㄞ][3:ㄓㄗㄢㄦ][del]",
+                "[(][4:ㄆㄊㄛ][5:ㄎㄑㄟ][6:ㄔㄘㄣㄧ][ˊ:ˊ]",
+                "[，][7:ㄇㄋㄜ][8:ㄏㄒㄠㄡ][9:ㄕㄙㄤㄨ][ˇ:ˇ]",
+                "[。][,:ㄈㄌㄝ][0:˙][.:ㄖㄥㄩ][ˋ:ˋ]",
+                "[next][globe][space][return]"
+            ]
+        },
+        "bpmf-keypad2-choco": {
+            "description": "注音(Keypad2)",
+            "keynameType": "label",
+            "charsets": [
+                "[esc][1:ㄅㄉㄚ][2:ㄍㄐㄞˊ][3:ㄓㄗㄢㄦˇ][del]",
+                "[(][4:ㄆㄊㄛˋ][5:ㄎㄑㄟ][6:ㄔㄘㄣㄧ][：]",
+                "[\"][7:ㄇㄋㄜ][8:ㄏㄒㄠㄡ][9:ㄕㄙㄤㄨ][？]",
+                "[，][,:ㄈㄌㄝ][0:˙][.:ㄖㄥㄩ][。]",
+                "[next][globe][space][return]"
+            ]
+        },
+        "bpmf-keypad3-choco": {
+            "description": "注音(Keypad3)",
+            "keynameType": "label",
+            "charsets": [
+                "[esc][1:ㄅㄆㄇㄈ][2:ㄉㄊㄋㄌ][3:ㄍㄎㄏㄐ][del]",
+                "[(][4:ㄑㄒㄓ][5:ㄕㄖㄗㄘ][6:ㄙㄧㄨㄩㄔ][？]",
+                "[：][7:ㄚㄛㄜㄝ][8:ㄞㄟㄠㄡㄢ][9:ㄣㄤㄥㄦ][。]",
+                "[˙:˙][ˊ:ˊ][ˇ:ˇ][ˋ:ˋ][，]",
+                "[next][globe][space][return]"
+            ]
+        },
+        "bpmf-keypad4-choco": {
+            "description": "注音(Keypad4)",
+            "keynameType": "label",
+            "charsets": [
+                "[esc][1:ㄅㄆㄇㄈ][2:ㄉㄊㄋㄌ][3:ㄍㄎㄏ][del]",
+                "[(][4:ㄐㄑㄒ][5:ㄓㄔㄕㄖ][6:ㄗㄘㄙ][ˊ:ˊ]",
+                "[：][7:ㄚㄛㄜㄝ][8:ㄞㄟㄠㄡ][9:ㄢㄣㄤㄥㄦ][ˇ:ˇ]",
+                "[。][˙:˙][0:ㄧㄨㄩ][，][ˋ:ˋ]",
+                "[next][globe][space][return]"
             ]
         },
         "cangjie": {
@@ -554,8 +621,9 @@
                 "[next][globe][space][next][dismiss]"
             ]
         },
-        "keypad-choco": {
-            "description": "keypad",
+        "keypad-qz-choco": {
+            "description": "Keypad (1)",
+            "keynameType": "label",
             "charsets": [
                 "[1:QZ][2:ABC][3:DEF]",
                 "[4:GHI][5:JKL][6:MNO]",
@@ -564,8 +632,19 @@
                 "[next][globe][space][del][return]"
             ]
         },
-        "keypad-pad": {
-            "description": "keypad",
+        "keypad-pinyin-choco": {
+            "description": "Keypad (2)",
+            "keynameType": "label",
+            "charsets": [
+                "[,][1][2:ABC][3:DEF][del]",
+                "[.][4:GHI][5:JKL][6:MNO][esc]",
+                "[?][7:PQRS][8:TUV][9:WXYZ][0]",
+                "[next][globe][space][return]"
+            ]
+        },
+        "keypad-qz-pad": {
+            "description": "keypad (1)",
+            "keynameType": "label",
             "charsets": [
                 "[，][1:QZ][2:ABC][3:DEF][『]",
                 "[。][4:GHI][5:JKL][6:MNO][']",
@@ -662,6 +741,16 @@
                 "[capslock][A:人][S:系][D:可][F:方][G:土][H:其][J:手][K:衣][L:也][;:力][':年][return]",
                 "[shift][Z:了][X:又][C:成][V:心][B:耳][N:月][M:同][,:☆][.:★][\/:我][shift]",
                 "[next][globe][space][next][dismiss]"
+            ]
+        },
+        "qwerty-k14": {
+            "description": "QWERTY (small)",
+            "keynameType": "label",
+            "charsets": [
+                "[1:QW][2:ER][3:TY][4:UI][5:OP]",
+                "[6:AS][7:DF][8:GH][9:JK][0:L]",
+                "[shift][.:ZX][,:CV][?:BN][!:M][del]",
+                "[next][globe][space][return]"
             ]
         },
         "qwerty": {
@@ -805,6 +894,16 @@
                 "[€][£][¥][_][^][[][]][{][}][return]",
                 "[shift][§][|][~][...][\\][<][>][!][?][shift]",
                 "[next][globe][space][next][dismiss]"
+            ]
+        },
+        "symbol-keypad1-choco": {
+            "description": "符號鍵盤 (Keypad)",
+            "charsets": [
+                "[@][#][$][%][del]",
+                "[（][「][『][《][【]",
+                "[〈][．][ー][～][…]",
+                "[；][：][！][、][“]",
+                "[next][，][。][？][return]"
             ]
         }
     }
