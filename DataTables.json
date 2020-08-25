@@ -1,5 +1,5 @@
 {
-    "version": "20200825170051",
+    "version": "20200825171140",
     "datatables": [
         {
             "ename": "NewCJ3",
@@ -56,14 +56,6 @@
             "cin": "table\/biaoyin.cin",
             "db": "db\/biaoyin.cin.db",
             "license": "Version 2.3, November 2007\nEric Rasmussen <hello.rasmus@gmail.com>\nCovers Pinyin, MPS-2, Yale\nOmits ê\nSpecial thanks to OpenVanilla.org for converting the data table\n\n"
-        },
-        {
-            "ename": "bossy",
-            "cname": "謥蝦米",
-            "name": "",
-            "cin": "table\/bossy.cin",
-            "db": "db\/bossy.cin.db",
-            "license": "\nThe table was generated at 2018-08-11 04:55:18 by ibus2cin utility\nhttps:\/\/github.com\/ethanliu\/ibus2cin\n\n"
         },
         {
             "ename": "PhoneticHsu",
