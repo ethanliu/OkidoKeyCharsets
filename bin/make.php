@@ -11,10 +11,13 @@
 
 include __DIR__ . "/database.php";
 include __DIR__ . "/EmojiReader.php";
+include __DIR__ . "/TableReader.php";
 
 class Builder {
 	private static $shared;
 	private static $excludeDatables = [
+		'array-shortcode.cin',
+		'array-special.cin',
 		// 'array30.cin',
 		'array30_OkidoKey-big_0.75.cin',
 		// 'bpmf-cns.cin',

@@ -6,8 +6,6 @@ if ($skipSC) {
 	$words = include(__DIR__ . "/ref/words-hans.php");
 }
 
-$propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
-$mapNames = ["%keyname", "%chardef"];
 $isArray = false;
 
 $filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
@@ -55,88 +53,44 @@ foreach ($filenames as $path) {
 		$db->exec("CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
 	}
 
-	$section = '';
-	$contents = explode("\n", file_get_contents($path));
-
+	$table = new TableReader($path);
 	$keydefRowId = 0;
 	$chardefRowId = 0;
 
 	$db->exec("BEGIN TRANSACTION");
 
-	foreach ($contents as $line) {
-		$line = trim(preg_replace('/#(.?)*/', '', $line));
+	foreach ($table->info as $key => $value) {
+		self::addInfo($db, $key, $value);
+	}
 
-		if (empty($line)) {
-			continue;
-		}
+	foreach ($table->keynames as $key => $value) {
+		self::addKeyname($db, $key, $value);
+	}
 
-		// echo "{$line}\n";
-
-
-		$line = preg_replace('/[ ]{2,}|[\t]/', ' ', $line);
-		if (empty($line)) {
-			continue;
-		}
-
-		// $rows = explode(' ', str_replace("\t", " ", $line), 2);
-		// $rows = explode(' ', $line, 2);
-		$rows = mb_split('[[:space:]]', $line, 2);
-		if (count($rows) != 2) {
-			continue;
-		}
-
-		$key = trim($rows[0]);
-		$value = trim($rows[1]);
+	foreach ($table->data as $item) {
+		$key = trim($item->key);
+		$value = trim($item->value);
 
 		if ($skipSC && in_array($value, $words)) {
 			// echo "skip: {$value}\n";
 			continue;
 		}
 
-		if (in_array($key, $propertyNames)) {
-			$_key = str_replace('%', '', $key);
-			self::addInfo($db, $_key, $value);
+		$keydefRowId = self::getKeydefId($db, $key);
+
+		if (!$keydefRowId) {
+			self::addKeydef($db, $key);
+			$keydefRowId = self::getKeydefId($db, $key);
 		}
-		else if (in_array($key, $mapNames)) {
-			if ($value == 'begin') {
-				$section = $key;
-				continue;
-			}
-			else if ($value == 'end') {
-				if ($section == $key) {
-					$secton = '';
-					// echo "section: {$section} end\n";
-				}
-				else {
-					echo "section: end of {$section}???\n";
-				}
-			}
+
+		$chardefRowId = self::getChardefId($db, $value);
+
+		if (!$chardefRowId) {
+			self::addChardef($db, $value);
+			$chardefRowId = self::getChardefId($db, $value);
 		}
-		else {
-			if ($section == '%keyname') {
-				self::addKeyname($db, $key, $value);
-			}
-			else if ($section == '%chardef') {
-				$keydefRowId = self::getKeydefId($db, $key);
 
-				if (!$keydefRowId) {
-					self::addKeydef($db, $key);
-					$keydefRowId = self::getKeydefId($db, $key);
-				}
-
-				$chardefRowId = self::getChardefId($db, $value);
-
-				if (!$chardefRowId) {
-					self::addChardef($db, $value);
-					$chardefRowId = self::getChardefId($db, $value);
-				}
-
-				self::addEntry($db, $keydefRowId, $chardefRowId);
-			}
-			else {
-				// echo "Unknown section: {$line}\n";
-			}
-		}
+		self::addEntry($db, $keydefRowId, $chardefRowId);
 	}
 
 	$db->exec("COMMIT TRANSACTION");
@@ -153,7 +107,6 @@ foreach ($filenames as $path) {
 	// $db->exec($query);
 
 	if ($isArray) {
-
 		$keydefRowId = 0;
 		$chardefRowId = 0;
 
@@ -163,49 +116,14 @@ foreach ($filenames as $path) {
 			echo "{$filename}...";
 			$path = self::$baseDir . 'table/' . $filename;
 			$suffix = '_' . str_replace(['array-', '.cin'], '', $filename);
-			$section = '';
-			$contents = explode("\n", file_get_contents($path));
 
+			$table = new TableReader($path);
 			$keydefRowId = 0;
 			$chardefRowId = 0;
-			$valid = false;
 
-			foreach ($contents as $line) {
-				$line = trim(preg_replace('/#(.?)*/', '', $line));
-				if (empty($line)) {
-					continue;
-				}
-
-				$line = preg_replace('/[ ]{2,}|[\t]/', ' ', $line);
-				if (empty($line)) {
-					continue;
-				}
-
-				// $rows = explode(' ', str_replace("\t", " ", $line), 2);
-				// $rows = explode(' ', $line, 2);
-				$rows = mb_split('[[:space:]]', $line, 2);
-				if (count($rows) != 2) {
-					continue;
-				}
-
-				$key = trim($rows[0]);
-				$value = trim($rows[1]);
-
-				if ($key == '%chardef' && $value == 'begin') {
-					$valid = true;
-					continue;
-				}
-
-				if ($key == '%chardef' && $value == 'end') {
-					$valid = false;
-					continue;
-				}
-
-				if (!$valid) {
-					continue;
-				}
-
-				// echo "{$key} = {$value}\n";
+			foreach ($table->data as $item) {
+				$key = trim($item->key);
+				$value = trim($item->value);
 
 				$keydefRowId = self::getKeydefId($db, $key, $suffix);
 
@@ -222,7 +140,6 @@ foreach ($filenames as $path) {
 				}
 
 				self::addEntry($db, $keydefRowId, $chardefRowId, $suffix);
-
 			}
 		}
 
