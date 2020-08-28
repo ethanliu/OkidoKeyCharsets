@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼 (無調號)
-# Version: 2020.07.12
+# Version: 2020.08.24
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -7774,7 +7774,6 @@ gai	彑
 gai	峜
 gak	呄
 gam	噉
-gam	咁
 gam	禁
 gam	灨
 gam	鰔
@@ -7786,11 +7785,12 @@ gam	㽏
 gam	䲺
 gam	僸
 gam	凎
+gam	咁
 gam	唫
 gam	噤
 gam	淦
 gam	㓧
-gam	㤌
+gam	澉
 gam	紺
 gam	詌
 gam	贑
@@ -7805,8 +7805,8 @@ gam	䶖
 gam	扲
 gam	撳
 gam	笒
+gam	㤌
 gam	錦
-gam	澉
 gam	橄
 gam	紟
 gam	㦗
@@ -7824,15 +7824,15 @@ gam	敢
 gam	疳
 gam	䃭
 gam	菳
-gam	感
 gam	金
+gam	感
 gam	𤯌
 gam	苷
 gam	䧩
 gam	鈙
+gam	鏱
 gam	㲐
 gam	搇
-gam	鏱
 gam	凚
 gam	汵
 gam	䤗
@@ -10166,13 +10166,13 @@ gyut	䙠
 gyut	橛
 gyut	趉
 gyut	劂
-haa	吓
 haa	岈
 haa	蛤
 haa	蝦
 haa	暇
 haa	㗇
 haa	𡤕
+haa	吓
 haa	碬
 haa	蕸
 haa	赮
@@ -17073,7 +17073,7 @@ kyut	𠄌
 kyuttauwu	彑
 la	嘞
 la	啦
-la	嘑
+la	嚹
 laa	揦
 laa	垃
 laa	喇
@@ -18848,12 +18848,11 @@ lok	漯
 lok	洜
 lok	笿
 long	崀
+long	莨
 long	襠
 long	羹
 long	踉
 long	悢
-long	莨
-long	啷
 long	郎
 long	鋃
 long	鎯
@@ -18863,6 +18862,7 @@ long	㙟
 long	㮾
 long	埌
 long	塱
+long	啷
 long	朗
 long	烺
 long	蒗
@@ -18876,11 +18876,10 @@ long	㫰
 long	䍚
 long	䕞
 long	晾
-long	狼
+long	𠺘
 long	螂
 long	𧚅
-long	桹
-long	𠺘
+long	榔
 long	𠻴
 long	𢲲
 long	㝗
@@ -18891,28 +18890,29 @@ long	㾿
 long	䡙
 long	䯖
 long	䱶
-long	廊
 long	嫏
-long	榔
-long	瑯
+long	桹
+long	廊
+long	欴
+long	浪
 long	筤
 long	稂
 long	硠
-long	浪
-long	欴
+long	瑯
 long	琅
-long	艆
-long	躴
-long	郒
-long	郞
-long	瀧
+long	狼
 long	蓢
 long	勆
 long	哴
+long	瀧
 long	樃
 long	朤
+long	郞
+long	郒
 long	蜋
+long	躴
 long	朖
+long	艆
 long	蓈
 lou	慮
 lou	佬
@@ -20974,7 +20974,6 @@ nai	䛏
 nai	坭
 nai	屔
 nai	臡
-nai	您
 nai	檷
 nai	苨
 nai	迡
@@ -23427,9 +23426,9 @@ saai	䵘
 saai	㬠
 saai	躧
 saai	諰
+saai	蓰
 saai	㴓
 saai	葸
-saai	蓰
 saai	纚
 saai	漇
 saai	嘥
@@ -23437,15 +23436,14 @@ saai	𢳜
 saai	䚕
 saai	䢄
 saai	屣
-saai	枲
 saai	徙
-saai	璽
+saai	枲
 saai	瓕
+saai	璽
 saai	舓
 saai	鉩
-saai	鈢
 saai	葈
-saai	哂
+saai	鈢
 saai	壐
 saai	蹝
 saai	殺
