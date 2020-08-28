@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼
-# Version: 2020.07.12
+# Version: 2020.08.24
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -8347,9 +8347,7 @@ gam2	𡄎
 gam2	𡑒
 gam2	䤗
 gam2	䧩
-gam2	咁
 gam2	鏱
-gam3	咁
 gam3	㯲
 gam3	禁
 gam3	𡢾
@@ -8364,6 +8362,7 @@ gam3	㽏
 gam3	淦
 gam3	噤
 gam3	唫
+gam3	咁
 gam3	凎
 gam3	僸
 gam3	䲺
@@ -10882,7 +10881,6 @@ haa4	徦
 haa4	䠍
 haa5	下
 haa5	奤
-haa5	吓
 haa5	哈
 haa6	㰺
 haa6	廈
@@ -18276,8 +18274,7 @@ kyut3tau4wu6	彑
 kyut6	橛
 la1	啦
 la3	嘞
-la4	啦
-la4	嘑
+la4	嚹
 laa1	垃
 laa1	砬
 laa1	鞡
@@ -18296,11 +18293,9 @@ laa3	喇
 laa3	嘑
 laa3	罅
 laa3	𡅈
-laa3	啦
 laa3	嚹
 laa3	鎼
 laa3	鏬
-laa4	啦
 laa4	嚹
 laa5	揦
 laa5	喇
@@ -20259,7 +20254,6 @@ lok6	硦
 lok6	洛
 lok6	珞
 long1	啷
-long2	狼
 long2	𠺘
 long2	𠻴
 long3	𢲲
@@ -22586,7 +22580,6 @@ nai4	泥
 nai4	臡
 nai4	埿
 nai5	泥
-nai5	您
 nai5	檷
 nai5	苨
 nai5	䦵
@@ -25242,7 +25235,6 @@ saai3	㬠
 saai3	䵘
 saai3	嗮
 saai3	曬
-saai3	哂
 saai3	殺
 saai3	閷
 saai4	𤿂
