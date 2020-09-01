@@ -32,7 +32,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
 
 非必要或常省略項目:
 
-* #: # 符號及其後所有的內容為注解
+* \#: # 符號及其後所有的內容為注解
 * %gen_inp: General Input 輸入模組，由於幾乎無其他輸入模組，因此多半省略
 * %encoding: 編碼格式，如 UTF-8 
 * %endkey: 組字結束鍵，相當於按下空白鍵，例如注音輸入法的聲調鍵 3467
@@ -50,6 +50,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
 
 此為公眾授權或已無法追本溯源的 cin 表格蒐集
 
+#### 繁體中文表格
 
     array10a.cin - 行列 10
     array26.cin - 行列廿六
@@ -67,42 +68,46 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     cj-wildcard.cin - 倉頡（萬用字元版）
     cj.cin - 倉頡
     cj5.cin - 倉頡五代
-    CnsPhonetic2016-08_GCINv2 - 全字庫注音2016-08
     corner.cin - 四角號碼
     daibuun.cin - 普實台文
     dayi3-patched.cin - 大易 (標點符號版)
     dayi3.cin - 大易
     dayi4.cin - 大易四碼
-    ehq-symbols.cin - 漁村符號及日文假名
     freenewcj.cin - 自由大新
-    jidianwubi.cin - 极点五笔
     jinjin.cin - 晶晶碼
-    jtcj.cin - 简体仓颉
     jyut6ping3-toneless.cin - 粵語拼音 (無調號版)
     jyut6ping3.cin - 粵語拼音
-    lxsy_0.40.cin - 灵形速影
-    lxsy_0.41.cin - 灵形速影 (词)
     NewCJ3.cin - 亂倉打鳥
     ov_ez.cin - 輕鬆
     ov_ez75.cin - 輕鬆 2006 原味版 (for 香草)
     ov_ezbig.cin - 輕鬆大詞庫
     ov_ezsmall.cin - 輕鬆小詞庫
     pictograph.cin - 華象直覺
-    pinyin.cin - 简体汉語拼音
     pinyinbig5.cin - 正體漢語拼音
     poj-holo.cin - 白話字漢羅
     qcj.cin - 順序速成
     scj6.cin - 快倉六
     scj7.cin - 快倉七代
-    shuangpin.cin - 简体双拼
     simplex-ext.cin - 簡易（大字集）
-    simplex.cin - 簡易（速成）
     taiwain-minnan-zhuyin.cin - 台式閩南語注音
     tcj.cin - 繁倉
     tp_hakka_hl.cin - 通用拼音客家話 海陸腔
     tp_hakka_sy.cin - 通用拼音客家話 四縣腔
     wu.cin - 吳語注音法（完整）
+    wut.cin - 吳語注音法（正體）
+
+#### 簡體中文表格
+
+    jidianwubi.cin - 极点五笔
+    jtcj.cin - 简体仓颉
+    lxsy_0.40.cin - 灵形速影
+    lxsy_0.41.cin - 灵形速影 (词)
+    pinyin.cin - 简体汉語拼音
+    shuangpin.cin - 简体双拼
+    simplex.cin - 簡易（速成）
+    stroke-bsm.cin - 王頌平教授筆順碼輸入法
+    stroke-g6code.cin - 布禮文博士六碼筆畫輸入法
+    stroke-stroke5.cin - 香港長者資訊天地筆順五碼
     wubizixing.cin - 简体五笔字形
     wus.cin - 吴语注音法（简體）
-    wut.cin - 吳語注音法（正體）
 

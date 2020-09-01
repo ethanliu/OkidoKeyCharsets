@@ -10,6 +10,7 @@
 // ini_set("error_reporting", FALSE);
 
 include __DIR__ . "/database.php";
+include __DIR__ . "/portable-utf8.php";
 include __DIR__ . "/EmojiReader.php";
 include __DIR__ . "/TableReader.php";
 
@@ -33,10 +34,13 @@ class Builder {
 		'jyutping.cin',
 		'jyutping-toneless.cin',
 		'kk.cin',
+		'kks.cin',
 		'klingon.cin',
 		'simplex-ext.cin',
 		'morse.cin',
-		// 'telecode.cin',
+		'telecode.cin',
+		'wus.cin',
+		'wut.cin',
 	];
 	private static $baseDir = "";
 
@@ -52,11 +56,52 @@ class Builder {
 	}
 
 	public static function run() {
-		$argv = getopt("tdkmex:c:");
+		$argv = getopt("tdkmex:c:a:b:");
 		// var_dump($argv);
 		// var_dump($_SERVER['argv']);
 
-		if (isset($argv['x'])) {
+		if (isset($argv['a']) || isset($argv['b'])) {
+			$level = isset($argv['x']) ? intval($argv['x']) : 0;
+			$basePath = isset($argv['b']) ? $argv['b'] : "table/array30.cin";
+			$targetPath = isset($argv['a']) ? $argv['a'] : '';
+
+			if (empty($targetPath) || !file_exists($targetPath)) {
+				echo "Target table file not found.\n";
+				exit;
+			}
+
+			if (empty($basePath) || !file_exists($basePath)) {
+				echo "Base table file not found.\n";
+				exit;
+			}
+
+
+			$baseTable = new TableReader($basePath, false);
+			$targetTable = new TableReader($targetPath, false);
+
+			// $result = diffTable($baseTable, $targetTable);
+			// var_dump($result);
+
+			$result = self::diffTable($targetTable, $baseTable);
+			// var_dump($result);
+			foreach ($result as $item) {
+				if ($level > 0) {
+					$category = self::unicodeBlock($item->value);
+					if ($level == 3 && (strpos($category, 'CJK-Ext') !== false)) {
+						continue;
+					}
+					else if ($level == 2 && ($category == 'BMP' || $category == 'SPUA-A' || $category == 'SPUA-B')) {
+						continue;
+					}
+					else if ($level == 1 && !($category == 'CJK-ExtA' || $category == '')) {
+						continue;
+					}
+				}
+				echo "{$item->value}\n";
+			}
+			exit;
+		}
+		else if (isset($argv['x'])) {
 			$level = intval($argv['x']);
 			$src = "";
 			$dst = "";
@@ -241,7 +286,7 @@ MODULES:
 		return str_replace($search, $replace, $str);
 	}
 
-	function unicodeBlock($string) {
+	static function unicodeBlock($string) {
 		$type = "";
 		$value = utf8_hex_to_int(utf8_chr_to_hex($string));
 
@@ -288,11 +333,29 @@ MODULES:
 	}
 
 
+	private static function diffTable($a, $b) {
+		$result = [];
+		$base = [];
+
+		foreach ($a->data as $item) {
+			$base[$item->value][] = $item->key;
+		}
+		ksort($base);
+
+		foreach ($b->data as $item) {
+			if (!isset($base[$item->value])) {
+				// echo "{$item->value}: {$base[$item->value][0]}\n";
+				$result[] = $item;
+			}
+		}
+
+		return $result;
+	}
+
 
 	// interface
 
 	private function tiny($src, $level = 0) {
-		include_once dirname(__FILE__) . "/portable-utf8.php";
 		// echo "Tiny {$src} by level: {$level}\n";
 
 		$chardefBegin = false;
