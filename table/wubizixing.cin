@@ -1,6 +1,8 @@
+# 五筆字型輸入法简称五笔，是王永民在1983年8月发明的一种汉字输入法。
+# 五笔字型完全依据笔画和字形特征对汉字进行编码，是典型的形码输入法。
 %gen_inp
 %ename Wubi (Wubizixing)
-%cname 简体五笔字形 
+%cname 简体五笔字形
 %tcname 簡體五筆字形
 %scname 五笔字形
 %selkey 1234567890
@@ -30,7 +32,6 @@ v v
 w w
 x x
 y y
-z z
 %keyname end
 %chardef begin
 a 工
