@@ -1,5 +1,18 @@
 [
     {
+        "name": "keypad-choco",
+        "description": "Keypad",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[1][2][3]",
+            "[4][5][6]",
+            "[7][8][9]",
+            "[,][0][.]",
+            "[next][globe][space][del][return]"
+        ]
+    },
+    {
         "name": "keypad-qz-choco",
         "description": "Keypad (1)",
         "keynameType": "label",
