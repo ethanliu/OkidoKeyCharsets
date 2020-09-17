@@ -59,7 +59,7 @@
     },
     {
         "name": "symbol3",
-        "description": "符號鍵盤2(4)",
+        "description": "符號鍵盤 2(4)",
         "charsets":
         [
             "[[][]][{][}][#][%][^][*][+][=]",
@@ -70,7 +70,7 @@
     },
     {
         "name": "symbol3-pad",
-        "description": "符號鍵盤2(4)",
+        "description": "符號鍵盤 2(4)",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0][del]",
@@ -79,15 +79,25 @@
             "[next][globe][space][next][dismiss]"
         ]
     },
-
     {
         "name": "symbol-keypad1-choco",
-        "description": "符號鍵盤 (Keypad)",
+        "description": "符號鍵盤 (Keypad1)",
         "charsets":
         [
             "[@][#][$][%][del]",
             "[（][「][『][《][【]",
             "[〈][．][ー][～][…]",
+            "[；][：][！][、][“]",
+            "[next][，][。][？][return]"
+        ]
+    },
+    {
+        "name": "symbol-keypad2-choco",
+        "description": "符號鍵盤 (Keypad2)",
+        "charsets":
+        [
+            "[@][#][$][%][del]",
+            "[（][「][『][《][【]",
             "[；][：][！][、][“]",
             "[next][，][。][？][return]"
         ]
