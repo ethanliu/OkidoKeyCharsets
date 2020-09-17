@@ -1,0 +1,36 @@
+[
+    {
+        "name": "stroke-bsm-choco",
+        "description": "筆順輸入法",
+        "charsets":
+        [
+            "[esc][1:橫][2:豎][3:撇][del]",
+            "[(][4:捺][5:順彎][6:逆彎][*:＊]",
+            "[“][7:交][8:八][9:十][？]",
+            "[：][，][0:口][。][！]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "stroke-g6code-choco",
+        "description": "六碼筆畫",
+        "charsets":
+        [
+            "[esc][1:一][2:丨][3:丿][del]",
+            "[(][4:丶][5:フ][6:レ][*:＊]",
+            "[：][，][。][？][！]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "stroke-stroke5-choco",
+        "description": "筆順五碼",
+        "charsets":
+        [
+            "[esc][2:－][5:｜][3:丿][del]",
+            "[(][4:丶][1:ㄣ][*:＊][「]",
+            "[：][，][。][？][！]",
+            "[next][globe][space][return]"
+        ]
+    }
+]

@@ -33,14 +33,14 @@
 ### 0.1版於2003年10月17日面世, 用於內部測試, 根據何秀煌教授的80-90年代字頻研究, 安排4600字
 %ename Stroke5
 %cname 筆順五碼
-#sname 筆五
+%sname 筆五
 %selkey 1234567890
 %keyname begin
-n ㄣ
-m －
 , ’
-. 、
 / ｜
+. 、
+m －
+n ㄣ
 %keyname end
 %chardef begin
 , 的
