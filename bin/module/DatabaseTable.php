@@ -7,9 +7,9 @@ if ($skipSC) {
 }
 
 $isArray = false;
-
-$filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
-// $filenames = glob('./DataTables/array*.cin', GLOB_NOSORT);
+// $filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
+$filenames = glob(self::$baseDir . 'table/*.cin');
+// natsort($filenames);
 
 foreach ($filenames as $path) {
 
