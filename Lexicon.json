@@ -1,35 +1,35 @@
 {
-    "version": "20200828160708",
+    "version": "20200917160603",
     "resources": [
         {
             "name": "结巴中文分词(简体)",
             "db": "db\/lexicon-Jieba-hans.csv.db",
-            "description": "结巴中文分词 - MIT\nhttps:\/\/github.com\/fxsjy\/jieba\n\n關於结巴中文分词\n==================\n“结巴”中文分词：做最好的 Python 中文分词组件\n\n關於本詞庫\n=========\n本詞庫字詞及詞頻取自結巴中文分詞的詞典 dict.txt 版本。\n取其字詞及詞頻，並以字詞產生無調號漢語拼音，因此讀音未必完全正確。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n工作 gongzuo\n技术 jishu\n开始 kaishi\n历史 lishi\n人民 renmin\n如果 ruguo\n天安门 tiananmen\n学院 xueyuan\n因为 yinwei\n以上 yishang\n"
+            "description": "结巴中文分词 - MIT\nhttps:\/\/github.com\/fxsjy\/jieba\n\n關於结巴中文分词\n==================\n“结巴”中文分词：做最好的 Python 中文分词组件\n\n關於本詞庫\n=========\n本詞庫字詞及詞頻取自結巴中文分詞的詞典 dict.txt 版本。\n取其字詞及詞頻，並以字詞產生無調號漢語拼音，因此讀音未必完全正確。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n国家 guojia\n湖北 hubei\n起来 qilai\n企业 qiye\n日本 riben\n如果 ruguo\n社会 shehui\n形成 xingcheng\n需要 xuyao\n因为 yinwei\n"
         },
         {
             "name": "小麥注音輸入法詞庫",
             "db": "db\/lexicon-McBopomofo-phrase.csv.db",
-            "description": "OpenVanilla McBopomofo 小麥注音輸入法 - MIT License\nhttps:\/\/github.com\/openvanilla\/McBopomofo\/tree\/master\/Source\/Data\n\n關於小麥注音輸入法\n===============\n小麥注音的輸入法引擎是 Gramambular，這是一套在 2010 年開發釋出的 open source 中文斷字引擎。斷字跟選字的原理相近，我們利用這個特性，加上網路上公開可使用的語料與讀音資料，整理成小麥注音的資料庫。\n\n關於本詞庫\n=========\n本詞庫基於小麥注音輸入法的 BPMFMappings.txt 及 phrase.occ 檔案。\n以 BPMFMappings.txt 為主要字詞，並將其注音符號轉為無調號之漢語拼音，再參考 phrase.occ 的字詞詞頻加乘。\n轉換後的 CSV 檔有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n不是 bush\n孩子 haiz\n一個 ige\n美國 meiguo\n其實 qish\n其他 qita\n然後 ranhou\n認為 renwei\n台灣 taiwan\n研究 yanjiu\n"
+            "description": "OpenVanilla McBopomofo 小麥注音輸入法 - MIT License\nhttps:\/\/github.com\/openvanilla\/McBopomofo\/tree\/master\/Source\/Data\n\n關於小麥注音輸入法\n===============\n小麥注音的輸入法引擎是 Gramambular，這是一套在 2010 年開發釋出的 open source 中文斷字引擎。斷字跟選字的原理相近，我們利用這個特性，加上網路上公開可使用的語料與讀音資料，整理成小麥注音的資料庫。\n\n關於本詞庫\n=========\n本詞庫基於小麥注音輸入法的 BPMFMappings.txt 及 phrase.occ 檔案。\n以 BPMFMappings.txt 為主要字詞，並將其注音符號轉為無調號之漢語拼音，再參考 phrase.occ 的字詞詞頻加乘。\n轉換後的 CSV 檔有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n方面 fangmian\n發展 fazhan\n非常 feichang\n美國 meiguo\n什麼 shemo\n世界 shjie\n台灣 taiwan\n我們 women\n希望 xiwang\n怎麼 zenmo\n"
         },
         {
             "name": "教育部《重編國語辭典 修訂本》",
             "db": "db\/lexicon-MoE-Revised.csv.db",
-            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《重編國語辭典 修訂本》\n======================\n主要適用對象：對歷史語言有興趣的研究者。\n本典為一部歷史語言辭典，記錄中古至現代各類詞語，並大量引用古典文獻書證，字音部分則兼收現代及傳統音讀。\n\n關於本詞庫\n=========\n本詞庫基於教育部《重編國語辭典 修訂本》編號 2015_20200331 版本。\n取其「字詞名」、「漢語拼音」及「多音參見訊息」欄位，將漢語拼音包含多音內容，轉換為不含聲調及不含空白的連續拼音。\n其含有缺字的字詞，因大部份仍未收錄於 Unicode 中，及部份未含含漢語拼音的異體字的單字，因此這兩部份未包含在內。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n冰蝕湖 bingshihu\n策名 ceming\n代序 daixu\n擊柝 jituo\n絕塵拔俗 juechenbasu\n了不成 liaobucheng\n睢盱 suixu\n網路博覽會 wanglubolanhui\n武丑 wuchou\n貞德（Joan of Arc） zhende\n"
+            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《重編國語辭典 修訂本》\n======================\n主要適用對象：對歷史語言有興趣的研究者。\n本典為一部歷史語言辭典，記錄中古至現代各類詞語，並大量引用古典文獻書證，字音部分則兼收現代及傳統音讀。\n\n關於本詞庫\n=========\n本詞庫基於教育部《重編國語辭典 修訂本》編號 2015_20200331 版本。\n取其「字詞名」、「漢語拼音」及「多音參見訊息」欄位，將漢語拼音包含多音內容，轉換為不含聲調及不含空白的連續拼音。\n其含有缺字的字詞，因大部份仍未收錄於 Unicode 中，及部份未含含漢語拼音的異體字的單字，因此這兩部份未包含在內。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n場戶 changhu\n撐竿跳 chenggantiao\n九轉金丹 jiuzhuanjindan\n口頭之交 koutouzhijiao\n某家 moujia\n墨油 moyou\n扇誘 shanyou\n勝境 shengjing\n藝文 yiwen\n幽嫻 youxian\n"
         },
         {
             "name": "教育部《國語辭典簡編本》",
             "db": "db\/lexicon-MoE-concised.csv.db",
-            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《國語辭典簡編本》\n==================\n主要適用對象：國中、小學生及學習華語人士。\n1. 為一部有聲音及圖片之多媒體辭典，收詞以字詞頻統計結果為依據，釋義行文則採淺白語體編寫。\n2. 本辭典所收的字音，參照教育部公布之「國語一字多音審訂表」，並經審音委員會審訂決議。\n\n關於本詞庫\n=========\n本詞庫基於教育部《國語辭典簡編本》編號 2014_20200327 版本。\n取其「字詞名」、「漢語拼音」及「多音參見訊息」欄位，將拼音轉換為不含聲調及不含空白的連續拼音。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n榜上無名 bangshangwuming\n抵禦 diyu\n痱子粉 feizifen\n更勝一籌 gengshengyichou\n話劇 huaju\n考證 kaozheng\n苦勸 kuquan\n沙丁魚 shadingyu\n樂章 yuezhang\n誌慶 zhiqing\n"
+            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《國語辭典簡編本》\n==================\n主要適用對象：國中、小學生及學習華語人士。\n1. 為一部有聲音及圖片之多媒體辭典，收詞以字詞頻統計結果為依據，釋義行文則採淺白語體編寫。\n2. 本辭典所收的字音，參照教育部公布之「國語一字多音審訂表」，並經審音委員會審訂決議。\n\n關於本詞庫\n=========\n本詞庫基於教育部《國語辭典簡編本》編號 2014_20200327 版本。\n取其「字詞名」、「漢語拼音」及「多音參見訊息」欄位，將拼音轉換為不含聲調及不含空白的連續拼音。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n地力 dili\n動如脫兔 dongrutuotu\n乾等 gandeng\n路子 luzi\n摩門教 momenjiao\n頻繁 pinfan\n擾攘 raorang\n舌苔 shetai\n萬象更新 wanxianggengxin\n腰子 yaozi\n"
         },
         {
             "name": "教育部《成語典》",
             "db": "db\/lexicon-MoE-idioms.csv.db",
-            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《成語典》\n===========\n主要適用對象：語文教學者與學生。\n每條成語除釋義、音讀，另有典故原文及其白話譯注、用法說明、例句等，內容豐富。\n\n關於本詞庫\n=========\n本詞庫基於教育部《成語典》編號 2011_20200330 版本。\n取其「成語」及「漢語拼音」欄位，將漢語拼音包含多音內容，轉換為不含聲調及不含空白的連續拼音。\n另補齊二處缺字成語：(㕙)盡盧烹，(尊刂)足適履。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n不寒而栗 buhanerli\n瞠乎後矣 chenghuhouyi\n吹毛取瑕 chuimaoquxia\n高譚清論 gaotanqinglun\n功虧一簣 gongkuiyikui\n瀝膽墮肝 lidanduogan\n燃眉之急 ranmeizhiji\n深淵薄冰 shenyuanbobing\n數典忘祖 shudianwangzu\n殊途同歸 shututonggui\n"
+            "description": "教育部國語辭典公眾授權網 - 創用 CC-姓名標示- 禁止改作 3.0 臺灣授權條款\nhttps:\/\/language.moe.gov.tw\/001\/Upload\/Files\/site_content\/M0001\/respub\/index.html\n\n關於《成語典》\n===========\n主要適用對象：語文教學者與學生。\n每條成語除釋義、音讀，另有典故原文及其白話譯注、用法說明、例句等，內容豐富。\n\n關於本詞庫\n=========\n本詞庫基於教育部《成語典》編號 2011_20200330 版本。\n取其「成語」及「漢語拼音」欄位，將漢語拼音包含多音內容，轉換為不含聲調及不含空白的連續拼音。\n另補齊二處缺字成語：(㕙)盡盧烹，(尊刂)足適履。\n轉換後的 CSV 檔雖包含完整字詞，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n拔萃出群 bacuichuqun\n價比連城 jiabiliancheng\n箕裘之紹 jiqiuzhishao\n妙手空空 miaoshoukongkong\n黔驢之技 qianluzhiji\n如虎傅翼 ruhufuyi\n無計奈何 wujinaihe\n小巫見大巫 xiaowujiandawu\n夜郎自大 yelangzida\n逐末捨本 zhumosheben\n"
         },
         {
             "name": "Rime 粵語拼音方案",
             "db": "db\/lexicon-Rime-cantonese.csv.db",
-            "description": "Rime 粵語拼音方案 - 共享創意-姓名標示 4.0 國際 (CC BY 4.0)\nhttps:\/\/github.com\/rime\/rime-cantonese\n\n關於 Rime 粵語拼音方案\n===================\n本方案凈支持「香港語言學學會粵語拼音方案」（簡稱「粵拼」）：\n- Jyutping 粵拼 | lshk\n- 粵拼：香港語言學學會粵語拼音方案\n- 香港語言學學會粵語拼音方案\n\n關於本詞庫\n=========\n本詞庫使用 Rime 粵語拼音方案 jyut6ping3.dict.yaml 版本 2020.08.24。\n取其詞彙內容，拼音轉為無調號不含空格格式，及詞頻規則轉換為比重數字。\n轉換後的 CSV 有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n丫杈 aacaa\n啞鼓 aagu\n吖嘛 aamaa\n吖嗱 aanaa\n啞仔食黃蓮 aazaisikwonglin\n鴉嘴卷尾 aazeoigyunmei\n啞終端 aazungdyun\n畀你哋 beineidei\n畀我哋 beingodei\n佢哋 keoidei\n"
+            "description": "Rime 粵語拼音方案 - 共享創意-姓名標示 4.0 國際 (CC BY 4.0)\nhttps:\/\/github.com\/rime\/rime-cantonese\n\n關於 Rime 粵語拼音方案\n===================\n本方案凈支持「香港語言學學會粵語拼音方案」（簡稱「粵拼」）：\n- Jyutping 粵拼 | lshk\n- 粵拼：香港語言學學會粵語拼音方案\n- 香港語言學學會粵語拼音方案\n\n關於本詞庫\n=========\n本詞庫使用 Rime 粵語拼音方案 jyut6ping3.dict.yaml 版本 2020.09.09。\n取其詞彙內容，拼音轉為無調號不含空格格式，及詞頻規則轉換為比重數字。\n轉換後的 CSV 有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。\n\n詞庫範例\n=======\n啞巴吃黃蓮 aabaahekwonglin\n啞巴虧 aabaakwai\n吖笨 aaban\n啞點 aadim\n丫頭 aatau\n啞仔 aazai\n鴉雀無聲 aazoekmousing\n畀人 beijan\n嗰隻 gozek\n仲唔 zungm\n"
         }
     ]
 }
