@@ -89,12 +89,16 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     scj6.cin - 快倉六
     scj7.cin - 快倉七代
     simplex-ext.cin - 簡易（大字集）
+    simplex.cin - 簡易（速成）
+    stroke-bsm.cin - 王頌平教授筆順碼輸入法
+    stroke-g6code.cin - 布禮文博士六碼筆畫輸入法
+    stroke-stroke5.cin - 香港長者資訊天地筆順五碼
+    stroke-stroke5-keypad.cin - 香港長者資訊天地筆順五碼 (數字鍵版)
     taiwain-minnan-zhuyin.cin - 台式閩南語注音
     tcj.cin - 繁倉
     tp_hakka_hl.cin - 通用拼音客家話 海陸腔
     tp_hakka_sy.cin - 通用拼音客家話 四縣腔
     wu.cin - 吳語注音法（完整）
-    wut.cin - 吳語注音法（正體）
 
 #### 簡體中文表格
 
@@ -104,10 +108,5 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
     lxsy_0.41.cin - 灵形速影 (词)
     pinyin.cin - 简体汉語拼音
     shuangpin.cin - 简体双拼
-    simplex.cin - 簡易（速成）
-    stroke-bsm.cin - 王頌平教授筆順碼輸入法
-    stroke-g6code.cin - 布禮文博士六碼筆畫輸入法
-    stroke-stroke5.cin - 香港長者資訊天地筆順五碼
     wubizixing.cin - 简体五笔字形
-    wus.cin - 吴语注音法（简體）
 
