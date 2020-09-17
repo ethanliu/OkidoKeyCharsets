@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼
-# Version: 2020.08.24
+# Version: 2020.09.09
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -4309,7 +4309,27 @@ cuk1	傗
 cuk1	欶
 cuk1	琡
 cuk3	豖
-cun3	籿
+cyun3	籿
+cyun3	㸑
+cyun3	釧
+cyun3	賗
+cyun3	縓
+cyun3	竄
+cyun3	玔
+cyun3	爨
+cyun3	烇
+cyun3	汌
+cyun3	攛
+cyun3	寸
+cyun3	吋
+cyun3	串
+cyun3	䤸
+cyun3	䍎
+cyun3	𡭄
+cyun3	殩
+cyun3	熶
+cyun3	屗
+cyun3	諯
 cung1	傭
 cung1	𪻐
 cung1	涌
@@ -4586,26 +4606,6 @@ cyun2	惷
 cyun2	惴
 cyun2	遄
 cyun2	歂
-cyun3	㸑
-cyun3	䍎
-cyun3	釧
-cyun3	賗
-cyun3	縓
-cyun3	竄
-cyun3	玔
-cyun3	爨
-cyun3	烇
-cyun3	汌
-cyun3	攛
-cyun3	寸
-cyun3	吋
-cyun3	串
-cyun3	䤸
-cyun3	𡭄
-cyun3	殩
-cyun3	熶
-cyun3	屗
-cyun3	諯
 cyun4	攢
 cyun4	拴
 cyun4	㒰
