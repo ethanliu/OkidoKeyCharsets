@@ -5,7 +5,6 @@
 #
 %cname 大易四碼
 %ename DaYi4
-#%selkey '[]-\6789
 %selkey '[]-\"{}_
 %keyname begin
 ,   力
