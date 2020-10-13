@@ -81,6 +81,11 @@ foreach ($filenames as $path) {
 		echo "[exists]";
 	}
 
+	if (!file_exists($path . ".txt")) {
+		echo "{$filename} -> [txt missing]\n";
+		continue;
+	}
+
 	$description = explode("\n", file_get_contents($path . ".txt"));
 	if (empty($description)) {
 		echo "{$filename} -> [txt missing]\n";

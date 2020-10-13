@@ -7,6 +7,7 @@
  **/
 
 define('DEBUG', 1);
+ini_set('memory_limit', '256M');
 
 class Database {
 	var $db = null;
@@ -91,7 +92,14 @@ class Database {
 		}
 
 		$result = $stmt->fetch();
-		return $result[0];
+
+		if (is_array($result) && isset($result[0])) {
+			return $result[0];
+		}
+		else {
+			return $result;
+		}
+		// return $result[0];
 	}
 
 	public function getRow($sql, $param = array()) {
