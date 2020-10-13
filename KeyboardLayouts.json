@@ -1,5 +1,5 @@
 {
-    "version": "20200917160602",
+    "version": "20201013095517",
     "charsets": {
         "array": {
             "description": "行列",
@@ -618,6 +618,36 @@
                 "[tab][Q:手][W:田][E:水][R:口][T:廾][Y:⼂][U:山][I:戈][O:人][P:心][[:⼕][]:］][\\:的]",
                 "[capslock][A:日][S:尸][D:木][F:火][G:土][H:竹][J:十][K:大][L:中][;:寸][':⺃][return]",
                 "[shift][Z:辶][X:乂][C:金][V:女][B:月][N:弓][M:一][,:⼃][.:㇏][\/:⼛][shift]",
+                "[next][globe][space][next][dismiss]"
+            ]
+        },
+        "ghcm": {
+            "description": "矧码",
+            "charsets": [
+                "[1][2][3][4][5][6][7][8][9][0]",
+                "[Q][W][E][R][T][Y][U][I][O][P]",
+                "[A][S][D][F][G][H][J][K][L][;]",
+                "[Z][X][C][V][B][N][M][,][.][\\]",
+                "[next][shift][globe][space][del][return]"
+            ]
+        },
+        "ghcm-pad": {
+            "description": "矧码",
+            "charsets": [
+                "[1][2][3][4][5][6][7][8][9][0][\\]",
+                "[Q][W][E][R][T][Y][U][I][O][P][del]",
+                "[dummy:2][A][S][D][F][G][H][J][K][L][;][return]",
+                "[shift][Z][X][C][V][B][N][M][,][.][shift]",
+                "[next][globe][space][next][dismiss]"
+            ]
+        },
+        "ghcm-fullsize": {
+            "description": "矧码",
+            "charsets": [
+                "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
+                "[tab][Q][W][E][R][T][Y][U][I][O][P][[][]][\\]",
+                "[capslock][A][S][D][F][G][H][J][K][L][;]['][return]",
+                "[shift][Z][X][C][V][B][N][M][,][.][\/][shift]",
                 "[next][globe][space][next][dismiss]"
             ]
         },
