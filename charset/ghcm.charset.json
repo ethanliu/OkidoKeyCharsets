@@ -1,19 +1,19 @@
 [
     {
         "name": "ghcm",
-        "description": "矧码",
+        "description": "矧码定制键盘",
         "charsets":
         [
-            "[1][2][3][4][5][6][7][8][9][0]",
+            "[\\][5][6][7][,]['][8][9][0]",
             "[Q][W][E][R][T][Y][U][I][O][P]",
-            "[A][S][D][F][G][H][J][K][L][;]",
-            "[Z][X][C][V][B][N][M][,][.][\\]",
-            "[next][shift][globe][space][del][return]"
-         ]
+            "[dummy:2][A][S][D][F][G][H][J][K][L][;][dummy:2]",
+            "[shift][Z][X][C][V][B][N][M][.][/][del]",
+            "[next][globe][space][return]"
+        ]
     },
     {
         "name": "ghcm-pad",
-        "description": "矧码",
+        "description": "矧码定制键盘",
         "charsets":
         [
             "[1][2][3][4][5][6][7][8][9][0][\\]",
@@ -25,7 +25,7 @@
     },
     {
         "name": "ghcm-fullsize",
-        "description": "矧码",
+        "description": "矧码定制键盘",
         "charsets":
         [
             "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
