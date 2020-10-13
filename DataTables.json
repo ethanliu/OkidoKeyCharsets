@@ -1,5 +1,5 @@
 {
-    "version": "20200917160602",
+    "version": "20201013094918",
     "datatables": [
         {
             "ename": "NewCJ3",
@@ -162,6 +162,14 @@
             "license": "自由大新倉頡專業 7.0 國際版\n網址: http:\/\/cle.linux.org.tw\/trac\/wiki\/FreeNewCJCin\n原版商業公司: http:\/\/www.eztyping.com.tw\/\ncopyright (c) 2006-2007 by FreeNewCJCin\n格式轉換(無附加限制): 趙惟倫 <bluebat@member.fsf.org>, 2007\n授權方式: Public Domain\n"
         },
         {
+            "ename": "ghcm",
+            "cname": "矧码",
+            "name": "",
+            "cin": "table\/ghcm.cin",
+            "db": "db\/ghcm.cin.db",
+            "license": "\n矧码 (ghcm)\n\n方案名称：矧码\n方案作者：矧可射思\n方案版本：2020-10-11\n\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n\n"
+        },
+        {
             "ename": "jidianWubi (JiDianWubi)",
             "cname": "极点五笔",
             "name": "",
@@ -232,22 +240,6 @@
             "cin": "table\/ov_ez75.cin",
             "db": "db\/ov_ez75.cin.db",
             "license": "this file is encoded in UTF-8\n\n輕鬆輸入法 .cin 格式檔頭\n\n"
-        },
-        {
-            "ename": "ezbig",
-            "cname": "輕鬆大詞庫",
-            "name": "",
-            "cin": "table\/ov_ezbig.cin",
-            "db": "db\/ov_ezbig.cin.db",
-            "license": "版權聲明:\n\n本輸入法表格(輕鬆輸入法大型詞庫版) 乃根據《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》的規定，\n以 GPL V2.0 或更新的版本所釋出，在遵守該授權書的規定下，\n可以修改、複製及散佈本輸入法表格，唯本輸入法表格卻不包含任何擔保；\n且修改後的輸入法表格中若有任何錯誤，皆與原作者無關。\n如有需要，請參閱 《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》\n及 GNU GENERAL PUBLIC LICENSE 以了解更詳細的規定。\n\n本輸入法表格為 xcin-2.3 的 「ezbig.cin」（大型詞庫版）的修改版本。\n\n\nWoodman Tuen <wmtuen@gmail.com>, 25-10-2008\n\n\n"
-        },
-        {
-            "ename": "ezsmall",
-            "cname": "輕鬆小詞庫",
-            "name": "",
-            "cin": "table\/ov_ezsmall.cin",
-            "db": "db\/ov_ezsmall.cin.db",
-            "license": "版權聲明:\n\n本輸入法表格(輕鬆輸入法小型詞庫版) 乃根據《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》的規定，\n以 GPL V2.0 或更新的版本所釋出，在遵守該授權書的規定下，\n可以修改、複製及散佈本輸入法表格，唯本輸入法表格卻不包含任何擔保；\n且修改後的輸入法表格中若有任何錯誤，皆與原作者無關。\n如有需要，請參閱 《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》\n及 GNU GENERAL PUBLIC LICENSE 以了解更詳細的規定。\n\n本輸入法表格為 xcin-2.3 的 「ezsmall.cin」（小型詞庫版）的修改版本。\n\n\nWoodman Tuen <wmtuen@gmail.com>, 25-10-2008\n\n\n"
         },
         {
             "ename": "Pictograph",
