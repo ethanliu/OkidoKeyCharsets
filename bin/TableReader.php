@@ -51,16 +51,25 @@ Class TableReader {
 		$contents = explode("\n", file_get_contents($this->path));
 
 		foreach ($contents as $line) {
-			$_line = trim(preg_replace('/#(.?)*/', '', $line));
-			if (empty($_line)) {
-				if (empty($section)) {
-					$_line = trim(str_replace(['#', '　'], '', $line));
-					$this->description .= $_line . "\n";
-				}
+			$line = trim($line);
+
+			// only treat as comment when the very first character is #
+			if (empty($section) && strpos($line, "#") === 0) {
+				$line = trim(str_replace(['#', '　'], '', $line));
+				$this->description .= $line . "\n";
 				continue;
 			}
 
-			$line = preg_replace('/[ ]{2,}|[\t]/', ' ', $_line);
+			// $_line = trim(preg_replace('/#(.?)*/', '', $line));
+			// if (empty($_line)) {
+			// 	if (empty($section)) {
+			// 		$_line = trim(str_replace(['#', '　'], '', $line));
+			// 		$this->description .= $_line . "\n";
+			// 	}
+			// 	continue;
+			// }
+
+			$line = preg_replace('/[ ]{2,}|[\t]/', ' ', $line);
 			if (empty($line)) {
 				continue;
 			}
@@ -72,6 +81,16 @@ Class TableReader {
 
 			$key = trim($rows[0]);
 			$value = trim($rows[1]);
+
+			// test
+			// if (strpos($value, "#") !== false) {
+			// 	echo "\n===========\n";
+			// 	var_dump($line);
+			// 	var_dump($_line);
+			// 	var_dump($value);
+			// 	// exit;
+			// 	continue;
+			// }
 
 			if (in_array($key, $this->propertyNames)) {
 				$_key = str_replace('%', '', $key);
