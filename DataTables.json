@@ -1,5 +1,5 @@
 {
-    "version": "20201013094918",
+    "version": "20201014105017",
     "datatables": [
         {
             "ename": "NewCJ3",
@@ -23,7 +23,7 @@
             "name": "",
             "cin": "table\/array26.cin",
             "db": "db\/array26.cin.db",
-            "license": "\n--------------------------------------------------------------------------------------------\n名稱：行列輸入法廿六鍵版之香草模組對照表（array26.cin）\n版本：0.4\n日期：2007年06月26日\n\n本array26.cin原始檔案是由林沛熙（lin_pepsi@yahoo.com）\n根據開放香草輸入法（OpenVanilla）中，\n由霍東靈AnthonyFok<foka@debian.org>君所整理之對照表修改而成。\n\n據悉，霍君利用行列科技在所提供之行列30對照表（1996年版），\n並承葉光哲(gontera)君與zonble鼎力協助，將字碼擴增為unicode字集，\n並支援一級簡碼外（不支援二級簡碼）與行列特別碼。\n\n感謝行列輸入法（行列科技）的發明人廖明德先生\n慷慨提供包含繁、簡中文字集共二萬九千餘字的unicode字集對照檔，\n並開放免費授權予社群進行修改與增補。\n\n本檔案採General Public License授權，\n歡迎各界無償（或僅收取適當成本）流通及使用；\n本檔案歡迎使用者自行修改，\n惟修改之後之檔案，亦須遵照GPL協定開放授權。\n\n本檔案之GPL授權，與行列輸入法及行列科技無關，\n行列輸入法及其相關法律權利，蓋屬行列科技所有。\n\n有關行列輸入法，請參觀http:\/\/www.array.com.tw\/內的介紹。\n--------------------------------------------------------------------------------------------\n\n\n\n下面這行是定義重碼的選字鍵\n\n\n下面這行是定義組字的結束鍵\n\n\n下面這行開始是定義字根鍵\n"
+            "license": "--------------------------------------------------------------------------------------------\n名稱：行列輸入法廿六鍵版之香草模組對照表（array26.cin）\n版本：0.4\n日期：2007年06月26日\n本array26.cin原始檔案是由林沛熙（lin_pepsi@yahoo.com）\n根據開放香草輸入法（OpenVanilla）中，\n由霍東靈AnthonyFok<foka@debian.org>君所整理之對照表修改而成。\n據悉，霍君利用行列科技在所提供之行列30對照表（1996年版），\n並承葉光哲(gontera)君與zonble鼎力協助，將字碼擴增為unicode字集，\n並支援一級簡碼外（不支援二級簡碼）與行列特別碼。\n感謝行列輸入法（行列科技）的發明人廖明德先生\n慷慨提供包含繁、簡中文字集共二萬九千餘字的unicode字集對照檔，\n並開放免費授權予社群進行修改與增補。\n本檔案採General Public License授權，\n歡迎各界無償（或僅收取適當成本）流通及使用；\n本檔案歡迎使用者自行修改，\n惟修改之後之檔案，亦須遵照GPL協定開放授權。\n本檔案之GPL授權，與行列輸入法及行列科技無關，\n行列輸入法及其相關法律權利，蓋屬行列科技所有。\n有關行列輸入法，請參觀http:\/\/www.array.com.tw\/內的介紹。\n--------------------------------------------------------------------------------------------\n下面這行是定義重碼的選字鍵\n下面這行是定義組字的結束鍵\n下面這行開始是定義字根鍵\n"
         },
         {
             "ename": "array30",
@@ -47,7 +47,7 @@
             "name": "",
             "cin": "table\/array40.cin",
             "db": "db\/array40.cin.db",
-            "license": "行列 40 鍵輸入法 for OpenVanilla\n版本：0.15\n作者：葉光哲（老刀） MSN: gontera_yeh@hotmail.com\n\n以下的說明文字中，「行列輸入法」係指早期的 40 鍵版本；行列輸入法 30 鍵的版本以\n「行列30」稱之。\n\n這個早期版本的行列輸入法最初是內含於倚天中文系統之中。它與目前流行的「行列30」輸入法\n不同。OpenVanilla 標準安裝套件中已包含了「行列30」輸入法，如果您是該版本的使用者，則\n無須安裝本輸入法。本輸入法係特別針對早期行列輸入法的使用者所設計。本輸入法對照表是從\n「行列輸入法的家」網站（即行列輸入法官方網站）提供的 Windows 版行列輸入法（下載連結為\nhttp:\/\/www.array.com.tw\/BOX\/AR40NT_2K_XP.zip）轉置而來。\n\n\n本檔案和行列輸入法規格書不同之處：\n\n鍵位在螢幕上的表示方式。因 Mac OS X 並未採用倚天中文的做法，將行列輸入法的鍵位符號\n編入其中文字集內，故在此除了借用「行列30」的下箭頭 (⇣) 代表第 7, 8, 9, 0 列、上箭頭 (⇡)\n代表第 1, 2 列之外，另以「⌅」符號代表 3, 4, 5, 6 列。\n\n版本說明：\n0.11 第一版\n0.15 新增支援標點符號輸入\n\n註：本輸入法僅支援 Big-5 範圍的正體中文字集；筆者並無加入支援 Unicode 字集的計畫。如果\n「支援 Unicode 字集」對您很重要，強烈建議您改用「行列30」輸入法。最後以官方網站的一段\n話，做為說明文字的結尾：「此專為舊版行列40鍵版使用者服務，希望40鍵版的使用者，最好還\n是改用新版的行列30輸入法才是上策」。\n\n\n"
+            "license": "行列 40 鍵輸入法 for OpenVanilla\n版本：0.15\n作者：葉光哲（老刀） MSN: gontera_yeh@hotmail.com\n\n以下的說明文字中，「行列輸入法」係指早期的 40 鍵版本；行列輸入法 30 鍵的版本以\n「行列30」稱之。\n\n這個早期版本的行列輸入法最初是內含於倚天中文系統之中。它與目前流行的「行列30」輸入法\n不同。OpenVanilla 標準安裝套件中已包含了「行列30」輸入法，如果您是該版本的使用者，則\n無須安裝本輸入法。本輸入法係特別針對早期行列輸入法的使用者所設計。本輸入法對照表是從\n「行列輸入法的家」網站（即行列輸入法官方網站）提供的 Windows 版行列輸入法（下載連結為\nhttp:\/\/www.array.com.tw\/BOX\/AR40NT_2K_XP.zip）轉置而來。\n\n\n本檔案和行列輸入法規格書不同之處：\n\n鍵位在螢幕上的表示方式。因 Mac OS X 並未採用倚天中文的做法，將行列輸入法的鍵位符號\n編入其中文字集內，故在此除了借用「行列30」的下箭頭 (⇣) 代表第 7, 8, 9, 0 列、上箭頭 (⇡)\n代表第 1, 2 列之外，另以「⌅」符號代表 3, 4, 5, 6 列。\n\n版本說明：\n0.11 第一版\n0.15 新增支援標點符號輸入\n\n註：本輸入法僅支援 Big-5 範圍的正體中文字集；筆者並無加入支援 Unicode 字集的計畫。如果\n「支援 Unicode 字集」對您很重要，強烈建議您改用「行列30」輸入法。最後以官方網站的一段\n話，做為說明文字的結尾：「此專為舊版行列40鍵版使用者服務，希望40鍵版的使用者，最好還\n是改用新版的行列30輸入法才是上策」。\n"
         },
         {
             "ename": "Biaoyin",
@@ -55,7 +55,7 @@
             "name": "",
             "cin": "table\/biaoyin.cin",
             "db": "db\/biaoyin.cin.db",
-            "license": "Version 2.3, November 2007\nEric Rasmussen <hello.rasmus@gmail.com>\nCovers Pinyin, MPS-2, Yale\nOmits ê\nSpecial thanks to OpenVanilla.org for converting the data table\n\n"
+            "license": "Version 2.3, November 2007\nEric Rasmussen <hello.rasmus@gmail.com>\nCovers Pinyin, MPS-2, Yale\nOmits ê\nSpecial thanks to OpenVanilla.org for converting the data table\n"
         },
         {
             "ename": "PhoneticHsu",
@@ -167,7 +167,7 @@
             "name": "",
             "cin": "table\/ghcm.cin",
             "db": "db\/ghcm.cin.db",
-            "license": "\n矧码 (ghcm)\n\n方案名称：矧码\n方案作者：矧可射思\n方案版本：2020-10-11\n\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n\n"
+            "license": "\n矧码 (ghcm)\nhttps:\/\/github.com\/zeylei\/ghcm\n\n方案名称：矧码\n方案作者：矧可射思\n方案版本：2020-10-14\n\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n\n==========\n\n此 cin 表格由 SM.dict.yaml 转换\n由于部份符号为 rime 另行定义，因此未能直接于 cin 表格中实现，此档仅包含「,」键符号。\n而「i」键原定义为直出「，」而非字根，但为统一输入行为，仍先将「i」键列为字根。\n\n\n"
         },
         {
             "ename": "jidianWubi (JiDianWubi)",
@@ -343,7 +343,7 @@
             "name": "",
             "cin": "table\/taiwain-minnan-zhuyin.cin",
             "db": "db\/taiwain-minnan-zhuyin.cin.db",
-            "license": "By Arne Götje after Yang Ching-chu's Taiwanese Dictionary\n\n"
+            "license": "By Arne Götje after Yang Ching-chu's Taiwanese Dictionary\n"
         },
         {
             "ename": "Traditional-CangJie",
