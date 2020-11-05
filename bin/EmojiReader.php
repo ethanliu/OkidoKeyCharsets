@@ -2,7 +2,7 @@
 /**
  * Extract emoji from https://unicode.org/emoji/charts/emoji-list.html and convert to SQLite or json
  *
- * @author Ethan Liu <***REMOVED***>
+ * @author Ethan Liu
  * @copyright Creativecrap.com
  */
 

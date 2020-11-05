@@ -2,7 +2,7 @@
 /**
  * Database Interface
  *
- * @author Ethan Liu <***REMOVED***>
+ * @author Ethan Liu
  * @copyright Creativecrap.com
  **/
 
