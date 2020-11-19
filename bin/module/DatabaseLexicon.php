@@ -59,7 +59,11 @@ function createDatabase($db, $path) {
 	$db->exec('vacuum;');
 }
 
-$json = ["version" => date("YmdHis"), "resources" => []];
+$json = [
+	"version" => date("YmdHis"),
+	"resources" => [],
+	"splits" => [],
+];
 
 $filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
 natsort($filenames);
@@ -111,12 +115,17 @@ foreach ($filenames as $path) {
 			$description .= $row["phrase"] . " " . $row["pinyin"] . "\n";
 		}
 
-		$json["resources"][] = [
+		$item = [
 			"name" => $name,
 			"db" => "db/lexicon-{$filename}.db",
 			"description" => $description,
 		];
 
+		$json["resources"][] = $item;
+
+		// init splits
+		// $json['splits'][$filename] = ["github" => 0, "gitee" => 0];
+		$json['splits']["lexicon-{$filename}.db"] = [];
 	}
 
 
@@ -127,6 +136,6 @@ foreach ($filenames as $path) {
 
 $jsonPath = self::$baseDir . "Lexicon.json";
 $f = fopen($jsonPath, "w") or die("Unable to create file.");
-fwrite($f, json_encode($json, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
+fwrite($f, json_encode($json, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT));
 fclose($f);
 echo "...version: {$json['version']}\n\n";
