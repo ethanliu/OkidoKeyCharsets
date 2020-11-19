@@ -8,6 +8,7 @@ natsort($filenames);
 $result = array(
 	'version' => date("YmdHis"),
 	'datatables' => [],
+	'splits' => [],
 );
 
 $items = [];
@@ -30,10 +31,16 @@ foreach ($filenames as $path) {
 	];
 
 	$result['datatables'][] = $item;
+
+	// init splits
+	// $result['splits'][$filename] = ["github" => 0, "gitee" => 0];
+	$result['splits'][$filename] = [];
+
 	echo "Add: {$filename} -> {$item['ename']} {$item['cname']}\n";
 }
 
 $f = fopen($destinationPath, "w") or die("Unable to create file.");
-fwrite($f, json_encode($result, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT));
+$json = json_encode($result, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT);
+fwrite($f, $json);
 fclose($f);
 echo "...version: {$result['version']}\n\n";
