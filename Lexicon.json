@@ -1,5 +1,5 @@
 {
-    "version": "20201203105454",
+    "version": "20201203105900",
     "resources": [
         {
             "name": "结巴中文分词(简体)",
@@ -33,11 +33,23 @@
         }
     ],
     "splits": {
-        "lexicon-Jieba-hans.csv.db": [],
-        "lexicon-McBopomofo-phrase.csv.db": [],
-        "lexicon-MoE-Revised.csv.db": [],
-        "lexicon-MoE-concised.csv.db": [],
-        "lexicon-MoE-idioms.csv.db": [],
-        "lexicon-Rime-cantonese.csv.db": []
+        "lexicon-Jieba-hans.csv.db": {
+            "gitee": 24
+        },
+        "lexicon-McBopomofo-phrase.csv.db": {
+            "gitee": 9
+        },
+        "lexicon-MoE-Revised.csv.db": {
+            "gitee": 10
+        },
+        "lexicon-MoE-concised.csv.db": {
+            "gitee": 3
+        },
+        "lexicon-MoE-idioms.csv.db": {
+            "gitee": 1
+        },
+        "lexicon-Rime-cantonese.csv.db": {
+            "gitee": 10
+        }
     }
 }
