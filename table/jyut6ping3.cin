@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼
-# Version: 2020.10.5
+# Version: 2020.11.18
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -7260,7 +7260,6 @@ fong6	䢍
 fu1	挎
 fu1	惡
 fu1	罦
-fu1	邞
 fu1	軤
 fu1	桴
 fu1	桍
@@ -7271,30 +7270,30 @@ fu1	枯
 fu1	敷
 fu1	跍
 fu1	拊
-fu1	戲
+fu1	邞
 fu1	郛
 fu1	鄜
 fu1	鈇
 fu1	跗
 fu1	泭
-fu1	幠
-fu1	綒
-fu1	荴
+fu1	趺
+fu1	紨
 fu1	荂
-fu1	虖
+fu1	虍
 fu1	膴
 fu1	膚
-fu1	衭
-fu1	紨
-fu1	滹
+fu1	虖
+fu1	綒
 fu1	糐
+fu1	幠
+fu1	衭
 fu1	稃
 fu1	砆
-fu1	趺
 fu1	璷
 fu1	玞
 fu1	烀
-fu1	虍
+fu1	滹
+fu1	莩
 fu1	怤
 fu1	尃
 fu1	䉐
@@ -7330,17 +7329,17 @@ fu1	呼
 fu1	呋
 fu1	刳
 fu1	俘
-fu1	莩
-fu1	豧
+fu1	荴
 fu1	謼
+fu1	豧
 fu1	郀
 fu1	麬
-fu1	雐
 fu1	酜
+fu1	雐
 fu1	鮬
 fu1	㓫
 fu1	苸
-fu1	懯
+fu1	戯
 fu1	䓏
 fu1	䓵
 fu1	乎
@@ -7349,9 +7348,10 @@ fu1	垺
 fu1	妋
 fu1	娐
 fu1	恗
-fu1	戯
-fu1	胕
+fu1	懯
 fu1	戱
+fu1	胕
+fu1	戲
 fu1	扝
 fu1	旉
 fu1	橭
@@ -10728,7 +10728,6 @@ gwong1	侊
 gwong1	㿠
 gwong1	灮
 gwong2	誑
-gwong2	广
 gwong2	䇊
 gwong2	廣
 gwong2	獷
@@ -15289,11 +15288,11 @@ jit6	讞
 jit6	隉
 jit6	巕
 jit6	枿
+jiu1	要
 jiu1	妖
 jiu1	㕭
 jiu1	𨘋
 jiu1	邀
-jiu1	要
 jiu1	葽
 jiu1	腰
 jiu1	㙘
@@ -15314,7 +15313,6 @@ jiu1	訞
 jiu1	鴁
 jiu1	吆
 jiu2	夭
-jiu2	要
 jiu2	㝔
 jiu2	擾
 jiu2	騕
@@ -15329,18 +15327,19 @@ jiu2	柼
 jiu2	㫏
 jiu2	杳
 jiu2	岆
-jiu2	宎
+jiu2	䆞
 jiu2	㫐
 jiu2	㴭
 jiu2	䁏
 jiu2	䆗
-jiu2	䆞
+jiu2	宎
 jiu2	鷂
 jiu2	䴠
 jiu2	偠
 jiu2	妖
-jiu2	仸
 jiu2	祅
+jiu2	仸
+jiu2	要
 jiu2	闄
 jiu2	婹
 jiu2	鴢
@@ -26010,7 +26009,6 @@ se3	䣃
 se3	灺
 se4	㵃
 se4	佘
-se4	余
 se4	畲
 se4	蛇
 se4	闍

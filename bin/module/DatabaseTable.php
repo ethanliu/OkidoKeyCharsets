@@ -29,7 +29,7 @@ foreach ($filenames as $path) {
 
 	$output = self::$baseDir . "db/{$filename}.db";
 	if (file_exists($output)) {
-		echo "{$filename} -> [exists]\n";
+		echo "{$filename} -> [" . color("skipped", "gray") . "]\n";
 		continue;
 	}
 	// @unlink($output);
@@ -151,7 +151,7 @@ foreach ($filenames as $path) {
 
 	// $db->open();
 
-	echo "[done]\n";
+	echo "[" . color("updated", "green") . "]\n";
 	// exit;
 }
 

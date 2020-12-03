@@ -7791,6 +7791,7 @@
 波羅蓋	100	bologoi
 菠蘿蓋	100	bologoi
 菠蘿油	100	bolojau
+菠蘿油王子	100	bolojauwongzi
 菠蘿麻	100	bolomaa
 波羅蜜	100	bolomat
 菠蘿蜜	100	bolomat
@@ -28127,7 +28128,6 @@
 屌那星	100	diunaasing
 𨳒那星	100	diunaasing
 屌你	100	diunei
-屌你娘親	100	diuneiloengcan
 屌你老味	100	diuneiloumei
 屌你老尾	100	diuneiloumei
 屌你鹵味	100	diuneiloumei
@@ -28143,6 +28143,7 @@
 屌你老母個仆街仔	100	diuneiloumougopukgaaizai
 屌你老母爛花閪	100	diuneiloumoulaanfaahai
 屌你老母撚鳩閪𨳍未撚屌過呀	100	diuneiloumoulangauhaicatmeilandiugwoaa
+屌你娘親	100	diuneinoengcan
 屌票	100	diupiu
 屌晒鬼	100	diusaaigwai
 屌絲	100	diusi
@@ -47017,7 +47018,6 @@
 桿菌	100	gonkwan
 乾餾	100	gonlau
 乾裂	100	gonlit
-乾娘	100	gonloeng
 乾糧	100	gonloeng
 乾糧袋	100	gonloengdoi
 乾酪	100	gonlok
@@ -76995,7 +76995,6 @@
 契爺	100	kaije
 契約	100	kaijoek
 契約橋牌	100	kaijoekkiupaai
-契娘	100	kailoeng
 契媽	100	kaimaa
 契妹	100	kaimui
 契妹	100	kaimui
@@ -85548,8 +85547,6 @@
 略字	100	loekzi
 略跡原情	100	loekzikjyuncing
 略作	100	loekzok
-娘丙	100	loengbing
-娘柄	100	loengbing
 量杯	100	loengbui
 涼拌	100	loengbun
 良伴	100	loengbun
@@ -85582,7 +85579,6 @@
 良苦用心	100	loengfujungsam
 糧庫	100	loengfu
 涼風	100	loengfung
-娘家	100	loenggaa
 良家	100	loenggaa
 梁家輝	100	loenggaafai
 良家婦女	100	loenggaafuneoi
@@ -87493,8 +87489,10 @@
 路由協議	100	loujauhipji
 路易	100	louji
 路易斯	100	loujisi
+路易	100	loujik
 路易港	100	loujikgong
 路易十四	100	loujiksapsei
+路易斯	100	loujiksi
 路易斯安那	100	loujiksionnaa
 路易斯安那州	100	loujiksionnaazau
 路易威登	100	loujikwaidang
@@ -91109,6 +91107,7 @@
 麥德龍	100	makdaklung
 麥德蒙	100	makdakmung
 麥兜	100	makdau
+麥兜菠蘿油王子	100	makdaubolojauwongzi
 墨斗	100	makdau
 麥豆	100	makdau
 驀地	100	makdei
@@ -102806,6 +102805,7 @@
 糯麥	100	nomak
 娘爆	100	noengbaau
 娘丙	100	noengbing
+娘柄	100	noengbing
 娘親	100	noengcan
 娘的	100	noengdik
 娘家	100	noenggaa
@@ -109372,7 +109372,6 @@
 生瘌痢	100	saanglaatlei
 生累街坊，死累朋友	100	saangleoigaaifongseileoipangjau
 生纈	100	saanglit
-生娘	100	saangloeng
 生路	100	saanglou
 生龍活虎	100	saanglungwutfu
 生埋腦筍	100	saangmaainouseon
@@ -109394,6 +109393,7 @@
 生勾勾	100	saangngaungau
 生外	100	saangngoi
 生壅	100	saangngung
+生娘	100	saangnoeng
 生孃	100	saangnoeng
 生安白做	100	saangonbaakzou
 生安白造	100	saangonbaakzou
@@ -119951,7 +119951,6 @@
 醒起	100	singhei
 醒豁	100	singkut
 醒嚟	100	singlai
-醒你	100	singlei
 星零瀋淋	100	singlingsamlam
 醒來	100	singloi
 醒目	100	singmuk
@@ -132379,7 +132378,7 @@
 話咁快	100	waagamfaai
 話咁易	100	waagamji
 話舊	100	waagau
-話過你知	100	waagwoleizi
+話過你知	100	waagwoneizi
 話匣子	100	waahaapzi
 話口未完	100	waahaumeijyun
 話氣	100	waahei
@@ -132602,6 +132601,7 @@
 畫餅充飢	100	waakbingcunggei
 劃撥	100	waakbut
 畫插圖者	100	waakcaaptouze
+畫出嚟	100	waakceotlei
 劃清	100	waakcing
 或稱	100	waakcing
 劃切	100	waakcit
@@ -140777,7 +140777,7 @@
 隻嘢	100	zekje
 隻言片語	100	zekjinpinjyu
 炙熱	100	zekjit
-只要功夫深，鐵杵磨成針	100	zekjiugungfusamtitcyumocingzam
+只要功夫深，鐵杵磨成針	100	zijiugungfusamtitcyumocingzam
 脊肋	100	zeklak
 脊令	100	zekling
 脊梁	100	zekloeng
@@ -144791,7 +144791,7 @@
 整蠱做怪	100	zingguzougwaai
 整慣斯勢	100	zinggwaansisai
 整鬼	100	zinggwai
-整鬼你	100	zinggwailei
+整鬼你	100	zinggwainei
 整鬼整怪	100	zinggwaizinggwaai
 整鬼整馬	100	zinggwaizingmaa
 整下整下	100	zinghaazinghaa
@@ -146668,7 +146668,6 @@
 張掖	100	zoengjik
 張掖地區	100	zoengjikdeikeoi
 張掖市	100	zoengjiksi
-將要	100	zoengjiu
 將要	100	zoengjiu
 張若虛	100	zoengjoekheoi
 張揚	100	zoengjoeng
