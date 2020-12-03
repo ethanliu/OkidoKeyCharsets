@@ -78,11 +78,11 @@ foreach ($filenames as $path) {
 	if (!file_exists($output)) {
 		$db = new Database($output);
 		createDatabase($db, $path);
-		echo "[new]";
+		echo "[" . color("updated", "green") . "]";
 	}
 	else {
 		$db = new Database($output);
-		echo "[exists]";
+		echo "[" . color("skipped", "gray") . "]";
 	}
 
 	if (!file_exists($path . ".txt")) {
@@ -92,7 +92,7 @@ foreach ($filenames as $path) {
 
 	$description = explode("\n", file_get_contents($path . ".txt"));
 	if (empty($description)) {
-		echo "{$filename} -> [txt missing]\n";
+		echo "{$filename} -> [" . color(".txt file missing", "red") . "]\n";
 	}
 	else {
 		$name = array_shift($description);

@@ -273,12 +273,39 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 
 		// update version
 
+$content = "Rime 粵語拼音方案
+
+Rime 粵語拼音方案 - 共享創意-姓名標示 4.0 國際 (CC BY 4.0)
+https://github.com/rime/rime-cantonese
+
+關於 Rime 粵語拼音方案
+===================
+本方案凈支持「香港語言學學會粵語拼音方案」（簡稱「粵拼」）：
+- Jyutping 粵拼 | lshk
+- 粵拼：香港語言學學會粵語拼音方案
+- 香港語言學學會粵語拼音方案
+
+關於本詞庫
+=========
+本詞庫使用 Rime 粵語拼音方案 jyut6ping3.dict.yaml 版本 {$version}。
+取其詞彙內容，拼音轉為無調號不含空格格式，及詞頻規則轉換為比重數字。
+轉換後的 CSV 有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。
+";
+
 		$path = realpath(__DIR__ . "/../../lexicon/Rime-cantonese.csv.txt");
-		if (file_exists($path)) {
-			$content = file_get_contents($path);
-			$content = preg_replace("/版本 (\d{4}.\d{2}.\d{2})/", "版本 {$version}", $content);
-			file_put_contents($path, $content);
-		}
+		file_put_contents($path, $content);
+
+		// if (file_exists($path)) {
+		// 	$content = file_get_contents($path);
+		// 	// echo $content;
+		// 	// $content = preg_replace("/版本 (\d{4}.\d{2}.\d{2})/", "版本 {$version}", $content);
+		// 	$content = preg_replace("/版本 (*)/", "版本 {$version}。\n", $content);
+		// 	echo $content;
+		// 	// file_put_contents($path, $content);
+		// }
+		// else {
+		// 	echo "file not found";
+		// }
 	}
 }
 

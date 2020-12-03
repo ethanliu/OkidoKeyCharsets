@@ -14,6 +14,31 @@ include __DIR__ . "/portable-utf8.php";
 include __DIR__ . "/EmojiReader.php";
 include __DIR__ . "/TableReader.php";
 
+
+
+
+function color($text, $color = "") {
+	// $background = ';42';
+	$background = '';
+	$suffix = "\e[0m";
+	$colors = [
+		'black' => '0;30',
+		'blue' => '0;34',
+		'gray' => '0;37',
+		'cyan' => '0;36',
+		'green' => '0;32',
+		'blue' => '0;34',
+		'red' => '0;31',
+		'yellow' => '1;33',
+		'white' => '1;37',
+	];
+
+	$prefix = $colors[$color] ?? $colors["black"];
+	// return '\e[' . $prefix . ';42m' . $text . $suffix;
+	return "\e[{$prefix}{$background}m{$text}{$suffix}";
+}
+
+
 class Builder {
 	private static $shared;
 	private static $excludeDatables = [
