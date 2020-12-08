@@ -12,7 +12,7 @@ BASEDIR=`(cd "${BINDIR}/../" && pwd)`
 # BINDIR="${BASEDIR}/bin"
 # SRCDIR="${BASEDIR}/src/rime-cantonese"
 # SRCDIR="src/rime-cantonese"
-SRCPATH="src/rime-cantonese/jyut6ping3.dict.yaml"
+SRCPATH="_repos/rime-cantonese/jyut6ping3.dict.yaml"
 
 # echo "${BINDIR}"
 # echo "${BASEDIR}"
