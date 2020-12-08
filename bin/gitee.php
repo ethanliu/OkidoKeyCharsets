@@ -7,7 +7,7 @@
  */
 
 $root = realpath(__DIR__ . "/../");
-$home = $root . "/gitee";
+$home = $root . "/_repos/gitee";
 
 function datatable() {
 	global $root, $home;
