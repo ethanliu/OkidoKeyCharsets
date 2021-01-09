@@ -71,26 +71,5 @@ A few reserved combinations represent special keys.
 
 ## Build
 
-    > php bin/make.php
-    
-    NAME
-    	make.php -- OkidoKey Package Tools
-
-    SYNOPSIS
-    	make.php [options]
-    	make.php -x [level] input.cin > output.cin
-
-    OPTIONS:
-    	-k	Generate KeyboardLayouts.json
-    	-t	Generate DataTables.json
-    	-d	Generate Databases
-    	-m	Build Lexicon Databases
-    	-e	Build Emoji Databases
-
-    	-x[level]	Strip Unicode blocks (BMP, SPUA, CJK-Ext...)
-        			level 0: strip all blocks (default)
-        			level 1: strip all blocks except CJK-ExtA
-        			level 2: strip SPUA blocks
-        			level 3: strip CJK-Ext A~D blocks
-    
+Just use make command, check makefile for the details
 

@@ -84,14 +84,14 @@ class Builder {
 	}
 
 	public static function run() {
-		$argv = getopt("tdkmex:c:a:b:");
-		// var_dump($argv);
+		$params = getopt("tdkmex:c:a:b:");
+		// var_dump($params);
 		// var_dump($_SERVER['argv']);
 
-		if (isset($argv['a']) || isset($argv['b'])) {
-			$level = isset($argv['x']) ? intval($argv['x']) : 0;
-			$basePath = isset($argv['b']) ? $argv['b'] : "table/array30.cin";
-			$targetPath = isset($argv['a']) ? $argv['a'] : '';
+		if (isset($params['a']) || isset($params['b'])) {
+			$level = isset($params['x']) ? intval($params['x']) : 0;
+			$basePath = isset($params['b']) ? $params['b'] : "table/array30.cin";
+			$targetPath = isset($params['a']) ? $params['a'] : '';
 
 			if (empty($targetPath) || !file_exists($targetPath)) {
 				echo "Target table file not found.\n";
@@ -129,8 +129,8 @@ class Builder {
 			}
 			exit;
 		}
-		else if (isset($argv['x'])) {
-			$level = intval($argv['x']);
+		else if (isset($params['x'])) {
+			$level = intval($params['x']);
 			$src = "";
 			$dst = "";
 
@@ -156,18 +156,29 @@ class Builder {
 
 			self::tiny($src, $level);
 		}
-		else if (isset($argv['c'])) {
+		else if (isset($params['c'])) {
+			// every variable used here will expose to modules
 
-			$offset = count($_SERVER['argv']) - 1;
-			if ($offset != 3) {
-				echo "Missing argument\n";
+			$argv = $_SERVER['argv'] ?? [];
+
+			if (count($argv) < 4) {
+				echo "Missing arguments\n";
 				exit;
 			}
 
-			$src = isset($_SERVER['argv'][$offset]) ? trim($_SERVER['argv'][$offset]) : '';
-			$module = trim($argv['c']);
+			array_shift($argv); // self
+			array_shift($argv); // -c
+			array_shift($argv); // moduel
 
-			switch ($module) {
+			// $src = isset($argv[$offset]) ? trim($argv[$offset]) : '';
+			$src = array_shift($argv);
+			$srcPath = realpath(__DIR__ . "/../" . $src);
+
+			if (empty($src) || !file_exists($srcPath)) {
+				echo "Input file \"{$src}\" not found.\n";
+			}
+
+			switch ($params['c']) {
 				case 'jyut6ping3':
 					$modulePath = __DIR__ . "/module/mod_jyut6ping3.php";
 					$mode = "radical";
@@ -184,43 +195,39 @@ class Builder {
 					$toneless = true;
 				break;
 				default:
-					$modulePath = __DIR__ . "/module/mod_{$module}.php";
+					$modulePath = __DIR__ . "/module/mod_{$params['c']}.php";
 				break;
 			}
 
-			$srcPath = realpath(__DIR__ . "/../" . $src);
-
-			if (empty($module) || !file_exists($modulePath)) {
-				echo "Module \"{$module}\" not found.\n";
+			if (empty($params['c']) || !file_exists($modulePath)) {
+				echo "Module \"{$params['c']}\" not found.\n";
 				exit;
 			}
 
-			if (empty($src) || !file_exists($srcPath)) {
-				echo "Input file \"{$src}\" not found.\n";
-			}
+			// var_dump($argv);
 
 			include $modulePath;
 		}
 		else {
 			$invalid = true;
 
-			if (isset($argv['k'])) {
+			if (isset($params['k'])) {
 				$invalid = false;
 				include __DIR__ . "/module/KeyboardLayouts.php";
 			}
-			if (isset($argv['t'])) {
+			if (isset($params['t'])) {
 				$invalid = false;
 				include __DIR__ . "/module/DataTables.php";
 			}
-			if (isset($argv['d'])) {
+			if (isset($params['d'])) {
 				$invalid = false;
 				include __DIR__ . "/module/DatabaseTable.php";
 			}
-			if (isset($argv['m'])) {
+			if (isset($params['m'])) {
 				$invalid = false;
 				include __DIR__ . "/module/DatabaseLexicon.php";
 			}
-			if (isset($argv['e'])) {
+			if (isset($params['e'])) {
 				$invalid = false;
 				include __DIR__ . "/module/DatabaseEmoji.php";
 			}
