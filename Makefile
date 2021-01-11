@@ -34,11 +34,9 @@ define timeStart
 endef
 
 define timeStop
-	@echo "\n---\nDuration: $$(($$(date +%s)-$$(cat time.tmp))) seconds.\n---\n"
+	@echo "\n---\nDuration: $$(($$(date +%s)-$$(cat tmp.timestamp))) seconds.\n---\n"
 	@-rm tmp.timestamp
 endef
-
-all: usage
 
 usage:
 	@echo ${SYNOPSIS}
@@ -63,6 +61,8 @@ lexicon:
 emoji:
 	@${PHP} bin/make.php -e
 
+all: keyboard table db lexicon gitee
+
 moe:
 	@$(call timeStart)
 	@${PHP} bin/make.php -c moe-concised rawdata/moe/dict_concised.csv > lexicon/MoE-Concised.csv
@@ -80,13 +80,20 @@ jieba:
 	@cd rawdata/jieba; git pull
 	@$(call timeStart)
 	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
-	@-opencc -c t2s.json -i lexicon/McBopomofo-phrase.csv -o tmp.mb.csv
-	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv tmp.mb.csv > lexicon/Jieba-hans.csv
+	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv > lexicon/Jieba-hans.csv
 	@-rm tmp.jieba.csv
-	@-rm tmp.mb.csv
 	@$(call timeStop)
 	@-rm db/lexicon-Jieba-hans.csv.db
 	@make lexicon
+
+# jiebatest:
+# 	@$(call timeStart)
+# 	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
+# 	@-opencc -c t2s.json -i lexicon/McBopomofo-phrase.csv -o tmp.mb.csv
+# 	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv tmp.mb.csv > lexicon/Jieba-hans.csv
+# 	@-rm tmp.jieba.csv
+# 	@-rm tmp.mb.csv
+# 	@$(call timeStop)
 
 mcbpmf:
 	@cd rawdata/McBopomofo; git pull
@@ -129,8 +136,8 @@ gitee:
 		rm ${REPOPATH}/$$file ; \
 	done;
 
-	@${PHP} bin/make.php -c gitee DataTables.json
-	@${PHP} bin/make.php -c gitee Lexicon.json
+	@${PHP} bin/make.php -c gitee DataTables.json ${REPOPATH}
+	@${PHP} bin/make.php -c gitee Lexicon.json ${REPOPATH}
 
 	@echo "Update json files..."
 	@for file in DataTables.json KeyboardLayouts.json KeyMapping.json Lexicon.json; do \
