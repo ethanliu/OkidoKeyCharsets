@@ -5,4 +5,5 @@ rawdata/jieba
 rawdata/McBopomofo
 rawdata/openvanilla
 rawdata/rime-cantonese
+tmp.*
 tmp
