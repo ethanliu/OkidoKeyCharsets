@@ -8,21 +8,25 @@
  */
 
 
-// $dict serve as pinyin cache, reduce running CharTransformer
+// $dict serve as pinyin cache, reduce CharTransformer usage
 
 $dict = [];
-$dictPath = isset($argv[0]) ? $argv[0] : "";
 
-if (!empty($dictPath) && file_exists($dictPath)) {
-	$raw = explode("\n", file_get_contents($dictPath));
-	foreach ($raw as $line) {
-		$line = trim($line);
-		$rows = explode("\t", $line);
-		if (isset($rows[2])) {
-			$dict[$rows[0]] = $rows[2];
+foreach ($argv as $path) {
+	if (!empty($path) && file_exists($path)) {
+		$raw = explode("\n", file_get_contents($path));
+		foreach ($raw as $line) {
+			$line = trim($line);
+			$rows = explode("\t", $line);
+			if (isset($rows[2])) {
+				$dict[$rows[0]] = $rows[2];
+			}
 		}
 	}
 }
+
+// var_dump($dict);
+// exit;
 
 $raw = explode("\n", file_get_contents($srcPath));
 

@@ -30,12 +30,12 @@ endef
 # alternative to time cmmand
 
 define timeStart
-	@date +%s > time.tmp
+	@date +%s > tmp.timestamp
 endef
 
 define timeStop
 	@echo "\n---\nDuration: $$(($$(date +%s)-$$(cat time.tmp))) seconds.\n---\n"
-	@-rm time.tmp
+	@-rm tmp.timestamp
 endef
 
 all: usage
@@ -77,12 +77,13 @@ moe:
 	@make lexicon
 
 jieba:
-	@#rawdata/jieba/extra_dict/dict.txt.small
 	@cd rawdata/jieba; git pull
 	@$(call timeStart)
-	@-cp lexicon/Jieba-hans.csv lexicon/jieba-pinyin.tmp
-	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt lexicon/jieba-pinyin.tmp > lexicon/Jieba-hans.csv
-	@-rm lexicon/jieba-pinyin.tmp
+	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
+	@-opencc -c t2s.json -i lexicon/McBopomofo-phrase.csv -o tmp.mb.csv
+	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv tmp.mb.csv > lexicon/Jieba-hans.csv
+	@-rm tmp.jieba.csv
+	@-rm tmp.mb.csv
 	@$(call timeStop)
 	@-rm db/lexicon-Jieba-hans.csv.db
 	@make lexicon
