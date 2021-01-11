@@ -30,7 +30,7 @@ foreach ($data["splits"] as $path => $splits) {
 }
 
 $data["version"] = date("YmdHis");
-var_dump($data["splits"]);
+// var_dump($data["splits"]);
 
 $f = fopen($srcPath, "w") or die("Unable to create file.");
 $json = json_encode($data, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT);
