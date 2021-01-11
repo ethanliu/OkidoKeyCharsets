@@ -2057,10 +2057,8 @@
 一胎	1700	itai
 一胎化	700	itaihua
 一胎化	700	itaihua
-一脈相傳	400	imoxiangchuan
 一脈相傳	400	imaixiangchuan
 一脈相傳	400	imaixiangchuan
-一脈相承	500	imoxiangcheng
 一脈相承	500	imaixiangcheng
 一脈相承	500	imaixiangcheng
 一脈相連	0	imaixianglian
@@ -6556,9 +6554,7 @@
 主動性	900	zhudongxing
 主動權	400	zhudongquan
 主動的	3000	zhudongde
-主動脈	200	zhudongmo
 主動脈	200	zhudongmai
-主動脈瘤	200	zhudongmoliu
 主動脈瘤	200	zhudongmailiu
 主動軸	0	zhudongzhou
 主動運輸	100	zhudongyunshu
@@ -6669,7 +6665,6 @@
 主考	1200	zhukao
 主考官	1100	zhukaoguan
 主耶穌	200	zhuyewei
-主脈	3600	zhumo
 主脈	3600	zhumai
 主腦	300	zhunao
 主腦人	0	zhunaoren
@@ -11708,6 +11703,7 @@
 侮蔑	100	umie
 侮辱	8200	uru
 侮辱性	100	uruxing
+侯友宜	200	houyoui
 侯孝賢	3900	houxiaoxian
 侯德健	100	houdejian
 侯文詠	300	houwenyong
@@ -17539,8 +17535,8 @@
 冠心病	400	guanxinbing
 冠毛	100	guanmao
 冠狀	4200	guanzhuang
-冠狀動脈	4100	guanzhuangdongmo
 冠狀動脈	4100	guanzhuangdongmai
+冠狀病毒	0	guanzhuangbingdu
 冠玉	0	guanyu
 冠王	1000	guanwang
 冠禮	0	guanli
@@ -21349,17 +21345,13 @@
 動盪不安	1000	dongdangbuan
 動筆	1500	dongbi
 動粗	500	dongcu
+動線	6300	dongxian
 動聽	3200	dongting
 動能	6600	dongneng
-動脈	13900	dongmo
 動脈	13900	dongmai
-動脈弓	0	dongmogong
 動脈弓	0	dongmaigong
-動脈瘤	1500	dongmoliu
 動脈瘤	1500	dongmailiu
-動脈硬化	900	dongmoyinghua
 動脈硬化	900	dongmaiyinghua
-動脈血	500	dongmoxie
 動脈血	500	dongmaixie
 動脈血氧分壓	0	dongmaixieyangfenya
 動腦	3000	dongnao
@@ -28596,6 +28588,7 @@
 周密	1900	zhoumi
 周年	15000	zhounian
 周年慶	2600	zhounianqing
+周志浩	0	zhouzhhao
 周恩來	5500	zhouenlai
 周慧敏	200	zhouhuimin
 周折	400	zhouzhe
@@ -43412,7 +43405,6 @@
 小電影	200	xiaodianying
 小電視	300	xiaodiansh
 小霧	0	xiaou
-小靜脈	100	xiaojingmo
 小靜脈	100	xiaojingmai
 小鞋子	0	xiaoxiez
 小項	0	xiaoxiang
@@ -43929,6 +43921,7 @@
 局面	24600	jumian
 局騙	0	jupian
 屁事	1200	pish
+屁屁	600	pipi
 屁滾尿流	500	pigunniaoliu
 屁眼	300	piyan
 屁股	17300	pigu
@@ -44597,7 +44590,6 @@
 崑山科技大學	100	kunshankejidaxue
 崑崙	1300	kunlun
 崑崙山	1000	kunlunshan
-崑崙山脈	0	kunlunshanmo
 崑崙山脈	0	kunlunshanmai
 崑曲	2200	kunqu
 崑腔	100	kunqiang
@@ -44675,6 +44667,7 @@
 川原	300	chuanyuan
 川口	700	chuankou
 川島芳子	700	chuandaofangz
+川崎氏症	100	chuanqishzheng
 川康公路	0	chuankanggonglu
 川普	3200	chuanpu
 川江	0	chuanjiang
@@ -47931,6 +47924,7 @@
 弱點	6100	ruodian
 張三	3500	zhangsan
 張三李四	0	zhangsanlis
+張上淳	0	zhangshangchun
 張之洞	100	zhangzhdong
 張了	2800	zhangle
 張京育	700	zhangjingyu
@@ -57251,7 +57245,6 @@
 按篇計費	0	anpianjifei
 按篇計酬	0	anpianjichou
 按耐不住	400	annaibuzhu
-按脈	100	anmo
 按脈	100	anmai
 按著	2800	anzhe
 按規定	200	anguiding
@@ -57603,7 +57596,6 @@
 捉摸不出	0	zhuomobuchu
 捉摸不定	1000	zhuomobuding
 捉狹鬼	0	zhuoxiagui
-捉脈	0	zhuomo
 捉脈	0	zhuomai
 捉襟肘見	0	zhuojinzhoujian
 捉襟見肘	2100	zhuojinjianzhou
@@ -58047,7 +58039,6 @@
 掌灶	100	zhangzao
 掌燈	400	zhangdeng
 掌狀	600	zhangzhuang
-掌狀脈	0	zhangzhuangmo
 掌狀脈	0	zhangzhuangmai
 掌理	1200	zhangli
 掌管	5100	zhangguan
@@ -85817,6 +85808,7 @@
 玫瑰	27900	meigui
 玫瑰唱片行	0	meiguichangpianhang
 玫瑰園	300	meiguiyuan
+玫瑰疹	300	meiguizhen
 玫瑰色	300	meiguise
 玫瑰花	5700	meiguihua
 玲玎	0	lingding
@@ -91899,7 +91891,7 @@
 石綿板	0	shmianban
 石綿瓦	0	shmianwa
 石縫	400	shfeng
-石脈	0	shmo
+石脈	0	shmai
 石膏	5000	shgao
 石膏像	0	shgaoxiang
 石臼	0	shjiu
@@ -93781,6 +93773,7 @@
 秋葵	0	qiukui
 秋蟬	300	qiuchan
 秋蟲	900	qiuchong
+秋行軍蟲	0	qiuxingjunchong
 秋試	0	qiush
 秋雨	2600	qiuyu
 秋霜	0	qiushuang
@@ -95770,6 +95763,7 @@
 第七次	500	diqic
 第七章	1200	diqizhang
 第七節	100	diqijie
+第七艦隊	0	diqijiandui
 第七課	0	diqike
 第七集	300	diqiji
 第七項	200	diqixiang
@@ -96151,7 +96145,7 @@
 筋絡	200	jinluo
 筋肉	800	jinrou
 筋肉系	0	jinrouxi
-筋脈	100	jinmo
+筋脈	100	jinmai
 筋膜炎	400	jinmoyan
 筋豆	0	jindou
 筋骨	4300	jingu
@@ -98997,7 +98991,7 @@
 經緯度	500	jingweidu
 經緯網	0	jingweiwang
 經義	500	jingi
-經脈	500	jingmo
+經脈	500	jingmai
 經血	1200	jingxie
 經術	0	jingshu
 經解	2500	jingjie
@@ -100547,6 +100541,7 @@
 罹癌	1700	liyan
 罹禍	100	lihuo
 罹難	9300	linan
+羅一鈞	100	luoijun
 羅丹	5800	luodan
 羅伯特	1900	luobote
 羅列	2300	luolie
@@ -101110,7 +101105,6 @@
 羽毛豐滿	0	yumaofengman
 羽片	100	yupian
 羽狀	1200	yuzhuang
-羽狀脈	0	yuzhuangmo
 羽狀脈	0	yuzhuangmai
 羽狀複葉	100	yuzhuangfuye
 羽球	7100	yuqiu
@@ -103109,7 +103103,6 @@
 肴饌	100	yaozhuan
 肺出血	0	feichuxie
 肺功能	1300	feigongneng
-肺動脈	0	feidongmo
 肺動脈	0	feidongmai
 肺外結核	0	feiwaijiehe
 肺循環	0	feixunhuan
@@ -103133,7 +103126,6 @@
 肺臟	1500	feizang
 肺葉	0	feiye
 肺部	2800	feibu
-肺靜脈	0	feijingmo
 肺靜脈	0	feijingmai
 肺魚	0	feiyu
 胃下垂	800	weixiachui
@@ -103595,31 +103587,16 @@
 脆梅	100	cuimei
 脆皮	100	cuipi
 脆餅	300	cuibing
-脈動	6800	modong
 脈動	6800	maidong
-脈岩	0	moyan
 脈岩	0	maiyan
-脈息	0	moxi
 脈息	0	maixi
-脈搏	3000	mobo
 脈搏	3000	maibo
-脈沖	100	mochong
-脈沖	100	maichong
-脈沖雷達	0	mochongleida
-脈沖雷達	0	maichongleida
-脈波	100	mopo
 脈波	100	maipo
-脈理	0	moli
 脈理	0	maili
-脈石	0	mosh
 脈石	0	maish
-脈礦	0	mokuang
 脈礦	0	maikuang
-脈管	0	moguan
 脈管	0	maiguan
-脈絡	17500	moluo
 脈絡	17500	mailuo
-脈絡可循	0	moluokexun
 脈絡可循	0	mailuokexun
 脈脈	500	momo
 脈脈含情	0	momohanqing
@@ -103629,7 +103606,6 @@
 脈衝數	0	maichongshu
 脈衝雷達	0	mochongleida
 脈衝雷達	0	maichongleida
-脈門	0	momen
 脈門	0	maimen
 脊柱	800	jizhu
 脊柱	800	jizhu
@@ -105020,7 +104996,6 @@
 臭氣	1300	chouqi
 臭氣沖天	200	chouqichongtian
 臭氣薰天	0	chouqixuntian
-臭氣衝天	0	chouqichongtian
 臭氧	5300	chouyang
 臭氧層	2400	chouyangceng
 臭水溝	1200	choushuigou
@@ -105653,6 +105628,7 @@
 航標	200	hangbiao
 航權	5700	hangquan
 航次	1100	hangc
+航母	200	hangmu
 航海	6400	hanghai
 航海圖	200	hanghaitu
 航海家	500	hanghaijia
@@ -107184,6 +107160,7 @@
 莉香	100	lixiang
 莊主	300	zhuangzhu
 莊亨岱	300	zhuanghengdai
+莊人祥	0	zhuangrenxiang
 莊佳容	100	zhuangjiarong
 莊勝雄	500	zhuangshengxiong
 莊周	1000	zhuangzhou
@@ -110037,7 +110014,7 @@
 血肉橫飛	200	xierouhengfei
 血肉相連	0	xierouxianglian
 血脂肪	700	xiezhfang
-血脈	2200	xiemo
+血脈	2200	xiemai
 血脈賁張	300	xiemaibenzhang
 血腥	5300	xiexing
 血腥味	400	xiexingwei
@@ -111722,7 +111699,6 @@
 要死要活	400	yaosyaohuo
 要民	2400	yaomin
 要求	397600	yaoqiu
-要沖	800	yaochong
 要注意	17400	yaozhui
 要津	600	yaojin
 要港	200	yaogang
@@ -119323,7 +119299,7 @@
 轉折	9700	zhuanzhe
 轉折點	900	zhuanzhedian
 轉捩	3700	zhuanlie
-轉捩期	100	zhuanleidian
+轉捩點	3300	zhuanleidian
 轉捩點	3300	zhuanliedian
 轉接	4600	zhuanjie
 轉換	56500	zhuanhuan
@@ -126129,6 +126105,8 @@
 鎖上	2000	suoshang
 鎖不住	0	suobuzhu
 鎖住	3300	suozhu
+鎖匙	300	suosh
+鎖匙	300	suosh
 鎖匙	300	suoch
 鎖匠	300	suojiang
 鎖國	800	suoguo
@@ -126546,8 +126524,12 @@
 鑣客	0	biaoke
 鑣局	0	biaoju
 鑰匙	12400	yaosh
+鑰匙	12400	yaosh
+鑰匙兒童	100	yaoshertong
 鑰匙兒童	100	yaoshertong
 鑰匙圈	900	yaoshquan
+鑰匙圈	900	yaoshquan
+鑰匙孔	200	yaoshkong
 鑰匙孔	200	yaoshkong
 鑲住	0	xiangzhu
 鑲在	0	xiangzai
@@ -128774,6 +128756,7 @@
 陳婉真	500	chenwanzhen
 陳子昂	300	chenzang
 陳學聖	2100	chenxuesheng
+陳宗彥	0	chenzongyan
 陳定信	500	chendingxin
 陳定南	11800	chendingnan
 陳家駒	500	chenjiaju
@@ -128788,6 +128771,7 @@
 陳年老酒	0	chennianlaojiu
 陳幸妤	400	chenxingyu
 陳庚金	900	chengengjin
+陳建仁	300	chenjianren
 陳建州	400	chenjianzhou
 陳建年	2200	chenjiannian
 陳建治	500	chenjianzh
@@ -128806,6 +128790,7 @@
 陳映真	1500	chenyingzhen
 陳昭南	900	chenzhaonan
 陳昭榮	400	chenzhaorong
+陳時中	0	chenshzhong
 陳曉東	400	chenxiaodong
 陳松勇	300	chensongyong
 陳果仁	500	chenguoren
@@ -130230,7 +130215,6 @@
 雪天	600	xuetian
 雪季	200	xueji
 雪山	7300	xueshan
-雪山山脈	1000	xueshanshanmo
 雪山山脈	1000	xueshanshanmai
 雪山獅子旗	0	xueshanshzqi
 雪崩	100	xuebeng
@@ -131312,10 +131296,9 @@
 靜聽	1400	jingting
 靜脈	5400	jingmai
 靜脈曲張	100	jingmaiquzhang
-靜脈炎	100	jingmoyan
 靜脈炎	100	jingmaiyan
 靜脈瘤	1300	jingmailiu
-靜脈血	100	jingmoxie
+靜脈血	100	jingmaixie
 靜脈血栓症	0	jingmaixieshuanzheng
 靜臥	0	jingwo
 靜臥在	0	jingwozai
@@ -137083,6 +137066,7 @@
 黏接	100	nianjie
 黏涎	0	nianxian
 黏液	2200	niani
+黏滯度	0	nianzhdu
 黏滿	0	nianman
 黏稠	900	nianchou
 黏米	0	nianmi
