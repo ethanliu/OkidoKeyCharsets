@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼 (無調號)
-# Version: 2020.11.18
+# Version: 2020.12.22
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -10084,8 +10084,8 @@ gwong	炚
 gwong	灮
 gwong	広
 gwong	誆
-gyun	錈
 gyun	帣
+gyun	錈
 gyun	惓
 gyun	㳙
 gyun	㢾
@@ -10134,11 +10134,12 @@ gyun	卷
 gyun	捲
 gyun	汱
 gyun	罥
+gyun	蜎
 gyun	姢
 gyun	勬
+gyun	勌
 gyun	餋
 gyun	飬
-gyun	勌
 gyun	奆
 gyun	淃
 gyun	䚊
@@ -10148,17 +10149,17 @@ gyun	羂
 gyun	劵
 gyun	畎
 gyun	弮
-gyun	䚈
 gyun	巻
+gyun	䚈
 gyun	埍
 gyun	呟
-gyun	婘
-gyun	瓹
 gyun	䱧
+gyun	瓹
+gyun	婘
 gyun	慻
 gyun	懁
-gyun	犈
 gyun	駽
+gyun	犈
 gyun	鞙
 gyun	身
 gyut	䞷
