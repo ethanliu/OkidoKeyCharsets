@@ -43,7 +43,7 @@ usage:
 
 test:
 	@$(call timeStart)
-	@sleep 3
+	@${PHP} bin/make.php -d table/ghcm.cin table/array10a.cin
 	@$(call timeStop)
 
 keyboard:
@@ -70,11 +70,11 @@ moe:
 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_1.csv > lexicon/MoE-Revised.csv
 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_2.csv >> lexicon/MoE-Revised.csv
 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_3.csv >> lexicon/MoE-Revised.csv
-	@$(call timeStop)
 	@-rm db/lexicon-MoE-Concised.csv.db
 	@-rm db/lexicon-MoE-Idioms.csv.db
 	@-rm db/lexicon-MoE-Revised.csv.db
-	@make lexicon
+	@${PHP} bin/make.php -m lexicon/MoE-Concised.csv lexicon/MoE-Idioms.csv lexicon/MoE-Revised.csv
+	@$(call timeStop)
 
 jieba:
 	@cd rawdata/jieba; git pull
@@ -82,9 +82,9 @@ jieba:
 	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
 	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv > lexicon/Jieba-hans.csv
 	@-rm tmp.jieba.csv
-	@$(call timeStop)
 	@-rm db/lexicon-Jieba-hans.csv.db
-	@make lexicon
+	@${PHP} bin/make.php -m lexicon/Jieba-hans.csv
+	@$(call timeStop)
 
 # jiebatest:
 # 	@$(call timeStart)
@@ -99,9 +99,9 @@ mcbpmf:
 	@cd rawdata/McBopomofo; git pull
 	@$(call timeStart)
 	@${PHP} bin/make.php -c mcbpmf rawdata/McBopomofo/Source/Data/BPMFMappings.txt > lexicon/McBopomofo-phrase.csv
-	@$(call timeStop)
 	@-rm db/lexicon-McBopomofo-phrase.csv.db
-	@make lexicon
+	@${PHP} bin/make.php -m lexicon/McBopomofo-phrase.csv
+	@$(call timeStop)
 
 jyutping:
 	@cd rawdata/rime-cantonese; git pull
@@ -109,20 +109,22 @@ jyutping:
 	@${PHP} bin/make.php -c jyut6ping3 rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3.cin
 	@${PHP} bin/make.php -c jyut6ping3-toneless rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3-toneless.cin
 	@${PHP} bin/make.php -c jyut6ping3-phrase rawdata/rime-cantonese/jyut6ping3.dict.yaml > lexicon/Rime-cantonese.csv
-	@$(call timeStop)
 	@-rm db/jyut6ping3.cin.db
 	@-rm db/jyut6ping3-toneless.cin.db
 	@-rm db/lexicon-Rime-cantonese.csv.db
-	@make db
-	@make lexicon
+	@${PHP} bin/make.php -d table/jyut6ping3.cin table/jyut6ping3-toneless.cin
+	@${PHP} bin/make.php -m lexicon/Rime-cantonese.csv
+	@$(call timeStop)
+	@#make db
+	@#make lexicon
 
 ghcm:
 	@cd rawdata/ghcm; git pull
 	@$(call timeStart)
 	@${PHP} bin/make.php -c ghcm rawdata/ghcm/SM.dict.yaml > table/ghcm.cin
-	@$(call timeStop)
 	@-rm db/ghcm.cin.db
-	@make db
+	@${PHP} bin/make.php -d table/ghcm.cin
+	@$(call timeStop)
 
 gitee:
 	@$(call timeStart)

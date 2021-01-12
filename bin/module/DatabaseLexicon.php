@@ -1,4 +1,12 @@
 <?php
+/**
+ *
+ *
+ * @author Ethan Liu
+ * @copyright Creativecrap.com, 12 January, 2021
+ * @package default
+ */
+
 echo "Build Lexicon Database\n\n";
 
 // load pronunciation
@@ -65,8 +73,18 @@ $json = [
 	"splits" => [],
 ];
 
-$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
-natsort($filenames);
+
+if (empty($argv)) {
+	$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
+	natsort($filenames);
+}
+else {
+	foreach ($argv as $path) {
+		if (file_exists($path)) {
+			$filenames[] = $path;
+		}
+	}
+}
 
 foreach ($filenames as $path) {
 	$filename = basename($path);

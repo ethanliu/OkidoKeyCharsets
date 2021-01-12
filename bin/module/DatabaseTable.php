@@ -1,18 +1,33 @@
 <?php
+/**
+ *
+ *
+ * @author Ethan Liu
+ * @copyright Creativecrap.com, 12 January, 2021
+ * @package default
+ */
+
 echo "Generate Database\n\n";
+
 $skipSC = false;
-$words = [];
-if ($skipSC) {
-	$words = include(__DIR__ . "/ref/words-hans.php");
+
+$words = ($skipSC) ? include(__DIR__ . "/ref/words-hans.php") : [];
+$filenames = [];
+
+if (empty($argv)) {
+	// $filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
+	$filenames = glob(self::$baseDir . 'table/*.cin');
+	// natsort($filenames);
+}
+else {
+	foreach ($argv as $path) {
+		if (file_exists($path)) {
+			$filenames[] = $path;
+		}
+	}
 }
 
-$isArray = false;
-// $filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
-$filenames = glob(self::$baseDir . 'table/*.cin');
-// natsort($filenames);
-
 foreach ($filenames as $path) {
-
 	// $path = './DataTables/array30.cin';
 	$filename = basename($path);
 	if (in_array($filename, self::$excludeDatables)) {
@@ -20,12 +35,7 @@ foreach ($filenames as $path) {
 		continue;
 	}
 
-	if (strpos($filename, "array30") !== false) {
-		$isArray = true;
-	}
-	else {
-		$isArray = false;
-	}
+	$isArray = (strpos($filename, "array30") !== false) ? true : false;
 
 	$output = self::$baseDir . "db/{$filename}.db";
 	if (file_exists($output)) {
@@ -155,4 +165,4 @@ foreach ($filenames as $path) {
 	// exit;
 }
 
-echo "\n";
+
