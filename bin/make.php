@@ -15,8 +15,6 @@ include __DIR__ . "/EmojiReader.php";
 include __DIR__ . "/TableReader.php";
 
 
-
-
 function color($text, $color = "") {
 	// $background = ';42';
 	$background = '';
@@ -210,6 +208,10 @@ class Builder {
 		}
 		else {
 			$invalid = true;
+
+			$argv = $_SERVER['argv'] ?? [];
+			array_shift($argv); // self
+			array_shift($argv); // first parameter
 
 			if (isset($params['k'])) {
 				$invalid = false;
