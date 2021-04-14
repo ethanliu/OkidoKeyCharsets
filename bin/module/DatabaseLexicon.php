@@ -73,12 +73,14 @@ $json = [
 	"splits" => [],
 ];
 
+$updateJsonFile = true;
 
 if (empty($argv)) {
 	$filenames = glob(self::$baseDir . 'lexicon/*.csv', GLOB_NOSORT);
 	natsort($filenames);
 }
 else {
+	$updateJsonFile = false;
 	foreach ($argv as $path) {
 		if (file_exists($path)) {
 			$filenames[] = $path;
@@ -152,8 +154,11 @@ foreach ($filenames as $path) {
 	echo "\n";
 }
 
-$jsonPath = self::$baseDir . "Lexicon.json";
-$f = fopen($jsonPath, "w") or die("Unable to create file.");
-fwrite($f, json_encode($json, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT));
-fclose($f);
+if ($updateJsonFile) {
+	$jsonPath = self::$baseDir . "Lexicon.json";
+	$f = fopen($jsonPath, "w") or die("Unable to create file.");
+	fwrite($f, json_encode($json, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_PRETTY_PRINT));
+	fclose($f);
+}
+
 echo "...version: {$json['version']}\n\n";
