@@ -164,6 +164,13 @@ ov:
 	@cp ${REPOPATH}/DataTables/jyutping.cin ${REPOPATH}/Source/Mac/MacDataTables/jyutping.cin
 	@cp ${REPOPATH}/DataTables/jyutping-toneless.cin ${REPOPATH}/Source/Mac/MacDataTables/jyutping-toneless.cin
 
+tongwen:
+	@cd rawdata/tongwen-core; git pull
+	@$(call timeStart)
+	@${PHP} bin/make.php -c tongwen rawdata/tongwen-core/dictionaries ChineseVariant.db
+	@$(call timeStop)
+
+
 # pull:
 # 	@cd rawdata/ghcm; git pull
 # 	@cd rawdata/rime-cantonese; git pull
