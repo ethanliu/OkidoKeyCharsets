@@ -9,9 +9,9 @@
 
 echo "Generate Database\n\n";
 
-$skipSC = false;
-
-$words = ($skipSC) ? include(__DIR__ . "/ref/words-hans.php") : [];
+// $charIgnoreMode = "s2t";
+// $ignoreChars = self::loadTongwenDictionary($charIgnoreMode, "char");
+// var_dump($ignoreChars);
 $filenames = [];
 
 if (empty($argv)) {
@@ -81,10 +81,10 @@ foreach ($filenames as $path) {
 		$key = trim($item->key);
 		$value = trim($item->value);
 
-		if ($skipSC && in_array($value, $words)) {
-			// echo "skip: {$value}\n";
-			continue;
-		}
+		// if ($skipSC && in_array($value, $words)) {
+		// 	// echo "skip: {$value}\n";
+		// 	continue;
+		// }
 
 		$keydefRowId = self::getKeydefId($db, $key);
 

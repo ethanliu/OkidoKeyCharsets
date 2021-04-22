@@ -173,7 +173,7 @@ class Builder {
 			$srcPath = realpath(__DIR__ . "/../" . $src);
 
 			if (empty($src) || !file_exists($srcPath)) {
-				echo "Input file \"{$src}\" not found.\n";
+				echo "File or directory \"{$src}\" not found.\n";
 			}
 
 			switch ($params['c']) {
@@ -369,7 +369,6 @@ MODULES:
 		return trim(preg_replace($pattern, $replacement, $string));
 	}
 
-
 	private static function diffTable($a, $b) {
 		$result = [];
 		$base = [];
@@ -388,7 +387,6 @@ MODULES:
 
 		return $result;
 	}
-
 
 	// interface
 
