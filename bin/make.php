@@ -40,6 +40,8 @@ function color($text, $color = "") {
 class Builder {
 	private static $shared;
 	private static $excludeDatables = [
+		'_sample.cin',
+		'_demo.cin',
 		'array-shortcode.cin',
 		'array-special.cin',
 		// 'array30.cin',
