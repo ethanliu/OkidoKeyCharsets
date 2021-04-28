@@ -39,7 +39,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
 
 必要項目:
 
-* %?name: 輸入法名稱，依不同的語系常見的有 ename, cname, sname, tcname, tsname 等名稱
+* %?name: 輸入法名稱，依不同的語系常見的有 name, ename, cname 等名稱，至少一項
 * %selkey: 候選字選字鍵
 * %keyname begin/end: 輸入法使用按鍵定義區段。分別為按鍵(無大小寫區分)及其按鍵代表的結果，通常為輸入法字根。  
 例如注音輸入法 "1" 為 "ㄅ"，"q" 為 "ㄆ"
@@ -102,6 +102,7 @@ cin 表格中大部份的內容為 key/value 組合，以空白或 Tab 區分。
 
 #### 簡體中文表格
 
+    ghcm - 矧码
     jidianwubi.cin - 极点五笔
     jtcj.cin - 简体仓颉
     lxsy_0.40.cin - 灵形速影
