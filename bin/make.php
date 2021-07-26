@@ -45,7 +45,7 @@ class Builder {
 		'array-shortcode.cin',
 		'array-special.cin',
 		// 'array30.cin',
-		'array30_OkidoKey-big_0.75.cin',
+		'array30_OkidoKey-big.cin',
 		// 'bpmf-cns.cin',
 		'bpmf-ext.cin',
 		// 'bpmf-symbol.cin',
