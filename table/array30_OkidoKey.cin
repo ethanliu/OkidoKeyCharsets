@@ -1,12 +1,12 @@
 %gen_inp
 #######################################################################
 #                                                                     #
-#  array30.cin for OkidoKey (v0.75), 2015-10-26                       #
+#  array30.cin for OkidoKey (v0.9), 2021-07-23                        #
 #                                                                     #
-#  這個輸入法表格是 array30.cin for OpenVanilla v0.75 簡化而來，只    #
+#  這個輸入法表格是 array30.cin for OpenVanilla v0.9 簡化而來，只     #
 #  保留 Unicode 3.0 亦即僅支援 4 byte 的 CJK Ext-A 字集，並刪除較罕用 #
 #  的 CJK Ext-B/C/D 字集，以節省行動裝置寶貴的記憶體空間。我另提供包  #
-#  括完整 CJK 字集的「大字集版本」，如有需要，請自行下載安裝。
+#  括完整 CJK 字集的「大字集版本」，如有需要，請自行下載安裝。        #
 #                                                                     #
 #  本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU       #
 #  General Public License (GPL) version 2 或新版公開授權，歡迎各界分  #
@@ -31594,6 +31594,129 @@ zzi	㚘
 zzqi	䦈
 zzzzi	镸
 # End of CJK Unified Ideographs + Extension A
+# CJK Compatibility Ideographs, CJK Unified Ideographs & Others
+;;;;i	〇
+oui	〇
+y.kbi	﨎
+rkk;i	﨏
+dy;di	﨑
+vfkhi	﨓
+vnaoi	﨔
+fupsi	﨟
+/ori	﨡
+rchfi	﨣
+lbni	﨤
+gkni	﨤
+irlfi	﨧
+irifi	﨨
+tldi	﨩
+,cjdi	龦
+pprpi	龧
+pprhi	龧
+qkyi	龨
+frfoi	龩
+rcki	龪
+qifi	龫
+ijisi	龬
+g,pki	龭
+g,bki	龮
+izxi	龯
+cccci	龰
+p.i	龱
+inqi	龲
+rkrri	龳
+bbbbi	龴
+ooooi	龵
+lzi	龵
+rrrri	龶
+rrrri	龷
+cji	龸
+izi	龹
+kzi	龹
+fpfi	龺
+yxxi	龻
+xyxi	龻
+rejji	龼
+,u,i	龽
+tbl,i	龾
+fkrri	龿
+fqopi	鿀
+yrki	鿁
+ql,i	鿂
+jzkki	鿃
+cjhvi	鿄
+cjkvi	鿄
+yhzbi	鿅
+yhzbi	鿆
+kjtdi	鿇
+k.tdi	鿇
+.bki	鿈
+.ati	鿉
+fcei	鿊
+ykr;i	鿋
+cypci	鿌
+r.qi	鿍
+gzni	鿎
+ir.i	鿏
+irmi	鿏
+u,cpi	鿐
+karhi	鿑
+falmi	鿒
+falmi	鿓
+iqddi	鿔
+uajyi	鿕
+i;ai	鿖
+kktai	鿗
+ktl;i	鿘
+ktlsi	鿙
+ktl;i	鿚
+krk.i	鿛
+oya.i	鿜
+v/h.i	鿝
+ame.i	鿞
+lveci	鿟
+lve.i	鿠
+/xk.i	鿡
+aet;i	鿢
+aetsi	鿣
+aet;i	鿤
+htx.i	鿥
+fjz.i	鿦
+t.a.i	鿧
+zpa.i	鿨
+u,p.i	鿩
+i.n,i	鿪
+oljzi	鿫
+gpi	鿬
+ijci	鿭
+nrddi	鿮
+ofl,i	鿯
+eaoci	䶶
+;si	䶷
+;lxi	䶸
+ddddi	䶹
+ujki	䶺
+ujsi	䶻
+ukxni	䶼
+u.d.i	䶽
+okjki	䶾
+ibsi	䶿
+cfpdi	鿰
+cfpgi	鿰
+artsi	鿱
+qifbi	鿲
+u,lqi	鿳
+ua.hi	鿴
+uarni	鿵
+uahxi	鿶
+uaypi	鿷
+ualqi	鿸
+uandi	鿹
+r.lai	鿺
+rmlai	鿺
+owzdi	鿻
+owb;i	鿼
+
 # CJK Symbols & Punctuation for Array30 input method (w+0~9)
 w0 ㄅ
 w0 ㄆ
