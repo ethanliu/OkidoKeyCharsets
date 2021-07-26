@@ -1,5 +1,5 @@
 {
-    "version": "20210726070436",
+    "version": "20210726070712",
     "datatables": [
         {
             "ename": "NewCJ3",
@@ -387,53 +387,149 @@
         }
     ],
     "splits": {
-        "NewCJ3.cin": [],
-        "array10a.cin": [],
-        "array26.cin": [],
-        "array30.cin": [],
-        "array30_OkidoKey.cin": [],
-        "array40.cin": [],
-        "biaoyin.cin": [],
-        "bpmf-Hsu.cin": [],
-        "bpmf-cns.cin": [],
-        "bpmf.cin": [],
-        "cangjie6.cin": [],
-        "cj-j.cin": [],
-        "cj.cin": [],
-        "cj5.cin": [],
-        "corner.cin": [],
-        "daibuun.cin": [],
-        "dayi3-patched.cin": [],
-        "dayi3.cin": [],
-        "dayi4.cin": [],
-        "freenewcj.cin": [],
-        "ghcm.cin": [],
-        "jidianwubi.cin": [],
-        "jinjin.cin": [],
-        "jtcj.cin": [],
-        "jyut6ping3-toneless.cin": [],
-        "jyut6ping3.cin": [],
-        "lxsy_0.40.cin": [],
-        "lxsy_0.41.cin": [],
-        "ov_ez.cin": [],
-        "ov_ez75.cin": [],
-        "pictograph.cin": [],
-        "pinyin.cin": [],
-        "pinyinbig5.cin": [],
-        "poj-holo.cin": [],
-        "qcj.cin": [],
-        "scj6.cin": [],
-        "scj7.cin": [],
-        "shuangpin.cin": [],
-        "simplex.cin": [],
-        "stroke-bsm.cin": [],
-        "stroke-g6code.cin": [],
-        "stroke-stroke5-keypad.cin": [],
-        "taiwain-minnan-zhuyin.cin": [],
-        "tcj.cin": [],
-        "tp_hakka_hl.cin": [],
-        "tp_hakka_sy.cin": [],
-        "wu.cin": [],
-        "wubizixing.cin": []
+        "NewCJ3.cin": {
+            "gitee": 8
+        },
+        "array10a.cin": {
+            "gitee": 2
+        },
+        "array26.cin": {
+            "gitee": 2
+        },
+        "array30.cin": {
+            "gitee": 5
+        },
+        "array30_OkidoKey.cin": {
+            "gitee": 2
+        },
+        "array40.cin": {
+            "gitee": 1
+        },
+        "biaoyin.cin": {
+            "gitee": 1
+        },
+        "bpmf-Hsu.cin": {
+            "gitee": 2
+        },
+        "bpmf-cns.cin": {
+            "gitee": 4
+        },
+        "bpmf.cin": {
+            "gitee": 1
+        },
+        "cangjie6.cin": {
+            "gitee": 5
+        },
+        "cj-j.cin": {
+            "gitee": 1
+        },
+        "cj.cin": {
+            "gitee": 1
+        },
+        "cj5.cin": {
+            "gitee": 1
+        },
+        "corner.cin": {
+            "gitee": 1
+        },
+        "daibuun.cin": {
+            "gitee": 1
+        },
+        "dayi3-patched.cin": {
+            "gitee": 1
+        },
+        "dayi3.cin": {
+            "gitee": 1
+        },
+        "dayi4.cin": {
+            "gitee": 1
+        },
+        "freenewcj.cin": {
+            "gitee": 2
+        },
+        "ghcm.cin": {
+            "gitee": 44
+        },
+        "jidianwubi.cin": {
+            "gitee": 5
+        },
+        "jinjin.cin": {
+            "gitee": 2
+        },
+        "jtcj.cin": {
+            "gitee": 1
+        },
+        "jyut6ping3-toneless.cin": {
+            "gitee": 2
+        },
+        "jyut6ping3.cin": {
+            "gitee": 2
+        },
+        "lxsy_0.40.cin": {
+            "gitee": 1
+        },
+        "lxsy_0.41.cin": {
+            "gitee": 1
+        },
+        "ov_ez.cin": {
+            "gitee": 1
+        },
+        "ov_ez75.cin": {
+            "gitee": 19
+        },
+        "pictograph.cin": {
+            "gitee": 1
+        },
+        "pinyin.cin": {
+            "gitee": 4
+        },
+        "pinyinbig5.cin": {
+            "gitee": 1
+        },
+        "poj-holo.cin": {
+            "gitee": 1
+        },
+        "qcj.cin": {
+            "gitee": 1
+        },
+        "scj6.cin": {
+            "gitee": 3
+        },
+        "scj7.cin": {
+            "gitee": 1
+        },
+        "shuangpin.cin": {
+            "gitee": 2
+        },
+        "simplex.cin": {
+            "gitee": 1
+        },
+        "stroke-bsm.cin": {
+            "gitee": 2
+        },
+        "stroke-g6code.cin": {
+            "gitee": 1
+        },
+        "stroke-stroke5-keypad.cin": {
+            "gitee": 1
+        },
+        "taiwain-minnan-zhuyin.cin": {
+            "gitee": 1
+        },
+        "tcj.cin": {
+            "gitee": 1
+        },
+        "tp_hakka_hl.cin": {
+            "gitee": 1
+        },
+        "tp_hakka_sy.cin": {
+            "gitee": 1
+        },
+        "wu.cin": {
+            "gitee": 1
+        },
+        "wubizixing.cin": {
+            "gitee": 1
+        }
     }
 }
