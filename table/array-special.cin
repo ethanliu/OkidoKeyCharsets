@@ -1,7 +1,13 @@
-# 行列特別碼對照表共398字（去除與Unicode大字集本字重碼的）2015年9月11日
-# 本表謝謝老刀（葉光哲）協助完成，本表由大廖（廖明德）檢核公佈
+# 行列特別碼對照表 V201509
+# 編製者：老刀 (gontera)
+# 依據行列輸入法官網於 2015/09/11 釋出的 V201509 版本製作
+# 感謝行列科技廖明德先生在製表過程中提供意見及協助
 %ename array30-special
 %cname 行列30特別碼表
+%encoding UTF-8
+%selkey 1234567890
+%keyname begin
+%keyname end
 %chardef begin
 ak	大
 ah	不
