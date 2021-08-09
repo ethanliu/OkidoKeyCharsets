@@ -1,9 +1,9 @@
 %gen_inp
 #######################################################################
 #                                                                     #
-#  array30.cin 大字集版 for OkidoKey (v0.9), 2021-07-23               #
+#  array30.cin 大字集版 for OkidoKey (v0.93), 2021-08-04              #
 #                                                                     #
-#  這個輸入法表格內容與 array30.cin for OpenVanilla v0.9 相同，只為   #
+#  這個輸入法表格內容與 array30.cin for OpenVanilla v0.91 相同，只為  #
 #  便於區別，更改 %ename 和 %cname 的定義詞而已。                     #
 #                                                                     #
 #  本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU       #
@@ -14,8 +14,8 @@
 #  有關行列輸入法，請參觀 http://www.array.com.tw/ 內的介紹。         #
 #                                                                     #
 #######################################################################
-%ename array30
-%cname 行列30
+%ename array30-big
+%cname 行列30-大字集
 %encoding UTF-8
 %selkey 1234567890
 %keyname begin
@@ -80839,7 +80839,6 @@ klqi	𪜪
 kgri	𪜫
 ivi	𪜬
 kavi	𪜬
-kavi	𪜬
 kpti	𪜭
 kji	𪜮
 k;bi	𪜯
@@ -81103,9 +81102,6 @@ zkrai	𪠐
 zqhhi	𪠑
 zuidi	𪠒
 zrpki	𪠓
-zrpki	𪠓
-zrpki	𪠓
-zrpki	𪠓
 zlpbi	𪠔
 znkyi	𪠕
 zcazi	𪠖
@@ -81208,7 +81204,6 @@ c.o;i	𪡤
 ;hedi	𪡦
 ;ipi	𪡧
 ;b,i	𪡨
-;dz,i	𪡩
 ;dz,i	𪡩
 zaa;i	𪡪
 ;r;xi	𪡫
@@ -81646,7 +81641,6 @@ nrkci	𪧦
 naxri	𪧧
 npabi	𪧨
 nszwi	𪧩
-nszwi	𪧩
 ntl/i	𪧪
 nzg,i	𪧫
 napdi	𪧬
@@ -81714,7 +81708,6 @@ cdi	𪨤
 dgdsi	𪨥
 doi	𪨦
 doasi	𪨦
-doi	𪨦
 dkqi	𪨧
 dyci	𪨨
 dqfsi	𪨩
@@ -81975,7 +81968,6 @@ ne;ni	𪬍
 jtnsi	𪬎
 nlvpi	𪬏
 iljni	𪬐
-nbafi	𪬑
 nbafi	𪬑
 b.ni	𪬒
 vcani	𪬓
@@ -82444,8 +82436,6 @@ yjdii	𪲬
 yjd,i	𪲬
 ajdii	𪲬
 ajd,i	𪲬
-yjdii	𪲬
-yjd,i	𪲬
 vhtsi	𪲭
 vnxhi	𪲮
 vtjfi	𪲯
@@ -82506,7 +82496,6 @@ vdaai	𪳢
 vem;i	𪳣
 vo;ni	𪳤
 vofni	𪳤
-vo;ni	𪳤
 vjpsi	𪳥
 lelvi	𪳦
 vsafi	𪳧
@@ -82556,7 +82545,6 @@ v;q;i	𪴋
 vlnei	𪴌
 ,y;vi	𪴍
 vnsmi	𪴎
-vnpmi	𪴎
 vnpmi	𪴎
 vgfbi	𪴏
 vztni	𪴐
@@ -82774,7 +82762,6 @@ cqdyi	𪷐
 cpari	𪷑
 cfldi	𪷒
 cepbi	𪷓
-cepbi	𪷓
 csbmi	𪷔
 cee.i	𪷕
 cmz,i	𪷖
@@ -82903,7 +82890,6 @@ j;t,i	𪹃
 ,ajni	𪹄
 ,alhi	𪹅
 ,zqui	𪹆
-,dz,i	𪹇
 ,dz,i	𪹇
 ,paei	𪹈
 jts,i	𪹉
@@ -83097,7 +83083,6 @@ argdi	𪻱
 aradi	𪻱
 arsmi	𪻲
 arpmi	𪻲
-arpmi	𪻲
 arffi	𪻳
 ara.i	𪻴
 arzri	𪻵
@@ -83165,7 +83150,6 @@ arc,i	𪼲
 .xkzi	𪼳
 .xkki	𪼴
 .xkxi	𪼴
-.xkki	𪼴
 zktki	𪼵
 qhtsi	𪼶
 qhari	𪼷
@@ -84036,9 +84020,7 @@ fn.i	𫈱
 fctri	𫈲
 fccci	𫈳
 fbafi	𫈴
-fbafi	𫈴
 fxjsi	𫈵
-fapxi	𫈶
 fapxi	𫈶
 fvjqi	𫈷
 fzksi	𫈸
@@ -84058,9 +84040,6 @@ fw;ni	𫉅
 fbbui	𫉆
 fxtsi	𫉇
 fv;oi	𫉈
-frpki	𫉉
-frpki	𫉉
-frpki	𫉉
 frpki	𫉉
 frkyi	𫉊
 farei	𫉋
@@ -84246,7 +84225,6 @@ yag/i	𫋡
 /,,ui	𫋥
 /rcbi	𫋦
 /nrki	𫋧
-/nrki	𫋧
 /yv/i	𫋨
 /js,i	𫋩
 luqqi	𫋪
@@ -84292,7 +84270,6 @@ x.fxi	𫌏
 ykrxi	𫌐
 ykipi	𫌑
 ykxsi	𫌒
-ykpii	𫌓
 ykpii	𫌓
 ykfii	𫌓
 ykdii	𫌓
@@ -84364,7 +84341,6 @@ ecayi	𫍐
 ynkyi	𫍑
 ynsmi	𫍒
 ynpmi	𫍒
-ynpmi	𫍒
 ynici	𫍓
 yeqxi	𫍔
 ytski	𫍕
@@ -84377,8 +84353,7 @@ ykji	𫍛
 yrxi	𫍜
 yqbi	𫍝
 ylii	𫍞
-yogsi	𧦧
-yogsi	𧦧
+yogsi	𫍟
 ymgsi	𫍠
 ynqi	𫍡
 yaxsi	𫍢
@@ -84568,7 +84543,6 @@ qfasi	𫐄
 qfdi	𫐅
 qfzbi	𫐆
 qfjki	𫐇
-qfzhi	𫐈
 qfzhi	𫐈
 qfibi	𫐉
 qfkbi	𫐉
@@ -84906,7 +84880,6 @@ eypni	𫔪
 ea.zi	𫔫
 alhji	𫔬
 hjafi	𫔭
-hjafi	𫔭
 hjui	𫔮
 hjhfi	𫔯
 hjxfi	𫔰
@@ -84919,7 +84892,6 @@ hjlvi	𫔶
 hjani	𫔷
 efaji	𫔸
 hjaui	𫔹
-hjyui	𫔹
 hjyui	𫔹
 tzi	𫔺
 ty.i	𫔻
@@ -85095,8 +85067,6 @@ ibzui	𫗏
 ibiri	𫗐
 iblbi	𫗑
 ibnwi	𫗒
-ibo;i	𫗓
-ibo;i	𫗓
 ibo;i	𫗓
 ibazi	𫗔
 ibffi	𫗕
@@ -85362,7 +85332,6 @@ aae,i	𫛁
 poa,i	𫛂
 dar,i	𫛃
 ecl,i	𫛄
-ecl,i	𫛄
 yfl,i	𫛅
 tjf,i	𫛆
 wbt,i	𫛇
@@ -85515,7 +85484,6 @@ i;dhi	𫝇
 kjqfi	𫝈
 itl;i	𫝉
 kaphi	𫝊
-kaphi	𫝊
 kebii	𫝋
 evaki	𫝌
 jiei	𫝍
@@ -85572,7 +85540,6 @@ n.ki	𫝸
 iani	𫝹
 ojqi	𫝺
 op;i	𫝻
-obasi	𫝼
 obasi	𫝼
 okd.i	𫝽
 ofkmi	𫝾
@@ -91249,7 +91216,6 @@ ijfi	𬫉
 iklfi	𬫊
 i.abi	𬫋
 ilzbi	𬫋
-i.abi	𬫋
 ioaai	𬫌
 ioahi	𬫌
 iafxi	𬫍
