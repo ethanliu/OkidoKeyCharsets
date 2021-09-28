@@ -15,7 +15,8 @@ define SYNOPSIS
 @echo "	lexicon - Build all lexicon databases"
 @echo "	table - Generate DataTables.json"
 @echo "Modules:"
-@echo "	bossy - Merge boshiamy tables"
+@echo "	array - Update Array30"
+@echo "	bossy - Build custom boshiamy table"
 @echo "	ghcm - Update ghcm data table"
 @echo "	gitee - Split all db files for Gitee repo"
 @echo "	jieba - Update Jieba lexicon"
@@ -27,7 +28,7 @@ define SYNOPSIS
 
 endef
 
-# alternative to time cmmand
+# alternative to time command
 
 define timeStart
 	@date +%s > tmp.timestamp
@@ -43,7 +44,9 @@ usage:
 
 test:
 	@$(call timeStart)
-	@${PHP} bin/make.php -d table/ghcm.cin table/array10a.cin
+#	@${PHP} bin/make.php -c rime rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/hangulromaja.rime
+#	@${PHP} bin/make.php -c rime rawdata/boshiamy/boshiamy_j.cin > rawdata/boshiamy/boshiamy_j.rime
+#	@${PHP} bin/make.php -c diff table/array30.cin table/array30_OkidoKey-big.cin
 	@$(call timeStop)
 
 keyboard:
@@ -61,7 +64,12 @@ lexicon:
 emoji:
 	@${PHP} bin/make.php -e
 
+pull: array jyutping ghcm mcbpmf ov tongwen jieba
+
 all: keyboard table db lexicon gitee
+
+clean:
+	@echo "clean all...."
 
 moe:
 	@$(call timeStart)
@@ -149,7 +157,17 @@ gitee:
 
 bossy:
 	@$(call timeStart)
-	@${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/boshiamy_ct.cin > rawdata/boshiamy/bossy.cin
+	@${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/bossy.cin
+	@$(call timeStop)
+
+array:
+	@cd rawdata/array30; git pull
+	@$(call timeStart)
+	@${PHP} bin/make.php -c array rawdata/array30
+	@-rm db/array30.cin.db
+	@-rm db/array30_OkidoKey.cin.db
+	@${PHP} bin/make.php -d table/array30.cin
+	@${PHP} bin/make.php -d table/array30_OkidoKey.cin
 	@$(call timeStop)
 
 ov:
@@ -170,10 +188,3 @@ tongwen:
 	@${PHP} bin/make.php -c tongwen rawdata/tongwen-core/dictionaries ChineseVariant.db
 	@$(call timeStop)
 
-
-# pull:
-# 	@cd rawdata/ghcm; git pull
-# 	@cd rawdata/rime-cantonese; git pull
-
-clean:
-	@echo "clean all...."
