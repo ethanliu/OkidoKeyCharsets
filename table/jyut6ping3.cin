@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼
-# Version: 2021.06.13
+# Version: 2021.09.05
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -20094,17 +20094,16 @@ loeng2	兩
 loeng2	両
 loeng4	諒
 loeng4	㹁
-loeng4	良
+loeng4	綡
 loeng4	𨫟
 loeng4	𣸑
 loeng4	駺
 loeng4	量
-loeng4	辌
 loeng4	輬
 loeng4	踉
 loeng4	蜋
 loeng4	莨
-loeng4	綡
+loeng4	良
 loeng4	糧
 loeng4	粱
 loeng4	粮
@@ -20120,7 +20119,6 @@ loeng4	䝶
 loeng4	羪
 loeng4	簗
 loeng4	斏
-loeng5	㒳
 loeng5	㔝
 loeng5	䓣
 loeng5	䠃
@@ -20131,6 +20129,7 @@ loeng5	緉
 loeng5	蜽
 loeng5	裲
 loeng5	魎
+loeng5	㒳
 loeng5	啢
 loeng5	掚
 loeng5	脼
@@ -21001,7 +21000,6 @@ maat6	襪
 maat6	靺
 maau1	猫
 maau1	貓
-maau4	毛
 maau4	㑤
 maau4	㚹
 maau4	𢘅
@@ -23902,7 +23900,6 @@ nung4	辳
 nung4	檂
 nung5	䵜
 nung5	繷
-nung6	弄
 nung6	癑
 nyun5	㬉
 nyun5	暖

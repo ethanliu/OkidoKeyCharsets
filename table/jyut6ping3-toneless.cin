@@ -1,6 +1,6 @@
 #
 # Jyut6ping3 - 粵拼 (無調號)
-# Version: 2021.06.13
+# Version: 2021.09.05
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -18711,10 +18711,8 @@ loek	擽
 loek	稤
 loeng	涼
 loeng	諒
-loeng	𤦻
-loeng	裲
+loeng	魎
 loeng	𩞯
-loeng	㒳
 loeng	㔝
 loeng	䓣
 loeng	䠃
@@ -18722,7 +18720,8 @@ loeng	䩫
 loeng	倆
 loeng	緉
 loeng	蜽
-loeng	魎
+loeng	裲
+loeng	𤦻
 loeng	𣸑
 loeng	㾗
 loeng	䀶
@@ -18738,27 +18737,26 @@ loeng	兩
 loeng	𨫟
 loeng	駺
 loeng	俍
-loeng	墚
+loeng	䣼
 loeng	梁
 loeng	椋
 loeng	樑
-loeng	㹁
 loeng	量
 loeng	粮
 loeng	粱
+loeng	㹁
 loeng	糧
-loeng	啢
 loeng	綡
+loeng	啢
 loeng	良
 loeng	莨
 loeng	蜋
 loeng	踉
 loeng	輬
-loeng	辌
-loeng	䣼
+loeng	墚
 loeng	輌
-loeng	鍄
 loeng	䝶
+loeng	鍄
 loeng	襔
 loeng	哴
 loeng	斏
@@ -18766,6 +18764,7 @@ loeng	簗
 loeng	脼
 loeng	掚
 loeng	羪
+loeng	㒳
 loeng	両
 loi	來
 loi	㚓
@@ -19524,10 +19523,9 @@ maat	襪
 maat	靺
 maau	茆
 maau	昴
-maau	毛
 maau	猫
 maau	泖
-maau	𢘅
+maau	貓
 maau	𨥨
 maau	卯
 maau	峁
@@ -19539,8 +19537,8 @@ maau	㹸
 maau	䫉
 maau	皃
 maau	貌
-maau	貓
 maau	鶜
+maau	𢘅
 maau	錨
 maau	渵
 maau	㑤
@@ -22213,7 +22211,6 @@ nung	欁
 nung	辳
 nung	檂
 nung	䙶
-nung	弄
 nung	癑
 nyun	㬉
 nyun	暖
