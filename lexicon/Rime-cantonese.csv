@@ -5124,6 +5124,7 @@
 篳路藍縷	100	batloulaamleoi
 不露聲色	100	batlousingsik
 筆錄	100	batluk
+不弄	100	batlung
 不買賬	100	batmaaizoeng
 筆墨	100	batmak
 筆墨官司	100	batmakgunsi
@@ -5199,7 +5200,6 @@
 不佞	100	batning
 不奈煩	100	batnoifaan
 不耐煩	100	batnoifaan
-不弄	100	batnung
 不惡	100	batok
 不安	100	baton
 不安本分	100	batonbunfan
@@ -5449,7 +5449,7 @@
 不遑多讓	100	batwongdojoeng
 筆會	100	batwui
 不會	100	batwui
-不會弄	100	batwuinung
+不會弄	100	batwuilung
 不換行	100	batwunhong
 不咋地	100	batzaadei
 不擇手段	100	batzaaksaudyun
@@ -44469,8 +44469,8 @@
 據情辦理	100	geoicingbaanlei
 據傳	100	geoicyun
 句逗	100	geoidau
+句讀	100	geoidau
 據點	100	geoidim
-句讀	100	geoiduk
 句法	100	geoifaat
 句法分析	100	geoifaatfansik
 句法意識	100	geoifaatjisik
@@ -57625,7 +57625,6 @@
 氣囊	100	heinong
 氣惱	100	heinou
 棄農經商	100	heinunggingsoeng
-戲弄	100	heinung
 汽暖	100	heinyun
 棄惡從善	100	heiokcungsin
 氣派	100	heipaai
@@ -86194,8 +86193,6 @@
 落斜	100	lokce
 樂趣	100	lokceoi
 樂此不疲	100	lokcibatpei
-樂清	100	lokcing
-樂清市	100	lokcingsi
 落潮	100	lokciu
 落錯格	100	lokcogaak
 落錯隔	100	lokcogaak
@@ -88253,18 +88250,21 @@
 弄假成真	100	lunggaasingzan
 弄僵	100	lunggoeng
 弄崗穗鶥	100	lunggongseoimei
+弄下	100	lunghaa
 弄巧反拙	100	lunghaaufaanzyut
 弄巧反拙	100	lunghaaufaanzyut
 弄巧成拙	100	lunghaausingzyut
 弄虛作假	100	lungheoizokgaa
 弄險	100	lunghim
 弄權	100	lungkyun
+弄了	100	lungliu
 弄亂	100	lunglyun
 弄明白	100	lungmingbaak
 弄瓦	100	lungngaa
 弄瓦之喜	100	lungngaazihei
 弄平	100	lungping
 弄臣	100	lungsan
+弄些	100	lungse
 弄死	100	lungsei
 弄醒	100	lungseng
 弄碎	100	lungseoi
@@ -89998,7 +89998,6 @@
 買少見少	100	maaisiuginsiu
 買笑追歡	100	maaisiuzeoifun
 買餸	100	maaisung
-賣餸	100	maaisung
 買餸車	100	maaisungce
 買天水	100	maaitinseoi
 買臺	100	maaitoi
@@ -90117,6 +90116,7 @@
 賣笑	100	maaisiu
 賣傻	100	maaiso
 賣相	100	maaisoeng
+賣餸	100	maaisung
 賣炭翁	100	maaitaanjung
 賣頭賣尾	100	maaitaumaaimei
 賣檯	100	maaitoi
@@ -101931,6 +101931,8 @@
 齶部	100	ngokbou
 岳池	100	ngokci
 岳池縣	100	ngokcijyun
+樂清	100	ngokcing
+樂清市	100	ngokcingsi
 嶽得爾歌	100	ngokdakjigo
 樂隊	100	ngokdeoi
 樂隊	100	ngokdeoi
@@ -103366,10 +103368,6 @@
 農莊	100	nungzong
 濃妝艷抹	100	nungzongjimmut
 膿腫	100	nungzung
-弄下	100	nunghaa
-弄巧反拙	100	nunghaaufaanzyut
-弄了	100	nungliu
-弄些	100	nungse
 暖包	100	nyunbaau
 暖巢管家	100	nyuncaaugungaa
 暖蛋	100	nyundaan
@@ -111471,6 +111469,7 @@
 身材好弗	100	sancoihoufit
 新造	100	sancou
 新造站	100	sancouzaam
+新造鎮	100	sancouzan
 新束束	100	sancukcuk
 新簇簇	100	sancukcuk
 新寵	100	sancung
@@ -112057,7 +112056,6 @@
 身壯力健	100	sanzonglikgin
 申狀	100	sanzong
 新造	100	sanzou
-新造鎮	100	sanzouzan
 新竹	100	sanzuk
 新竹縣	100	sanzukjyun
 新竹市	100	sanzuksi
@@ -115944,7 +115942,6 @@
 水電站	100	seoidinzaam
 水貂	100	seoidiu
 水刀	100	seoidou
-水到渠成	100	seoidoukeoicing
 水到渠成	100	seoidoukeoising
 水稻	100	seoidou
 水道	100	seoidou
@@ -122394,7 +122391,6 @@
 傷俘	100	soengfu
 相符	100	soengfu
 孀婦	100	soengfu
-相輔相成	100	soengfusoengcing
 相輔相成	100	soengfusoengsing
 雙復磷	100	soengfukleon
 傷風	100	soengfung
@@ -130683,9 +130679,7 @@
 套話	100	touwaa
 套匯	100	touwui
 套換	100	touwun
-兎仔	100	touzai
 兔仔	100	touzai
-兎仔牙	100	touzaingaa
 兔仔牙	100	touzaingaa
 兔仔仔	100	touzaizai
 套袖	100	touzau
@@ -142390,7 +142384,6 @@
 紙葉子	100	zijipzi
 紙鷂	100	zijiu
 只要	100	zijiu
-只要功夫深，鐵杵磨成針	100	zijiugungfusamtitcyumocingzam
 只要功夫深，鐵杵磨成針	100	zijiugungfusamtitcyumosingzam
 紙鷂	100	zijiu
 子曰	100	zijoek
@@ -147383,7 +147376,6 @@
 作美	100	zokmei
 作夢	100	zokmung
 作牙	100	zokngaa
-作弄	100	zoknung
 作愛	100	zokoi
 作惡	100	zokok
 作惡多端	100	zokokdodyun
@@ -148450,7 +148442,6 @@
 祝你好運	100	zukneihouwan
 足額	100	zukngaak
 觸怒	100	zuknou
-捉弄	100	zuknung
 竹排	100	zukpaai
 竹棚	100	zukpaang
 粥棚	100	zukpaang
