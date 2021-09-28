@@ -3,7 +3,7 @@ echo "Generate DataTables.json\n\n";
 
 $destinationPath = self::$baseDir . "DataTables.json";
 $filenames = glob(self::$baseDir . 'table/*.cin', GLOB_NOSORT);
-natsort($filenames);
+natcasesort($filenames);
 
 $result = array(
 	'version' => date("YmdHis"),
@@ -27,7 +27,7 @@ foreach ($filenames as $path) {
 		'name' => $table->info['name'] ?? '',
 		'cin' => "table/{$filename}",
 		'db' => "db/{$filename}.db",
-		'license' => $table->description,
+		'license' => trim($table->description),
 	];
 
 	$result['datatables'][] = $item;
