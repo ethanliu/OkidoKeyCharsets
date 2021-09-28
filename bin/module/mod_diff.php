@@ -9,10 +9,12 @@
 
 
 // $basePath = __DIR__ . "/../../table/bpmf-cns.cin";
-$basePath = __DIR__ . "/../../table/array30.cin";
+// $basePath = __DIR__ . "/../../table/array30.cin";
 
-$baseTable = new TableReader($basePath, false);
-$targetTable = new TableReader($srcPath, false);
+
+
+$baseTable = new TableReader($srcPath, false);
+$targetTable = new TableReader($argv[0], false);
 
 
 function diffTable($a, $b) {

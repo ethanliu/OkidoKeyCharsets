@@ -90,7 +90,7 @@ class Builder {
 
 		if (isset($params['a']) || isset($params['b'])) {
 			$level = isset($params['x']) ? intval($params['x']) : 0;
-			$basePath = isset($params['b']) ? $params['b'] : "table/array30.cin";
+			$basePath = isset($params['b']) ? $params['b'] : '';
 			$targetPath = isset($params['a']) ? $params['a'] : '';
 
 			if (empty($targetPath) || !file_exists($targetPath)) {
@@ -173,6 +173,7 @@ class Builder {
 			// $src = isset($argv[$offset]) ? trim($argv[$offset]) : '';
 			$src = array_shift($argv);
 			$srcPath = realpath(__DIR__ . "/../" . $src);
+			$rootPath = realpath(__DIR__ . "/../");
 
 			if (empty($src) || !file_exists($srcPath)) {
 				echo "File or directory \"{$src}\" not found.\n";

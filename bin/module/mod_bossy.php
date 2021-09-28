@@ -1,6 +1,6 @@
 <?php
 /**
- * bossy - merge boshiamy tables
+ * bossy - a custom boshiamy table generator
  *
  * @author Ethan Liu
  * @copyright Creativecrap.com, 24 August, 2020
@@ -27,12 +27,13 @@
 // 	die("Second cin table not found.\n");
 // }
 
+
 $base = new TableReader($srcPath, false);
 $cache = [];
 $data = [];
 
 foreach ($base->data as $item) {
-	$values1[] = $item->value;
+	// $values1[] = $item->value;
 	$key = $item->value . '_' . $item->key;
 	$cache[] = $key;
 }
@@ -63,8 +64,10 @@ $contents = str_replace("%chardef end", "\n", $contents);
 
 foreach ($data as $source => $items) {
 	$contents .= "# {$source}\n";
+	// $subffix = ($source == "hangulromaja.cin") ? "'" : "";
+	$subffix = "";
 	foreach ($items as $item) {
-		$contents .= "{$item->key}\t{$item->value}\n";
+		$contents .= "{$item->key}{$subffix}\t{$item->value}\n";
 	}
 }
 

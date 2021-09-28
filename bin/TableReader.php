@@ -11,7 +11,7 @@ Class Chardef {
 	public $key = "";
 	public $value = "";
 	function __construct($key, $value) {
-		$this->key = $key;
+		$this->key = strtolower($key);
 		$this->value = $value;
 	}
 }
@@ -134,6 +134,8 @@ Class TableReader {
 
 			// exit;
 		}
+
+		$this->description = trim($this->description);
 
 	}
 
