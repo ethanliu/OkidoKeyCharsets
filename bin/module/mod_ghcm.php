@@ -11,8 +11,8 @@
 
 $raw = explode("\n", file_get_contents($srcPath));
 
-$prepend = 1;
-$partial = 0;
+$prepend = true;
+$partial = false;
 
 $mode = 'cin';
 // $mode = 'lexicon';
@@ -83,7 +83,7 @@ $footer = "%chardef end\n";
 
 parse($raw, $mode, $header, $footer, $partial);
 
-function parse($raw, $mode = '', $header = '', $footer = '', bool $partial) {
+function parse($raw, $mode = '', $header = '', $footer = '', $partial = false) {
 
 	$parsing = false;
 	$tag = "...";
