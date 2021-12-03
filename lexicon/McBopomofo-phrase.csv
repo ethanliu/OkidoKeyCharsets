@@ -18960,10 +18960,10 @@
 切點	800	qiedian
 切齊	0	qieqi
 切齒	1300	qiech
-刈包	0	ibao
-刈稻	0	idao
-刈草	100	icao
-刈草機	0	icaoji
+刈包	0	guabao
+刈稻	0	gedao
+刈草	100	gecao
+刈草機	0	gecaoji
 刊了	200	kanle
 刊些	0	kanxie
 刊佈	0	kanbu
@@ -81563,6 +81563,7 @@
 炒米粉	500	chaomifen
 炒絲瓜	0	chaosgua
 炒羊肉	1100	chaoyangrou
+炒肉絲	200	chaorous
 炒股票	400	chaogupiao
 炒花枝	0	chaohuazh
 炒花椰菜	0	chaohuayecai
@@ -83471,6 +83472,7 @@
 燒紙	400	shaozh
 燒肉	1800	shaorou
 燒肉串	100	shaorouchuan
+燒肉店	0	shaoroudian
 燒肉粽	100	shaorouzong
 燒肉飯	0	shaoroufan
 燒臘店	300	shaoladian
@@ -95529,6 +95531,7 @@
 竹筍乾	0	zhusungan
 竹筍排骨湯	0	zhusunpaigutang
 竹筍湯	100	zhusuntang
+竹筍炒肉絲	0	zhusunchaorous
 竹筏	400	zhufa
 竹筒	800	zhutong
 竹筒飯	100	zhutongfan
@@ -126105,9 +126108,10 @@
 鎖上	2000	suoshang
 鎖不住	0	suobuzhu
 鎖住	3300	suozhu
-鎖匙	300	suosh
-鎖匙	300	suosh
 鎖匙	300	suoch
+鎖匙	300	suosh
+鎖匙	300	suosh
+鎖匙	300	suosh
 鎖匠	300	suojiang
 鎖國	800	suoguo
 鎖國政策	200	suoguozhengce
@@ -126525,10 +126529,14 @@
 鑣局	0	biaoju
 鑰匙	12400	yaosh
 鑰匙	12400	yaosh
+鑰匙	12400	yaosh
+鑰匙兒童	100	yaoshertong
 鑰匙兒童	100	yaoshertong
 鑰匙兒童	100	yaoshertong
 鑰匙圈	900	yaoshquan
 鑰匙圈	900	yaoshquan
+鑰匙圈	900	yaoshquan
+鑰匙孔	200	yaoshkong
 鑰匙孔	200	yaoshkong
 鑰匙孔	200	yaoshkong
 鑲住	0	xiangzhu
@@ -127049,6 +127057,7 @@
 閉一隻眼	400	biizhyan
 閉上	5700	bishang
 閉上眼	1100	bishangyan
+閉上眼睛	500	bishangyanjing
 閉口	1400	bikou
 閉口不答	0	bikoubuda
 閉合	100	bihe
