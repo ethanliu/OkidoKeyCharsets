@@ -7950,7 +7950,6 @@
 駁斥	100	bokcik
 駁長	100	bokcoeng
 博彩	100	bokcoi
-搏彩	100	bokcoi
 博大	100	bokdaai
 搏大膽	100	bokdaaidaam
 博大霧	100	bokdaaimou
@@ -7961,7 +7960,6 @@
 博德	100	bokdak
 博德利圖書館	100	bokdakleitousyugun
 博登湖	100	bokdangwu
-博鬥	100	bokdau
 搏鬥	100	bokdau
 搏屌	100	bokdiu
 駁倒	100	bokdou
@@ -7969,7 +7967,6 @@
 博導	100	bokdou
 駁渡	100	bokdou
 駁艔	100	bokdou
-博動	100	bokdung
 搏動	100	bokdung
 駁髮	100	bokfaat
 博科聖地	100	bokfosingdei
@@ -8024,7 +8021,6 @@
 博爾頓	100	bokjideon
 博爾赫斯	100	bokjihaaksi
 博爾塔拉蒙古自治州	100	bokjitaaplaaimungguzizizau
-博奕	100	bokjik
 博弈	100	bokjik
 博弈論	100	bokjikleon
 博拉	100	boklaai
@@ -45719,7 +45715,7 @@
 敬賢禮士	100	gingjinlaisi
 敬業	100	gingjip
 敬業福	100	gingjipfuk
-敬業樂羣	100	gingjiplokkwan
+敬業樂羣	100	gingjipngaaukwan
 敬業精神	100	gingjipzingsan
 敬若神明	100	gingjoeksanming
 敬仰	100	gingjoeng
@@ -54456,7 +54452,7 @@
 敲鑼	100	haaulo
 烤爐	100	haaulou
 烤麪包	100	haauminbaau
-烤面包機	100	haauminbaaugei
+烤麪包機	100	haauminbaaugei
 哮鳴	100	haauming
 酵母	100	haaumou
 酵母菌	100	haaumoukwan
@@ -60070,7 +60066,7 @@
 開天辟地	100	hoitinpikdei
 開天闢地	100	hoitinpikdei
 開天索價	100	hoitinsaakgaa
-開天索價，落地還錢	100	hoitinsaaklokdeiwaancin
+開天索價，落地還錢	100	hoitinsaakgaalokdeiwaancin
 開天殺價落地還錢	100	hoitinsaatgaalokdeiwaancin
 開天索價	100	hoitinsokgaa
 開天索價落地還錢	100	hoitinsokgaalokdeiwaancin
@@ -65587,7 +65583,6 @@
 一下子	100	jathaazi
 一下子	100	jathaazi
 一蟹不如一蟹	100	jathaaibatjyujathaai
-一蟹不如蟹	100	jathaaibatjyujathaai
 一刻	100	jathaak
 一係	100	jathai
 一系列	100	jathailit
@@ -68938,7 +68933,7 @@
 醫護人員	100	jiwujanjyun
 依偎	100	jiwui
 姨仔	100	jizai
-咿陣	100	jizansi
+咿陣	100	jizan
 咿陣時	100	jizansi
 伊州	100	jizau
 衣袖	100	jizau
@@ -89017,7 +89012,6 @@
 唔使緊	100	msaigan
 唔使驚	100	msaigeng
 唔使講	100	msaigong
-唔洗講	100	msaigong
 唔使客氣	100	msaihaakhei
 唔使恨	100	msaihan
 唔使一陣	100	msaijatzan
@@ -89033,7 +89027,6 @@
 唔駛問亞貴	100	msaimanaagwai
 唔使審	100	msaisam
 唔使死	100	msaisei
-唔洗死	100	msaisei
 唔使送	100	msaisung
 唔使送啊	100	msaisungaa
 唔使搵	100	msaiwan
@@ -128150,7 +128143,6 @@
 彖辭	100	teonci
 盾牌	100	teonpaai
 盾牌座	100	teonpaaizo
-丅裇	100	tiseot
 剔除	100	tikceoi
 剔出	100	tikceot
 剔號	100	tikhou
@@ -128394,11 +128386,11 @@
 天光大白	100	tingwongdaaibaak
 天光墟	100	tingwongheoi
 天光星	100	tingwongsing
-天下興亡，匹夫有責	100	tinhaahingmongpatfujauzaak
 天下	100	tinhaa
 天下本無事，庸人自擾之	100	tinhaabunmousijungjanzijiuzi
 天下大亂	100	tinhaadaailyun
 天下第一	100	tinhaadaijat
+天下興亡	100	tinhaahingmong
 天下興亡，匹夫有責	100	tinhaahingmongpatfujauzaak
 天下一家	100	tinhaajatgaa
 天下文章一大抄	100	tinhaamanzoengjatdaaicaau
@@ -131655,7 +131647,6 @@
 同路人	100	tungloujan
 銅綠	100	tungluk
 同埋	100	tungmaai
-衕埋	100	tungmaai
 同埋一齊	100	tungmaaijatcai
 同文風	100	tungmanfung
 同文館	100	tungmangun
