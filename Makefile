@@ -71,6 +71,12 @@ all: keyboard table db lexicon gitee
 clean:
 	@echo "clean all...."
 
+sync:
+	cp DataTables.json ../src/baker/baker/Supporting\ Files/
+	cp KeyMapping.json ../src/baker/baker/Supporting\ Files/
+	cp KeyboardLayouts.json ../src/baker/baker/Supporting\ Files/
+	cp Lexicon.json ../src/baker/baker/Supporting\ Files/
+
 moe:
 	@$(call timeStart)
 	@${PHP} bin/make.php -c moe-concised rawdata/moe/dict_concised.csv > lexicon/MoE-Concised.csv
