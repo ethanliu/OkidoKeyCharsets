@@ -176,6 +176,11 @@ array:
 	@${PHP} bin/make.php -d table/array30_OkidoKey.cin
 	@$(call timeStop)
 
+array-phrase:
+	@${PHP} bin/make.php -c array-phrase rawdata/array30/array30-phrase-20210725.txt > lexicon/array30-phrase.csv
+	@-rm db/lexicon-array30-phrase.csv.db
+	@${PHP} bin/make.php -m lexicon/array30-phrase.csv
+
 ov:
 	@echo "Update OpenVanilla Cantonese"
 	$(eval REPOPATH := rawdata/openvanilla)
