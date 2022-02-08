@@ -8,9 +8,37 @@
  * @package module
  */
 
+
+if ($mode == 'phrase') {
+	parsePhrase($srcPath);
+}
+else {
+	cloneFiles($rootPath, $srcPath);
+}
+
+function parsePhrase($srcPath) {
+	$raw = explode("\n", file_get_contents($srcPath));
+
+	foreach ($raw as $line) {
+		$line = trim($line);
+		// $row = explode(" ", $line);
+		$row = preg_split('/\s+/', $line);
+
+		$pinyin = array_shift($row) ?? "";
+		$phrase = array_shift($row) ?? "";
+		$weight = 0;
+
+		if (empty($phrase)) {
+			continue;
+		}
+
+		echo $phrase . "\t" . $weight . "\t" . $pinyin . "\n";
+	}
+}
+
+
 // echo $srcPath;
 // echo $rootPath;
-cloneFiles($rootPath, $srcPath);
 
 function cloneFiles($rootPath, $srcPath) {
 

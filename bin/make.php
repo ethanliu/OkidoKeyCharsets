@@ -195,6 +195,11 @@ class Builder {
 					$mode = "phrase";
 					$toneless = true;
 				break;
+				case 'array-phrase':
+					$modulePath = __DIR__ . "/module/mod_array.php";
+					$mode = "phrase";
+				break;
+
 				default:
 					$modulePath = __DIR__ . "/module/mod_{$params['c']}.php";
 				break;
