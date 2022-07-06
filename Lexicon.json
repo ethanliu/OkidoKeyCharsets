@@ -1,5 +1,5 @@
 {
-    "version": "20220215144752",
+    "version": "20220706190507",
     "resources": [
         {
             "name": "结巴中文分词(简体)",
@@ -54,7 +54,7 @@
             "gitee": 1
         },
         "lexicon-Rime-cantonese.csv.db": {
-            "gitee": 10
+            "gitee": 1
         },
         "lexicon-array30-phrase.csv.db": {
             "gitee": 4
