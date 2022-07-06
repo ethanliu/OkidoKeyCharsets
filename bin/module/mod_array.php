@@ -9,6 +9,7 @@
  */
 
 
+$mode = $mode ?? '';
 if ($mode == 'phrase') {
 	parsePhrase($srcPath);
 }
