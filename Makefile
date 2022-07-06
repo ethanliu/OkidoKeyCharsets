@@ -15,7 +15,8 @@ define SYNOPSIS
 @echo "	lexicon - Build all lexicon databases"
 @echo "	table - Generate DataTables.json"
 @echo "Modules:"
-@echo "	array - Update Array30"
+@echo "	array10 - Update Array10"
+@echo "	array30 - Update Array30"
 @echo "	bossy - Build custom boshiamy table"
 @echo "	ghcm - Update ghcm data table"
 @echo "	gitee - Split all db files for Gitee repo"
@@ -166,7 +167,18 @@ bossy:
 	@${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/bossy.cin
 	@$(call timeStop)
 
-array:
+array10:
+	@cd rawdata/array10; git pull
+	@$(call timeStart)
+	@bin/lime2cin.py -H table/array10a-header.cin -O table/array10a.cin rawdata/array10/LIME/array10a-20220321.lime
+	@bin/lime2cin.py -H table/array10b-header.cin -O table/array10b.cin rawdata/array10/LIME/array10b-20220321.lime
+	@-rm db/array10a.cin.db
+	@-rm db/array10b.cin.db
+	@${PHP} bin/make.php -d table/array10a.cin
+	@${PHP} bin/make.php -d table/array10b.cin
+	@$(call timeStop)
+
+array30:
 	@cd rawdata/array30; git pull
 	@$(call timeStart)
 	@${PHP} bin/make.php -c array rawdata/array30
