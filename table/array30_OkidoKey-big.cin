@@ -1,9 +1,9 @@
 %gen_inp
 #######################################################################
 #                                                                     #
-#  array30.cin 大字集版 for OkidoKey (v0.93), 2021-08-04              #
+#  array30.cin 大字集版 for OkidoKey (v0.94), 2022-03-21              #
 #                                                                     #
-#  這個輸入法表格內容與 array30.cin for OpenVanilla v0.91 相同，只為  #
+#  這個輸入法表格內容與 array30.cin for OpenVanilla v0.94 相同，只為  #
 #  便於區別，更改 %ename 和 %cname 的定義詞而已。                     #
 #                                                                     #
 #  本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU       #
@@ -84134,6 +84134,7 @@ fcq,i	𫊓
 frl,i	𫊔
 ffkxi	𫊕
 flaxi	𫊕
+fuyei	𫊖
 fqdui	𫊗
 fpfdi	𫊘
 fizhi	𫊙
