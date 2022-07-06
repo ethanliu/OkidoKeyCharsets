@@ -44,6 +44,8 @@ class Builder {
 		'_demo.cin',
 		'array-shortcode.cin',
 		'array-special.cin',
+		'array10a-header.cin',
+		'array10b-header.cin',
 		// 'array30.cin',
 		'array30_OkidoKey-big.cin',
 		// 'bpmf-cns.cin',
