@@ -63,7 +63,12 @@ lexicon:
 	@${PHP} bin/make.php -m
 
 emoji:
-	@${PHP} bin/make.php -e
+	@bin/emoji.py --update
+	@$(call timeStart)
+	@bin/emoji.py
+	@$(call timeStop)
+	cp tmp/emoji.db ../src/baker/baker/Supporting\ Files/
+	@-rm tmp/emoji.db
 
 pull: array jyutping ghcm mcbpmf ov tongwen jieba
 
