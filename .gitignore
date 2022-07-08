@@ -8,5 +8,7 @@ rawdata/McBopomofo
 rawdata/openvanilla
 rawdata/rime-cantonese
 rawdata/tongwen-core
+rawdata/cldr-json
+rawdata/emoji
 tmp.*
 tmp

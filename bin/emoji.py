@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.0.3
 # autor: Ethan Liu
 #
 # all about emoji
+# since all we need for emoji are only a few files
+# using the whole repo is kinda heavy, download individual file instead
 #
 # refs:
 # https://github.com/unicode-org/cldr-json
@@ -21,32 +23,55 @@ import sqlite3
 # import certifi
 # import codecs
 
+# REPO_PATH = os.path.realpath(os.path.dirname(__file__) + '/../rawdata/cldr-json/cldr-json')
+
 COMMON_WORDS_LIST = ['skin tone', '皮膚', '肤色']
 
-def updateResources():
-    package = "cldr-annotations-derived-full"
-    langs = ['en', 'zh-Hant', 'zh']
+PACKAGES_LIST = [
+    'cldr-annotations-derived-full/annotationsDerived/{}/annotations.json',
+    'cldr-annotations-full/annotations/{}/annotations.json',
+]
 
+LANGS = ['en', 'zh-Hant', 'zh']
+
+def updateResources(basedir):
+    baseurl = 'https://github.com/unicode-org/cldr-json/raw/main/cldr-json'
     pool = urllib3.PoolManager()
 
-    for lang in langs:
-        url = 'https://github.com/unicode-org/cldr-json/raw/main/cldr-json/{}/annotationsDerived/{}/annotations.json'.format(package, lang)
-        path = 'tmp/emoji-cldr-{}.json'.format(lang)
+    for package in PACKAGES_LIST:
+        for lang in LANGS:
+            url = f"{baseurl}/{package}".format(lang)
+            path = basedir + '/' + f"{package}".format(lang).replace('/', '_')
 
-        # req = requests.get(url, verify=False)
-        # open(path, 'w').write(req.text)
+            print('download: ' + path)
+            with pool.request('GET', url, preload_content=False) as res, open(path, 'wb') as f:
+                shutil.copyfileobj(res, f)
 
-        print('download: ' + path)
-        with pool.request('GET', url, preload_content=False) as res, open(path, 'wb') as f:
-            shutil.copyfileobj(res, f)
+            res.release_conn()
+    print("Update finished")
 
-        res.release_conn()
-        # print('download: ' + url + '\n' + path)
+def charToLongHex(emoji):
+    codes = emoji.encode('unicode-escape').decode('ascii')
+    codes = list(filter(None, re.split(r'\\U|\\x', codes, flags=re.IGNORECASE)))
+    # print(emoji, codes, path),
 
-    sys.exit(0)
+    for index, code in enumerate(codes):
+        try:
+            v = int(code, 16)
+        except ValueError:
+            # print("Ignore annotation: ", emoji, codes)
+            # continue
+            # break
+            return None
 
-def parse(lang, cursor):
-    path = "tmp/emoji-cldr-{}.json".format(lang)
+        v = f"{v:08x}"
+        codes[index] = v
+
+    codes = ' '.join(codes).upper()
+    return codes
+
+
+def parse(cursor, path):
     file = open(path, 'r')
     data = json.load(file)
     file.close()
@@ -55,14 +80,22 @@ def parse(lang, cursor):
     # cursor.execute("INSERT INTO info VALUES (?, ?)", ("version", version))
     # cursor.execute("BEGIN TRANSACTION")
 
-    count = 0
+    node = None
+    # count = 0
 
-    for emoji in data['annotationsDerived']['annotations']:
-        codes = emoji.encode('unicode-escape').decode('ascii')
-        # codes = list(filter(None, codes.split('\\U')))
-        codes = list(filter(None, re.split(r'\\U', codes, flags=re.IGNORECASE)))
-        codes = ' '.join(codes).upper()
-        # print(codes)
+    if 'annotationsDerived' in data:
+        node = data['annotationsDerived']['annotations']
+    elif 'annotations' in data:
+        node = data['annotations']['annotations']
+    else:
+        print("node not found: " + path)
+        return
+
+    for emoji in node:
+        codes = charToLongHex(emoji)
+        if codes == None:
+            print("skip: ", emoji)
+            continue;
 
         # chardef
         cursor.execute("SELECT rowid FROM chardef WHERE char = ? LIMIT 1", (codes,))
@@ -78,12 +111,12 @@ def parse(lang, cursor):
         # print('#{} -> {}'.format(chardefId, codes))
 
         # an quick but unsafe check but since prefix is all we need here
-        if not 'default' in data['annotationsDerived']['annotations'][emoji]:
+        if not 'default' in node[emoji]:
             # print("emoji: {} has no keywords".format(emoji))
             continue
 
-        keywords = data['annotationsDerived']['annotations'][emoji]['default']
-        # print(emoji, data['annotationsDerived']['annotations'][emoji])
+        keywords = node[emoji]['default']
+        # print(emoji, node[emoji])
 
         # print(keywords)
         for keyword in keywords:
@@ -100,7 +133,6 @@ def parse(lang, cursor):
             else:
                 cursor.execute("INSERT INTO keydef VALUES (:value)", {'value': keyword})
                 keydefId = cursor.lastrowid
-                count += 1
 
             # entry pivot
             if keydefId > 0 and chardefId > 0:
@@ -113,23 +145,9 @@ def parse(lang, cursor):
         #     break
 
     # cursor.execute("COMMIT TRANSACTION")
-    print("{}: {} keywords".format(lang, count))
+    # print("{}: {} keywords".format(lang, count))
 
-
-def main():
-    argParser = argparse.ArgumentParser(description='emoji utility')
-    # argParser.add_argument('output', default='tmp/emoji.db', help='output file path')
-    argParser.add_argument('--update', action=argparse.BooleanOptionalAction, help='Update emoji cldr json files')
-
-    args = argParser.parse_args()
-    # print(args)
-
-    if args.update:
-        updateResources()
-
-
-    dbPath = 'tmp/emoji.db'
-
+def performImport(repoPath, dbPath):
     if os.path.isfile(dbPath):
         os.remove(dbPath)
 
@@ -137,18 +155,99 @@ def main():
     cursor = db.cursor()
 
     cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
-    # cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
-    parse('zh-Hant', cursor)
-    parse('en', cursor)
-    parse('zh', cursor)
+    for package in PACKAGES_LIST:
+        for lang in LANGS:
+            # path = f"{args.repo}/{package}".format(lang)
+            path = repoPath + '/' + f"{package}".format(lang).replace('/', '_')
+            # print(path)
+            if not os.path.isfile(path):
+                print('path not found: ' + path)
+                continue
+            parse(cursor, path)
 
     db.commit()
+
+    cursor.execute("SELECT COUNT(*) FROM chardef")
+    characterCounter = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM keydef")
+    keywordsCounter = cursor.fetchone()[0]
+
     db.close()
-    print("emoji db: " + dbPath)
+
+    print("\noutput: " + dbPath)
+    print("chardef: {}, keydef: {}".format(characterCounter, keywordsCounter))
+
+
+def test(phrase, dbPath):
+    if not os.path.isfile(dbPath):
+        sys.exit("File not found")
+
+    db = sqlite3.connect(dbPath)
+    cursor = db.cursor()
+
+    if phrase == 'emoji':
+        cursor.execute("SELECT * FROM chardef WHERE rowid In (SELECT rowid FROM chardef ORDER BY RANDOM() LIMIT 100)")
+        result = cursor.fetchall()
+
+        if not result:
+            return
+
+        for item in result:
+            codes = r'\U' + r'\U'.join(item[0].split(' '))
+            print(codes.encode('utf8').decode('unicode-escape'), end = ' '),
+        print('')
+
+    else:
+        # cursor.execute("SELECT * FROM keydef WHERE rowid IN (SELECT rowid FROM keydef ORDER BY RANDOM() LIMIT 10)")
+        cursor.execute("SELECT * FROM keydef WHERE key LIKE :phrase", {'phrase': '%' + phrase + '%'})
+
+        result = cursor.fetchall()
+
+        if not result:
+            print("No result for phrase: ", phrase)
+            return
+
+        for item in result:
+            print(item[0])
+
+    db.close()
+    # print("\nEnd of test")
+
+def main():
+    argParser = argparse.ArgumentParser(description='emoji utility')
+    argParser.add_argument('--update', action=argparse.BooleanOptionalAction, help='Update emoji cldr json files')
+    argParser.add_argument('--run', action=argparse.BooleanOptionalAction, help='Run import')
+    argParser.add_argument('-path', default='tmp/emoji.db', help='Output db file path')
+    argParser.add_argument('-repo', default='rawdata/emoji', help='Repo path')
+    argParser.add_argument('-test', default='', help='Test keyword')
+
+    args = argParser.parse_args()
+    # print(args, len(sys.argv))
+    if len(sys.argv) < 2:
+        argParser.print_usage()
+        sys.exit(0)
+
+    if not os.path.exists(args.repo):
+        sys.exit("Path not found: " + args.repo)
+
+    if args.update:
+        updateResources(args.repo)
+        sys.exit(0)
+
+    if args.test:
+        if not os.path.isfile(args.path):
+            print("File not found: ", args.path)
+        else:
+            test(args.test, args.path)
+        sys.exit(0)
+
+    if args.run:
+        performImport(args.repo, args.path);
 
     sys.exit(0)
 

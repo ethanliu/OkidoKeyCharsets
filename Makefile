@@ -63,9 +63,9 @@ lexicon:
 	@${PHP} bin/make.php -m
 
 emoji:
-	@bin/emoji.py --update
 	@$(call timeStart)
-	@bin/emoji.py
+	# @bin/emoji.py --update -path tmp/emoji.db -repo rawdata/emoji
+	@bin/emoji.py --run -path tmp/emoji.db -repo rawdata/emoji
 	@$(call timeStop)
 	cp tmp/emoji.db ../src/baker/baker/Supporting\ Files/
 	@-rm tmp/emoji.db
