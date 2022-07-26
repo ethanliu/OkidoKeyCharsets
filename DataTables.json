@@ -1,5 +1,5 @@
 {
-    "version": "20220706190507",
+    "version": "20220726182303",
     "datatables": [
         {
             "ename": "array10a",
@@ -7,7 +7,7 @@
             "name": "",
             "cin": "table/array10a.cin",
             "db": "db/array10a.cin.db",
-            "license": "build: 2022/07/06 18:25:11\nPlease visit https://github.com/gontera/array10 for more information"
+            "license": "build: 2022/07/26 18:22:27\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10"
         },
         {
             "ename": "array10b",
@@ -15,7 +15,7 @@
             "name": "",
             "cin": "table/array10b.cin",
             "db": "db/array10b.cin.db",
-            "license": "build: 2022/07/06 18:25:11\nPlease visit https://github.com/gontera/array10 for more information"
+            "license": "build: 2022/07/26 18:22:27\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10"
         },
         {
             "ename": "array26",
@@ -167,7 +167,7 @@
             "name": "",
             "cin": "table/ghcm.cin",
             "db": "db/ghcm.cin.db",
-            "license": "矧码 (ghcm)\nhttps://github.com/zeylei/ghcm\n\n方案名称：矧码\n方案作者：矧可射思\n更新日期：2022-07-06\n\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n\n==========\n\n此 cin 表格由 SM.dict.yaml 转换\n由于部份符号为 rime 另行定义，因此未能直接于 cin 表格中实现，此档仅包含「,」键符号。\n而「i」键原定义为直出「，」而非字根，但为统一输入行为，仍先将「i」键列为字根。"
+            "license": "矧码 (ghcm)\nhttps://github.com/zeylei/ghcm\n\n方案名称：矧码\n方案作者：矧可射思\n更新日期：2022-07-25\n\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n\n==========\n\n此 cin 表格由 SM.dict.yaml 转换\n由于部份符号为 rime 另行定义，因此未能直接于 cin 表格中实现，此档仅包含「,」键符号。\n而「i」键原定义为直出「，」而非字根，但为统一输入行为，仍先将「i」键列为字根。"
         },
         {
             "ename": "jidianWubi (JiDianWubi)",

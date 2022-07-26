@@ -21,20 +21,31 @@ foreach ($filenames as $path) {
 	}
 
 	$table = new TableReader($path, true);
+	$license = trim($table->description);
+	// $link = "";
+	//
+	// $re = '#\bhttps?://[^,\s()<>]+(?:\([\w\d]+\)|([^,[:punct:]\s]|/))#mi';
+	// preg_match($re, $license, $matches);
+	// if ($matches) {
+	// 	$link = trim($matches[0]);
+	// }
+
 	$item = [
 		'ename' => $table->info['ename'] ?? '',
 		'cname' => $table->info['cname'] ?? '',
 		'name' => $table->info['name'] ?? '',
 		'cin' => "table/{$filename}",
 		'db' => "db/{$filename}.db",
-		'license' => trim($table->description),
+		'license' => $license,
+		// 'link' => $link,
 	];
 
 	$result['datatables'][] = $item;
 
 	// init splits
 	// $result['splits'][$filename] = ["github" => 0, "gitee" => 0];
-	$result['splits'][$filename] = [];
+	// to ensure the correct json formating
+	$result['splits'][$filename] = ["gitee" => 0];
 
 	echo "Add: {$filename} -> {$item['ename']} {$item['cname']}\n";
 }

@@ -11,7 +11,7 @@
 
 include __DIR__ . "/database.php";
 include __DIR__ . "/portable-utf8.php";
-include __DIR__ . "/EmojiReader.php";
+// include __DIR__ . "/EmojiReader.php";
 include __DIR__ . "/TableReader.php";
 
 

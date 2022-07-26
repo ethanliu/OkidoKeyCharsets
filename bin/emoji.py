@@ -40,10 +40,10 @@ def updateResources(basedir):
 
     for package in PACKAGES_LIST:
         for lang in LANGS:
-            url = f"{baseurl}/{package}".format(lang)
-            path = basedir + '/' + f"{package}".format(lang).replace('/', '_')
+            url = f"{baseurl}/{package.format(lang)}"
+            path = f"{basedir}/{package.format(lang).replace('/', '_')}"
 
-            print('download: ' + path)
+            print(f"Download: {path}")
             with pool.request('GET', url, preload_content=False) as res, open(path, 'wb') as f:
                 shutil.copyfileobj(res, f)
 
@@ -94,7 +94,7 @@ def parse(cursor, path):
     for emoji in node:
         codes = charToLongHex(emoji)
         if codes == None:
-            print("skip: ", emoji)
+            print(f"Skip: {emoji}")
             continue;
 
         # chardef
@@ -162,10 +162,10 @@ def performImport(repoPath, dbPath):
     for package in PACKAGES_LIST:
         for lang in LANGS:
             # path = f"{args.repo}/{package}".format(lang)
-            path = repoPath + '/' + f"{package}".format(lang).replace('/', '_')
+            path = f"{repoPath}/{package.format(lang).replace('/', '_')}"
             # print(path)
             if not os.path.isfile(path):
-                print('path not found: ' + path)
+                print(f"Path not found: {path}")
                 continue
             parse(cursor, path)
 
@@ -179,9 +179,13 @@ def performImport(repoPath, dbPath):
 
     db.close()
 
-    print("\noutput: " + dbPath)
-    print("chardef: {}, keydef: {}".format(characterCounter, keywordsCounter))
+    print(f"\nOutput: {dbPath}")
+    print(f"Counter: chardef: {characterCounter}, keydef: {keywordsCounter}")
 
+def emojilized(hexString):
+    codes = r'\U' + r'\U'.join(hexString.split(' '))
+    codes = codes.encode('utf8').decode('unicode-escape')
+    return codes
 
 def test(phrase, dbPath):
     if not os.path.isfile(dbPath):
@@ -198,13 +202,14 @@ def test(phrase, dbPath):
             return
 
         for item in result:
-            codes = r'\U' + r'\U'.join(item[0].split(' '))
-            print(codes.encode('utf8').decode('unicode-escape'), end = ' '),
+            emoji = emojilized(item[0])
+            print(emoji, end = ' '),
         print('')
 
     else:
         # cursor.execute("SELECT * FROM keydef WHERE rowid IN (SELECT rowid FROM keydef ORDER BY RANDOM() LIMIT 10)")
-        cursor.execute("SELECT * FROM keydef WHERE key LIKE :phrase", {'phrase': '%' + phrase + '%'})
+        # cursor.execute("SELECT * FROM keydef WHERE key LIKE :phrase", {'phrase': '%' + phrase + '%'})
+        cursor.execute("select distinct chardef.char, keydef.key from keydef, chardef, entry where 1 AND  (keydef.key like ? or keydef.key like ? or keydef.key like ? or keydef.key like ?) and keydef.ROWID = entry.keydef_id and chardef.ROWID = entry.chardef_id", [phrase, f'% {phrase} %', f'%{phrase} %', f'% {phrase}%'])
 
         result = cursor.fetchall()
 
@@ -213,7 +218,7 @@ def test(phrase, dbPath):
             return
 
         for item in result:
-            print(item[0])
+            print(emojilized(item[0]), item[1])
 
     db.close()
     # print("\nEnd of test")
@@ -233,7 +238,7 @@ def main():
         sys.exit(0)
 
     if not os.path.exists(args.repo):
-        sys.exit("Path not found: " + args.repo)
+        sys.exit(f"Path not found: {args.repo}")
 
     if args.update:
         updateResources(args.repo)
