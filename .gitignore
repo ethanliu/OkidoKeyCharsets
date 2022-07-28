@@ -10,5 +10,6 @@ rawdata/rime-cantonese
 rawdata/tongwen-core
 rawdata/cldr-json
 rawdata/emoji
+rawdata/moe/src
 tmp.*
 tmp
