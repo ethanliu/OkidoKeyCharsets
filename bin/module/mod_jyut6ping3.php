@@ -219,14 +219,14 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 			continue;
 		}
 
-		if ($line === "# 詞彙") {
-			$parsing = true;
-			continue;
-		}
+		// if ($line === "# 詞彙") {
+		// 	$parsing = true;
+		// 	continue;
+		// }
 
-		if (!$parsing) {
-			continue;
-		}
+		// if (!$parsing) {
+		// 	continue;
+		// }
 
 		$line = trim(preg_replace('/#(.?)*/', '', $line));
 		if (empty($line)) {
@@ -234,7 +234,7 @@ function parsePhrase($raw, $toneless, $wordcountPath = '') {
 		}
 
 		$row = explode("\t", $line);
-		if (empty($row)) {
+		if (empty($row) || count($row) < 2) {
 			continue;
 		}
 
@@ -287,7 +287,7 @@ https://github.com/rime/rime-cantonese
 
 關於本詞庫
 =========
-本詞庫使用 Rime 粵語拼音方案 jyut6ping3.dict.yaml 版本 {$version}。
+本詞庫使用 Rime 粵語拼音方案 jyut6ping3.words.dict.yaml 版本 {$version}。
 取其詞彙內容，拼音轉為無調號不含空格格式，及詞頻規則轉換為比重數字。
 轉換後的 CSV 有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。
 ";
