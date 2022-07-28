@@ -154,15 +154,13 @@ jyutping:
 	@$(call timeStart)
 	@${PHP} bin/make.php -c jyut6ping3 rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3.cin
 	@${PHP} bin/make.php -c jyut6ping3-toneless rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3-toneless.cin
-	@${PHP} bin/make.php -c jyut6ping3-phrase rawdata/rime-cantonese/jyut6ping3.dict.yaml > lexicon/Rime-cantonese.csv
+	@${PHP} bin/make.php -c jyut6ping3-phrase rawdata/rime-cantonese/jyut6ping3.words.dict.yaml > lexicon/Rime-cantonese.csv
 	@-rm db/jyut6ping3.cin.db
 	@-rm db/jyut6ping3-toneless.cin.db
 	@-rm db/lexicon-Rime-cantonese.csv.db
 	@${PHP} bin/make.php -d table/jyut6ping3.cin table/jyut6ping3-toneless.cin
 	@${PHP} bin/make.php -m lexicon/Rime-cantonese.csv
 	@$(call timeStop)
-	@#make db
-	@#make lexicon
 
 ghcm:
 	@cd rawdata/ghcm; git pull
