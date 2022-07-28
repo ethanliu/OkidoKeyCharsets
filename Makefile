@@ -23,6 +23,7 @@ define SYNOPSIS
 @echo "	jieba - Update Jieba lexicon"
 @echo "	jyutping - Update rime-cantonese"
 @echo "	mcbpmf - Update McBopomofo lexicon"
+@echo "	moecsv - Convert CSV from XLS"
 @echo "	moe - Build MoE lexicon"
 @echo "	ov - Update OpenVanilla jyutping data table"
 @echo ""
@@ -45,9 +46,6 @@ usage:
 
 test:
 	@$(call timeStart)
-#	@${PHP} bin/make.php -c rime rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/hangulromaja.rime
-#	@${PHP} bin/make.php -c rime rawdata/boshiamy/boshiamy_j.cin > rawdata/boshiamy/boshiamy_j.rime
-#	@${PHP} bin/make.php -c diff table/array30.cin table/array30_OkidoKey-big.cin
 	@$(call timeStop)
 
 keyboard:
@@ -83,18 +81,59 @@ sync:
 	cp KeyboardLayouts.json ../src/baker/baker/Supporting\ Files/
 	cp Lexicon.json ../src/baker/baker/Supporting\ Files/
 
+moecsv:
+	@$(call timeStart)
+	$(eval version := 2015_20210330)
+	@echo "Convert: revised ${version}..."
+	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_1.xls > rawdata/moe/revised1-raw.csv
+	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_2.xls > rawdata/moe/revised2-raw.csv
+	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_3.xls > rawdata/moe/revised3-raw.csv
+	@csvstack rawdata/moe/revised1-raw.csv rawdata/moe/revised2-raw.csv rawdata/moe/revised3-raw.csv > rawdata/moe/revised-raw.csv
+	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/revised-raw.csv > rawdata/moe/revised.csv
+	@-rm rawdata/moe/revised-raw.csv
+	@-rm rawdata/moe/revised1-raw.csv
+	@-rm rawdata/moe/revised2-raw.csv
+	@-rm rawdata/moe/revised3-raw.csv
+	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-revised.csv.txt
+
+	$(eval version := 2020_20210329)
+	@echo "Convert: idioms ${version}..."
+	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/idioms-raw.csv
+	@csvcut -c 編號,成語,注音,漢語拼音 rawdata/moe/idioms-raw.csv > rawdata/moe/idioms.csv
+	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-idioms.csv.txt
+	@-rm rawdata/moe/idioms-raw.csv
+
+	$(eval version := 2014_20210329)
+	@echo "Convert: concised ${version}..."
+	@in2csv rawdata/moe/src/dict_concised_${version}.xls > rawdata/moe/concised-raw.csv
+	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/concised-raw.csv > rawdata/moe/concised.csv
+	@-rm rawdata/moe/concised-raw.csv
+	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-concised.csv.txt
+	@$(call timeStop)
+
 moe:
 	@$(call timeStart)
-	@${PHP} bin/make.php -c moe-concised rawdata/moe/dict_concised.csv > lexicon/MoE-Concised.csv
-	@${PHP} bin/make.php -c moe-idoms rawdata/moe/dict_idioms.csv > lexicon/MoE-Idioms.csv
-	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_1.csv > lexicon/MoE-Revised.csv
-	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_2.csv >> lexicon/MoE-Revised.csv
-	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_3.csv >> lexicon/MoE-Revised.csv
-	@-rm db/lexicon-MoE-Concised.csv.db
-	@-rm db/lexicon-MoE-Idioms.csv.db
-	@-rm db/lexicon-MoE-Revised.csv.db
-	@${PHP} bin/make.php -m lexicon/MoE-Concised.csv lexicon/MoE-Idioms.csv lexicon/MoE-Revised.csv
+	@bin/moe.py -o lexicon/MoE-concised.csv rawdata/moe/concised.csv
+	@bin/moe.py -o lexicon/MoE-idioms.csv rawdata/moe/idioms.csv
+	@bin/moe.py -o lexicon/MoE-revised.csv rawdata/moe/revised.csv
+	@-rm db/lexicon-MoE-concised.csv.db
+	@-rm db/lexicon-MoE-idioms.csv.db
+	@-rm db/lexicon-MoE-revised.csv.db
+	@${PHP} bin/make.php -m lexicon/MoE-concised.csv lexicon/MoE-idioms.csv lexicon/MoE-revised.csv
 	@$(call timeStop)
+
+# moe_php:
+# 	@$(call timeStart)
+# 	@${PHP} bin/make.php -c moe-concised rawdata/moe/dict_concised.csv > lexicon/MoE-Concised.csv
+# 	@${PHP} bin/make.php -c moe-idoms rawdata/moe/dict_idioms.csv > lexicon/MoE-Idioms.csv
+# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_1.csv > lexicon/MoE-Revised.csv
+# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_2.csv >> lexicon/MoE-Revised.csv
+# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_3.csv >> lexicon/MoE-Revised.csv
+# 	@-rm db/lexicon-MoE-Concised.csv.db
+# 	@-rm db/lexicon-MoE-Idioms.csv.db
+# 	@-rm db/lexicon-MoE-Revised.csv.db
+# 	@${PHP} bin/make.php -m lexicon/MoE-Concised.csv lexicon/MoE-Idioms.csv lexicon/MoE-Revised.csv
+# 	@$(call timeStop)
 
 jieba:
 	@cd rawdata/jieba; git pull
