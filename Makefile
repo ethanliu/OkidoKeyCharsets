@@ -122,19 +122,6 @@ moe:
 	@${PHP} bin/make.php -m lexicon/MoE-concised.csv lexicon/MoE-idioms.csv lexicon/MoE-revised.csv
 	@$(call timeStop)
 
-# moe_php:
-# 	@$(call timeStart)
-# 	@${PHP} bin/make.php -c moe-concised rawdata/moe/dict_concised.csv > lexicon/MoE-Concised.csv
-# 	@${PHP} bin/make.php -c moe-idoms rawdata/moe/dict_idioms.csv > lexicon/MoE-Idioms.csv
-# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_1.csv > lexicon/MoE-Revised.csv
-# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_2.csv >> lexicon/MoE-Revised.csv
-# 	@${PHP} bin/make.php -c moe-revised rawdata/moe/dict_revised_3.csv >> lexicon/MoE-Revised.csv
-# 	@-rm db/lexicon-MoE-Concised.csv.db
-# 	@-rm db/lexicon-MoE-Idioms.csv.db
-# 	@-rm db/lexicon-MoE-Revised.csv.db
-# 	@${PHP} bin/make.php -m lexicon/MoE-Concised.csv lexicon/MoE-Idioms.csv lexicon/MoE-Revised.csv
-# 	@$(call timeStop)
-
 jieba:
 	@cd rawdata/jieba; git pull
 	@$(call timeStart)
