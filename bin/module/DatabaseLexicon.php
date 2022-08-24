@@ -64,7 +64,10 @@ function createDatabase($db, $path) {
 	}
 
 	$db->exec("COMMIT TRANSACTION");
-	$db->exec('vacuum;');
+	$db->exec('vacuum');
+
+	$db->exec('CREATE UNIQUE INDEX pinyin_index ON pinyin (pinyin)');
+	$db->exec('CREATE UNIQUE INDEX lexicon_index ON lexicon (phrase)');
 }
 
 $json = [
