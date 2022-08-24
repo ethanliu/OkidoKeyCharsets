@@ -156,7 +156,22 @@ foreach ($filenames as $path) {
 		$db->exec("COMMIT TRANSACTION");
 	}
 
-	$db->exec('vacuum;');
+	$db->exec('vacuum');
+
+
+	$db->exec("CREATE UNIQUE INDEX info_index ON info (name)");
+	$db->exec("CREATE UNIQUE INDEX keyname_index ON keyname (key)");
+    $db->exec("CREATE UNIQUE INDEX keydef_index ON keydef (key)");
+    $db->exec("CREATE UNIQUE INDEX chardef_index ON chardef (char)");
+    $db->exec("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)");
+
+	if ($isArray) {
+		$db->exec("CREATE UNIQUE INDEX keydef_special_index ON keydef_special (key)");
+		$db->exec("CREATE UNIQUE INDEX keydef_shortcode_index ON keydef_shortcode (key)");
+		$db->exec("CREATE INDEX entry_special_index ON entry_special (keydef_special_id, chardef_id)");
+		$db->exec("CREATE INDEX entry_shortcode_index ON entry_shortcode (keydef_shortcode_id, chardef_id)");
+	}
+
 	$db->close();
 
 	// $db->open();

@@ -1,0 +1,111 @@
+#!/usr/bin/env python
+#
+# version: 1.0.0
+# autor: Ethan Liu
+#
+# some common python class, functions, etc.
+#
+#
+
+import sys
+import subprocess
+
+# class colors:
+#     HEADER = '\033[95m'
+#     OKBLUE = '\033[94m'
+#     OKCYAN = '\033[96m'
+#     OKGREEN = '\033[92m'
+#     WARNING = '\033[93m'
+#     FAIL = '\033[91m'
+#     ENDC = '\033[0m'
+#     BOLD = '\033[1m'
+#     UNDERLINE = '\033[4m'
+
+import re
+import os
+
+class Colors:
+    reset = '\u001b[0m'
+    black = '\u001b[30m'
+    red = '\u001b[31m'
+    green = '\u001b[32m'
+    yellow = '\u001b[33m'
+    blue = '\u001b[34m'
+    magenta = '\u001b[35m'
+    cyan = '\u001b[36m'
+    white = '\u001b[37m'
+
+    # text = '\u001b[0;37m'
+    ok = '\033[94m'
+    cancel = '\033[96m'
+    success = '\033[92m'
+    warning = '\033[93m'
+    fail = '\033[91m'
+
+    def f(self):
+        return 'xxx'
+
+def prompt(q):
+    try:
+        a = input(q + ' ')
+        return a
+    except KeyboardInterrupt:
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+
+#  run system command without content
+def run(args):
+    process = subprocess.run(args)
+    return process
+
+
+#  run system command with content
+def exec(args):
+    process = subprocess.run(args, stdout=subprocess.PIPE, universal_newlines=True)
+    return process
+
+def natsorted(l):
+    convert = lambda text: int(text) if text.isdigit() else text.lower()
+    alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
+    return sorted(l, key=alphanum_key)
+
+def color(text, fg = None):
+    try:
+        code = eval('Colors.' + fg)
+        return code + text + eval('Colors.reset')
+    except:
+        return text
+
+# def color(text, fg = None):
+#     def _code(fg):
+#         try:
+#             code = eval('Colors.' + fg)
+#         except:
+#             # code = eval('Colors.white')
+#             code = None
+#         return code
+
+#     return _code(fg) + text + eval('Colors.reset')
+
+def trim(str, needle = None):
+    # _str = str(str)
+    _str = str
+    if needle:
+        _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
+
+    return _str.strip()
+
+def getOne(cursor, query, args = None):
+    cursor.execute(query, args)
+    result = cursor.fetchone()
+    try:
+        result = result[0]
+    except TypeError:
+        # print("not array")
+        result = result
+        pass
+    else:
+        result = result
+    return result

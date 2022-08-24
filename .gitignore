@@ -13,3 +13,5 @@ rawdata/emoji
 rawdata/moe/src
 tmp.*
 tmp
+.vscode
+bin/lib/__pycache__
