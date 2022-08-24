@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.0.3
 # autor: Ethan Liu
 #
 # generate resources form json
@@ -12,27 +12,6 @@ import sys, os
 import json
 import sqlite3
 
-def importkaomoji(cursor, path):
-    file = open(path, 'r')
-    data = json.load(file)
-    file.close()
-
-    cursor.execute("BEGIN TRANSACTION")
-    for row in data['kaomoji']:
-        cursor.execute("INSERT INTO kaomoji VALUES (?, ?)", (row, ""))
-    cursor.execute("COMMIT TRANSACTION")
-
-def importParentheses(cursor, path):
-    file = open(path, 'r')
-    data = json.load(file)
-    file.close()
-
-    cursor.execute("BEGIN TRANSACTION")
-    for row in data['parentheses']:
-        items = row.split('|')
-        cursor.execute("INSERT INTO parentheses VALUES (?, ?)", (items[0], items[1]))
-    cursor.execute("COMMIT TRANSACTION")
-
 def importSymbol(cursor, path):
     file = open(path, 'r')
     data = json.load(file)
@@ -42,71 +21,98 @@ def importSymbol(cursor, path):
     # items = cursor.fetchall()
 
     cursor.execute("BEGIN TRANSACTION")
-    for category in data["symbols"]:
-        cursor.execute("INSERT INTO symbol_category VALUES (?)", (category,))
+    for category in data["category"]:
+        cursor.execute("INSERT INTO category VALUES (?)", (category,))
         categoryId = cursor.lastrowid
-        for row in data["symbols"][category]:
+        for row in data["symbol"][category]:
             # info = row[1].split('|')
             try:
                 cursor.execute("INSERT INTO symbol VALUES (?, ?, ?)", (categoryId, row[0], row[1]))
             except sqlite3.Error as e:
                 print(e)
-                # print(row)
+                print(row)
     cursor.execute("COMMIT TRANSACTION")
 
+def runTest(path):
+    db = sqlite3.connect(path)
+    cursor = db.cursor()
+
+    prefix = "EXPLAIN QUERY PLAN "
+    # prefix = ""
+
+    tests = [
+        "SELECT s.info FROM symbol AS s LEFT JOIN category AS c ON (c.rowid = s.category_id) WHERE 1 AND c.name = 'parentheses' AND char = '(' LIMIT 1",
+        "SELECT s.char FROM symbol AS s LEFT JOIN category AS c ON (c.rowid = s.category_id) WHERE 1 AND c.name = 'kaomoji' ORDER BY s.rowid",
+        "SELECT s.char FROM symbol AS s LEFT JOIN category AS c ON (c.rowid = s.category_id) WHERE 1 AND c.name != 'kaomoji' AND c.name = 'punctuation' OR s.info LIKE '%arrow%' OR s.info LIKE '%up%' ORDER BY s.rowid",
+    ]
+
+    # for index, code in enumerate(codes):
+    for index, query in enumerate(tests):
+        print(f"Test phase {index + 1}...")
+        cursor.execute(prefix + query)
+        result = cursor.fetchall()
+        print(result)
+
+
+    db.close()
+
 def main():
-    argParser = argparse.ArgumentParser(description='Pack utility')
-    # argParser.add_argument('name', default='', choices=['kaomoji', 'parentheses', 'symbol'], help='package name')
-    argParser.add_argument('path', default='tmp/Character.db', help='Output db file path')
+    argParser = argparse.ArgumentParser(description = 'Character.db Utility')
+    argParser.add_argument('--test', action = argparse.BooleanOptionalAction, help = 'Run test')
+    argParser.add_argument('-i', '--input', type = str, help = 'The file path of symbol.json')
+    argParser.add_argument('output', type = str, help = 'The output file path of Character.db')
 
     args = argParser.parse_args()
     # print(args)
 
+    if args.test:
+        if not os.path.exists(args.output):
+            print(f"File not found: {args.output}")
+            sys.exit(0)
+        runTest(args.output)
+        sys.exit(0)
+
+    if not args.input or not os.path.exists(args.input):
+        print(f"File not found: {args.input}")
+        sys.exit(0)
+
+
     # CharacterDB
     # path = "tmp/Character.db"
-    if os.path.exists(args.path):
-        os.remove(args.path)
+    if os.path.exists(args.output):
+        print(f"Remove existing file: {args.output}")
+        os.remove(args.output)
 
-    db = sqlite3.connect(args.path)
+
+    print(f"Generate new file: {args.output}")
+    db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
     # schema
-    cursor.execute("CREATE TABLE kaomoji (`char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE parentheses (`char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
-    # cursor.execute("CREATE TABLE symbol (`char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE symbol_category (`name` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
+    # cursor.execute("CREATE TABLE category (`name` CHAR(255) UNIQUE NOT NULL)")
+    # cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE category (`name` CHAR(255) NOT NULL)")
+    cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` CHAR(255) NOT NULL, `info` CHAR(255) default '')")
 
-    importkaomoji(cursor, 'lexicon/kaomoji.json')
-    importParentheses(cursor, 'lexicon/parentheses.json')
-    importSymbol(cursor, 'lexicon/symbol.json')
-
-    # if args.name == 'kaomoji':
-    #     importkaomoji(cursor, 'lexicon/kaomoji.json')
-    # elif args.name == 'parentheses':
-    #     importParentheses(cursor, 'lexicon/parentheses.json')
-    # elif args.name == 'symbol':
-    #     # importSymbol(cursor, 'tmp/CharacterDB.sqlite3')
-    #     importSymbol(cursor, 'lexicon/symbol.json')
-    # else:
-    #     argParser.print_usage()
-
-    counters = [0, 0, 0]
-
-    cursor.execute("SELECT COUNT(*) FROM kaomoji")
-    counters[0] = cursor.fetchone()[0]
-
-    cursor.execute("SELECT COUNT(*) FROM parentheses")
-    counters[1] = cursor.fetchone()[0]
-
-    cursor.execute("SELECT COUNT(*) FROM symbol")
-    counters[2] = cursor.fetchone()[0]
-
-    print(f"kaomoji: {counters[0]}")
-    print(f"parentheses: {counters[1]}")
-    print(f"symbol: {counters[2]}")
+    print(f"Importing file: {args.input}")
+    importSymbol(cursor, args.input)
 
     db.commit()
+
+    # index
+    cursor.execute('vacuum')
+    cursor.execute("CREATE UNIQUE INDEX category_name_index ON category (name)")
+    cursor.execute("CREATE UNIQUE INDEX symbol_char_index ON symbol (char)")
+
+    counter = 0
+    cursor.execute("SELECT COUNT(*) FROM symbol")
+    counter = cursor.fetchone()[0]
+
+    # print(f"kaomoji: {counters[0]}")
+    # print(f"parentheses: {counters[1]}")
+    print(f"Total rows: {counter}")
+
+
     db.close()
 
     sys.exit(0)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.3
+# version: 0.0.5
 # autor: Ethan Liu
 #
 # all about emoji
@@ -154,9 +154,9 @@ def performImport(repoPath, dbPath):
     db = sqlite3.connect(dbPath)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE info (`name` CHAR(255) NOT NULL, `value` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) NOT NULL)")
+    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
     for package in PACKAGES_LIST:
@@ -170,6 +170,13 @@ def performImport(repoPath, dbPath):
             parse(cursor, path)
 
     db.commit()
+
+    # index
+    cursor.execute('vacuum')
+    cursor.execute("CREATE UNIQUE INDEX info_index ON info (name)")
+    cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
+    cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
+    cursor.execute("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)")
 
     cursor.execute("SELECT COUNT(*) FROM chardef")
     characterCounter = cursor.fetchone()[0]
@@ -193,9 +200,10 @@ def test(phrase, dbPath):
 
     db = sqlite3.connect(dbPath)
     cursor = db.cursor()
+    prefix = "EXPLAIN QUERY PLAN "
 
     if phrase == 'emoji':
-        cursor.execute("SELECT * FROM chardef WHERE rowid In (SELECT rowid FROM chardef ORDER BY RANDOM() LIMIT 100)")
+        cursor.execute(prefix + "SELECT * FROM chardef WHERE rowid In (SELECT rowid FROM chardef ORDER BY RANDOM() LIMIT 100)")
         result = cursor.fetchall()
 
         if not result:
@@ -209,7 +217,7 @@ def test(phrase, dbPath):
     else:
         # cursor.execute("SELECT * FROM keydef WHERE rowid IN (SELECT rowid FROM keydef ORDER BY RANDOM() LIMIT 10)")
         # cursor.execute("SELECT * FROM keydef WHERE key LIKE :phrase", {'phrase': '%' + phrase + '%'})
-        cursor.execute("select distinct chardef.char, keydef.key from keydef, chardef, entry where 1 AND  (keydef.key like ? or keydef.key like ? or keydef.key like ? or keydef.key like ?) and keydef.ROWID = entry.keydef_id and chardef.ROWID = entry.chardef_id", [phrase, f'% {phrase} %', f'%{phrase} %', f'% {phrase}%'])
+        cursor.execute(prefix + "SELECT DISTINCT chardef.char, keydef.key FROM keydef, chardef, entry WHERE 1 AND  (keydef.key LIKE ? OR keydef.key LIKE ? OR keydef.key LIKE ? OR keydef.key LIKE ?) AND keydef.ROWID = entry.keydef_id AND chardef.ROWID = entry.chardef_id ", [phrase, f'% {phrase} %', f'%{phrase} %', f'% {phrase}%'])
 
         result = cursor.fetchall()
 
@@ -217,42 +225,51 @@ def test(phrase, dbPath):
             print("No result for phrase: ", phrase)
             return
 
-        for item in result:
-            print(emojilized(item[0]), item[1])
+        if prefix:
+            print(result)
+        else:
+            for item in result:
+                print(emojilized(item[0]), item[1])
 
     db.close()
     # print("\nEnd of test")
 
+
 def main():
-    argParser = argparse.ArgumentParser(description='emoji utility')
+    argParser = argparse.ArgumentParser(description='emoji.db Utility')
     argParser.add_argument('--update', action=argparse.BooleanOptionalAction, help='Update emoji cldr json files')
     argParser.add_argument('--run', action=argparse.BooleanOptionalAction, help='Run import')
-    argParser.add_argument('-path', default='tmp/emoji.db', help='Output db file path')
-    argParser.add_argument('-repo', default='rawdata/emoji', help='Repo path')
-    argParser.add_argument('-test', default='', help='Test keyword')
+    argParser.add_argument('-test', type = str, help='Test keyword')
+    argParser.add_argument('-d', '--dir', type = str, help='The directory path of cldr-json files')
+    argParser.add_argument('-o', '--output', type = str, help='The file path of emoji.db')
 
     args = argParser.parse_args()
     # print(args, len(sys.argv))
-    if len(sys.argv) < 2:
-        argParser.print_usage()
-        sys.exit(0)
+    # sys.exit(0)
 
-    if not os.path.exists(args.repo):
-        sys.exit(f"Path not found: {args.repo}")
+    # if len(sys.argv) < 2:
+    #     argParser.print_usage()
+    #     sys.exit(0)
 
     if args.update:
-        updateResources(args.repo)
+        if not args.dir or not os.path.exists(args.dir):
+            print(f"Directory (rawdata/emoji) not found: {args.dir}")
+            sys.exit(0)
+        updateResources(args.dir)
         sys.exit(0)
 
     if args.test:
-        if not os.path.isfile(args.path):
-            print("File not found: ", args.path)
-        else:
-            test(args.test, args.path)
+        if not args.output or not os.path.isfile(args.output):
+            print(f"File (emoji.db) not found or missing: {args.output}")
+            sys.exit(0)
+        test(args.test, args.output)
         sys.exit(0)
 
     if args.run:
-        performImport(args.repo, args.path);
+        if not args.dir or not os.path.exists(args.dir):
+            print(f"Directory (rawdata/emoji) not found: {args.dir}")
+            sys.exit(0)
+        performImport(args.dir, args.output);
 
     sys.exit(0)
 
