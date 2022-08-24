@@ -1,8 +1,9 @@
-.PHONY: usage all clean pull keyboard table db lexicon emoji
+.PHONY: usage all clean test
 
 PHP := /usr/bin/env php
 # BASH := /usr/bin/env bash
 # MODULES := $(wildcard bin/module/mod_*.php)
+SRCPATH := ../src/baker/baker/Supporting\ Files/
 
 define SYNOPSIS
 
@@ -10,10 +11,11 @@ define SYNOPSIS
 @echo ""
 @echo "Resources:"
 @echo "	db - Build all data table databases"
-@echo "	emoji - Build Emoji databases"
 @echo "	keyboard - Generate KeyboardLayouts.json"
 @echo "	lexicon - Build all lexicon databases"
 @echo "	table - Generate DataTables.json"
+@echo "	emoji - Build emoji.db"
+@echo "	char - Build Character.db"
 @echo "Modules:"
 @echo "	array10 - Update Array10"
 @echo "	array30 - Update Array30"
@@ -60,26 +62,34 @@ db:
 lexicon:
 	@${PHP} bin/make.php -m
 
-emoji:
-	@$(call timeStart)
-	# @bin/emoji.py --update -path tmp/emoji.db -repo rawdata/emoji
-	@bin/emoji.py --run -path tmp/emoji.db -repo rawdata/emoji
-	@$(call timeStop)
-	cp tmp/emoji.db ../src/baker/baker/Supporting\ Files/
-	@-rm tmp/emoji.db
+# pull: array jyutping ghcm mcbpmf ov tongwen jieba
 
-pull: array jyutping ghcm mcbpmf ov tongwen jieba
-
-all: keyboard table db lexicon gitee
+all: keyboard table db lexicon gitee sync
 
 clean:
 	@echo "clean all...."
 
 sync:
-	cp DataTables.json ../src/baker/baker/Supporting\ Files/
-	cp KeyMapping.json ../src/baker/baker/Supporting\ Files/
-	cp KeyboardLayouts.json ../src/baker/baker/Supporting\ Files/
-	cp Lexicon.json ../src/baker/baker/Supporting\ Files/
+	cp DataTables.json ${SRCPATH}
+	cp KeyMapping.json ${SRCPATH}
+	cp KeyboardLayouts.json ${SRCPATH}
+	cp Lexicon.json ${SRCPATH}
+
+emoji:
+	@$(call timeStart)
+	@bin/emoji.py --update -d rawdata/emoji
+	@bin/emoji.py --run -d rawdata/emoji -o tmp/emoji.db
+	@$(call timeStop)
+	@echo "Copy emoji.db to src..."
+	@cp tmp/emoji.db ${SRCPATH}
+	@-rm tmp/emoji.db
+
+char:
+	@$(call timeStart)
+	@bin/character.py -i lexicon/symbol.json tmp/Character.db
+	@echo "Copy Character.db to src..."
+	@cp tmp/Character.db ${SRCPATH}
+	@$(call timeStop)
 
 moecsv:
 	@$(call timeStart)
