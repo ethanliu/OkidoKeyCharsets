@@ -1,5 +1,5 @@
 {
-    "version": "20220728181238",
+    "version": "20220824164514",
     "datatables": [
         {
             "ename": "array10a",
@@ -396,46 +396,46 @@
     ],
     "splits": {
         "array10a.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "array10b.cin": {
-            "gitee": 5
+            "gitee": 8
         },
         "array26.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "array30.cin": {
-            "gitee": 6
+            "gitee": 10
         },
         "array30_OkidoKey.cin": {
-            "gitee": 2
+            "gitee": 4
         },
         "array40.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "biaoyin.cin": {
             "gitee": 1
         },
         "bpmf-cns.cin": {
-            "gitee": 4
+            "gitee": 7
         },
         "bpmf-Hsu.cin": {
-            "gitee": 2
+            "gitee": 4
         },
         "bpmf.cin": {
             "gitee": 1
         },
         "cangjie6.cin": {
-            "gitee": 5
+            "gitee": 9
         },
         "cj-j.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "cj.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "cj5.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "corner.cin": {
             "gitee": 1
@@ -444,25 +444,25 @@
             "gitee": 1
         },
         "dayi3-patched.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "dayi3.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "dayi4.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "freenewcj.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "ghcm.cin": {
-            "gitee": 44
+            "gitee": 72
         },
         "jidianwubi.cin": {
-            "gitee": 5
+            "gitee": 8
         },
         "jinjin.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "jtcj.cin": {
             "gitee": 1
@@ -474,25 +474,25 @@
             "gitee": 1
         },
         "lxsy_0.40.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "lxsy_0.41.cin": {
             "gitee": 1
         },
         "NewCJ3.cin": {
-            "gitee": 8
+            "gitee": 13
         },
         "ov_ez.cin": {
             "gitee": 1
         },
         "ov_ez75.cin": {
-            "gitee": 19
+            "gitee": 31
         },
         "pictograph.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "pinyin.cin": {
-            "gitee": 4
+            "gitee": 7
         },
         "pinyinbig5.cin": {
             "gitee": 1
@@ -501,13 +501,13 @@
             "gitee": 1
         },
         "qcj.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "scj6.cin": {
-            "gitee": 3
+            "gitee": 4
         },
         "scj7.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "shuangpin.cin": {
             "gitee": 2
@@ -516,28 +516,28 @@
             "gitee": 1
         },
         "stroke-bsm.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "stroke-g6code.cin": {
             "gitee": 1
         },
         "stroke-stroke5-keypad.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "taiwain-minnan-zhuyin.cin": {
             "gitee": 1
         },
         "tcj.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "tp_hakka_hl.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "tp_hakka_sy.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "wu.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "wubizixing.cin": {
             "gitee": 1
