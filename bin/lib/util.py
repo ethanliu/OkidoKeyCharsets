@@ -99,13 +99,17 @@ def trim(str, needle = None):
 
 def getOne(cursor, query, args = None):
     cursor.execute(query, args)
-    result = cursor.fetchone()
-    try:
-        result = result[0]
-    except TypeError:
-        # print("not array")
-        result = result
-        pass
-    else:
-        result = result
-    return result
+    # result = cursor.fetchone()
+    return next(cursor, [None])[0]
+    # print(result)
+    # return result[0]
+
+    # try:
+    #     result = result[0]
+    # except TypeError:
+    #     # print("not array")
+    #     result = result
+    #     pass
+    # else:
+    #     result = result
+    # return result
