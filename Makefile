@@ -48,9 +48,7 @@ usage:
 
 test:
 	@$(call timeStart)
-	# @bin/cin2db.py -i table/bpmf.cin -o tmp/test.cin.db
-	# @bin/cin2db.py -i table/array30.cin -o tmp/test.cin.db
-	# @bin/cin2db.py -i table/array30.cin -o tmp/test.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
+	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o tmp/test.cin.db
 	@$(call timeStop)
 
 
@@ -109,7 +107,7 @@ db:
 	@${PHP} bin/make.php -d
 
 lexicon:
-	@${PHP} bin/make.php -m
+	@echo "update syntax"
 
 # pull: array jyutping ghcm mcbpmf ov tongwen jieba
 
@@ -175,10 +173,9 @@ moe:
 	@bin/moe.py -o lexicon/MoE-concised.csv rawdata/moe/concised.csv
 	@bin/moe.py -o lexicon/MoE-idioms.csv rawdata/moe/idioms.csv
 	@bin/moe.py -o lexicon/MoE-revised.csv rawdata/moe/revised.csv
-	@-rm db/lexicon-MoE-concised.csv.db
-	@-rm db/lexicon-MoE-idioms.csv.db
-	@-rm db/lexicon-MoE-revised.csv.db
-	@${PHP} bin/make.php -m lexicon/MoE-concised.csv lexicon/MoE-idioms.csv lexicon/MoE-revised.csv
+	@bin/lexicon2db.py -i lexicon/MoE-concised.csv -o db/lexicon-MoE-concised.csv.db
+	@bin/lexicon2db.py -i lexicon/MoE-idioms.csv -o db/lexicon-MoE-idioms.csv.db
+	@bin/lexicon2db.py -i lexicon/MoE-revised.csv -o db/lexicon-MoE-revised.csv.db
 	@$(call timeStop)
 
 jieba:
@@ -187,25 +184,14 @@ jieba:
 	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
 	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv > lexicon/Jieba-hans.csv
 	@-rm tmp.jieba.csv
-	@-rm db/lexicon-Jieba-hans.csv.db
-	@${PHP} bin/make.php -m lexicon/Jieba-hans.csv
+	@bin/lexicon2db.py -i lexicon/Jieba-hans.csv -o db/lexicon-Jieba-hans.csv.db
 	@$(call timeStop)
-
-# jiebatest:
-# 	@$(call timeStart)
-# 	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
-# 	@-opencc -c t2s.json -i lexicon/McBopomofo-phrase.csv -o tmp.mb.csv
-# 	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv tmp.mb.csv > lexicon/Jieba-hans.csv
-# 	@-rm tmp.jieba.csv
-# 	@-rm tmp.mb.csv
-# 	@$(call timeStop)
 
 mcbpmf:
 	@cd rawdata/McBopomofo; git pull
 	@$(call timeStart)
 	@${PHP} bin/make.php -c mcbpmf rawdata/McBopomofo/Source/Data/BPMFMappings.txt > lexicon/McBopomofo-phrase.csv
-	@-rm db/lexicon-McBopomofo-phrase.csv.db
-	@${PHP} bin/make.php -m lexicon/McBopomofo-phrase.csv
+	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o db/lexicon-McBopomofo-phrase.csv.db
 	@$(call timeStop)
 
 jyutping:
@@ -216,9 +202,9 @@ jyutping:
 	@${PHP} bin/make.php -c jyut6ping3-phrase rawdata/rime-cantonese/jyut6ping3.words.dict.yaml > lexicon/Rime-cantonese.csv
 	@-rm db/jyut6ping3.cin.db
 	@-rm db/jyut6ping3-toneless.cin.db
-	@-rm db/lexicon-Rime-cantonese.csv.db
-	@${PHP} bin/make.php -d table/jyut6ping3.cin table/jyut6ping3-toneless.cin
-	@${PHP} bin/make.php -m lexicon/Rime-cantonese.csv
+	@bin/cin2db.py -i table/jyut6ping3.cin -o db/jyut6ping3.cin.db
+	@bin/cin2db.py -i table/jyut6ping3-toneless.cin -o db/jyut6ping3-toneless.cin.db
+	@bin/lexicon2db.py -i lexicon/Rime-cantonese.csv -o db/lexicon-Rime-cantonese.csv.db
 	@$(call timeStop)
 
 ghcm:
@@ -278,8 +264,8 @@ array30:
 
 array-phrase:
 	@${PHP} bin/make.php -c array-phrase rawdata/array30/array30-phrase-20210725.txt > lexicon/array30-phrase.csv
-	@-rm db/lexicon-array30-phrase.csv.db
-	@${PHP} bin/make.php -m lexicon/array30-phrase.csv
+	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
+
 
 ov:
 	@echo "Update OpenVanilla Cantonese"
