@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.0.2
 # autor: Ethan Liu
 #
 # convert cin table to sqlite db
@@ -11,12 +11,14 @@ import sys, os
 import re
 # import json
 import sqlite3
+from tqdm import tqdm
+# from time import sleep
 
 uu = importlib.import_module("lib.util")
 
-CIN_TAGS = [
+CIN_TAG = [
     '%gen_inp',
-    '%encoding',
+    # '%encoding',
     '%name',
     '%endkey',
     '%selkey',
@@ -25,6 +27,7 @@ CIN_TAGS = [
     '%ename',
     '%tcname',
     '%scname',
+    '%locale',
 ]
 
 CIN_SECTION = [
@@ -32,39 +35,38 @@ CIN_SECTION = [
     '%chardef',
 ]
 
-	# private $propertyNames = ["%selkey", "%ename", "%cname", "%tcname", "%scname", "%endkey", "%encoding"];
-	# private $mapNames = ["%keyname", "%chardef"];
+HANS_TABLE = [
+    "ghcm.cin",
+    "jidianwubi.cin",
+    "jtcj.cin",
+    "lxsy.cin",
+    "lxsy_0.40.cin",
+    "lxsy_0.41.cin",
+    "pinyin.cin",
+    "shuangpin.cin",
+    "wubizixing.cin",
+    "wus.cin",
+]
 
-def performImport(inputPath, outputPath):
+# TODO: suggest keyboard layout?
 
-    count = 0
+debugLevel = 0
+
+
+def performImport(cursor, inputPath, partial = False):
     section = None
 
-    db = sqlite3.connect(outputPath)
-    cursor = db.cursor()
+    # print(f"Import file: {os.path.basename(inputPath)}")
+    filename = os.path.basename(inputPath)
+    reader = open(inputPath, 'r')
 
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
-
-    cursor.execute("CREATE TABLE info (`name` CHAR(255) NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keyname (`key` CHAR(255) NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) NOT NULL)")
-    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
-
-
-	# if ($isArray) {
-	# 	$db->exec("CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)");
-	# 	$db->exec("CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)");
-	# 	$db->exec("CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
-	# 	$db->exec("CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
-	# }
-
     cursor.execute("BEGIN TRANSACTION")
 
-    reader = open(inputPath, 'r')
-
-    for row in reader:
+    for row in tqdm(reader.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = filename):
+    # for row in reader.readlines():
+        # pbar.set_description(f"{filename} {row}")
         row = uu.trim(row, '#')
         if not row or row == '':
             continue
@@ -78,50 +80,46 @@ def performImport(inputPath, outputPath):
 
         if key in CIN_SECTION:
             if section == key and value == 'end':
-                print(f"End of Section: {section}")
+                # tqdm.write(f"End of Section: {section}")
                 section = None
             else:
                 # section = key[1:]
                 section = key
-                print(f"Begin of Section: {section}")
+                # tqdm.write(f"Begin: {section}")
+                if key == '%chardef' and not partial:
+                    # patch name
+                    # patch locale
+                    if filename in HANS_TABLE:
+                        query = "INSERT INTO info (`name`, `value`) VALUES (:name, :value)"
+                        args = {'name': 'locale', 'value': 'zh-Hans'}
+                        tqdm.write(f"[info] {args['name']} = {args['value']}")
+                        cursor.execute(query, args)
             continue
 
         if not section:
-            if not key in CIN_TAGS:
-                print(f"Invalid tag: {key}")
-            else:
-                print(f"[info] key: {key[1:]}, value: {value}")
+            if not key in CIN_TAG:
+                tqdm.write(f"Invalid tag: {key}")
+                continue
+
+            if not partial:
+                tqdm.write(f"[info] {key[1:]} = {value}")
                 query = "SELECT rowid FROM info WHERE `name` = :name"
                 args = {'name': key[1:]}
                 result = uu.getOne(cursor, query, args)
-                # print(result)
 
                 if not result:
                     query = "INSERT INTO info (`name`, `value`) VALUES (:name, :value)"
                     args = {'name': key[1:], 'value': value}
                     cursor.execute(query, args)
 
-                # cursor.execute("SELECT rowid FROM chardef WHERE char = ? LIMIT 1", (codes,))
-                # # chardefId = cursor.fetchone()
-                # result = cursor.fetchone()
-
-                # if result:
-                #     chardefId = result[0]
-                # else:
-                #     cursor.execute("INSERT INTO chardef VALUES (?)", (codes,))
-                #     chardefId = cursor.lastrowid
-
             continue
 
-        # print(f"[{section}] key: {key}, value: {value}")
-        # query = "INSERT OR IGNORE INTO ..."
-
-        if section == '%keyname':
+        if not partial and section == '%keyname':
             query = "SELECT rowid FROM keyname WHERE `key` = :key"
             args = {'key': key}
             result = uu.getOne(cursor, query, args)
             if result:
-                print(f"[warn] duplicate keyname: {key}")
+                tqdm.write(f"[warn] duplicate keyname: {key}")
             else:
                 query = "INSERT INTO keyname (`key`, `value`) VALUES (:key, :value)"
                 args = {'key': key, 'value': value}
@@ -153,69 +151,112 @@ def performImport(inputPath, outputPath):
 
             query = "INSERT INTO entry (`keydef_id`, `chardef_id`) VALUES (:kid, :vid)"
             args = {'kid': keydefId, 'vid': chardefId}
-
             cursor.execute(query, args)
 
-        # count += 1
-        # if count > 100:
-        #     break
-
-    cursor.execute("COMMIT TRANSACTION")
-
     reader.close()
-
-    db.commit()
-
-    # index
-    cursor.execute('vacuum')
-    cursor.execute("CREATE UNIQUE INDEX info_index ON info (name)")
-    cursor.execute("CREATE UNIQUE INDEX keyname_index ON info (name)")
-    cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
-    cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
-    cursor.execute("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)")
-
-	# if ($isArray) {
-	# 	$db->exec("CREATE UNIQUE INDEX keydef_special_index ON keydef_special (key)");
-	# 	$db->exec("CREATE UNIQUE INDEX keydef_shortcode_index ON keydef_shortcode (key)");
-	# 	$db->exec("CREATE INDEX entry_special_index ON entry_special (keydef_special_id, chardef_id)");
-	# 	$db->exec("CREATE INDEX entry_shortcode_index ON entry_shortcode (keydef_shortcode_id, chardef_id)");
-	# }
+    cursor.execute("COMMIT TRANSACTION")
+    cursor.execute('VACUUM')
 
 
+    # counters = []
 
-    # cursor.execute("SELECT COUNT(*) FROM chardef")
-    # characterCounter = cursor.fetchone()[0]
+    # counters.append(uu.getOne(cursor, "SELECT COUNT(*) FROM chardef"))
+    # print(counters)
 
     # cursor.execute("SELECT COUNT(*) FROM keydef")
     # keywordsCounter = cursor.fetchone()[0]
 
-    db.close()
+# def performTest(path):
+#     total = 1000
+#     db = sqlite3.connect(path)
+#     cursor = db.cursor()
+#     cursor.execute("SELECT `key` FROM `keydef` ORDER BY RANDOM() LIMIT :total", {'total': total})
+#     keys = cursor.fetchall()
+#     for key in keys:
+#         query = "SELECT DISTINCT chardef.char AS char FROM chardef, keydef, entry WHERE keydef.key = :value AND keydef.rowid = entry.keydef_id AND chardef.rowid = entry.chardef_id ORDER BY keydef.rowid"
+#         cursor.execute(query, {'value': key[0]})
+#         result = cursor.fetchall()
+#         print(f"\n{key[0]} => ", end = '')
+#         for item in result:
+#             print(item[0], end = '')
+#         # cursor.execute("SELECT DISTINCT chardef.char, keydef.key FROM keydef, chardef, entry WHERE 1 AND  (keydef.key LIKE ? OR keydef.key LIKE ? OR keydef.key LIKE ? OR keydef.key LIKE ?) AND keydef.ROWID = entry.keydef_id AND chardef.ROWID = entry.chardef_id ", [phrase, f'% {phrase} %', f'%{phrase} %', f'% {phrase}%'])
 
-    print('fin.')
 
 def main():
     argParser = argparse.ArgumentParser(description='Convert cin table to sqlite db file')
     argParser.add_argument('-i', '--input', type = str, required = True, help='The input file path of cin table file')
     argParser.add_argument('-o', '--output', type = str, required = True, help='The output file path')
-
+    # argParser.add_argument('-t', '--test', type = str, help='The database file path')
+    # argParser.add_argument('-i', '--input', type = str, help='The input file path of cin table file')
+    # argParser.add_argument('-o', '--output', type = str, help='The output file path')
+    # argParser.add_argument('--header', type = str, help='The custom CIN table header file path')
     argParser.add_argument('--array-short', type = str, help='The input file path of array-shortcode.cin')
-    argParser.add_argument('--array-sp', type = str, help='The input file path of array-special.cin')
+    argParser.add_argument('--array-special', type = str, help='The input file path of array-special.cin')
 
     args = argParser.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
 
-    if os.path.exists(args.output):
-        print(f"Remove existing file: {args.output}")
-        os.remove(args.output)
+    # if args.test:
+    #     if not os.path.exists(args.test):
+    #         print(f"File not found: {args.input}")
+    #         sys.exit(0)
+    #     performTest(args.test)
+    #     sys.exit(0)
 
-    if not os.path.exists(args.input):
-        print(f"Input file not found: {args.input}")
+    if not args.input or not os.path.exists(args.input):
+        print(f"Input file missing or not found: {args.input}")
         sys.exit(0)
 
-    performImport(args.input, args.output);
+    if not args.output:
+        print(f"Output file path missing")
+        sys.exit(0)
+
+    if os.path.exists(args.output):
+        # print(f"Remove existing file: {args.output}")
+        os.remove(args.output)
+
+
+    db = sqlite3.connect(args.output)
+    cursor = db.cursor()
+
+    cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+
+    # cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
+    # cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
+
+    performImport(cursor, args.input)
+    db.commit()
+
+    if args.array_short and os.path.exists(args.array_short):
+        cursor.execute("CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)")
+        cursor.execute("CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+        # cursor.execute("CREATE UNIQUE INDEX keydef_shortcode_index ON keydef (key)")
+        performImport(cursor, args.array_short, True)
+        db.commit()
+
+    if args.array_special and os.path.exists(args.array_special):
+        cursor.execute("CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)")
+        cursor.execute("CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+        # cursor.execute("CREATE UNIQUE INDEX keydef_special_index ON keydef (key)")
+        performImport(cursor, args.array_special, True)
+        db.commit()
+
+    db.close()
 
     sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Interrupt by user")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+    # except BaseException as err:

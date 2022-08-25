@@ -1,7 +1,7 @@
 .PHONY: usage all clean test
 
 PHP := /usr/bin/env php
-# BASH := /usr/bin/env bash
+# SHELL := /usr/bin/env bash
 # MODULES := $(wildcard bin/module/mod_*.php)
 SRCPATH := ../src/baker/baker/Supporting\ Files/
 
@@ -48,7 +48,56 @@ usage:
 
 test:
 	@$(call timeStart)
+	# @bin/cin2db.py -i table/bpmf.cin -o tmp/test.cin.db
+	# @bin/cin2db.py -i table/array30.cin -o tmp/test.cin.db
+	# @bin/cin2db.py -i table/array30.cin -o tmp/test.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@$(call timeStop)
+
+
+alltabledb:
+	$(eval tablePath = tmp/table)
+	$(eval dbPath = tmp/db)
+	$(eval excludes := \
+		_sample.cin \
+		_demo.cin \
+		array-shortcode.cin \
+		array-special.cin \
+		array10a-header.cin \
+		array10b-header.cin \
+		array30_OkidoKey-big.cin \
+		bpmf-ext.cin \
+		cj-ext.cin \
+		cj-wildcard.cin \
+		egyptian.cin \
+		ehq-symbols.cin \
+		esperanto.cin \
+		jyutping.cin \
+		jyutping-toneless.cin \
+		kk.cin \
+		kks.cin \
+		klingon.cin \
+		ov_ezbig.cin \
+		ov_ezsmall.cin \
+		simplex-ext.cin \
+		stroke-stroke5.cin \
+		morse.cin \
+		telecode.cin \
+	)
+	$(eval all := $(notdir $(wildcard ${tablePath}/*.cin)))
+	$(eval list := $(filter-out $(excludes), $(all)))
+
+	@for filename in ${list}; do \
+		if [[ -f "${dbPath}/$${filename}.db" ]]; then \
+			echo "[exists] $${filename}.db"; \
+		else \
+			if [ $$filename == "array30.cin" ] || [ $$filename == "array30_OkidoKey.cin" ]; then \
+				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db --array-short ${tablePath}/array-shortcode.cin --array-special ${tablePath}/array-special.cin ; \
+			else \
+				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db; \
+			fi \
+		fi \
+	done;
+
 
 keyboard:
 	@${PHP} bin/make.php -k
