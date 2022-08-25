@@ -12,6 +12,7 @@ import sys, os
 import csv
 import re
 import codecs
+from tqdm import tqdm
 
 kAccentsMap = {
     u'ā': u'a', u'ɑ̄': u'a', u'ē': u'e', u'ī': u'i', u'ō': u'o', u'ū': u'u', u'ǖ': u'u',
@@ -59,12 +60,14 @@ def uniqueList(rows):
 
 def parse(inputPath, outputPath):
 
+    filename = os.path.basename(inputPath)
     column = []
     contents = ""
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = ',')
-        for row in reader:
+        for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Convert {filename}"):
+        # for row in reader:
             if not column:
                 column = row
                 continue
