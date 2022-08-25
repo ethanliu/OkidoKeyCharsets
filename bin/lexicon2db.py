@@ -11,7 +11,6 @@ import sys, os
 import csv
 import sqlite3
 from tqdm import tqdm
-# from time import sleep
 
 # uu = importlib.import_module("lib.util")
 
@@ -25,7 +24,7 @@ def performImport(cursor, inputPath):
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
 
-    for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = filename):
+    for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {filename}"):
         phrase = row[0] or ''
         weight = row[1] or 0
         pinyin = row[2] or ''
