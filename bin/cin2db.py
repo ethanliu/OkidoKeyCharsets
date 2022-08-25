@@ -184,8 +184,8 @@ def performImport(cursor, inputPath, partial = False):
 
 def main():
     argParser = argparse.ArgumentParser(description='Convert cin table to sqlite db file')
-    argParser.add_argument('-i', '--input', type = str, required = True, help='The input file path of cin table file')
-    argParser.add_argument('-o', '--output', type = str, required = True, help='The output file path')
+    argParser.add_argument('-i', '--input', type = str, required = True, help='The cin table file path')
+    argParser.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
     # argParser.add_argument('-t', '--test', type = str, help='The database file path')
     # argParser.add_argument('-i', '--input', type = str, help='The input file path of cin table file')
     # argParser.add_argument('-o', '--output', type = str, help='The output file path')
