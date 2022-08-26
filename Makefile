@@ -48,7 +48,6 @@ usage:
 
 test:
 	@$(call timeStart)
-	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o tmp/test.cin.db
 	@$(call timeStop)
 
 
@@ -170,9 +169,9 @@ moecsv:
 
 moe:
 	@$(call timeStart)
-	@bin/moe.py -o lexicon/MoE-concised.csv rawdata/moe/concised.csv
-	@bin/moe.py -o lexicon/MoE-idioms.csv rawdata/moe/idioms.csv
-	@bin/moe.py -o lexicon/MoE-revised.csv rawdata/moe/revised.csv
+	@bin/moe2csv.py -i rawdata/moe/concised.csv -o lexicon/MoE-concised.csv
+	@bin/moe2csv.py -i rawdata/moe/idioms.csv -o lexicon/MoE-idioms.csv
+	@bin/moe2csv.py -i rawdata/moe/revised.csv -o lexicon/MoE-revised.csv
 	@bin/lexicon2db.py -i lexicon/MoE-concised.csv -o db/lexicon-MoE-concised.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-idioms.csv -o db/lexicon-MoE-idioms.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-revised.csv -o db/lexicon-MoE-revised.csv.db
@@ -181,27 +180,23 @@ moe:
 jieba:
 	@cd rawdata/jieba; git pull
 	@$(call timeStart)
-	@-cp lexicon/Jieba-hans.csv tmp.jieba.csv
-	@${PHP} bin/make.php -c jieba rawdata/jieba/jieba/dict.txt tmp.jieba.csv > lexicon/Jieba-hans.csv
-	@-rm tmp.jieba.csv
+	@bin/jieba2csv.py -i rawdata/jieba/jieba/dict.txt -o lexicon/Jieba-hans.csv
 	@bin/lexicon2db.py -i lexicon/Jieba-hans.csv -o db/lexicon-Jieba-hans.csv.db
 	@$(call timeStop)
 
 mcbpmf:
 	@cd rawdata/McBopomofo; git pull
 	@$(call timeStart)
-	@${PHP} bin/make.php -c mcbpmf rawdata/McBopomofo/Source/Data/BPMFMappings.txt > lexicon/McBopomofo-phrase.csv
+	@bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/BPMFMappings.txt -o lexicon/McBopomofo-phrase.csv
 	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o db/lexicon-McBopomofo-phrase.csv.db
 	@$(call timeStop)
 
 jyutping:
-	@cd rawdata/rime-cantonese; git pull
+	# @cd rawdata/rime-cantonese; git pull
 	@$(call timeStart)
-	@${PHP} bin/make.php -c jyut6ping3 rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3.cin
-	@${PHP} bin/make.php -c jyut6ping3-toneless rawdata/rime-cantonese/jyut6ping3.dict.yaml > table/jyut6ping3-toneless.cin
-	@${PHP} bin/make.php -c jyut6ping3-phrase rawdata/rime-cantonese/jyut6ping3.words.dict.yaml > lexicon/Rime-cantonese.csv
-	@-rm db/jyut6ping3.cin.db
-	@-rm db/jyut6ping3-toneless.cin.db
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3.cin -t tone --header table/jyut6ping3-header.cin
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3-toneless.cin -t toneless --header table/jyut6ping3-toneless-header.cin
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o table/Rime-cantonese.csv -t phrase
 	@bin/cin2db.py -i table/jyut6ping3.cin -o db/jyut6ping3.cin.db
 	@bin/cin2db.py -i table/jyut6ping3-toneless.cin -o db/jyut6ping3-toneless.cin.db
 	@bin/lexicon2db.py -i lexicon/Rime-cantonese.csv -o db/lexicon-Rime-cantonese.csv.db

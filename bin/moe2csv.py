@@ -123,9 +123,9 @@ def parse(inputPath, outputPath):
 
         fp.close()
 
-    if not outputPath:
-        print(contents)
-        return
+    # if not outputPath:
+    #     print(contents)
+    #     return
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
@@ -133,20 +133,20 @@ def parse(inputPath, outputPath):
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='Lexicon of MoE Utility')
+    argParser = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the original excel/csv format')
     # argParser.add_argument('-c', '--category', choices=['concised', 'idoms', 'revised'], help='Lexicon category')
-    argParser.add_argument('-o', '--output', default='', help='Output CSV file path')
-    argParser.add_argument('path', help='CSV file path')
+    argParser.add_argument('-i', '--input', help='Original csv file path')
+    argParser.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
 
     args = argParser.parse_args()
     # print(args, len(sys.argv))
 
-    if not os.path.exists(args.path):
-        sys.exit(f"File not found: {args.path}")
+    if not os.path.exists(args.input):
+        sys.exit(f"File not found: {args.input}")
 
     codecs.register_error('asciify', asciify)
 
-    parse(args.path, args.output)
+    parse(args.input, args.output)
 
     # if args.category == "concised":
     #     parseConcised(args.path, args.output)
@@ -158,4 +158,12 @@ def main():
     sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Interrupt by user")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+    # except BaseException as err:

@@ -18,7 +18,7 @@ uu = importlib.import_module("lib.util")
 
 CIN_TAG = [
     '%gen_inp',
-    # '%encoding',
+    '%encoding',
     '%name',
     '%endkey',
     '%selkey',
