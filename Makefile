@@ -61,15 +61,18 @@ alltabledb:
 		array-special.cin \
 		array10a-header.cin \
 		array10b-header.cin \
-		array30_OkidoKey-big.cin \
+		array30-OkidoKey-big.cin \
 		bpmf-ext.cin \
 		cj-ext.cin \
 		cj-wildcard.cin \
 		egyptian.cin \
 		ehq-symbols.cin \
 		esperanto.cin \
+		ghcm-header.cin \
 		jyutping.cin \
 		jyutping-toneless.cin \
+		jyut3ping6-header.cin \
+		jyutp3ing6-toneless-headeer.cin \
 		kk.cin \
 		kks.cin \
 		klingon.cin \
@@ -205,9 +208,8 @@ jyutping:
 ghcm:
 	@cd rawdata/ghcm; git pull
 	@$(call timeStart)
-	@${PHP} bin/make.php -c ghcm rawdata/ghcm/SM.dict.yaml > table/ghcm.cin
-	@-rm db/ghcm.cin.db
-	@${PHP} bin/make.php -d table/ghcm.cin
+	@bin/rime2cin.py -i rawdata/ghcm/SM.dict.yaml -o table/ghcm.cin -x table/ghcm-header.cin
+	@bin/cin2db.py -i table/ghcm.cin -o db/ghcm.cin.db
 	@$(call timeStop)
 
 gitee:
@@ -241,25 +243,32 @@ array10:
 	@$(call timeStart)
 	@bin/lime2cin.py -H table/array10a-header.cin -O table/array10a.cin rawdata/array10/LIME/array10a-20220321.lime
 	@bin/lime2cin.py -H table/array10b-header.cin -O table/array10b.cin rawdata/array10/LIME/array10b-20220321.lime
-	@-rm db/array10a.cin.db
-	@-rm db/array10b.cin.db
-	@${PHP} bin/make.php -d table/array10a.cin
-	@${PHP} bin/make.php -d table/array10b.cin
+	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
+	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
 	@$(call timeStop)
 
 array30:
 	@cd rawdata/array30; git pull
 	@$(call timeStart)
-	@${PHP} bin/make.php -c array rawdata/array30
-	@-rm db/array30.cin.db
-	@-rm db/array30_OkidoKey.cin.db
-	@${PHP} bin/make.php -d table/array30.cin
-	@${PHP} bin/make.php -d table/array30_OkidoKey.cin
+	@echo "Update local version from upsteam..."
+	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array30*.cin))
+	@cp ${file} tmp/array30.cin
+	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array-special*.cin))
+	@cp ${file} tmp/array-special.cin
+	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array-shortcode*.cin))
+	@cp ${file} tmp/array-shortcode.cin
+	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-regular*.cin))
+	@cp ${file} tmp/array30-OkidoKey.cin
+	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-big*.cin))
+	@cp ${file} tmp/array30-OkidoKey-big.cin
+	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
+	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30_OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@$(call timeStop)
 
 array-phrase:
-	@${PHP} bin/make.php -c array-phrase rawdata/array30/array30-phrase-20210725.txt > lexicon/array30-phrase.csv
-	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
+	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
+	# @${PHP} bin/make.php -c array-phrase rawdata/array30/array30-phrase-20210725.txt > lexicon/array30-phrase.csv
+	# @bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
 
 
 ov:

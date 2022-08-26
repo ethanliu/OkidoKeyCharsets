@@ -91,6 +91,7 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
 
                 if not began:
                     # print(f"skip info: {row}")
+                    # TODO: using with RE
                     if "version:" in row[0]:
                         version = row[0].replace('version:', '').replace('"', '').replace('\'', '').strip()
 
@@ -129,12 +130,15 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
 
         fp.close()
 
-    header = ""
     with open(headerPath, 'r') as fp:
-        header = fp.read().replace('{{version}}', version)
+        template = fp.read()
+        template = template.replace('{{version}}', version)
+        template = template.replace('{{chardef}}', contents)
+        contents = template
+        template = ''
         fp.close()
 
-    contents = header + "\n%chardef begin\n" + contents + "%chardef end\n"
+    # contents = header + "\n%chardef begin\n" + contents + "%chardef end\n"
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
