@@ -72,25 +72,19 @@ def parser(path, outputPath, headerPath):
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert lime table file to cin format')
-    argParser.add_argument('input', default='', help='input file path - lime format')
-    argParser.add_argument('-output', '-O', default='', help='output file path - cin format')
-    argParser.add_argument('-header', '-H', default='', help='cin table header')
+    argParser = argparse.ArgumentParser(description='Convert CIN table from Lime table')
+    argParser.add_argument('-i', '--input', required = True, help='Input file path')
+    argParser.add_argument('-o', '--output', required = True, help='Output file path')
+    argParser.add_argument('-x', '--header', required = True, help='CIN table header')
 
     args = argParser.parse_args()
     # print(args)
 
-    if not os.path.isfile(args.input):
-        print("input file not found")
-        sys.exit(0)
+    if not os.path.exists(args.input):
+        sys.exit(f"File not found: {args.input}")
 
-    if args.header != '' and not os.path.isfile(args.header):
-        sys.exit("header file not found")
-
-    # if args.output == '':
-    #     print("output to stdin")
-    # elif not os.path.isfile(args.output):
-    #     print("file exists, overwrite?")
+    if not os.path.exists(args.header):
+        sys.exit(f"File not found: {args.header}")
 
     parser(args.input, args.output, args.header)
 
