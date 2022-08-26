@@ -25,9 +25,9 @@ def performImport(cursor, inputPath):
     cursor.execute("BEGIN TRANSACTION")
 
     for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {filename}"):
-        phrase = row[0] or ''
+        phrase = (row[0] or '').strip()
         weight = row[1] or 0
-        pinyin = row[2] or ''
+        pinyin = (row[2] or '').strip()
         pinyin_id = 0
 
         if not phrase:

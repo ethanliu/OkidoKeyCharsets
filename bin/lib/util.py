@@ -63,7 +63,8 @@ def run(args):
 
 #  run system command with content
 def exec(args):
-    process = subprocess.run(args, stdout=subprocess.PIPE, universal_newlines=True)
+    # process = subprocess.run(args, stdout=subprocess.PIPE, universal_newlines=True)
+    process = subprocess.check_output(args)
     return process
 
 def natsorted(l):
@@ -94,8 +95,20 @@ def trim(str, needle = None):
     _str = str
     if needle:
         _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
-
     return _str.strip()
+
+def dir(path):
+    return os.path.dirname(os.path.realpath(path))
+
+def chunks(reader, size = 10000):
+    chunk = []
+    for i, line in enumerate(reader):
+        if (i % size == 0 and i > 0):
+            yield chunk
+            # del chunk[:]
+            chunk = []
+        chunk.append(line)
+    yield chunk
 
 def getOne(cursor, query, args = None):
     cursor.execute(query, args)
