@@ -237,7 +237,8 @@ gitee:
 
 bossy:
 	@$(call timeStart)
-	@${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/bossy.cin
+	@#${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/bossy.cin
+	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin
 	@$(call timeStop)
 
 array10:
@@ -254,24 +255,23 @@ array30:
 	@$(call timeStart)
 	@echo "Update local version from upsteam..."
 	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array30*.cin))
-	@cp ${file} tmp/array30.cin
+	@cp ${file} table/array30.cin
 	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array-special*.cin))
-	@cp ${file} tmp/array-special.cin
+	@cp ${file} table/array-special.cin
 	@$(eval file := $(wildcard rawdata/array30/OpenVanilla/array-shortcode*.cin))
-	@cp ${file} tmp/array-shortcode.cin
+	@cp ${file} table/array-shortcode.cin
 	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-regular*.cin))
-	@cp ${file} tmp/array30-OkidoKey.cin
+	@cp ${file} table/array30-OkidoKey.cin
 	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-big*.cin))
-	@cp ${file} tmp/array30-OkidoKey-big.cin
+	@cp ${file} table/array30-OkidoKey-big.cin
 	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
-	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30_OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
+	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30-OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@$(call timeStop)
 
 array-phrase:
 	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
 	@bin/txt2csv.py -i ${file} -o lexicon/array30-phrase.csv -c 3 1 0
 	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
-
 
 ov:
 	@echo "Update OpenVanilla Cantonese"
