@@ -48,8 +48,9 @@ usage:
 
 test:
 	@$(call timeStart)
-	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
-	@bin/txt2csv.py -i ${file} -o tmp/array30-phrase.csv -c 3 1 0
+	@bin/resource.py -c keyboard
+	@bin/resource.py -c table
+	@bin/resource.py -c lexicon
 	@$(call timeStop)
 
 
@@ -100,15 +101,6 @@ alltabledb:
 		fi \
 	done;
 
-
-keyboard:
-	@${PHP} bin/make.php -k
-
-table:
-	@${PHP} bin/make.php -t
-
-db:
-	@${PHP} bin/make.php -d
 
 lexicon:
 	@echo "update syntax"
@@ -226,8 +218,8 @@ gitee:
 		rm ${REPOPATH}/$$file ; \
 	done;
 
-	@${PHP} bin/make.php -c gitee DataTables.json ${REPOPATH}
-	@${PHP} bin/make.php -c gitee Lexicon.json ${REPOPATH}
+	# @${PHP} bin/make.php -c gitee DataTables.json ${REPOPATH}
+	# @${PHP} bin/make.php -c gitee Lexicon.json ${REPOPATH}
 
 	@echo "Update json files..."
 	@for file in DataTables.json KeyboardLayouts.json KeyMapping.json Lexicon.json; do \
@@ -237,8 +229,7 @@ gitee:
 
 bossy:
 	@$(call timeStart)
-	@#${PHP} bin/make.php -c bossy rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin > rawdata/boshiamy/bossy.cin
-	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin
+	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
 	@$(call timeStop)
 
 array10:
