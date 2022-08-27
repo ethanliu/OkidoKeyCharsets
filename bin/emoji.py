@@ -78,7 +78,6 @@ def parse(cursor, path):
 
     # version = data['annotationsDerived']['identity']['version']['_cldrVersion']
     # cursor.execute("INSERT INTO info VALUES (?, ?)", ("version", version))
-    # cursor.execute("BEGIN TRANSACTION")
 
     node = None
     # count = 0
@@ -90,6 +89,8 @@ def parse(cursor, path):
     else:
         print("node not found: " + path)
         return
+
+    cursor.execute("BEGIN TRANSACTION")
 
     for emoji in node:
         codes = charToLongHex(emoji)
@@ -144,7 +145,7 @@ def parse(cursor, path):
         # if count > 10:
         #     break
 
-    # cursor.execute("COMMIT TRANSACTION")
+    cursor.execute("COMMIT TRANSACTION")
     # print("{}: {} keywords".format(lang, count))
 
 def performImport(repoPath, dbPath):
