@@ -3,12 +3,12 @@
 # version: 0.0.1
 # autor: Ethan Liu
 #
-# convert lexicon csv to sqlite db
+# ChineseVariant.db generator
 
 import argparse
 # import importlib
 import sys, os
-import csv
+import json
 import sqlite3
 from tqdm import tqdm
 
@@ -49,11 +49,32 @@ def performImport(cursor, inputPath):
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
 
+def tongwen2db(cursor, inputPath):
+    categories = ["s2t", "t2s"]
+    tableNames = {"s2t": "char_hans", "t2s": "char_hant"}
+
+    cursor.execute("BEGIN TRANSACTION")
+
+    for category in categories:
+        path = f"{inputPath}/{category}-char.json"
+        file = open(path, 'r')
+        data = json.load(file)
+        file.close()
+
+        tableName = tableNames[category]
+        query = f"INSERT INTO `{tableName}` VALUES (:k, :v)"
+        for k, v in tqdm(data.items(), unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {category}"):
+        # for k, v in data.items():
+            cursor.execute(query, {'k': k, 'v': v})
+
+    cursor.execute("COMMIT TRANSACTION")
+    cursor.execute('vacuum')
+
+
 def main():
-    argParser = argparse.ArgumentParser(description='Convert lexicon csv to sqlite db file')
-    argParser.add_argument('-i', '--input', type = str, required = True, help='The lexicon csv file path')
+    argParser = argparse.ArgumentParser(description='ChineseVariant.db generator')
+    argParser.add_argument('-i', '--input', type = str, required = True, help='The tongwen repo dictionary folder path')
     argParser.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
-    # argParser.add_argument('--readme', type = str, help='The readme file path')
 
     args = argParser.parse_args()
     # print(args, len(sys.argv))
@@ -75,21 +96,18 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) UNIQUE NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
-    # cursor.execute('CREATE UNIQUE INDEX pinyin_index ON pinyin (pinyin)')
-    # cursor.execute('CREATE UNIQUE INDEX lexicon_index ON lexicon (phrase)')
+    cursor.execute("CREATE TABLE char_hans (`hans` CHAR(255) UNIQUE NOT NULL, `hant` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE char_hant (`hant` CHAR(255) UNIQUE NOT NULL, `hans` CHAR(255) default '')")
+    # cursor.execute("CREATE TABLE phrase_hans (`hans` CHAR(255) UNIQUE NOT NULL, `hant` CHAR(255) default '')")
+    # cursor.execute("CREATE TABLE phrase_hant (`hant` CHAR(255) UNIQUE NOT NULL, `hans` CHAR(255) default '')")
 
-    performImport(cursor, args.input)
+    cursor.execute('CREATE UNIQUE INDEX char_hans_index ON char_hans (hans)')
+    cursor.execute('CREATE UNIQUE INDEX char_hant_index ON char_hant (hant)')
+
+    tongwen2db(cursor, args.input)
     db.commit()
 
-    # if args.readme:
-    #     if not os.path.exists(args.readme):
-    #         print(f"File not found: {args.readme}")
-    #         sys.exit(0)
-
     db.close()
-
     sys.exit(0)
 
 if __name__ == "__main__":

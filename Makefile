@@ -48,6 +48,8 @@ usage:
 
 test:
 	@$(call timeStart)
+	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
+	@bin/txt2csv.py -i ${file} -o tmp/array30-phrase.csv -c 3 1 0
 	@$(call timeStop)
 
 
@@ -267,8 +269,8 @@ array30:
 
 array-phrase:
 	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
-	# @${PHP} bin/make.php -c array-phrase rawdata/array30/array30-phrase-20210725.txt > lexicon/array30-phrase.csv
-	# @bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
+	@bin/txt2csv.py -i ${file} -o lexicon/array30-phrase.csv -c 3 1 0
+	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
 
 
 ov:
@@ -283,9 +285,9 @@ ov:
 	@cp ${REPOPATH}/DataTables/jyutping.cin ${REPOPATH}/Source/Mac/MacDataTables/jyutping.cin
 	@cp ${REPOPATH}/DataTables/jyutping-toneless.cin ${REPOPATH}/Source/Mac/MacDataTables/jyutping-toneless.cin
 
-tongwen:
+cv:
 	@cd rawdata/tongwen-core; git pull
 	@$(call timeStart)
-	@${PHP} bin/make.php -c tongwen rawdata/tongwen-core/dictionaries ChineseVariant.db
+	@bin/chinese-variant.py -i rawdata/tongwen-core/dictionaries -o tmp/ChineseVariant.db
 	@$(call timeStop)
 
