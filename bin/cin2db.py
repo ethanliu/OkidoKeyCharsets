@@ -64,6 +64,8 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
 
+    tqdm.write(uu.color(f"[{filename}]", fg = 'green'))
+
     for row in tqdm(reader.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[{mode}] {filename}"):
     # for row in reader.readlines():
         # pbar.set_description(f"{filename} {row}")
