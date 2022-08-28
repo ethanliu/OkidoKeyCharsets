@@ -57,9 +57,12 @@ def prompt(q):
 
 #  run system command without content
 def run(args):
-    process = subprocess.run(args)
+    process = subprocess.run(args, shell = True)
     return process
 
+def call(args):
+    process = subprocess.check_call(args, shell = True)
+    return process
 
 #  run system command with content
 def exec(args):

@@ -1,4 +1,4 @@
-.PHONY: usage all clean test
+.PHONY: usage all clean test table
 
 # SHELL := /usr/bin/env bash
 XCODE_PATH := ../src/baker/baker/Supporting\ Files/
@@ -14,23 +14,25 @@ define SYNOPSIS
 @echo "    emoji-db - Build emoji.db"
 @echo "    char-db - Build Character.db"
 @echo "    cv-db - Build ChineseVariant.db"
-@echo "    table - Generate DataTables.json"
-@echo "    lexicon - Generate Lexicon.json"
+@echo "    table - Generate db splits and DataTables.json"
+@echo "    lexicon - Generate db splits Lexicon.json"
 @echo "    keyboard - Generate KeyboardLayouts.json"
-@echo "    link - Copy resources to xcode codebase and Gitee repo"
+@echo "    link - Copy resources to Xcode codebase and Gitee repo"
+@echo "    clear - Remove all generated files"
 @echo ""
 @echo "3rd party repositories:"
 @echo "    pull - Update all upstream repos"
-@echo "    array10 - Update Array10"
-@echo "    array30 - Update Array30"
-@echo "    array-phrase - Update Array30"
-@echo "    bossy - Build custom boshiamy table"
-@echo "    ghcm - Update ghcm data table"
-@echo "    jieba - Update Jieba lexicon"
-@echo "    jyutping - Update rime-cantonese"
-@echo "    mcbpmf - Update McBopomofo lexicon"
-@echo "    moe-csv - Convert CSV from XLS"
-@echo "    moe-db - Build MoE lexicon"
+@echo "    array10 - Array10 [a/b] table builder"
+@echo "    array30 - Array30 [ov/OkidoKey] table builder"
+@echo "    array-phrase - Array30-phrase lexicon builder"
+@echo "    bossy - Custom boshiamy table builder"
+@echo "    ghcm - ghcm table builder"
+@echo "    jieba - Jieba lexicon builder"
+@echo "    jyutping - Jyutping from rime-cantonese table builder"
+@echo "    jyutping-phrase - Rime-cantonese lexicon builder"
+@echo "    mcbpmf - McBopomofo lexicon builder"
+@echo "    moe-csv - Convert CSV from original MoE XLS files"
+@echo "    moe-db - MoE concised, idioms, revised lexicon builder"
 @echo ""
 
 endef
@@ -42,18 +44,18 @@ define timeStart
 endef
 
 define timeStop
-	@echo "\n...took $$(($$(date +%s)-$$(cat tmp.timestamp))) seconds.\n---\n"
+	@echo "\n...took $$(($$(date +%s)-$$(cat tmp.timestamp))) seconds.\n"
 	@-rm tmp.timestamp
 endef
 
-define lovemachine
-	$(eval path1 := "db/$(strip ${1})")
-	$(eval path2 := "${GITEE_REPO_PATH}/db/$(strip ${1})")
-	@-rm ${path2}.*
-	@cp ${path1} ${path2}
-	@bin/LoveMachine -s ${path2}
-	@-rm ${path2}
-endef
+# define lovemachine
+# 	$(eval path1 := "db/$(strip ${1})")
+# 	$(eval path2 := "${GITEE_REPO_PATH}/db/$(strip ${1})")
+# 	@-rm ${path2}.*
+# 	@cp ${path1} ${path2}
+# 	@bin/LoveMachine -s ${path2}
+# 	@-rm ${path2}
+# endef
 
 usage:
 	@echo ${SYNOPSIS}
@@ -63,8 +65,8 @@ test:
 	@$(call timeStop)
 
 table-db:
-	$(eval tablePath = tmp/table)
-	$(eval dbPath = tmp/db)
+	$(eval tablePath = table)
+	$(eval dbPath = db)
 	$(eval excludes := \
 		_sample.cin _demo.cin \
 		array-shortcode.cin array-special.cin \
@@ -87,33 +89,39 @@ table-db:
 
 	@for filename in ${list}; do \
 		if [[ -f "${dbPath}/$${filename}.db" ]]; then \
-			echo "[exists] $${filename}.db"; \
+			echo "[exists] $${filename}.db" ; \
 		else \
 			if [ $$filename == "array30.cin" ] || [ $$filename == "array30_OkidoKey.cin" ]; then \
 				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db --array-short ${tablePath}/array-shortcode.cin --array-special ${tablePath}/array-special.cin ; \
 			else \
-				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db; \
-			fi \
-			-rm ${GITEE_REPO_PATH}/db/$${filename}.db.*
-			$(call lovemachine,$${filename}.db)
-		fi \
+				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db ; \
+			fi ; \
+		fi ; \
 	done;
 
-lexicon-db: array-phrase jieba jyutping mcbpmf moe-db
+
+lexicon-db: array-phrase jieba jyutping-phrase mcbpmf moe-db
 	@# update all lexicon
 
-# all: keyboard table db lexicon gitee sync
+all-third-party-table: array10 array30 ghcm jyutping
 
-clean:
-	@echo "clean all...."
+all-third-party-lexicon: array-phrase jieba jyutping-phrase mcbpmf moe-db
+
+all: pull all-third-party-table all-third-party-lexicon table-db lexicon-db table lexicon keyboard link
+	@echo "Buil all in one command..."
+
+clear:
+	@echo "Remove all db files"
 	@-rm ${GITEE_REPO_PATH}/db/*
+	@-rm db/*.db | tqdm
 
 link:
 	@echo "Copy json resources files to codebase"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json KeyMapping.json ; do \
-		cp ${file} ${XCODE_PATH}
-		cp ${file} ${GITEE_REPO_PATH}
-	@done;
+		echo "...$${file}" ; \
+		cp $${file} ${XCODE_PATH} ; \
+		cp $${file} ${GITEE_REPO_PATH} ; \
+	done;
 
 emoji-db:
 	@$(call timeStart)
@@ -189,9 +197,13 @@ table:
 
 pull:
 	@echo "Upstream pulling..."
-	@for repo in array10 array30 ghcm jieba rime-cantonese McBopomofo tongwen-core ; do \
-		cd rawdata/${repo}; git pull
-	@done;
+	@cd rawdata/array10; git pull
+	@cd rawdata/array30; git pull
+	@cd rawdata/ghcm; git pull
+	@cd rawdata/jieba; git pull
+	@cd rawdata/rime-cantonese; git pull
+	@cd rawdata/McBopomofo; git pull
+	@cd rawdata/tongwen-core; git pull
 
 array10:
 	@$(call timeStart)
@@ -199,8 +211,6 @@ array10:
 	@bin/lime2cin.py -i rawdata/array10/LIME/array10b-20220321.lime -o table/array10b.cin --header table/array10b-header.cin
 	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
 	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
-	@$(call lovemachine,array10a.cin.db)
-	@$(call lovemachine,array10b.cin.db)
 	@$(call timeStop)
 
 array30:
@@ -218,15 +228,12 @@ array30:
 	@cp ${file} table/array30-OkidoKey-big.cin
 	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30-OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
-	@$(call lovemachine,array30.cin.db)
-	@$(call lovemachine,array30-OkidoKey.cin.db)
 	@$(call timeStop)
 
 array-phrase:
 	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
 	@bin/txt2csv.py -i ${file} -o lexicon/array30-phrase.csv -c 3 1 0
 	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
-	@$(call lovemachine,lexicon-array30-phrase.csv.db)
 
 bossy:
 	@$(call timeStart)
@@ -237,34 +244,32 @@ ghcm:
 	@$(call timeStart)
 	@bin/rime2cin.py -i rawdata/ghcm/SM.dict.yaml -o table/ghcm.cin -x table/ghcm-header.cin
 	@bin/cin2db.py -i table/ghcm.cin -o db/ghcm.cin.db
-	$(call lovemachine,ghcm.cin.db)
 	@$(call timeStop)
 
 jieba:
 	@$(call timeStart)
 	@bin/jieba2csv.py -i rawdata/jieba/jieba/dict.txt -o lexicon/Jieba-hans.csv
 	@bin/lexicon2db.py -i lexicon/Jieba-hans.csv -o db/lexicon-Jieba-hans.csv.db
-	$(call lovemachine,lexicon-Jieba-hans.csv.db)
 	@$(call timeStop)
 
 jyutping:
 	@$(call timeStart)
 	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3.cin -t tone --header table/jyut6ping3-header.cin
 	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3-toneless.cin -t toneless --header table/jyut6ping3-toneless-header.cin
-	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o table/Rime-cantonese.csv -t phrase
 	@bin/cin2db.py -i table/jyut6ping3.cin -o db/jyut6ping3.cin.db
 	@bin/cin2db.py -i table/jyut6ping3-toneless.cin -o db/jyut6ping3-toneless.cin.db
+	@$(call timeStop)
+
+jyutping-phrase:
+	@$(call timeStart)
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o table/Rime-cantonese.csv -t phrase
 	@bin/lexicon2db.py -i lexicon/Rime-cantonese.csv -o db/lexicon-Rime-cantonese.csv.db
-	$(call lovemachine,jyut6ping3.cin.db)
-	$(call lovemachine,jyut6ping3-toneless.cin.db)
-	$(call lovemachine,lexicon-Rime-cantonese.csv.db)
 	@$(call timeStop)
 
 mcbpmf:
 	@$(call timeStart)
 	@bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/BPMFMappings.txt -o lexicon/McBopomofo-phrase.csv
 	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o db/lexicon-McBopomofo-phrase.csv.db
-	$(call lovemachine,lexicon-McBopomofo-phrase.csv.db)
 	@$(call timeStop)
 
 moe-csv:
@@ -273,9 +278,9 @@ moe-csv:
 	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_revised_*_1.xls)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)_1\.xls/\1/' ))
 	@echo "Convert: revised ${version}..."
-	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_1.xls > rawdata/moe/revised1-raw.csv
-	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_2.xls > rawdata/moe/revised2-raw.csv
-	@in2csv rawdata/moe/src/dict_revised_${version}/dict_revised_${version}_3.xls > rawdata/moe/revised3-raw.csv
+	@in2csv rawdata/moe/src/dict_revised_${version}_1.xls > rawdata/moe/revised1-raw.csv
+	@in2csv rawdata/moe/src/dict_revised_${version}_2.xls > rawdata/moe/revised2-raw.csv
+	@in2csv rawdata/moe/src/dict_revised_${version}_3.xls > rawdata/moe/revised3-raw.csv
 	@csvstack rawdata/moe/revised1-raw.csv rawdata/moe/revised2-raw.csv rawdata/moe/revised3-raw.csv > rawdata/moe/revised-raw.csv
 	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/revised-raw.csv > rawdata/moe/revised.csv
 	@-rm rawdata/moe/revised-raw.csv
@@ -310,7 +315,4 @@ moe-db:
 	@bin/lexicon2db.py -i lexicon/MoE-concised.csv -o db/lexicon-MoE-concised.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-idioms.csv -o db/lexicon-MoE-idioms.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-revised.csv -o db/lexicon-MoE-revised.csv.db
-	$(call lovemachine,lexicon-MoE-concised.csv.db)
-	$(call lovemachine,lexicon-MoE-idioms.csv.db)
-	$(call lovemachine,lexicon-MoE-revised.csv.db)
 	@$(call timeStop)

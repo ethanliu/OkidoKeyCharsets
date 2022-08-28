@@ -7,14 +7,30 @@
 
 import argparse
 import importlib
-import sys, os, glob, re
+import sys, os, glob, re, shutil
 import sqlite3, json
 from datetime import datetime
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
 
+def splitFile(filename):
+    path1 = f"{cwd}/db/{filename}"
+    path2 = f"{cwd}/rawdata/gitee/db/{filename}"
+
+    # print('---')
+    # print(path1)
+    # print(path2)
+
+    for file in glob.glob(f"{path2}.*"):
+        os.remove(file)
+
+    shutil.copy(path1, path2)
+    uu.call([f"{cwd}/bin/LoveMachine -s {path2}"])
+    os.remove(path2)
+
 def createJsonFile(path, content):
+    print(uu.color(f"{os.path.basename(path)} created.", fg = 'green'))
     with open(path, 'w') as f:
         f.write(json.dumps(content, ensure_ascii = False, indent = 4, sort_keys = True))
         f.close()
@@ -72,7 +88,8 @@ def createTable():
     }
 
     for path in glob.glob(f"{dbPath}/*.cin.db"):
-        filename = os.path.basename(path).replace('.db', '')
+        dbFilename = os.path.basename(path)
+        filename = dbFilename.replace('.db', '')
 
         # if filename.startswith('lexicon-'):
         #     continue
@@ -81,6 +98,8 @@ def createTable():
             print(f"File not found: {filename}")
             continue
 
+        splitFile(dbFilename)
+
         # print(f"{filename}")
         with open(f"{tablePath}/{filename}", 'r') as reader:
             content = {
@@ -88,7 +107,7 @@ def createTable():
                 'cname': '',
                 'name': '',
                 'cin': f"table/{filename}",
-                'db': f"db/{filename}.db",
+                'db': f"db/{dbFilename}",
                 'license': '',
             }
 
@@ -160,9 +179,12 @@ def createLexicon():
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('lexicon-', '').replace('.db', '')
         txtPath = f"{lexiconPath}/{filename}.txt"
+
         if not os.path.exists(txtPath):
             print("File not found: {txtPath}")
             continue
+
+        splitFile(dbFilename)
 
         reader = open(f"{lexiconPath}/{filename}.txt", 'r')
         template = reader.read()
@@ -184,7 +206,6 @@ def createLexicon():
             template += f"{phrase} {pinyin}\n"
 
         db.close()
-
 
         # print(template)
         jsondata['resources'].append({
