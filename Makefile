@@ -78,7 +78,7 @@ table-db:
 		egyptian.cin ehq-symbols.cin esperanto.cin \
 		ghcm-header.cin \
 		jyutping.cin jyutping-toneless.cin \
-		jyut3ping6-header.cin jyutp3ing6-toneless-headeer.cin \
+		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
 		kk.cin kks.cin klingon.cin morse.cin telecode.cin \
 		ov_ezbig.cin ov_ezsmall.cin \
 		simplex-ext.cin \
