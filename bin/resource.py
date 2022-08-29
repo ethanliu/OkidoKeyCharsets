@@ -83,7 +83,7 @@ def createTable():
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
-        'databases': [],
+        'datatables': [],
         'splits': {},
     }
 
@@ -147,7 +147,7 @@ def createTable():
                     break
 
             reader.close()
-            jsondata['databases'].append(content)
+            jsondata['datatables'].append(content)
 
         # splits
         list = glob.glob(f"{giteeRepoPath}/{filename}*")
