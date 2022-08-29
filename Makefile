@@ -1,4 +1,4 @@
-.PHONY: usage all clean test table
+.PHONY: usage all clean test table lexicon
 
 # SHELL := /usr/bin/env bash
 XCODE_PATH := ../src/baker/baker/Supporting\ Files/
@@ -262,7 +262,7 @@ jyutping:
 
 jyutping-phrase:
 	@$(call timeStart)
-	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o table/Rime-cantonese.csv -t phrase
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o lexicon/Rime-cantonese.csv -t phrase
 	@bin/lexicon2db.py -i lexicon/Rime-cantonese.csv -o db/lexicon-Rime-cantonese.csv.db
 	@$(call timeStop)
 
