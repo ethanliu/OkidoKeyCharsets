@@ -49,3 +49,6 @@ z z
 5 5
 6 6
 %keyname end
+%chardef begin
+{{chardef}}
+%chardef end
