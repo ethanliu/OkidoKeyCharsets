@@ -1,0 +1,14 @@
+小麥注音輸入法詞庫
+
+OpenVanilla McBopomofo 小麥注音輸入法 - MIT License
+https://github.com/openvanilla/McBopomofo/tree/master/Source/Data
+
+關於小麥注音輸入法
+===============
+小麥注音的輸入法引擎是 Gramambular，這是一套在 2010 年開發釋出的 open source 中文斷字引擎。斷字跟選字的原理相近，我們利用這個特性，加上網路上公開可使用的語料與讀音資料，整理成小麥注音的資料庫。
+
+關於本詞庫
+=========
+本詞庫基於小麥注音輸入法的 BPMFMappings.txt 及 phrase.occ 檔案。
+以 BPMFMappings.txt 為主要字詞，並將其注音符號轉為無調號之漢語拼音，再參考 phrase.occ 的字詞詞頻加乘。
+轉換後的 CSV 檔有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。
