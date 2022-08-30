@@ -1,0 +1,38 @@
+[
+    {
+        "name": "lxsy",
+        "description": "灵形速影",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][del]",
+            "[q][w][e][r][t][y][u][i][o][p][[]",
+            "[dummy:2][a][s][d][f][g][h][j][k][l][η][λ][dummy:2]",
+            "[dummy][z][x][c][v][b][n][m][э][π][я][dummy]",
+             "[next][globe][space][return]"
+         ]
+    },
+    {
+        "name": "lxsy-pad",
+        "description": "灵形速影",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][-][=]",
+            "[q][w][e][r][t][y][u][i][o][p][[][del]",
+            "[dummy:2][a][s][d][f][g][h][j][k][l][η][λ][return]",
+            "[shift][z][x][c][v][b][n][m][э][π][я][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "lxsy-fullsize",
+        "description": "灵形速影",
+        "charsets":
+        [
+            "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
+            "[tab][Q][W][E][R][T][Y][U][I][O][P][[][]][\\]",
+            "[capslock][A][S][D][F][G][H][J][K][L][η][λ][return]",
+            "[shift][Z][X][C][V][B][N][M][э][π][я][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]

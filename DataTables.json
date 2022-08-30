@@ -1,1 +1,568 @@
-{"version":"20170828200312","datatables":[{"ename":"array10","cname":"\u884c\u521710","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/array10a.cin","license":""},{"ename":"array26","cname":"\u884c\u5217\u5eff\u516d","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/array26.cin","license":"#--------------------------------------------------------------------------------------------\n#\u3000\u540d\u7a31\uff1a\u884c\u5217\u8f38\u5165\u6cd5\u5eff\u516d\u9375\u7248\u4e4b\u9999\u8349\u6a21\u7d44\u5c0d\u7167\u8868\uff08array26.cin\uff09\n#\u3000\u7248\u672c\uff1a0.4\n#\u3000\u65e5\u671f\uff1a2007\u5e7406\u670826\u65e5\n#\u3000\u672carray26.cin\u539f\u59cb\u6a94\u6848\u662f\u7531\u6797\u6c9b\u7199\uff08lin_pepsi@yahoo.com\uff09\n#\u3000\u6839\u64da\u958b\u653e\u9999\u8349\u8f38\u5165\u6cd5\uff08OpenVanilla\uff09\u4e2d\uff0c\n#\u3000\u7531\u970d\u6771\u9748AnthonyFok<foka@debian.org>\u541b\u6240\u6574\u7406\u4e4b\u5c0d\u7167\u8868\u4fee\u6539\u800c\u6210\u3002\n#\u3000\u64da\u6089\uff0c\u970d\u541b\u5229\u7528\u884c\u5217\u79d1\u6280\u5728\u6240\u63d0\u4f9b\u4e4b\u884c\u521730\u5c0d\u7167\u8868\uff081996\u5e74\u7248\uff09\uff0c\n#\u3000\u4e26\u627f\u8449\u5149\u54f2(gontera)\u541b\u8207zonble\u9f0e\u529b\u5354\u52a9\uff0c\u5c07\u5b57\u78bc\u64f4\u589e\u70baunicode\u5b57\u96c6\uff0c\n#\u3000\u4e26\u652f\u63f4\u4e00\u7d1a\u7c21\u78bc\u5916\uff08\u4e0d\u652f\u63f4\u4e8c\u7d1a\u7c21\u78bc\uff09\u8207\u884c\u5217\u7279\u5225\u78bc\u3002\n#\u3000\u611f\u8b1d\u884c\u5217\u8f38\u5165\u6cd5\uff08\u884c\u5217\u79d1\u6280\uff09\u7684\u767c\u660e\u4eba\u5ed6\u660e\u5fb7\u5148\u751f\n#\u3000\u6177\u6168\u63d0\u4f9b\u5305\u542b\u7e41\u3001\u7c21\u4e2d\u6587\u5b57\u96c6\u5171\u4e8c\u842c\u4e5d\u5343\u9918\u5b57\u7684unicode\u5b57\u96c6\u5c0d\u7167\u6a94\uff0c\n#\u3000\u4e26\u958b\u653e\u514d\u8cbb\u6388\u6b0a\u4e88\u793e\u7fa4\u9032\u884c\u4fee\u6539\u8207\u589e\u88dc\u3002\n#\u3000\u672c\u6a94\u6848\u63a1General Public License\u6388\u6b0a\uff0c\n#\u3000\u6b61\u8fce\u5404\u754c\u7121\u511f\uff08\u6216\u50c5\u6536\u53d6\u9069\u7576\u6210\u672c\uff09\u6d41\u901a\u53ca\u4f7f\u7528\uff1b\n#\u3000\u672c\u6a94\u6848\u6b61\u8fce\u4f7f\u7528\u8005\u81ea\u884c\u4fee\u6539\uff0c\n#\u3000\u60df\u4fee\u6539\u4e4b\u5f8c\u4e4b\u6a94\u6848\uff0c\u4ea6\u9808\u9075\u7167GPL\u5354\u5b9a\u958b\u653e\u6388\u6b0a\u3002\n#\u3000\u672c\u6a94\u6848\u4e4bGPL\u6388\u6b0a\uff0c\u8207\u884c\u5217\u8f38\u5165\u6cd5\u53ca\u884c\u5217\u79d1\u6280\u7121\u95dc\uff0c\n#\u3000\u884c\u5217\u8f38\u5165\u6cd5\u53ca\u5176\u76f8\u95dc\u6cd5\u5f8b\u6b0a\u5229\uff0c\u84cb\u5c6c\u884c\u5217\u79d1\u6280\u6240\u6709\u3002\n#\u3000\u6709\u95dc\u884c\u5217\u8f38\u5165\u6cd5\uff0c\u8acb\u53c3\u89c0http:\/\/www.array.com.tw\/\u5167\u7684\u4ecb\u7d39\u3002\n#--------------------------------------------------------------------------------------------\n"},{"ename":"array30","cname":"\u884c\u521730","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/array30_OkidoKey_0.75.cin","license":"#######################################################################\n#                                                                     #\n#  array30.cin for OkidoKey (v0.75), 2015-10-26                       #\n#                                                                     #\n#  \u9019\u500b\u8f38\u5165\u6cd5\u8868\u683c\u662f array30.cin for OpenVanilla v0.75 \u7c21\u5316\u800c\u4f86\uff0c\u53ea    #\n#  \u4fdd\u7559 Unicode 3.0 \u4ea6\u5373\u50c5\u652f\u63f4 4 byte \u7684 CJK Ext-A \u5b57\u96c6\uff0c\u4e26\u522a\u9664\u8f03\u7f55\u7528 #\n#  \u7684 CJK Ext-B\/C\/D \u5b57\u96c6\uff0c\u4ee5\u7bc0\u7701\u884c\u52d5\u88dd\u7f6e\u5bf6\u8cb4\u7684\u8a18\u61b6\u9ad4\u7a7a\u9593\u3002\u6211\u53e6\u63d0\u4f9b\u5305  #\n#  \u62ec\u5b8c\u6574 CJK \u5b57\u96c6\u7684\u300c\u5927\u5b57\u96c6\u7248\u672c\u300d\uff0c\u5982\u6709\u9700\u8981\uff0c\u8acb\u81ea\u884c\u4e0b\u8f09\u5b89\u88dd\u3002\n#                                                                     #\n#  \u672c\u6a94\u6848\u8ddf\u884c\u5217\u79d1\u6280\u6240\u63d0\u4f9b\u7684\u539f\u59cb\u6a94\u6848\u4e00\u6a23\u516c\u958b\u6388\u6b0a\uff0c\u53c8\u6216\u53ef\u4f9d\u64da GNU       #\n#  General Public License (GPL) version 2 \u6216\u65b0\u7248\u516c\u958b\u6388\u6b0a\uff0c\u6b61\u8fce\u5404\u754c\u5206  #\n#  \u5e03\u53ca\u4f7f\u7528\u3002\u5728\u6b64\u8b39\u81f4\u8b1d\u884c\u5217\u79d1\u6280\u4e4b\u6177\u6168\u5927\u65b9\uff0c\u8b93\u5927\u5bb6\u53ef\u514d\u8cbb\u81ea\u7531\u5730\u4f7f\u7528\u884c   #\n#  \u5217\u8f38\u5165\u6cd5\u3002                                                         #\n#                                                                     #\n#  \u6709\u95dc\u884c\u5217\u8f38\u5165\u6cd5\uff0c\u8acb\u53c3\u89c0 http:\/\/www.array.com.tw\/ \u5167\u7684\u4ecb\u7d39\u3002         #\n#                                                                     #\n#######################################################################\n"},{"ename":"Array40","cname":"\u884c\u521740","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/array40.cin","license":"# \u7248\u672c\uff1a0.15\n# \u4f5c\u8005\uff1a\u8449\u5149\u54f2\uff08\u8001\u5200\uff09 MSN: gontera_yeh@hotmail.com\n#\n# \u4ee5\u4e0b\u7684\u8aaa\u660e\u6587\u5b57\u4e2d\uff0c\u300c\u884c\u5217\u8f38\u5165\u6cd5\u300d\u4fc2\u6307\u65e9\u671f\u7684 40 \u9375\u7248\u672c\uff1b\u884c\u5217\u8f38\u5165\u6cd5 30 \u9375\u7684\u7248\u672c\u4ee5\n# \u300c\u884c\u521730\u300d\u7a31\u4e4b\u3002\n#\n# \u9019\u500b\u65e9\u671f\u7248\u672c\u7684\u884c\u5217\u8f38\u5165\u6cd5\u6700\u521d\u662f\u5167\u542b\u65bc\u501a\u5929\u4e2d\u6587\u7cfb\u7d71\u4e4b\u4e2d\u3002\u5b83\u8207\u76ee\u524d\u6d41\u884c\u7684\u300c\u884c\u521730\u300d\u8f38\u5165\u6cd5\n# \u4e0d\u540c\u3002OpenVanilla \u6a19\u6e96\u5b89\u88dd\u5957\u4ef6\u4e2d\u5df2\u5305\u542b\u4e86\u300c\u884c\u521730\u300d\u8f38\u5165\u6cd5\uff0c\u5982\u679c\u60a8\u662f\u8a72\u7248\u672c\u7684\u4f7f\u7528\u8005\uff0c\u5247\n# \u7121\u9808\u5b89\u88dd\u672c\u8f38\u5165\u6cd5\u3002\u672c\u8f38\u5165\u6cd5\u4fc2\u7279\u5225\u91dd\u5c0d\u65e9\u671f\u884c\u5217\u8f38\u5165\u6cd5\u7684\u4f7f\u7528\u8005\u6240\u8a2d\u8a08\u3002\u672c\u8f38\u5165\u6cd5\u5c0d\u7167\u8868\u662f\u5f9e\n# \u300c\u884c\u5217\u8f38\u5165\u6cd5\u7684\u5bb6\u300d\u7db2\u7ad9\uff08\u5373\u884c\u5217\u8f38\u5165\u6cd5\u5b98\u65b9\u7db2\u7ad9\uff09\u63d0\u4f9b\u7684 Windows \u7248\u884c\u5217\u8f38\u5165\u6cd5\uff08\u4e0b\u8f09\u9023\u7d50\u70ba\n# http:\/\/www.array.com.tw\/BOX\/AR40NT_2K_XP.zip\uff09\u8f49\u7f6e\u800c\u4f86\u3002\n#\n#\n# \u672c\u6a94\u6848\u548c\u884c\u5217\u8f38\u5165\u6cd5\u898f\u683c\u66f8\u4e0d\u540c\u4e4b\u8655\uff1a\n#\n# \u9375\u4f4d\u5728\u87a2\u5e55\u4e0a\u7684\u8868\u793a\u65b9\u5f0f\u3002\u56e0 Mac OS X \u4e26\u672a\u63a1\u7528\u501a\u5929\u4e2d\u6587\u7684\u505a\u6cd5\uff0c\u5c07\u884c\u5217\u8f38\u5165\u6cd5\u7684\u9375\u4f4d\u7b26\u865f\n# \u7de8\u5165\u5176\u4e2d\u6587\u5b57\u96c6\u5167\uff0c\u6545\u5728\u6b64\u9664\u4e86\u501f\u7528\u300c\u884c\u521730\u300d\u7684\u4e0b\u7bad\u982d (\u21e3) \u4ee3\u8868\u7b2c 7, 8, 9, 0 \u5217\u3001\u4e0a\u7bad\u982d (\u21e1)\n# \u4ee3\u8868\u7b2c 1, 2 \u5217\u4e4b\u5916\uff0c\u53e6\u4ee5\u300c\u2305\u300d\u7b26\u865f\u4ee3\u8868 3, 4, 5, 6 \u5217\u3002\n#\n# \u7248\u672c\u8aaa\u660e\uff1a\n# 0.11 \u7b2c\u4e00\u7248\n# 0.15 \u65b0\u589e\u652f\u63f4\u6a19\u9ede\u7b26\u865f\u8f38\u5165\n#\n# \u8a3b\uff1a\u672c\u8f38\u5165\u6cd5\u50c5\u652f\u63f4 Big-5 \u7bc4\u570d\u7684\u6b63\u9ad4\u4e2d\u6587\u5b57\u96c6\uff1b\u7b46\u8005\u4e26\u7121\u52a0\u5165\u652f\u63f4 Unicode \u5b57\u96c6\u7684\u8a08\u756b\u3002\u5982\u679c\n# \u300c\u652f\u63f4 Unicode \u5b57\u96c6\u300d\u5c0d\u60a8\u5f88\u91cd\u8981\uff0c\u5f37\u70c8\u5efa\u8b70\u60a8\u6539\u7528\u300c\u884c\u521730\u300d\u8f38\u5165\u6cd5\u3002\u6700\u5f8c\u4ee5\u5b98\u65b9\u7db2\u7ad9\u7684\u4e00\u6bb5\n# \u8a71\uff0c\u505a\u70ba\u8aaa\u660e\u6587\u5b57\u7684\u7d50\u5c3e\uff1a\u300c\u6b64\u5c08\u70ba\u820a\u7248\u884c\u521740\u9375\u7248\u4f7f\u7528\u8005\u670d\u52d9\uff0c\u5e0c\u671b40\u9375\u7248\u7684\u4f7f\u7528\u8005\uff0c\u6700\u597d\u9084\n# \u662f\u6539\u7528\u65b0\u7248\u7684\u884c\u521730\u8f38\u5165\u6cd5\u624d\u662f\u4e0a\u7b56\u300d\u3002\n"},{"ename":"Biaoyin","cname":"\u8868\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/biaoyin.cin","license":"#Version 2.3, November 2007\n#Eric Rasmussen <hello.rasmus@gmail.com>\n#Covers Pinyin, MPS-2, Yale\n#Omits \u00ea\n#Special thanks to OpenVanilla.org for converting the data table\n"},{"ename":"PhoneticHsu","cname":"\u6ce8\u97f3-\u8a31\u6c0f\u9375\u76e4","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/bpmf-Hsu.cin","license":""},{"ename":"Phonetic","cname":"\u6ce8\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/bpmf-ext.cin","license":"# Revise by opendesktop.org.tw's phone.cin to include CNS11643 and Unicode\n# compatible characters.\n# Also adjust some punctuations.\n# License\uff1aPublic Domain\n"},{"ename":"BoPoMoFo-Syllables","cname":"\u6ce8\u97f3\u7b26\u865f","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/bpmf-symbol.cin","license":""},{"ename":"Phonetic","cname":"\u6ce8\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/bpmf.cin","license":""},{"ename":"BoPoMoFo","cname":"\u6ce8\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/bpmf_punctuation.cin","license":""},{"ename":"CangJie (Large Character Set)","cname":"\u5009\u9821\uff08\u5927\u5b57\u96c6\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/cj-ext.cin","license":"# CangJie (often mis-Romanized as Changjei) input method table\n# tweaked by b6s for OVIMGeneric(SQLite) in UTF-8 encoding.\n#\n# This table also extended to include HKSCS encodings. For details, see\n#       http:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n# Now this table is supplied by CNS11643 to have around 70,000 Chinese\n# characters. This work is based on opendesktop.org.tw's cj.cin file and\n# merged by yylin and b6s.\n#\n"},{"ename":"Cangjie-J","cname":"\u5009\u9821-J","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/cj-j.cin","license":"#  ChangJei input method table for UTF-8 encoding.\n#\n#  This table also extended to include HKSCS encodings. For details, see\n#\thttp:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n#\tPunctuations modified by Janus Ng on Dec 30, 2004\n#\n"},{"ename":"CangJie (with wildcard support)","cname":"\u5009\u9821\uff08\u842c\u7528\u5b57\u5143\u7248\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/cj-wildcard.cin","license":"# CangJie input method table tweaked by b6s for OVIMGeneric(SQLite) in UTF-8 encoding.\n#\n# This table also extended to include HKSCS encodings. For details, see\n#\thttp:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n#\n"},{"ename":"CangJie","cname":"\u5009\u9821","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/cj.cin","license":"# CangJie input method table tweaked by b6s for OVIMGeneric(SQLite) in UTF-8 encoding.\n#\n# This table also extended to include HKSCS encodings. For details, see\n#\thttp:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n#\n"},{"ename":"Cangjie-5","cname":"\u5009\u9821\u4e94\u4ee3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/cj5.cin","license":"#  ChangJei input method table for UTF-8 encoding.\n#\n#\tConverted from http:\/\/www.cbflabs.com\/tec.htm\n#\tby Janus Ng on Dec 30, 2004\n#\n"},{"ename":"Corners","cname":"\u56db\u89d2\u865f\u78bc","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/corner.cin","license":""},{"ename":"daibuun","cname":"\u666e\u5be6\u53f0\u6587","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/daibuun.cin","license":"#\u666e\u5be6\u53f0\u6587\u8f38\u5165\u6cd5 1.0 \u7248\n#\u8d99\u60df\u502b <chaoweilun@pcmail.com.tw> GPL 2004.5\n#\u4fee\u6539\u81ea daibuun.tit (\u8d99\u60df\u502b1997.10)\n#\u6839\u64da\u666e\u5be6\u53f0\u6587 <http:\/\/www.taconet.com.tw\/hioong\/>\n"},{"ename":"Dayi3","cname":"\u5927\u6613\uff08\u6a19\u9ede\u7b26\u865f\u7248\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/dayi3-patched.cin","license":"# \u672c\u8868\u683c\u7531\u592a\u6613\u8cc7\u8a0a\u516c\u53f8 (http:\/\/www.dayi.com) \u6388\u6b0a\uff0c\u958b\u653e\u7d66\u4f7f\u7528\u8005\u4e0b\u8f09\u4f7f\u7528\u3002\n#\n# \u4f7f\u7528\u8005\u4e0d\u5f97\u4efb\u610f\u66f4\u6539\u6b64\u8868\u683c\u4e2d\u6bcf\u500b\u5b57\u7684\u7de8\u78bc\u898f\u5247\u4e26\u91cd\u65b0\u6563\u4f48\uff0c\u4f46\u5141\u8a31\u6539\u8b8a\u6b64\u8868\u683c\n# \u7684\u683c\u5f0f\u4ee5\u9069\u5408\u5176\u4ed6\u5e73\u53f0\u6216\u8f38\u5165\u6cd5\u8edf\u9ad4\u4f7f\u7528\u3002\n#\n# last modified: 2005-01-14\n# \u52a0\u5165\u4e00\u6279\u6a19\u9ede\u7b26\u865f\u548c\u4e00\u500b\u65b0\u7684 keyname (' \u6a19)\n# \u6539\u8b8a\u4e8c\u9375\u8f38\u5165\u6642\u7684\u4e00\u4e9b\u5e38\u7528\u5b57\u9078\u5b57\u9806\u5e8f\uff1a\n# \u4e5f\u9053\u7238\u5c31\u50cf\u8eab\u5047\u6d41\u9060\u61c9\u6f22\u862d\u52d5\u5d17\u4e82\u75c5\u7897\u7345\u64da\u904a\u773e\u842c\u7063\u6108\u6de8\u7ba1\u8212\u967d\u5236\u5922\n#\n"},{"ename":"Dayi3","cname":"\u5927\u6613","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/dayi3.cin","license":"# \u672c\u8868\u683c\u7531\u592a\u6613\u8cc7\u8a0a\u516c\u53f8 (http:\/\/www.dayi.com) \u6388\u6b0a\uff0c\u958b\u653e\u7d66\u4f7f\u7528\u8005\u4e0b\u8f09\u4f7f\u7528\u3002\n#\n# \u4f7f\u7528\u8005\u4e0d\u5f97\u4efb\u610f\u66f4\u6539\u6b64\u8868\u683c\u4e2d\u6bcf\u500b\u5b57\u7684\u7de8\u78bc\u898f\u5247\u4e26\u91cd\u65b0\u6563\u4f48\uff0c\u4f46\u5141\u8a31\u6539\u8b8a\u6b64\u8868\u683c\n# \u7684\u683c\u5f0f\u4ee5\u9069\u5408\u5176\u4ed6\u5e73\u53f0\u6216\u8f38\u5165\u6cd5\u8edf\u9ad4\u4f7f\u7528\u3002\n#\n"},{"ename":"Egyptian Hieroglyphs","cname":"Egyptian Hieroglyphs","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/egyptian.cin","license":"# 2009-11-30 (c) by Georg Schweizer <egyptian@transalpin.eu>\n# Based on Lee Collins' \"Unicode-MdC mapping\" v. 1: http:\/\/unicode.org\/notes\/tn32\/\n# with the addition of numerals and stylistic variants.\n#\n# INSTALLATION:\n#  1) On Mac OS X 10.5 or higher, install this file in '~\/Library\/Input Methods\/'.\n#     Alternatively, download and install OpenVanilla and move egyptian.cin to\n#     '~\/Library\/Application Support\/Open Vanilla\/UserData\/OVIMGeneric\/'.\n#  2) Logout and log back in.\n#  3) Activate input method in the System Preferences.\n# Use with George Douros' font 'Aegyptus': http:\/\/users.teilar.gr\/~g1951d\/\n#\n# Comments and suggestions appreciated: egyptian@transalpin.eu\n"},{"ename":"Symbols and Kanas (Iroha)","cname":"\u6f01\u6751\u7b26\u865f\u53ca\u65e5\u6587\u5047\u540d","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/ehq-symbols.cin","license":"# ehq-symbols.cin: EHQ-Symbol (named Unicode symbols) and Japanese Kanas\n#\n# This data table is combined from ehq.cin and iroha.cin\n#\n# ehq.cin 2004-2008 By Weizhong Yang\n# Table data is Zonble-ware and adopts Zonble's License\n# -- \"How could a person who doesn't even believe in law adopt any license?\"\n#\n# iroha.cin 2004-2008 By momizi\n# Table data derived from japan.box, a table that existed long time ago\n# in a galaxy far far away. Table data collected in December 2004.\n#\n"},{"ename":"Esperanto","cname":"\u4e16\u754c\u8a9e (Esperanto)","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/esperanto.cin","license":""},{"ename":"jidianWubi (JiDianWubi)","cname":"\u6781\u70b9\u4e94\u7b14","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/jidianwubi.cin","license":""},{"ename":"JinJin","cname":"\u6676\u6676\u78bc","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/jinjin.cin","license":""},{"ename":"Cangjie (Simplified Chinese)","cname":"\u7b80\u4f53\u4ed3\u9889","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/jtcj.cin","license":"# This is the ChanJei input method table in GB encoding.\n#\n# Please visit the URL:  http:\/\/www.chinese.net.my\/cj\n#\t\t\t http:\/\/www.geocities.com\/RainForest\/9178\/maincjgb.htm\n# for further information.\n#\n"},{"ename":"Cantonese (Toneless)","cname":"\u7cb5\u8a9e\u62fc\u97f3 (\u7121\u8abf\u865f\u7248)","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/jyutping-toneless.cin","license":"#  $Id: jyutping.cin,v 1.1.1.1 2000\/12\/09 01:57:02 thhsieh Exp $\n#  ====================================================================\n#\n#  This cin file is originally converted from the \"phrase box\" file\n#  available on the Linguistic Society of Hong Kong's website:\n#\n#\thttp:\/\/ctlhpan.cityu.edu.hk\/lshk\/jyutping\/\n#\n#  You are free to use and redistribute this file; the author only\n#  wishes you keep the following notice intact:\n#\n#  \"The copyright of the Jyutping phrase box belongs to the Linguistic\n#  Society of Hong Kong.  We would like to thank the Jyutping Group of\n#  the Linguistic Society of Hong Kong for permission to use the\n#  electronic file in our research and\/or product development.\"\n#\n#  For more information about the Jyutping system, visit the above\n#  website.  The romanisation system is a little bit different from\n#  common Hong Kong usage, but this system is a lot more systematic.\n"},{"ename":"Cantonese","cname":"\u7cb5\u8a9e\u62fc\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/jyutping.cin","license":"#  $Id: jyutping.cin,v 1.1.1.1 2000\/12\/09 01:57:02 thhsieh Exp $\n#  ====================================================================\n#\n#  This cin file is originally converted from the \"phrase box\" file\n#  available on the Linguistic Society of Hong Kong's website:\n#\n#\thttp:\/\/ctlhpan.cityu.edu.hk\/lshk\/jyutping\/\n#\n#  You are free to use and redistribute this file; the author only\n#  wishes you keep the following notice intact:\n#\n#  \"The copyright of the Jyutping phrase box belongs to the Linguistic\n#  Society of Hong Kong.  We would like to thank the Jyutping Group of\n#  the Linguistic Society of Hong Kong for permission to use the\n#  electronic file in our research and\/or product development.\"\n#\n#  For more information about the Jyutping system, visit the above\n#  website.  The romanisation system is a little bit different from\n#  common Hong Kong usage, but this system is a lot more systematic.\n"},{"ename":"KK-Phonetic-Symbols","cname":"KK\u97f3\u6a19","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/kk.cin","license":""},{"ename":"KKS POJ Hanlo IME","cname":"KKS\u6559\u7f85\u6f22\u7f85\u8f38\u5165\u6cd5","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/kks.cin","license":""},{"ename":"Internation Morse Code","cname":"\u6469\u65af\u78bc","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/morse.cin","license":""},{"ename":"ez","cname":"\u8f15\u9b06","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/ov_ez.cin","license":"### \u7248\u6b0a\u8072\u660e:\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c(\u8f15\u9b06\u8f38\u5165\u6cd5\u55ae\u5b57\u7248) \u4e43\u6839\u64da\u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\u7684\u898f\u5b9a\uff0c\n### \u4ee5 GPL V2.0 \u6216\u66f4\u65b0\u7684\u7248\u672c\u6240\u91cb\u51fa\uff0c\u5728\u9075\u5b88\u8a72\u6388\u6b0a\u66f8\u7684\u898f\u5b9a\u4e0b\uff0c\n### \u53ef\u4ee5\u4fee\u6539\u3001\u8907\u88fd\u53ca\u6563\u4f48\u672c\u8f38\u5165\u6cd5\u8868\u683c\uff0c\u552f\u672c\u8f38\u5165\u6cd5\u8868\u683c\u537b\u4e0d\u5305\u542b\u4efb\u4f55\u64d4\u4fdd\uff1b\n### \u4e14\u4fee\u6539\u5f8c\u7684\u8f38\u5165\u6cd5\u8868\u683c\u4e2d\u82e5\u6709\u4efb\u4f55\u932f\u8aa4\uff0c\u7686\u8207\u539f\u4f5c\u8005\u7121\u95dc\u3002\n### \u5982\u6709\u9700\u8981\uff0c\u8acb\u53c3\u95b1 \u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\n### \u53ca GNU GENERAL PUBLIC LICENSE \u4ee5\u4e86\u89e3\u66f4\u8a73\u7d30\u7684\u898f\u5b9a\u3002\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c\u70ba xcin-2.3 \u7684 \u300cez.cin\u300d\uff08\u55ae\u5b57\u7248\uff09\u7684\u4fee\u6539\u7248\u672c\u3002\n###\n###\n### Woodman Tuen <wmtuen@gmail.com>, 25-10-2008\n###\n###\n"},{"ename":"easy","cname":"\u8f15\u9b062006\u539f\u5473\u7248(for\u9999\u8349)","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/ov_ez75.cin","license":"# this file is encoded in UTF-8\n#\n# \u8f15\u9b06\u8f38\u5165\u6cd5 .cin \u683c\u5f0f\u6a94\u982d\n#\n"},{"ename":"ezbig","cname":"\u8f15\u9b06\u5927\u8a5e\u5eab","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/ov_ezbig.cin","license":"### \u7248\u6b0a\u8072\u660e:\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c(\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u578b\u8a5e\u5eab\u7248) \u4e43\u6839\u64da\u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\u7684\u898f\u5b9a\uff0c\n### \u4ee5 GPL V2.0 \u6216\u66f4\u65b0\u7684\u7248\u672c\u6240\u91cb\u51fa\uff0c\u5728\u9075\u5b88\u8a72\u6388\u6b0a\u66f8\u7684\u898f\u5b9a\u4e0b\uff0c\n### \u53ef\u4ee5\u4fee\u6539\u3001\u8907\u88fd\u53ca\u6563\u4f48\u672c\u8f38\u5165\u6cd5\u8868\u683c\uff0c\u552f\u672c\u8f38\u5165\u6cd5\u8868\u683c\u537b\u4e0d\u5305\u542b\u4efb\u4f55\u64d4\u4fdd\uff1b\n### \u4e14\u4fee\u6539\u5f8c\u7684\u8f38\u5165\u6cd5\u8868\u683c\u4e2d\u82e5\u6709\u4efb\u4f55\u932f\u8aa4\uff0c\u7686\u8207\u539f\u4f5c\u8005\u7121\u95dc\u3002\n### \u5982\u6709\u9700\u8981\uff0c\u8acb\u53c3\u95b1 \u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\n### \u53ca GNU GENERAL PUBLIC LICENSE \u4ee5\u4e86\u89e3\u66f4\u8a73\u7d30\u7684\u898f\u5b9a\u3002\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c\u70ba xcin-2.3 \u7684 \u300cezbig.cin\u300d\uff08\u5927\u578b\u8a5e\u5eab\u7248\uff09\u7684\u4fee\u6539\u7248\u672c\u3002\n###\n###\n### Woodman Tuen <wmtuen@gmail.com>, 25-10-2008\n###\n###\n"},{"ename":"ezsmall","cname":"\u8f15\u9b06\u5c0f\u8a5e\u5eab","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/ov_ezsmall.cin","license":"### \u7248\u6b0a\u8072\u660e:\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c(\u8f15\u9b06\u8f38\u5165\u6cd5\u5c0f\u578b\u8a5e\u5eab\u7248) \u4e43\u6839\u64da\u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\u7684\u898f\u5b9a\uff0c\n### \u4ee5 GPL V2.0 \u6216\u66f4\u65b0\u7684\u7248\u672c\u6240\u91cb\u51fa\uff0c\u5728\u9075\u5b88\u8a72\u6388\u6b0a\u66f8\u7684\u898f\u5b9a\u4e0b\uff0c\n### \u53ef\u4ee5\u4fee\u6539\u3001\u8907\u88fd\u53ca\u6563\u4f48\u672c\u8f38\u5165\u6cd5\u8868\u683c\uff0c\u552f\u672c\u8f38\u5165\u6cd5\u8868\u683c\u537b\u4e0d\u5305\u542b\u4efb\u4f55\u64d4\u4fdd\uff1b\n### \u4e14\u4fee\u6539\u5f8c\u7684\u8f38\u5165\u6cd5\u8868\u683c\u4e2d\u82e5\u6709\u4efb\u4f55\u932f\u8aa4\uff0c\u7686\u8207\u539f\u4f5c\u8005\u7121\u95dc\u3002\n### \u5982\u6709\u9700\u8981\uff0c\u8acb\u53c3\u95b1 \u300a\u8f15\u9b06\u8cc7\u8a0a\u300c\u8f15\u9b06\u8f38\u5165\u6cd5\u5927\u8a5e\u5eab\u300d\u516c\u773e\u6388\u6b0a\u66f8\u300b\n### \u53ca GNU GENERAL PUBLIC LICENSE \u4ee5\u4e86\u89e3\u66f4\u8a73\u7d30\u7684\u898f\u5b9a\u3002\n###\n### \u672c\u8f38\u5165\u6cd5\u8868\u683c\u70ba xcin-2.3 \u7684 \u300cezsmall.cin\u300d\uff08\u5c0f\u578b\u8a5e\u5eab\u7248\uff09\u7684\u4fee\u6539\u7248\u672c\u3002\n###\n###\n### Woodman Tuen <wmtuen@gmail.com>, 25-10-2008\n###\n###\n"},{"ename":"Pictograph","cname":"\u83ef\u8c61\u76f4\u89ba","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/pictograph.cin","license":"# \u83ef\u8c61\u76f4\u89ba\u8f38\u5165\u6cd5\n# http:\/\/www.pictograph.com.tw\/\n"},{"ename":"Pinyin (Simplified Chinese)","cname":"\u7b80\u4f53\u6c49\u8a9e\u62fc\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/pinyin.cin","license":""},{"ename":"Pinyin (Traditional Chinese)","cname":"\u7e41\u9ad4\u6f22\u8a9e\u62fc\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/pinyin_zh.cin","license":""},{"ename":"PinyinTW","cname":"\u6b63\u9ad4\u6f22\u8a9e\u62fc\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/pinyinbig5.cin","license":""},{"ename":"POJ","cname":"\u767d\u8a71\u5b57\u6f22\u7f85","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/poj-holo.cin","license":"#######################################################################\n#                                                                     #\n#  poj.cin v0.1, 2005-01-25                                           #\n#                                                                     #\n# \u672cpoj.cin\u539f\u59cb\u6a94\u6848\u662f\u7531\u5289\u5091\u5cb3 L\u00e2u Kiatgak <kiatgak@yahoo.com.tw>\u5229\u7528     #\n# \u7518\u70ba\u9716\u7684\u300a\u5ec8\u9580\u97f3\u65b0\u5b57\u5178\u300b(Kam \u00dbi-l\u00eem \u00ea \"\u0112-mn\u0304g im \u00ea j\u012b-ti\u00e1n\")            #\n# (A dictionary of the Amoy vernacury by Willian Campbell)\u6821\u5c0d\u3001\u88dc\u5145\u5f8c #\n# \u7684\u4f5c\u54c1\u672c\u6a94\u6848\u4f9d\u64da GNU General Public License (GPL) version 2 \u6216\u65b0\u7248\u516c\u958b #\n# \u6388\u6b0a\uff0c\u6b61\u8fce\u5404\u754c\u6563\u4f48\u53ca\u4f7f\u7528\u3002                                             #\n# o\u00b7 \u7528ou \u9f3b\u97f3\u7528 nn \u5165\u8072\u9f3b\u97f3\u7528 nnh \u8868\u793a\n#######################################################################\n"},{"ename":"Quick-Changjei","cname":"\u9806\u5e8f\u901f\u6210","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/qcj.cin","license":"#  QuickChangJei input method table for UTF-8 encoding.\n#\n#\tConverted from http:\/\/www.scj2000.com\/ by Janus Ng on Dec 30, 2004\n#\tISO\/IEC 10646:1-2000 characters are cleaned up to ISO\/IEC 1-646:2-2001\n#\twhile keeping some unique character that not found in\n#\tISO\/IEC 1-646:2-2001\n#\n#\tThis table also extended to include HKSCS encodings. For details, see\n#\thttp:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n"},{"ename":"Speedy-Changjei-7","cname":"\u5feb\u5009\u4e03\u4ee3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/scj7.cin","license":"#  SpeedChangJei input method table for UTF-8 encoding.\n#\n#\tConverted from http:\/\/www.scj2000.com\/ by Janus Ng on Dec 31, 2004\n#\tdigit terminated and some single key characters remapped\n#\n#\tThis table also extended to include HKSCS encodings. For details, see\n#\thttp:\/\/www.info.gov.hk\/digital21\/chi\/hkscs\/index.html\n#\n"},{"ename":"[CN]Shuangpin","cname":"\u7b80\u4f53\u53cc\u62fc","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/shuangpin.cin","license":""},{"ename":"Simplex (Large Character Set)","cname":"\u7c21\u6613\uff08\u5927\u5b57\u96c6\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/simplex-ext.cin","license":"# This file includes CNS11643 and Unicode compatible characters based on\n# opendesktop.org.tw's simplex.cin.\n# This work has been done by yylin and b6s.\n#\n"},{"ename":"Simplex","cname":"\u7c21\u6613\uff08\u901f\u6210\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/simplex.cin","license":""},{"ename":"TaiwanMinNanZhuYin","cname":"\u53f0\u5f0f\u95a9\u5357\u8a9e\u6ce8\u97f3","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/taiwain-minnan-zhuyin.cin","license":"# By Arne G\u00f6tje after Yang Ching-chu's Taiwanese Dictionary\n"},{"ename":"Traditional-CangJie","cname":"\u7e41\u5009","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/tcj.cin","license":"#\u7e41\u9ad4\u5009\u9821\u8f38\u5165\u6cd5 1.0 \u7248\n#\u8d99\u60df\u502b <chaoweilun@sinanet.com> GPL 1999.7\n#\u589e\u52a0\u6ce8\u97f3\u7b26\u865f(x*)\u53ca\u6a19\u9ede\u7b26\u865f(z*)\u4e4b\u7b46\u756b\u62c6\u78bc\n#\u6839\u64da\u5009\u9821\u7b2c\u4e09\u4ee3 (\u6731\u90a6\u5fa9) \u53ca\u6a19\u6e96\u5009\u9821 (CMEX,TCA,III)\n#\u53c3\u8003 \"\u8f15\u9b06\u5b78\u6a19\u6e96\u5009\u9821\u8f38\u5165\u6cd5\"(\u6797\u5fd7\u548c \u7de8)\n"},{"ename":"Telecode","cname":"\u96fb\u5831\u78bc","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/telecode.cin","license":""},{"ename":"TP Hakka HoiLiuk","cname":"\u901a\u7528\u62fc\u97f3\u5ba2\u5bb6\u8a71 \u6d77\u9678\u8154","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/tp_hakka_hl.cin","license":"#######################################################################\n#\n# tp_hakka_hl.cin  2007\/11\/03 20:47\n#\n# \u672c\u6a94\u662f\u7531\u9673\u5ff5\u6ce2 <nienpo@yahoo.com> \u4f9d\u64da\n# \u300a\u53f0\u7063\u5ba2\u5bb6\u8a71\u8fad\u5178\u300b\u7de8\u8005\u5f90\u5146\u6cc9\u8001\u5e2b\u63d0\u4f9b\u7684\n# \u540c\u97f3\u5b57\u6aa2\u7d22\u8cc7\u6599\n# \u4f7f\u7528 python script \u88fd\u4f5c\n# \u4e26\u52a0\u5165\u300c\u56db\u6d77\u8a71\u300d\u767c\u97f3\n# \u672c\u6a94\u6848\u4f9d\u64da Creative Commons \u4f9d\u300c\u59d3\u540d\u6a19\u793a\u300d\u3001\u300c\u76f8\u540c\u65b9\u5f0f\u5206\u4eab\u300d\u3001\u300c\u7981\u6b62\u5546\u696d\u4f7f\u7528\u300d\n# \u6388\u6b0a\uff0c\u6b61\u8fce\u5404\u754c\u6563\u4f48\u53ca\u4f7f\u7528\u3002\n# \u6388\u6b0a\u8a73\u60c5\u8acb\u53c3\u95b1\n# <http:\/\/creativecommons.org\/licenses\/by-nc-sa\/2.5\/tw\/deed.zh_TW>\n# \u5ba2\u5bb6\u8a71\u88cf\u7684\u300c\u6211\u300d\u662f\u7528\u300c\u4ebb\u5393\u300d\u9019\u500b\u5b57\uff0c\u4f46\u6b64\u5b57\u7684 unicode \u7de8\u78bc\u662f U+2028E\uff0c\u662f\u5341\u516d\u9032\u4f4d\u7684\u4e94\u4f4d\u6578\uff0c\n#    \u5c6c\u65bc CJK Unified Ideographs Extension B, \u542b\u6709\u6b64\u5b57\u7684\u5b57\u578b\u6a94\u4e0d\u662f\u6bcf\u500b\u4eba\u90fd\u6709\u3002\n#    \u6b64 cin \u6a94\u542b\u6b64\u5b57\u3002\u4f46\u662f\uff0c\u70ba\u4e86\u65b9\u4fbf\u4e00\u822c\u4f7f\u7528\u72c0\u6cc1\uff0c\u628a\u300c\u4ebb\u5393\u300d\u9019\u500b\u5b57\u7684\u767c\u97f3\n#    nga\u0320i (\u56db\u7e23\u8154) ngai (\u6d77\u9678\u8154) \u5c0d\u61c9\u5230\u300c\u6211\u300d\u9019\u500b\u5b57\u3002\n# \u6b64\u6a94\u542b\u6709 11 \u500b Privat Usage Area \u7de8\u78bc\u6bb5 (U+E000 to U+F8FF) \u7684\u5b57\uff0c\u76ee\u524d\u6c92\u6709\u6536\u9304\u65bc\n# unicode \u4e2d\uff0c\u662f\u5f90\u8001\u5e2b\u9020\u7684\u5b57\u3002\u672c\u6a94\u53e6\u5916\u4ee5\u793a\u610f\u65b9\u5f0f\u8868\u793a\u9019\u4e9b\u5b57\uff0c\u5982 (\u4ebb\u6069)\uff0c\u4e26\u52a0\u5165 LaTeX \u7d44\u5408\n# \u9019\u4e9b\u5b57\u7684\u6307\u4ee4 (\u4f7f\u7528 LaTeX \u6642\u53ef\u7528)\uff0c\u61c9\u4e0d\u6703\u9020\u6210\u4e00\u822c\u4f7f\u7528\u8005\u7684\u56f0\u64fe\u3002\n#######################################################################\n"},{"ename":"TP Hakka SiYen","cname":"\u901a\u7528\u62fc\u97f3\u5ba2\u5bb6\u8a71 \u56db\u7e23\u8154","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/tp_hakka_sy.cin","license":"#######################################################################\n#\n# tp_hakka_sy.cin  2007\/11\/03 20:46\n#\n# \u672c\u6a94\u662f\u7531\u9673\u5ff5\u6ce2 <nienpo@yahoo.com> \u4f9d\u64da\n# \u300a\u53f0\u7063\u5ba2\u5bb6\u8a71\u8fad\u5178\u300b\u7de8\u8005\u5f90\u5146\u6cc9\u8001\u5e2b\u63d0\u4f9b\u7684\n# \u540c\u97f3\u5b57\u6aa2\u7d22\u8cc7\u6599\n# \u4f7f\u7528 python script \u88fd\u4f5c\n# \u4e26\u52a0\u5165\u300c\u56db\u6d77\u8a71\u300d\u767c\u97f3\n# \u672c\u6a94\u6848\u4f9d\u64da Creative Commons \u4f9d\u300c\u59d3\u540d\u6a19\u793a\u300d\u3001\u300c\u76f8\u540c\u65b9\u5f0f\u5206\u4eab\u300d\u3001\u300c\u7981\u6b62\u5546\u696d\u4f7f\u7528\u300d\n# \u6388\u6b0a\uff0c\u6b61\u8fce\u5404\u754c\u6563\u4f48\u53ca\u4f7f\u7528\u3002\n# \u6388\u6b0a\u8a73\u60c5\u8acb\u53c3\u95b1\n# <http:\/\/creativecommons.org\/licenses\/by-nc-sa\/2.5\/tw\/deed.zh_TW>\n# \u5ba2\u5bb6\u8a71\u88cf\u7684\u300c\u6211\u300d\u662f\u7528\u300c\u4ebb\u5393\u300d\u9019\u500b\u5b57\uff0c\u4f46\u6b64\u5b57\u7684 unicode \u7de8\u78bc\u662f U+2028E\uff0c\u662f\u5341\u516d\u9032\u4f4d\u7684\u4e94\u4f4d\u6578\uff0c\n#    \u5c6c\u65bc CJK Unified Ideographs Extension B, \u542b\u6709\u6b64\u5b57\u7684\u5b57\u578b\u6a94\u4e0d\u662f\u6bcf\u500b\u4eba\u90fd\u6709\u3002\n#    \u6b64 cin \u6a94\u542b\u6b64\u5b57\u3002\u4f46\u662f\uff0c\u70ba\u4e86\u65b9\u4fbf\u4e00\u822c\u4f7f\u7528\u72c0\u6cc1\uff0c\u628a\u300c\u4ebb\u5393\u300d\u9019\u500b\u5b57\u7684\u767c\u97f3\n#    nga\u0320i (\u56db\u7e23\u8154) ngai (\u6d77\u9678\u8154) \u5c0d\u61c9\u5230\u300c\u6211\u300d\u9019\u500b\u5b57\u3002\n# \u6b64\u6a94\u542b\u6709 11 \u500b Privat Usage Area \u7de8\u78bc\u6bb5 (U+E000 to U+F8FF) \u7684\u5b57\uff0c\u76ee\u524d\u6c92\u6709\u6536\u9304\u65bc\n# unicode \u4e2d\uff0c\u662f\u5f90\u8001\u5e2b\u9020\u7684\u5b57\u3002\u672c\u6a94\u53e6\u5916\u4ee5\u793a\u610f\u65b9\u5f0f\u8868\u793a\u9019\u4e9b\u5b57\uff0c\u5982 (\u4ebb\u6069)\uff0c\u4e26\u52a0\u5165 LaTeX \u7d44\u5408\n# \u9019\u4e9b\u5b57\u7684\u6307\u4ee4 (\u4f7f\u7528 LaTeX \u6642\u53ef\u7528)\uff0c\u61c9\u4e0d\u6703\u9020\u6210\u4e00\u822c\u4f7f\u7528\u8005\u7684\u56f0\u64fe\u3002\n#######################################################################\n"},{"ename":"Wu Phonetic (Full)","cname":"\u5433\u8a9e\u6ce8\u97f3\u6cd5\uff08\u5b8c\u6574\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/wu.cin","license":""},{"ename":"Wubi (Wubizixing)","cname":"\u7b80\u4f53\u4e94\u7b14\u5b57\u5f62","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/wubizixing.cin","license":""},{"ename":"Wu Phonetic (Simplified)","cname":"\u5434\u8bed\u6ce8\u97f3\u6cd5\uff08\u7b80\u9ad4\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/wus.cin","license":""},{"ename":"Wu Phonetic (Traditional)","cname":"\u5433\u8a9e\u6ce8\u97f3\u6cd5\uff08\u6b63\u9ad4\uff09","name":"","link":"https:\/\/raw.githubusercontent.com\/ethanliu\/OkidoKeyCharsets\/master\/DataTables\/wut.cin","license":""}]}
+{
+    "datatables": [
+        {
+            "cin": "table/wubizixing.cin",
+            "cname": "简体五笔字形",
+            "db": "db/wubizixing.cin.db",
+            "ename": "Wubi (Wubizixing)",
+            "license": "五筆字型輸入法简称五笔，是王永民在1983年8月发明的一种汉字输入法。\n五笔字型完全依据笔画和字形特征对汉字进行编码，是典型的形码输入法。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/freenewcj.cin",
+            "cname": "自由大新",
+            "db": "db/freenewcj.cin.db",
+            "ename": "FreeNewCJ",
+            "license": "自由大新倉頡專業 7.0 國際版\n網址: http://cle.linux.org.tw/trac/wiki/FreeNewCJCin\n原版商業公司: http://www.eztyping.com.tw/\ncopyright (c) 2006-2007 by FreeNewCJCin\n格式轉換(無附加限制): 趙惟倫 <bluebat@member.fsf.org>, 2007\n授權方式: Public Domain\n",
+            "name": ""
+        },
+        {
+            "cin": "table/array10b.cin",
+            "cname": "行列10b",
+            "db": "db/array10b.cin.db",
+            "ename": "array10b",
+            "license": "build: 2022/08/28 22:12:44\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10\n",
+            "name": ""
+        },
+        {
+            "cin": "table/jtcj.cin",
+            "cname": "简体仓颉",
+            "db": "db/jtcj.cin.db",
+            "ename": "Cangjie (Simplified Chinese)",
+            "license": "This is the ChanJei input method table in GB encoding.\nPlease visit the URL:  http://www.chinese.net.my/cj\nhttp://www.geocities.com/RainForest/9178/maincjgb.htm\nfor further information.\n",
+            "name": ""
+        },
+        {
+            "cin": "table/stroke-stroke5-keypad.cin",
+            "cname": "筆順五碼",
+            "db": "db/stroke-stroke5-keypad.cin.db",
+            "ename": "Stroke5-Keypad",
+            "license": "筆順五碼中文輸入法1.0版 <http://sf.net/projects/stroke5input>\n版權: GPL v3\n<Stroke5 Chinese Input Method> is an open source project created by Hong Kong Seniors IT Advocates at 2003. Only use five keys and follow the stroke order to input Chinese characters.\nCopyright (C) <2003>  <Leung King man (Hong Kong Seniors IT Advocates)>\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or any later version.\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details. <http://www.gnu.org/licenses/>\n支援及維護: 香港長者資訊天地 Hong Kong Seniors IT Advocates\n開發人士名單:\n梁敬文 Leung King Man <leung8964@yahoo.com.hk>\n王潔貞 Amy Wong\n陳荃 Chan Chuen\n龍正忠 Lung Ching Chung\n古國義 Richard Ku\n王林根 Mike Wong\n郭楷 Kwok Kai\n呂蔡美冬 Vivian Choi\n關婉慈 Wendy Kwan\n陳玉萍 Pinky Chan\n羅君琦 Kae Kae Law\n1.0版於2011年9月20日面世, 增加支援至26,000字, 修正輸入筆劃錯誤\n0.9版於2011年3月25日面世, 增加支援至17,000字, 編碼改為Unicode, 及參考香港教育局\"香港小學學習字詞表\"的筆順次序\n0.4版於2003年11月6日面世, 修正輸入筆劃錯誤\n0.3版於2003年10月28日面世, 對比\"百家姓\", 加入37字\n0.2版於2003年10月25日面世, 對比香港政府的\"常用字字形表\", 加入620字\n0.1版於2003年10月17日面世, 用於內部測試, 根據何秀煌教授的80-90年代字頻研究, 安排4600字\n此表格 Stroke5-Keypad 依據原筆順五碼中文輸入法 1.0 版，將字根 nm,./ 依序更換為 12345\n",
+            "name": ""
+        },
+        {
+            "cin": "table/biaoyin.cin",
+            "cname": "表音",
+            "db": "db/biaoyin.cin.db",
+            "ename": "Biaoyin",
+            "license": "Version 2.3, November 2007\nEric Rasmussen <hello.rasmus@gmail.com>\nCovers Pinyin, MPS-2, Yale\nOmits ê\nSpecial thanks to OpenVanilla.org for converting the data table\n",
+            "name": ""
+        },
+        {
+            "cin": "table/pinyinbig5.cin",
+            "cname": "正體漢語拼音",
+            "db": "db/pinyinbig5.cin.db",
+            "ename": "PinyinTW",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/jidianwubi.cin",
+            "cname": "极点五笔",
+            "db": "db/jidianwubi.cin.db",
+            "ename": "jidianWubi (JiDianWubi)",
+            "license": "极点五笔，全称为“极点中文汉字输入平台”，開發者為杜志民。\n极点五笔是一款完全免费的，以五笔输入为主，拼音输入为辅的中文输入软件。\n它同时支持86版和98版两种五笔编码，全面支持GBK：避免了以往传统五笔对于「镕」「堃」「喆」「玥」「冇」「啰」等汉字无法录入的尴尬。\n同时，极点五笔完美支持一笔、二笔等各种“型码”及“音型码”输入法。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/jyut6ping3-toneless.cin",
+            "cname": "粵拼 (無調號)",
+            "db": "db/jyut6ping3-toneless.cin.db",
+            "ename": "Jyut6ping3 (Toneless)",
+            "license": "Jyut6ping3 - 粵拼 (無調號)\nVersion: 2022.06.09\n本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.chars.dict.yaml\n不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。\n詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權，不含 % 之詞頻仍視為 % 比例，屬高優先權詞彙。\n本檔案與原始來源相同，採共享創意 - 姓名標示 4.0 國際 (CC BY 4.0) 協議。\nRime 粵語拼音方案: https://github.com/rime/rime-cantonese\n共享創意 - 姓名標示 4.0 國際: https://creativecommons.org/licenses/by/4.0/deed.zh_TW\n",
+            "name": ""
+        },
+        {
+            "cin": "table/qcj.cin",
+            "cname": "順序速成",
+            "db": "db/qcj.cin.db",
+            "ename": "Quick-Changjei",
+            "license": "QuickChangJei input method table for UTF-8 encoding.\nConverted from http://www.scj2000.com/ by Janus Ng on Dec 30, 2004\nISO/IEC 10646:1-2000 characters are cleaned up to ISO/IEC 1-646:2-2001\nwhile keeping some unique character that not found in\nISO/IEC 1-646:2-2001\nThis table also extended to include HKSCS encodings. For details, see\nhttp://www.info.gov.hk/digital21/chi/hkscs/index.html\n",
+            "name": ""
+        },
+        {
+            "cin": "table/pinyin.cin",
+            "cname": "简体汉語拼音",
+            "db": "db/pinyin.cin.db",
+            "ename": "Pinyin (Simplified Chinese)",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/bpmf-Hsu.cin",
+            "cname": "注音-許氏鍵盤",
+            "db": "db/bpmf-Hsu.cin.db",
+            "ename": "PhoneticHsu",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/pictograph.cin",
+            "cname": "華象直覺",
+            "db": "db/pictograph.cin.db",
+            "ename": "Pictograph",
+            "license": "華象直覺輸入法\nhttp://www.pictograph.com.tw/\n",
+            "name": ""
+        },
+        {
+            "cin": "table/cj.cin",
+            "cname": "倉頡",
+            "db": "db/cj.cin.db",
+            "ename": "CangJie",
+            "license": "CangJie input method table tweaked by b6s for OVIMGeneric(SQLite) in UTF-8 encoding.\nThis table also extended to include HKSCS encodings. For details, see\nhttp://www.info.gov.hk/digital21/chi/hkscs/index.html\n",
+            "name": ""
+        },
+        {
+            "cin": "table/scj7.cin",
+            "cname": "快倉七代",
+            "db": "db/scj7.cin.db",
+            "ename": "Speedy-Changjei-7",
+            "license": "SpeedChangJei input method table for UTF-8 encoding.\nConverted from http://www.scj2000.com/ by Janus Ng on Dec 31, 2004\ndigit terminated and some single key characters remapped\nThis table also extended to include HKSCS encodings. For details, see\nhttp://www.info.gov.hk/digital21/chi/hkscs/index.html\n",
+            "name": ""
+        },
+        {
+            "cin": "table/taiwain-minnan-zhuyin.cin",
+            "cname": "台式閩南語注音",
+            "db": "db/taiwain-minnan-zhuyin.cin.db",
+            "ename": "TaiwanMinNanZhuYin",
+            "license": "By Arne Götje after Yang Ching-chu's Taiwanese Dictionary\n",
+            "name": ""
+        },
+        {
+            "cin": "table/jinjin.cin",
+            "cname": "晶晶碼",
+            "db": "db/jinjin.cin.db",
+            "ename": "JinJin",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/tp_hakka_sy.cin",
+            "cname": "通用拼音客家話 四縣腔",
+            "db": "db/tp_hakka_sy.cin.db",
+            "ename": "TP Hakka SiYen",
+            "license": "tp_hakka_sy.cin  2007/11/03 20:46\n本檔是由陳念波 <nienpo@yahoo.com> 依據\n《台灣客家話辭典》編者徐兆泉老師提供的\n同音字檢索資料\n使用 python script 製作\n並加入「四海話」發音\n本檔案依據 Creative Commons 依「姓名標示」、「相同方式分享」、「禁止商業使用」\n授權，歡迎各界散佈及使用。\n授權詳情請參閱\n<http://creativecommons.org/licenses/by-nc-sa/2.5/tw/deed.zh_TW>\n客家話裏的「我」是用「亻厓」這個字，但此字的 unicode 編碼是 U+2028E，是十六進位的五位數，\n屬於 CJK Unified Ideographs Extension B, 含有此字的字型檔不是每個人都有。\n此 cin 檔含此字。但是，為了方便一般使用狀況，把「亻厓」這個字的發音\nnga̠i (四縣腔) ngai (海陸腔) 對應到「我」這個字。\n此檔含有 11 個 Privat Usage Area 編碼段 (U+E000 to U+F8FF) 的字，目前沒有收錄於\nunicode 中，是徐老師造的字。本檔另外以示意方式表示這些字，如 (亻恩)，並加入 LaTeX 組合\n這些字的指令 (使用 LaTeX 時可用)，應不會造成一般使用者的困擾。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/wut.cin",
+            "cname": "吳語注音法（正體）",
+            "db": "db/wut.cin.db",
+            "ename": "Wu Phonetic (Traditional)",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/bpmf-cns.cin",
+            "cname": "全字庫注音",
+            "db": "db/bpmf-cns.cin.db",
+            "ename": "PhoneticCNS",
+            "license": "version: 2019/01/18 18:43:41\n本注音表格資料來源取自全字庫中文標準交換碼 https://www.cns11643.gov.tw\n不包含未能賦予注音的字元，如標點符號、日文、藏文等等字元，\n並以字根、常用字，注音順序、符號 (若包含) 順序重新排序。\n本資料「常用字」欄係指民國 71 年 9 月 1 日教育部公告的「常用國字標準字體表」所收錄之常用字。\n如：一、丁、七、三、下、丈、上等等，共計 4808 個常用字。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/tp_hakka_hl.cin",
+            "cname": "通用拼音客家話 海陸腔",
+            "db": "db/tp_hakka_hl.cin.db",
+            "ename": "TP Hakka HoiLiuk",
+            "license": "tp_hakka_hl.cin  2007/11/03 20:47\n本檔是由陳念波 <nienpo@yahoo.com> 依據\n《台灣客家話辭典》編者徐兆泉老師提供的\n同音字檢索資料\n使用 python script 製作\n並加入「四海話」發音\n本檔案依據 Creative Commons 依「姓名標示」、「相同方式分享」、「禁止商業使用」\n授權，歡迎各界散佈及使用。\n授權詳情請參閱\n<http://creativecommons.org/licenses/by-nc-sa/2.5/tw/deed.zh_TW>\n客家話裏的「我」是用「亻厓」這個字，但此字的 unicode 編碼是 U+2028E，是十六進位的五位數，\n屬於 CJK Unified Ideographs Extension B, 含有此字的字型檔不是每個人都有。\n此 cin 檔含此字。但是，為了方便一般使用狀況，把「亻厓」這個字的發音\nnga̠i (四縣腔) ngai (海陸腔) 對應到「我」這個字。\n此檔含有 11 個 Privat Usage Area 編碼段 (U+E000 to U+F8FF) 的字，目前沒有收錄於\nunicode 中，是徐老師造的字。本檔另外以示意方式表示這些字，如 (亻恩)，並加入 LaTeX 組合\n這些字的指令 (使用 LaTeX 時可用)，應不會造成一般使用者的困擾。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/corner.cin",
+            "cname": "四角號碼",
+            "db": "db/corner.cin.db",
+            "ename": "Corners",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/NewCJ3.cin",
+            "cname": "亂倉打鳥",
+            "db": "db/NewCJ3.cin.db",
+            "ename": "NewCJ3",
+            "license": "此碼表取自 https://hyperrate.com/thread.php?tid=5775 (v20061209)\n但移除 candyz 個人資訊及網址等字根內容\n亂倉打鳥 (NewCJ3)\n說明\n倉頡輸入法，是由朱邦復先生於1976年所創製的中文輸入法。\n【亂倉打鳥】融合了倉頡三代及大新倉頡的優點，支援常用詞及日文字母及各種符號的輸入，提供一個更快速、更簡單好用的輸入環境，同時適合入門新手以及已使用倉三、快倉、✕✕倉等的老手們來使用 ..:P\n為什麼要叫【亂倉打鳥】？\n因為包含了倉頡三代、大新倉頡以及一些自創的規則，這樣一個 \"亂\" 七八糟的 \"倉\" 頡要 \"打\" 個什麼 \"鳥\" 啊？這就是【亂倉打鳥】命名的由來。\n更多關於倉頡的詳細介紹，請參考 Wikipedia 的 倉頡輸入法 頁面。\n特色\n完全向下相容於倉頡三代。\n支援大新倉頡的語法。\n調整過後最佳化的標點符號、一字碼及二字碼的輸入。\n支援常用詞的輸入。\n參考 libchewing 的詞頻排序整理出二字碼、三字碼、四字碼及四字碼以上的常用詞及成語，目前共收錄將近七萬個詞，包含成語在內。\n支援漁村輸入法裡的各種符號輸入(包含日文平假名、片假名的輸入)。\n按 Google Search 的詞頻來排序之全詞庫版，共收錄了 22 萬多筆的詞。\nChangeLog\n2006/12/09\n大新輸入法的部分更新至 2006/12/08 版\n2006/12/06\n調整並更新一、二字碼部分\n2006/12/05\n大新輸入法的部分更新至 2006/12/04 版\n2006/12/02\n所有檔案及 SVN 架構全部重新整理過並更新過\n大新輸入法的部分更新至 2006/12/01 版\n亂倉打鳥的第四個版本正式釋出 (v0.0.4)，分成兩個版本：一般版(七萬個詞)及 Google 全詞庫版(二十二萬個詞)\n2006/11/29\n加入了 22 萬多筆的詞庫，並依 Google Search 的詞頻來排序，亂倉打鳥 Google 番外篇測試版釋出 (v0.0.3g)\n2006/11/28\n將所有的詞都補上第三欄位的詞頻部分，方便排序 (目前採用的詞頻是來自 libchewing 的詞庫)\n將所有的詞都經過詞頻排序過了，大大增加打字效率\n亂倉打鳥的第三個版本正式釋出 (v0.0.3)\n加入 PTT 流行名句 (亂倉打鳥從此可能要列入18禁了...囧rz)\n2006/11/27\n標點符號跟漁村符號的整理\n2006/11/26\n收錄大量的詞庫，約近七萬個詞了 (Defined Characters:134976、phrase count:68536)\n再加入漁村輸入法裡的一堆符號\n2006/11/25\n成語規則變更，原來的 ;+xxxx 改成 xxxx+; 這樣比較直覺，順序上，成語優先於四個字及四個字以上的常用詞\n參考 libchewing 裡的詞及詞頻來排序所有的詞，終於整理告一段落 (目前是先整理詞頻大於 1000 以上的)，目前共收錄了一萬三千多個常用詞\n另也補了一些大新倉頡沒收錄到的字，如喆、双、姹、髴等等\n亂倉打鳥的第二個版本正式釋出 (v0.0.2)\n2006/11/24\n更字常用詞庫三字碼、四字碼及四字碼以上\n2006/11/23\n補上 \"喆=trtr\" (Thanks to Pank)\n\"他\" 原本拆碼為 \"ox\"，為求跟 \"你\"、\"我\" 配合，改成用 \";o\" (o=other)，因此，二字碼之 \"ox\" 跟 \";o\" 對調，變成 \";o=他\" 及 \"ox=飲\"，而原本 \"他\" 的延伸 \"ox\" 開頭的則全改成為 \";o\" 開頭\n2006/11/22\nWindows Version Support\n成語舊規則為 \", + xxxx\" 已改成 \"; + xxxx\"，因為 \";\" 比 \",\" 更好用...XD]\n2006/11/21\nFirst Release (v0.0.1)\n",
+            "name": ""
+        },
+        {
+            "cin": "table/array40.cin",
+            "cname": "行列40",
+            "db": "db/array40.cin.db",
+            "ename": "Array40",
+            "license": "行列 40 鍵輸入法 for OpenVanilla\n版本：0.15\n作者：葉光哲（老刀） MSN: gontera_yeh@hotmail.com\n以下的說明文字中，「行列輸入法」係指早期的 40 鍵版本；行列輸入法 30 鍵的版本以\n「行列30」稱之。\n這個早期版本的行列輸入法最初是內含於倚天中文系統之中。它與目前流行的「行列30」輸入法\n不同。OpenVanilla 標準安裝套件中已包含了「行列30」輸入法，如果您是該版本的使用者，則\n無須安裝本輸入法。本輸入法係特別針對早期行列輸入法的使用者所設計。本輸入法對照表是從\n「行列輸入法的家」網站（即行列輸入法官方網站）提供的 Windows 版行列輸入法（下載連結為\nhttp://www.array.com.tw/BOX/AR40NT_2K_XP.zip）轉置而來。\n本檔案和行列輸入法規格書不同之處：\n鍵位在螢幕上的表示方式。因 Mac OS X 並未採用倚天中文的做法，將行列輸入法的鍵位符號\n編入其中文字集內，故在此除了借用「行列30」的下箭頭 (⇣) 代表第 7, 8, 9, 0 列、上箭頭 (⇡)\n代表第 1, 2 列之外，另以「⌅」符號代表 3, 4, 5, 6 列。\n版本說明：\n0.11 第一版\n0.15 新增支援標點符號輸入\n註：本輸入法僅支援 Big-5 範圍的正體中文字集；筆者並無加入支援 Unicode 字集的計畫。如果\n「支援 Unicode 字集」對您很重要，強烈建議您改用「行列30」輸入法。最後以官方網站的一段\n話，做為說明文字的結尾：「此專為舊版行列40鍵版使用者服務，希望40鍵版的使用者，最好還\n是改用新版的行列30輸入法才是上策」。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/dayi4.cin",
+            "cname": "大易四碼",
+            "db": "db/dayi4.cin.db",
+            "ename": "DaYi4",
+            "license": "本表格由太易資訊公司 (http://www.dayi.com) 授權，開放給使用者下載使用。\n使用者不得任意更改此表格中每個字的編碼規則並重新散佈，但允許改變此表格\n的格式以適合其他平台或輸入法軟體使用。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/jyut6ping3.cin",
+            "cname": "粵拼",
+            "db": "db/jyut6ping3.cin.db",
+            "ename": "Jyut6ping3",
+            "license": "Jyut6ping3 - 粵拼\nVersion: 2022.06.09\n本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.chars.dict.yaml\n不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。\n詞頻為 0% 為罕用詞，給予低優先權，未含詞頻者為一般優先權，不含 % 之詞頻仍視為 % 比例，屬高優先權詞彙。\n本檔案與原始來源相同，採共享創意 - 姓名標示 4.0 國際 (CC BY 4.0) 協議。\nRime 粵語拼音方案: https://github.com/rime/rime-cantonese\n共享創意 - 姓名標示 4.0 國際: https://creativecommons.org/licenses/by/4.0/deed.zh_TW\n",
+            "name": ""
+        },
+        {
+            "cin": "table/poj-holo.cin",
+            "cname": "白話字漢羅",
+            "db": "db/poj-holo.cin.db",
+            "ename": "POJ",
+            "license": "poj.cin v0.1, 2005-01-25\n本poj.cin原始檔案是由劉傑岳 Lâu Kiatgak <kiatgak@yahoo.com.tw>利用\n甘為霖的《廈門音新字典》(Kam Ûi-lîm ê \"Ē-mn̄g im ê jī-tián\")\n(A dictionary of the Amoy vernacury by Willian Campbell)校對、補充後\n的作品本檔案依據 GNU General Public License (GPL) version 2 或新版公開\n授權，歡迎各界散佈及使用。\no· 用ou 鼻音用 nn 入聲鼻音用 nnh 表示\n",
+            "name": ""
+        },
+        {
+            "cin": "table/lxsy_0.41.cin",
+            "cname": "灵形速影(词)",
+            "db": "db/lxsy_0.41.cin.db",
+            "ename": "LXSY",
+            "license": "名称：灵形速影（简称 lxsy）\n原作者：消逝\n版本：针对字的版本为 0.40 优化，针对词的为 0.41 版本\n特此授权给 OkidoKey 无偿使用 任何人都可免费内建此词库（无关收费 APP 与否）\n本词库为开源词库，可以修改、复制以及散布此输入法表格，且修改后看输入法表格中若有任何错误等问题，皆与原作者无关。\n本词库为群友为了符合情况进行键位替换。\n另：转载请注明出处，更多关于原作者信息请访问极速社区 http://www.jsxiaoshi.com/\n",
+            "name": ""
+        },
+        {
+            "cin": "table/ghcm.cin",
+            "cname": "矧码",
+            "db": "db/ghcm.cin.db",
+            "ename": "ghcm",
+            "license": "build: 2022/08/28 22:12:51\n矧码 (ghcm)\nhttps://github.com/zeylei/ghcm\n方案名称：矧码\n方案作者：矧可射思\n更新日期：0x00\n本仓库中的矧码码表与官方 QQ 群 (461618919) 同步更新。\n由作者矧可射思授权，任何人皆可以修改、复制、转发，以及免费内建此词库（包括收费使用）。\n学习矧码请加 QQ 群 (461618919)。\n==========\n此 cin 表格由 SM.dict.yaml 转换\n由于部份符号为 rime 另行定义，因此未能直接于 cin 表格中实现，此档仅包含「,」键符号。\n而「i」键原定义为直出「，」而非字根，但为统一输入行为，仍先将「i」键列为字根。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/bpmf.cin",
+            "cname": "注音",
+            "db": "db/bpmf.cin.db",
+            "ename": "Phonetic",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/wus.cin",
+            "cname": "吴语注音法（简體）",
+            "db": "db/wus.cin.db",
+            "ename": "Wu Phonetic (Simplified)",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/shuangpin.cin",
+            "cname": "简体双拼",
+            "db": "db/shuangpin.cin.db",
+            "ename": "[CN]Shuangpin",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/array26.cin",
+            "cname": "行列廿六",
+            "db": "db/array26.cin.db",
+            "ename": "array26",
+            "license": "--------------------------------------------------------------------------------------------\n名稱：行列輸入法廿六鍵版之香草模組對照表（array26.cin）\n版本：0.4\n日期：2007年06月26日\n本array26.cin原始檔案是由林沛熙（lin_pepsi@yahoo.com）\n根據開放香草輸入法（OpenVanilla）中，\n由霍東靈AnthonyFok<foka@debian.org>君所整理之對照表修改而成。\n據悉，霍君利用行列科技在所提供之行列30對照表（1996年版），\n並承葉光哲(gontera)君與zonble鼎力協助，將字碼擴增為unicode字集，\n並支援一級簡碼外（不支援二級簡碼）與行列特別碼。\n感謝行列輸入法（行列科技）的發明人廖明德先生\n慷慨提供包含繁、簡中文字集共二萬九千餘字的unicode字集對照檔，\n並開放免費授權予社群進行修改與增補。\n本檔案採General Public License授權，\n歡迎各界無償（或僅收取適當成本）流通及使用；\n本檔案歡迎使用者自行修改，\n惟修改之後之檔案，亦須遵照GPL協定開放授權。\n本檔案之GPL授權，與行列輸入法及行列科技無關，\n行列輸入法及其相關法律權利，蓋屬行列科技所有。\n有關行列輸入法，請參觀http://www.array.com.tw/內的介紹。\n--------------------------------------------------------------------------------------------\n下面這行是定義重碼的選字鍵\n下面這行是定義組字的結束鍵\n下面這行開始是定義字根鍵\n",
+            "name": ""
+        },
+        {
+            "cin": "table/ov_ez.cin",
+            "cname": "輕鬆",
+            "db": "db/ov_ez.cin.db",
+            "ename": "ez",
+            "license": "版權聲明:\n本輸入法表格(輕鬆輸入法單字版) 乃根據《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》的規定，\n以 GPL V2.0 或更新的版本所釋出，在遵守該授權書的規定下，\n可以修改、複製及散佈本輸入法表格，唯本輸入法表格卻不包含任何擔保；\n且修改後的輸入法表格中若有任何錯誤，皆與原作者無關。\n如有需要，請參閱 《輕鬆資訊「輕鬆輸入法大詞庫」公眾授權書》\n及 GNU GENERAL PUBLIC LICENSE 以了解更詳細的規定。\n本輸入法表格為 xcin-2.3 的 「ez.cin」（單字版）的修改版本。\nWoodman Tuen <wmtuen@gmail.com>, 25-10-2008\n",
+            "name": ""
+        },
+        {
+            "cin": "table/ov_ez75.cin",
+            "cname": "輕鬆2006原味版(for香草)",
+            "db": "db/ov_ez75.cin.db",
+            "ename": "easy",
+            "license": "this file is encoded in UTF-8\n輕鬆輸入法 .cin 格式檔頭\n",
+            "name": ""
+        },
+        {
+            "cin": "table/dayi3.cin",
+            "cname": "大易",
+            "db": "db/dayi3.cin.db",
+            "ename": "Dayi3",
+            "license": "本表格由太易資訊公司 (http://www.dayi.com) 授權，開放給使用者下載使用。\n使用者不得任意更改此表格中每個字的編碼規則並重新散佈，但允許改變此表格\n的格式以適合其他平台或輸入法軟體使用。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/array10a.cin",
+            "cname": "行列10a",
+            "db": "db/array10a.cin.db",
+            "ename": "array10a",
+            "license": "build: 2022/08/28 22:12:44\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10\n",
+            "name": ""
+        },
+        {
+            "cin": "table/simplex.cin",
+            "cname": "簡易（速成）",
+            "db": "db/simplex.cin.db",
+            "ename": "Simplex",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/wu.cin",
+            "cname": "吳語注音法（完整）",
+            "db": "db/wu.cin.db",
+            "ename": "Wu Phonetic (Full)",
+            "license": "",
+            "name": ""
+        },
+        {
+            "cin": "table/dayi3-patched.cin",
+            "cname": "大易(標點符號版)",
+            "db": "db/dayi3-patched.cin.db",
+            "ename": "Dayi3",
+            "license": "本表格由太易資訊公司 (http://www.dayi.com) 授權，開放給使用者下載使用。\n使用者不得任意更改此表格中每個字的編碼規則並重新散佈，但允許改變此表格\n的格式以適合其他平台或輸入法軟體使用。\nlast modified: 2005-01-14\n加入一批標點符號和一個新的 keyname (' 標)\n改變二鍵輸入時的一些常用字選字順序：\n也道爸就像身假流遠應漢蘭動崗亂病碗獅據遊眾萬灣愈淨管舒陽制夢\n",
+            "name": ""
+        },
+        {
+            "cin": "table/cangjie6.cin",
+            "cname": "倉頡六代",
+            "db": "db/cangjie6.cin.db",
+            "ename": "Cangjie6",
+            "license": "此碼表依 rime-cangjie6 v0.31 轉換為 cin 格式 2018-01-16\n單字碼表自百度貼吧「倉頡」吧網友风易辞得\n又：\n蒼頡六代構詞碼碼表\n由雪齋、惜緣整理於 2013-01-29\ncrazy4u根据雪齋發佈的碼表增二萬餘字 2013-02-19\ncrazy4u增易經八卦符號 2013-03-26\n單字編碼兼顧宋體、細明體字形 crazy4u 2013-04-02\n又增一千字 crazy4u 2013-04-27\n增加組詞分隔符、正體字字頻 雪齋 2013-05-30\n採用相對字頻 雪齋 2013-12-09\n增加擴展E區字 雪齋 2014-11-03\n本字表收中日韓越統一表意文字及其擴展A、B、C、D、E區另加相容表意文字區之12箇獨立字、相容表意文字擴充區28箇獨立字。\n取碼依宋體及明體。另：擴展B區有三個重複收錄字，本表錄之，但加「」註。\nLicense: GPL\n",
+            "name": ""
+        },
+        {
+            "cin": "table/stroke-g6code.cin",
+            "cname": "六碼筆畫",
+            "db": "db/stroke-g6code.cin.db",
+            "ename": "G6Code",
+            "license": "六碼筆畫輸入法\nhttp://www.miniapps.hk/g6code/\n發明人: 香港城市大學電子工程學系布禮文博士開發團隊\n格式修改(無附加限制): 趙惟倫 <bluebat@member.fsf.org>, 2017\n授權方式: Public Domain\n",
+            "name": ""
+        },
+        {
+            "cin": "table/array30-OkidoKey.cin",
+            "cname": "行列30",
+            "db": "db/array30-OkidoKey.cin.db",
+            "ename": "array30",
+            "license": "array30.cin for OkidoKey (v0.9), 2021-07-23\n這個輸入法表格是 array30.cin for OpenVanilla v0.9 簡化而來，只\n保留 Unicode 3.0 亦即僅支援 4 byte 的 CJK Ext-A 字集，並刪除較罕用\n的 CJK Ext-B/C/D 字集，以節省行動裝置寶貴的記憶體空間。我另提供包\n括完整 CJK 字集的「大字集版本」，如有需要，請自行下載安裝。\n本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU\nGeneral Public License (GPL) version 2 或新版公開授權，歡迎各界分\n布及使用。在此謹致謝行列科技之慷慨大方，讓大家可免費自由地使用行\n列輸入法。\n有關行列輸入法，請參觀 http://www.array.com.tw/ 內的介紹。\n",
+            "name": ""
+        },
+        {
+            "cin": "table/cj-j.cin",
+            "cname": "倉頡-J",
+            "db": "db/cj-j.cin.db",
+            "ename": "Cangjie-J",
+            "license": "ChangJei input method table for UTF-8 encoding.\nThis table also extended to include HKSCS encodings. For details, see\nhttp://www.info.gov.hk/digital21/chi/hkscs/index.html\nPunctuations modified by Janus Ng on Dec 30, 2004\n",
+            "name": ""
+        },
+        {
+            "cin": "table/scj6.cin",
+            "cname": "快倉六",
+            "db": "db/scj6.cin.db",
+            "ename": "scj6",
+            "license": "This file must be encoded into UTF-8.\nThis file comes from http://www.scj2000.net\n===============================================================\n快倉2000_快速倉頡輸入法第六代(v6.2.2)\n===============================================================\n網址: http://www.scj2000.com\n網址: http://www.scj2000.net\nCopyright (C) 2002-2009 麥志洪 <makchehu@netvigator.com>\nCopyright (C) 2002-2009 Quintus Leung <quintus@scj2000.net>\n授權方式: GPL version 3\nThis program is free software; you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation; either version 3 of the License, or\n(at your option) any later version.\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\nYou should have received a copy of the GNU General Public License along\nwith this program; if not, write to the Free Software Foundation, Inc.,\n51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\nSupported Characters: 15,270 Unique Traditional and Simplified Chinese Characters\nSupported Encodings : Unicode4.0, BIG5, BIG5-HKSCS, GB18030, GBK, GB\n===============================================================\n倉頡第五代國際版\n===============================================================\n輸入法發明人：朱邦復先生 http://www.cbflabs.com\n碼表統一維護：倉頡之友.馬來西亞  http://www.chinesecj.com\n倉頡輸入版權：本輸入法無版權，歡迎大家復制使用及推廣倉頡。\n===============================================================\n倉頡第三代\n===============================================================\n輸入法發明人：朱邦復先生 http://www.cbflabs.com\n碼表維護：倉頡之友.馬來西亞  http://www.chinesecj.com\n",
+            "name": ""
+        },
+        {
+            "cin": "table/lxsy_0.40.cin",
+            "cname": "灵形速影",
+            "db": "db/lxsy_0.40.cin.db",
+            "ename": "LXSY",
+            "license": "名称：灵形速影（简称 lxsy）\n原作者：消逝\n版本：针对字的版本为 0.40 优化，针对词的为 0.41 版本\n特此授权给 OkidoKey 无偿使用 任何人都可免费内建此词库（无关收费 APP 与否）\n本词库为开源词库，可以修改、复制以及散布此输入法表格，且修改后看输入法表格中若有任何错误等问题，皆与原作者无关。\n本词库为群友为了符合情况进行键位替换。\n另：转载请注明出处，更多关于原作者信息请访问极速社区 http://www.jsxiaoshi.com/\n",
+            "name": ""
+        },
+        {
+            "cin": "table/tcj.cin",
+            "cname": "繁倉",
+            "db": "db/tcj.cin.db",
+            "ename": "Traditional-CangJie",
+            "license": "繁體倉頡輸入法 1.0 版\n趙惟倫 <chaoweilun@sinanet.com> GPL 1999.7\n增加注音符號(x*)及標點符號(z*)之筆畫拆碼\n根據倉頡第三代 (朱邦復) 及標準倉頡 (CMEX,TCA,III)\n參考 \"輕鬆學標準倉頡輸入法\"(林志和 編)\n",
+            "name": ""
+        },
+        {
+            "cin": "table/cj5.cin",
+            "cname": "倉頡五代",
+            "db": "db/cj5.cin.db",
+            "ename": "Cangjie-5",
+            "license": "ChangJei input method table for UTF-8 encoding.\nConverted from http://www.cbflabs.com/tec.htm\nby Janus Ng on Dec 30, 2004\n",
+            "name": ""
+        },
+        {
+            "cin": "table/array30.cin",
+            "cname": "行列30",
+            "db": "db/array30.cin.db",
+            "ename": "array30",
+            "license": "array30.cin for OpenVanilla (v0.93), 2021-08-03\n本 array30.cin 原始檔案是由霍東靈 Anthony Fok <foka@debian.org>\n利用行列科技在 porting.exe 檔內提供之 array30.txt 及 arrayhw.txt\n(05/31/1996) 轉換後，由葉光哲 (gontera) 根據行列科技廖明德先生\n（即行列輸入法發明人）慷慨提供支援 unicode 3.1 中日韓漢字集共七萬\n餘字的完整對照檔，製作而成。\n為便於 OpenVanilla 開發團隊製作行列輸入法模組，本 .cin 檔案已移除\n簡碼，另以個別檔案儲存。\n本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU\nGeneral Public License (GPL) version 2 或新版公開授權，歡迎各界分\n布及使用。在此謹致謝行列科技之慷慨大方，讓大家可免費自由地使用行\n列輸入法。\n有關行列輸入法，請參觀 http://www.array.com.tw/ 內的介紹。\n2005-05-11 配合 OpenVanilla 0.7 將一級簡碼自本檔移除，另獨立至\nArrayShortCode.cin 中。(vgod)\n2007-09-25 將 big5 字集定義【粧銹恒碁墻嫺裏】共七個特殊用字，自\ncin 檔移除，避免這些字在 unicode 選字窗中重複出現。\n(gontera)\n2008-10-27 依行列廖明德先生提供之最新對照檔，再製新版。(gontera)\n2011-05-15 重新定義 w+8 順序（數字）符號組。(gontera)\n2011-08-21 依照行列輸入法官網發布的 2008A 版對照表重新定義特別碼，\n並更正一、二級簡碼。(gontera)\n2012-12-01 支援 CJK Ext-C/D，相容於行列 2012A 官版對照表。(gontera)\n2014-05-20 更新 CJK Ext-C/D，相容於行列 2013A 官版對照表。(gontera)\n2015-09-16 配合行列官網釋出的特別碼版本 V201509，更新特別碼。\n2016-03-19 新增支援 CJK Ext-E，並依據行列輸入法官網發布之 CJK\nExt-B V2016A 版對照表，修正 Ext-B 的部分鍵碼。\n2018-04-24 新增支援 CJK Ext-F。(0.86)\n2021-07-23 新增支援 CJK Ext-G，並補足中日韓統一表意文字非屬於\nExt-A 至 Ext-G 之部分。(0.90)\n2021-08-03 刪除部分有重複收編的漢字。(0.91-0.93)\n2022-03-17 增補遺漏的「𫊖」字。(0.94)\n",
+            "name": ""
+        },
+        {
+            "cin": "table/stroke-bsm.cin",
+            "cname": "筆順碼",
+            "db": "db/stroke-bsm.cin.db",
+            "ename": "BSM",
+            "license": "筆順碼輸入法\n碼表取自 https://github.com/siuying/BSMInputMethod\n發明人: 王頌平教授\n代理(已停止)： http://www.freefire.com.hk/\n格式修改(無附加限制): 趙惟倫 <bluebat@member.fsf.org>, 2017\n授權方式: Public Domain\n",
+            "name": ""
+        },
+        {
+            "cin": "table/daibuun.cin",
+            "cname": "普實台文",
+            "db": "db/daibuun.cin.db",
+            "ename": "daibuun",
+            "license": "普實台文輸入法 1.0 版\n趙惟倫 <chaoweilun@pcmail.com.tw> GPL 2004.5\n修改自 daibuun.tit (趙惟倫1997.10)\n根據普實台文 <http://www.taconet.com.tw/hioong/>\n",
+            "name": ""
+        }
+    ],
+    "splits": {
+        "NewCJ3.cin": {
+            "gitee": 8
+        },
+        "array10a.cin": {
+            "gitee": 2
+        },
+        "array10b.cin": {
+            "gitee": 5
+        },
+        "array26.cin": {
+            "gitee": 2
+        },
+        "array30-OkidoKey.cin": {
+            "gitee": 2
+        },
+        "array30.cin": {
+            "gitee": 6
+        },
+        "array40.cin": {
+            "gitee": 1
+        },
+        "biaoyin.cin": {
+            "gitee": 1
+        },
+        "bpmf-Hsu.cin": {
+            "gitee": 2
+        },
+        "bpmf-cns.cin": {
+            "gitee": 4
+        },
+        "bpmf.cin": {
+            "gitee": 1
+        },
+        "cangjie6.cin": {
+            "gitee": 5
+        },
+        "cj-j.cin": {
+            "gitee": 1
+        },
+        "cj.cin": {
+            "gitee": 1
+        },
+        "cj5.cin": {
+            "gitee": 1
+        },
+        "corner.cin": {
+            "gitee": 1
+        },
+        "daibuun.cin": {
+            "gitee": 1
+        },
+        "dayi3-patched.cin": {
+            "gitee": 1
+        },
+        "dayi3.cin": {
+            "gitee": 1
+        },
+        "dayi4.cin": {
+            "gitee": 1
+        },
+        "freenewcj.cin": {
+            "gitee": 2
+        },
+        "ghcm.cin": {
+            "gitee": 44
+        },
+        "jidianwubi.cin": {
+            "gitee": 5
+        },
+        "jinjin.cin": {
+            "gitee": 2
+        },
+        "jtcj.cin": {
+            "gitee": 1
+        },
+        "jyut6ping3-toneless.cin": {
+            "gitee": 2
+        },
+        "jyut6ping3.cin": {
+            "gitee": 2
+        },
+        "lxsy_0.40.cin": {
+            "gitee": 1
+        },
+        "lxsy_0.41.cin": {
+            "gitee": 1
+        },
+        "ov_ez.cin": {
+            "gitee": 1
+        },
+        "ov_ez75.cin": {
+            "gitee": 19
+        },
+        "pictograph.cin": {
+            "gitee": 1
+        },
+        "pinyin.cin": {
+            "gitee": 4
+        },
+        "pinyinbig5.cin": {
+            "gitee": 1
+        },
+        "poj-holo.cin": {
+            "gitee": 1
+        },
+        "qcj.cin": {
+            "gitee": 1
+        },
+        "scj6.cin": {
+            "gitee": 3
+        },
+        "scj7.cin": {
+            "gitee": 1
+        },
+        "shuangpin.cin": {
+            "gitee": 2
+        },
+        "simplex.cin": {
+            "gitee": 1
+        },
+        "stroke-bsm.cin": {
+            "gitee": 2
+        },
+        "stroke-g6code.cin": {
+            "gitee": 1
+        },
+        "stroke-stroke5-keypad.cin": {
+            "gitee": 1
+        },
+        "taiwain-minnan-zhuyin.cin": {
+            "gitee": 1
+        },
+        "tcj.cin": {
+            "gitee": 1
+        },
+        "tp_hakka_hl.cin": {
+            "gitee": 1
+        },
+        "tp_hakka_sy.cin": {
+            "gitee": 1
+        },
+        "wu.cin": {
+            "gitee": 1
+        },
+        "wubizixing.cin": {
+            "gitee": 1
+        },
+        "wus.cin": {
+            "gitee": 1
+        },
+        "wut.cin": {
+            "gitee": 1
+        }
+    },
+    "version": "20220829185533"
+}

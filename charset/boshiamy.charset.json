@@ -1,0 +1,14 @@
+[
+    {
+        "name": "boshiamy",
+        "description": "嘸蝦米鍵盤",
+        "font":"",
+        "charsets":
+        [
+             "[Q][W][E][R][T][Y][U][I][O][P]",
+             "[dummy:2][A][S][D][F][G][H][J][K][L][dummy:2]",
+             "[shift][Z][X][C][V][B][N][M][del]",
+             "[next][globe][,][space][.][return]"
+         ]
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "name": "bpmf-hsu",
+        "description": "注音-許氏鍵盤",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ]",
+            "[A:ㄘㄟ][S:ㄙ˙][D:ㄉˊ][F:ㄈˇ][G:ㄍㄜ][H:ㄏㄛ][J:ㄐㄓˋ][K:ㄎㄤ][L:ㄌㄥㄦ]",
+            "[shift][Z:ㄗ][X:ㄨ][C:ㄒㄕ][V:ㄑㄔ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][del]",
+            "[next][globe][,][space][.][return]"
+        ]
+    },
+    {
+        "name": "bpmf-hsu-pad",
+        "description": "注音-許氏鍵盤",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][-][=]",
+            "[Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][del]",
+            "[dummy:2][A:ㄘㄟ][S:ㄙ˙][D:ㄉˊ][F:ㄈˇ][G:ㄍㄜ][H:ㄏㄛ][J:ㄐㄓˋ][K:ㄎㄤ][L:ㄌㄥㄦ][return]",
+            "[shift][Z:ㄗ][X:ㄨ][C:ㄒㄕ][V:ㄑㄔ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][,][.][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "bpmf-hsu-fullsize",
+        "description": "注音-許氏鍵盤",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[`][1][2][3][4][5][6][7][8][9][0][-][=][del]",
+            "[tab][Q][W:ㄠ][E:ㄧㄝ][R:ㄖ][T:ㄊ][Y:ㄚ][U:ㄩ][I:ㄞ][O:ㄡ][P:ㄆ][[][]][\\]",
+            "[capslock][A:ㄘㄟ][S:ㄙ˙][D:ㄉˊ][F:ㄈˇ][G:ㄍㄜ][H:ㄏㄛ][J:ㄐㄓˋ][K:ㄎㄤ][L:ㄌㄥㄦ][;]['][return]",
+            "[shift][Z:ㄗ][X:ㄨ][C:ㄒㄕ][V:ㄑㄔ][B:ㄅ][N:ㄋㄣ][M:ㄇㄢ][,][.][/][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "bpmf-hsu-dvorak",
+        "description": "注音-許氏鍵盤(dvorak)",
+        "keynameType": "label",
+        "charsets":
+        [
+            "['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ]",
+            "[dummy:2][A:ㄘㄟ][O:ㄡ][E:ㄧㄝ][U:ㄩ][I:ㄞ][D:ㄉˊ][H:ㄏㄛ][T:ㄊ][N:ㄋㄣ][S:ㄙ˙][dummy:2]",
+            "[shift][Q][J:ㄐㄓˋ][K:ㄎㄤ][X:ㄨ][B:ㄅ][M:ㄇㄢ][W:ㄠ][V:ㄑㄔ][Z:ㄗ][del]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "bpmf-hsu-dvorak-pad",
+        "description": "注音-許氏鍵盤(dvorak)",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[1][2][3][4][5][6][7][8][9][0][[][]]",
+            "['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ][/][=][\\][del]",
+            "[dummy:2][A:ㄘㄟ][O:ㄡ][E:ㄧㄝ][U:ㄩ][I:ㄞ][D:ㄉˊ][H:ㄏㄛ][T:ㄊ][N:ㄋㄣ][S:ㄙ˙][-][return]",
+            "[shift][;][Q][J:ㄐㄓˋ][K:ㄎㄤ][X:ㄨ][B:ㄅ][M:ㄇㄢ][W:ㄠ][V:ㄑㄔ][Z:ㄗ][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    },
+    {
+        "name": "bpmf-hsu-dvorak-fullsize",
+        "description": "注音-許氏鍵盤(dvorak)",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[`][1][2][3][4][5][6][7][8][9][0][[][]][del]",
+            "[tab]['][,][.][P:ㄆ][Y:ㄚ][F:ㄈˇ][G:ㄍㄜ][C:ㄒㄕ][R:ㄖ][L:ㄌㄥㄦ][/][=][\\]",
+            "[capslock][A:ㄘㄟ][O:ㄡ][E:ㄧㄝ][U:ㄩ][I:ㄞ][D:ㄉˊ][H:ㄏㄛ][T:ㄊ][N:ㄋㄣ][S:ㄙ˙][-][return]",
+            "[shift][;][Q][J:ㄐㄓˋ][K:ㄎㄤ][X:ㄨ][B:ㄅ][M:ㄇㄢ][W:ㄠ][V:ㄑㄔ][Z:ㄗ][shift]",
+            "[next][globe][space][next][dismiss]"
+        ]
+    }
+]

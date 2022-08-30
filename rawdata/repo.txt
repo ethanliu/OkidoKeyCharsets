@@ -1,0 +1,9 @@
+https://github.com/openvanilla/McBopomofo
+https://github.com/zeylei/ghcm.git
+https://github.com/fxsjy/jieba
+https://github.com/openvanilla/openvanilla.git
+https://github.com/rime/rime-cantonese.git
+https://github.com/tongwentang/tongwen-core.git
+https://github.com/gontera/array30
+https://github.com/gontera/array10
+https://github.com/unicode-org/cldr-json
