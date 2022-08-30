@@ -228,7 +228,7 @@ def createLexicon():
     createJsonFile(outputPath, jsondata)
 
 def main():
-    argParser = argparse.ArgumentParser(description='ChineseVariant.db generator')
+    argParser = argparse.ArgumentParser(description='Resource files generator')
     argParser.add_argument('-c', '--category', required = True, choices=['keyboard', 'lexicon', 'table'], help='Resource category')
 
     args = argParser.parse_args()
