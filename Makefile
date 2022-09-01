@@ -1,4 +1,4 @@
-.PHONY: usage all clean test table lexicon
+.PHONY: usage all clear test table lexicon
 
 # SHELL := /usr/bin/env bash
 XCODE_PATH := ../src/baker/baker/Supporting\ Files/
