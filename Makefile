@@ -69,20 +69,18 @@ table-db:
 	$(eval dbPath = db)
 	$(eval excludes := \
 		_sample.cin _demo.cin \
-		array-shortcode.cin array-special.cin \
 		array10a-header.cin array10b-header.cin \
+		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
+		ghcm-header.cin \
+		array-shortcode.cin array-special.cin \
 		array30-OkidoKey-big.cin \
 		boshiamy.cin liu.cin bossy.cin \
 		bpmf-ext.cin \
-		cj-ext.cin cj-wildcard.cin \
-		egyptian.cin ehq-symbols.cin esperanto.cin \
-		ghcm-header.cin \
+		cj-ext.cin cj-wildcard.cin simplex-ext.cin \
 		jyutping.cin jyutping-toneless.cin \
-		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
-		kk.cin kks.cin klingon.cin morse.cin telecode.cin \
 		ov_ezbig.cin ov_ezsmall.cin \
-		simplex-ext.cin \
-		stroke-stroke5.cin \
+		stroke-stroke5.cin wubizixing.cin \
+		egyptian.cin ehq-symbols.cin esperanto.cin kk.cin kks.cin klingon.cin morse.cin telecode.cin \
 	)
 	$(eval all := $(notdir $(wildcard ${tablePath}/*.cin)))
 	$(eval list := $(filter-out $(excludes), $(all)))
@@ -238,6 +236,8 @@ array-phrase:
 bossy:
 	@$(call timeStart)
 	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
+	@echo "Generate CIN table..."
+	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
 	@$(call timeStop)
 
 ghcm:

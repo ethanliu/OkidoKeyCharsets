@@ -77,7 +77,7 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
         if len(items) < 2:
             continue
 
-        key = uu.trim(items[0])
+        key = uu.trim(items[0]).lower()
         value = uu.trim(items[1])
 
         if key in CIN_SECTION:
@@ -157,10 +157,10 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
                 cursor.execute(query, args)
                 chardefId = cursor.lastrowid
 
-            query = "INSERT INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :vid)"
+            query = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :vid)"
             args = {'kid': keydefId, 'vid': chardefId}
             cursor.execute(query, args)
-            continue
+
 
     reader.close()
     cursor.execute("COMMIT TRANSACTION")
@@ -182,7 +182,7 @@ def performArray30(category, cursor, path):
     entryKeydefColumnName = f"keydef_{category}_id"
 
     cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`{entryKeydefColumnName}`, `chardef_id`) ON CONFLICT IGNORE)")
 
     begin = False
 
@@ -239,7 +239,7 @@ def performArray30(category, cursor, path):
             cursor.execute(query, args)
             chardefId = cursor.lastrowid
 
-        query = f"INSERT INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) VALUES (:kid, :vid)"
+        query = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) VALUES (:kid, :vid)"
         args = {'kid': keydefId, 'vid': chardefId}
         cursor.execute(query, args)
         continue
@@ -278,10 +278,12 @@ def main():
     cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    # cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
 
     # cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
     # cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
+    # cursor.execute("CREATE UNIQUE INDEX entry_index ON entry (keydef_id, chardef_id)")
 
     mode = Mode.CREATE
     for index, path in enumerate(args.input):
