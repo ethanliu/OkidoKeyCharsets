@@ -1,14 +1,6 @@
 {
     "datatables": [
         {
-            "cin": "table/wubizixing.cin",
-            "cname": "简体五笔字形",
-            "db": "db/wubizixing.cin.db",
-            "ename": "Wubi (Wubizixing)",
-            "license": "五筆字型輸入法简称五笔，是王永民在1983年8月发明的一种汉字输入法。\n五笔字型完全依据笔画和字形特征对汉字进行编码，是典型的形码输入法。\n",
-            "name": ""
-        },
-        {
             "cin": "table/freenewcj.cin",
             "cname": "自由大新",
             "db": "db/freenewcj.cin.db",
@@ -411,22 +403,22 @@
     ],
     "splits": {
         "NewCJ3.cin": {
-            "gitee": 8
+            "gitee": 10
         },
         "array10a.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "array10b.cin": {
-            "gitee": 5
+            "gitee": 6
         },
         "array26.cin": {
             "gitee": 2
         },
         "array30-OkidoKey.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "array30.cin": {
-            "gitee": 6
+            "gitee": 8
         },
         "array40.cin": {
             "gitee": 1
@@ -435,22 +427,22 @@
             "gitee": 1
         },
         "bpmf-Hsu.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "bpmf-cns.cin": {
-            "gitee": 4
+            "gitee": 6
         },
         "bpmf.cin": {
             "gitee": 1
         },
         "cangjie6.cin": {
-            "gitee": 5
+            "gitee": 7
         },
         "cj-j.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "cj.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "cj5.cin": {
             "gitee": 1
@@ -462,22 +454,22 @@
             "gitee": 1
         },
         "dayi3-patched.cin": {
-            "gitee": 1
-        },
-        "dayi3.cin": {
-            "gitee": 1
-        },
-        "dayi4.cin": {
-            "gitee": 1
-        },
-        "freenewcj.cin": {
             "gitee": 2
         },
+        "dayi3.cin": {
+            "gitee": 2
+        },
+        "dayi4.cin": {
+            "gitee": 2
+        },
+        "freenewcj.cin": {
+            "gitee": 3
+        },
         "ghcm.cin": {
-            "gitee": 44
+            "gitee": 55
         },
         "jidianwubi.cin": {
-            "gitee": 5
+            "gitee": 6
         },
         "jinjin.cin": {
             "gitee": 2
@@ -492,7 +484,7 @@
             "gitee": 2
         },
         "lxsy_0.40.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "lxsy_0.41.cin": {
             "gitee": 1
@@ -501,13 +493,13 @@
             "gitee": 1
         },
         "ov_ez75.cin": {
-            "gitee": 19
+            "gitee": 25
         },
         "pictograph.cin": {
             "gitee": 1
         },
         "pinyin.cin": {
-            "gitee": 4
+            "gitee": 5
         },
         "pinyinbig5.cin": {
             "gitee": 1
@@ -519,10 +511,10 @@
             "gitee": 1
         },
         "scj6.cin": {
-            "gitee": 3
+            "gitee": 4
         },
         "scj7.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "shuangpin.cin": {
             "gitee": 2
@@ -531,13 +523,13 @@
             "gitee": 1
         },
         "stroke-bsm.cin": {
-            "gitee": 2
+            "gitee": 3
         },
         "stroke-g6code.cin": {
             "gitee": 1
         },
         "stroke-stroke5-keypad.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "taiwain-minnan-zhuyin.cin": {
             "gitee": 1
@@ -546,15 +538,12 @@
             "gitee": 1
         },
         "tp_hakka_hl.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "tp_hakka_sy.cin": {
-            "gitee": 1
+            "gitee": 2
         },
         "wu.cin": {
-            "gitee": 1
-        },
-        "wubizixing.cin": {
             "gitee": 1
         },
         "wus.cin": {
@@ -564,5 +553,5 @@
             "gitee": 1
         }
     },
-    "version": "20220829185533"
+    "version": "20220901172200"
 }
