@@ -45,7 +45,7 @@ def createKeyboard():
         "charsets": {},
     }
 
-    for path in glob.glob(f"{charsetPath}/*.charset.json"):
+    for path in sorted(glob.glob(f"{charsetPath}/*.charset.json")):
         file = open(path, 'r')
         data = json.load(file)
         file.close()
@@ -87,7 +87,7 @@ def createTable():
         'splits': {},
     }
 
-    for path in glob.glob(f"{dbPath}/*.cin.db"):
+    for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('.db', '')
 
@@ -175,7 +175,7 @@ def createLexicon():
         'splits': {},
     }
 
-    for path in glob.glob(f"{dbPath}/lexicon-*.csv.db"):
+    for path in sorted(glob.glob(f"{dbPath}/lexicon-*.csv.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('lexicon-', '').replace('.db', '')
         txtPath = f"{lexiconPath}/{filename}.txt"
