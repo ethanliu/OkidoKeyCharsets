@@ -114,7 +114,10 @@ def chunks(reader, size = 10000):
     yield chunk
 
 def getOne(cursor, query, args = None):
-    cursor.execute(query, args)
+    if args == None:
+        cursor.execute(query)
+    else:
+        cursor.execute(query, args)
     # result = cursor.fetchone()
     return next(cursor, [None])[0]
     # print(result)
