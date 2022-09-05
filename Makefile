@@ -89,14 +89,13 @@ table-db:
 		if [[ -f "${dbPath}/$${filename}.db" ]]; then \
 			echo "[exists] $${filename}.db" ; \
 		else \
-			if [ $$filename == "array30.cin" ] || [ $$filename == "array30_OkidoKey.cin" ]; then \
+			if [[ "$${filename}" =~ ^array30* ]]; then \
 				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db --array-short ${tablePath}/array-shortcode.cin --array-special ${tablePath}/array-special.cin ; \
 			else \
 				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db ; \
 			fi ; \
 		fi ; \
 	done;
-
 
 lexicon-db: array-phrase jieba jyutping-phrase mcbpmf moe-db
 	@# update all lexicon
