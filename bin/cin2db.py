@@ -182,7 +182,8 @@ def performArray30(category, cursor, path):
     entryKeydefColumnName = f"keydef_{category}_id"
 
     cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`{entryKeydefColumnName}`, `chardef_id`) ON CONFLICT IGNORE)")
+    # cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`{entryKeydefColumnName}`, `chardef_id`) ON CONFLICT IGNORE)")
+    cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
     begin = False
 
