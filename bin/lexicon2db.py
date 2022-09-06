@@ -6,13 +6,13 @@
 # convert lexicon csv to sqlite db
 
 import argparse
-# import importlib
+import importlib
 import sys, os
 import csv
 import sqlite3
 from tqdm import tqdm
 
-# uu = importlib.import_module("lib.util")
+uu = importlib.import_module("lib.util")
 
 def performImport(cursor, inputPath):
     filename = os.path.basename(inputPath)
@@ -30,14 +30,16 @@ def performImport(cursor, inputPath):
         pinyin = (row[2] or '').strip()
         pinyin_id = 0
 
-        if not phrase:
+        if not phrase or len(phrase) < 2:
             continue
 
         if pinyin:
             query = "INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)"
             args = {'pinyin': pinyin}
             cursor.execute(query, args)
-            pinyin_id = cursor.lastrowid
+            query = "SELECT rowid FROM pinyin WHERE pinyin = :pinyin"
+            pinyin_id = uu.getOne(cursor, query, args)
+            # pinyin_id = cursor.lastrowid
 
         query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin_id) VALUES (:phrase, :weight, :pinyin_id)"
         args = {'phrase': phrase, 'weight': weight, 'pinyin_id': pinyin_id}
