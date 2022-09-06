@@ -45,19 +45,21 @@ def parse(inputPath, outputPath):
                 if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
                     break
 
-
                 phrase = uu.trim(row[0] or '')
                 weight = row[1] or 0
                 pinyin = ''
+
                 # pinyin = translate(phrase)
                 pinyin = tp.get(phrase, format = "strip", delimiter = "")
 
-                if pinyin == phrase:
-                    pinyin = ''
+                if pinyin == phrase or pinyin == '':
+                    continue
+                    # pinyin = ''
 
                 contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
         fp.close()
+        # tqdm.write(contents)
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
