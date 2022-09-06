@@ -53,6 +53,12 @@ class Mode(Enum):
     CREATE = 1
     APPEND = 2
 
+    def __repr__(self):
+        return self.name[0]
+
+    def __str__(self):
+        return self.name[0]
+
 
 def performImport(cursor, inputPath, mode = Mode.CREATE):
     section = None
@@ -105,27 +111,11 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
 
             if mode == Mode.CREATE:
                 tqdm.write(f"[i] {key[1:]} = {value}")
-                query = "SELECT `rowid` FROM `info` WHERE `name` = :name"
-                args = {'name': key[1:]}
-                result = uu.getOne(cursor, query, args)
-
-                if not result:
-                    query = "INSERT INTO `info` (`name`, `value`) VALUES (:name, :value)"
-                    args = {'name': key[1:], 'value': value}
-                    cursor.execute(query, args)
+                query = "INSERT OR IGNORE INTO `info` (`name`, `value`) VALUES (:name, :value)"
+                args = {'name': key[1:], 'value': value}
+                cursor.execute(query, args)
 
             continue
-
-        # if not partial and section == '%keyname':
-        #     query = "SELECT rowid FROM keyname WHERE `key` = :key"
-        #     args = {'key': key}
-        #     result = uu.getOne(cursor, query, args)
-        #     if result:
-        #         tqdm.write(f"[warn] duplicate keyname: {key}")
-        #     else:
-        #         query = "INSERT INTO keyname (`key`, `value`) VALUES (:key, :value)"
-        #         args = {'key': key, 'value': value}
-        #         cursor.execute(query, args)
 
         if section == '%keyname':
             query = "INSERT OR IGNORE INTO `keyname` (`key`, `value`) VALUES (:key, :value)"
@@ -134,33 +124,24 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
             continue
 
         if section == '%chardef':
-            query = "SELECT `rowid` FROM `keydef` WHERE `key` = :key"
-            args = {'key': key}
-            result = uu.getOne(cursor, query, args)
-            if result:
-                keydefId = result
-            else:
-                query = "INSERT INTO `keydef` (`key`) VALUES (:value)"
-                args = {'value': key}
-                cursor.execute(query, args)
-                keydefId = cursor.lastrowid
-
-            query = "SELECT `rowid` FROM `chardef` WHERE `char` = :char"
-            args = {'char': value}
-            result = uu.getOne(cursor, query, args)
-
-            if result:
-                chardefId = result
-            else:
-                query = "INSERT INTO `chardef` (`char`) VALUES (:value)"
-                args = {'value': value}
-                cursor.execute(query, args)
-                chardefId = cursor.lastrowid
-
-            query = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :vid)"
-            args = {'kid': keydefId, 'vid': chardefId}
+            # keydef
+            query = "INSERT OR IGNORE INTO `keydef` (`key`) VALUES (:value)"
+            args = {'value': key}
             cursor.execute(query, args)
+            query = "SELECT `rowid` FROM `keydef` WHERE `key` = :value LIMIT 1"
+            keydefId = uu.getOne(cursor, query, args)
 
+            # chardef
+            query = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
+            args = {'value': value}
+            cursor.execute(query, args)
+            query = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
+            chardefId = uu.getOne(cursor, query, args)
+
+            #entry pivot
+            query = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :cid)"
+            args = {'kid': keydefId, 'cid': chardefId}
+            cursor.execute(query, args)
 
     reader.close()
     cursor.execute("COMMIT TRANSACTION")
@@ -171,18 +152,11 @@ def performArray30(category, cursor, path):
         print("Invalid category")
         return
 
-    # $db->exec("CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)");
-    # $db->exec("CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
-    # $db->exec("CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)");
-    # $db->exec("CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)");
-
-
     keydefTableName = f"keydef_{category}"
     entryTableName = f"entry_{category}"
     entryKeydefColumnName = f"keydef_{category}_id"
 
     cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`{entryKeydefColumnName}`, `chardef_id`) ON CONFLICT IGNORE)")
     cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
     begin = False
@@ -217,33 +191,24 @@ def performArray30(category, cursor, path):
         key = uu.trim(items[0])
         value = uu.trim(items[1])
 
-        query = f"SELECT `rowid` FROM `{keydefTableName}` WHERE `key` = :key"
-        args = {'key': key}
-        result = uu.getOne(cursor, query, args)
-        if result:
-            keydefId = result
-        else:
-            query = f"INSERT INTO `{keydefTableName}` (`key`) VALUES (:value)"
-            args = {'value': key}
-            cursor.execute(query, args)
-            keydefId = cursor.lastrowid
+        # keydef
+        query = f"INSERT OR IGNORE INTO `{keydefTableName}` (`key`) VALUES (:value)"
+        args = {'value': key}
+        cursor.execute(query, args)
+        query = f"SELECT `rowid` FROM `{keydefTableName}` WHERE `key` = :value LIMIT 1"
+        keydefId = uu.getOne(cursor, query, args)
 
-        query = "SELECT `rowid` FROM `chardef` WHERE `char` = :char"
-        args = {'char': value}
-        result = uu.getOne(cursor, query, args)
+        # chardef
+        query = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
+        args = {'value': value}
+        cursor.execute(query, args)
+        query = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
+        chardefId = uu.getOne(cursor, query, args)
 
-        if result:
-            chardefId = result
-        else:
-            query = "INSERT INTO `chardef` (`char`) VALUES (:value)"
-            args = {'value': value}
-            cursor.execute(query, args)
-            chardefId = cursor.lastrowid
-
+        # entry pivot
         query = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) VALUES (:kid, :vid)"
         args = {'kid': keydefId, 'vid': chardefId}
         cursor.execute(query, args)
-        continue
 
     reader.close()
     cursor.execute("COMMIT TRANSACTION")
@@ -279,12 +244,7 @@ def main():
     cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
-
-    # cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
-    # cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
-    # cursor.execute("CREATE UNIQUE INDEX entry_index ON entry (keydef_id, chardef_id)")
 
     mode = Mode.CREATE
     for index, path in enumerate(args.input):

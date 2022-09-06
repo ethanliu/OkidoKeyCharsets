@@ -9,20 +9,20 @@
 #
 # refs:
 # https://github.com/unicode-org/cldr-json
+# https://carpedm20.github.io/emoji/docs
 
 import argparse
-import sys, os
-import urllib3
-import shutil
-import re
-import json
-import sqlite3
+import sys, os, importlib
+import urllib3, shutil
+import re, json, sqlite3
+from emoji import is_emoji
+
+uu = importlib.import_module("lib.util")
 
 # import requests
 # import ssl
 # import certifi
 # import codecs
-
 # REPO_PATH = os.path.realpath(os.path.dirname(__file__) + '/../rawdata/cldr-json/cldr-json')
 
 COMMON_WORDS_LIST = ['skin tone', '皮膚', '肤色']
@@ -80,7 +80,6 @@ def parse(cursor, path):
     # cursor.execute("INSERT INTO info VALUES (?, ?)", ("version", version))
 
     node = None
-    # count = 0
 
     if 'annotationsDerived' in data:
         node = data['annotationsDerived']['annotations']
@@ -94,59 +93,36 @@ def parse(cursor, path):
 
     for emoji in node:
         codes = charToLongHex(emoji)
+        if not is_emoji(emoji):
+            # print(f"{emoji} => {codes}")
+            continue
+
         if codes == None:
-            print(f"Skip: {emoji}")
-            continue;
+            # print(f"Skip: {emoji}")
+            continue
 
         # chardef
-        cursor.execute("SELECT rowid FROM chardef WHERE char = ? LIMIT 1", (codes,))
-        # chardefId = cursor.fetchone()
-        result = cursor.fetchone()
+        cursor.execute("INSERT OR IGNORE INTO chardef (char) VALUES (:char)", {'char': codes})
+        chardefId = uu.getOne(cursor, "SELECT rowid FROM chardef WHERE char = :char LIMIT 1", {'char': codes})
 
-        if result:
-            chardefId = result[0]
-        else:
-            cursor.execute("INSERT INTO chardef VALUES (?)", (codes,))
-            chardefId = cursor.lastrowid
-
-        # print('#{} -> {}'.format(chardefId, codes))
-
-        # an quick but unsafe check but since prefix is all we need here
+        # a quick but unsafe check but since prefix is all we need here
         if not 'default' in node[emoji]:
             # print("emoji: {} has no keywords".format(emoji))
             continue
 
         keywords = node[emoji]['default']
-        # print(emoji, node[emoji])
-
-        # print(keywords)
         for keyword in keywords:
-            # if 'skin tone' in keyword:
             if any(words in keyword for words in COMMON_WORDS_LIST):
                 continue
-            # print(keyword)
-            # keydef
-            cursor.execute("SELECT rowid FROM keydef WHERE key = :value LIMIT 1", {'value': keyword})
-            result = cursor.fetchone()
 
-            if result:
-                keydefId = result[0]
-            else:
-                cursor.execute("INSERT INTO keydef VALUES (:value)", {'value': keyword})
-                keydefId = cursor.lastrowid
+            # keydef
+            cursor.execute("INSERT OR IGNORE INTO keydef (key) VALUES (:key)", {'key': keyword})
+            keydefId = uu.getOne(cursor, "SELECT rowid FROM keydef WHERE key = :key LIMIT 1", {'key': keyword})
 
             # entry pivot
-            if keydefId > 0 and chardefId > 0:
-                # print('k:{}, v:{}'.format(keydefId, chardefId))
-                cursor.execute("INSERT INTO entry VALUES (?, ?)", (keydefId, chardefId))
-
-
-        # count += 1
-        # if count > 10:
-        #     break
+            cursor.execute("INSERT OR IGNORE INTO entry (keydef_id, chardef_id) VALUES (:kid, :cid)", {'kid': keydefId, 'cid': chardefId})
 
     cursor.execute("COMMIT TRANSACTION")
-    # print("{}: {} keywords".format(lang, count))
 
 def performImport(repoPath, dbPath):
     if os.path.isfile(dbPath):
@@ -155,10 +131,10 @@ def performImport(repoPath, dbPath):
     db = sqlite3.connect(dbPath)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE info (`name` CHAR(255) NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) NOT NULL)")
-    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
 
     for package in PACKAGES_LIST:
         for lang in LANGS:
@@ -174,10 +150,10 @@ def performImport(repoPath, dbPath):
 
     # index
     cursor.execute('vacuum')
-    cursor.execute("CREATE UNIQUE INDEX info_index ON info (name)")
-    cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
-    cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
-    cursor.execute("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)")
+    # cursor.execute("CREATE UNIQUE INDEX info_index ON info (name)")
+    # cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
+    # cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
+    # cursor.execute("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)")
 
     cursor.execute("SELECT COUNT(*) FROM chardef")
     characterCounter = cursor.fetchone()[0]
@@ -201,7 +177,8 @@ def test(phrase, dbPath):
 
     db = sqlite3.connect(dbPath)
     cursor = db.cursor()
-    prefix = "EXPLAIN QUERY PLAN "
+    # prefix = "EXPLAIN QUERY PLAN "
+    prefix = ""
 
     if phrase == 'emoji':
         cursor.execute(prefix + "SELECT * FROM chardef WHERE rowid In (SELECT rowid FROM chardef ORDER BY RANDOM() LIMIT 100)")
