@@ -87,7 +87,7 @@ table-db:
 
 	@for filename in ${list}; do \
 		if [[ -f "${dbPath}/$${filename}.db" ]]; then \
-			echo "[exists] $${filename}.db" ; \
+			echo "[X] $${filename}.db" ; \
 		else \
 			if [[ "$${filename}" =~ ^array30* ]]; then \
 				bin/cin2db.py -i ${tablePath}/$${filename} -o ${dbPath}/$${filename}.db --array-short ${tablePath}/array-shortcode.cin --array-special ${tablePath}/array-special.cin ; \
@@ -122,8 +122,8 @@ link:
 
 emoji-db:
 	@$(call timeStart)
-	@bin/emoji.py --update -d rawdata/emoji
-	@bin/emoji.py --run -d rawdata/emoji -o tmp/emoji.db
+	@bin/emojidb.py --update -d rawdata/emoji
+	@bin/emojidb.py --run -d rawdata/emoji -o tmp/emoji.db
 	@$(call timeStop)
 	@echo "Copy emoji.db to src..."
 	@cp tmp/emoji.db ${XCODE_PATH}
