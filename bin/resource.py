@@ -69,6 +69,9 @@ def createKeyboard():
                 'charsets': item['charsets']
             }
 
+            if 'keynameType' in item:
+                jsondata['charsets'][item['name']]['keynameType'] = item['keynameType']
+
             if 'flicks' in item:
                 jsondata['charsets'][item['name']]['flicks'] = item['flicks']
 
