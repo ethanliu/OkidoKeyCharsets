@@ -204,8 +204,11 @@ pull:
 
 array10:
 	@$(call timeStart)
-	@bin/lime2cin.py -i rawdata/array10/LIME/array10a-20220321.lime -o table/array10a.cin --header table/array10a-header.cin
-	@bin/lime2cin.py -i rawdata/array10/LIME/array10b-20220321.lime -o table/array10b.cin --header table/array10b-header.cin
+	@echo "Update local version from upsteam..."
+	@$(eval file := $(wildcard rawdata/array10/LIME/array10a*.lime))
+	@bin/lime2cin.py -i ${file} -o table/array10a.cin --header table/array10a-header.cin
+	@$(eval file := $(wildcard rawdata/array10/LIME/array10b*.lime))
+	@bin/lime2cin.py -i ${file} -o table/array10b.cin --header table/array10b-header.cin
 	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
 	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
 	@$(call timeStop)
