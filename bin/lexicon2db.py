@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.0.2
 # autor: Ethan Liu
 #
 # convert lexicon csv to sqlite db
@@ -27,7 +27,7 @@ def performImport(cursor, inputPath):
     for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {filename}"):
         phrase = (row[0] or '').strip()
         weight = row[1] or 0
-        pinyin = (row[2] or '').strip()
+        pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
         pinyin_id = 0
 
         if not phrase or len(phrase) < 2:
@@ -79,8 +79,6 @@ def main():
 
     cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) UNIQUE NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
-    # cursor.execute('CREATE UNIQUE INDEX pinyin_index ON pinyin (pinyin)')
-    # cursor.execute('CREATE UNIQUE INDEX lexicon_index ON lexicon (phrase)')
 
     performImport(cursor, args.input)
     db.commit()

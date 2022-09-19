@@ -1,7 +1,9 @@
 .PHONY: usage all clear test table lexicon
 
 # SHELL := /usr/bin/env bash
-XCODE_PATH := ../src/baker/baker/Supporting\ Files/
+SRC_PATH := ../src/baker/
+MISC_PATH := ${SRC_PATH}baker/Supporting\ Files/
+LITE_PATH := ${SRC_PATH}bakerlite/
 GITEE_REPO_PATH := rawdata/gitee
 
 define SYNOPSIS
@@ -116,7 +118,7 @@ link:
 	@echo "Copy json resources files to codebase"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json KeyMapping.json ; do \
 		echo "...$${file}" ; \
-		cp $${file} ${XCODE_PATH} ; \
+		cp $${file} ${MISC_PATH} ; \
 		cp $${file} ${GITEE_REPO_PATH} ; \
 	done;
 
@@ -126,14 +128,14 @@ emoji-db:
 	@bin/emojidb.py --run -d rawdata/emoji -o tmp/emoji.db
 	@$(call timeStop)
 	@echo "Copy emoji.db to src..."
-	@cp tmp/emoji.db ${XCODE_PATH}
+	@cp tmp/emoji.db ${MISC_PATH}
 	@-rm tmp/emoji.db
 
 char-db:
 	@$(call timeStart)
 	@bin/character.py -i lexicon/symbol.json tmp/Character.db
 	@echo "Copy Character.db to src..."
-	@cp tmp/Character.db ${XCODE_PATH}
+	@cp tmp/Character.db ${MISC_PATH}
 	@-rm tmp/Character.db
 	@$(call timeStop)
 
@@ -141,7 +143,7 @@ cv-db:
 	@$(call timeStart)
 	@bin/chinese-variant.py -i rawdata/tongwen-core/dictionaries -o tmp/ChineseVariant.db
 	@echo "Copy ChineseVariant.db to src..."
-	@cp tmp/ChineseVariant.db ${XCODE_PATH}
+	@cp tmp/ChineseVariant.db ${MISC_PATH}
 	@-rm tmp/ChineseVariant.db
 	@$(call timeStop)
 
@@ -317,4 +319,14 @@ moe-db:
 	@bin/lexicon2db.py -i lexicon/MoE-concised.csv -o db/lexicon-MoE-concised.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-idioms.csv -o db/lexicon-MoE-idioms.csv.db
 	@bin/lexicon2db.py -i lexicon/MoE-revised.csv -o db/lexicon-MoE-revised.csv.db
+	@$(call timeStop)
+
+ admob:
+	@$(call timeStart)
+	@#curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
+	@#cd tmp; unzip -o -q googlemobileadssdkios.zip
+	@$(eval dir = $(wildcard tmp/GoogleMobileAdsSdkiOS-*))
+	@#echo "AdMob: ${dir}"
+	@#echo "SRC: ${LITE_PATH}"
+	@cd ${dir}; open .
 	@$(call timeStop)
