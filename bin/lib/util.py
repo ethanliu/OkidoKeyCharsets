@@ -9,20 +9,9 @@
 
 import sys
 import subprocess
-
-# class colors:
-#     HEADER = '\033[95m'
-#     OKBLUE = '\033[94m'
-#     OKCYAN = '\033[96m'
-#     OKGREEN = '\033[92m'
-#     WARNING = '\033[93m'
-#     FAIL = '\033[91m'
-#     ENDC = '\033[0m'
-#     BOLD = '\033[1m'
-#     UNDERLINE = '\033[4m'
-
 import re
 import os
+import unicodedata
 
 class Colors:
     reset = '\u001b[0m'
@@ -99,6 +88,9 @@ def trim(str, needle = None):
     if needle:
         _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
     return _str.strip()
+
+def stripAccents(str):
+    return ''.join(c for c in unicodedata.normalize('NFD', str) if unicodedata.category(c) != 'Mn')
 
 def dir(path):
     return os.path.dirname(os.path.realpath(path))
