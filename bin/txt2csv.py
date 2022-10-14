@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = 1000
+consoleBufferSize = -1000
 
 def txt2csv(inputPath, outputPath, column, delimiter):
     filename = os.path.basename(outputPath)
@@ -38,6 +38,8 @@ def txt2csv(inputPath, outputPath, column, delimiter):
 
                 # 3, 1, 0
                 for index, i in enumerate(column):
+                    if (len(row) < 2):
+                        continue;
                     match i:
                         case 1:
                             # tqdm.write(f"Mapping phrase from index {index}")
