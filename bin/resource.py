@@ -125,7 +125,7 @@ def createTable():
                     row = uu.trim(row, '#')
                     if not row or row == '':
                         continue
-                    items = re.split('[\s|\t]{1}', row, 1)
+                    items = re.split('[\s\t]{1}', row, 1)
                     if len(items) < 2:
                         # print(f"[?] ignore: {row}")
                         continue
