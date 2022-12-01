@@ -79,7 +79,7 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
         if not row or row == '':
             continue
 
-        items = re.split('[\s|\t]{1}', row, 1)
+        items = re.split('[\s\t]{1}', row, 1)
         if len(items) < 2:
             continue
 
@@ -184,7 +184,7 @@ def performArray30(category, cursor, path):
         if not begin:
             continue
 
-        items = re.split('[\s|\t]{1}', row, 1)
+        items = re.split('[\s\t]{1}', row, 1)
         if len(items) < 2:
             continue
 
@@ -213,6 +213,15 @@ def performArray30(category, cursor, path):
     reader.close()
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
+
+def validate(cursor):
+    cursor.execute("SELECT key, value FROM `keyname` ORDER BY rowid")
+    result = cursor.fetchall()
+    for item in tqdm(result, unit_scale = True, ascii = True, desc = f"Validation"):
+        query = "SELECT COUNT(rowid) FROM `keydef` WHERE key LIKE :key"
+        check = uu.getOne(cursor, query, {'key': f"%{item[0]}%"})
+        if not check or check <= 1:
+            tqdm.write(f"[?] keyname: {item[0]} ({item[1]}) never or rarely used")
 
 
 def main():
@@ -262,6 +271,7 @@ def main():
         performArray30('special', cursor, args.array_special)
         db.commit()
 
+    validate(cursor)
     db.close()
 
     sys.exit(0)
