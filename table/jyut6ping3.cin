@@ -1,5 +1,5 @@
 # Jyut6ping3 - 粵拼
-# Version: 2022.06.09
+# Version: 2022.07.21
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.chars.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -25387,6 +25387,7 @@ saap3	歰
 saap3	澀
 saap3	澁
 saap3	濇
+saap3	烚
 saap3	箑
 saap3	翜
 saap3	翣
@@ -25402,6 +25403,7 @@ saap3	馺
 saap3	𠸝
 saap3	𢶍
 saap6	炠
+saap6	烚
 saap6	煠
 saap6	熠
 saap6	𤆣
