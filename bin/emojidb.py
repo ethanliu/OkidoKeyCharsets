@@ -166,6 +166,36 @@ def performImport(repoPath, dbPath):
     print(f"\nOutput: {dbPath}")
     print(f"Counter: chardef: {characterCounter}, keydef: {keywordsCounter}")
 
+def applyWeight(dbPath):
+    top = "😂❤️🤣👍😭🙏😘🥰😍😊🎉😁💕🥺😅🔥☺️🤦♥️🤷🙄😆🤗😉🎂🤔👏🙂😳🥳😎👌💜😔💪✨💖👀😋😏😢👉💗😩💯🌹💞🎈💙😃😡💐😜🙈🤞😄🤤🙌🤪❣️😀💋💀👇💔😌💓🤩🙃😬😱😴🤭😐🌞😒😇🌸😈🎶✌️🎊🥵😞💚☀️🖤💰😚👑🎁💥🙋☹️😑🥴👈💩✅"
+
+    db = sqlite3.connect(dbPath)
+    cursor = db.cursor()
+
+    columns = [i[1] for i in cursor.execute("PRAGMA table_info(`chardef`)")]
+    if 'weight' not in columns:
+        print('alter weight column')
+        cursor.execute("ALTER TABLE chardef ADD `weight` INTEGER DEFAULT 0")
+
+    weight = 500
+    for c in top[::-1]:
+        weight += 10
+        code = charToLongHex(c)
+        # print(f"{c} {weight}", end = ' '),
+        cursor.execute("UPDATE `chardef` SET weight = :weight WHERE char = :code", {'code': code, 'weight': weight})
+
+    db.commit()
+
+    cursor.execute("SELECT char FROM `chardef` WHERE weight > 0 ORDER BY weight DESC")
+    result = cursor.fetchall()
+    for item in result:
+        emoji = emojilized(item[0])
+        print(emoji, end = ' '),
+    print('')
+
+    db.close()
+    print("--end")
+
 def emojilized(hexString):
     codes = r'\U' + r'\U'.join(hexString.split(' '))
     codes = codes.encode('utf8').decode('unicode-escape')
@@ -247,7 +277,8 @@ def main():
         if not args.dir or not os.path.exists(args.dir):
             print(f"Directory (rawdata/emoji) not found: {args.dir}")
             sys.exit(0)
-        performImport(args.dir, args.output);
+        performImport(args.dir, args.output)
+        applyWeight(args.output)
 
     sys.exit(0)
 

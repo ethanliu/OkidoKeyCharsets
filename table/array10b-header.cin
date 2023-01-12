@@ -2,8 +2,9 @@
 #
 # 「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。
 #
-# 註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10
+# array10b: 支援 Unicode 3.1 範圍漢字（亦即包括中日韓統一表意文字延伸 B 區 (Ext-B)）的「大字集版」。
 #
+# 註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10
 #
 %gen_inp
 %ename array10b

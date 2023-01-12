@@ -196,12 +196,19 @@ table:
 
 pull:
 	@echo "Upstream pulling..."
+	@echo "upstream: array10"
 	@cd rawdata/array10; git pull
+	@echo "upstream: array30"
 	@cd rawdata/array30; git pull
+	@echo "upstream: ghcm"
 	@cd rawdata/ghcm; git pull
+	@echo "upstream: jeiba"
 	@cd rawdata/jieba; git pull
+	@echo "upstream: rime-cantones"
 	@cd rawdata/rime-cantonese; git pull
+	@echo "upstream: McBopomofo"
 	@cd rawdata/McBopomofo; git pull
+	@echo "upstream: tongwen"
 	@cd rawdata/tongwen-core; git pull
 
 array10:
@@ -323,8 +330,8 @@ moe-db:
 
  admob:
 	@$(call timeStart)
-	@#curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
-	@#cd tmp; unzip -o -q googlemobileadssdkios.zip
+	@curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
+	@cd tmp; unzip -o -q googlemobileadssdkios.zip
 	@$(eval dir = $(wildcard tmp/GoogleMobileAdsSdkiOS-*))
 	@#echo "AdMob: ${dir}"
 	@#echo "SRC: ${LITE_PATH}"
