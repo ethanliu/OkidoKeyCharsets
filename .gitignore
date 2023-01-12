@@ -1,5 +1,5 @@
 .vscode
-bin/lib/__pycache__
+__pycache__
 rawdata/*
 !rawdata/moe
 rawdata/moe/src/*
