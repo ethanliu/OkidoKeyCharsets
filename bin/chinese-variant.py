@@ -6,6 +6,7 @@
 # ChineseVariant.db generator
 
 import argparse
+import csv
 # import importlib
 import sys, os
 import json
