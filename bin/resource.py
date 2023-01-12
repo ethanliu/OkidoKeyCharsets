@@ -118,6 +118,7 @@ def createTable():
                 if row.startswith('#'):
                     row = row.replace('#', '').strip()
                     if not row or row == '':
+                        content['license'] += f"\n"
                         continue
                     content['license'] += f"{row}\n"
 
@@ -150,6 +151,7 @@ def createTable():
                     break
 
             reader.close()
+            content['license'] = uu.trim(content['license'])
             jsondata['datatables'].append(content)
 
         # splits
