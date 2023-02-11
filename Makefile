@@ -214,13 +214,21 @@ pull:
 array10:
 	@$(call timeStart)
 	@echo "Update local version from upsteam..."
+
 	@$(eval file := $(wildcard rawdata/array10/LIME/array10a*.lime))
 	@bin/lime2cin.py -i ${file} -o table/array10a.cin --header table/array10a-header.cin
+	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
+
 	@$(eval file := $(wildcard rawdata/array10/LIME/array10b*.lime))
 	@bin/lime2cin.py -i ${file} -o table/array10b.cin --header table/array10b-header.cin
-	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
 	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
+
+	@$(eval file := $(wildcard rawdata/array10/LIME/array10c*.lime))
+	@bin/lime2cin.py -i ${file} -o table/array10c.cin --header table/array10c-header.cin
+	@bin/cin2db.py -i table/array10c.cin -o db/array10c.cin.db
+
 	@$(call timeStop)
+
 
 array30:
 	@$(call timeStart)
@@ -237,6 +245,7 @@ array30:
 	@cp ${file} table/array30-OkidoKey-big.cin
 	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30-OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
+	@bin/cin2db.py -i table/array30-OkidoKey-big.cin -o db/array30-OkidoKey-big.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
 	@$(call timeStop)
 
 array-phrase:

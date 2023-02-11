@@ -1,75 +1,93 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.1.0
 # autor: Ethan Liu
 #
-# convert table from lime (csv) to cin format
-# the currenct format of lime seems matched cin format by key:value already
-# while lime using value:key previously, if I recall
+# convert table from lime (csv) to cin format with extra header information
 #
 
-import argparse
-import sys, os
-import tempfile
-import shutil
 from datetime import datetime
+from tqdm import tqdm
+import argparse
+import csv
+import importlib
+import sys, os
+
+uu = importlib.import_module("lib.util")
+
+consoleBufferSize = -100
+# first column for keydef, second column for chardef
+column = [0, 1]
+chardefBeginBlock = f"%chardef begin\n"
+chardefEndBlock = f"%chardef end"
 
 def parser(path, outputPath, headerPath):
     today = datetime.now()
 
-    tmpFile = tempfile.NamedTemporaryFile(mode = 'w+t', delete = False)
-    tmpFile.writelines('# build: {}\n'.format(today.strftime(f'%Y/%m/%d %H:%M:%S')))
+    description = "# build: {}\n".format(today.strftime(f'%Y/%m/%d %H:%M:%S'))
+    header = ""
+    contents = ""
 
     if headerPath == '':
         contents = ['%ename', '%cname', '%selkey', '%keyname begin', '%keyname end']
-        tmpFile.writelines('\n'.join(contents) + '\n')
+        header += '\n'.join(contents) + '\n'
     else:
         with open(headerPath) as headerFile:
-            # header = headerFile.readlines()
-            # use whatever it offers and replace newline
-            contents = [line.rstrip() + '\n' for line in headerFile]
-            tmpFile.writelines(contents)
+            for row in headerFile:
+                if row.startswith("#"):
+                    description += f"{row}"
+                else:
+                    header += f"{row}"
 
-    # print(header)
-    if contents[-1].rstrip() != f'%chardef begin':
-        tmpFile.writelines([f'%chardef begin\n'])
+    # begin
 
-    file = open(path, 'r')
-    # contents = file.readlines()
-    # count = 0
-    for content in file:
-        # count += 1
-        if not content.strip():
-            continue
-        else:
-            items = content.split('#')
-            content = items[0].rstrip()
-            items = content.split("\t")
-            keydef = items[0].strip()
-            chardef = items[1].strip()
-            if keydef == '' or chardef == '':
-                continue
+    with open(path) as fp:
+        reader = csv.reader(fp, delimiter = "\t")
+        for rows in uu.chunks(reader, 100000):
+            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{path} Chunk[]"):
+                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
+                    break
 
-            # print(keydef, chardef)
-            # TODO: any furture check? duplicate items?
-            tmpFile.writelines('{}\t{}\n'.format(keydef, chardef))
+                if not row:
+                    # print(f"skip empty: {row}")
+                    if not contents:
+                        # very first newline
+                        contents += chardefBeginBlock
+                    continue
 
-        # if (count > 10):
-        #     break
+                if row[0].startswith("#"):
+                    # tmpFile.writelines(f"{' '.join(row)}\n")
+                    if not contents:
+                        description += f"{' '.join(row)}\n"
+                    else:
+                        contents += f"{' '.join(row)}\n"
+                    continue
 
-    tmpFile.writelines([f'%chardef end'])
+                keydef = ""
+                chardef = ""
 
-    tmpPath = tmpFile.name
-    tmpFile.close()
+                for index, i in enumerate(column):
+                    if (len(row) < 2):
+                        continue
+                    match i:
+                        case 0:
+                            keydef = uu.trim(row[index])
+                        case 1:
+                            items = uu.trim(row[index]).split("#")
+                            chardef = items[0].strip()
 
-    if outputPath == '':
-        os.system("cat " + tmpPath)
-    else:
-        # just overwrite
-        shutil.copy(tmpPath, outputPath)
+                if keydef == '' or chardef == '':
+                    continue
 
-    os.remove(tmpPath)
+                contents += f"{keydef}\t{chardef}\n"
 
+    with open(outputPath, 'w') as fp:
+        fp.write(description)
+        fp.write(f"#\n")
+        fp.write(header)
+        fp.write(contents)
+        fp.write(chardefEndBlock)
+        fp.close()
 
 def main():
     argParser = argparse.ArgumentParser(description='Convert CIN table from Lime table')
