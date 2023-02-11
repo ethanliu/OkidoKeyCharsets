@@ -13,7 +13,7 @@
             "cname": "行列10a",
             "db": "db/array10a.cin.db",
             "ename": "array10a",
-            "license": "build: 2023/01/12 18:07:37\n\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n\narray10a: 支援 Unicode 3.0 範圍（亦即包括中日韓統一表意文字延伸 A 區 (Ext-A)）共二萬七千餘漢字的「標準版」。\n\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10",
+            "license": "build: 2023/02/12 03:40:28\n\narray10a: 支援包括中日韓統一表意文字延伸 A 區 (Ext-A)）共二萬七千餘漢字的「標準版」。【註：如果您不知匯入哪組版本較好，建議就直接選這組】\n\n行列10輸入法(array10a) ，版本 v2023-1.0\n釋出日期：2023-02-11\n詳細說明請參見 https://github.com/gontera/array10",
             "name": ""
         },
         {
@@ -21,7 +21,15 @@
             "cname": "行列10b",
             "db": "db/array10b.cin.db",
             "ename": "array10b",
-            "license": "build: 2023/01/12 18:07:37\n\n本輸入法表格係由行列科技公司廖明德先生（即行列輸入法發明人）提供原始對照表，經葉光哲先生（老刀）與廖先生共同修正編訂。\n\n「行列 10 數字輸入法」（以下簡稱「行列 10」）係為行列 30 鍵輸入法（以下簡稱「行列 30」）字根數字化的衍生版本，二者對於文字拆碼方式基本上是相同的；行列 10 的主要差異為使用 1234567890 共 10 個數字鍵輸入字根碼，來代替行列 30 中的鍵盤鍵位。\n\narray10b: 支援 Unicode 3.1 範圍漢字（亦即包括中日韓統一表意文字延伸 B 區 (Ext-B)）的「大字集版」。\n\n註: 本表格以 LIME for Android 的「行列10」輸入法表格轉換為 CIN 格式，詳細資訊請參閱 https://github.com/gontera/array10",
+            "license": "build: 2023/02/12 03:40:29\n\narray10b: 除了支援 array10a 的字集範圍，亦包括中日韓統一表意文字延伸 B 區 (Ext-B)）共七萬餘字的「大字集版」。\n\n行列10輸入法(array10b) ，版本 v2023-1.0\n釋出日期：2023-02-11\n詳細說明請參見 https://github.com/gontera/array10",
+            "name": ""
+        },
+        {
+            "cin": "table/array10c.cin",
+            "cname": "行列10c",
+            "db": "db/array10c.cin.db",
+            "ename": "array10c",
+            "license": "build: 2023/02/12 03:40:32\n\narray10c: 為包括中日韓統一表意文字延伸 G 區 (Ext-G)，合計九萬二千餘字（c 代表 \"Complete Set\"，即蒐錄的範圍為「全字集」之意），蒐錄的字集範圍最廣、字數最多。\n\n行列10輸入法(array10c) ，版本 v2023-1.0\n釋出日期：2023-02-11\n詳細說明請參見 https://github.com/gontera/array10",
             "name": ""
         },
         {
@@ -33,11 +41,19 @@
             "name": ""
         },
         {
+            "cin": "table/array30-OkidoKey-big.cin",
+            "cname": "行列30-大字集",
+            "db": "db/array30-OkidoKey-big.cin.db",
+            "ename": "array30-big",
+            "license": "行列輸入法 30 鍵版鍵碼表 array30 for OkidoKey/Frankie (v2023-1.0), 2023-02-11\n官方下載網址 https://github.com/gontera/array30\n有關本鍵碼表使用說明，請參閱 https://github.com/gontera/array30/wiki",
+            "name": ""
+        },
+        {
             "cin": "table/array30-OkidoKey.cin",
             "cname": "行列30",
             "db": "db/array30-OkidoKey.cin.db",
             "ename": "array30",
-            "license": "array30.cin for OkidoKey (v0.9), 2021-07-23\n\n這個輸入法表格是 array30.cin for OpenVanilla v0.9 簡化而來，只\n保留 Unicode 3.0 亦即僅支援 4 byte 的 CJK Ext-A 字集，並刪除較罕用\n的 CJK Ext-B/C/D 字集，以節省行動裝置寶貴的記憶體空間。我另提供包\n括完整 CJK 字集的「大字集版本」，如有需要，請自行下載安裝。\n\n本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU\nGeneral Public License (GPL) version 2 或新版公開授權，歡迎各界分\n布及使用。在此謹致謝行列科技之慷慨大方，讓大家可免費自由地使用行\n列輸入法。\n\n有關行列輸入法，請參觀 http://www.array.com.tw/ 內的介紹。",
+            "license": "行列輸入法 30 鍵版鍵碼表 array30 for OkidoKey/Frankie (v2023-1.0), 2023-02-11\n官方下載網址 https://github.com/gontera/array30\n有關本鍵碼表使用說明，請參閱 https://github.com/gontera/array30/wiki",
             "name": ""
         },
         {
@@ -45,7 +61,7 @@
             "cname": "行列30",
             "db": "db/array30.cin.db",
             "ename": "array30",
-            "license": "array30.cin for OpenVanilla (v0.93), 2021-08-03\n\n本 array30.cin 原始檔案是由霍東靈 Anthony Fok <foka@debian.org>\n利用行列科技在 porting.exe 檔內提供之 array30.txt 及 arrayhw.txt\n(05/31/1996) 轉換後，由葉光哲 (gontera) 根據行列科技廖明德先生\n（即行列輸入法發明人）慷慨提供支援 unicode 3.1 中日韓漢字集共七萬\n餘字的完整對照檔，製作而成。\n\n為便於 OpenVanilla 開發團隊製作行列輸入法模組，本 .cin 檔案已移除\n簡碼，另以個別檔案儲存。\n\n本檔案跟行列科技所提供的原始檔案一樣公開授權，又或可依據 GNU\nGeneral Public License (GPL) version 2 或新版公開授權，歡迎各界分\n布及使用。在此謹致謝行列科技之慷慨大方，讓大家可免費自由地使用行\n列輸入法。\n\n有關行列輸入法，請參觀 http://www.array.com.tw/ 內的介紹。\n\n\n2005-05-11 配合 OpenVanilla 0.7 將一級簡碼自本檔移除，另獨立至\nArrayShortCode.cin 中。(vgod)\n2007-09-25 將 big5 字集定義【粧銹恒碁墻嫺裏】共七個特殊用字，自\ncin 檔移除，避免這些字在 unicode 選字窗中重複出現。\n(gontera)\n2008-10-27 依行列廖明德先生提供之最新對照檔，再製新版。(gontera)\n2011-05-15 重新定義 w+8 順序（數字）符號組。(gontera)\n2011-08-21 依照行列輸入法官網發布的 2008A 版對照表重新定義特別碼，\n並更正一、二級簡碼。(gontera)\n2012-12-01 支援 CJK Ext-C/D，相容於行列 2012A 官版對照表。(gontera)\n2014-05-20 更新 CJK Ext-C/D，相容於行列 2013A 官版對照表。(gontera)\n2015-09-16 配合行列官網釋出的特別碼版本 V201509，更新特別碼。\n2016-03-19 新增支援 CJK Ext-E，並依據行列輸入法官網發布之 CJK\nExt-B V2016A 版對照表，修正 Ext-B 的部分鍵碼。\n2018-04-24 新增支援 CJK Ext-F。(0.86)\n2021-07-23 新增支援 CJK Ext-G，並補足中日韓統一表意文字非屬於\nExt-A 至 Ext-G 之部分。(0.90)\n2021-08-03 刪除部分有重複收編的漢字。(0.91-0.93)\n2022-03-17 增補遺漏的「𫊖」字。(0.94)",
+            "license": "行列輸入法 30 鍵版鍵碼表 array30.cin for OpenVanilla (v2023-1.0), 2023-02-11\n官方下載網址 https://github.com/gontera/array30\n有關本鍵碼表使用說明，請參閱 https://github.com/gontera/array30/wiki",
             "name": ""
         },
         {
@@ -411,8 +427,14 @@
         "array10b.cin": {
             "gitee": 6
         },
+        "array10c.cin": {
+            "gitee": 8
+        },
         "array26.cin": {
             "gitee": 2
+        },
+        "array30-OkidoKey-big.cin": {
+            "gitee": 8
         },
         "array30-OkidoKey.cin": {
             "gitee": 3
@@ -553,5 +575,5 @@
             "gitee": 1
         }
     },
-    "version": "20230112180755"
+    "version": "20230212035545"
 }
