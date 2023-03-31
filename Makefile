@@ -71,7 +71,7 @@ table-db:
 	$(eval dbPath = db)
 	$(eval excludes := \
 		_sample.cin _demo.cin \
-		array10a-header.cin array10b-header.cin \
+		array10a-header.cin array10b-header.cin array10c-header.cin \
 		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
 		ghcm-header.cin \
 		array-shortcode.cin array-special.cin \
@@ -258,6 +258,13 @@ bossy:
 	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
 	@echo "Generate CIN table..."
 	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
+	@$(call timeStop)
+
+bossydiff:
+	@$(call timeStart)
+	@#bin/xxcin.py -m diff -i rawdata/array30/OpenVanilla/array30-OpenVanilla-big-v2023-1.0-20230211.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o rawdata/boshiamy/diff-array30-big.txt
+	@#bin/xxcin.py -m diff -i rawdata/array30/OkidoKey/array30-OkidoKey-regular-v2023-1.0.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o rawdata/boshiamy/diff-array30-reg.txt
+	@bin/xxcin.py -m diff -s a -i rawdata/array30/OkidoKey/array30-OkidoKey-regular-v2023-1.0.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o tmp/diff.txt
 	@$(call timeStop)
 
 ghcm:
