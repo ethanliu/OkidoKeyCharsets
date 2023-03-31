@@ -1,5 +1,5 @@
 # Jyut6ping3 - 粵拼
-# Version: 2022.07.21
+# Version: 2023.02.16
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.chars.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -166,6 +166,7 @@ aang1	甇
 aang1	甖
 aang1	罃
 aang1	罌
+aap2	鴨
 aap3	㳌
 aap3	㾎
 aap3	䆘
@@ -247,7 +248,6 @@ ai3	䗟
 ai3	医
 ai3	哎
 ai3	嫕
-ai3	屃
 ai3	屓
 ai3	屭
 ai3	幆
@@ -605,7 +605,6 @@ baat3	柭
 baat3	玐
 baat3	釛
 baat3	釟
-baat3 jan4	尣
 baat6	坺
 baat6	墢
 baat6	茇
@@ -736,7 +735,6 @@ ban1	餴
 ban1	驞
 ban1	𦆯
 ban1	𧓍
-ban1	𨮘
 ban1	𩣺
 ban2	䐔
 ban2	品
@@ -757,7 +755,6 @@ ban3	髕
 ban3	髩
 ban3	鬂
 ban3	鬢
-ban3	𡣕
 ban3	𢷤
 ban3	𩣺
 ban3	𩯭
@@ -847,7 +844,6 @@ bat1	魓
 bat1	鷝
 bat1	𢳂
 bat1	𢴩
-bat1	𤒹
 bat1	𥷑
 bat3	秡
 bat6	㚕
@@ -1288,7 +1284,6 @@ bit1	飶
 bit1	馝
 bit1	駜
 bit1	鮅
-bit1	𠦒
 bit3	㔡
 bit3	㢼
 bit3	䌘
@@ -2569,7 +2564,6 @@ cat1	柒
 cat1	桼
 cat1	漆
 cat1	腟
-cat1	𠀁
 cat6	𨳍
 cat6	𫵱
 cau1	㑳
@@ -3189,8 +3183,6 @@ ci3	趐
 ci3	跮
 ci3	踅
 ci3	饎
-ci3	𠕞
-ci3	𠤣
 ci3	𡷑
 ci3	𢡠
 ci3	𤷫
@@ -3513,6 +3505,7 @@ cin2	燀
 cin2	繟
 cin2	蕆
 cin2	譂
+cin2	踐
 cin2	錢
 cin2	闡
 cin3	刋
@@ -3786,7 +3779,6 @@ co1	雛
 co1	鶵
 co1	鹺
 co1	𢶷
-co1	𦷝
 co2	䂳
 co2	䙘
 co2	䠂
@@ -3951,6 +3943,7 @@ coeng2	墏
 coeng2	搶
 coeng2	摤
 coeng2	磢
+coeng2	腸
 coeng2	鋹
 coeng3	䩨
 coeng3	䵁
@@ -4009,7 +4002,6 @@ coeng4	𢒑
 coet2	𠻘
 coi1	啋
 coi2	㥒
-coi2	䌽
 coi2	䐆
 coi2	䣋
 coi2	倸
@@ -4384,13 +4376,11 @@ cung1	鏓
 cung1	鏦
 cung1	騘
 cung1	驄
-cung1	𠁨
 cung1	𡟟
 cung1	𣑁
 cung1	𤧚
 cung1	𦿞
 cung1	𧘂
-cung1	𪻐
 cung2	冢
 cung2	埫
 cung2	塚
@@ -4458,7 +4448,6 @@ cung4	𡨭
 cung4	𢹸
 cung4	𦦵
 cung4	𩃭
-cung4	𪻐
 cung5	重
 cung5	𤭮
 cung6	悰
@@ -4475,6 +4464,7 @@ cyu1	躕
 cyu1	除
 cyu2	䖏
 cyu2	処
+cyu2	廚
 cyu2	杵
 cyu2	楮
 cyu2	處
@@ -4705,6 +4695,7 @@ daai2	㱛
 daai2	䚞
 daai2	䚟
 daai2	傣
+daai2	帶
 daai2	歹
 daai3	㯂
 daai3	侢
@@ -4735,7 +4726,6 @@ daai6	大
 daai6	汏
 daai6	簤
 daai6	軑
-daai6	轪
 daai6	釱
 daai6	𠯈
 daak1	咑
@@ -5184,7 +5174,6 @@ dang3	䠬
 dang3	凳
 dang3	墱
 dang3	嶝
-dang3	橙
 dang3	櫈
 dang3	磴
 dang3	鐙
@@ -5668,6 +5657,7 @@ ding6	聢
 ding6	腚
 ding6	萣
 ding6	蝊
+ding6	訂
 ding6	鋌
 ding6	錠
 ding6	𠉵
@@ -5908,6 +5898,7 @@ doe3	𧊶
 doe4	𡇙
 doe4	𣳼
 doe6	𡃏
+doek1	剁
 doek3	㭬
 doek3	刴
 doek3	剁
@@ -6001,7 +5992,6 @@ dong2	瓽
 dong2	譡
 dong2	讜
 dong2	黨
-dong2	𫽮
 dong3	儅
 dong3	擋
 dong3	攩
@@ -6374,7 +6364,6 @@ faai3	筷
 faai3	繲
 faai3	蒯
 faai3	駃
-faai3	𫂈
 faak3	謋
 faak3	騞
 faak3	𢪎
@@ -7246,7 +7235,6 @@ fong3	眖
 fong3	貺
 fong3	趽
 fong3	軦
-fong3	况
 fong3	𧵦
 fong4	坊
 fong4	埅
@@ -9016,6 +9004,7 @@ geoi6	鮔
 geoi6	𥳁
 geoi6	𩗗
 gep1	喼
+gep3	夾
 gep6	夾
 gi1	嘰
 gi1	𠼻
@@ -9245,6 +9234,7 @@ gip3	刦
 gip3	刧
 gip3	刼
 gip3	劫
+gip3	夾
 gip3	抾
 gip3	拾
 gip3	昅
@@ -9525,13 +9515,10 @@ goi3	蓋
 goi3	阣
 gok2	桷
 gok2	角
-gok3	㬑
 gok3	䁷
 gok3	䇶
 gok3	䡈
 gok3	䧄
-gok3	䧐
-gok3	䬎
 gok3	傕
 gok3	各
 gok3	咯
@@ -9569,9 +9556,7 @@ gok3	鮥
 gok3	鵤
 gok3	龣
 gok3	𤤴
-gok3	𤦂
 gok3	𧢲
-gok3	𧰒
 gon1	㶥
 gon1	㿻
 gon1	䧲
@@ -9652,7 +9637,6 @@ gong1	摃
 gong1	杠
 gong1	棡
 gong1	江
-gong1	灮
 gong1	炗
 gong1	炛
 gong1	牨
@@ -10420,12 +10404,9 @@ gwan2	掍
 gwan2	混
 gwan2	渾
 gwan2	滾
-gwan2	磙
 gwan2	緄
 gwan2	緷
-gwan2	蓘
 gwan2	蔉
-gwan2	衮
 gwan2	袞
 gwan2	裷
 gwan2	輥
@@ -10434,7 +10415,6 @@ gwan2	鯀
 gwan2	𠃌
 gwan2	𥕦
 gwan2	𦶧
-gwan2	𨍽
 gwan2	𨎊
 gwan3	㙥
 gwan3	㨰
@@ -10603,7 +10583,6 @@ gwing2	詗
 gwing2	迥
 gwing2	逈
 gwing2	顈
-gwing2	𢌡
 gwing2	𥺂
 gwing3	澃
 gwit1	𠵯
@@ -11121,6 +11100,7 @@ haang1	錓
 haang1	阬
 haang4	桁
 haang4	行
+haap2	盒
 haap3	㗐
 haap3	䛅
 haap3	䶗
@@ -11365,6 +11345,7 @@ ham2	塪
 ham2	嵌
 ham2	惂
 ham2	扻
+ham2	撼
 ham2	欿
 ham2	歁
 ham2	砍
@@ -11583,6 +11564,7 @@ hap1	袷
 hap1	醘
 hap1	鉿
 hap1	闟
+hap2	盒
 hap3	嗑
 hap6	㔩
 hap6	㕉
@@ -11923,7 +11905,6 @@ hei3	囕
 hei3	塈
 hei3	墍
 hei3	夡
-hei3	屃
 hei3	屓
 hei3	屭
 hei3	巇
@@ -12121,7 +12102,6 @@ hin1	騫
 hin1	鶱
 hin1	𣔙
 hin1	𨪚
-hin1	𬸣
 hin2	㫫
 hin2	㬎
 hin2	䗾
@@ -12495,7 +12475,6 @@ hoi6	嗐
 hoi6	妎
 hoi6	害
 hoi6	氦
-hoi6	𠀅
 hok2	鶴
 hok3	㕰
 hok3	䤕
@@ -12976,7 +12955,6 @@ hung2	孔
 hung2	恐
 hung2	愩
 hung2	晎
-hung2	𢙢
 hung2	𣏺
 hung3	㑋
 hung3	㸜
@@ -13266,7 +13244,6 @@ jam1	霠
 jam1	音
 jam1	韾
 jam1	顉
-jam1	𣸮
 jam1	𤅺
 jam1	𨥖
 jam1	𩃬
@@ -13436,6 +13413,7 @@ jan2	㥯
 jan2	㦩
 jan2	㶏
 jan2	䨸
+jan2	人
 jan2	峎
 jan2	嶾
 jan2	忍
@@ -13701,7 +13679,6 @@ jau1	髹
 jau1	鮴
 jau1	鵂
 jau1	麀
-jau1	𠀉
 jau1	𠇲
 jau1	𢆶
 jau1	𢝊
@@ -13709,6 +13686,7 @@ jau1	𩂯
 jau2	㰶
 jau2	㱙
 jau2	㶭
+jau2	友
 jau2	懮
 jau2	朽
 jau2	柚
@@ -13763,7 +13741,6 @@ jau4	冘
 jau4	厹
 jau4	囮
 jau4	媃
-jau4	尢
 jau4	尤
 jau4	峳
 jau4	庮
@@ -13885,7 +13862,6 @@ jau5	輶
 jau5	酉
 jau5	銪
 jau5	韖
-jau5	𠧴
 jau5	𣜃
 jau5	𥤃
 jau5	𦮖
@@ -14301,6 +14277,7 @@ ji4	鴯
 ji4	鴺
 ji4	鸃
 ji4	𠊙
+ji4	𠒇
 ji4	𠵌
 ji4	𡝮
 ji4	𢑱
@@ -14903,7 +14880,6 @@ jin5	讞
 jin5	遃
 jin5	阭
 jin5	馻
-jin5	𪾢
 jin6	㦓
 jin6	䂩
 jin6	䏹
@@ -15234,6 +15210,7 @@ jip6	饁
 jip6	驜
 jip6	鸈
 jip6	𣜿
+jip6	𤒹
 jip6	𦠜
 jip6	𨭥
 jip6	𪃸
@@ -15539,6 +15516,7 @@ joeng2	怏
 joeng2	抰
 joeng2	映
 joeng2	柍
+joeng2	樣
 joeng2	炴
 joeng2	紻
 joeng2	鞅
@@ -15913,7 +15891,6 @@ jung4	鰅
 jung4	鰫
 jung4	鱅
 jung4	鷛
-jung4	𠆌
 jung4	𥡲
 jung4	𦞳
 jung4	𩲭
@@ -16543,7 +16520,6 @@ jyun4	褑
 jyun4	謜
 jyun4	豲
 jyun4	貟
-jyun4	贠
 jyun4	身
 jyun4	轅
 jyun4	邍
@@ -16875,6 +16851,7 @@ kam4	鳹
 kam4	鵭
 kam4	𨨖
 kam5	妗
+kan2	芹
 kan4	㘦
 kan4	㢙
 kan4	䓅
@@ -18128,6 +18105,7 @@ kwok3	鞹
 kwong1	䯑
 kwong2	儣
 kwong3	䵃
+kwong3	卝
 kwong3	壙
 kwong3	夼
 kwong3	懬
@@ -18335,7 +18313,6 @@ laak6	勒
 laak6	砳
 laak6	簕
 laak6	肋
-laam2	㧛
 laam2	㩜
 laam2	擥
 laam2	攬
@@ -18368,7 +18345,6 @@ laam4	藍
 laam4	襤
 laam4	𡺤
 laam4	𩖞
-laam5	㧛
 laam5	㩜
 laam5	㰓
 laam5	㰖
@@ -18477,6 +18453,7 @@ laap6	鉝
 laap6	錯
 laap6	鑞
 laap6	鱲
+laap6	𩶘
 laat3	喇
 laat3	瘌
 laat3	鬎
@@ -18730,6 +18707,7 @@ lau1	褸
 lau2	㚼
 lau2	㱙
 lau2	摟
+lau2	樓
 lau2	瘤
 lau2	靵
 lau3	嘍
@@ -19057,6 +19035,7 @@ lem2	𦧷
 leng1	僆
 leng1	愣
 leng1	𡃁
+leng2	領
 leng3	靚
 leng4	靈
 leng4	鯪
@@ -19295,7 +19274,6 @@ leon4	繗
 leon4	翷
 leon4	腀
 leon4	膦
-leon4	芲
 leon4	菕
 leon4	蜦
 leon4	論
@@ -19588,7 +19566,6 @@ lin4	㦁
 lin4	㦭
 lin4	㶌
 lin4	㺦
-lin4	䄭
 lin4	嗹
 lin4	嫾
 lin4	怜
@@ -19609,7 +19586,6 @@ lin4	連
 lin4	鏈
 lin4	零
 lin4	鰱
-lin4	鵇
 lin4	𠁎
 lin4	𡂴
 lin4	𤂍
@@ -19884,6 +19860,7 @@ liu1	熘
 liu1	鷯
 liu1	𠮩
 liu1	𢓌
+liu2	撩
 liu2	料
 liu2	潦
 liu2	髎
@@ -20433,7 +20410,6 @@ lou5	櫓
 lou5	氌
 lou5	滷
 lou5	潦
-lou5	澛
 lou5	瀂
 lou5	狫
 lou5	獠
@@ -20728,7 +20704,6 @@ lyun4	鵉
 lyun4	鸞
 lyun4	𡤻
 lyun4	𤓖
-lyun4	𪢮
 lyun5	孌
 lyun5	戀
 lyun5	纞
@@ -21022,7 +20997,6 @@ maau6	䫉
 maau6	皃
 maau6	貌
 maau6	貎
-maau6	𠒇
 mai1	劘
 mai1	咪
 mai1	米
@@ -21619,6 +21593,7 @@ mik6	覛
 mik6	覭
 mik6	銯
 mik6	鼏
+min2	面
 min4	㒙
 min4	㝰
 min4	㮌
@@ -21651,7 +21626,6 @@ min5	㝃
 min5	㨺
 min5	䀎
 min5	䤄
-min5	䩄
 min5	丏
 min5	俛
 min5	偭
@@ -21769,7 +21743,6 @@ mit6	鑖
 mit6	鱴
 mit6	鴓
 mit6	𩴾
-miu1	咪
 miu1	喵
 miu2	廟
 miu2	𠴕
@@ -22130,6 +22103,7 @@ mou6	𡝭
 mou6	𦻒
 mui1	妹
 mui2	妹
+mui2	梅
 mui2	𠵈
 mui4	㙁
 mui4	㺳
@@ -22410,8 +22384,6 @@ naa5	那
 naa5	郍
 naa5	𤥶
 naa5	𦰡
-naa5	𨙻
-naa5	𨚗
 naa6	䏧
 naa6	娜
 naa6	那
@@ -22610,7 +22582,6 @@ nang4	耐
 nang4	能
 nap1	凹
 nap1	粒
-nap1	𠕄
 nap1	𢈈
 nap6	㵫
 nap6	𣲷
@@ -22738,6 +22709,7 @@ nei6	誀
 nei6	鈮
 nei6	餌
 neng2	𠽒
+neoi1	囡
 neoi2	女
 neoi4	䋈
 neoi4	蒘
@@ -22841,7 +22813,6 @@ ng6	蘁
 ng6	誤
 ng6	迕
 ng6	逜
-ng6	遻
 ng6	𤵐
 ngaa1	枒
 ngaa1	椏
@@ -23983,7 +23954,6 @@ ok3	惡
 ok3	琧
 ok3	肟
 ok3	蝁
-ok3	𢙣
 ok3	𤦩
 on1	㫨
 on1	䀂
@@ -24337,7 +24307,6 @@ pang4	蒡
 pang4	輣
 pang4	馮
 pang4	鬅
-pang4	𠗦
 pang4	𠙖
 pang4	𨂃
 pat1	㺼
@@ -25046,6 +25015,7 @@ pun1	拌
 pun1	拚
 pun1	潘
 pun1	番
+pun2	伴
 pun2	拚
 pun2	拼
 pun2	翉
@@ -25147,7 +25117,6 @@ put3	醗
 put3	醱
 put3	鈸
 put3	鏺
-put3	𣸍
 saa1	㠺
 saa1	㲚
 saa1	㸺
@@ -25521,9 +25490,7 @@ sai3	細
 sai3	聓
 sai3	聟
 sai3	貰
-sai3	𠀍
 sai3	𡎎
-sai3	𦕓
 sai3	𦭓
 sai6	㭀
 sai6	㸷
@@ -25705,6 +25672,7 @@ san1	𧊋
 san2	㖘
 san2	𠱸
 san3	㔤
+san3	呻
 san4	㫳
 san4	䆣
 san4	䢅
@@ -25951,7 +25919,6 @@ sau6	授
 sau6	涭
 sau6	璹
 sau6	綬
-sau6	𡔽
 se1	㱔
 se1	㾚
 se1	些
@@ -26578,8 +26545,6 @@ si1	鼶
 si1	𠂤
 si1	𠿁
 si1	𡡒
-si1	𢇁
-si1	𢇃
 si1	𢘜
 si1	𤔲
 si1	𤞏
@@ -26636,7 +26601,6 @@ si3	諡
 si3	謚
 si3	貄
 si3	駟
-si3	𢇁
 si3	𣳉
 si4	㖷
 si4	㫭
@@ -27063,6 +27027,7 @@ sing2	渻
 sing2	省
 sing2	睲
 sing2	箵
+sing2	繩
 sing2	醒
 sing3	勝
 sing3	圣
@@ -27389,7 +27354,6 @@ so2	褨
 so2	鎖
 so2	鎻
 so2	鏁
-so2	𠩄
 so2	𧴪
 so3	㫹
 so3	䐝
@@ -27514,7 +27478,6 @@ soi1	毸
 soi1	腮
 soi1	顋
 soi1	鰓
-soi1	𢇁
 soi2	䈢
 sok1	㩋
 sok1	㪩
@@ -27713,7 +27676,6 @@ suk1	驌
 suk1	鮛
 suk1	鱐
 suk1	鷫
-suk1	𡖊
 suk1	𤢂
 suk3	索
 suk6	㒔
@@ -28642,7 +28604,6 @@ tin2	㙉
 tin2	㥏
 tin2	䐌
 tin2	䠄
-tin2	䩄
 tin2	倎
 tin2	唺
 tin2	娗
@@ -29032,14 +28993,12 @@ tok3	籜
 tok3	蘀
 tok3	袥
 tok3	託
-tok3	讬
 tok3	跅
 tok3	飥
 tok3	馲
 tok3	驝
 tok3	魄
 tok3	魠
-tok3	𠈁
 tong1	䞶
 tong1	䠀
 tong1	劏
@@ -29517,6 +29476,7 @@ waa2	剮
 waa2	搲
 waa2	攨
 waa2	畫
+waa2	話
 waa2	𢱑
 waa4	㠏
 waa4	㦊
@@ -30060,7 +30020,6 @@ wan1	豱
 wan1	贇
 wan1	輼
 wan1	轀
-wan1	辒
 wan1	鎾
 wan1	頵
 wan1	饂
@@ -30229,7 +30188,6 @@ wan6	腪
 wan6	觨
 wan6	諢
 wan6	貟
-wan6	贠
 wan6	運
 wan6	鄆
 wan6	韗
@@ -31273,7 +31231,6 @@ zaan6	賺
 zaan6	輚
 zaan6	轏
 zaan6	饌
-zaan6	𬤥
 zaang1	㬹
 zaang1	䦛
 zaang1	丁
@@ -31380,7 +31337,6 @@ zaap6	韴
 zaap6	飁
 zaap6	騽
 zaap6	鰼
-zaap6	𠓛
 zaap6	𨰉
 zaat2	甴
 zaat3	㞉
@@ -31550,7 +31506,6 @@ zak1	稄
 zak1	萴
 zak1	鯽
 zak1	鰂
-zak1	𦣱
 zam1	㘰
 zam1	㪸
 zam1	㻸
@@ -32327,7 +32282,6 @@ zeon3	懏
 zeon3	捘
 zeon3	搢
 zeon3	晉
-zeon3	晋
 zeon3	晙
 zeon3	朘
 zeon3	枃
@@ -32551,7 +32505,6 @@ zi1	齜
 zi1	𠯽
 zi1	𡝳
 zi1	𢆶
-zi1	𢇁
 zi1	𣔰
 zi1	𣷸
 zi1	𤦧
@@ -33055,7 +33008,6 @@ zin1	鳽
 zin1	鸇
 zin1	𤐄
 zin1	𦒜
-zin1	𪡏
 zin2	㔊
 zin2	㜊
 zin2	㞡
@@ -33311,7 +33263,6 @@ zit1	𡁶
 zit1	𢩦
 zit3	㔾
 zit3	㦢
-zit3	㪿
 zit3	㫼
 zit3	㮞
 zit3	㵶
@@ -34172,7 +34123,6 @@ zung3	縱
 zung3	衆
 zung3	諥
 zung3	錝
-zung3	𠂝
 zung6	㑖
 zung6	㣡
 zung6	䛦

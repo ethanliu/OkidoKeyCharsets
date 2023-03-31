@@ -848,6 +848,7 @@
 安好	0	anhao
 安如	0	anru
 安妮	0	anni
+安娜	0	annuo
 安家	0	anjia
 安度	0	andu
 安得	0	ande
@@ -1568,7 +1569,6 @@
 安命	0	anming
 安坐	0	anzuo
 安妥	0	antuo
-安娜	0	annuo
 安定	0	anding
 安寧	0	anning
 安平	0	anping
@@ -2288,6 +2288,7 @@
 伍拾	0	wushi
 伐區	0	faqu
 估單	0	gudan
+估摸	0	gumo
 伸伸	0	shenshen
 伸冤	0	shenyuan
 伸出	0	shenchu
@@ -2487,6 +2488,7 @@
 分飛	0	fenfei
 分食	0	fenshi
 分飾	0	fenshi
+刈包	0	yibao
 刊出	0	kanchu
 刊物	0	kanwu
 刊登	0	kandeng
@@ -2617,6 +2619,7 @@
 升勢	0	shengshi
 升升	0	shengsheng
 升壓	0	shengya
+升溫	0	shengwen
 升班	0	shengban
 升職	0	shengzhi
 升至	0	shengzhi
@@ -2689,10 +2692,7 @@
 吾愛	0	wuai
 呀呀	0	yaya
 呆呆	0	daidai
-呆呆	0	daidai
 呆子	0	daizi
-呆子	0	daizi
-呆滯	0	daizhi
 呆滯	0	daizhi
 周三	0	zhousan
 周二	0	zhouer
@@ -3736,7 +3736,6 @@
 深愛	0	shenai
 深憂	0	shenyou
 深摯	0	shenzhi
-深摰	0	shennie
 深於	0	shenyu
 深暗	0	shenan
 深更	0	shengeng
@@ -3844,6 +3843,7 @@
 煙靄	0	yanai
 煜熠	0	yuyi
 煞車	0	shache
+煲湯	0	baotang
 熠煜	0	yiyu
 熠熠	0	yiyi
 熬出	0	aochu
@@ -4071,7 +4071,6 @@
 真意	0	zhenyi
 真愛	0	zhenai
 真摯	0	zhenzhi
-真摰	0	zhennie
 真是	0	zhenshi
 真書	0	zhenshu
 真死	0	zhensi
@@ -4273,6 +4272,7 @@
 耳刀	0	erdao
 耳塞	0	ersai
 耳屎	0	ershi
+耳挖	0	erwa
 耳根	0	ergen
 耳機	0	erji
 耳生	0	ersheng
@@ -4391,7 +4391,6 @@
 舞風	0	wufeng
 舟山	0	zhoushan
 舟車	0	zhouche
-舡魚	0	gangyu
 般般	0	banban
 艙室	0	cangshi
 艾艾	0	aiai
@@ -5824,7 +5823,6 @@
 伐木	0	famu
 估到	0	gudao
 估成	0	gucheng
-估摸	0	gumo
 估測	0	guce
 估計	0	guji
 伸上	0	shenshang
@@ -5931,7 +5929,6 @@
 俄軍	0	ejun
 俄軍	0	ejun
 俞允	0	yuyun
-俾倪	0	bini
 俾能	0	bineng
 倉促	0	cangcu
 倉儲	0	cangchu
@@ -6345,7 +6342,6 @@
 分色	0	fense
 分菜	0	fencai
 分蔥	0	fencong
-分蘗	0	fenbo
 分號	0	fenhao
 分行	0	fenxing
 分被	0	fenbei
@@ -6993,12 +6989,9 @@
 吾輩	0	wubei
 呃逆	0	eni
 呆了	0	daile
-呆了	0	daile
 呆人	0	dairen
 呆人	0	dairen
 呆住	0	daizhu
-呆住	0	daizhu
-呆在	0	daizai
 呆在	0	daizai
 呆帳	0	daizhang
 呆帳	0	daizhang
@@ -7010,7 +7003,6 @@
 呆著	0	daizhu
 呆賬	0	daizhang
 呆賬	0	daizhang
-呆頭	0	daitou
 呆頭	0	daitou
 周人	0	zhouren
 周代	0	zhoudai
@@ -11018,7 +11010,6 @@
 窳敗	0	yubai
 窳陋	0	yulou
 窸窣	0	xisu
-竊喜	0	qiexi
 章則	0	zhangze
 章句	0	zhangju
 章和	0	zhanghe
@@ -11308,7 +11299,6 @@
 耳尖	0	erjian
 耳後	0	erhou
 耳房	0	erfang
-耳挖	0	erwa
 耳朵	0	erduo
 耳栓	0	ershuan
 耳殼	0	erke
@@ -11809,7 +11799,6 @@
 蘇北	0	subei
 蘇堤	0	sudi
 蘇打	0	suda
-蘇打	0	suda
 蘇杭	0	suhang
 蘇轍	0	suche
 虛位	0	xuwei
@@ -11839,6 +11828,7 @@
 虞侯	0	yuhou
 虞犯	0	yufan
 蚵仔	0	hezi
+蚵嗲	0	hedia
 蚵嗲	0	hedia
 蛙人	0	waren
 蛙泳	0	wayong
@@ -12463,7 +12453,6 @@
 週圍	0	zhouwei
 週報	0	zhoubao
 週密	0	zhoumi
-週延	0	zhouyan
 週折	0	zhouzhe
 週期	0	zhouqi
 週末	0	zhoumo
@@ -14385,6 +14374,7 @@
 周全	0	zhouquan
 周六	0	zhouliu
 周年	0	zhounian
+周延	0	zhouyan
 周旋	0	zhouxuan
 周歲	0	zhousui
 周相	0	zhouxiang
@@ -15993,7 +15983,6 @@
 發行	0	faxing
 發表	0	fabiao
 發見	0	fajian
-發見	0	fajian
 發覺	0	fajue
 發貨	0	fahuo
 發軟	0	faruan
@@ -17414,7 +17403,6 @@
 齒條	0	chitiao
 齒狀	0	chizhuang
 齒輪	0	chilun
-升溫	0	shengwen
 三思	0	sansi
 上司	0	shangsi
 上思	0	shangsi
@@ -17658,6 +17646,7 @@
 拜揖	0	baiyi
 接枝	0	jiezhi
 揮師	0	huishi
+摩斯	0	mosi
 撤資	0	chezi
 擣衣	0	daoyi
 改吃	0	gaichi
@@ -17783,6 +17772,7 @@
 焦思	0	jiaosi
 熟思	0	shusi
 熟知	0	shuzhi
+熟諳	0	shuan
 營私	0	yingsi
 燥濕	0	zaoshi
 牙醫	0	yayi
@@ -18947,7 +18937,6 @@
 南沙	0	nansha
 南澳	0	nanao
 南灣	0	nanwan
-南無	0	nanwu
 南無	0	nanwu
 南燕	0	nanyan
 南竿	0	nangan
@@ -20764,7 +20753,6 @@
 拖車	0	tuoche
 拖開	0	tuokai
 拚死	0	pansi
-拚死	0	pansi
 拜辭	0	baici
 拼出	0	pinchu
 拼字	0	pinzi
@@ -21521,6 +21509,7 @@
 桌子	0	zhuozi
 桌案	0	zhuoan
 桌椅	0	zhuoyi
+桌機	0	zhuoji
 桌燈	0	zhuodeng
 桿刀	0	gandao
 桿子	0	ganzi
@@ -21924,6 +21913,7 @@
 法商	0	fashang
 法子	0	fazi
 法式	0	fashi
+法式	0	fashi
 法意	0	fayi
 法拉	0	fala
 法旨	0	fazhi
@@ -22283,12 +22273,10 @@
 煩憂	0	fanyou
 煮出	0	zhuchu
 煮食	0	zhushi
-煲湯	0	baotang
 熄燈	0	xideng
 熏蒸	0	xunzheng
 熟字	0	shuzi
 熟悉	0	shuxi
-熟諳	0	shuan
 熟識	0	shushi
 熟食	0	shushi
 熱值	0	rezhi
@@ -23395,7 +23383,6 @@
 舍姪	0	shezhi
 舖子	0	puzi
 舖張	0	puzhang
-舡魚	0	gangyu
 航務	0	hangwu
 航次	0	hangci
 航班	0	hangban
@@ -23708,7 +23695,6 @@
 被子	0	beizi
 被愛	0	beiai
 被殺	0	beisha
-被眨	0	beizha
 被窩	0	beiwo
 被逼	0	beibi
 裁刀	0	caidao
@@ -23861,7 +23847,6 @@
 誠徵	0	chengzheng
 誠意	0	chengyi
 誠摯	0	chengzhi
-誠摰	0	chengnie
 誠非	0	chengfei
 誥封	0	gaofeng
 說出	0	shuochu
@@ -24261,7 +24246,6 @@
 造勢	0	zaoshi
 造字	0	zaozi
 造次	0	zaoci
-造渣	0	zaozha
 造物	0	zaowu
 造紙	0	zaozhi
 造詞	0	zaoci
@@ -25266,6 +25250,7 @@
 上陣	0	shangzhen
 上集	0	shangji
 上頁	0	shangye
+上頜	0	shanghe
 上頜	0	shanghe
 上頭	0	shangtou
 上頭	0	shangtou
@@ -26670,6 +26655,7 @@
 儲戶	0	chuhu
 儲蓄	0	chuxu
 儲藏	0	chucang
+儲藏	0	chucang
 儲金	0	chujin
 儷人	0	liren
 儷影	0	liying
@@ -27912,6 +27898,7 @@
 南海	0	nanhai
 南港	0	nangang
 南漢	0	nanhan
+南無	0	nanwu
 南王	0	nanwang
 南瓜	0	nangua
 南由	0	nanyou
@@ -31560,7 +31547,6 @@
 川普	0	chuanpu
 川江	0	chuanjiang
 川芎	0	chuanqiong
-川芎	0	chuanqiong
 川菜	0	chuancai
 川軍	0	chuanjun
 川鹽	0	chuanyan
@@ -33645,7 +33631,6 @@
 拖長	0	tuochang
 拗口	0	aokou
 拚鬥	0	pandou
-拚鬥	0	pandou
 拜伏	0	baifu
 拜佛	0	baifo
 拜倒	0	baidao
@@ -33705,6 +33690,7 @@
 拼花	0	pinhua
 拼著	0	pinzhu
 拼貼	0	pintie
+拼鬥	0	pindou
 拾級	0	shiji
 拿上	0	nashang
 拿些	0	naxie
@@ -33766,7 +33752,6 @@
 捉賊	0	zhuozei
 捉走	0	zhuozou
 捉起	0	zhuoqi
-捋奶	0	lenai
 捋奶	0	lenai
 捍拒	0	hanju
 捍然	0	hanran
@@ -35965,7 +35950,6 @@
 柵欄	0	zhalan
 柵門	0	zhamen
 栃木	0	栃mu
-栃木	0	栃mu
 栓劑	0	shuanji
 栓牢	0	shuanlao
 栗色	0	lise
@@ -38115,6 +38099,7 @@
 烤箱	0	kaoxiang
 烤羊	0	kaoyang
 烤肉	0	kaorou
+烤蝦	0	kaoxia
 焊上	0	hanshang
 焊了	0	hanle
 焊入	0	hanru
@@ -40192,8 +40177,6 @@
 等上	0	dengshang
 等人	0	dengren
 等份	0	dengfen
-等侯	0	denghou
-等侯	0	denghou
 等候	0	denghou
 等分	0	dengfen
 等到	0	dengdao
@@ -42098,8 +42081,6 @@
 菅茅	0	jianmao
 菊園	0	juyuan
 菊花	0	juhua
-菎麻	0	kunma
-菎麻	0	kunma
 菜圃	0	caipu
 菜園	0	caiyuan
 菜地	0	caidi
@@ -47424,6 +47405,8 @@
 傾向	0	qingxiang
 傾斜	0	qingxie
 傾瀉	0	qingxie
+傾船	0	qingchuan
+傾角	0	qingjiao
 傾陷	0	qingxian
 傾頹	0	qingtui
 僕從	0	pucong
@@ -47961,6 +47944,7 @@
 半兩	0	banliang
 半坪	0	banping
 半年	0	bannian
+半形	0	banxing
 半徑	0	banjing
 半截	0	banjie
 半架	0	banjia
@@ -48739,6 +48723,7 @@
 壘球	0	leiqiu
 壺嘴	0	huzui
 壺狀	0	huzhuang
+壺鈴	0	huling
 壽命	0	shouming
 壽屏	0	shouping
 壽相	0	shouxiang
@@ -50445,7 +50430,6 @@
 拖進	0	tuojin
 拖過	0	tuoguo
 拖鞋	0	tuoxie
-拚命	0	panming
 拚命	0	panming
 拜倫	0	bailun
 拜別	0	baibie
@@ -53682,7 +53666,6 @@
 編撰	0	bianzhuan
 編校	0	bianxiao
 編算	0	biansuan
-編篡	0	biancuan
 編結	0	bianjie
 編練	0	bianlian
 編纂	0	bianzuan
@@ -55644,6 +55627,7 @@
 金條	0	jintiao
 金櫃	0	jingui
 金水	0	jinshui
+金流	0	jinliu
 金牛	0	jinniu
 金獎	0	jinjiang
 金相	0	jinxiang
@@ -56157,7 +56141,6 @@
 頑強	0	wanqiang
 頑民	0	wanmin
 頑癬	0	wanxuan
-頑癬	0	wanxuan
 頑童	0	wantong
 頑鈍	0	wandun
 頗久	0	pojiu
@@ -56515,8 +56498,6 @@
 龜甲	0	guijia
 龜裂	0	guilie
 龜鑑	0	guijian
-半型	0	banxing
-金流	0	jinliu
 下肢	0	xiazhi
 九師	0	jiushi
 令師	0	lingshi
@@ -58413,6 +58394,7 @@
 淺耕	0	qiangeng
 減低	0	jiandi
 減值	0	jianzhi
+減分	0	jianfen
 減壓	0	jianya
 減收	0	jianshou
 減班	0	jianban
@@ -58499,6 +58481,7 @@
 灼燒	0	zhuoshao
 炫示	0	xuanshi
 烈士	0	lieshi
+烈嶼	0	lieyu
 烈日	0	lieri
 烈風	0	liefeng
 煉丹	0	liandan
@@ -58639,6 +58622,7 @@
 甲午	0	jiawu
 甲基	0	jiaji
 甲子	0	jiazi
+甲方	0	jiafang
 甲案	0	jiaan
 甲班	0	jiaban
 甲酚	0	jiafen
@@ -59178,7 +59162,6 @@
 蜷曲	0	quanqu
 蝗災	0	huangzai
 蝶式	0	dieshi
-融液	0	rongye
 螟蛾	0	minge
 蟲子	0	chongzi
 蟲災	0	chongzai
@@ -61533,7 +61516,6 @@
 叫住	0	jiaozhu
 叫個	0	jiaoge
 叫到	0	jiaodao
-叫化	0	jiaohua
 叫去	0	jiaoqu
 叫喊	0	jiaohan
 叫嚷	0	jiaorang
@@ -63501,7 +63483,7 @@
 慶功	0	qinggong
 慶城	0	qingcheng
 慶壽	0	qingshou
-慶応	0	qingying
+慶應	0	qingying
 慶祝	0	qingzhu
 慶賀	0	qinghe
 憐恤	0	lianxu
@@ -67239,7 +67221,6 @@
 融入	0	rongru
 融合	0	ronghe
 融和	0	ronghe
-融液	0	rongye
 融為	0	rongwei
 融通	0	rongtong
 螺圈	0	luoquan
@@ -70107,8 +70088,6 @@
 傳送	0	chuansong
 傳電	0	chuandian
 傳頌	0	chuansong
-傾船	0	qingchuan
-傾角	0	qingjiao
 僅僅	0	jinjin
 僅存	0	jincun
 像片	0	xiangpian
@@ -75224,7 +75203,6 @@
 一丁點	0	yidingdian
 一元化	0	yiyuanhua
 一元論	0	yiyuanlun
-一剎那	0	yichana
 一加侖	0	yijialun
 一千九	0	yiqianjiu
 一千塊	0	yiqiankuai
@@ -75287,7 +75265,6 @@
 施金典	0	shijindian
 歐戰前	0	ouzhanqian
 歐美化	0	oumeihua
-渥太華	0	wotaihua
 滋補品	0	zibupin
 滋養品	0	ziyangpin
 濕度表	0	shidubiao
@@ -75569,6 +75546,7 @@
 烏鞘嶺	0	wuqiaoling
 烏龍麵	0	wulongmian
 知覺性	0	zhijuexing
+資料夾	0	ziliaojia
 資料館	0	ziliaoguan
 資訊化	0	zixunhua
 資訊性	0	zixunxing
@@ -75582,7 +75560,6 @@
 阿華田	0	ahuatian
 阿靈頓	0	alingdun
 雌性化	0	cixinghua
-資料夾	0	ziliaojia
 三一三	0	sanyisan
 二一二	0	eryier
 低姿勢	0	dizishi
@@ -76366,11 +76343,13 @@
 咖啡園	0	kafeiyuan
 咖啡壺	0	kafeihu
 咖啡廳	0	kafeiting
+咖啡樹	0	kafeishu
 咖啡粉	0	kafeifen
 咖啡色	0	kafeise
 咖啡豆	0	kafeidou
 哇哇地	0	wawadi
 哇沙米	0	washami
+哈士奇	0	hashiqi
 哈巴狗	0	habagou
 哈爾濱	0	haerbin
 哥兒們	0	geermen
@@ -76419,6 +76398,7 @@
 壓出來	0	yachulai
 壓出去	0	yachuqu
 壓制力	0	yazhili
+壓壓驚	0	yayajing
 夫妻樹	0	fuqishu
 夫妻檔	0	fuqidang
 她出來	0	tachulai
@@ -76675,6 +76655,7 @@
 煙霧彈	0	yanwudan
 煞車皮	0	shachepi
 煞車鼓	0	shachegu
+煲仔飯	0	baozifan
 熬出來	0	aochulai
 熬出頭	0	aochutou
 燒出來	0	shaochulai
@@ -77920,7 +77901,6 @@
 而不是	0	erbushi
 耕耘機	0	gengyunji
 耳刮子	0	erguazi
-耳挖子	0	erwazi
 耳邊風	0	erbianfeng
 耳鼻科	0	erbike
 背皮包	0	beipibao
@@ -78570,7 +78550,6 @@
 分戶帳	0	fenhuzhang
 分散劑	0	fensanji
 分散度	0	fensandu
-分蘗期	0	fenboqi
 分起來	0	fenqilai
 分配器	0	fenpeiqi
 分配律	0	fenpeilv
@@ -78594,6 +78573,7 @@
 制酸劑	0	zhisuanji
 刺上來	0	cishanglai
 刺上去	0	cishangqu
+刺槍術	0	ciqiangshu
 刻上來	0	keshanglai
 刻上去	0	keshangqu
 刻度盤	0	kedupan
@@ -79484,6 +79464,7 @@
 煙幕彈	0	yanmudan
 煙毒犯	0	yandufan
 煙灰色	0	yanhuise
+煲仔飯	0	baozifan
 煽色腥	0	shansexing
 煽起來	0	shanqilai
 熬不住	0	aobuzhu
@@ -79514,6 +79495,7 @@
 猜謎題	0	caimiti
 猜起來	0	caiqilai
 玉堂春	0	yutangchun
+玉米油	0	yumiyou
 玉米粉	0	yumifen
 玉米粒	0	yumili
 玉米花	0	yumihua
@@ -80052,7 +80034,6 @@
 適當的	0	shidangde
 遭受到	0	zaoshoudao
 遭雷擊	0	zaoleiji
-遭雷擊	0	zaoleiji
 遮不住	0	zhebuzhu
 遮太陽	0	zhetaiyang
 遮羞布	0	zhexiubu
@@ -80290,7 +80271,6 @@
 黑狗兄	0	heigouxiong
 黑猩猩	0	heixingxing
 黑白切	0	heibaiqie
-黑白片	0	heibaipian
 黑白花	0	heibaihua
 黑白道	0	heibaidao
 黑眼圈	0	heiyanquan
@@ -80453,7 +80433,6 @@
 分泌管	0	fenmiguan
 分泌腺	0	fenmixian
 分色鏡	0	fensejing
-分蘗節	0	fenbojie
 分裝瓶	0	fenzhuangping
 分銷店	0	fenxiaodian
 分隔線	0	fengexian
@@ -82818,7 +82797,6 @@
 張學良	0	zhangxueliang
 張洪量	0	zhanghongliang
 彰化縣	0	zhanghuaxian
-後掠角	0	houlvejiao
 徵信所	0	zhengxinsuo
 忽略掉	0	hulvediao
 惡劣性	0	eliexing
@@ -83104,7 +83082,6 @@
 組織式	0	zuzhishi
 組織液	0	zuzhiye
 縫衣機	0	fengyiji
-縺衣機	0	lianyiji
 聚氨酯	0	juanzhi
 脫衣舞	0	tuoyiwu
 花枝羹	0	huazhigeng
@@ -85239,7 +85216,6 @@
 照直說	0	zhaozhishuo
 煩死人	0	fansiren
 煮出來	0	zhuchulai
-煲仔飯	0	baozifan
 熟悉度	0	shuxidu
 熟石灰	0	shushihui
 熱舞社	0	rewushe
@@ -85680,7 +85656,6 @@
 走出去	0	zouchuqu
 走勢圖	0	zoushitu
 起疑心	0	qiyixin
-超自然	0	chaoziran
 趕出來	0	ganchulai
 趕出去	0	ganchuqu
 趕時間	0	ganshijian
@@ -86717,7 +86692,6 @@
 佳木斯	0	jiamusi
 克蘭詩	0	kelanshi
 千家詩	0	qianjiashi
-卡洛斯	0	qialuosi
 印地安	0	yindian
 印第安	0	yindian
 古體詩	0	gutishi
@@ -87087,6 +87061,7 @@
 南海岸	0	nanhaian
 南港區	0	nangangqu
 南港溪	0	nangangxi
+南瓜燈	0	nanguadeng
 南美洲	0	nanmeizhou
 南鯤鯓	0	nankunni
 南齊書	0	nanqishu
@@ -87315,7 +87290,6 @@
 太湖石	0	taihushi
 太空機	0	taikongji
 太空艙	0	taikongcang
-太行山	0	taixingshan
 太行山	0	taixingshan
 太陽升	0	taiyangsheng
 太陽日	0	taiyangri
@@ -88295,6 +88269,7 @@
 豆腐乾	0	doufugan
 豆腐干	0	doufugan
 豆腐渣	0	doufuzha
+豆腐煲	0	doufubao
 豆腐鯊	0	doufusha
 豆花湯	0	douhuatang
 豈不是	0	qibushi
@@ -90756,7 +90731,6 @@
 拖延者	0	tuoyanzhe
 拖起來	0	tuoqilai
 拚經濟	0	panjingji
-拚經濟	0	panjingji
 拜天地	0	baitiandi
 拜碼頭	0	baimatou
 拜起來	0	baiqilai
@@ -90767,6 +90741,7 @@
 拼上去	0	pinshangqu
 拼到底	0	pindaodi
 拼拼看	0	pinpinkan
+拼經濟	0	pinjingji
 拼起來	0	pinqilai
 拿上來	0	nashanglai
 拿上去	0	nashangqu
@@ -91888,7 +91863,6 @@
 照顧到	0	zhaogudao
 煮起來	0	zhuqilai
 煮飯婆	0	zhufanpo
-煲仔飯	0	baozifan
 熟起來	0	shuqilai
 熱內盧	0	reneilu
 熱加工	0	rejiagong
@@ -92761,7 +92735,6 @@
 莫少聰	0	moshaocong
 莫札特	0	mozhate
 菊花茶	0	juhuacha
-菜根譚	0	caigentan
 菜瓜布	0	caiguabu
 菜籃族	0	cailanzu
 菜籃裡	0	cailanli
@@ -92909,7 +92882,6 @@
 螢幕上	0	yingmushang
 蟠桃宴	0	pantaoyan
 蟠桃樹	0	pantaoshu
-蟹味棒	0	xieweibang
 蠟燭台	0	lazhutai
 蠶寶寶	0	canbaobao
 蠶蛹油	0	canyongyou
@@ -93128,7 +93100,6 @@
 豆油伯	0	douyoubo
 豆腐乳	0	doufuru
 豆腐岩	0	doufuyan
-豆腐煲	0	doufubao
 豆腐皮	0	doufupi
 豆腐鍋	0	doufuguo
 豆芽菜	0	douyacai
@@ -93286,6 +93257,7 @@
 辛克萊	0	xinkelai
 辛棄疾	0	xinqiji
 辛酸淚	0	xinsuanlei
+辣椒油	0	lajiaoyou
 辣椒粉	0	lajiaofen
 辦不到	0	banbudao
 辦不完	0	banbuwan
@@ -93526,7 +93498,6 @@
 野營地	0	yeyingdi
 野獸派	0	yeshoupai
 野玫瑰	0	yemeigui
-野白合	0	yebaihe
 野百合	0	yebaihe
 野砲營	0	yepaoying
 野草堆	0	yecaodui
@@ -95230,6 +95201,7 @@
 涿鹿縣	0	zhuoluxian
 淘氣鬼	0	taoqigui
 添加進	0	tianjiajin
+渥太華	0	wotaihua
 測不準	0	cebuzhun
 測光表	0	ceguangbiao
 測度論	0	cedulun
@@ -95521,7 +95493,6 @@
 終必會	0	zhongbihui
 組合鍵	0	zuhejian
 組工會	0	zugonghui
-結晶水	0	jiejingshui
 經合會	0	jinghehui
 經常性	0	jingchangxing
 經歷過	0	jingliguo
@@ -96153,6 +96124,7 @@
 保險絲	0	baoxiansi
 入殮師	0	rulianshi
 勞倫斯	0	laolunsi
+卡洛斯	0	qialuosi
 即興詩	0	jixingshi
 啤酒屋	0	pijiuwu
 大伙兒	0	dahuoer
@@ -97045,6 +97017,7 @@
 麥片粥	0	maipianzhou
 麻醉針	0	mazuizhen
 鼠籠式	0	shulongshi
+龜苓膏	0	guilinggao
 丈量法	0	zhangliangfa
 上下文	0	shangxiawen
 上下游	0	shangxiayou
@@ -99133,7 +99106,6 @@
 編下去	0	bianxiaqu
 編寫成	0	bianxiecheng
 編年體	0	biannianti
-編篡者	0	biancuanzhe
 編纂家	0	bianzuanjia
 編訂者	0	biandingzhe
 縮回來	0	suohuilai
@@ -99952,6 +99924,7 @@
 光脆性	0	guangcuixing
 光電流	0	guangdianliu
 光電管	0	guangdianguan
+克林貢	0	kelingong
 入學校	0	ruxuexiao
 入水管	0	rushuiguan
 內亂罪	0	neiluanzui
@@ -100164,6 +100137,7 @@
 往下面	0	wangxiamian
 往前面	0	wangqianmian
 很明顯	0	henmingxian
+後掠角	0	houlvejiao
 徐向前	0	xuxiangqian
 復活節	0	fuhuojie
 微血管	0	weixieguan
@@ -100377,6 +100351,7 @@
 濾過性	0	lvguoxing
 灰面鷲	0	huimianjiu
 炒小管	0	chaoxiaoguan
+炒水蓮	0	chaoshuilian
 炒短線	0	chaoduanxian
 炸醬麵	0	zhajiangmian
 炸醬麵	0	zhajiangmian
@@ -100778,7 +100753,6 @@
 麻將館	0	majiangguan
 麻醉品	0	mazuipin
 麻醬麵	0	majiangmian
-克林貢	0	kelingong
 九一一	0	jiuyiyi
 甜絲絲	0	tiansisi
 統一獅	0	tongyishi
@@ -100937,7 +100911,6 @@
 亂蓬蓬	0	luanpengpeng
 佐智子	0	zuozhizi
 作生意	0	zuoshengyi
-併購案	0	binggouan
 信義區	0	xinyiqu
 假慈悲	0	jiacibei
 做案子	0	zuoanzi
@@ -101716,6 +101689,7 @@
 火車迷	0	huochemi
 火車頭	0	huochetou
 火雞肉	0	huojirou
+烈嶼鄉	0	lieyuxiang
 煉丹術	0	liandanshu
 煉製廠	0	lianzhichang
 煉鋼廠	0	liangangchang
@@ -102471,6 +102445,7 @@
 井底蛙	0	jingdiwa
 亮光漆	0	liangguangqi
 介係詞	0	jiexici
+併購案	0	binggouan
 信任案	0	xinrenan
 信天翁	0	xintianweng
 信望愛	0	xinwangai
@@ -105447,7 +105422,6 @@
 國家隊	0	guojiadui
 國富論	0	guofulun
 國庫券	0	guokuquan
-國庫券	0	guokuquan
 國推會	0	guotuihui
 國有化	0	guoyouhua
 國有林	0	guoyoulin
@@ -105828,6 +105802,7 @@
 索引鍵	0	suoyinjian
 結合水	0	jieheshui
 結合點	0	jiehedian
+結晶水	0	jiejingshui
 結束掉	0	jieshudiao
 結核病	0	jiehebing
 結核菌	0	jiehejun
@@ -108076,7 +108051,6 @@
 融解點	0	rongjiedian
 螺旋形	0	luoxuanxing
 螺旋槳	0	luoxuanjiang
-螺旋漿	0	luoxuanjiang
 螺旋菌	0	luoxuanjun
 螺線管	0	luoxianguan
 血循環	0	xiexunhuan
@@ -109488,7 +109462,6 @@
 叉燒包子	0	chashaobaozi
 吾爾開希	0	wuerkaixi
 呆呆掙掙	0	daidaizhengzheng
-呆呆掙掙	0	daidaizhengzheng
 呼哧呼哧	0	huchihuchi
 咕嚕一聲	0	guluyisheng
 咕嚕咕嚕	0	gulugulu
@@ -110036,8 +110009,6 @@
 吸收光譜	0	xishouguangpu
 吸音工程	0	xiyingongcheng
 呆呆傻傻	0	daidaishasha
-呆呆傻傻	0	daidaishasha
-呆呆笨笨	0	daidaibenben
 呆呆笨笨	0	daidaibenben
 呼吸器官	0	huxiqiguan
 咖啡廳裡	0	kafeitingli
@@ -110279,6 +110250,7 @@
 與世俯仰	0	yushifuyang
 與世浮沉	0	yushifuchen
 舒舒服服	0	shushufufu
+舖張浪費	0	puzhanglangfei
 莎士比亞	0	shashibiya
 藝高膽大	0	yigaodanda
 西拉雅族	0	xilayazu
@@ -110891,7 +110863,6 @@
 收復失地	0	shoufushidi
 方城之戰	0	fangchengzhizhan
 方外之人	0	fangwaizhiren
-星際之門	0	xingjizhimen
 暗然失色	0	anranshise
 更勝一籌	0	gengshengyichou
 朱利安尼	0	zhulianni
@@ -111914,7 +111885,6 @@
 登堂入室	0	dengtangrushi
 發憤忘食	0	fafenwangshi
 石家莊市	0	shijiazhuangshi
-石鍋拌飯	0	shiguobanfan
 租賃契約	0	zulinqiyue
 稱得上是	0	chengdeshangshi
 稱讚不已	0	chengzanbuyi
@@ -112119,7 +112089,6 @@
 低迷不振	0	dimibuzhen
 倚多為勝	0	yiduoweisheng
 倚老賣老	0	yilaomailao
-備受矚目	0	beishouzhumu
 傷亡人數	0	shangwangrenshu
 傷天害理	0	shangtianhaili
 傷痕累累	0	shanghenleilei
@@ -112578,6 +112547,7 @@
 石沈大海	0	shishendahai
 石沉大海	0	shichendahai
 石破天驚	0	shipotianjing
+石鍋拌飯	0	shiguobanfan
 磁帶設備	0	cidaishebei
 科技大樓	0	kejidalou
 科技類股	0	kejileigu
@@ -112669,6 +112639,8 @@
 菲律賓海	0	feilvbinhai
 菲律賓藉	0	feilvbinjie
 著急起來	0	zhujiqilai
+蒸煮炒炸	0	zhengzhuchaozha
+蒸煮炒炸	0	zhengzhuchaozha
 蔬菜葉類	0	shucaiyelei
 藝博不精	0	yibobujing
 藹然可觀	0	airankeguan
@@ -113552,7 +113524,6 @@
 沙鹿國中	0	shaluguozhong
 波河平原	0	bohepingyuan
 波河平原	0	bohepingyuan
-海外學人	0	haiwaixueren
 液體動力	0	yetidongli
 液體狀態	0	yetizhuangtai
 深不見底	0	shenbujiandi
@@ -113616,6 +113587,7 @@
 積德行善	0	jidexingshan
 積體電路	0	jitidianlu
 答應下來	0	dayingxialai
+粥粉麵飯	0	zhoufenmianfan
 紙上作業	0	zhishangzuoye
 義憤填胸	0	yifentianxiong
 羽毛球賽	0	yumaoqiusai
@@ -113871,6 +113843,7 @@
 雞尾酒會	0	jiweijiuhui
 雞油林段	0	jiyoulinduan
 非標準化	0	feibiaozhunhua
+飛彈潛艇	0	feidanqianting
 飛彈潛艇	0	feidanqianting
 驅馬前進	0	qumaqianjin
 高危險群	0	gaoweixianqun
@@ -114403,7 +114376,6 @@
 一笑千金	0	yixiaoqianjin
 一箭雙雕	0	yijianshuangdiao
 一箭雙鵰	0	yijianshuangdiao
-一臉茫然	0	yilianmangran
 一臉茫然	0	yilianmangran
 一落千丈	0	yiluoqianzhang
 一表人才	0	yibiaorencai
@@ -115240,7 +115212,6 @@
 逃之夭夭	0	taozhiyaoyao
 銫一三七	0	seyisanqi
 默哀致意	0	moaizhiyi
-三思而後	0	sansierhou
 不一而足	0	buyierzu
 不安於位	0	buanyuwei
 不知甘苦	0	buzhiganku
@@ -115278,7 +115249,6 @@
 金枝玉葉	0	jinzhiyuye
 金烏玉兔	0	jinwuyutu
 長安西路	0	changanxilu
-三思而行	0	sansierxing
 不知分寸	0	buzhifencun
 不知死活	0	buzhisihuo
 付之一笑	0	fuzhiyixiao
@@ -115675,6 +115645,7 @@
 用武之地	0	yongwuzhidi
 百分之百	0	baifenzhibai
 百無一用	0	baiwuyiyong
+盧甘斯克	0	lugansike
 眉宇之間	0	meiyuzhijian
 睹物思人	0	duwusiren
 空無一人	0	kongwuyiren
@@ -116610,7 +116581,6 @@
 米蘇里州	0	misulizhou
 級差地租	0	jichadizu
 終身大事	0	zhongshendashi
-經濟危機	0	jingjiweiji
 維基百科	0	weijibaike
 編譯程式	0	bianyichengshi
 美洲豹貓	0	meizhoubaomao
@@ -117324,7 +117294,6 @@
 舉世矚目	0	jushizhumu
 舉案齊眉	0	juanqimei
 舉止言談	0	juzhiyantan
-舖張浪費	0	puzhanglangfei
 航務處長	0	hangwuchuchang
 航發中心	0	hangfazhongxin
 芒刺在背	0	mangcizaibei
@@ -117633,7 +117602,6 @@
 投機取巧	0	toujiquqiao
 抵押放款	0	diyafangkuan
 抵死不從	0	disibucong
-拚死拚活	0	pansipanhuo
 拚死拚活	0	pansipanhuo
 拼死拼活	0	pinsipinhuo
 挑撥離間	0	tiaobolijian
@@ -118474,7 +118442,6 @@
 先了一步	0	xianleyibu
 先王之道	0	xianwangzhidao
 克莉絲汀	0	kelisiting
-克莉絲汀	0	kelisiting
 克萊斯勒	0	kelaisile
 入幕之賓	0	rumuzhibin
 公報私仇	0	gongbaosichou
@@ -118562,6 +118529,7 @@
 旦夕之危	0	danxizhiwei
 旦夕之間	0	danxizhijian
 早走一步	0	zaozouyibu
+星際之門	0	xingjizhimen
 普里斯萊	0	pulisilai
 暮光之城	0	muguangzhicheng
 更上一層	0	gengshangyiceng
@@ -118612,7 +118580,6 @@
 立談之間	0	litanzhijian
 立足之地	0	lizuzhidi
 立錐之地	0	lizhuizhidi
-筆墨生涯	0	bimoshengya
 精神失常	0	jingshenshichang
 精神支柱	0	jingshenzhizhu
 經驗之談	0	jingyanzhitan
@@ -120051,7 +120018,6 @@
 古文字學	0	guwenzixue
 句句實話	0	jujushihua
 台北燈會	0	taibeidenghui
-右傾機會	0	youqingjihui
 和氣致祥	0	heqizhixiang
 哄抬物價	0	hongtaiwujia
 問心無愧	0	wenxinwukui
@@ -120546,7 +120512,6 @@
 俯首帖耳	0	fushoutieer
 個人主義	0	gerenzhuyi
 個人利益	0	gerenliyi
-個體經濟	0	getijingji
 倒也不是	0	daoyebushi
 倒數計時	0	daoshujishi
 偏僻地區	0	pianpidiqu
@@ -121031,6 +120996,7 @@
 納莉颱風	0	nalitaifeng
 素不相識	0	subuxiangshi
 細嫩皮膚	0	xinenpifu
+經濟危機	0	jingjiweiji
 經貿園區	0	jingmaoyuanqu
 經驗主義	0	jingyanzhuyi
 綠草如茵	0	lvcaoruyin
@@ -121481,6 +121447,7 @@
 個人消費	0	gerenxiaofei
 個人道德	0	gerendaode
 個體手工	0	getishougong
+個體經濟	0	getijingji
 倒不倒楣	0	daobudaomei
 倒來倒去	0	daolaidaoqu
 倒地不起	0	daodibuqi
@@ -121488,6 +121455,7 @@
 偃旗息鼓	0	yanqixigu
 偏來偏去	0	pianlaipianqu
 偽滿政府	0	weimanzhengfu
+備受矚目	0	beishouzhumu
 備嘗艱辛	0	beichangjianxin
 債多不愁	0	zhaiduobuchou
 傻裡傻氣	0	shalishaqi
@@ -121555,6 +121523,7 @@
 再難玩的	0	zainanwande
 冠蓋雲集	0	guangaiyunji
 冰冰冷冷	0	bingbinglengleng
+冰糖葫蘆	0	bingtanghulu
 冶金工業	0	yejingongye
 冷冷淡淡	0	lenglengdandan
 冷冷清清	0	lenglengqingqing
@@ -123808,6 +123777,7 @@
 危如累卵	0	weiruleiluan
 即席演講	0	jixiyanjiang
 原地打轉	0	yuandidazhuan
+原地打轉	0	yuandidazhuan
 原野奇俠	0	yuanyeqixia
 原野遊俠	0	yuanyeyouxia
 去雜去劣	0	quzaqulie
@@ -124090,7 +124060,7 @@
 捐棄成見	0	juanqichengjian
 捧腹大笑	0	pengfudaxiao
 捨己為國	0	shejiweiguo
-掂斤撥兩	0	dianjinboliang
+掂斤播兩	0	dianjinboliang
 排放系統	0	paifangxitong
 排版系統	0	paibanxitong
 接防部隊	0	jiefangbudui
@@ -124358,7 +124328,6 @@
 筋疲力盡	0	jinpilijin
 筋疲力竭	0	jinpilijie
 精工細琢	0	jinggongxizhuo
-精忠報國	0	jingzhongbaoguo
 精忠報國	0	jingzhongbaoguo
 精打細算	0	jingdaxisuan
 精挑細選	0	jingtiaoxixuan
@@ -125407,6 +125376,7 @@
 津浦鐵路	0	jinputielu
 浮光掠影	0	fuguanglveying
 浮泛流濫	0	fufanliulan
+海外學人	0	haiwaixueren
 海外民運	0	haiwaiminyun
 海底隧道	0	haidisuidao
 海洋學院	0	haiyangxueyuan
@@ -126851,7 +126821,6 @@
 反面無情	0	fanmianwuqing
 受惠無窮	0	shouhuiwuqiong
 口水直流	0	koushuizhiliu
-右傾機會	0	youqingjihui
 各向異性	0	gexiangyixing
 各種事情	0	gezhongshiqing
 合作商店	0	hezuoshangdian
@@ -127065,6 +127034,7 @@
 公筷母匙	0	gongkuaimuchi
 冒險主義	0	maoxianzhuyi
 副總幹事	0	fuzongganshi
+加快步伐	0	jiakuaibufa
 加重計分	0	jiazhongjifen
 勞退新制	0	laotuixinzhi
 千紅萬紫	0	qianhongwanzi
@@ -127426,7 +127396,6 @@
 保健中心	0	baojianzhongxin
 保全人員	0	baoquanrenyuan
 保存起來	0	baocunqilai
-修橋舖路	0	xiuqiaopulu
 修橋補路	0	xiuqiaobulu
 個別測驗	0	gebieceyan
 個別輔導	0	gebiefudao
@@ -127504,7 +127473,6 @@
 受盡折磨	0	shoujinzhemo
 受騙上當	0	shoupianshangdang
 口傳心授	0	kouchuanxinshou
-另存新檔	0	lingcunxindang
 可小可大	0	kexiaokeda
 可敬可佩	0	kejingkepei
 可緊可鬆	0	kejinkesong
@@ -128021,7 +127989,6 @@
 逐年逐月	0	zhunianzhuyue
 逗點符號	0	doudianfuhao
 這條新聞	0	zhetiaoxinwen
-通信線路	0	tongxinxianlu
 通信衛星	0	tongxinweixing
 通情達理	0	tongqingdali
 通聯記錄	0	tonglianjilu
@@ -128472,6 +128439,7 @@
 裝點門面	0	zhuangdianmenmian
 記名投票	0	jimingtoupiao
 誠惶誠恐	0	chenghuangchengkong
+說謊成性	0	shuohuangchengxing
 證明文件	0	zhengmingwenjian
 護國運動	0	huguoyundong
 護林防火	0	hulinfanghuo
@@ -128929,6 +128897,7 @@
 迎向前去	0	yingxiangqianqu
 追求名利	0	zhuiqiumingli
 追求幸福	0	zhuiqiuxingfu
+通信線路	0	tongxinxianlu
 造化弄人	0	zaohuanongren
 逢甲學院	0	fengjiaxueyuan
 運動定律	0	yundongdinglv
@@ -129113,7 +129082,6 @@
 雕樑畫棟	0	diaolianghuadong
 鮮脆果球	0	xiancuiguoqiu
 黨國權貴	0	dangguoquangui
-盧甘斯克	0	lugansike
 略知一二	0	lvezhiyier
 宏恩醫院	0	hongenyiyuan
 牛之一毛	0	niuzhiyimao
@@ -130808,6 +130776,7 @@
 磷灰石糖	0	linhuishitang
 磷酸三鈣	0	linsuansangai
 禍福無門	0	huofuwumen
+秀里蚵嗲	0	xiulihedia
 種族分離	0	zhongzufenli
 種花蒔草	0	zhonghuashicao
 究其根源	0	jiuqigenyuan
@@ -131499,7 +131468,6 @@
 共產黨員	0	gongchandangyuan
 共聚反應	0	gongjufanying
 共襄盛舉	0	gongxiangshengju
-冰糖葫蘆	0	bingtanghulu
 凍原地帶	0	dongyuandidai
 列舉如右	0	liejuruyou
 別有天地	0	bieyoutiandi
@@ -131949,7 +131917,6 @@
 票房記錄	0	piaofangjilu
 禍福由己	0	huofuyouji
 禽獸不如	0	qinshouburu
-秀里蚵嗲	0	xiulihedia
 秉公處理	0	binggongchuli
 秉公處理	0	binggongchuli
 秉公辦理	0	binggongbanli
@@ -132791,6 +132758,7 @@
 重啟協商	0	zhongqixieshang
 重提舊事	0	zhongtijiushi
 鎳氫電池	0	nieqingdianchi
+鎳鎘電池	0	niegedianchi
 閒言閒語	0	xianyanxianyu
 閩江流域	0	minjiangliuyu
 隨心所欲	0	suixinsuoyu
@@ -133730,6 +133698,7 @@
 靈魂深處	0	linghunshenchu
 面紅耳熱	0	mianhongerre
 面黃肌瘦	0	mianhuangjishou
+頓涅茨克	0	dunniecike
 顯現出來	0	xianxianchulai
 鬼片當道	0	guipiandangdao
 鴻漸於陸	0	hongjianyulu
@@ -133988,6 +133957,7 @@
 化學纖維	0	huaxuexianwei
 化學藥劑	0	huaxueyaoji
 化零為整	0	hualingweizheng
+另存新檔	0	lingcunxindang
 另想辦法	0	lingxiangbanfa
 向前看齊	0	xiangqiankanqi
 向左看齊	0	xiangzuokanqi
@@ -134327,6 +134297,7 @@
 共同海損	0	gongtonghaisun
 前所未見	0	qiansuoweijian
 創作技巧	0	chuangzuojiqiao
+劃下句點	0	huaxiajudian
 劍橋大學	0	jianqiaodaxue
 動向不明	0	dongxiangbuming
 動過手腳	0	dongguoshoujiao
@@ -134788,7 +134759,6 @@
 順水行船	0	shunshuixingchuan
 鬼鬼祟祟	0	guiguisuisui
 鳥叫蟲鳴	0	niaojiaochongming
-頓涅茨克	0	dunniecike
 知之為知之	0	zhizhiweizhizhi
 烏茲衝鋒槍	0	wuzichongfengqiang
 阿茲海默症	0	azihaimozheng
@@ -135160,6 +135130,7 @@
 惡人先告狀	0	erenxiangaozhuang
 意外責任險	0	yiwaizerenxian
 愛丁堡大學	0	aidingbaodaxue
+慈母手中線	0	cimushouzhongxian
 慈濟功德會	0	cijigongdehui
 玻利維亞隊	0	boliweiyadui
 玻利維亞隊	0	boliweiyadui
@@ -135189,7 +135160,6 @@
 無政府狀態	0	wuzhengfuzhuangtai
 生產合作社	0	shengchanhezuoshe
 發展中國家	0	fazhanzhongguojia
-自掃門前雪	0	zisaomenqianxue
 菲律賓群島	0	feilvbinqundao
 西印度群島	0	xiyinduqundao
 西雅圖水手	0	xiyatushuishou
@@ -135198,6 +135168,7 @@
 使用者介面	0	shiyongzhejiemian
 殺人不見血	0	sharenbujianxie
 煙毒勒戒所	0	yandulejiesuo
+自掃門前雪	0	zisaomenqianxue
 陰極射線管	0	yinjishexianguan
 雞毛當令箭	0	jimaodanglingjian
 三軍總醫院	0	sanjunzongyiyuan
@@ -135781,6 +135752,7 @@
 射鵰英雄傳	0	shediaoyingxiongchuan
 工廠自動化	0	gongchangzidonghua
 拜倒石榴裙	0	baidaoshiliuqun
+拜倒石榴裙	0	baidaoshiliuqun
 攻殼機動隊	0	gongkejidongdui
 有股無名火	0	youguwuminghuo
 等邊三角形	0	dengbiansanjiaoxing
@@ -136029,7 +136001,6 @@
 幾度夕陽紅	0	jiduxiyanghong
 心有千千結	0	xinyouqianqianjie
 急急如律令	0	jijirulvling
-慈母手中線	0	cimushouzhongxian
 擄人勒贖罪	0	lurenleshuzui
 普通心理學	0	putongxinlixue
 有沒有搞錯	0	youmeiyougaocuo
@@ -136282,6 +136253,7 @@
 研究院一路	0	yanjiuyuanyilu
 由儉入奢易	0	youjianrusheyi
 逐水草而居	0	zhushuicaoerju
+金腿鳳煲湯	0	jintuifengbaotang
 公共汽車站	0	gonggongqichezhan
 公平交易法	0	gongpingjiaoyifa
 勞動服務課	0	laodongfuwuke
@@ -136328,7 +136300,6 @@
 竹筍排骨湯	0	zhusunpaigutang
 蒙洛公園市	0	mengluogongyuanshi
 通化街夜市	0	tonghuajieyeshi
-金腿鳳煲湯	0	jintuifengbaotang
 青龍偃月刀	0	qinglongyanyuedao
 中小企業處	0	zhongxiaoqiyechu
 保羅麥卡尼	0	baoluomaiqiani
@@ -136580,6 +136551,7 @@
 電影資料館	0	dianyingziliaoguan
 國曆十一月	0	guolishiyiyue
 農曆十一月	0	nonglishiyiyue
+舊金山灣區	0	jiujinshanwanqu
 下泰晤士街	0	xiataiwushijie
 國曆十二月	0	guolishieryue
 小人喻於利	0	xiaorenyuyuli
@@ -137077,6 +137049,8 @@
 三月不知肉味	0	sanyuebuzhirouwei
 以備不時之需	0	yibeibushizhixu
 高階程式語言	0	gaojiechengshiyuyan
+嘸蝦米輸入法	0	fuxiamishurufa
+嘸蝦米輸入法	0	fuxiamishurufa
 宜蘭地方法院	0	yilandifangfayuan
 玻里尼西亞人	0	bolinixiyaren
 盎格魯撒克遜	0	anggelusakexun
@@ -137341,7 +137315,6 @@
 中日甲午戰爭	0	zhongrijiawuzhanzheng
 僵直性脊椎炎	0	jiangzhixingjizhuiyan
 大都會歌劇院	0	daduhuigejuyuan
-新竹教育大學	0	xinzhujiaoyudaxue
 檔案傳輸系統	0	danganchuanshuxitong
 政治協商會議	0	zhengzhixieshanghuiyi
 台灣錢淹腳目	0	taiwanqianyanjiaomu
@@ -137469,8 +137442,6 @@
 台中地方法院	0	taizhongdifangfayuan
 台北地方法院	0	taibeidifangfayuan
 台南地方法院	0	tainandifangfayuan
-嘸蝦米輸入法	0	fuxiamishurufa
-嘸蝦米輸入法	0	fuxiamishurufa
 新竹地方法院	0	xinzhudifangfayuan
 旗津海岸公園	0	qijinhaiangongyuan
 桃園地方法院	0	taoyuandifangfayuan
@@ -137641,6 +137612,7 @@
 不問前因後果	0	buwenqianyinhouguo
 大專學生集訓	0	dazhuanxueshengjixun
 後天免疫不全	0	houtianmianyibuquan
+新竹教育大學	0	xinzhujiaoyudaxue
 為反對而反對	0	weifanduierfandui
 附帶民事訴訟	0	fudaiminshisusong
 新天輪發電廠	0	xintianlunfadianchang
@@ -138051,7 +138023,3 @@
 巴布亞新幾內亞	0	babuyaxinjineiya
 巴布亞紐幾內亞	0	babuyaniujineiya
 巴布亞紐幾內亞	0	babuyaniujineiya
-壺鈴	0	huling
-桌機	0	zhuoji
-甲方	0	jiafang
-壓壓驚	0	yayajing
