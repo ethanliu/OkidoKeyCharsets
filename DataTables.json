@@ -25,14 +25,6 @@
             "name": ""
         },
         {
-            "cin": "table/array10c-header.cin",
-            "cname": "行列10c",
-            "db": "db/array10c-header.cin.db",
-            "ename": "array10c",
-            "license": "array10c: 為包括中日韓統一表意文字延伸 G 區 (Ext-G)，合計九萬二千餘字（c 代表 \"Complete Set\"，即蒐錄的範圍為「全字集」之意），蒐錄的字集範圍最廣、字數最多。",
-            "name": ""
-        },
-        {
             "cin": "table/array10c.cin",
             "cname": "行列10c",
             "db": "db/array10c.cin.db",
@@ -435,9 +427,6 @@
         "array10b.cin": {
             "gitee": 6
         },
-        "array10c-header.cin": {
-            "gitee": 1
-        },
         "array10c.cin": {
             "gitee": 8
         },
@@ -586,5 +575,5 @@
             "gitee": 1
         }
     },
-    "version": "20230401025652"
+    "version": "20230413190446"
 }
