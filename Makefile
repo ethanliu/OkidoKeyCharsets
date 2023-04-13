@@ -75,7 +75,6 @@ table-db:
 		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
 		ghcm-header.cin \
 		array-shortcode.cin array-special.cin \
-		array30-OkidoKey-big.cin \
 		boshiamy.cin liu.cin bossy.cin \
 		bpmf-ext.cin \
 		cj-ext.cin cj-wildcard.cin simplex-ext.cin \
@@ -127,6 +126,9 @@ emoji-db:
 	@bin/emojidb.py --update -d rawdata/emoji
 	@bin/emojidb.py --run -d rawdata/emoji -o tmp/emoji.db
 	@$(call timeStop)
+	@echo "Test new emoji..."
+	@bin/emojidb.py -test "停" -o tmp/emoji.db
+	@bin/emojidb.py -test "鵝" -o tmp/emoji.db
 	@echo "Copy emoji.db to src..."
 	@cp tmp/emoji.db ${MISC_PATH}
 	@-rm tmp/emoji.db
