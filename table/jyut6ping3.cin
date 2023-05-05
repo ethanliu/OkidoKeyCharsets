@@ -1,5 +1,5 @@
 # Jyut6ping3 - 粵拼
-# Version: 2023.02.16
+# Version: 2023.04.27
 #
 # 本 CIN 表格轉換自 Rime 粵語拼音方案 jyut6ping3.chars.dict.yaml
 # 不含詞彙內容，將拼音去除空格後合併，並保留詞頻做為取字順序。
@@ -9411,7 +9411,6 @@ go2	𠵩
 go3	个
 go3	個
 go3	吤
-go3	咊
 go3	箇
 go3	𩼣
 go6	㗻
@@ -10620,7 +10619,6 @@ gwo2	錁
 gwo2	鐹
 gwo2	餜
 gwo3	㳀
-gwo3	咊
 gwo3	和
 gwo3	過
 gwo3	鐹
