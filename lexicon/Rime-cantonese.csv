@@ -2182,7 +2182,7 @@
 播客	0	bohaak
 播音	0	bojam
 播映	0	bojing
-播啦	0	bola
+播啦	0	bolaa
 播片	0	bopin
 播晒	0	bosaai
 播撒	0	bosaat
@@ -2665,6 +2665,7 @@
 捕抓	0	bouzaau
 步驟	0	bouzaau
 暴走	0	bouzau
+步驟	0	bouzau
 步子	0	bouzi
 簿籍	0	bouzik
 暴政	0	bouzing
@@ -3853,7 +3854,7 @@
 七仔	0	catzai
 七姐	0	catze
 七夕	0	catzik
-𨳍啦	0	catla
+𨳍啦	0	catlaa
 柒碌	0	catluk
 𨳍婆	0	catpo
 𨳍事	0	catsi
@@ -3904,7 +3905,7 @@
 抽球	0	caukau
 秋茄	0	cauke
 秋葵	0	caukwai
-抽啦	0	caula
+抽啦	0	caulaa
 抽離	0	caulei
 秋糧	0	cauloeng
 鶖鷺	0	caulou
@@ -6169,7 +6170,7 @@
 牀褥	0	congjuk
 牀褥	0	congjuk
 牀沿	0	congjyun
-牀冚	0	congkam
+牀𢫏	0	congkam
 牀笠	0	conglap
 牀鈴	0	congling
 牀尾	0	congmei
@@ -12480,7 +12481,6 @@
 加緊	0	gaagan
 家姬	0	gaagei
 家居	0	gaageoi
-傢俱	0	gaageoi
 傢具	0	gaageoi
 家具	0	gaageoi
 家境	0	gaaging
@@ -24527,17 +24527,15 @@
 襟懷	0	kamwaai
 襟章	0	kamzoeng
 禁做	0	kamzou
-冚斗	0	kamdau
 𢫏斗	0	kamdau
-冚竇	0	kamdau
-冚檔	0	kamdong
+𢫏竇	0	kamdau
 𢫏檔	0	kamdong
-冚蓋	0	kamgoi
-冚陷	0	kamhaam
-冚旗	0	kamkei
-冚被	0	kampei
+𢫏蓋	0	kamgoi
+𢫏陷	0	kamhaam
+𢫏旗	0	kamkei
 搇被	0	kampei
-冚數	0	kamsou
+𢫏被	0	kampei
+𢫏數	0	kamsou
 罯氈	0	kamzin
 擒青	0	kamceng
 禽畜	0	kamcuk
@@ -25251,7 +25249,6 @@
 抗拒	0	kongkeoi
 抗禮	0	konglai
 伉儷	0	konglai
-礦棉	0	kongmin
 抗命	0	kongming
 抗癌	0	kongngaam
 擴編	0	kongpin
@@ -25532,6 +25529,7 @@
 礦卡	0	kwongkaat
 礦脈	0	kwongmak
 礦物	0	kwongmat
+礦棉	0	kwongmin
 擴散	0	kwongsaan
 曠世	0	kwongsai
 礦水	0	kwongseoi
@@ -25630,13 +25628,11 @@
 喇嘛	0	laamaa
 𠸎埋	0	laamaai
 揦起	0	laahei
-乸脷	0	laalei
 剌脷	0	laalei
 揦脷	0	laalei
 𠸎脷	0	laalei
 揦埋	0	laamaai
 𢲡埋	0	laamaai
-乸西	0	laasai
 揦篩	0	laasai
 揦茜	0	laasai
 揦西	0	laasai
@@ -26238,7 +26234,6 @@
 撚樣	0	lanjoeng
 𨶙樣	0	lanjoeng
 撚頭	0	lantau
-凹凸	0	lapdat
 笠記	0	lapgei
 笠角	0	lapgok
 笠嘢	0	lapje
@@ -27001,7 +26996,7 @@
 鏈鋸	0	lingoe
 摙骨	0	lingwat
 鍊贏	0	linjeng
-鏈冚	0	linkam
+鏈𢫏	0	linkam
 摙死	0	linsei
 摙碎	0	linseoi
 鏈烴	0	linting
@@ -27087,7 +27082,7 @@
 軨蓋	0	linggoi
 鈴蓋	0	linggoi
 拎開	0	linghoi
-軨冚	0	lingkam
+軨𢫏	0	lingkam
 鈴鈴	0	lingling
 鈴啷	0	linglong
 拎實	0	lingsat
@@ -29503,7 +29498,7 @@
 美譽	0	meijyu
 美元	0	meijyun
 美圓	0	meijyun
-尾冚	0	meikam
+尾𢫏	0	meikam
 美藍	0	meilaam
 美麗	0	meilai
 美勞	0	meilou
@@ -29567,7 +29562,7 @@
 味兒	0	meiji
 未約	0	meijoek
 未決	0	meikyut
-未啦	0	meila
+未啦	0	meilaa
 味蕾	0	meileoi
 魅力	0	meilik
 未來	0	meiloi
@@ -30092,7 +30087,6 @@
 茫然	0	mongjin
 忘形	0	mongjing
 忘卻	0	mongkoek
-忘啦	0	mongla
 亡靈	0	mongling
 忙碌	0	mongluk
 忙亂	0	monglyun
@@ -30823,9 +30817,6 @@
 挐掕	0	naalang
 𠸎埋	0	naamaai
 𪐀埋	0	naamaai
-啦㨢	0	naanang
-啦掕	0	naanang
-挐掕	0	naanang
 𠸎㨢	0	naanang
 𠸎褦	0	naanang
 𢲡𠹌	0	naanang
@@ -31128,6 +31119,7 @@
 能耐	0	nangnoi
 能手	0	nangsau
 凹處	0	napcyu
+凹凸	0	napdat
 凹雕	0	napdiu
 凹度	0	napdou
 粒花	0	napfaa
@@ -33016,7 +33008,6 @@
 棒糖	0	paangtong
 棒子	0	paangzi
 柏文	0	paatman
-拍乸	0	paatnaa
 拋波	0	paaubo
 拋補	0	paaubou
 拋杯	0	paaubui
@@ -33051,7 +33042,7 @@
 跑道	0	paaudou
 跑褲	0	paaufu
 跑酷	0	paauhuk
-跑啦	0	paaula
+跑啦	0	paaulaa
 跑壘	0	paauleoi
 跑馬	0	paaumaa
 跑山	0	paausaan
@@ -33205,7 +33196,7 @@
 疋頭	0	pattau
 剖開	0	pauhoi
 剖心	0	pausam
-婄腩	0	paulaam
+婄腩	0	paunaam
 裒輯	0	paucap
 裒斂	0	paulim
 啤牌	0	pepaai
@@ -34144,7 +34135,7 @@
 鯊魚	0	saajyu
 沙畹	0	saajyun
 沙縣	0	saajyun
-沙冚	0	saakam
+沙𢫏	0	saakam
 沙拉	0	saalaai
 紗麗	0	saalai
 沙漏	0	saalau
@@ -40353,7 +40344,7 @@
 投緣	0	taujyun
 投靠	0	taukaau
 投契	0	taukai
-頭冚	0	taukam
+頭𢫏	0	taukam
 頭箍	0	tauku
 頭盔	0	taukwai
 投籃	0	taulaam
@@ -41647,7 +41638,8 @@
 通用	0	tungjung
 通榆	0	tungjyu
 通渠	0	tungkeoi
-通啦	0	tungla
+通啦	0	tunglaa
+通喇	0	tunglaa
 通例	0	tunglai
 通論	0	tungleon
 通力	0	tunglik
@@ -42232,7 +42224,7 @@
 患者	0	waanze
 槵子	0	waanzi
 幻象	0	waanzoeng
-橫冚	0	waangkam
+橫𢫏	0	waangkam
 彎臣	0	waangsan
 軭神	0	waangsan
 橫咗	0	waangzo
@@ -44596,7 +44588,6 @@
 走肉	0	zaujuk
 酒曲	0	zaukuk
 走嘞	0	zaula
-酒凹	0	zaulap
 走甩	0	zaulat
 走嘍	0	zaulau
 酒樓	0	zaulau
@@ -44694,16 +44685,20 @@
 就好	0	zauhou
 就任	0	zaujam
 胄裔	0	zaujeoi
+驟然	0	zaujin
 就業	0	zaujip
+驟雨	0	zaujyu
 袖扣	0	zaukau
 袖箍	0	zauku
 就嚟	0	zaulai
 就裏	0	zauleoi
+驟落	0	zaulok
 籀文	0	zauman
 就木	0	zaumuk
 鷲鳥	0	zauniu
 就手	0	zausau
 就死	0	zausei
+驟死	0	zausei
 就緒	0	zauseoi
 就是	0	zausi
 就算	0	zausyun
@@ -49902,7 +49897,6 @@
 褒義詞	0	boujici
 煲老茄	0	boulouke
 煲老藕	0	bouloungau
-煲燶粥	0	boulungzuk
 煲燶粥	0	bounungzuk
 褒禪山	0	bousimsaan
 煲仔飯	0	bouzaifaan
@@ -51778,6 +51772,7 @@
 打街波	0	daagaaibo
 打嗝兒	0	daagaakji
 打格仔	0	daagaakzai
+打交叉	0	daagaaucaa
 打膠槍	0	daagaaucoeng
 打交道	0	daagaaudou
 打搞晒	0	daagaausaai
@@ -51843,7 +51838,6 @@
 打躆跲	0	daakikkap
 打困籠	0	daakwanlung
 打羣架	0	daakwangaa
-打南磨	0	daalaammo
 打纜地	0	daalaamdei
 打冷震	0	daalaangzan
 打冷戰	0	daalaangzin
@@ -51949,7 +51943,6 @@
 打水片	0	daaseoipin
 打臺波	0	daatoibo
 打通咗	0	daatungzo
-大葵扇	0	daaigwaisin
 帶標識	0	daaibiusik
 戴返個	0	daaifaango
 帶分數	0	daaifansou
@@ -55617,7 +55610,6 @@
 急就章	0	gapzauzoeng
 急症室	0	gapzingsat
 合你意	0	gapneiji
-及第粥	0	gapdaizuk
 𥄫到實	0	gapdousat
 𥄫𥄫佢	0	gapgapkeoi
 𥄫一𥄫	0	gapjatgap
@@ -56130,6 +56122,7 @@
 叫牀聲	0	giucongseng
 叫多個	0	giudogo
 叫花子	0	giufaazi
+叫起手	0	giuheisau
 叫唔敢	0	giumgam
 叫唔喐	0	giumjuk
 叫生晒	0	giusaangsaai
@@ -57570,7 +57563,6 @@
 冚家伶	0	hamgaaling
 冚家呤	0	hamgaaling
 冚家拎	0	hamgaaling
-冚國旗	0	hamgwokkei
 冚球剷	0	hamkaucaan
 冚球鏟	0	hamkaucaan
 冚世界	0	hamsaigaai
@@ -58689,7 +58681,6 @@
 空房間	0	hungfonggaan
 空歡喜	0	hungfunhei
 空間局	0	hunggaanguk
-空䆲䆲	0	hunggwaanggwaang
 空䆲䆲	0	hungkwaangkwaang
 空框框	0	hungkwaangkwaang
 空䆲䆡	0	hungkwaanglaang
@@ -60771,8 +60762,8 @@
 楷體字	0	kaaitaizi
 坎坎糊	0	kaankaanwu
 簡簡糊	0	kaankaanwu
-卡冚卡	0	kaatkamkaat
-咭冚咭	0	kaatkamkaat
+卡𢫏卡	0	kaatkamkaat
+咭𢫏咭	0	kaatkamkaat
 靠背椅	0	kaaubuiji
 靠打工	0	kaaudaagung
 靠得住	0	kaaudakzyu
@@ -60793,9 +60784,9 @@
 禁等咯	0	kamdanglok
 襟兄弟	0	kamhingdai
 衾棉胎	0	kammintoi
-冚牀布	0	kamcongbou
-冚國旗	0	kamgwokkei
-冚棉胎	0	kammintoi
+𢫏牀布	0	kamcongbou
+𢫏國旗	0	kamgwokkei
+𢫏棉胎	0	kammintoi
 擒牆頭	0	kamcoengtau
 琴日先	0	kamjatsin
 擒擒青	0	kamkamceng
@@ -61012,7 +61003,6 @@
 纈氨酸	0	kitonsyun
 巧妙處	0	kiumiucyu
 蹺妙處	0	kiumiucyu
-叫起手	0	kiuheisau
 翹翹板	0	kiukiubaan
 翹尾巴	0	kiumeibaa
 翹拇指	0	kiumouzi
@@ -64361,6 +64351,7 @@
 南澳鄉	0	naamouhoeng
 男朋友	0	naampangjau
 南番順	0	naampunseon
+南蘇丹	0	naamsoudaan
 男同胞	0	naamtungbaau
 男童軍	0	naamtunggwan
 男童院	0	naamtungjyun
@@ -64443,7 +64434,6 @@
 腍坺坺	0	nambetbet
 腍癟癟	0	nambetbet
 腍劈劈	0	nampekpek
-南蘇丹	0	namsoudaan
 腍姐姐	0	namzeze
 腍嗻嗻	0	namzeze
 腍滋滋	0	namzizi
@@ -65402,7 +65392,6 @@
 齶齦音	0	ngoknganjam
 愕晒然	0	ngoksaaijin
 昂納克	0	ngongnaaphak
-戇勼勼	0	ngonggaugau
 戇鳩鳩	0	ngonggaugau
 戇𨳊𨳊	0	ngonggaugau
 戇鳩仔	0	ngonggauzai
@@ -72668,8 +72657,8 @@
 主日學	0	zyujathok
 主羣組	0	zyukwanzou
 主力牆	0	zyulikcoeng
-煮燶飯	0	zyulungfaan
 煮我飯	0	zyungofaan
+煮燶飯	0	zyunungfaan
 煮死佢	0	zyuseikeoi
 煮食爐	0	zyusiklou
 主題曲	0	zyutaikuk
@@ -74197,6 +74186,7 @@
 步斗踏罡	0	boudaudaapgong
 步調一致	0	boudiujatzi
 暴富難睇	0	boufunaantai
+暴風驟雨	0	boufungzaaujyu
 暴風驟雨	0	boufungzaujyu
 捕風捉影	0	boufungzukjing
 簿記文員	0	bougeimanjyun
@@ -74640,9 +74630,8 @@
 臭名遠播	0	caumingjyunbo
 臭名遠揚	0	caumingjyunjoeng
 湊細蚊仔	0	causaimanzai
-臭屎密冚	0	causimatgam
-臭屎密冚	0	causimatkam
 臭屎密𠖫	0	causimatkam
+臭屎密𢫏	0	causimatkam
 躊躇不決	0	caucyubatkyut
 躊躇滿志	0	caucyumunzi
 囚首垢面	0	causaugaumin
@@ -75789,7 +75778,7 @@
 傳呼電話	0	cyunfudinwaa
 全副武裝	0	cyunfumouzong
 全副精力	0	cyunfuzinglik
-全家冚竇	0	cyungaakamdau
+全家𢫏竇	0	cyungaakamdau
 傳家之寶	0	cyungaazibou
 全軍覆沒	0	cyungwanfukmut
 全國連鎖	0	cyungwoklinso
@@ -76028,7 +76017,7 @@
 大吉利是	0	daaigatlaisi
 大吉利事	0	daaigatleisi
 大吉利是	0	daaigatleisi
-大驚小怪	0	daaigengsiugwai
+大驚小怪	0	daaigengsiugwaai
 大件抵食	0	daaigindaisik
 大驚失色	0	daaigingsatsik
 大個仔咯	0	daaigozailo
@@ -77500,7 +77489,7 @@
 返鄉情怯	0	faanhoengcinghip
 反人道罪	0	faanjandouzeoi
 反應堆芯	0	faanjingdeoisam
-反應過渡	0	faanjinggwodou
+反應過度	0	faanjinggwodou
 反袁鬥爭	0	faanjyundauzang
 反袁運動	0	faanjyunwandung
 反求諸己	0	faankauzyugei
@@ -78938,7 +78927,8 @@
 噉咪死火	0	gammaiseifo
 噉咪算咯	0	gammaisyunlok
 噉未係咯	0	gammeihailok
-噉冇嘢啦	0	gammoujela
+噉冇嘢啦	0	gammoujelaa
+噉冇嘢喇	0	gammoujelaa
 噉你都係	0	gamneidouhai
 噉你講啦	0	gamneigongla
 噉你有咩	0	gamneijaume
@@ -84745,10 +84735,10 @@
 契妹契媽	0	kaimuikaimaa
 襟懷坦白	0	kamwaaitaanbaak
 搇冚個蓋	0	kamhamgogoi
-冚一巴掌	0	kamjatbaazoeng
 搇一巴掌	0	kamjatbaazoeng
-冚冚埋埋	0	kamkammaaimaai
-冚住冚住	0	kamzyukamzyu
+𢫏一巴掌	0	kamjatbaazoeng
+𢫏𢫏埋埋	0	kamkammaaimaai
+𢫏住𢫏住	0	kamzyukamzyu
 擒賊擒王	0	kamcaakkamwong
 禽犢之愛	0	kamdukzioi
 擒高擒低	0	kamgoukamdai
@@ -86216,7 +86206,6 @@
 六韜三略	0	luktousaamloek
 綠嘴地鵑	0	lukzeoideigyun
 六字真言	0	lukzizanjin
-燶起塊面	0	lungheifaaimin
 窿窿啦啦	0	lunglunglala
 窿窿罅罅	0	lunglunglaalaa
 龍穿鳳翼	0	lungcyunfungjik
@@ -86276,12 +86265,11 @@
 鸞翔鳳集	0	lyuncoengfungzaap
 鸞翔鳳翥	0	lyuncoengfungzyu
 聯機遊戲	0	lyungeijauhei
-聯羣結隊	0	lyungwangitdeoi
 聯繫方式	0	lyunhaifongsik
 聯繫羣衆	0	lyunhaikwanzung
 聯繫匯率	0	lyunhaiwuileot
 聯合王國	0	lyunhapwonggwok
-聯群結隊	0	lyunkwangitdeoi
+聯羣結隊	0	lyunkwangitdeoi
 聯立方程	0	lyunlaapfongcing
 攣埋身瞓	0	lyunmaaisanfan
 鸞飄鳳泊	0	lyunpiufungbok
@@ -89105,6 +89093,7 @@
 怒目相向	0	noumuksoenghoeng
 忸忸怩怩	0	nuknukneinei
 燶口燶面	0	nunghaunungmin
+燶起塊面	0	nungheifaaimin
 農場管理	0	nungcoenggunlei
 農家美食	0	nunggaameisik
 農耕年代	0	nunggaangnindoi
@@ -94441,6 +94430,7 @@
 奏鳴曲式	0	zaumingkuksik
 咒術迴戰	0	zauseotwuizin
 就寢時間	0	zaucamsigaan
+驟晴驟雨	0	zaucingzaujyu
 就等我哋	0	zaudangngodei
 就地取材	0	zaudeiceoicoi
 就地正法	0	zaudeizingfaat
@@ -96707,7 +96697,6 @@
 大唐西域記	0	daaitongsaiwikgei
 大屠殺事件	0	daaitousaatsigin
 大話夾好彩	0	daaiwaagaaphoucoi
-大話冚大話	0	daaiwaakamdaaiwaa
 大話𢫏大話	0	daaiwaakamdaaiwaa
 大紫荊勳章	0	daaizigingfanzoeng
 大中華地區	0	daaizungwaadeikeoi
@@ -97992,6 +97981,7 @@
 涼薄啲講句	0	loengbokdigonggeoi
 良心當狗肺	0	loengsamdonggaufai
 兩步驟驗證	0	loengbouzaaujimzing
+兩步驟驗證	0	loengbouzaujimzing
 兩棲類動物	0	loengcaileoidungmat
 兩公婆見鬼	0	loenggungpogingwai
 兩害取其輕	0	loenghoiceoikeiheng
@@ -99259,7 +99249,7 @@
 域名服務器	0	wikmengfukmouhei
 永世都記得	0	wingsaidougeidak
 倭馬亞王朝	0	womaaaawongciu
-禾桿冚珍珠	0	wogonkamzanzyu
+禾桿𢫏珍珠	0	wogonkamzanzyu
 禾稈冚珍珠	0	wogonkamzanzyu
 和諧式客機	0	wohaaisikhaakgei
 禍不及妻兒	0	wobatkapcaiji
@@ -101789,7 +101779,7 @@
 頭懸梁，錐刺股	0	taujyunloengzeoicigu
 退一步海闊天空	0	teoijatbouhoifuttinhung
 天跌落嚟當被冚	0	tinditloklaidongpeikam
-天跌落嚟當被冚	0	tinditlokleidongpeikam
+天跌落嚟當被𢫏	0	tinditlokleidongpeikam
 天跌落來當被冚	0	tinditlokloidongpeikam
 天冬苯丙二肽酯	0	tindungbunbingjitaaizi
 天下文章一大抄	0	tinhaamanzoengjatdaaicaau
