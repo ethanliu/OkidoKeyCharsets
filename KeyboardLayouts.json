@@ -511,6 +511,35 @@
             ],
             "description": "倉六"
         },
+        "colemak": {
+            "charsets": [
+                "[Q][W][F][P][G][J][L][U][Y]",
+                "[dummy:2][A][R][S][T][D][H][N][E][I][O][dummy:2]",
+                "[shift][Z][X][C][V][B][K][M][del]",
+                "[next][globe][space][return]"
+            ],
+            "description": "Colemak"
+        },
+        "colemak-fullsize": {
+            "charsets": [
+                "[`][1][2][3][4][5][6][7][8][9][0][-][=][de]",
+                "[tab][Q][W][F][P][G][J][L][U][Y][;][[][]][\\]",
+                "[capslock][A][R][S][T][D][H][N][E][I][O]['][return]",
+                "[shift][Z][X][C][V][B][K][M][,][.][/][shift]",
+                "[next][globe][space][next][dismiss]"
+            ],
+            "description": "Colemak"
+        },
+        "colemak-pad": {
+            "charsets": [
+                "[1][2][3][4][5][6][7][8][9][0][-][=]",
+                "[Q][W][F][P][G][J][L][U][Y][del]",
+                "[A][R][S][T][D][H][N][E][I][O][return]",
+                "[shift][Z][X][C][V][B][K][M][,][.][shift]",
+                "[next][globe][space][next][dismiss]"
+            ],
+            "description": "Colemak"
+        },
         "dayi": {
             "charsets": [
                 "[1:言][2:牛][3:目][4:四][5:王][6:門][7:田][8:米][9:足][0:金]",
@@ -1047,5 +1076,5 @@
             "description": "吳守禮臺語注音"
         }
     },
-    "version": "20230406153948"
+    "version": "20230620181638"
 }
