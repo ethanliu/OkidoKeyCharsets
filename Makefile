@@ -15,7 +15,8 @@ define SYNOPSIS
 @echo "    lexicon-db - Build all lexicon databases"
 @echo "    emoji-db - Build emoji.db"
 @echo "    char-db - Build Character.db"
-@echo "    cv-db - Build ChineseVariant.db"
+@echo "    unihan-db - Build Unihan.db"
+# @echo "    cv-db - Build ChineseVariant.db"
 @echo "    table - Generate db splits and DataTables.json"
 @echo "    lexicon - Generate db splits Lexicon.json"
 @echo "    keyboard - Generate KeyboardLayouts.json"
@@ -24,7 +25,7 @@ define SYNOPSIS
 @echo ""
 @echo "3rd party repositories:"
 @echo "    pull - Update all upstream repos"
-@echo "    array10 - Array10 [a/b] table builder"
+@echo "    array10 - Array10 [a/b/c] table builder"
 @echo "    array30 - Array30 [ov/OkidoKey] table builder"
 @echo "    array-phrase - Array30-phrase lexicon builder"
 @echo "    bossy - Custom boshiamy table builder"
@@ -135,7 +136,7 @@ emoji-db:
 
 unihan-db:
 	@$(call timeStart)
-	@bin/unihan.py -i ./ -o tmp/Unihan.db
+	@bin/unihan.py -o tmp/Unihan.db
 	@$(call timeStop)
 	@echo "Copy Unihan.db to src..."
 	@cp tmp/Unihan.db ${MISC_PATH}
@@ -149,13 +150,13 @@ char-db:
 	@-rm tmp/Character.db
 	@$(call timeStop)
 
-cv-db:
-	@$(call timeStart)
-	@bin/chinese-variant.py -i rawdata/tongwen-core/dictionaries -o tmp/ChineseVariant.db
-	@echo "Copy ChineseVariant.db to src..."
-	@cp tmp/ChineseVariant.db ${MISC_PATH}
-	@-rm tmp/ChineseVariant.db
-	@$(call timeStop)
+# cv-db:
+# 	@$(call timeStart)
+# 	@bin/chinese-variant.py -i rawdata/tongwen-core/dictionaries -o tmp/ChineseVariant.db
+# 	@echo "Copy ChineseVariant.db to src..."
+# 	@cp tmp/ChineseVariant.db ${MISC_PATH}
+# 	@-rm tmp/ChineseVariant.db
+# 	@$(call timeStop)
 
 lexicon:
 	@bin/resource.py -c lexicon
@@ -363,7 +364,8 @@ moe-db:
 	@bin/lexicon2db.py -i lexicon/MoE-revised.csv -o db/lexicon-MoE-revised.csv.db
 	@$(call timeStop)
 
- admob:
+# helper
+admob:
 	@$(call timeStart)
 	@curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
 	@cd tmp; unzip -o -q googlemobileadssdkios.zip

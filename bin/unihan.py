@@ -19,7 +19,6 @@ from tqdm import tqdm
 uu = importlib.import_module("lib.util")
 
 basedir = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
-#.rstrip('/')
 consoleBufferSize = -100000
 
 #	kCompatibilityVariant
