@@ -90,6 +90,7 @@ def parser(path, outputPath, headerPath):
         fp.close()
 
 def main():
+    print(f"!!! [deprecated]")
     argParser = argparse.ArgumentParser(description='Convert CIN table from Lime table')
     argParser.add_argument('-i', '--input', required = True, help='Input file path')
     argParser.add_argument('-o', '--output', required = True, help='Output file path')

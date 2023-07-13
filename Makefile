@@ -133,6 +133,14 @@ emoji-db:
 	@cp tmp/emoji.db ${MISC_PATH}
 	@-rm tmp/emoji.db
 
+unihan-db:
+	@$(call timeStart)
+	@bin/unihan.py -i ./ -o tmp/Unihan.db
+	@$(call timeStop)
+	@echo "Copy Unihan.db to src..."
+	@cp tmp/Unihan.db ${MISC_PATH}
+	@-rm tmp/Unihan.db
+
 char-db:
 	@$(call timeStart)
 	@bin/character.py -i lexicon/symbol.json tmp/Character.db
@@ -213,24 +221,33 @@ pull:
 	@echo "upstream: tongwen"
 	@cd rawdata/tongwen-core; git pull
 
+# array10-lime:
+# 	@$(call timeStart)
+# 	@echo "Update local version from upsteam..."
+# 	@$(eval file := $(wildcard rawdata/array10/LIME/array10a*.lime))
+# 	@bin/lime2cin.py -i ${file} -o table/array10a.cin --header table/array10a-header.cin
+# 	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
+# 	@$(eval file := $(wildcard rawdata/array10/LIME/array10b*.lime))
+# 	@bin/lime2cin.py -i ${file} -o table/array10b.cin --header table/array10b-header.cin
+# 	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
+# 	@$(eval file := $(wildcard rawdata/array10/LIME/array10c*.lime))
+# 	@bin/lime2cin.py -i ${file} -o table/array10c.cin --header table/array10c-header.cin
+# 	@bin/cin2db.py -i table/array10c.cin -o db/array10c.cin.db
+# 	@$(call timeStop)
+
 array10:
 	@$(call timeStart)
 	@echo "Update local version from upsteam..."
-
-	@$(eval file := $(wildcard rawdata/array10/LIME/array10a*.lime))
-	@bin/lime2cin.py -i ${file} -o table/array10a.cin --header table/array10a-header.cin
+	@$(eval file := $(wildcard rawdata/array10/OpenVanilla/array10a*.cin))
+	@cp ${file} table/array10a.cin
+	@$(eval file := $(wildcard rawdata/array10/OpenVanilla/array10b*.cin))
+	@cp ${file} table/array10b.cin
+	@$(eval file := $(wildcard rawdata/array10/OpenVanilla/array10c*.cin))
+	@cp ${file} table/array10c.cin
 	@bin/cin2db.py -i table/array10a.cin -o db/array10a.cin.db
-
-	@$(eval file := $(wildcard rawdata/array10/LIME/array10b*.lime))
-	@bin/lime2cin.py -i ${file} -o table/array10b.cin --header table/array10b-header.cin
 	@bin/cin2db.py -i table/array10b.cin -o db/array10b.cin.db
-
-	@$(eval file := $(wildcard rawdata/array10/LIME/array10c*.lime))
-	@bin/lime2cin.py -i ${file} -o table/array10c.cin --header table/array10c-header.cin
 	@bin/cin2db.py -i table/array10c.cin -o db/array10c.cin.db
-
 	@$(call timeStop)
-
 
 array30:
 	@$(call timeStart)
