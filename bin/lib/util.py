@@ -82,11 +82,16 @@ def color(text, fg = None):
 
 #     return _code(fg) + text + eval('Colors.reset')
 
-def trim(str, needle = None):
+def trim(str, needle = None, space = False):
     # _str = str(str)
     _str = str
     if needle:
         _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
+    if space:
+        pattern1 = r"([\u4e00-\u9fa5\u3040-\u30FF])([a-z0-9@#&;=_\\[\\(])"
+        pattern2 = r"([a-z0-9#!~&;=_\],\\.:\\?\\)])([\u4e00-\u9fa5\u3040-\u30FF])"
+        _str = re.sub(pattern1, "\\1 \\2", _str, 0,re.MULTILINE | re.IGNORECASE | re.UNICODE)
+        _str = re.sub(pattern2, "\\1 \\2", _str, 0,re.MULTILINE | re.IGNORECASE | re.UNICODE)
     return _str.strip()
 
 def stripAccents(str):

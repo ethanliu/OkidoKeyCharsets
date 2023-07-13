@@ -151,7 +151,14 @@ def createTable():
                     break
 
             reader.close()
-            content['license'] = uu.trim(content['license'])
+            content['license'] = uu.trim(content['license'], space = True)
+            content['link'] = ''
+            links = re.search(r'(https?://\S+)', content['license'])
+            if links:
+                content['link'] = links.group(0)
+                # hard fixes for some common documation mistakes
+                content['link'] = re.sub(r"(.*)([）\)>].*)", "\\1", content['link'], 0, re.MULTILINE | re.IGNORECASE | re.UNICODE)
+
             jsondata['datatables'].append(content)
 
         # splits

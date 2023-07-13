@@ -5,6 +5,8 @@
 #
 # ChineseVariant.db generator
 
+# https://www.unicode.org/versions/Unicode15.0.0/
+
 import argparse
 import csv
 # import importlib
@@ -73,6 +75,7 @@ def tongwen2db(cursor, inputPath):
 
 
 def main():
+    print(f"!!! [deprecated] use unihan instead")
     argParser = argparse.ArgumentParser(description='ChineseVariant.db generator')
     argParser.add_argument('-i', '--input', type = str, required = True, help='The tongwen repo dictionary folder path')
     argParser.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
