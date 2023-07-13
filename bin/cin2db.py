@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.2
+# version: 0.0.3
 # autor: Ethan Liu
 #
 # convert cin table to sqlite db
@@ -62,6 +62,7 @@ class Mode(Enum):
 
 def performImport(cursor, inputPath, mode = Mode.CREATE):
     section = None
+    skipSection = None
 
     filename = os.path.basename(inputPath)
     reader = open(inputPath, 'r')
@@ -90,9 +91,11 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
             if section == key and value == 'end':
                 # tqdm.write(f"End of Section: {section}")
                 section = None
+                skipSection = None
             else:
                 # section = key[1:]
                 section = key
+                skipSection = None
                 # tqdm.write(f"Begin: {section}")
                 if key == '%chardef' and mode == Mode.CREATE:
                     # patch name
@@ -105,6 +108,16 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
             continue
 
         if not section:
+
+            if skipSection:
+                # tqdm.write(f"[?] skip section: {key} / {skipSection}")
+                continue
+
+            if key.startswith('%') and (value == 'begin' or value == 'end'):
+                skipSection = key
+                tqdm.write(f"[?] Unknown section: {key}")
+                continue
+
             if not key in CIN_TAG:
                 tqdm.write(f"[?] Unknown tag: {key}")
                 continue
@@ -116,6 +129,7 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
                 cursor.execute(query, args)
 
             continue
+
 
         if section == '%keyname':
             query = "INSERT OR IGNORE INTO `keyname` (`key`, `value`) VALUES (:key, :value)"
@@ -156,8 +170,8 @@ def performArray30(category, cursor, path):
     entryTableName = f"entry_{category}"
     entryKeydefColumnName = f"keydef_{category}_id"
 
-    cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    # cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
+    # cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
     begin = False
 
@@ -249,11 +263,18 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
+    # main table
     cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
+    # shortcode table
+    cursor.execute(f"CREATE TABLE keydef_shortcode (`key` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute(f"CREATE TABLE entry_shortcode (`keydef_shortcode_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+    # special table
+    cursor.execute(f"CREATE TABLE keydef_special (`key` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute(f"CREATE TABLE entry_special (`keydef_special_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
     mode = Mode.CREATE
     for index, path in enumerate(args.input):
