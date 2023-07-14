@@ -3,5 +3,8 @@ __pycache__
 rawdata/*
 !rawdata/moe
 rawdata/moe/src/*
+!rawdata/ezArray10
+!rawdata/misc
+!rawdata/Unihan
 tmp
 tmp.*
