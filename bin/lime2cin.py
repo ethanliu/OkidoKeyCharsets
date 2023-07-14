@@ -15,13 +15,13 @@ import sys, os
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = -100
+consoleBufferSize = -1000
 # first column for keydef, second column for chardef
 column = [0, 1]
 chardefBeginBlock = f"%chardef begin\n"
 chardefEndBlock = f"%chardef end"
 
-def parser(path, outputPath, headerPath):
+def parser(path, outputPath, headerPath, delimiter = '\t'):
     today = datetime.now()
 
     description = "# build: {}\n".format(today.strftime(f'%Y/%m/%d %H:%M:%S'))
@@ -42,12 +42,11 @@ def parser(path, outputPath, headerPath):
     # begin
 
     with open(path) as fp:
-        reader = csv.reader(fp, delimiter = "\t")
+        reader = csv.reader(fp, delimiter = delimiter)
         for rows in uu.chunks(reader, 100000):
             for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{path} Chunk[]"):
                 if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
                     break
-
                 if not row:
                     # print(f"skip empty: {row}")
                     if not contents:
@@ -90,11 +89,11 @@ def parser(path, outputPath, headerPath):
         fp.close()
 
 def main():
-    print(f"!!! [deprecated]")
     argParser = argparse.ArgumentParser(description='Convert CIN table from Lime table')
     argParser.add_argument('-i', '--input', required = True, help='Input file path')
     argParser.add_argument('-o', '--output', required = True, help='Output file path')
     argParser.add_argument('-x', '--header', required = True, help='CIN table header')
+    argParser.add_argument('-d', '--delimiter', default='\t', help='Delimiter')
 
     args = argParser.parse_args()
     # print(args)
@@ -105,7 +104,7 @@ def main():
     if not os.path.exists(args.header):
         sys.exit(f"File not found: {args.header}")
 
-    parser(args.input, args.output, args.header)
+    parser(args.input, args.output, args.header, args.delimiter)
 
 
 if __name__ == "__main__":
