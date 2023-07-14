@@ -16,7 +16,6 @@ define SYNOPSIS
 @echo "    emoji-db - Build emoji.db"
 @echo "    char-db - Build Character.db"
 @echo "    unihan-db - Build Unihan.db"
-# @echo "    cv-db - Build ChineseVariant.db"
 @echo "    table - Generate db splits and DataTables.json"
 @echo "    lexicon - Generate db splits Lexicon.json"
 @echo "    keyboard - Generate KeyboardLayouts.json"
@@ -72,9 +71,6 @@ table-db:
 	$(eval dbPath = db)
 	$(eval excludes := \
 		_sample.cin _demo.cin \
-		array10a-header.cin array10b-header.cin array10c-header.cin \
-		jyut6ping3-header.cin jyut6ping3-toneless-header.cin \
-		ghcm-header.cin \
 		array-shortcode.cin array-special.cin \
 		boshiamy.cin liu.cin bossy.cin \
 		bpmf-ext.cin \
@@ -273,6 +269,10 @@ array-phrase:
 	@bin/txt2csv.py -i ${file} -o lexicon/array30-phrase.csv -c 3 1 0
 	@bin/lexicon2db.py -i lexicon/array30-phrase.csv -o db/lexicon-array30-phrase.csv.db
 
+ezarray10:
+	@$(eval file := $(wildcard rawdata/ezArray10/ezArray10*.lime))
+	@bin/lime2cin.py -i "${file}" -x rawdata/ezArray10/header.cin -d "|" -o table/ezArray10.cin
+
 bossy:
 	@$(call timeStart)
 	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
@@ -289,7 +289,7 @@ bossydiff:
 
 ghcm:
 	@$(call timeStart)
-	@bin/rime2cin.py -i rawdata/ghcm/SM.dict.yaml -o table/ghcm.cin -x table/ghcm-header.cin
+	@bin/rime2cin.py -i rawdata/ghcm/SM.dict.yaml -o table/ghcm.cin -x rawdata/misc/ghcm-header.cin
 	@bin/cin2db.py -i table/ghcm.cin -o db/ghcm.cin.db
 	@$(call timeStop)
 
@@ -301,8 +301,8 @@ jieba:
 
 jyutping:
 	@$(call timeStart)
-	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3.cin -t tone --header table/jyut6ping3-header.cin
-	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3-toneless.cin -t toneless --header table/jyut6ping3-toneless-header.cin
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3.cin -t tone --header rawdata/misc/jyut6ping3-header.cin
+	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.chars.dict.yaml -o table/jyut6ping3-toneless.cin -t toneless --header rawdata/misc/jyut6ping3-toneless-header.cin
 	@bin/cin2db.py -i table/jyut6ping3.cin -o db/jyut6ping3.cin.db
 	@bin/cin2db.py -i table/jyut6ping3-toneless.cin -o db/jyut6ping3-toneless.cin.db
 	@$(call timeStop)
