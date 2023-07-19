@@ -84,6 +84,7 @@ def parser(path, outputPath, headerPath, delimiter = '\t'):
         fp.write(description)
         fp.write(f"#\n")
         fp.write(header)
+        fp.write(chardefBeginBlock)
         fp.write(contents)
         fp.write(chardefEndBlock)
         fp.close()
