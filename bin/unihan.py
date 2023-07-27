@@ -32,7 +32,6 @@ class Classified(IntEnum):
     LessCommon = 2
     Rare = 3
     Newly = 10
-    Simplified = 20
     # for sorting friendly purpose, giving a large number instead of zero
     Unclassified = 99
 
@@ -126,8 +125,8 @@ class Char:
         self.score = score
 
         self.classified = Classified.Unclassified
-        if self.traditionalVariant:
-            self.classified = Classified.Simplified
+        # if self.traditionalVariant:
+        #     self.classified = Classified.Simplified
         # if self.strange:
         #     self.classified = 1
         # elif self.traditionalVariant:
@@ -164,14 +163,15 @@ def importWeight(cursor):
         fp.close()
 
     query1 = f"SELECT `rowid` FROM `unihan` WHERE `radical` = :radical LIMIT 1"
-    query2 = f"INSERT INTO `unihan` (`radical`, `weight`, `score`) VALUES (:radical, :weight, :score)"
+    query2 = f"INSERT INTO `unihan` (`radical`, `weight`, `score`, `classified`) VALUES (:radical, :weight, :score, :classified)"
     query3 = f"UPDATE `unihan` SET `weight` = :weight WHERE rowid = :id"
 
     cursor.execute("BEGIN TRANSACTION")
     for item in contents:
         rowid = uu.getOne(cursor, query1, {"radical": item[0]})
         if not rowid:
-            cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1})
+            # ???: classified zero?
+            cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
             tqdm.write(f"Add new radical: {item[0]}")
         else:
             cursor.execute(query3, {"id": rowid, "weight": item[1]})
