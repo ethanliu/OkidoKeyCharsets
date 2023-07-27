@@ -134,9 +134,19 @@ unihan-db:
 	@$(call timeStart)
 	@bin/unihan.py -o tmp/Unihan.db
 	@$(call timeStop)
+
+unihan-tca:
+	@echo "Parsing TCA-CNS data..."
+	@in2csv -H -K 1 rawdata/TW-ABCN/臺灣TW-ABCN正字甲乙丙表.xlsx > tmp/tca-raw.csv
+	@sed -i '' -e '/^#VALUE!.*/d' tmp/tca-raw.csv
+	@csvcut -S -x -c "2,3" tmp/tca-raw.csv | sed 1d > rawdata/Unihan/tca.csv
+	@-rm tmp/tca-raw.csv
+
+unihan: unihan-tca unihan-db
 	@echo "Copy Unihan.db to src..."
 	@cp tmp/Unihan.db ${MISC_PATH}
 	@-rm tmp/Unihan.db
+
 
 char-db:
 	@$(call timeStart)
@@ -271,7 +281,7 @@ array-phrase:
 
 ezarray10:
 	@$(eval file := $(wildcard rawdata/ezArray10/ezArray10*.lime))
-	@bin/lime2cin.py -i "${file}" -x rawdata/ezArray10/header.cin -d "|" -o table/ezArray10.cin
+	@bin/lime2cin.py -i "${file}" -x rawdata/ezArray10/header.cin -d "|" -o table/ezMaxtrix10.cin
 
 bossy:
 	@$(call timeStart)
