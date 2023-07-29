@@ -162,9 +162,9 @@ def importWeight(cursor):
                 contents.append([radical, weight])
         fp.close()
 
-    query1 = f"SELECT `rowid` FROM `unihan` WHERE `radical` = :radical LIMIT 1"
-    query2 = f"INSERT INTO `unihan` (`radical`, `weight`, `score`, `classified`) VALUES (:radical, :weight, :score, :classified)"
-    query3 = f"UPDATE `unihan` SET `weight` = :weight WHERE rowid = :id"
+    query1 = f"SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
+    query2 = f"INSERT INTO `radical` (`radical`, `weight`, `score`, `classified`) VALUES (:radical, :weight, :score, :classified)"
+    query3 = f"UPDATE `radical` SET `weight` = :weight WHERE rowid = :id"
 
     cursor.execute("BEGIN TRANSACTION")
     for item in contents:
@@ -182,8 +182,8 @@ def importClassified(cursor):
     if not os.path.exists(path):
         sys.exit(f"File not found: {path}")
 
-    query1 = "SELECT rowid FROM `unihan` WHERE radical = :radical LIMIT 1"
-    query2 = "UPDATE `unihan` SET classified = :classified WHERE rowid = :id"
+    query1 = "SELECT rowid FROM `radical` WHERE radical = :radical LIMIT 1"
+    query2 = "UPDATE `radical` SET classified = :classified WHERE rowid = :id"
 
     cursor.execute("BEGIN TRANSACTION")
     with open(path) as fp:
@@ -212,7 +212,7 @@ def importClassified(cursor):
 def parseRadical(cursor, repo, namespace):
     counter = 0
 
-    query = "INSERT INTO `unihan` (`radical`, `pinyin`, `classified`, `score`, `stroke`, `weight`) VALUES (:radical, :pinyin, :classified, :score, :stroke, :weight)"
+    query = "INSERT INTO `radical` (`radical`, `pinyin`, `classified`, `score`, `stroke`, `weight`) VALUES (:radical, :pinyin, :classified, :score, :stroke, :weight)"
 
     cursor.execute("BEGIN TRANSACTION")
     for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"Radical"):
@@ -238,7 +238,7 @@ def parseRadical(cursor, repo, namespace):
 def parseSimplified(cursor, repo, namespace):
     counter = 0
 
-    query1 = "SELECT `rowid` FROM `unihan` WHERE `radical` = :radical LIMIT 1"
+    query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
     query2 = "INSERT INTO `t2s` (`hant_id`, `hans_id`) VALUES (:hant_id, :hans_id)"
 
     cursor.execute("BEGIN TRANSACTION")
@@ -274,7 +274,7 @@ def parseSimplified(cursor, repo, namespace):
 def parseTraditional(cursor, repo, namespace):
     counter = 0
 
-    query1 = "SELECT `rowid` FROM `unihan` WHERE `radical` = :radical LIMIT 1"
+    query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
     query2 = "INSERT INTO `s2t` (`hans_id`, `hant_id`) VALUES (:hans_id, :hant_id)"
 
     cursor.execute("BEGIN TRANSACTION")
@@ -351,7 +351,7 @@ def main():
 
     # the radical based on unihan
 
-    cursor.execute('''CREATE TABLE unihan (
+    cursor.execute('''CREATE TABLE `radical` (
         `radical` CHAR(4) UNIQUE NOT NULL,
         `pinyin` CHAR(10) default NULL,
         `classified` INTEGER default 0,
@@ -360,19 +360,15 @@ def main():
         `weight` INTEGER default 0
     )''')
 
-    cursor.execute('''CREATE TABLE t2s (
+    cursor.execute('''CREATE TABLE `t2s` (
         `hant_id` INTEGER default 0,
         `hans_id` INTEGER default 0
     )''')
 
-    cursor.execute('''CREATE TABLE s2t (
+    cursor.execute('''CREATE TABLE `s2t` (
         `hans_id` INTEGER default 0,
         `hant_id` INTEGER default 0
     )''')
-
-
-    # user weight
-    # cursor.execute("CREATE TABLE user_weight (`unihan_id` INTEGER UNIQUE NOT NULL, weight INTEGER default 0)")
 
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
@@ -386,12 +382,11 @@ def main():
 
     db.commit()
     cursor.execute('vacuum')
-    cursor.execute("CREATE INDEX score_index ON unihan (score)")
-    cursor.execute("CREATE INDEX weight_index ON unihan (weight)")
-    cursor.execute("CREATE INDEX stroke_index ON unihan (stroke)")
-    cursor.execute("CREATE INDEX t2s_index ON t2s (hant_id)")
-    cursor.execute("CREATE INDEX s2t_index ON s2t (hans_id)")
-    # cursor.execute("CREATE INDEX user_index ON user_weight (unihan_id)")
+    cursor.execute("CREATE INDEX `score_index` ON `radical` (score)")
+    cursor.execute("CREATE INDEX `weight_index` ON `radical` (weight)")
+    cursor.execute("CREATE INDEX `stroke_index` ON `radical` (stroke)")
+    cursor.execute("CREATE INDEX `t2s_index` ON `t2s` (hant_id)")
+    cursor.execute("CREATE INDEX `s2t_index` ON `s2t` (hans_id)")
     db.close()
 
     sys.exit(0)
