@@ -84,6 +84,8 @@ def color(text, fg = None):
 
 def trim(str, needle = None, space = False):
     # _str = str(str)
+    if not str:
+        return ""
     _str = str
     if needle:
         _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
