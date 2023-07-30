@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.1.0
 # autor: Ethan Liu
 #
 # OkidoKey/Frankie resources generator
@@ -10,6 +10,7 @@ import importlib
 import sys, os, glob, re, shutil
 import sqlite3, json
 from datetime import datetime
+from lib.cintable import CinTable
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
@@ -77,7 +78,6 @@ def createKeyboard():
 
     createJsonFile(outputPath, jsondata)
 
-
 def createTable():
     outputPath = f"{cwd}/DataTables.json"
     dbPath = f"{cwd}/db"
@@ -93,74 +93,18 @@ def createTable():
     for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('.db', '')
-
-        # if filename.startswith('lexicon-'):
-        #     continue
-
-        if not os.path.exists(f"{tablePath}/{filename}"):
-            print(f"File not found: {filename}")
-            continue
-
         splitFile(dbFilename)
-
-        # print(f"{filename}")
-        with open(f"{tablePath}/{filename}", 'r') as reader:
-            content = {
-                'ename': '',
-                'cname': '',
-                'name': '',
-                'cin': f"table/{filename}",
-                'db': f"db/{dbFilename}",
-                'license': '',
-            }
-
-            for row in reader.readlines():
-                if row.startswith('#'):
-                    row = row.replace('#', '').strip()
-                    if not row or row == '':
-                        content['license'] += f"\n"
-                        continue
-                    content['license'] += f"{row}\n"
-
-                elif row.startswith('%'):
-                    row = uu.trim(row, '#')
-                    if not row or row == '':
-                        continue
-                    items = re.split('[\s\t]{1}', row, 1)
-                    if len(items) < 2:
-                        # print(f"[?] ignore: {row}")
-                        continue
-                    key = uu.trim(items[0])
-                    value = uu.trim(items[1])
-                    # print(f"[i] {key[1:]} = {value}")
-                    # proccess only what we need
-                    match key[1:]:
-                        case 'ename':
-                            content['ename'] = value
-                        case 'cname':
-                            content['cname'] = value
-                        case 'name':
-                            content['name'] = value
-
-                else:
-                    # print(f"[?] ignore: {row}")
-                    pass
-
-                if row.startswith('%keyname') or row.startswith('%charset'):
-                    # print("--- escape")
-                    break
-
-            reader.close()
-            content['license'] = uu.trim(content['license'], space = True)
-            # content['link'] = ''
-            # links = re.search(r'(https?://\S+)', content['license'])
-            # if links:
-            #     content['link'] = links.group(0)
-            #     # hard fixes for some common documation mistakes
-            #     content['link'] = re.sub(r"(.*)([）\)>].*)", "\\1", content['link'], 0, re.MULTILINE | re.IGNORECASE | re.UNICODE)
-            #     content['link'] = content['link'].rstrip("/內的介紹。")
-
-            jsondata['datatables'].append(content)
+        cin = CinTable(f"{tablePath}/{filename}", level = 1)
+        content = {
+            'ename': cin.info.get('ename') or '',
+            'cname': cin.info.get('cname') or '',
+            'name': cin.info.get('name') or '',
+            'cin': f"table/{filename}",
+            'db': f"db/{dbFilename}",
+            'license': cin.description,
+        }
+        # print(content)
+        jsondata['datatables'].append(content)
 
         # splits
         list = glob.glob(f"{giteeRepoPath}/{filename}*")
@@ -175,6 +119,106 @@ def createTable():
         # jsondata['splits'][filename]['gitee'] = len(list)
 
     createJsonFile(outputPath, jsondata)
+
+
+
+# def createTable_v1():
+#     outputPath = f"{cwd}/DataTables.json"
+#     dbPath = f"{cwd}/db"
+#     tablePath = f"{cwd}/table"
+#     giteeRepoPath = f"{cwd}/rawdata/gitee/db"
+
+#     jsondata = {
+#         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
+#         'datatables': [],
+#         'splits': {},
+#     }
+
+#     for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
+#         dbFilename = os.path.basename(path)
+#         filename = dbFilename.replace('.db', '')
+
+#         # if filename.startswith('lexicon-'):
+#         #     continue
+
+#         if not os.path.exists(f"{tablePath}/{filename}"):
+#             print(f"File not found: {filename}")
+#             continue
+
+#         splitFile(dbFilename)
+
+#         # print(f"{filename}")
+#         with open(f"{tablePath}/{filename}", 'r') as reader:
+#             content = {
+#                 'ename': '',
+#                 'cname': '',
+#                 'name': '',
+#                 'cin': f"table/{filename}",
+#                 'db': f"db/{dbFilename}",
+#                 'license': '',
+#             }
+
+#             for row in reader.readlines():
+#                 if row.startswith('#'):
+#                     row = row.replace('#', '').strip()
+#                     if not row or row == '':
+#                         content['license'] += f"\n"
+#                         continue
+#                     content['license'] += f"{row}\n"
+
+#                 elif row.startswith('%'):
+#                     row = uu.trim(row, '#')
+#                     if not row or row == '':
+#                         continue
+#                     items = re.split('[\s\t]{1}', row, 1)
+#                     if len(items) < 2:
+#                         # print(f"[?] ignore: {row}")
+#                         continue
+#                     key = uu.trim(items[0])
+#                     value = uu.trim(items[1])
+#                     # print(f"[i] {key[1:]} = {value}")
+#                     # proccess only what we need
+#                     match key[1:]:
+#                         case 'ename':
+#                             content['ename'] = value
+#                         case 'cname':
+#                             content['cname'] = value
+#                         case 'name':
+#                             content['name'] = value
+
+#                 else:
+#                     # print(f"[?] ignore: {row}")
+#                     pass
+
+#                 if row.startswith('%keyname') or row.startswith('%charset'):
+#                     # print("--- escape")
+#                     break
+
+#             reader.close()
+#             content['license'] = uu.trim(content['license'], space = True)
+#             # content['link'] = ''
+#             # links = re.search(r'(https?://\S+)', content['license'])
+#             # if links:
+#             #     content['link'] = links.group(0)
+#             #     # hard fixes for some common documation mistakes
+#             #     content['link'] = re.sub(r"(.*)([）\)>].*)", "\\1", content['link'], 0, re.MULTILINE | re.IGNORECASE | re.UNICODE)
+#             #     content['link'] = content['link'].rstrip("/內的介紹。")
+
+#             jsondata['datatables'].append(content)
+
+#         # splits
+#         list = glob.glob(f"{giteeRepoPath}/{filename}*")
+#         # print(f"{filename}: {len(list)}")
+
+#         if not filename in jsondata['splits']:
+#             jsondata['splits'][filename] = {}
+
+#         if not 'gitee' in jsondata['splits'][filename]:
+#             jsondata['splits'][filename]['gitee'] = len(list)
+
+#         # jsondata['splits'][filename]['gitee'] = len(list)
+
+#     createJsonFile(outputPath, jsondata)
 
 def createLexicon():
     outputPath = f"{cwd}/Lexicon.json"

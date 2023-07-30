@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
+# version: 0.1.0
 # autor: Ethan Liu
 #
 # CIN Table Parser
@@ -39,24 +39,24 @@ class CinTable:
         '%chardef',
     ]
 
-    description = ""
-    info = {}
-    keyname = {}
-    chardef = []
-    duplicateChardef = []
-    unknownTags = []
-
     def __init__(self, path, level: CinTableParseLevel = CinTableParseLevel.No):
         self.path = path
+        self.description = ""
+        self.info = {}
+        self.keyname = {}
+        self.chardef = []
+        self.duplicateChardef = []
+        self.unknownTags = []
         if path and level != CinTableParseLevel.No:
             self.parse(level = level)
 
     def __str__(self):
-        return f"""info: {self.info}
-unknown tags: {self.unknownTags}
-total keyname: {len(self.keyname)}
-total chardef: {len(self.chardef)}
-total duplicate chardef: {len(self.duplicateChardef)}"""
+        return f"""Name: {self.getName()}
+Info: {self.info}
+Unknown Tags: {self.unknownTags}
+Total Keyname: {len(self.keyname)}
+Total Chardef: {len(self.chardef)}
+Total Duplicate Chardef: {len(self.duplicateChardef)}"""
 
     def fileExists(self):
         if not self.path:
@@ -79,18 +79,21 @@ total duplicate chardef: {len(self.duplicateChardef)}"""
             currentSection = None
             ignoreSection = None
 
-            for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"Parsie CIN"):\
+            for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN] Parse"):
             # for line in fp.readlines():
                 line = trim(line)
                 if not line:
                     continue
-                if line.startswith('#'):
-                    line = line.replace('#', '').strip()
-                    if not line:
-                        continue
-                    self.description += f"{line}\n"
+                if line.startswith('#') and not self.info:
+                    # line = line.replace('#', '').strip()
+                    line = line.lstrip('# ').rstrip('# ')
+                    # if not line:
+                    #     continue
+                    if len(self.info) < 1:
+                        self.description += f"{line}\n"
                     continue
 
+                line = trim(line, '#')
                 items = re.split('[\s\t]{1}', line, 1)
                 # if len(items) < 2:
                 #     continue
@@ -136,7 +139,7 @@ total duplicate chardef: {len(self.duplicateChardef)}"""
                     self.keyname[key] = value
                     continue
 
-                if currentSection == "%chardef":
+                if currentSection == "%chardef" and value:
                     # self.chardef[key] = value
                     self.chardef.append([key, value])
 
@@ -145,13 +148,15 @@ total duplicate chardef: {len(self.duplicateChardef)}"""
                 #     # self.error("end test")
                 #     break
 
+        self.description = trim(self.description, space = True)
+
         if level == CinTableParseLevel.Validate:
             self.validate()
 
     def removeDuplicateCharde(self):
         unique = []
         duplicate = []
-        for item in tqdm(self.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"Validate Chardef"):\
+        for item in tqdm(self.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]] Check"):
         # for item in self.chardef:
             if item not in unique:
                 unique.append(item)
@@ -159,6 +164,14 @@ total duplicate chardef: {len(self.duplicateChardef)}"""
                 duplicate.append(item)
         self.chardef = unique
         self.duplicateChardef = duplicate
+
+    def getName(self):
+        tags = ["cname", "tcname", "scname", "name"]
+        for tag in tags:
+            # print(self.info.get(tag))
+            if self.info[tag]:
+                return self.info[tag]
+        return "Noname"
 
     def validate(self):
         self.removeDuplicateCharde
