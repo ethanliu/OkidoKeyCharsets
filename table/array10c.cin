@@ -1,28 +1,28 @@
-# build: 2023/04/01 02:55:39
-#
-# array10c: 為包括中日韓統一表意文字延伸 G 區 (Ext-G)，合計九萬二千餘字（c 代表 "Complete Set"，即蒐錄的範圍為「全字集」之意），蒐錄的字集範圍最廣、字數最多。
-#
-# 行列10輸入法(array10c) ，版本 v2023-1.0
-# 釋出日期：2023-02-11
+# 行列10輸入法(array10c) for OpenVanilla，版本 v2023-1.0
+# 釋出日期：2023-02-20
 # 詳細說明請參見 https://github.com/gontera/array10
-#
+
 %gen_inp
 %ename array10c
-%cname 行列10c
+%cname 全行列10
 %encoding UTF-8
-%selkey
+%selkey 1234567890
 %keyname begin
-1 1
-2 2
-3 3
-4 4
-5 5
-6 6
-7 7
-8 8
-9 9
-0 0
+1	1
+2	2
+3	3
+4	4
+5	5
+6	6
+7	7
+8	8
+9	9
+0	0
 %keyname end
+
+# %quick begin
+# %quick end
+
 %chardef begin
 # Begin of CJK Unified Ideographs /w Extension A
 380871	溫
@@ -31552,6 +31552,7 @@
 4165153	鿾
 146838	鿿
 # End of CJK Unified Ideographs /w Extension A
+
 # Begin of CJK Unified Ideographs Extension B
 1312	𠀀
 15	𠀁
@@ -81318,6 +81319,7 @@
 141448	𪛞
 7141	𪛟
 # End of CJK Unified Ideographs Extension B
+
 # Begin of CJK Unified Ideographs Extension C
 45	𪜀
 17	𪜁
@@ -86056,6 +86058,7 @@
 012	𫜸
 51515151	𫜹
 # End of CJK Unified Ideographs Extension C
+
 # Begin of CJK Unified Ideographs Extension D
 51515151	𫝀
 1033	𫝁
@@ -86321,6 +86324,7 @@
 3183912	𫠜
 38702	𫠝
 # End of CJK Unified Ideographs Extension D
+
 # Begin of CJK Unified Ideographs Extension E
 12	𫠠
 183	𫠡
@@ -92994,6 +92998,7 @@
 5138814	𬺠
 1666814	𬺡
 # End of CJK Unified Ideographs Extension E
+
 # Begin of CJK Unified Ideographs Extension F
 4444	𬺰
 49	𬺱
@@ -101611,6 +101616,7 @@
 7027	𮯟
 810001	𮯠
 # End of CJK Unified Ideographs Extension F
+
 # Begin of CJK Unified Ideographs Extension G
 12	𰀀
 4444	𰀁
@@ -107208,6 +107214,7 @@
 81002	𱍉
 810001	𱍊
 # End of CJK Unified Ideographs Extension G
+
 # Begin of Simple Symbol Codes
 35	！
 35	「
@@ -107226,6 +107233,7 @@
 09	／
 09	…
 # End of Simple Symbol Codes
+
 # Begin of CJK Symbols & Punctuation Marks
 2301	ㄅ
 2301	ㄆ
@@ -107744,6 +107752,7 @@
 2395	ψ
 2395	ω
 # End of CJK Symbols & Punctuation Marks
+
 # Begin of Fullwidth Characters
 2551	Ａ
 2551	Ｂ

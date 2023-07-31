@@ -138,6 +138,86 @@
             ],
             "description": "行列10"
         },
+        "array10-k14-flick-choco": {
+            "charsets": [
+                "[(][1][2][3][\"]",
+                "[)][4][5][6][']",
+                "[!][7][8][9][?]",
+                "[esc][,][0][.][del]",
+                "[next][globe][space][shift][return]"
+            ],
+            "description": "行列10 (K14)",
+            "flicks": {
+                "!": {
+                    "down": "Z",
+                    "up": "X"
+                },
+                "\"": {
+                    "down": "O",
+                    "up": "P"
+                },
+                "'": {
+                    "down": "L",
+                    "up": ""
+                },
+                "(": {
+                    "down": "Q",
+                    "up": "W"
+                },
+                ")": {
+                    "down": "A",
+                    "up": "S"
+                },
+                ",": {
+                    "down": "，",
+                    "up": ""
+                },
+                ".": {
+                    "down": "。",
+                    "up": ""
+                },
+                "1": {
+                    "down": "E",
+                    "up": "R"
+                },
+                "2": {
+                    "down": "T",
+                    "up": "Y"
+                },
+                "3": {
+                    "down": "U",
+                    "up": "I"
+                },
+                "4": {
+                    "down": "D",
+                    "up": "F"
+                },
+                "5": {
+                    "down": "H",
+                    "up": "G"
+                },
+                "6": {
+                    "down": "J",
+                    "up": "K"
+                },
+                "7": {
+                    "down": "C",
+                    "up": "V"
+                },
+                "8": {
+                    "down": "B",
+                    "up": "N"
+                },
+                "9": {
+                    "down": "M",
+                    "up": ""
+                },
+                "?": {
+                    "down": "？",
+                    "up": "！"
+                }
+            }
+        },
         "array10-layout2-choco": {
             "charsets": [
                 "[esc][1][2][3][del]",
@@ -868,7 +948,7 @@
                 "[shift][.:ZX][,:CV][?:BN][!:M][del]",
                 "[next][globe][space][return]"
             ],
-            "description": "QWERTY (small)",
+            "description": "QWERTY (K14)",
             "keynameType": "label"
         },
         "qwerty-number": {
@@ -1076,5 +1156,5 @@
             "description": "吳守禮臺語注音"
         }
     },
-    "version": "20230620181638"
+    "version": "20230727193759"
 }

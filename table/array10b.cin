@@ -1,28 +1,28 @@
-# build: 2023/04/01 02:55:37
-#
-# array10b: 除了支援 array10a 的字集範圍，亦包括中日韓統一表意文字延伸 B 區 (Ext-B)）共七萬餘字的「大字集版」。
-#
-# 行列10輸入法(array10b) ，版本 v2023-1.0
-# 釋出日期：2023-02-11
+# 行列10輸入法(array10b) for OpenVanilla，版本 v2023-1.0
+# 釋出日期：2023-02-20
 # 詳細說明請參見 https://github.com/gontera/array10
-#
+
 %gen_inp
 %ename array10b
-%cname 行列10b
+%cname 大行列10
 %encoding UTF-8
-%selkey
+%selkey 1234567890
 %keyname begin
-1 1
-2 2
-3 3
-4 4
-5 5
-6 6
-7 7
-8 8
-9 9
-0 0
+1	1
+2	2
+3	3
+4	4
+5	5
+6	6
+7	7
+8	8
+9	9
+0	0
 %keyname end
+
+# %quick begin
+# %quick end
+
 %chardef begin
 # Begin of CJK Unified Ideographs /w Extension A
 380871	溫
@@ -31552,6 +31552,7 @@
 4165153	鿾
 146838	鿿
 # End of CJK Unified Ideographs /w Extension A
+
 # Begin of CJK Unified Ideographs Extension B
 1312	𠀀
 15	𠀁
@@ -81318,6 +81319,7 @@
 141448	𪛞
 7141	𪛟
 # End of CJK Unified Ideographs Extension B
+
 # Begin of Simple Symbol Codes
 35	！
 35	「
@@ -81336,6 +81338,7 @@
 09	／
 09	…
 # End of Simple Symbol Codes
+
 # Begin of CJK Symbols & Punctuation Marks
 2301	ㄅ
 2301	ㄆ
@@ -81854,6 +81857,7 @@
 2395	ψ
 2395	ω
 # End of CJK Symbols & Punctuation Marks
+
 # Begin of Fullwidth Characters
 2551	Ａ
 2551	Ｂ
@@ -81918,4 +81922,5 @@
 2550	８
 2550	９
 # End of Fullwidth Characters
+
 %chardef end
