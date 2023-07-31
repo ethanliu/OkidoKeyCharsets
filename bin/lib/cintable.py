@@ -79,7 +79,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
             currentSection = None
             ignoreSection = None
 
-            for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN] Parse"):
+            for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
             # for line in fp.readlines():
                 line = trim(line)
                 if not line:
@@ -156,7 +156,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
     def removeDuplicateCharde(self):
         unique = []
         duplicate = []
-        for item in tqdm(self.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]] Check"):
+        for item in tqdm(self.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
         # for item in self.chardef:
             if item not in unique:
                 unique.append(item)

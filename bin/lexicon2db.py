@@ -15,47 +15,26 @@ from tqdm import tqdm
 uu = importlib.import_module("lib.util")
 
 def performImport(cursor, inputPath):
-    filename = os.path.basename(inputPath)
-    csvfile = open(inputPath, 'r')
-    reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
-    # reader = csv.DictReader(csvfile, fieldnames={'phrase,', 'weight', 'pinyin'})
-
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
 
-    for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {filename}"):
-        phrase = (row[0] or '').strip()
-        weight = row[1] or 0
-        pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
+    filename = os.path.basename(inputPath)
+    total = uu.totalLines(inputPath)
 
-        if not phrase:
-            continue
+    with open(inputPath, 'r') as csvfile:
+        reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
+        for row in tqdm(reader, total = total, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename}"):
+            phrase = (row[0] or '').strip()
+            weight = row[1] or 0
+            pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
 
-        query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
-        args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
-        cursor.execute(query, args)
+            if not phrase or len(phrase) < 2:
+                continue
 
-
-        # pinyin_id = 0
-
-        # if not phrase or len(phrase) < 2:
-        #     continue
-
-        # if pinyin:
-        #     query = "INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)"
-        #     args = {'pinyin': pinyin}
-        #     cursor.execute(query, args)
-        #     query = "SELECT rowid FROM pinyin WHERE pinyin = :pinyin"
-        #     pinyin_id = uu.getOne(cursor, query, args)
-        #     # pinyin_id = cursor.lastrowid
-
-        # query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin_id) VALUES (:phrase, :weight, :pinyin_id)"
-        # args = {'phrase': phrase, 'weight': weight, 'pinyin_id': pinyin_id}
-        # cursor.execute(query, args)
-
-    # reader.close()
-    csvfile.close()
+            query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
+            args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
+            cursor.execute(query, args)
 
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
