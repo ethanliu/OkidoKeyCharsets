@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 0.0.2
+# version: 0.1.0
 # autor: Ethan Liu
 #
 # convert lexicon csv to sqlite db
@@ -28,22 +28,31 @@ def performImport(cursor, inputPath):
         phrase = (row[0] or '').strip()
         weight = row[1] or 0
         pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
-        pinyin_id = 0
 
-        if not phrase or len(phrase) < 2:
+        if not phrase:
             continue
 
-        if pinyin:
-            query = "INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)"
-            args = {'pinyin': pinyin}
-            cursor.execute(query, args)
-            query = "SELECT rowid FROM pinyin WHERE pinyin = :pinyin"
-            pinyin_id = uu.getOne(cursor, query, args)
-            # pinyin_id = cursor.lastrowid
-
-        query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin_id) VALUES (:phrase, :weight, :pinyin_id)"
-        args = {'phrase': phrase, 'weight': weight, 'pinyin_id': pinyin_id}
+        query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
+        args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
         cursor.execute(query, args)
+
+
+        # pinyin_id = 0
+
+        # if not phrase or len(phrase) < 2:
+        #     continue
+
+        # if pinyin:
+        #     query = "INSERT OR IGNORE INTO pinyin (pinyin) VALUES (:pinyin)"
+        #     args = {'pinyin': pinyin}
+        #     cursor.execute(query, args)
+        #     query = "SELECT rowid FROM pinyin WHERE pinyin = :pinyin"
+        #     pinyin_id = uu.getOne(cursor, query, args)
+        #     # pinyin_id = cursor.lastrowid
+
+        # query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin_id) VALUES (:phrase, :weight, :pinyin_id)"
+        # args = {'phrase': phrase, 'weight': weight, 'pinyin_id': pinyin_id}
+        # cursor.execute(query, args)
 
     # reader.close()
     csvfile.close()
@@ -77,8 +86,9 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) UNIQUE NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
+    # cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
+    # cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
+    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
 
     performImport(cursor, args.input)
     db.commit()
