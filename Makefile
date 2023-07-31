@@ -285,9 +285,10 @@ ezarray10:
 
 bossy:
 	@$(call timeStart)
-	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
-	@echo "Generate CIN table..."
-	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
+	@bin/cin2db.py -i table/array30.cin -o tmp/array30.cin.db -e array
+# @bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
+# @echo "Generate CIN table..."
+# @bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
 	@$(call timeStop)
 
 bossydiff:
