@@ -124,6 +124,37 @@
         ]
     },
     {
+        "name": "array10-k14-flick-choco",
+        "description": "行列10 (K14)",
+        "charsets":
+        [
+            "[(][1][2][3][\"]",
+            "[)][4][5][6][']",
+            "[!][7][8][9][?]",
+            "[esc][,][0][.][del]",
+            "[next][globe][space][shift][return]"
+        ],
+        "flicks": {
+            "(": {"down": "Q", "up": "W"},
+            "1": {"down": "E", "up": "R"},
+            "2": {"down": "T", "up": "Y"},
+            "3": {"down": "U", "up": "I"},
+            "\"": {"down": "O", "up": "P"},
+            ")": {"down": "A", "up": "S"},
+            "4": {"down": "D", "up": "F"},
+            "5": {"down": "H", "up": "G"},
+            "6": {"down": "J", "up": "K"},
+            "'": {"down": "L", "up": ""},
+            "!": {"down": "Z", "up": "X"},
+            "7": {"down": "C", "up": "V"},
+            "8": {"down": "B", "up": "N"},
+            "9": {"down": "M", "up": ""},
+            "?": {"down": "？", "up": "！"},
+            ",": {"down": "，", "up": ""},
+            ".": {"down": "。", "up": ""}
+        }
+    },
+    {
         "name": "array10-pad",
         "description": "行列10",
         "charsets":
