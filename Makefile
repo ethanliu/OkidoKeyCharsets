@@ -64,6 +64,8 @@ usage:
 
 test:
 	@$(call timeStart)
+# @bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o tmp/bossy.cin.db
+	@bin/lexicon2db.py -i lexicon/MoE-Revised.csv -o tmp/test.db
 	@$(call timeStop)
 
 table-db:
@@ -269,9 +271,9 @@ array30:
 	@cp ${file} table/array30-OkidoKey.cin
 	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-big*.cin))
 	@cp ${file} table/array30-OkidoKey-big.cin
-	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
-	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30-OkidoKey.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
-	@bin/cin2db.py -i table/array30-OkidoKey-big.cin -o db/array30-OkidoKey-big.cin.db --array-short table/array-shortcode.cin --array-special table/array-special.cin
+	@bin/cin2db.py -i table/array30.cin -o db/array30.cin.db -e array
+	@bin/cin2db.py -i table/array30-OkidoKey.cin -o db/array30-OkidoKey.cin.db -e array
+	@bin/cin2db.py -i table/array30-OkidoKey-big.cin -o db/array30-OkidoKey-big.cin.db -e array
 	@$(call timeStop)
 
 array-phrase:
@@ -285,10 +287,9 @@ ezarray10:
 
 bossy:
 	@$(call timeStart)
-	@bin/cin2db.py -i table/array30.cin -o tmp/array30.cin.db -e array
-# @bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db
-# @echo "Generate CIN table..."
-# @bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
+	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db -e bossy
+	@echo "Generate CIN table..."
+	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
 	@$(call timeStop)
 
 bossydiff:
@@ -326,7 +327,8 @@ jyutping-phrase:
 
 mcbpmf:
 	@$(call timeStart)
-	@bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/BPMFMappings.txt -o lexicon/McBopomofo-phrase.csv
+# @bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/BPMFMappings.txt -o lexicon/McBopomofo-phrase.csv
+	@bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/phrase.occ -o lexicon/McBopomofo-phrase.csv
 	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o db/lexicon-McBopomofo-phrase.csv.db
 	@$(call timeStop)
 
