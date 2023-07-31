@@ -26,38 +26,39 @@ def parse(inputPath, outputPath):
     contents = ""
     # _dir_ = uu.dir(__file__)
     # pool = multiprocessing.Pool(workers)
-
+    total = uu.totalLines(inputPath)
     with open(inputPath) as fp:
-        reader = csv.reader(fp, delimiter = ' ')
-        # for row in reader:
-        # for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Convert {filename}"):
-        for rows in uu.chunks(reader, 100000):
+        # reader = csv.reader(fp, delimiter = ' ')
+        reader = csv.reader(fp, delimiter = "\t")
 
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
+        for row in tqdm(reader, total = total, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename}"):
+            if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
+                break
 
+            phrase = uu.trim(row[0] or '')
+            if not phrase:
+                continue
 
-                phrase = uu.trim(row[0] or '')
-                # weight = row[1] or 0
-                weight = 0
-                # pinyin = ''
-                # pinyin = translate(phrase)
-                pinyin = tp.get(phrase, format = "strip", delimiter = "")
+            # weight = row[1] or 0
+            weight = (row[1:2] or ('0', ''))[0]
+            # weight = 0
+            # pinyin = ''
+            # pinyin = translate(phrase)
+            pinyin = tp.get(phrase, format = "strip", delimiter = "")
 
-                if pinyin == phrase:
-                    pinyin = ''
+            if pinyin == phrase:
+                pinyin = ''
 
-                contents += f"{phrase}\t{weight}\t{pinyin}\n"
+            contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
-        fp.close()
+        # fp.close()
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the McBopomofo BPMFMappings.txt')
+    argParser = argparse.ArgumentParser(description='McBopomofo tookit')
     argParser.add_argument('-i', '--input', help='Original csv file path')
     argParser.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
 

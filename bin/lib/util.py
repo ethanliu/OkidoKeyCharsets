@@ -102,6 +102,12 @@ def stripAccents(str):
 def dir(path):
     return os.path.dirname(os.path.realpath(path))
 
+def totalLines(path):
+    total = 0
+    with open(path, 'r') as fp:
+        total = len(fp.readlines())
+    return total
+
 def chunks(reader, size = 10000):
     chunk = []
     for i, line in enumerate(reader):
