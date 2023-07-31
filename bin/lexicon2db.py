@@ -87,8 +87,8 @@ def main():
     cursor = db.cursor()
 
     # cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
-    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) NOT NULL, `weight` INTEGER DEFAULT 0, `category` INTEGER DEFAULT 0)")
+    # cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0)")
+    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0)")
 
     performImport(cursor, args.input)
     db.commit()
