@@ -15,7 +15,6 @@ import sys, os
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = -1000
 # first column for keydef, second column for chardef
 column = [0, 1]
 chardefBeginBlock = f"%chardef begin\n"
@@ -43,10 +42,8 @@ def parser(path, outputPath, headerPath, delimiter = '\t'):
 
     with open(path) as fp:
         reader = csv.reader(fp, delimiter = delimiter)
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{path} Chunk[]"):
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{path}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
                     if not contents:
