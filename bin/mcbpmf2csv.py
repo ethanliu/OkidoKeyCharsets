@@ -17,7 +17,6 @@ from tqdm import tqdm
 uu = importlib.import_module("lib.util")
 
 # _dir_ = uu.dir(__file__)
-consoleBufferSize = -1000
 # workers = 2 * multiprocessing.cpu_count()
 # print(f"num of workers: \(workers)")
 
@@ -26,32 +25,22 @@ def parse(inputPath, outputPath):
     contents = ""
     # _dir_ = uu.dir(__file__)
     # pool = multiprocessing.Pool(workers)
-    total = uu.totalLines(inputPath)
     with open(inputPath) as fp:
-        # reader = csv.reader(fp, delimiter = ' ')
         reader = csv.reader(fp, delimiter = "\t")
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
+                phrase = uu.trim(row[0] or '')
+                if not phrase:
+                    continue
 
-        for row in tqdm(reader, total = total, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename}"):
-            if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                break
+                weight = (row[1:2] or ('0', ''))[0]
+                # pinyin = translate(phrase)
+                pinyin = tp.get(phrase, format = "strip", delimiter = "")
 
-            phrase = uu.trim(row[0] or '')
-            if not phrase:
-                continue
+                if pinyin == phrase:
+                    pinyin = ''
 
-            # weight = row[1] or 0
-            weight = (row[1:2] or ('0', ''))[0]
-            # weight = 0
-            # pinyin = ''
-            # pinyin = translate(phrase)
-            pinyin = tp.get(phrase, format = "strip", delimiter = "")
-
-            if pinyin == phrase:
-                pinyin = ''
-
-            contents += f"{phrase}\t{weight}\t{pinyin}\n"
-
-        # fp.close()
+                contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)

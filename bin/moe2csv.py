@@ -13,6 +13,7 @@ import csv
 import re
 import codecs
 from tqdm import tqdm
+from lib.util import chunks
 
 kAccentsMap = {
     u'ā': u'a', u'ɑ̄': u'a', u'ē': u'e', u'ī': u'i', u'ō': u'o', u'ū': u'u', u'ǖ': u'u',
@@ -31,8 +32,6 @@ kStripMpsSpaceSeparate = True
 kMinPhraseLength = 2
 kMps1Set = set(' ˇˊˋ˙ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ')
 kPattern1 = r"[（\(][變|一|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
-
-consoleBufferSize = -1000
 
 def asciify(error):
     return kAccentsMap[error.object[error.start]], error.end
@@ -66,62 +65,59 @@ def parse(inputPath, outputPath):
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = ',')
-        for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Convert {filename}"):
-        # for row in reader:
-            if not column:
-                column = row
-                continue
+        for chunk in chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
+                if not column:
+                    column = row
+                    continue
 
-            if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                break
+                # code = row[0].strip()
+                phrase = row[1].strip()
 
-            # code = row[0].strip()
-            phrase = row[1].strip()
+                if not phrase or len(phrase) < kMinPhraseLength:
+                    # print(f"Ignore short phrase: {phrase}")
+                    continue
 
-            if not phrase or len(phrase) < kMinPhraseLength:
-                # print(f"Ignore short phrase: {phrase}")
-                continue
+                if ".gif" in phrase or ".png" in phrase:
+                    # TODO: unicode mapping
+                    # print(f"Ignore legacy phrase: {phrase}")
+                    continue
 
-            if ".gif" in phrase or ".png" in phrase:
-                # TODO: unicode mapping
-                # print(f"Ignore legacy phrase: {phrase}")
-                continue
+                mps1 = ' '.join([node.strip() for node in row[2].split('\u3000')])
+                mps1 = re.split(kPattern1, trimMps1(mps1))
 
-            mps1 = ' '.join([node.strip() for node in row[2].split('\u3000')])
-            mps1 = re.split(kPattern1, trimMps1(mps1))
+                mps2 = ' '.join([node.strip() for node in row[3].split('\u3000')])
+                mps2 = [trimMps2(node) for node in re.split(kPattern1, mps2)]
 
-            mps2 = ' '.join([node.strip() for node in row[3].split('\u3000')])
-            mps2 = [trimMps2(node) for node in re.split(kPattern1, mps2)]
+                if indexExists(row, 4):
+                    extra = row[4].replace('<br>', '\u3000')
+                    extra = ' '.join([node.strip() for node in extra.split('\u3000')])
+                    extra = ' '.join(list(filter(None, [node.strip() for node in re.split(kPattern1, extra)])))
+                    extra = [node.strip() for node in extra.split()]
 
-            if indexExists(row, 4):
-                extra = row[4].replace('<br>', '\u3000')
-                extra = ' '.join([node.strip() for node in extra.split('\u3000')])
-                extra = ' '.join(list(filter(None, [node.strip() for node in re.split(kPattern1, extra)])))
-                extra = [node.strip() for node in extra.split()]
+                    for item in extra:
+                        item = item.strip()
+                        try:
+                            item = item.encode('ascii', 'asciify').decode()
+                            mps2.append(item)
+                        except:
+                            mps1.append(trimMps1(item))
 
-                for item in extra:
-                    item = item.strip()
-                    try:
-                        item = item.encode('ascii', 'asciify').decode()
-                        mps2.append(item)
-                    except:
-                        mps1.append(trimMps1(item))
+                mps1 = uniqueList(mps1)
+                mps2 = uniqueList(mps2)
 
-            mps1 = uniqueList(mps1)
-            mps2 = uniqueList(mps2)
+                #     print(phrase)
+                #     print(f"mps1: {row[2]} => {mps1}")
+                #     print(f"mps2: {row[3]} => {mps2}")
 
-            #     print(phrase)
-            #     print(f"mps1: {row[2]} => {mps1}")
-            #     print(f"mps2: {row[3]} => {mps2}")
+                for mps in mps2:
+                    # print(f"{phrase}\t0\t{mps}")
+                    if kStripMpsSpaceSeparate:
+                        contents += f"{phrase}\t0\t{''.join(mps.split())}\n"
+                    else:
+                        contents += f"{phrase}\t0\t{mps}\n"
 
-            for mps in mps2:
-                # print(f"{phrase}\t0\t{mps}")
-                if kStripMpsSpaceSeparate:
-                    contents += f"{phrase}\t0\t{''.join(mps.split())}\n"
-                else:
-                    contents += f"{phrase}\t0\t{mps}\n"
-
-        fp.close()
+        # fp.close()
 
     # if not outputPath:
     #     print(contents)

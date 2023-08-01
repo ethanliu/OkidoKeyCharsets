@@ -13,7 +13,7 @@ import re
 from tqdm import tqdm
 from enum import IntEnum
 
-from lib.util import trim
+from lib.util import trim, chunks
 
 class CinTableParseLevel(IntEnum):
     No = 0
@@ -70,7 +70,6 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         sys.exit()
 
     def parse(self, level: CinTableParseLevel = CinTableParseLevel.Header):
-        # counter = 0
         if not self.fileExists():
             self.error("File not exists")
 
@@ -79,74 +78,72 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
             currentSection = None
             ignoreSection = None
 
-            for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
-            # for line in fp.readlines():
-                line = trim(line)
-                if not line:
-                    continue
-                if line.startswith('#') and not self.info:
-                    # line = line.replace('#', '').strip()
-                    line = line.lstrip('# ').rstrip('# ')
-                    # if not line:
+            for chunk in chunks(fp.readlines(), size = 50000, max = 0):
+                for line in tqdm(chunk, desc = f"CIN[]", unit = 'MB', unit_scale = True, ascii = True):
+
+                # for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
+                # for line in fp.readlines():
+                    line = trim(line)
+                    if not line:
+                        continue
+                    if line.startswith('#') and not self.info:
+                        # line = line.replace('#', '').strip()
+                        line = line.lstrip('# ').rstrip('# ')
+                        # if not line:
+                        #     continue
+                        if len(self.info) < 1:
+                            self.description += f"{line}\n"
+                        continue
+
+                    line = trim(line, '#')
+                    items = re.split('[\s\t]{1}', line, 1)
+                    # if len(items) < 2:
                     #     continue
-                    if len(self.info) < 1:
-                        self.description += f"{line}\n"
-                    continue
 
-                line = trim(line, '#')
-                items = re.split('[\s\t]{1}', line, 1)
-                # if len(items) < 2:
-                #     continue
+                    key = trim(items[0]).lower()
+                    value = trim((items[1:2] or ('', ''))[0])
+                    # print(f"{key} => _{value}_")
 
-                key = trim(items[0]).lower()
-                value = trim((items[1:2] or ('', ''))[0])
-                # print(f"{key} => _{value}_")
-
-                if key in self.definedSections:
-                    if currentSection == key and value == "end":
-                        currentSection = None
-                        ignoreSection = None
-                        # print(f"end section: {key}")
-                    else:
-                        if level == CinTableParseLevel.Header and key == "%chardef":
+                    if key in self.definedSections:
+                        if currentSection == key and value == "end":
                             currentSection = None
-                            ignoreSection = key
-                        else:
-                            currentSection = key
                             ignoreSection = None
-                        # print(f"start section: {key}")
-                    continue
-
-                if not currentSection:
-                    if ignoreSection:
-                        # print(f"Ignore section: {ignoreSection}")
-                        continue
-                    if key.startswith('%') and (value == 'begin' or value == 'end'):
-                        ignoreSection = key
-                        # print(f"[?] Unknown section: {key}")
-                        self.unknownTags.append(key)
+                            # print(f"end section: {key}")
+                        else:
+                            if level == CinTableParseLevel.Header and key == "%chardef":
+                                currentSection = None
+                                ignoreSection = key
+                            else:
+                                currentSection = key
+                                ignoreSection = None
+                            # print(f"start section: {key}")
                         continue
 
-                    if not key in self.definedTags:
-                        # print(f"[?] Unknown tag: {key}")
-                        self.unknownTags.append(key)
+                    if not currentSection:
+                        if ignoreSection:
+                            # print(f"Ignore section: {ignoreSection}")
+                            continue
+                        if key.startswith('%') and (value == 'begin' or value == 'end'):
+                            ignoreSection = key
+                            # print(f"[?] Unknown section: {key}")
+                            self.unknownTags.append(key)
+                            continue
+
+                        if not key in self.definedTags:
+                            # print(f"[?] Unknown tag: {key}")
+                            self.unknownTags.append(key)
+                            continue
+
+                        self.info[key[1:]] = value
                         continue
 
-                    self.info[key[1:]] = value
-                    continue
+                    if currentSection == "%keyname":
+                        self.keyname[key] = value
+                        continue
 
-                if currentSection == "%keyname":
-                    self.keyname[key] = value
-                    continue
-
-                if currentSection == "%chardef" and value:
-                    # self.chardef[key] = value
-                    self.chardef.append([key, value])
-
-                # counter += 1
-                # if counter > 50:
-                #     # self.error("end test")
-                #     break
+                    if currentSection == "%chardef" and value:
+                        # self.chardef[key] = value
+                        self.chardef.append([key, value])
 
         self.description = trim(self.description, space = True)
 
