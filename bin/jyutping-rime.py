@@ -16,8 +16,6 @@ from tqdm import tqdm
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = -1000
-
 def phrase2csv(inputPath, outputPath):
     filename = os.path.basename(inputPath)
     contents = ""
@@ -25,8 +23,8 @@ def phrase2csv(inputPath, outputPath):
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
                     continue;
@@ -36,9 +34,6 @@ def phrase2csv(inputPath, outputPath):
                     if row and row[0] == '...':
                         began = True
                     continue
-
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
 
                 # phrase = uu.trim(row[0] or '')
                 # pinyin = uu.trim(''.join(row[1:] or []))
@@ -68,7 +63,7 @@ def phrase2csv(inputPath, outputPath):
 
                 contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
-        fp.close()
+        # fp.close()
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
@@ -83,8 +78,8 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
                     continue;
@@ -98,9 +93,6 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
                     if row and row[0] == '...':
                         began = True
                     continue
-
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
 
                 phrase = uu.trim(row[0] or '')
                 pinyin = uu.trim(row[1] or '')

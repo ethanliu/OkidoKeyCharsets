@@ -20,21 +20,21 @@ def performImport(cursor, inputPath):
     cursor.execute("BEGIN TRANSACTION")
 
     filename = os.path.basename(inputPath)
-    total = uu.totalLines(inputPath)
 
     with open(inputPath, 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
-        for row in tqdm(reader, total = total, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename}"):
-            phrase = (row[0] or '').strip()
-            weight = row[1] or 0
-            pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
+                phrase = (row[0] or '').strip()
+                weight = row[1] or 0
+                pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
 
-            if not phrase or len(phrase) < 2:
-                continue
+                if not phrase or len(phrase) < 2:
+                    continue
 
-            query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
-            args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
-            cursor.execute(query, args)
+                query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
+                args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
+                cursor.execute(query, args)
 
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')

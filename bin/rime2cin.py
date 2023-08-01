@@ -13,8 +13,6 @@ from tqdm import tqdm
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = -1000
-
 def yaml2cin(inputPath, outputPath, headerPath):
     filename = os.path.basename(outputPath)
     contents = ""
@@ -23,8 +21,8 @@ def yaml2cin(inputPath, outputPath, headerPath):
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
                     continue;
@@ -38,9 +36,6 @@ def yaml2cin(inputPath, outputPath, headerPath):
                         began = True
                     continue
 
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
-
                 phrase = uu.trim(row[0] or '')
                 pinyin = uu.trim(row[1] or '')
 
@@ -49,7 +44,7 @@ def yaml2cin(inputPath, outputPath, headerPath):
 
                 contents += f"{pinyin}\t{phrase}\n"
 
-        fp.close()
+        # fp.close()
 
     with open(headerPath, 'r') as fp:
         template = fp.read()

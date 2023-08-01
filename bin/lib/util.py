@@ -12,6 +12,8 @@ import subprocess
 import re
 import os
 import unicodedata
+# from tqdm import tqdm
+from itertools import islice
 
 class Colors:
     reset = '\u001b[0m'
@@ -108,15 +110,25 @@ def totalLines(path):
         total = len(fp.readlines())
     return total
 
-def chunks(reader, size = 10000):
+def chunks(reader, size = 100000, max = 0):
     chunk = []
-    for i, line in enumerate(reader):
+    data = enumerate(reader)
+    if max > 0:
+        data = islice(data, max)
+    for i, line in data:
         if (i % size == 0 and i > 0):
             yield chunk
             # del chunk[:]
             chunk = []
         chunk.append(line)
     yield chunk
+
+# def xtqdm(data, size = 1000, desc = "", max: int = 0):
+#     size = max > 0 if max else size
+#     for chunk in chunks(data, size, max):
+#         # how to yield?
+#         yield tqdm(chunk, desc = desc, unit = 'MB', unit_scale = True, ascii = True)
+
 
 def getOne(cursor, query, args = None):
     if args == None:

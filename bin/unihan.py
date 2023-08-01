@@ -21,8 +21,6 @@ from enum import IntEnum
 uu = importlib.import_module("lib.util")
 
 basedir = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
-consoleBufferSize = -100
-
 
 # https://www.unicode.org/reports/tr38/#kCompatibilityVariant
 
@@ -149,12 +147,10 @@ def importWeight(cursor):
 
     with open(path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"Weight"):
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"Lexicon[Weight]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row or not len(row) == 2:
                     continue
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
                 radical = uu.trim(row[0])
                 weight = int(row[1])
                 if len(radical) > 1 or weight < 1:
@@ -210,99 +206,88 @@ def importClassified(cursor):
     cursor.execute("COMMIT TRANSACTION")
 
 def parseRadical(cursor, repo, namespace):
-    counter = 0
-
     query = "INSERT INTO `radical` (`radical`, `pinyin`, `classified`, `score`, `stroke`, `weight`) VALUES (:radical, :pinyin, :classified, :score, :stroke, :weight)"
 
     cursor.execute("BEGIN TRANSACTION")
-    for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"Radical"):
-    # for child in repo.findall('ucd:char', namespace):
-        if consoleBufferSize > 0 and counter > consoleBufferSize:
-            break
-        counter += 1
 
-        char = Char(child)
+    for chunk in uu.chunks(repo.findall('ucd:char', namespace), max = 0):
+        for child in tqdm(chunk, desc = f"Unihan[Radical]", unit = 'MB', unit_scale = True, ascii = True):
+        # for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"Radical"):
+        # for child in repo.findall('ucd:char', namespace):
+            char = Char(child)
 
-        params = {
-            "radical": char.text,
-            "pinyin": char.mandarin or None,
-            "classified": char.classified,
-            "score": char.score,
-            "stroke": char.stroke,
-            "weight": 0,
-        }
-        cursor.execute(query, params)
+            params = {
+                "radical": char.text,
+                "pinyin": char.mandarin or None,
+                "classified": char.classified,
+                "score": char.score,
+                "stroke": char.stroke,
+                "weight": 0,
+            }
+            cursor.execute(query, params)
 
-    cursor.execute("COMMIT TRANSACTION")
+        cursor.execute("COMMIT TRANSACTION")
 
 def parseSimplified(cursor, repo, namespace):
-    counter = 0
-
     query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
     query2 = "INSERT INTO `t2s` (`hant_id`, `hans_id`) VALUES (:hant_id, :hans_id)"
 
     cursor.execute("BEGIN TRANSACTION")
 
-    for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"t2s"):
-    # for child in repo.findall('ucd:char', namespace):
-        char = Char(child)
-        if not char.simplifiedVariant:
-            continue
-
-        if consoleBufferSize > 0 and counter > consoleBufferSize:
-            break
-        counter += 1
-
-        hant_id = uu.getOne(cursor, query1, {"radical": char.text})
-        if not hant_id:
-            print("Radical not found")
-            print(char)
-            sys.exit()
-
-        for c in char.simplifiedVariant:
-            hans_id = uu.getOne(cursor, query1, {"radical": c})
-            if not hans_id:
-                print("Hans radical not found")
-                print(char)
-                # sys.exit()
+    for chunk in uu.chunks(repo.findall('ucd:char', namespace), max = 0):
+        for child in tqdm(chunk, desc = f"Unihan[SC]", unit = 'MB', unit_scale = True, ascii = True):
+        # for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"t2s"):
+        # for child in repo.findall('ucd:char', namespace):
+            char = Char(child)
+            if not char.simplifiedVariant:
                 continue
-            cursor.execute(query2, {"hant_id": hant_id, "hans_id": hans_id})
-            # tqdm.write(f"[t2s]: {char.text} => {c}")
+
+            hant_id = uu.getOne(cursor, query1, {"radical": char.text})
+            if not hant_id:
+                print("Radical not found")
+                print(char)
+                sys.exit()
+
+            for c in char.simplifiedVariant:
+                hans_id = uu.getOne(cursor, query1, {"radical": c})
+                if not hans_id:
+                    print("Hans radical not found")
+                    print(char)
+                    # sys.exit()
+                    continue
+                cursor.execute(query2, {"hant_id": hant_id, "hans_id": hans_id})
+                # tqdm.write(f"[t2s]: {char.text} => {c}")
 
     cursor.execute("COMMIT TRANSACTION")
 
 def parseTraditional(cursor, repo, namespace):
-    counter = 0
-
     query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
     query2 = "INSERT INTO `s2t` (`hans_id`, `hant_id`) VALUES (:hans_id, :hant_id)"
 
     cursor.execute("BEGIN TRANSACTION")
 
-    for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"s2t"):
-    # for child in repo.findall('ucd:char', namespace):
-        char = Char(child)
+    for chunk in uu.chunks(repo.findall('ucd:char', namespace), max = 0):
+        for child in tqdm(chunk, desc = f"Unihan[TC]", unit = 'MB', unit_scale = True, ascii = True):
+        # for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"s2t"):
+        # for child in repo.findall('ucd:char', namespace):
+            char = Char(child)
 
-        if not char.traditionalVariant:
-            continue
+            if not char.traditionalVariant:
+                continue
 
-        if consoleBufferSize > 0 and counter > consoleBufferSize:
-            break
-        counter += 1
-
-        hans_id = uu.getOne(cursor, query1, {"radical": char.text})
-        if not hans_id:
-            print("Radical not found")
-            print(char)
-            sys.exit()
-
-        for c in char.traditionalVariant:
-            hant_id = uu.getOne(cursor, query1, {"radical": c})
-            if not hant_id:
-                print("Hant radical not found")
+            hans_id = uu.getOne(cursor, query1, {"radical": char.text})
+            if not hans_id:
+                print("Radical not found")
                 print(char)
                 sys.exit()
-            cursor.execute(query2, {"hant_id": hant_id, "hans_id": hans_id})
+
+            for c in char.traditionalVariant:
+                hant_id = uu.getOne(cursor, query1, {"radical": c})
+                if not hant_id:
+                    print("Hant radical not found")
+                    print(char)
+                    sys.exit()
+                cursor.execute(query2, {"hant_id": hant_id, "hans_id": hans_id})
 
     cursor.execute("COMMIT TRANSACTION")
 

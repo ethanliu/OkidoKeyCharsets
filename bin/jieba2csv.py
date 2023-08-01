@@ -17,7 +17,7 @@ from tqdm import tqdm
 uu = importlib.import_module("lib.util")
 
 _dir_ = uu.dir(__file__)
-consoleBufferSize = -10000
+
 # workers = 2 * multiprocessing.cpu_count()
 # print(f"num of workers: \(workers)")
 
@@ -37,14 +37,8 @@ def parse(inputPath, outputPath):
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = ' ')
-        # for row in reader:
-        # for row in tqdm(reader, unit = 'MB', unit_scale = True, ascii = True, desc = f"Convert {filename}"):
-        for rows in uu.chunks(reader, 100000):
-
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
-
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 phrase = uu.trim(row[0] or '')
                 weight = row[1] or 0
                 pinyin = ''

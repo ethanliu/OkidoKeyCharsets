@@ -14,23 +14,17 @@ from tqdm import tqdm
 
 uu = importlib.import_module("lib.util")
 
-consoleBufferSize = -1000
-
 def txt2csv(inputPath, outputPath, column, delimiter):
     filename = os.path.basename(outputPath)
     contents = ""
 
     with open(inputPath) as fp:
         reader = csv.reader(fp, delimiter = delimiter)
-        for rows in uu.chunks(reader, 100000):
-            for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{filename} Chunk[]"):
+        for chunk in uu.chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
                     continue;
-
-                if consoleBufferSize > 0 and len(contents) > consoleBufferSize:
-                    break
-
 
                 phrase = ''
                 weight = 0
@@ -56,7 +50,7 @@ def txt2csv(inputPath, outputPath, column, delimiter):
 
                 contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
-        fp.close()
+        # fp.close()
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)
