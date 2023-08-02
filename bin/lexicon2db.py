@@ -32,7 +32,7 @@ def performImport(cursor, inputPath):
                 if not phrase or len(phrase) < 2:
                     continue
 
-                query = "INSERT INTO lexicon (phrase, weight, pinyin) VALUES (:phrase, :weight, :pinyin)"
+                query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin, category_id) VALUES (:phrase, :weight, :pinyin, 0)"
                 args = {'phrase': phrase, 'weight': weight, 'pinyin': pinyin}
                 cursor.execute(query, args)
 
@@ -66,8 +66,7 @@ def main():
     cursor = db.cursor()
 
     # cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin_id` INTEGER NOT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0)")
-    cursor.execute("CREATE TABLE lexicon (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0)")
+    cursor.execute("CREATE TABLE `lexicon` (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`))")
 
     performImport(cursor, args.input)
     db.commit()
