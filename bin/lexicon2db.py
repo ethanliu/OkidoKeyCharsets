@@ -9,8 +9,11 @@ import argparse
 import importlib
 import sys, os
 import csv
+import re
 import sqlite3
 from tqdm import tqdm
+
+kPatternPhrase = r"_x([0-9A-F]{4})_"
 
 uu = importlib.import_module("lib.util")
 
@@ -30,6 +33,17 @@ def performImport(cursor, inputPath):
                 pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
 
                 if not phrase or len(phrase) < 2:
+                    # tqdm.write(f"too short: {phrase}")
+                    continue
+
+                # pic format
+                if ".gif" in phrase or ".png" in phrase:
+                    # tqdm.write(f"img: {phrase}")x
+                    continue
+
+                # custom font format
+                if re.search(kPatternPhrase, phrase):
+                    # tqdm.write(f"custom font: {phrase}")
                     continue
 
                 query = "INSERT OR IGNORE INTO lexicon (phrase, weight, pinyin, category_id) VALUES (:phrase, :weight, :pinyin, 0)"
