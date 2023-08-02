@@ -78,10 +78,10 @@ def parse(inputPath, outputPath):
                     # print(f"Ignore short phrase: {phrase}")
                     continue
 
-                if ".gif" in phrase or ".png" in phrase:
-                    # TODO: unicode mapping
-                    # print(f"Ignore legacy phrase: {phrase}")
-                    continue
+                # if ".gif" in phrase or ".png" in phrase:
+                #     # TODO: unicode mapping
+                #     # print(f"Ignore legacy phrase: {phrase}")
+                #     continue
 
                 mps1 = ' '.join([node.strip() for node in row[2].split('\u3000')])
                 mps1 = re.split(kPattern1, trimMps1(mps1))
