@@ -332,40 +332,71 @@ mcbpmf:
 	@bin/lexicon2db.py -i lexicon/McBopomofo-phrase.csv -o db/lexicon-McBopomofo-phrase.csv.db
 	@$(call timeStop)
 
-moe-csv:
-	@$(call timeStart)
-
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_revised_*_1.xls)))
-	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)_1\.xls/\1/' ))
-	@echo "Convert: revised ${version}..."
-	@in2csv rawdata/moe/src/dict_revised_${version}_1.xls > rawdata/moe/revised1-raw.csv
-	@in2csv rawdata/moe/src/dict_revised_${version}_2.xls > rawdata/moe/revised2-raw.csv
-	@in2csv rawdata/moe/src/dict_revised_${version}_3.xls > rawdata/moe/revised3-raw.csv
-	@csvstack rawdata/moe/revised1-raw.csv rawdata/moe/revised2-raw.csv rawdata/moe/revised3-raw.csv > rawdata/moe/revised-raw.csv
+moe-revised:
+	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_revised_*.xlsx)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)\.xlsx/\1/' ))
+	@echo "revised: ${version}"
+	@in2csv rawdata/moe/src/dict_revised_${version}.xlsx > rawdata/moe/revised-raw.csv
 	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/revised-raw.csv > rawdata/moe/revised.csv
 	@-rm rawdata/moe/revised-raw.csv
-	@-rm rawdata/moe/revised1-raw.csv
-	@-rm rawdata/moe/revised2-raw.csv
-	@-rm rawdata/moe/revised3-raw.csv
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-revised.csv.txt
 
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xls)))
-	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xls/\1/' ))
-	@echo "Convert: idioms ${version}..."
-	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/idioms-raw.csv
+# original dict_idioms_2020_20230629.xls cam with incomplete fomular
+moe-idioms:
+	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xlsx)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xlsx/\1/' ))
+	@echo "idioms: ${version}"
+	@in2csv rawdata/moe/src/dict_idioms_${version}.xlsx > rawdata/moe/idioms-raw.csv
 	@csvcut -c 編號,成語,注音,漢語拼音 rawdata/moe/idioms-raw.csv > rawdata/moe/idioms.csv
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-idioms.csv.txt
 	@-rm rawdata/moe/idioms-raw.csv
 
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_concised_*.xls)))
-	@$(eval version = $(shell echo '${version}' | sed 's/dict_concised_\(.*\)\.xls/\1/' ))
-	@echo "Convert: concised ${version}..."
-	@in2csv rawdata/moe/src/dict_concised_${version}.xls > rawdata/moe/concised-raw.csv
+moe-concised:
+	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_concised_*.xlsx)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_concised_\(.*\)\.xlsx/\1/' ))
+	@echo "concised: ${version}"
+	@in2csv rawdata/moe/src/dict_concised_${version}.xlsx > rawdata/moe/concised-raw.csv
 	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/concised-raw.csv > rawdata/moe/concised.csv
 	@-rm rawdata/moe/concised-raw.csv
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-concised.csv.txt
 
-	@$(call timeStop)
+moe-csv: moe-idioms moe-concised moe-revised
+	@echo "General all mos csv files from xlx"
+
+# moe-csv1:
+# 	@$(call timeStart)
+
+# 	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_revised_*_1.xls)))
+# 	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)_1\.xls/\1/' ))
+# 	@echo "Convert: revised ${version}..."
+# 	@in2csv rawdata/moe/src/dict_revised_${version}_1.xls > rawdata/moe/revised1-raw.csv
+# 	@in2csv rawdata/moe/src/dict_revised_${version}_2.xls > rawdata/moe/revised2-raw.csv
+# 	@in2csv rawdata/moe/src/dict_revised_${version}_3.xls > rawdata/moe/revised3-raw.csv
+# 	@csvstack rawdata/moe/revised1-raw.csv rawdata/moe/revised2-raw.csv rawdata/moe/revised3-raw.csv > rawdata/moe/revised-raw.csv
+# 	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/revised-raw.csv > rawdata/moe/revised.csv
+# 	@-rm rawdata/moe/revised-raw.csv
+# 	@-rm rawdata/moe/revised1-raw.csv
+# 	@-rm rawdata/moe/revised2-raw.csv
+# 	@-rm rawdata/moe/revised3-raw.csv
+# 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-revised.csv.txt
+
+# 	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xls)))
+# 	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xls/\1/' ))
+# 	@echo "Convert: idioms ${version}..."
+# 	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/idioms-raw.csv
+# 	@csvcut -c 編號,成語,注音,漢語拼音 rawdata/moe/idioms-raw.csv > rawdata/moe/idioms.csv
+# 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-idioms.csv.txt
+# 	@-rm rawdata/moe/idioms-raw.csv
+
+# 	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_concised_*.xls)))
+# 	@$(eval version = $(shell echo '${version}' | sed 's/dict_concised_\(.*\)\.xls/\1/' ))
+# 	@echo "Convert: concised ${version}..."
+# 	@in2csv rawdata/moe/src/dict_concised_${version}.xls > rawdata/moe/concised-raw.csv
+# 	@csvcut -c 字詞號,字詞名,注音一式,漢語拼音,多音參見訊息 rawdata/moe/concised-raw.csv > rawdata/moe/concised.csv
+# 	@-rm rawdata/moe/concised-raw.csv
+# 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' lexicon/MoE-concised.csv.txt
+
+# 	@$(call timeStop)
 
 moe-db:
 	@$(call timeStart)
