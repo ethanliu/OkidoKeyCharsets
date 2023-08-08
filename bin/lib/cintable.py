@@ -77,6 +77,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
 
             currentSection = None
             ignoreSection = None
+            acceptComments = True
 
             for chunk in chunks(fp.readlines(), size = 50000, max = 0):
                 for line in tqdm(chunk, desc = f"CIN[]", unit = 'MB', unit_scale = True, ascii = True):
@@ -86,12 +87,14 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                     line = trim(line)
                     if not line:
                         continue
-                    if line.startswith('#') and not self.info:
+                    # if line.startswith('#') and not self.info:
+                    if line.startswith('#'):
                         # line = line.replace('#', '').strip()
                         line = line.lstrip('# ').rstrip('# ')
                         # if not line:
                         #     continue
-                        if len(self.info) < 1:
+                        # ignore comments in charset
+                        if acceptComments:
                             self.description += f"{line}\n"
                         continue
 
@@ -103,6 +106,10 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                     key = trim(items[0]).lower()
                     value = trim((items[1:2] or ('', ''))[0])
                     # print(f"{key} => _{value}_")
+
+                    if acceptComments and value == "begin":
+                        # once any section began, ignore all comments for "description"
+                        acceptComments = False
 
                     if key in self.definedSections:
                         if currentSection == key and value == "end":
@@ -130,7 +137,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                             continue
 
                         if not key in self.definedTags:
-                            # print(f"[?] Unknown tag: {key}")
+                            # print(f"[?] Unknown tag: {key} {value}")
                             self.unknownTags.append(key)
                             continue
 
