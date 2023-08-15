@@ -3,6 +3,7 @@
 # 它同时支持86版和98版两种五笔编码，全面支持GBK：避免了以往传统五笔对于「镕」「堃」「喆」「玥」「冇」「啰」等汉字无法录入的尴尬。
 # 同时，极点五笔完美支持一笔、二笔等各种“型码”及“音型码”输入法。
 %gen_inp
+%locale zh-Hans
 %ename jidianWubi (JiDianWubi)
 %cname 极点五笔
 %tcname 极点五笔

@@ -1,4 +1,5 @@
 %gen_inp
+%locale zh-Hans
 %ename Pinyin (Simplified Chinese)
 %cname 简体汉語拼音
 %tcname 簡體漢語拼音
