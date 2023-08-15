@@ -1,4 +1,5 @@
 %gen_inp
+%locale zh-Hans
 %ename Wu Phonetic (Simplified)
 %cname 吴语注音法（简體）
 %encoding UTF-8

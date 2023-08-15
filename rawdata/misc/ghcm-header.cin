@@ -17,6 +17,7 @@
 # 而「i」键原定义为直出「，」而非字根，但为统一输入行为，仍先将「i」键列为字根。
 #
 #
+%locale zh-Hans
 %ename ghcm
 %cname 矧码
 %encoding UTF-8
