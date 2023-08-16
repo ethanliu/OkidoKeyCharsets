@@ -7,38 +7,54 @@
 
 import argparse
 import importlib
-import sys, os, glob, re, shutil
+import sys, os, glob
+# import shutil
 import sqlite3, json
 from datetime import datetime
 from lib.cintable import CinTable
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
+repos = ["github", "gitee"]
 
-def splitFile(filename):
-    path1 = f"{cwd}/db/{filename}"
-    path2 = f"{cwd}/rawdata/gitee/db/{filename}"
+# distPath = uu.dir(__file__ + "/../../") + "/repo-dist"
+# distPath = f"{cwd}/dist"
 
-    # print('---')
-    # print(path1)
-    # print(path2)
+# repos = {
+#     "github": f"{distPath}/github",
+#     "gitee": f"{distPath}/gitee"
+# }
 
-    for file in glob.glob(f"{path2}.*"):
-        os.remove(file)
+# print(cwd)
+# print(distPath)
 
-    shutil.copy(path1, path2)
-    uu.call([f"{cwd}/bin/LoveMachine -s {path2}"])
-    os.remove(path2)
+# sys.exit();
+
+# def splitFile(src, dst, size = 1024):
+#     # path1 = f"{cwd}/db/{filename}"
+#     # path2 = f"{cwd}/rawdata/gitee/db/{filename}"
+
+#     # print('---')
+#     # print(src)
+#     # print(dst)
+
+#     for file in glob.glob(f"{dst}.*"):
+#         os.remove(file)
+
+#     shutil.copy(src, dst)
+#     uu.call([f"{cwd}/bin/LoveMachine -s --{size} {dst}"])
+#     os.remove(dst)
 
 def createJsonFile(path, content):
-    print(uu.color(f"{os.path.basename(path)} created.", fg = 'green'))
+    print(uu.color(f"{os.path.basename(path)} created.", fg = 'cyan'))
     with open(path, 'w') as f:
         f.write(json.dumps(content, ensure_ascii = False, indent = 4, sort_keys = True))
         f.close()
+    # shutil.copy(path, f"{repos['gitee']}/")
+    # shutil.copy(path, f"{repos['github']}/")
 
-
-def createKeyboard():
-    outputPath = f"{cwd}/KeyboardLayouts.json"
+def createKeyboard(outputPath):
+    # outputPath = f"{cwd}/KeyboardLayouts.json"
     charsetPath = f"{cwd}/charset"
 
     jsondata = {
@@ -78,11 +94,10 @@ def createKeyboard():
 
     createJsonFile(outputPath, jsondata)
 
-def createTable():
-    outputPath = f"{cwd}/DataTables.json"
-    dbPath = f"{cwd}/db"
-    tablePath = f"{cwd}/table"
-    giteeRepoPath = f"{cwd}/rawdata/gitee/db"
+def createTable(outputPath):
+    target = "table"
+    srcPath = f"{cwd}/{target}"
+    dbPath = f"{cwd}/dist/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -93,38 +108,38 @@ def createTable():
     for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('.db', '')
-        splitFile(dbFilename)
-        cin = CinTable(f"{tablePath}/{filename}", level = 1)
+
+        # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
+        # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
+
+        cin = CinTable(f"{srcPath}/{filename}", level = 1)
         content = {
             'ename': cin.info.get('ename') or '',
             'cname': cin.info.get('cname') or '',
             'name': cin.info.get('name') or '',
-            'cin': f"table/{filename}",
-            'db': f"db/{dbFilename}",
+            'path': f"{target}/{dbFilename}",
+            # 'src': f"{target}/{filename}",
             'license': cin.description,
         }
         # print(content)
         jsondata['datatables'].append(content)
 
-        # splits
-        list = glob.glob(f"{giteeRepoPath}/{filename}*")
-        # print(f"{filename}: {len(list)}")
+        # splits counter
+        if not dbFilename in jsondata['splits']:
+            jsondata['splits'][dbFilename] = {}
 
-        if not filename in jsondata['splits']:
-            jsondata['splits'][filename] = {}
-
-        if not 'gitee' in jsondata['splits'][filename]:
-            jsondata['splits'][filename]['gitee'] = len(list)
-
-        # jsondata['splits'][filename]['gitee'] = len(list)
+        for repo in repos:
+            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{dbFilename}*")
+            # print(f"{filename}: {len(list)}")
+            if not repo in jsondata['splits'][dbFilename]:
+                jsondata['splits'][dbFilename][repo] = len(list)
 
     createJsonFile(outputPath, jsondata)
 
-def createLexicon():
-    outputPath = f"{cwd}/Lexicon.json"
-    dbPath = f"{cwd}/db"
-    lexiconPath = f"{cwd}/lexicon"
-    giteeRepoPath = f"{cwd}/rawdata/gitee/db"
+def createLexicon(outputPath):
+    target = "lexicon"
+    srcPath = f"{cwd}/{target}"
+    dbPath = f"{cwd}/dist/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -132,18 +147,19 @@ def createLexicon():
         'splits': {},
     }
 
-    for path in sorted(glob.glob(f"{dbPath}/lexicon-*.csv.db")):
+    for path in sorted(glob.glob(f"{dbPath}/*.csv.db")):
         dbFilename = os.path.basename(path)
-        filename = dbFilename.replace('lexicon-', '').replace('.db', '')
-        txtPath = f"{lexiconPath}/{filename}.txt"
+        filename = dbFilename.replace('.db', '')
+        txtPath = f"{srcPath}/{filename}.txt"
 
         if not os.path.exists(txtPath):
             print("File not found: {txtPath}")
             continue
 
-        splitFile(dbFilename)
+        # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
+        # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
 
-        reader = open(f"{lexiconPath}/{filename}.txt", 'r')
+        reader = open(f"{srcPath}/{filename}.txt", 'r')
         template = reader.read()
         reader.close()
 
@@ -168,37 +184,37 @@ def createLexicon():
         # print(template)
         jsondata['resources'].append({
             'name': name,
-            'db': f"db/{dbFilename}",
+            'path': f"{target}/{dbFilename}",
             'description': template,
         })
 
-        # splits
-        list = glob.glob(f"{giteeRepoPath}/{dbFilename}*")
-        # print(f"{filename}: {len(list)}")
-
+        # splits counter
         if not dbFilename in jsondata['splits']:
             jsondata['splits'][dbFilename] = {}
 
-        if not 'gitee' in jsondata['splits'][dbFilename]:
-            jsondata['splits'][dbFilename]['gitee'] = len(list)
-
+        for repo in repos:
+            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{dbFilename}*")
+            # print(f"{filename}: {len(list)}")
+            if not repo in jsondata['splits'][dbFilename]:
+                jsondata['splits'][dbFilename][repo] = len(list)
 
     createJsonFile(outputPath, jsondata)
 
 def main():
     argParser = argparse.ArgumentParser(description='Resource files generator')
     argParser.add_argument('-c', '--category', required = True, choices=['keyboard', 'lexicon', 'table'], help='Resource category')
+    argParser.add_argument('-o', '--output', type = str, required = True, help='Output file path')
 
     args = argParser.parse_args()
     # print(args, len(sys.argv))
 
     match args.category:
         case 'keyboard':
-            createKeyboard()
+            createKeyboard(args.output)
         case 'table':
-            createTable()
+            createTable(args.output)
         case 'lexicon':
-            createLexicon()
+            createLexicon(args.output)
 
     sys.exit(0)
 
