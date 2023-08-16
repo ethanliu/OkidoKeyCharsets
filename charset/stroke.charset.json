@@ -23,12 +23,23 @@
         ]
     },
     {
-        "name": "stroke-stroke5-choco",
-        "description": "筆順五碼",
+        "name": "stroke-stroke5-keypad-choco",
+        "description": "筆順五碼(數字鍵)",
         "charsets":
         [
             "[esc][2:－][5:｜][3:丿][del]",
             "[(][4:丶][1:ㄣ][*:＊][「]",
+            "[：][，][。][？][！]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "stroke-stroke5-choco",
+        "description": "筆順五碼",
+        "charsets":
+        [
+            "[esc][m:－][/:｜][,:丿][del]",
+            "[(][.:丶][n:ㄣ][*:＊][「]",
             "[：][，][。][？][！]",
             "[next][globe][space][return]"
         ]
