@@ -194,6 +194,12 @@ dist:
 		fi ; \
 	done;
 
+	@# ???: auto commit to dist repo
+	@echo Update github
+	@cp -aR ${DIST_DIR}/${GITHUB_DIR}/* ../repo-dist/${GITHUB_DIR}
+	@echo Update gitee
+	@cp -aR ${DIST_DIR}/${GITEE_DIR}/* ../repo-dist/${GITEE_DIR}
+
 lexicon-array:
 	@$(eval file := $(wildcard rawdata/array30/array30-phrase*.txt))
 	@mkdir -p ${LEXICON_DIST_PATH}
@@ -237,8 +243,6 @@ pull:
 	@cd rawdata/rime-cantonese; git pull
 	@echo "upstream: McBopomofo"
 	@cd rawdata/McBopomofo; git pull
-	@echo "upstream: tongwen"
-	@cd rawdata/tongwen-core; git pull
 
 array10:
 	@echo "Update local version from upsteam..."

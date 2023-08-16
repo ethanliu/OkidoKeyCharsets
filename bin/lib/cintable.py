@@ -78,9 +78,10 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
             currentSection = None
             ignoreSection = None
             acceptComments = True
+            disable = False if level > 2 else True
 
             for chunk in chunks(fp.readlines(), size = 50000, max = 0):
-                for line in tqdm(chunk, desc = f"CIN[]", unit = 'MB', unit_scale = True, ascii = True):
+                for line in tqdm(chunk, desc = f"CIN[]", unit = 'MB', unit_scale = True, ascii = True, disable = disable):
 
                 # for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
                 # for line in fp.readlines():
@@ -120,6 +121,8 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                             if level == CinTableParseLevel.Header and key == "%chardef":
                                 currentSection = None
                                 ignoreSection = key
+                                # normally this should be fine
+                                break
                             else:
                                 currentSection = key
                                 ignoreSection = None

@@ -8,12 +8,11 @@ https://itunes.apple.com/us/app/okidokey/id945116579?ls=1&mt=8
 
 # About this repo
 
-This repo contains:  
+This repo contains:
 
-charset - Keyboard layouts configs of Frankie and OkidoKey  
-db - Pre-compiled SQLite database for Frankie and OkidoKey  
-lexicon - Chinese phrased or idioms in csv format  
-table - Input method data tables in cin format  
+charset - Keyboard layouts configs of Frankie and OkidoKey
+lexicon - Chinese phrased or idioms in csv format
+table - Input method data tables in cin format
 
 ## Charset format
 
@@ -23,9 +22,9 @@ The `name` property must be unique in the whole collections.  `charsets` can hav
 
 Optional properties:
 
-`description`: description for the charset  
-`flicks`: flick keys for this charset  
-`keynameType`: currently, the only accepted value is `label`, which means the key label can be used as keys for `keyname`, for example `[1:abc]` means when key `1` pressed, it means either `a`, `b` or `c`. 
+`description`: description for the charset
+`flicks`: flick keys for this charset
+`keynameType`: currently, the only accepted value is `label`, which means the key label can be used as keys for `keyname`, for example `[1:abc]` means when key `1` pressed, it means either `a`, `b` or `c`.
 
     {
         "name": "bpmf",
@@ -48,10 +47,10 @@ If the `keynameType` is the label, and when the character should be recognized a
 
 Charset separates into 3 categories:
 
-The name has `-pad` suffix: regular layout for iPad, without tab, capslock keys in general  
-The name has `-fullsize` suffix: full-size keyboard layout brought by iPad Pro 12.9  
-The name has `-choco` suffix: telephone keypad layout (chocolate), every key in the keyboard is the same size  
-The name without any suffix: regular layout for iPhone  
+The name has `-pad` suffix: regular layout for iPad, without tab, capslock keys in general
+The name has `-fullsize` suffix: full-size keyboard layout brought by iPad Pro 12.9
+The name has `-choco` suffix: telephone keypad layout (chocolate), every key in the keyboard is the same size
+The name without any suffix: regular layout for iPhone
 
 ### Reserved keys
 
