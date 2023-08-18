@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #
-# version: 0.1.0
 # autor: Ethan Liu
 #
 # Unihan.db generator

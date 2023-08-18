@@ -25,11 +25,11 @@ define SYNOPSIS
 @echo "    splits - "
 @echo "    clear - Clear dist"
 @echo ""
-@echo "    table-db - Build all CIN table databases"
-@echo "    lexicon-db - Build all lexicon databases"
-@echo "    emoji-db - Build emoji.db"
-@echo "    char-db - Build Character.db"
-@echo "    unihan-db - Build Unihan.db"
+@echo "    table.db - Build all CIN table databases"
+@echo "    lexicon.db - Build all lexicon databases"
+@echo "    emoji.db - Build emoji.db"
+@echo "    char.db - Build Character.db"
+@echo "    unihan.db - Build Unihan.db"
 @echo ""
 @echo "3rd party repositories:"
 @echo "    pull - Update all upstream repos"
@@ -43,7 +43,7 @@ define SYNOPSIS
 @echo "    jyutping-phrase - Rime-cantonese lexicon builder"
 @echo "    mcbpmf - McBopomofo lexicon builder"
 @echo "    moe-csv - Convert CSV from original MoE XLS files"
-@echo "    moe-db - MoE concised, idioms, revised lexicon builder"
+@echo "    moe.db - MoE concised, idioms, revised lexicon builder"
 @echo ""
 
 endef
@@ -114,13 +114,13 @@ splits-lexicon:
 
 splits: splits-table splits-lexicon
 
-table-db:
+table.db: init
 	$(eval excludes := \
 		_sample.cin _demo.cin \
 		array-shortcode.cin array-special.cin \
 		boshiamy.cin liu.cin bossy.cin \
-		bpmf-ext.cin \
-		cj-ext.cin cj-wildcard.cin simplex-ext.cin \
+		biaoyin.cin bpmf-ext.cin \
+		cj-ext.cin cj-j.cin cj-wildcard.cin simplex-ext.cin \
 		jyutping.cin jyutping-toneless.cin \
 		ov_ezbig.cin ov_ezsmall.cin \
 		stroke-stroke5.cin wubizixing.cin \
@@ -142,24 +142,24 @@ table-db:
 		fi ; \
 	done;
 
-lexicon-db: lexicon-array lexicon-jieba lexicon-jyutping lexicon-mcbpmf lexicon-moe
+lexicon.db: init lexicon-array lexicon-jieba lexicon-jyutping lexicon-mcbpmf lexicon-moe
 
-emoji-db:
+emoji.db:
 	@bin/emojidb.py --update -d rawdata/emoji
 	@bin/emojidb.py --run -d rawdata/emoji -o ${DIST_DIR}/emoji.db
-	@echo "Test new emoji..."
-	@bin/emojidb.py -test "停" -o ${DIST_DIR}/emoji.db
-	@bin/emojidb.py -test "鵝" -o ${DIST_DIR}/emoji.db
+# @echo "Test new emoji..."
+# @bin/emojidb.py -test "停" -o ${DIST_DIR}/emoji.db
+# @bin/emojidb.py -test "鵝" -o ${DIST_DIR}/emoji.db
 
-unihan-db:
+unihan.db:
 	@bin/unihan.py -o ${DIST_DIR}/Unihan.db
 
-char-db:
+char.db:
 	@bin/character.py -i ${LEXICON_DIR}/symbol.json ${DIST_DIR}/Character.db
 
 clear:
 	@echo "Clear dist"
-	@-rm -fr ${DIST_DIR}/* | tqdm
+	@-rm -fr ${DIST_DIR}/*
 
 dist:
 	@echo "Distribute resource files...\n"
@@ -273,14 +273,12 @@ array30:
 	@bin/cin2db.py -i ${TABLE_DIR}/array30-OkidoKey-big.cin -o ${TABLE_DIST_PATH}/array30-OkidoKey-big.cin.db -e array
 
 bossy:
-	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o rawdata/boshiamy/bossy.cin.db -e bossy
+	@bin/cin2db.py -i rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_ct.cin rawdata/boshiamy/boshiamy_j.cin rawdata/boshiamy/hangulromaja.cin -o ${DIST_DIR}/bossy.cin.db -e bossy
 	@echo "Generate CIN table..."
-	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o rawdata/boshiamy/bossy.cin --header rawdata/boshiamy/bossy-header.cin
+	@bin/db2cin.py -i rawdata/boshiamy/bossy.cin.db -o ${DIST_DIR}/bossy.cin --header rawdata/boshiamy/bossy-header.cin
 
 bossydiff:
-	@#bin/xxcin.py -m diff -i rawdata/array30/OpenVanilla/array30-OpenVanilla-big-v2023-1.0-20230211.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o rawdata/boshiamy/diff-array30-big.txt
-	@#bin/xxcin.py -m diff -i rawdata/array30/OkidoKey/array30-OkidoKey-regular-v2023-1.0.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o rawdata/boshiamy/diff-array30-reg.txt
-	@bin/xxcin.py -m diff -s a -i rawdata/array30/OkidoKey/array30-OkidoKey-regular-v2023-1.0.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o tmp/diff.txt
+	@bin/xxcin.py -m diff -s a -i ${TABLE_DIR}/array30.cin -x rawdata/boshiamy/boshiamy_t.cin rawdata/boshiamy/boshiamy_c.cin rawdata/boshiamy/boshiamy_j.cin -o tmp/diff.txt
 
 ghcm:
 	@bin/rime2cin.py -i rawdata/ghcm/SM.dict.yaml -o ${TABLE_DIR}/ghcm.cin -x rawdata/misc/ghcm-header.cin
@@ -330,4 +328,4 @@ admob:
 	@curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
 	@cd tmp; unzip -o -q googlemobileadssdkios.zip
 	@$(eval dir = $(wildcard tmp/GoogleMobileAdsSdkiOS-*))
-	@cd ${dir}; open .
+	@cd $${dir}; open .
