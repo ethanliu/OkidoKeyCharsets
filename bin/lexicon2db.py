@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #
-# version: 0.1.0
 # autor: Ethan Liu
 #
 # convert lexicon csv to sqlite db
@@ -51,7 +50,6 @@ def performImport(cursor, inputPath):
                 cursor.execute(query, args)
 
     cursor.execute("COMMIT TRANSACTION")
-    cursor.execute('VACUUM')
 
 def main():
     argParser = argparse.ArgumentParser(description='Convert lexicon csv to sqlite db file')
@@ -83,6 +81,11 @@ def main():
     cursor.execute("CREATE TABLE `lexicon` (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`, `category_id`))")
 
     performImport(cursor, args.input)
+
+    cursor.execute('VACUUM')
+    cursor.execute("CREATE INDEX IF NOT EXISTS `phrase_index` ON `lexicon` (phrase, category_id, weight)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS `pinyin_index` ON `lexicon` (pinyin, category_id, weight)")
+
     db.commit()
 
     # if args.readme:

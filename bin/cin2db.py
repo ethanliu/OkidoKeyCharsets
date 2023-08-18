@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #
-# version: 0.1.0
 # autor: Ethan Liu
 #
 # convert cin table to sqlite db
@@ -8,8 +7,6 @@
 import argparse
 import importlib
 import sys, os
-# import re
-# import json
 import sqlite3
 from enum import IntEnum
 from tqdm import tqdm
@@ -17,19 +14,6 @@ from lib.cintable import CinTable
 # from time import sleep
 
 uu = importlib.import_module("lib.util")
-
-HANS_TABLE = [
-    "ghcm.cin",
-    "jidianwubi.cin",
-    "jtcj.cin",
-    "lxsy.cin",
-    "lxsy_0.40.cin",
-    "lxsy_0.41.cin",
-    "pinyin.cin",
-    "shuangpin.cin",
-    "wubizixing.cin",
-    "wus.cin",
-]
 
 class Mode(IntEnum):
     CREATE = 1
@@ -57,10 +41,10 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
                 args = {'name': key, 'value': value}
                 cursor.execute(query, args)
 
-        filename = os.path.basename(inputPath)
-        if filename in HANS_TABLE:
-            args = {'name': 'locale', 'value': 'zh-Hans'}
-            cursor.execute(query, args)
+        # filename = os.path.basename(inputPath)
+        # if filename in HANS_TABLE:
+        #     args = {'name': 'locale', 'value': 'zh-Hans'}
+        #     cursor.execute(query, args)
 
         query = "INSERT OR IGNORE INTO `keyname` (`key`, `value`) VALUES (:name, :value)"
         for key in cin.keyname:
@@ -94,6 +78,8 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
 
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
+    if mode == Mode.CREATE:
+        cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
 
 def validate(cursor):
     cursor.execute("SELECT key, value FROM `keyname` ORDER BY rowid")
@@ -148,6 +134,7 @@ def pluginArray(cursor, inputs):
             cursor.execute(query5, args)
 
         cursor.execute("COMMIT TRANSACTION")
+        # cursor.execute(f"CREATE UNIQUE INDEX `{keydefTableName}_index` ON keydef (key)")
     cursor.execute('VACUUM')
 
 def pluginBossy(cursor):

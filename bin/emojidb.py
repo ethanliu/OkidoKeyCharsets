@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #
-# version: 0.0.5
 # autor: Ethan Liu
 #
 # all about emoji
@@ -15,7 +14,8 @@ import argparse
 import sys, os, importlib
 import urllib3, shutil
 import re, json, sqlite3
-from emoji import is_emoji
+from tqdm import tqdm
+# from emoji import is_emoji
 
 uu = importlib.import_module("lib.util")
 
@@ -66,16 +66,16 @@ def updateResources(basedir):
             res.release_conn()
     print("Update finished")
 
-def charToLongHex(emoji):
-    codes = emoji.encode('unicode-escape').decode('ascii')
+def charToLongHex(char):
+    codes = char.encode('unicode-escape').decode('ascii')
     codes = list(filter(None, re.split(r'\\U|\\x', codes, flags=re.IGNORECASE)))
-    # print(emoji, codes, path),
+    # print(char, codes, path),
 
     for index, code in enumerate(codes):
         try:
             v = int(code, 16)
         except ValueError:
-            # print("Ignore annotation: ", emoji, codes)
+            # print("Ignore annotation: ", char, codes)
             # continue
             # break
             return None
@@ -86,6 +86,46 @@ def charToLongHex(emoji):
     codes = ' '.join(codes).upper()
     return codes
 
+def isCharacter(code):
+    hex = int(code, 16)
+    # specified to the source list
+    ranges = [
+        [0x000000A1, 0x000022F1],
+        [0x00002328, 0x000023CF],
+        [0x000023ED, 0x000023EF],
+        [0x000023F1, 0x000023F2],
+        [0x000023F8, 0x000025FC],
+        [0x000025FF, 0x00002611],
+        [0x00002618, 0x00002642],
+        [0x0000265F, 0x0000267E],
+        [0x00002692],
+        [0x00002694, 0x000026A0],
+        [0x000026A7],
+        [0x000026B0, 0x000026B1],
+        [0x000026C4],
+        [0x000026C8],
+        [0x000026CF, 0x000026D3],
+        [0x000026E9],
+        [0x000026F0, 0x000026F1],
+        [0x000026F4],
+        [0x000026F7, 0x000026F9],
+        [0x00002702],
+        [0x00002708, 0x00002709],
+        [0x0000270C, 0x00002721],
+        [0x00002733, 0x00002747],
+        [0x00002763, 0x00002764],
+        [0x000027A1],
+        [0x00002934, 0x00002B07],
+        [0x00003001, 0x00003299],
+        [0x0000FDFC]
+    ]
+
+    for r in ranges:
+        if len(r) == 1 and hex == r[0]:
+            return True
+        if len(r) == 2 and hex in range(r[0], (r[1] + 1)):
+            return True
+    return False
 
 def parse(cursor, path):
     file = open(path, 'r')
@@ -107,23 +147,33 @@ def parse(cursor, path):
 
     cursor.execute("BEGIN TRANSACTION")
 
-    for emoji in node:
+    for emoji in tqdm(node, unit = 'MB', unit_scale = True, ascii = True):
         codes = charToLongHex(emoji)
 
         if codes == None:
-            # print(f"Ignore None Char: {emoji}")
+            # print(f"[c]: {emoji}")
             continue
 
-        if not is_emoji(emoji):
-            # simple check against json resource
-            if not codes.startswith('0001'):
-                # print(f"Ignore Reg Char: {emoji} => {codes}")
+        # emoji package is outdated
+        # if not is_emoji(emoji):
+        #     # simple check against json resource
+        #     if not codes.startswith('0001'):
+        #         # print(f"Ignore \"Character-ish\": {emoji} => {codes}")
+        #         continue
+        #     # print(f"New emoji: {emoji} => {codes}")
+
+        if codes.startswith('0000') and len(codes) <= 8:
+            if isCharacter(codes):
+                # tqdm.write(f"[c]: {codes} => {emoji}")
                 continue
-            print(f"New emoji: {emoji} => {codes}")
+            # else:
+            #     print(f"[e]: {codes} => {emoji}")
+            #     pass
 
         # chardef
         cursor.execute("INSERT OR IGNORE INTO chardef (char) VALUES (:char)", {'char': codes})
         chardefId = uu.getOne(cursor, "SELECT rowid FROM chardef WHERE char = :char LIMIT 1", {'char': codes})
+        # print(f"[emoji]: {emoji} => {codes}")
 
         # a quick but unsafe check but since prefix is all we need here
         if not 'default' in node[emoji]:
@@ -151,7 +201,7 @@ def performImport(repoPath, dbPath):
     db = sqlite3.connect(dbPath)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
+    # cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
     cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
@@ -170,10 +220,7 @@ def performImport(repoPath, dbPath):
 
     # index
     cursor.execute('vacuum')
-    # cursor.execute("CREATE UNIQUE INDEX info_index ON info (name)")
-    # cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
-    # cursor.execute("CREATE UNIQUE INDEX chardef_index ON chardef (char)")
-    # cursor.execute("CREATE INDEX entry_index ON entry (keydef_id, chardef_id)")
+    cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
 
     cursor.execute("SELECT COUNT(*) FROM chardef")
     characterCounter = cursor.fetchone()[0]
@@ -211,7 +258,7 @@ def applyRanking(dbPath):
     result = cursor.fetchall()
     for item in result:
         emoji = emojilized(item[0])
-        print(emoji, end = ' '),
+        print(emoji, end = ' ')
     print('')
 
     db.close()
@@ -240,7 +287,7 @@ def test(phrase, dbPath):
 
         for item in result:
             emoji = emojilized(item[0])
-            print(emoji, end = ' '),
+            print(emoji, end = ' ')
         print('')
 
     else:
