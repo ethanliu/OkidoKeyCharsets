@@ -166,8 +166,9 @@ def importWeight(cursor):
         rowid = uu.getOne(cursor, query1, {"radical": item[0]})
         if not rowid:
             # ???: classified zero?
-            cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
-            tqdm.write(f"Add new radical: {item[0]}")
+            # cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
+            # tqdm.write(f"Add new radical: {item[0]}")
+            pass
         else:
             cursor.execute(query3, {"id": rowid, "weight": item[1]})
     cursor.execute("COMMIT TRANSACTION")
@@ -360,13 +361,17 @@ def main():
     importRadical(cursor, "radical")
     importRadical(cursor, "t2s")
     importRadical(cursor, "s2t")
-    importClassified(cursor)
+    # importClassified(cursor)
     importWeight(cursor)
     # test(cursor)
 
+    # classfied, score not very useful at this moment
+    # wipe them out but remain data struct
+    cursor.execute("UPDATE `radical` SET `classified` = 0, `score` = 0")
+
     db.commit()
     cursor.execute('vacuum')
-    cursor.execute("CREATE INDEX `score_index` ON `radical` (score)")
+    # cursor.execute("CREATE INDEX `score_index` ON `radical` (score)")
     cursor.execute("CREATE INDEX `weight_index` ON `radical` (weight)")
     cursor.execute("CREATE INDEX `stroke_index` ON `radical` (stroke)")
     cursor.execute("CREATE INDEX `t2s_index` ON `t2s` (hant_id)")
