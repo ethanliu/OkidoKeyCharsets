@@ -73,6 +73,9 @@ init:
 	@mkdir -p ${DIST_DIR}/${GITEE_DIR}/${TABLE_DIR}
 	@mkdir -p ${DIST_DIR}/${GITEE_DIR}/${LEXICON_DIR}
 
+all: table.db lexicon.db table lexicon keyboard
+	@echo "Buil all for dist"
+
 keyboard:
 	@bin/resource.py -c keyboard -o ${DIST_DIR}/${QUEUE_DIR}/KeyboardLayouts.json
 
@@ -121,6 +124,7 @@ table.db: init
 		boshiamy.cin liu.cin bossy.cin \
 		biaoyin.cin bpmf-ext.cin \
 		cj-ext.cin cj-j.cin cj-wildcard.cin simplex-ext.cin \
+		dayi4.cin \
 		jyutping.cin jyutping-toneless.cin \
 		ov_ezbig.cin ov_ezsmall.cin \
 		stroke-stroke5.cin wubizixing.cin \
@@ -327,5 +331,5 @@ moe-csv: moe-idioms moe-concised moe-revised
 admob:
 	@curl https://dl.google.com/googleadmobadssdk/googlemobileadssdkios.zip -o tmp/googlemobileadssdkios.zip
 	@cd tmp; unzip -o -q googlemobileadssdkios.zip
-	@$(eval dir = $(wildcard tmp/GoogleMobileAdsSdkiOS-*))
-	@cd $${dir}; open .
+# @$(eval dir = $(wildcard tmp/GoogleMobileAdsSdkiOS-*))
+# @cd $${dir}; open .
