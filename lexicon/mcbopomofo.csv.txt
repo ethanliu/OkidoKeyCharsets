@@ -10,4 +10,4 @@ https://github.com/openvanilla/McBopomofo/tree/master/Source/Data
 關於本詞庫
 =========
 本詞庫基於小麥注音輸入法的 phrase.occ 檔案，加註無調號之漢語拼音。
-轉換後的 CSV 檔有可能包含單字，但預先轉換以供直接使用的字詞資料庫，則不包含單字部份，僅含二個字以上的字詞。
+轉換後的 CSV 檔有可能包含單字，但預先轉換以供直接使用的字詞資料庫，僅含二個字以上的字詞。

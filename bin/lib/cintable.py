@@ -176,7 +176,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         tags = ["cname", "tcname", "scname", "name"]
         for tag in tags:
             # print(self.info.get(tag))
-            if self.info[tag]:
+            if not self.info.get(tag) is None:
                 return self.info[tag]
         return "Noname"
 

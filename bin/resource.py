@@ -8,10 +8,11 @@
 import argparse
 import importlib
 import sys, os, glob
+import re
 # import shutil
 import sqlite3, json
 from datetime import datetime
-from lib.cintable import CinTable
+from lib.cintable import CinTable, CinTableParseLevel
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
@@ -112,7 +113,7 @@ def createTable(outputPath):
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
 
-        cin = CinTable(f"{srcPath}/{filename}", level = 1)
+        cin = CinTable(f"{srcPath}/{filename}", level = CinTableParseLevel.Header)
         content = {
             'ename': cin.info.get('ename') or '',
             'cname': cin.info.get('cname') or '',
@@ -120,7 +121,24 @@ def createTable(outputPath):
             'path': f"{target}/{dbFilename}",
             # 'src': f"{target}/{filename}",
             'license': cin.description,
+            'category': '',
         }
+
+        category = "misc"
+        categoryTestString = f"{content['ename']} {content['cname']} {content['name']} {dbFilename}"
+        if re.search("(array|行列)", categoryTestString, re.IGNORECASE):
+            category = "array"
+        elif re.search("(bpmf|注音|輕鬆)", categoryTestString, re.IGNORECASE):
+            category = "zhuyin"
+        elif re.search("(cj|simplex|cangjie|快倉|亂倉|倉頡|簡易)", categoryTestString, re.IGNORECASE):
+            category = "cangjie"
+        elif re.search("(dayi|大易)", categoryTestString, re.IGNORECASE):
+            category = "dayi"
+        elif re.search("(pin|拼)", categoryTestString, re.IGNORECASE):
+            category = "pinying"
+
+        content['category'] = category
+
         # print(content)
         jsondata['datatables'].append(content)
 

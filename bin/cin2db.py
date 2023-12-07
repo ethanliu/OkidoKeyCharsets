@@ -10,7 +10,7 @@ import sys, os
 import sqlite3
 from enum import IntEnum
 from tqdm import tqdm
-from lib.cintable import CinTable
+from lib.cintable import CinTable, CinTableParseLevel
 # from time import sleep
 
 uu = importlib.import_module("lib.util")
@@ -27,7 +27,7 @@ class Mode(IntEnum):
 
 def performImport(cursor, inputPath, mode = Mode.CREATE):
     # tqdm.write(uu.color(f"[{filename}]", fg = 'green'))
-    cin = CinTable(inputPath, level = 3)
+    cin = CinTable(inputPath, level = CinTableParseLevel.Full)
 
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
@@ -98,7 +98,7 @@ def pluginArray(cursor, inputs):
             tqdm.write(f"File not found: {path}")
             continue
 
-        cin = CinTable(path, level = 3)
+        cin = CinTable(path, level = CinTableParseLevel.Full)
 
         keydefTableName = f"keydef_{category}"
         entryTableName = f"entry_{category}"
