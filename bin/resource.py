@@ -66,7 +66,7 @@ def createKeyboard(outputPath):
     categories = {
         "bpmf": "bpmf",
         "symbol": "symbol",
-        "easy": "canjie",
+        "easy": "cangjie",
     }
 
     for path in sorted(glob.glob(f"{charsetPath}/*.charset.json")):
