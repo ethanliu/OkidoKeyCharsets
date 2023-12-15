@@ -63,11 +63,23 @@ def createKeyboard(outputPath):
         "charsets": {},
     }
 
+    categories = {
+        "bpmf": "bpmf",
+        "symbol": "symbol",
+        "easy": "canjie",
+    }
+
     for path in sorted(glob.glob(f"{charsetPath}/*.charset.json")):
         file = open(path, 'r')
         data = json.load(file)
         file.close()
         # print(path)
+
+        category = os.path.basename(path).split(".")[0]
+        for ck, cv in categories.items():
+            if category.startswith(ck):
+                category = cv
+
         for item in data:
 
             if not 'name' in item:
@@ -84,7 +96,8 @@ def createKeyboard(outputPath):
 
             jsondata['charsets'][item['name']] = {
                 'description': item['description'] or '',
-                'charsets': item['charsets']
+                'charsets': item['charsets'],
+                'category': category
             }
 
             if 'keynameType' in item:
@@ -128,9 +141,9 @@ def createTable(outputPath):
         categoryTestString = f"{content['ename']} {content['cname']} {content['name']} {dbFilename}"
         if re.search("(array|行列)", categoryTestString, re.IGNORECASE):
             category = "array"
-        elif re.search("(bpmf|注音|輕鬆)", categoryTestString, re.IGNORECASE):
+        elif re.search("(bpmf|注音)", categoryTestString, re.IGNORECASE):
             category = "zhuyin"
-        elif re.search("(cj|simplex|cangjie|快倉|亂倉|倉頡|簡易)", categoryTestString, re.IGNORECASE):
+        elif re.search("(cj|simplex|cangjie|快倉|亂倉|倉頡|簡易|輕鬆)", categoryTestString, re.IGNORECASE):
             category = "cangjie"
         elif re.search("(dayi|大易)", categoryTestString, re.IGNORECASE):
             category = "dayi"
