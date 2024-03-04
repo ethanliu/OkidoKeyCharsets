@@ -35,15 +35,15 @@ define SYNOPSIS
 @echo "    pull - Update all upstream repos"
 @echo "    array10 - Array10 [a/b/c] table builder"
 @echo "    array30 - Array30 [ov/OkidoKey] table builder"
-@echo "    array-phrase - Array30-phrase lexicon builder"
 @echo "    bossy - Custom boshiamy table builder"
 @echo "    ghcm - ghcm table builder"
 @echo "    jieba - Jieba lexicon builder"
 @echo "    jyutping - Jyutping from rime-cantonese table builder"
-@echo "    jyutping-phrase - Rime-cantonese lexicon builder"
 @echo "    mcbpmf - McBopomofo lexicon builder"
 @echo "    moe-csv - Convert CSV from original MoE XLS files"
 @echo "    moe.db - MoE concised, idioms, revised lexicon builder"
+@echo "    lexicon-array - Array30-phrase lexicon builder"
+@echo "    lexicon-jyutping - Rime-cantonese lexicon builder"
 @echo ""
 
 endef
