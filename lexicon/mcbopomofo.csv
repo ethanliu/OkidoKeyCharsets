@@ -13573,6 +13573,7 @@
 住寺	0	zhusi
 佐使	0	zuoshi
 佐賀	0	zuohe
+佐賀縣	0	zuohexian
 佔下	0	zhanxia
 佔位	0	zhanwei
 佔個	0	zhange
@@ -15733,7 +15734,6 @@
 壺底	0	hudi
 壺狀	0	huzhuang
 壺盧	0	hulu
-壺鈴	0	huling
 壽儀	0	shouyi
 壽州	0	shouzhou
 壽相	0	shouxiang
@@ -17978,7 +17978,6 @@
 插句	0	chaju
 插嚅	0	charu
 插字	0	chazi
-插對	0	chadui
 插接	0	chajie
 插枝	0	chazhi
 插標	0	chabiao
@@ -18986,6 +18985,7 @@
 柵極	0	zhaji
 柿糕	0	shigao
 栃木	0	栃mu
+栃木縣	0	栃muxian
 栓子	0	shuanzi
 栓牢	0	shuanlao
 栗鼠	0	lishu
@@ -21449,6 +21449,8 @@
 神貌	0	shenmao
 神鷹	0	shenying
 神麴	0	shenqu
+神奈川	0	shennaichuan
+神奈川縣	0	shennaichuanxian
 祥光	0	xiangguang
 票值	0	piaozhi
 票根	0	piaogen
@@ -21476,6 +21478,8 @@
 福樂	0	fule
 福薄	0	fubo
 福體	0	futi
+福井	0	fujing
+福井縣	0	fujingxian
 禠奪	0	siduo
 禦寇	0	yukou
 禪位	0	chanwei
@@ -26304,6 +26308,7 @@
 鱗集	0	linji
 鱘魚	0	xunyu
 鳥取	0	niaoqu
+鳥取縣	0	niaoquxian
 鳥嘴	0	niaozui
 鳥屋	0	niaowu
 鳩合	0	jiuhe
@@ -28062,6 +28067,7 @@
 宣慰	1	xuanwei
 宦途	1	huantu
 宮城	1	gongcheng
+宮城縣	1	gongchengxian
 宮娥	1	gonge
 宮庭	1	gongting
 宮闈	1	gongwei
@@ -28220,6 +28226,7 @@
 峰峰	1	fengfeng
 峰點	1	fengdian
 島根	1	daogen
+島根縣	1	daogenxian
 島津	1	daojin
 峻厲	1	junli
 峻德	1	junde
@@ -30972,6 +30979,7 @@
 羞死	1	xiusi
 群系	1	qunxi
 群馬	1	qunma
+群馬縣	1	qunmaxian
 義俠	1	yixia
 義律	1	yilv
 羽片	1	yupian
@@ -33032,7 +33040,7 @@
 單程	10	dancheng
 嗅到	10	xiudao
 嗑藥	10	keyao
-嗯嗯	10	
+嗯嗯	0	
 嘉興	10	jiaxing
 嘴邊	10	zuibian
 嘶吼	10	sihou
@@ -34111,6 +34119,7 @@
 高懸	10	gaoxuan
 高產	10	gaochan
 高知	10	gaozhi
+高知縣	10	gaozhixian
 髮指	10	fazhi
 鬼門	10	guimen
 鬼頭	10	guitou
@@ -38136,6 +38145,7 @@
 辦理	1258	banli
 法官	1259	faguan
 三重	126	sanzhong
+三重縣	126	sanzhongxian
 不放	126	bufang
 兩國	126	liangguo
 六億	126	liuyi
@@ -39925,6 +39935,8 @@
 共出	14	gongchu
 共聚	14	gongju
 兵馬	14	bingma
+兵庫	14	bingku
+兵庫縣	14	bingkuxian
 再慢	14	zaiman
 再按	14	zaian
 冰櫃	14	binggui
@@ -47599,6 +47611,7 @@
 山貨	2	shanhuo
 山賊	2	shanzei
 岐阜	2	qifu
+岐阜縣	2	qifuxian
 岔子	2	chazi
 岡石	2	gangshi
 岳丈	2	yuezhang
@@ -50545,6 +50558,7 @@
 青燈	2	qingdeng
 靜僻	2	jingpi
 靜岡	2	jinggang
+靜岡縣	2	jinggangxian
 非出	2	feichu
 非吃	2	feichi
 非她	2	feita
@@ -50619,6 +50633,7 @@
 首應	2	shouying
 首篇	2	shoupian
 香川	2	xiangchuan
+香川縣	2	xiangchuanxian
 香椿	2	xiangchun
 香織	2	xiangzhi
 香茶	2	xiangcha
@@ -51136,7 +51151,7 @@
 祖籍	20	zuji
 禁煙	20	jinyan
 秋日	20	qiuri
-稍待	20	shaodai
+稍待	0	shaodai
 空下	20	kongxia
 空缺	20	kongque
 空轉	20	kongzhuan
@@ -51990,6 +52005,7 @@
 祕訣	21	mijue
 禁書	21	jinshu
 福岡	21	fugang
+福岡縣	21	fugangxian
 禪修	21	chanxiu
 私利	21	sili
 私家	21	sijia
@@ -52496,6 +52512,7 @@
 多管	22	duoguan
 大仙	22	daxian
 大分	22	dafen
+大分縣	22	dafenxian
 大建	22	dajian
 大敵	22	dadi
 大港	22	dagang
@@ -56102,6 +56119,8 @@
 時光	270	shiguang
 溫泉	270	wenquan
 熊貓	270	xiongmao
+熊本	270	xiongben
+熊本縣	270	xiongbenxian
 稀有	270	xiyou
 稍候	270	shaohou
 笑話	270	xiaohua
@@ -59065,6 +59084,7 @@
 溫書	3	wenshu
 溫蒂	3	wendi
 滋賀	3	zihe
+滋賀縣	3	zihexian
 滑石	3	huashi
 滑輪	3	hualun
 滲過	3	shenguo
@@ -59121,7 +59141,7 @@
 為偶	3	weiou
 為權	3	weiquan
 烈到	3	liedao
-烈嶼	3	lieyu
+烈嶼	0	lieyu
 烏青	3	wuqing
 烤乾	3	kaogan
 烤過	3	kaoguo
@@ -59377,6 +59397,8 @@
 石室	3	shishi
 石斧	3	shifu
 石鼓	3	shigu
+石川	3	shichuan
+石川縣	3	shichuanxian
 砍錯	3	kancuo
 破得	3	pode
 破膽	3	podan
@@ -60765,6 +60787,7 @@
 安和	30	anhe
 官校	30	guanxiao
 宮崎	30	gongqi
+宮崎縣	30	gongqixian
 家當	30	jiadang
 密佈	30	mibu
 寓意	30	yuyi
@@ -61257,6 +61280,7 @@
 嘈雜	31	caoza
 嚐到	31	changdao
 四國	31	siguo
+四國地方	31	siguodifang
 四班	31	siban
 因地	31	yindi
 圓融	31	yuanrong
@@ -61282,6 +61306,8 @@
 寄居	31	jiju
 寄送	31	jisong
 富麗	31	fuli
+富山	31	fushan
+富山縣	31	fushanxian
 將作	31	jiangzuo
 將就	31	jiangjiu
 將屆	31	jiangjie
@@ -62775,6 +62801,7 @@
 繪畫	343	huihua
 體重	343	tizhong
 京都	344	jingdu
+京都府	344	jingdufu
 南方	344	nanfang
 命令	344	mingling
 接到	344	jiedao
@@ -63109,6 +63136,7 @@
 鐵馬	35	tiema
 開進	35	kaijin
 關東	35	guandong
+關東地方	35	guandongdifang
 阻絕	35	zujue
 院門	35	yuanmen
 陳設	35	chenshe
@@ -63591,6 +63619,7 @@
 乏味	37	fawei
 九分	37	jiufen
 九州	37	jiuzhou
+九州地方	37	jiuzhoudifang
 五代	37	wudai
 人像	37	renxiang
 人我	37	renwo
@@ -63988,7 +64017,7 @@
 出關	38	chuguan
 別去	38	biequ
 別開	38	biekai
-到貨	38	daohuo
+到貨	0	daohuo
 剛去	38	gangqu
 劃一	38	huayi
 劃成	38	huacheng
@@ -64380,6 +64409,9 @@
 意旨	39	yizhi
 意氣	39	yiqi
 愛知	39	aizhi
+愛知縣	39	aizhixian
+愛媛	39	aiyuan
+愛媛縣	39	aiyuanxian
 懷中	39	huaizhong
 懼怕	39	jupa
 成像	39	chengxiang
@@ -65408,6 +65440,7 @@
 山雞	4	shanji
 岔開	4	chakai
 岩手	4	yanshou
+岩手縣	4	yanshouxian
 峰巒	4	fengluan
 峻峭	4	junqiao
 崇明	4	chongming
@@ -66465,6 +66498,7 @@
 私欲	4	siyu
 秉直	4	bingzhi
 秋田	4	qiutian
+秋田縣	4	qiutianxian
 秋色	4	qiuse
 科名	4	keming
 科組	4	kezu
@@ -67026,6 +67060,7 @@
 迎神	4	yingshen
 近東	4	jindong
 近畿	4	jinji
+近畿地方	4	jinjidifang
 返美	4	fanmei
 迴向	4	huixiang
 迴腸	4	huichang
@@ -67263,6 +67298,7 @@
 青商	4	qingshang
 青果	4	qingguo
 青森	4	qingsen
+青森縣	4	qingsenxian
 青田	4	qingtian
 青絲	4	qingsi
 青蠅	4	qingying
@@ -67534,6 +67570,7 @@
 年幼	40	nianyou
 府上	40	fushang
 廣島	40	guangdao
+廣島縣	40	guangdaoxian
 弄到	40	nongdao
 強加	40	qiangjia
 強姦	40	qiangjian
@@ -67911,6 +67948,8 @@
 求取	41	qiuqu
 沉沉	41	chenchen
 沖繩	41	chongsheng
+沖繩地方	41	chongshengdifang
+沖繩縣	41	chongshengxian
 法權	41	faquan
 流離	41	liuli
 浴缸	41	yugang
@@ -69208,6 +69247,7 @@
 銳減	45	ruijian
 鐵門	45	tiemen
 長崎	45	changqi
+長崎縣	45	changqixian
 長處	45	changchu
 開明	45	kaiming
 閱覽	45	yuelan
@@ -69328,6 +69368,7 @@
 家產	46	jiachan
 屈原	46	quyuan
 山口	46	shankou
+山口縣	46	shankouxian
 帥氣	46	shuaiqi
 年青	46	nianqing
 張良	46	zhangliang
@@ -71007,7 +71048,7 @@
 很恨	5	henhen
 很敢	5	hengan
 律令	5	lvling
-後埔	5	houpu
+後埔	0	houpu
 後撤	5	houche
 後港	5	hougang
 後肢	5	houzhi
@@ -73995,6 +74036,7 @@
 少爺	56	shaoye
 山下	56	shanxia
 山形	56	shanxing
+山形縣	56	shanxingxian
 工專	56	gongzhuan
 左側	56	zuoce
 幹員	56	ganyuan
@@ -75281,6 +75323,7 @@
 屠刀	6	tudao
 山巔	6	shandian
 山梨	6	shanli
+山梨縣	6	shanlixian
 山陽	6	shanyang
 山雀	6	shanque
 山難	6	shannan
@@ -77281,6 +77324,7 @@
 小姑	63	xiaogu
 就拿	63	jiuna
 岡山	63	gangshan
+岡山縣	63	gangshanxian
 左傳	63	zuochuan
 市街	63	shijie
 布置	63	buzhi
@@ -79050,6 +79094,7 @@
 料事	7	liaoshi
 新派	7	xinpai
 新潟	7	xinxi
+新潟縣	7	xinxixian
 新羅	7	xinluo
 新館	7	xinguan
 斷案	7	duanan
@@ -79909,6 +79954,7 @@
 長日	7	changri
 長石	7	changshi
 長野	7	changye
+長野縣	7	changyexian
 長駐	7	changzhu
 長驅	7	changqu
 門牙	7	menya
@@ -82452,7 +82498,7 @@
 興頭	8	xingtou
 舉過	8	juguo
 舊傷	8	jiushang
-舊款	8	jiukuan
+舊款	0	jiukuan
 舊法	8	jiufa
 舊觀	8	jiuguan
 舊識	8	jiushi
@@ -83259,6 +83305,7 @@
 才會	830	caihui
 她的	831	tade
 中國	8319	zhongguo
+中國地方	8319	zhongguodifang
 分的	832	fende
 預計	832	yuji
 說話	833	shuohua
@@ -84326,6 +84373,7 @@
 復刻	9	fuke
 徵調	9	zhengdiao
 德島	9	dedao
+德島縣	9	dedaoxian
 心兒	9	xiner
 心田	9	xintian
 心輔	9	xinfu
@@ -87958,6 +88006,7 @@
 咀嚼出	0	jujiaochu
 和事老	0	heshilao
 和歌山	0	hegeshan
+和歌山縣	0	hegeshanxian
 和氏璧	0	heshibi
 咕咾肉	0	gulaorou
 咖哩汁	0	kalizhi
@@ -108849,6 +108898,7 @@
 培養液	3	peiyangye
 基礎課	3	jichuke
 基隆關	3	jilongguan
+埼玉	3	qiyu
 埼玉縣	3	qiyuxian
 堅持著	3	jianchizhu
 堆一堆	3	duiyidui
@@ -108913,6 +108963,7 @@
 太陽升	3	taiyangsheng
 太難用	3	tainanyong
 夫妻樹	3	fuqishu
+奈良	3	nailiang
 奈良縣	3	nailiangxian
 奧斯丁	3	aosiding
 女中音	3	nvzhongyin
@@ -114483,6 +114534,7 @@
 八月份	50	bayuefen
 副校長	50	fuxiaochang
 北海道	50	beihaidao
+北海道地方	50	beihaidaodifang
 姚嘉文	50	yaojiawen
 孫悟空	50	sunwukong
 定下來	50	dingxialai
@@ -128887,7 +128939,6 @@
 頒發獎盃	0	banfajiangbei
 頓內次克	0	dunneicike
 頓改前非	0	dungaiqianfei
-頓涅茨克	0	dunniecike
 頗具匠心	0	pojujiangxin
 領事裁判	0	lingshicaipan
 頭會箕斂	0	touhuijilian
@@ -147405,3 +147456,505 @@
 性別平等教育	91	xingbiepingdengjiaoyu
 巴布亞新幾內亞	0	babuyaxinjineiya
 巴布亞紐幾內亞	0	babuyaniujineiya
+玢 0	0	bin 0
+闘 0	0	dou 0
+鬦 0	0	dou 0
+鬪 0	0	dou 0
+鬬 0	0	dou 0
+鬭 0	0	dou 0
+醩 0	0	zao 0
+竈 0	0	zao 0
+弌 0	0	yi 0
+弍 0	0	er 0
+弎 0	0	san 0
+叁 0	0	san 0
+叄 0	0	can 0
+亖 0	0	si 0
+一時興起 0	0	yishixingqi 0
+三眼童子 0	0	sanyantongzi 0
+下莊 0	0	xiazhuang 0
+不明覺厲 0	0	bumingjueli 0
+世華 0	0	shihua 0
+中磊 0	0	zhonglei 0
+串接 0	0	chuanjie 0
+主官管 0	0	zhuguanguan 0
+九井路 0	0	jiujinglu 0
+二兵 0	0	erbing 0
+二級廠 0	0	erjichang 0
+二膽島 0	0	erdandao 0
+于君君 0	0	yujunjun 0
+五獅合體 0	0	wushiheti 0
+亞洲萬里通 0	0	yazhouwanlitong 0
+亮眼 0	0	liangyan 0
+令和 0	0	linghe 0
+伙委 0	0	huowei 0
+伺候 0	0	sihou 0
+佐治 0	0	zuozhi 0
+佚名 0	0	yiming 0
+依依不捨 0	0	yiyibushe 0
+侵門踏戶 0	0	qinmentahu 0
+倍力橋 0	0	beiliqiao 0
+假面騎士 0	0	jiamianqishi 0
+停役 0	0	tingyi 0
+偵探劇 0	0	zhentanju 0
+偽娘 0	0	weiniang 0
+傾卸車 0	0	qingxieche 0
+僑聲戲院 0	0	qiaoshengxiyuan 0
+兆豐 0	0	zhaofeng 0
+光棚 0	0	guangpeng 0
+光陽 0	0	guangyang 0
+內核 0	0	neihe 0
+全型 0	0	quanxing 0
+八方雲集 0	0	bafangyunji 0
+八極拳 0	0	bajiquan 0
+六尺褌 0	0	liuchikun 0
+兵棋 0	0	bingqi 0
+冰滴 0	0	bingdi 0
+初體驗 0	0	chutiyan 0
+剃除 0	0	tichu 0
+副連長 0	0	fulianchang 0
+創傷 0	0	chuangshang 0
+加購 0	0	jiagou 0
+勇固案 0	0	yongguan 0
+勇士堡 0	0	yongshibao 0
+動態清零 0	0	dongtaiqingling 0
+勸世 0	0	quanshi 0
+包偉銘 0	0	baoweiming 0
+北車 0	0	beiche 0
+十字軒 0	0	shizixuan 0
+千葉 0	0	qianye 0
+千葉縣 0	0	qianyexian 0
+升息 0	0	shengxi 0
+半版 0	0	banban 0
+半胛 0	0	banjia 0
+南雄師 0	0	nanxiongshi 0
+占比 0	0	zhanbi 0
+友盟 0	0	youmeng 0
+口福麵包 0	0	koufumianbao 0
+句子 0	0	juzi 0
+吉翁 0	0	jiweng 0
+吉翁公國 0	0	jiwenggongguo 0
+吳念庭 0	0	wunianting 0
+呆呆地 0	0	daidaidi 0
+呆呆地 0	0	daidaidi 0
+周潤發 0	0	zhourunfa 0
+和菓子 0	0	heguozi 0
+哥們 0	0	gemen 0
+哥布林 0	0	gebulin 0
+嘻哈 0	0	xiha 0
+嚴德發 0	0	yandefa 0
+國士無雙 0	0	guoshiwushuang 0
+國泰世華 0	0	guotaishihua 0
+糰子 0	0	tuanzi 0
+在籍 0	0	zaiji 0
+坂本龍一 0	0	banbenlongyi 0
+型男 0	0	xingnan 0
+報支 0	0	baozhi 0
+塊石 0	0	kuaishi 0
+境外勢力 0	0	jingwaishili 0
+壹號本 0	0	yihaoben 0
+壺鈴 0	0	huling 0
+多工 0	0	duogong 0
+大園空難 0	0	dayuankongnan 0
+大稻埕 0	0	dadaocheng 0
+大膽島 0	0	dadandao 0
+大艦巨砲 0	0	dajianjupao 0
+大阪府 0	0	dabanfu 0
+天梭 0	0	tiansuo 0
+太妃糖 0	0	taifeitang 0
+失智 0	0	shizhi 0
+失焦 0	0	shijiao 0
+失聯 0	0	shilian 0
+奇魔俠 0	0	qimoxia 0
+奧密克戎 0	0	aomikerong 0
+奧米克戎 0	0	aomikerong 0
+妮維雅 0	0	niweiya 0
+子彈 0	0	zidan 0
+字符 0	0	zifu 0
+孤勇 0	0	guyong 0
+宇舶 0	0	yubo 0
+守備大隊 0	0	shoubeidadui 0
+守備部隊 0	0	shoubeibudui 0
+安倍 0	0	anbei 0
+安倍晉三 0	0	anbeijinsan 0
+安卓 0	0	anzhuo 0
+安官室 0	0	anguanshi 0
+安納塔西亞 0	0	annataxiya 0
+官夫人 0	0	guanfuren 0
+寒舍花 0	0	hanshehua 0
+封装 0	0	fengzhuang 0
+小錦 0	0	xiaojin 0
+尚義 0	0	shangyi 0
+尤達 0	0	youda 0
+居隔 0	0	juge 0
+屆退 0	0	jietui 0
+山后 0	0	shanhou 0
+山外 0	0	shanwai 0
+岸田 0	0	antian 0
+岸田文雄 0	0	antianwenxiong 0
+工一連 0	0	gongyilian 0
+工三連 0	0	gongsanlian 0
+工二連 0	0	gongerlian 0
+工兵群 0	0	gongbingqun 0
+巧妙地 0	0	qiaomiaodi 0
+差假官 0	0	chajiaguan 0
+差假室 0	0	chajiashi 0
+巴氏量表 0	0	bashiliangbiao 0
+市佔 0	0	shizhan 0
+年籍冊 0	0	nianjice 0
+年繳 0	0	nianjiao 0
+年繳方案 0	0	nianjiaofangan 0
+幹訓班 0	0	ganxunban 0
+康明杉 0	0	kangmingshan 0
+建功嶼 0	0	jiangongyu 0
+彌生 0	0	misheng 0
+役期 0	0	yiqi 0
+後備 0	0	houbei 0
+後指部 0	0	houzhibu 0
+後浦 0	0	houpu 0
+徐若瑄 0	0	xuruoxuan 0
+復國墩 0	0	fuguodun 0
+復興嶼 0	0	fuxingyu 0
+微信 0	0	weixin 0
+微星 0	0	weixing 0
+忍法帖 0	0	renfatie 0
+快篩 0	0	kuaishai 0
+愛彼 0	0	aibi 0
+懸念 0	0	xuannian 0
+戰情室 0	0	zhanqingshi 0
+戰車群 0	0	zhanchequn 0
+戰防雷 0	0	zhanfanglei 0
+戰隊 0	0	zhandui 0
+手塚治蟲 0	0	shouzhongzhichong 0
+手托 0	0	shoutuo 0
+折現 0	0	zhexian 0
+拋妻棄子 0	0	paoqiqizi 0
+拜登 0	0	baideng 0
+括弧 0	0	kuohu 0
+指裁示 0	0	zhicaishi 0
+排位賽 0	0	paiweisai 0
+排程 0	0	paicheng 0
+接口 0	0	jiekou 0
+撥補 0	0	bobu 0
+操課 0	0	caoke 0
+擎天廳 0	0	qingtianting 0
+擎天操演 0	0	qingtiancaoyan 0
+敝司 0	0	bisi 0
+文湖線 0	0	wenhuxian 0
+斗煥坪 0	0	douhuanping 0
+斯沃琪 0	0	siwoqi 0
+新冠 0	0	xinguan 0
+新冠肺炎 0	0	xinguanfeiyan 0
+新北 0	0	xinbei 0
+新湖漁港 0	0	xinhuyugang 0
+新訓 0	0	xinxun 0
+新訓中心 0	0	xinxunzhongxin 0
+旅部 0	0	lvbu 0
+旅部連 0	0	lvbulian 0
+日本酒 0	0	ribenjiu 0
+昏頭轉向 0	0	huntouzhuanxiang 0
+月付方案 0	0	yuefufangan 0
+月費 0	0	yuefei 0
+有線電 0	0	youxiandian 0
+未定義 0	0	weidingyi 0
+本部連 0	0	benbulian 0
+李正皓 0	0	lizhenghao 0
+李雲迪 0	0	liyundi 0
+杜邦線 0	0	dubangxian 0
+杯具 0	0	beiju 0
+東森幼幼 0	0	dongsenyouyou 0
+林右昌 0	0	linyouchang 0
+柏德之門 0	0	baidezhimen 0
+柯賜海 0	0	kecihai 0
+核備 0	0	hebei 0
+框桁橋 0	0	kuanghengqiao 0
+梅克爾 0	0	meikeer 0
+梅酒 0	0	meijiu 0
+棺廓 0	0	guankuo 0
+椒鹽龍珠 0	0	jiaoyanlongzhu 0
+椪糖 0	0	pengtang 0
+榭樹 0	0	xieshu 0
+榮團會 0	0	rongtuanhui 0
+榮陞 0	0	rongsheng 0
+構工 0	0	gougong 0
+機械錶 0	0	jixiebiao 0
+歐米茄 0	0	oumiqie 0
+武嶺 0	0	wuling 0
+歸建 0	0	guijian 0
+歸零 0	0	guiling 0
+死仕 0	0	sishi 0
+水泥預拌車 0	0	shuiniyubanche 0
+永康街 0	0	yongkangjie 0
+汁男 0	0	zhinan 0
+汐東線 0	0	xidongxian 0
+汐科 0	0	xike 0
+江詩丹頓 0	0	jiangshidandun 0
+決策樹 0	0	jueceshu 0
+沈文裕 0	0	shenwenyu 0
+沙威瑪 0	0	shaweima 0
+沙美 0	0	shamei 0
+油量 0	0	youliang 0
+泡盛 0	0	paosheng 0
+泰姬瑪哈 0	0	taijimaha 0
+洋菓子 0	0	yangguozi 0
+洽公 0	0	qiagong 0
+浩鑫 0	0	haoxin 0
+浪琴 0	0	langqin 0
+淘寶 0	0	taobao 0
+清冠一號 0	0	qingguanyihao 0
+清零 0	0	qingling 0
+湖井頭 0	0	hujingtou 0
+湖前 0	0	huqian 0
+潛水錶 0	0	qianshuibiao 0
+澎防部 0	0	pengfangbu 0
+炭治郎 0	0	tanzhilang 0
+為什麼 0	0	weishime 0
+烈嶼師 0	0	lieyushi 0
+烈嶼旅 0	0	lieyulv 0
+烏爪釘 0	0	wuzhuading 0
+焊死 0	0	hansi 0
+焦糖瑪奇朵 0	0	jiaotangmaqiduo 0
+燒酎 0	0	shaozhou 0
+營部連 0	0	yingbulian 0
+營長室 0	0	yingchangshi 0
+特攝 0	0	teshe 0
+特訓班 0	0	texunban 0
+牽亡調 0	0	qianwangdiao 0
+獃在 0	0	daizai 0
+獸神萊卡 0	0	shoushenlaiqia 0
+獺祭 0	0	taji 0
+玉章路 0	0	yuzhanglu 0
+王心凌 0	0	wangxinling 0
+王義川 0	0	wangyichuan 0
+瑟縮 0	0	sesuo 0
+瑪奇朵 0	0	maqiduo 0
+瓜仔肉 0	0	guazirou 0
+瓷瓶 0	0	ciping 0
+產線 0	0	chanxian 0
+異世界 0	0	yishijie 0
+發餉 0	0	faxiang 0
+百達翡麗 0	0	baidafeili 0
+眉眉角角 0	0	meimeijiaojiao 0
+石敢當 0	0	shigandang 0
+砲指部 0	0	paozhibu 0
+確診 0	0	quezhen 0
+磨砂膏 0	0	moshagao 0
+磨豆機 0	0	modouji 0
+禰豆子 0	0	nidouzi 0
+竈門 0	0	zaomen 0
+站哨 0	0	zhanshao 0
+端島 0	0	duandao 0
+簽運 0	0	qianyun 0
+簿冊 0	0	buce 0
+粽子 0	0	zongzi 0
+精工錶 0	0	jinggongbiao 0
+精粹案 0	0	jingcuian 0
+紀念酒 0	0	jinianjiu 0
+紅蘿蔔 0	0	hongluobo 0
+終電 0	0	zhongdian 0
+總兵署 0	0	zongbingshu 0
+羅曼尼康帝 0	0	luomannikangdi 0
+群聊 0	0	qunliao 0
+羸瘦 0	0	leishou 0
+翟山 0	0	dishan 0
+聊一聊 0	0	liaoyiliao 0
+聖鬥士 0	0	shengdoushi 0
+聯電 0	0	liandian 0
+聲控 0	0	shengkong 0
+聲量 0	0	shengliang 0
+職訓 0	0	zhixun 0
+肥腸 0	0	feichang 0
+腕錶 0	0	wanbiao 0
+膛炸 0	0	tangzha 0
+臨櫃 0	0	lingui 0
+自訂詞 0	0	zidingci 0
+舒適圈 0	0	shushiquan 0
+良莠不齊 0	0	liangyoubuqi 0
+芋燒酎 0	0	yushaozhou 0
+芙莉蓮 0	0	fulilian 0
+茄芷袋 0	0	qiezhidai 0
+茨城 0	0	cicheng 0
+茨城縣 0	0	cichengxian 0
+茹斯葵 0	0	rusikui 0
+萊納 0	0	laina 0
+萬事萬物 0	0	wanshiwanwu 0
+葉卡 0	0	yeqia 0
+蒜味 0	0	suanwei 0
+蓮花清瘟 0	0	lianhuaqingwen 0
+蔡明憲 0	0	caimingxian 0
+蔦屋 0	0	niaowu 0
+蔦屋書店 0	0	niaowushudian 0
+蕨餅 0	0	juebing 0
+蕭茲 0	0	xiaozi 0
+虛位元首 0	0	xuweiyuanshou 0
+蚊子 0	0	wenzi 0
+蠟筆小新 0	0	labixiaoxin 0
+街友 0	0	jieyou 0
+衛勤 0	0	weiqin 0
+製磚 0	0	zhizhuan 0
+製磚廠 0	0	zhizhuanchang 0
+西城秀樹 0	0	xichengxiushu 0
+西川貴教 0	0	xichuanguijiao 0
+視頻 0	0	shipin 0
+解鎖 0	0	jiesuo 0
+訂房 0	0	dingfang 0
+調暗 0	0	diaoan 0
+警消 0	0	jingxiao 0
+豐縣 0	0	fengxian 0
+賴品妤 0	0	laipinyu 0
+賽輪思 0	0	sailunsi 0
+起酥 0	0	qisu 0
+越南籍 0	0	yuenanji 0
+跳蛋 0	0	tiaodan 0
+軍械室 0	0	junxieshi 0
+軍艦島 0	0	junjiandao 0
+軍錶 0	0	junbiao 0
+輔導長 0	0	fudaochang 0
+輕症 0	0	qingzheng 0
+返台假 0	0	fantaijia 0
+追劇 0	0	zhuiju 0
+連假 0	0	lianjia 0
+連辦室 0	0	lianbanshi 0
+連長室 0	0	lianchangshi 0
+週休 0	0	zhouxiu 0
+運維 0	0	yunwei 0
+運輸營 0	0	yunshuying 0
+違紀 0	0	weiji 0
+遞刀子 0	0	didaozi 0
+酒具 0	0	jiuju 0
+金東師 0	0	jindongshi 0
+金湖盃 0	0	jinhubei 0
+金西師 0	0	jinxishi 0
+金防部 0	0	jinfangbu 0
+鉗子 0	0	qianzi 0
+銀翼餐廳 0	0	yinyicanting 0
+錶圈 0	0	biaoquan 0
+鍵帽 0	0	jianmao 0
+鐵血 0	0	tiexie 0
+鑒權 0	0	jianquan 0
+阿基拉 0	0	ajila 0
+阿賽拜疆 0	0	asaibaijiang 0
+降魔 0	0	jiangmo 0
+院線 0	0	yuanxian 0
+陳福海 0	0	chenfuhai 0
+陳高 0	0	chengao 0
+陽翟 0	0	yangdi 0
+隋棠 0	0	suitang 0
+雙馬尾 0	0	shuangmawei 0
+雞雞 0	0	jiji 0
+電子 0	0	dianzi 0
+電子檔 0	0	dianzidang 0
+電子錶 0	0	dianzibiao 0
+電競椅 0	0	dianjingyi 0
+震度 0	0	zhendu 0
+霍守業 0	0	huoshouye 0
+青山宮 0	0	qingshangong 0
+青茶 0	0	qingcha 0
+靜思堂 0	0	jingsitang 0
+音檔 0	0	yindang 0
+頂溪站 0	0	dingxizhan 0
+預覽 0	0	yulan 0
+頓涅茨克 0	0	dunniecike 0
+頤宮 0	0	yigong 0
+風傳媒 0	0	fengchuanmei 0
+風獅爺 0	0	fengshiye 0
+飛龍 0	0	feilong 0
+食神 0	0	shishen 0
+餉冊 0	0	xiangce 0
+饜止 0	0	yanzhi 0
+馬克宏 0	0	makehong 0
+馬防部 0	0	mafangbu 0
+駕訓 0	0	jiaxun 0
+駱駝連 0	0	luotuolian 0
+高虹安 0	0	gaohongan 0
+魂幡 0	0	hunfan 0
+魚香烘蛋 0	0	yuxianghongdan 0
+魚香茄子 0	0	yuxiangqiezi 0
+魷魚嘴 0	0	youyuzui 0
+魷魚遊戲 0	0	youyuyouxi 0
+麥燒酎 0	0	maishaozhou 0
+黃衫 0	0	huangshan 0
+點擊 0	0	dianji 0
+大正 0	0	dazheng 0
+沈周 0	0	shenzhou 0
+民事庭 0	0	minshiting 0
+拉菲堡 0	0	lafeibao 0
+博圖斯 0	0	botusi 0
+瑪歌 0	0	mage 0
+黑木本店 0	0	heimubendian 0
+木桐 0	0	mutong 0
+讖緯 0	0	chenwei 0
+線傳 0	0	xianchuan 0
+時祺 0	0	shiqi 0
+賴聲川 0	0	laishengchuan 0
+金色三麥 0	0	jinsesanmai 0
+智慧錶 0	0	zhihuibiao 0
+斲斷 0	0	zhuoduan 0
+斫斷 0	0	zhuoduan 0
+斲傷 0	0	zhuoshang 0
+賡續 0	0	gengxu 0
+鈞長 0	0	junchang 0
+鈞座 0	0	junzuo 0
+榮調 0	0	rongdiao 0
+胞嘧啶 0	0	baomiding 0
+苯甲基 0	0	benjiaji 0
+布侖斯惕 0	0	bulunsiti 0
+洛瑞 0	0	luorui 0
+嘌呤 0	0	piaoling 0
+醚基 0	0	miji 0
+吡啶 0	0	biding 0
+嘧啶 0	0	miding 0
+吡啶基 0	0	bidingji 0
+凡得瓦 0	0	fandewa 0
+凡得瓦力 0	0	fandewali 0
+芳香環 0	0	fangxianghuan 0
+電洞 0	0	diandong 0
+電子點式 0	0	dianzidianshi 0
+電子軌域 0	0	dianziguiyu 0
+羰基 0	0	tangji 0
+尿嘧啶 0	0	niaomiding 0
+離子基 0	0	liziji 0
+離子鍵 0	0	lizijian 0
+柳酸 0	0	liusuan 0
+弱力 0	0	ruoli 0
+膠子 0	0	jiaozi 0
+鍵結 0	0	jianjie 0
+八隅體 0	0	bayuti 0
+炔基 0	0	guiji 0
+烯基 0	0	xiji 0
+醯胺 0	0	xie 0
+醯胺基 0	0	xieji 0
+醯胺鍵 0	0	xiejian 0
+醯胺鍵結 0	0	xiejianjie 0
+阿瑞尼士 0	0	aruinishi 0
+阿瑞尼斯 0	0	aruinisi 0
+波耳 0	0	boer 0
+波耳模型 0	0	boermoxing 0
+波耳氫模型 0	0	boerqingmoxing 0
+波耳半徑 0	0	boerbanjing 0
+普朗克常數 0	0	pulangkechangshu 0
+漸層 0	0	jianceng 0
+單質子酸 0	0	danzhizisuan 0
+二質子酸 0	0	erzhizisuan 0
+層析 0	0	cengxi 0
+過氯 0	0	guolv 0
+硫酸酐 0	0	liusuanhang 0
+磷酸酐 0	0	linsuanhang 0
+鋁溴碘 0	0	lvxiudian 0
+碳循環 0	0	tanxunhuan 0
+虎克 0	0	huke 0
+密立根 0	0	miligen 0
+油滴 0	0	youdi 0
+馬克士威 0	0	makeshiwei 0
+脊髓 0	0	jisui 0
+殼層 0	0	keceng 0
+價殼層 0	0	jiakeceng 0
+電子組態 0	0	dianzizutai 0
+奈米碳管 0	0	naimitanguan 0
+烷基 0	0	wanji 0
+羥基 0	0	qiangji 0
+羥基 0	0	qiangji 0
+游離能 0	0	youlineng 0
+電負度 0	0	dianfudu 0
+電子親和力 0	0	dianziqinheli 0
+晶格缺陷 0	0	jinggequexian 0
