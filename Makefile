@@ -22,7 +22,7 @@ define SYNOPSIS
 @echo "    lexicon - Generate db splits Lexicon.json"
 @echo "    keyboard - Generate KeyboardLayouts.json"
 @echo "    dist - Copy resources to Xcode codebase and Gitee repo"
-@echo "    splits - "
+@echo "    splits - prepare archives for distribution repos"
 @echo "    clear - Clear dist"
 @echo ""
 @echo "    table.db - Build all CIN table databases"
@@ -175,7 +175,7 @@ clear:
 # 	@mkdir -p ${DIST_DIR}/${GITEE_DIR}
 
 
-dist:
+dist: splits
 	@echo "Distribute resource files...\n"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
 		if [[ -f "${DIST_DIR}/${QUEUE_DIR}/$${file}" ]]; then \
