@@ -1,6 +1,6 @@
 .vscode
 __pycache__
-dist
+dist/*
 rawdata/*
 !rawdata/moe
 rawdata/moe/src/*

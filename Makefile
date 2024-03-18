@@ -37,13 +37,13 @@ define SYNOPSIS
 @echo "    array30 - Array30 [ov/OkidoKey] table builder"
 @echo "    bossy - Custom boshiamy table builder"
 @echo "    ghcm - ghcm table builder"
-@echo "    jieba - Jieba lexicon builder"
-@echo "    jyutping - Jyutping from rime-cantonese table builder"
-@echo "    mcbpmf - McBopomofo lexicon builder"
 @echo "    moe-csv - Convert CSV from original MoE XLS files"
-@echo "    moe.db - MoE concised, idioms, revised lexicon builder"
+@echo "    jyutping - Jyutping from rime-cantonese table builder"
 @echo "    lexicon-array - Array30-phrase lexicon builder"
+@echo "    lexicon-jieba - Jieba lexicon builder"
 @echo "    lexicon-jyutping - Rime-cantonese lexicon builder"
+@echo "    lexicon-mcbpmf - McBopomofo lexicon builder"
+@echo "    lexicon-moe - MoE concised, idioms, revised lexicon builder"
 @echo ""
 
 endef
@@ -165,6 +165,16 @@ clear:
 	@echo "Clear dist"
 	@-rm -fr ${DIST_DIR}/*
 
+
+# dist-clear:
+# 	@echo "Distribute resource files...\n"
+# 	@echo "Cleanup distribution folder ..."
+# 	@rm -fr ${DIST_DIR}/${GITHUB_DIR}
+# 	@rm -fr ${DIST_DIR}/${GITEE_DIR}
+# 	@mkdir -p ${DIST_DIR}/${GITHUB_DIR}
+# 	@mkdir -p ${DIST_DIR}/${GITEE_DIR}
+
+
 dist:
 	@echo "Distribute resource files...\n"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
@@ -199,9 +209,9 @@ dist:
 	done;
 
 	@# ???: auto commit to dist repo
-	@echo Update github
+	@echo Update repo-dist/github
 	@cp -aR ${DIST_DIR}/${GITHUB_DIR}/* ../repo-dist/${GITHUB_DIR}
-	@echo Update gitee
+	@echo Update repo-dist/gitee
 	@cp -aR ${DIST_DIR}/${GITEE_DIR}/* ../repo-dist/${GITEE_DIR}
 
 lexicon-array:
