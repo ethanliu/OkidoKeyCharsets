@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# version: 1.0.0
+# version: 1.0.1
 # autor: Ethan Liu
 #
 # some common python class, functions, etc.
@@ -67,9 +67,12 @@ def natsorted(l):
     return sorted(l, key=alphanum_key)
 
 def color(text, fg = None):
+    if not fg:
+        return text
     try:
-        code = eval('Colors.' + fg)
-        return code + text + eval('Colors.reset')
+        # code = eval('Colors.' + fg)
+        code = getattr(Colors, fg)
+        return eval(code) + text + eval('Colors.reset')
     except:
         return text
 
@@ -129,14 +132,35 @@ def chunks(reader, size = 100000, max = 0):
 #         # how to yield?
 #         yield tqdm(chunk, desc = desc, unit = 'MB', unit_scale = True, ascii = True)
 
+def dict_factory(cursor, row):
+    d = {}
+    for idx, col in enumerate(cursor.description):
+        d[col[0]] = row[idx]
+    return d
+
+def getAll(cursor, query, args = None):
+    if args == None:
+        res = cursor.execute(query)
+    else:
+        res = cursor.execute(query, args)
+    return res.fetchall()
 
 def getOne(cursor, query, args = None):
     if args == None:
         cursor.execute(query)
     else:
         cursor.execute(query, args)
-    # result = cursor.fetchone()
-    return next(cursor, [None])[0]
+    if not cursor.connection.row_factory:
+        return next(cursor, [None])[0]
+    else:
+        result = cursor.fetchone()
+        if not result:
+            return None
+        # print(result)
+        # print(list(result.values())[0])
+        return list(result.values())[0]
+
+
     # print(result)
     # return result[0]
 
