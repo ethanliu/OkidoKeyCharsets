@@ -12,7 +12,7 @@ import re
 # import shutil
 import sqlite3, json
 from datetime import datetime
-from lib.cintable import CinTable, CinTableParseLevel
+from lib.cintable import CinTable, Block
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
@@ -126,11 +126,11 @@ def createTable(outputPath):
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
 
-        cin = CinTable(f"{srcPath}/{filename}", level = CinTableParseLevel.Header)
+        cin = CinTable(f"{srcPath}/{filename}", [])
         content = {
-            'ename': cin.info.get('ename') or '',
-            'cname': cin.info.get('cname') or '',
-            'name': cin.info.get('name') or '',
+            'ename': cin.meta.get('ename') or '',
+            'cname': cin.meta.get('cname') or '',
+            'name': cin.meta.get('name') or '',
             'path': f"{target}/{dbFilename}",
             # 'src': f"{target}/{filename}",
             'license': cin.description,

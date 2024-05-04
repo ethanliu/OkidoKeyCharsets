@@ -1,3 +1,5 @@
+# the syntax of sed in this Makefile is specified for macOS
+
 .PHONY: usage all clear test table lexicon dist
 
 TABLE_DIR := table
@@ -62,7 +64,15 @@ endef
 usage:
 	@echo ${SYNOPSIS}
 
-# test:
+test:
+	@echo "[test]"
+
+test2holder:
+	@bin/cin2db.py -i table/array30.cin -o tmp/array30.cin.db -e array
+	@bin/cin2db.py -i table/array30-OkidoKey.cin -o tmp/array30-OkidoKey.cin.db -e array
+	@#bin/unihan.py -o tmp/Unihan.db > tmp/tmp.txt
+	@bin/cin2db.py -i table/array30-OkidoKey-big.cin -o tmp/array30-OkidoKey-big.cin.db -e array
+
 
 init:
 	@mkdir -p ${DIST_DIR}/${QUEUE_DIR}/${TABLE_DIR}
@@ -90,7 +100,7 @@ splits-table:
 	@$(eval dst2 := ${DIST_DIR}/${GITEE_DIR}/${TABLE_DIR})
 	$(eval list := $(notdir $(wildcard ${src}/*.db)))
 	@for filename in ${list}; do \
-		echo $${filename} ; \
+		echo "💔 $${filename}" ; \
 		cp ${src}/$${filename} ${dst1} ; \
 		cp ${src}/$${filename} ${dst2} ; \
 		bin/LoveMachine -s --2048 ${dst1}/$${filename} ;\
@@ -119,6 +129,7 @@ splits: splits-table splits-lexicon
 table.db: init
 	$(eval excludes := \
 		_sample.cin _demo.cin \
+		array30.cin \
 		array-shortcode.cin array-special.cin \
 		boshiamy.cin liu.cin bossy.cin \
 		biaoyin.cin bpmf-ext.cin \
@@ -175,7 +186,7 @@ clear:
 # 	@mkdir -p ${DIST_DIR}/${GITEE_DIR}
 
 
-dist: splits
+sync:
 	@echo "Distribute resource files...\n"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
 		if [[ -f "${DIST_DIR}/${QUEUE_DIR}/$${file}" ]]; then \
@@ -208,6 +219,7 @@ dist: splits
 		fi ; \
 	done;
 
+dist: sync splits
 	@# ???: auto commit to dist repo
 	@echo Update repo-dist/github
 	@cp -aR ${DIST_DIR}/${GITHUB_DIR}/* ../repo-dist/${GITHUB_DIR}
@@ -282,7 +294,23 @@ array30:
 	@cp ${file} ${TABLE_DIR}/array30-OkidoKey.cin
 	@$(eval file := $(wildcard rawdata/array30/OkidoKey/array30-OkidoKey-big*.cin))
 	@cp ${file} ${TABLE_DIR}/array30-OkidoKey-big.cin
-	@bin/cin2db.py -i ${TABLE_DIR}/array30.cin -o ${TABLE_DIST_PATH}/array30.cin.db -e array
+
+	@echo "Patching..."
+
+	@cat ${TABLE_DIR}/array-special.cin | sed -n '/%chardef begin/,/%chardef end/p' | sed 's/chardef/special/g' > tmp/array-special.cin
+	@cat ${TABLE_DIR}/array-shortcode.cin | sed -n '/%chardef begin/,/%chardef end/p' | sed 's/chardef/shortcode/g' > tmp/array-shortcode.cin
+	@cat tmp/array-shortcode.cin >> ${TABLE_DIR}/array30-OkidoKey.cin
+	@cat tmp/array-special.cin >> ${TABLE_DIR}/array30-OkidoKey.cin
+	@cat tmp/array-shortcode.cin >> ${TABLE_DIR}/array30-OkidoKey-big.cin
+	@cat tmp/array-special.cin >> ${TABLE_DIR}/array30-OkidoKey-big.cin
+	@-rm tmp/array-special.cin tmp/array-shortcode.cin
+
+	@#$(eval txt := '\#\ shortcode\ +\ special\\n')
+	@##sed -i '' -e 's/%gen_inp/${txt}\n%gen_inp/g' ${TABLE_DIR}/array30.cin
+	@#sed -i '' -e 's/%gen_inp/${txt}\n%gen_inp/g' ${TABLE_DIR}/array30-OkidoKey.cin
+	@#sed -i '' -e 's/%gen_inp/${txt}\n%gen_inp/g' ${TABLE_DIR}/array30-OkidoKey-big.cin
+
+	@#bin/cin2db.py -i ${TABLE_DIR}/array30.cin -o ${TABLE_DIST_PATH}/array30.cin.db -e array
 	@bin/cin2db.py -i ${TABLE_DIR}/array30-OkidoKey.cin -o ${TABLE_DIST_PATH}/array30-OkidoKey.cin.db -e array
 	@bin/cin2db.py -i ${TABLE_DIR}/array30-OkidoKey-big.cin -o ${TABLE_DIST_PATH}/array30-OkidoKey-big.cin.db -e array
 
@@ -378,7 +406,6 @@ bossy:
 	@bin/cin2db.py -i rawdata/bossy/boshiamy_t.cin rawdata/bossy/boshiamy_ct.cin rawdata/bossy/boshiamy_j.cin rawdata/bossy/hangulromaja.cin -o ${DIST_DIR}/bossy.cin.db -e bossy
 	@echo "Generate CIN table..."
 	@bin/db2cin.py -i rawdata/bossy/bossy.cin.db -o ${DIST_DIR}/bossy.cin --header rawdata/bossy/bossy-header.cin
-
 
 # bossydiff:
 # 	@bin/xxcin.py -m diff -s a -i ${TABLE_DIR}/array30.cin -x rawdata/bossy/boshiamy_t.cin rawdata/bossy/boshiamy_c.cin rawdata/bossy/boshiamy_j.cin -o tmp/diff.txt

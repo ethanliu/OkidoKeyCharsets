@@ -10,7 +10,7 @@ import sys, os
 import sqlite3
 from enum import IntEnum
 from tqdm import tqdm
-from lib.cintable import CinTable, CinTableParseLevel
+from lib.cintable import CinTable, Block
 # from time import sleep
 
 uu = importlib.import_module("lib.util")
@@ -27,7 +27,7 @@ class Mode(IntEnum):
 
 def performImport(cursor, inputPath, mode = Mode.CREATE):
     # tqdm.write(uu.color(f"[{filename}]", fg = 'green'))
-    cin = CinTable(inputPath, level = CinTableParseLevel.Full)
+    cin = CinTable(inputPath, [Block.Chardef])
 
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
@@ -35,8 +35,8 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
 
     if mode == Mode.CREATE:
         query = "INSERT OR IGNORE INTO `info` (`name`, `value`) VALUES (:name, :value)"
-        for key in cin.info:
-            value = cin.info[key]
+        for key in cin.meta:
+            value = cin.meta[key]
             if value:
                 args = {'name': key, 'value': value}
                 cursor.execute(query, args)
@@ -52,29 +52,43 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
             cursor.execute(query, args)
 
     query1 = "INSERT OR IGNORE INTO `keydef` (`key`) VALUES (:value)"
-    query2 = "SELECT `rowid` FROM `keydef` WHERE `key` = :value LIMIT 1"
+    # query2 = "SELECT `rowid` FROM `keydef` WHERE `key` = :value LIMIT 1"
     query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
-    query4 = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
-    query5 = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :cid)"
+    # query4 = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
+    # query5 = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :cid)"
+    query6 = "INSERT INTO `entry` (`keydef_id`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `keydef` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}"):
+    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}[1]"):
         # print(f"{item[0]} => {item[1]}")
         key = item[0]
         value = item[1]
 
-        # keydef
-        args = {'value': key}
-        cursor.execute(query1, args)
-        keydefId = uu.getOne(cursor, query2, args)
+        # old school way, one by one
+        # bossy.cin took 3s
 
-        # chardef
-        args = {'value': value}
-        cursor.execute(query3, args)
-        chardefId = uu.getOne(cursor, query4, args)
+        # # keydef
+        # args = {'value': key}
+        # cursor.execute(query1, args)
+        # keydefId = uu.getOne(cursor, query2, args)
 
-        #entry pivot
-        args = {'kid': keydefId, 'cid': chardefId}
-        cursor.execute(query5, args)
+        # # chardef
+        # args = {'value': value}
+        # cursor.execute(query3, args)
+        # chardefId = uu.getOne(cursor, query4, args)
+
+        # #entry pivot
+        # args = {'kid': keydefId, 'cid': chardefId}
+        # cursor.execute(query5, args)
+
+        # v2, keydef and chardef
+        cursor.execute(query1,  {'value': key})
+        cursor.execute(query3, {'value': value})
+
+    # v2: entry
+    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}[2]"):
+        key = item[0]
+        value = item[1]
+        cursor.execute(query6, {'key': key, 'value': value})
 
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
@@ -90,51 +104,41 @@ def validate(cursor):
         if not check or check <= 1:
             tqdm.write(f"[?] keyname: {item[0]} ({item[1]}) never or rarely used")
 
-def pluginArray(cursor, inputs):
-    basedir = os.path.dirname(inputs[0])
-    for category in ['shortcode', 'special']:
-        path = f"{basedir}/array-{category}.cin"
-        if not os.path.exists(path):
-            tqdm.write(f"File not found: {path}")
-            continue
+def pluginArray(cursor, inputPath):
+    cin = CinTable(inputPath, [Block.Shortcode, Block.Special])
+    cursor.execute("PRAGMA synchronous = OFF")
+    cursor.execute("PRAGMA journal_mode = MEMORY")
+    cursor.execute("BEGIN TRANSACTION")
 
-        cin = CinTable(path, level = CinTableParseLevel.Full)
+    for category in cin.extra:
+        rows = cin.extra[category]
+        if not rows:
+            # tqdm.write(f"No data for {category}")
+            continue
 
         keydefTableName = f"keydef_{category}"
         entryTableName = f"entry_{category}"
         entryKeydefColumnName = f"keydef_{category}_id"
 
+        query1 = f"INSERT OR IGNORE INTO `{keydefTableName}` (`key`) VALUES (:value)"
+        query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
+        query6 = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `{keydefTableName}` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+
         cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
         cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
-        query1 = f"INSERT OR IGNORE INTO `{keydefTableName}` (`key`) VALUES (:value)"
-        query2 = f"SELECT `rowid` FROM `{keydefTableName}` WHERE `key` = :value LIMIT 1"
-        query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
-        query4 = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
-        query5 = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) VALUES (:kid, :vid)"
-
-        cursor.execute("BEGIN TRANSACTION")
-        for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}"):
-            # tqdm.write(f"{item[0]} => {item[1]}")
+        for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
             key = item[0]
             value = item[1]
+            cursor.execute(query1,  {'value': key})
+            cursor.execute(query3, {'value': value})
+        for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[2]"):
+            key = item[0]
+            value = item[1]
+            cursor.execute(query6, {'key': key, 'value': value})
 
-            # keydef
-            args = {'value': key}
-            cursor.execute(query1, args)
-            keydefId = uu.getOne(cursor, query2, args)
-
-            # chardef
-            args = {'value': value}
-            cursor.execute(query3, args)
-            chardefId = uu.getOne(cursor, query4, args)
-
-            # entry pivot
-            args = {'kid': keydefId, 'vid': chardefId}
-            cursor.execute(query5, args)
-
-        cursor.execute("COMMIT TRANSACTION")
-        # cursor.execute(f"CREATE UNIQUE INDEX `{keydefTableName}_index` ON keydef (key)")
+    # commit
+    cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
 
 def pluginBossy(cursor):
@@ -188,7 +192,7 @@ def main():
     if args.plugin:
         match args.plugin:
             case "array":
-                pluginArray(cursor, args.input)
+                pluginArray(cursor, args.input[0])
             case "bossy":
                 pluginBossy(cursor)
         db.commit()
