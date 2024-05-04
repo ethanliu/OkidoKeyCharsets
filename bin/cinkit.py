@@ -9,7 +9,7 @@
 import sys
 import os.path
 import argparse
-from lib.cintable import CinTable, CinTableParseLevel
+from lib.cintable import CinTable, Block
 from tqdm import tqdm
 
 blocks = {}
@@ -40,11 +40,11 @@ blocks["i"] = [{"start": 0x2EBF0, "stop": 0x2EE5F, "name": "CJK Unified Ideograp
 blocks["x"] = [{"start": 0x2F800, "stop": 0x2FA1F, "name": "CJK Compatibility Ideographs Supplement", "name_zh": "中日韓相容表意文字補充區"}]
 
 def performMerge(args):
-    mainCin = CinTable(args.path, level = CinTableParseLevel.Full)
+    mainCin = CinTable(args.path, [Block.Chardef])
 
     for path in args.merge:
         filename = os.path.basename(path)
-        ref = CinTable(path, level = CinTableParseLevel.Full)
+        ref = CinTable(path, [Block.Chardef])
         for item in tqdm(ref.chardef, ascii=True, unit_scale=True, desc=f"{filename}"):
             if item in mainCin.chardef:
                 continue
@@ -61,7 +61,7 @@ def performDiff(args):
     cinList = []
     blockList = []
 
-    cin = CinTable(args.path, level = CinTableParseLevel.Full)
+    cin = CinTable(args.path, [Block.Chardef])
     for item in cin.chardef:
         cinList.append(item[1])
     cinList = list(dict.fromkeys(cinList))

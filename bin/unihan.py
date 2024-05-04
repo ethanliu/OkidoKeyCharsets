@@ -280,7 +280,7 @@ def main():
     args = argParser.parse_args()
 
     preferTonwen = False
-    dryrun = True
+    dryrun = False
 
     if not dryrun:
         createDatabase(args.output)

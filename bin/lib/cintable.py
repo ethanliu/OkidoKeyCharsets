@@ -11,15 +11,22 @@ import os
 import re
 # from collections import OrderedDict
 from tqdm import tqdm
-from enum import IntEnum
+from enum import Enum
 
-from lib.util import trim, chunks
+from lib.util import trim, chunks, vprint
 
-class CinTableParseLevel(IntEnum):
-    No = 0
-    Header = 1
-    Full = 2
-    Validate = 3
+# class CinTableParseLevel(IntEnum):
+#     No = 0
+#     Header = 1
+#     Full = 2
+#     Validate = 3
+
+# Using auto with StrEnum results in the lower-cased member name as the value.
+class Block(Enum):
+    Keyname = "%keyname"
+    Chardef = "%chardef"
+    Shortcode = "%shortcode"
+    Special = "%special"
 
 class CinTable:
     definedTags = [
@@ -34,25 +41,30 @@ class CinTable:
         '%scname',
         '%locale',
     ]
-    definedSections = [
-        '%keyname',
-        '%chardef',
-    ]
 
-    def __init__(self, path, level: CinTableParseLevel = CinTableParseLevel.No):
+    def __init__(self, path, blocks):
         self.path = path
-        self.description = ""
-        self.info = {}
-        self.keyname = {}
-        self.chardef = []
+        self.blocks = blocks # or [Block.Chardef]
+
         self.duplicateChardef = []
         self.unknownTags = []
-        if path and level != CinTableParseLevel.No:
-            self.parse(level = level)
+
+        self.description = ""
+        self.meta = {}
+        self.keyname = {}
+        self.chardef = []
+        self.extra = {
+            'shortcode': [],
+            'special': [],
+        }
+
+        if path:
+            # tqdm.write(f"parsing: {path}, blocks: {blocks}")
+            self.parse()
 
     def __str__(self):
         return f"""Name: {self.getName()}
-Info: {self.info}
+Info: {self.meta}
 Unknown Tags: {self.unknownTags}
 Total Keyname: {len(self.keyname)}
 Total Chardef: {len(self.chardef)}
@@ -65,23 +77,32 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
             return False
         return True
 
-    def error(self, msg):
-        print(msg)
-        sys.exit()
+    def log(self, msg, stop = False):
+        # verbose = True
+        # vprint(msg, verbose)
+        if stop:
+            tqdm.write(msg)
+            sys.exit()
 
-    def parse(self, level: CinTableParseLevel = CinTableParseLevel.Header):
+    def parse(self):
         if not self.fileExists():
-            self.error("File not exists")
+            self.log("File not exists", stop = True)
 
+        filename = os.path.basename(self.path)
         with open(self.path, "r") as fp:
 
-            currentSection = None
-            ignoreSection = None
+            currentBlock: Block | None = None
+            ignoreBlockName = None
             acceptComments = True
-            disable = False if level > 2 else True
+            stop = False
+            disable = False if len(self.blocks) > 0 else True
 
             for chunk in chunks(fp.readlines(), size = 50000, max = 0):
-                for line in tqdm(chunk, desc = f"CIN[]", unit = 'MB', unit_scale = True, ascii = True, disable = disable):
+                if stop:
+                    break
+                for line in tqdm(chunk, desc = f"{filename}", unit = 'MB', unit_scale = True, ascii = True, disable = disable):
+                    if stop:
+                        break
 
                 # for line in tqdm(fp.readlines(), unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
                 # for line in fp.readlines():
@@ -100,7 +121,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                         continue
 
                     line = trim(line, '#')
-                    items = re.split('[\s\t]{1}', line, 1)
+                    items = re.split('[\\s\\t]{1}', line, 1)
                     # if len(items) < 2:
                     #     continue
 
@@ -112,53 +133,63 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                         # once any section began, ignore all comments for "description"
                         acceptComments = False
 
-                    if key in self.definedSections:
-                        if currentSection == key and value == "end":
-                            currentSection = None
-                            ignoreSection = None
-                            # print(f"end section: {key}")
+                    try:
+                        _block = Block(key)
+                        if currentBlock == _block and value == "end":
+                            currentBlock = None
+                            ignoreBlockName = None
+                            self.log(f"end of block: {key}")
                         else:
-                            if level == CinTableParseLevel.Header and key == "%chardef":
-                                currentSection = None
-                                ignoreSection = key
-                                # normally this should be fine
-                                break
-                            else:
-                                currentSection = key
-                                ignoreSection = None
-                            # print(f"start section: {key}")
+                            currentBlock = _block
+                            ignoreBlockName = None
+                            self.log(f"beginning of block: {key}")
                         continue
+                    except:
+                        # self.log(f"Invalid block: {key}")
+                        pass
 
-                    if not currentSection:
-                        if ignoreSection:
-                            # print(f"Ignore section: {ignoreSection}")
+                    if not currentBlock:
+                        if ignoreBlockName:
+                            self.log(f"Ignore block: {ignoreBlockName}")
                             continue
                         if key.startswith('%') and (value == 'begin' or value == 'end'):
-                            ignoreSection = key
-                            # print(f"[?] Unknown section: {key}")
+                            ignoreBlockName = key
+                            self.log(f"[?] Unknown block: {key}")
                             self.unknownTags.append(key)
                             continue
 
                         if not key in self.definedTags:
-                            # print(f"[?] Unknown tag: {key} {value}")
+                            self.log(f"[?] Unknown tag: {key} {value}")
                             self.unknownTags.append(key)
                             continue
 
-                        self.info[key[1:]] = value
+                        self.meta[key[1:]] = value
                         continue
 
-                    if currentSection == "%keyname":
+                    if currentBlock == Block.Keyname:
+                        # self.log(f"-> keyname: {key} {value}")
                         self.keyname[key] = value
-                        continue
-
-                    if currentSection == "%chardef" and value:
-                        # self.chardef[key] = value
-                        self.chardef.append([key, value])
+                    else:
+                        if currentBlock and not currentBlock in self.blocks:
+                            # tqdm.write(f"<-- {currentBlock} / {self.blocks}")
+                            # continue instead of stop incase charset is not the first block
+                            continue
+                            # stop = True
+                            # break
+                        if currentBlock == Block.Chardef and currentBlock in self.blocks and value:
+                            # self.log(f"-> chardef: {key} {value}")
+                            self.chardef.append([key, value])
+                        elif currentBlock == Block.Special and currentBlock in self.blocks and value:
+                            # self.log(f"-> chardef: {key} {value}")
+                            self.extra['special'].append([key, value])
+                        elif currentBlock == Block.Shortcode and currentBlock in self.blocks and value:
+                            # self.log(f"-> chardef: {key} {value}")
+                            self.extra['shortcode'].append([key, value])
 
         self.description = trim(self.description, space = True)
-
-        if level == CinTableParseLevel.Validate:
-            self.validate()
+        # if level == CinTableParseLevel.Validate:
+        #     self.validate()
+        # print(self)
 
     def removeDuplicateCharde(self):
         unique = []
@@ -176,8 +207,8 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         tags = ["cname", "tcname", "scname", "name"]
         for tag in tags:
             # print(self.info.get(tag))
-            if not self.info.get(tag) is None:
-                return self.info[tag]
+            if not self.meta.get(tag) is None:
+                return self.meta[tag]
         return "Noname"
 
     def validate(self):
