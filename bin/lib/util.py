@@ -173,3 +173,8 @@ def getOne(cursor, query, args = None):
     # else:
     #     result = result
     # return result
+
+def vprint(message: str, verbose = True):
+    if not verbose:
+        return
+    print(message)
