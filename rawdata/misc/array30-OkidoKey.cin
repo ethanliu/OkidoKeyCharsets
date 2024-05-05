@@ -1,0 +1,3 @@
+標準版 (regular)：僅收錄 Unicode 內碼為 4 位數 16 進位之中日韓漢字；例如「行」字，其 Unicode 內碼為 U+884C。CJK Ext-A 字集範圍亦收錄於此版本。
+
+OkidoKey 版本字根包含一、二級簡碼及特別碼

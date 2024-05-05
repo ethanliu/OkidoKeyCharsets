@@ -166,16 +166,17 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                         self.meta[key[1:]] = value
                         continue
 
-                    if currentBlock == Block.Keyname:
+                    if currentBlock == Block.Keyname and disable:
                         # self.log(f"-> keyname: {key} {value}")
                         self.keyname[key] = value
                     else:
+                        if disable:
+                            stop = True
+                            break
                         if currentBlock and not currentBlock in self.blocks:
                             # tqdm.write(f"<-- {currentBlock} / {self.blocks}")
                             # continue instead of stop incase charset is not the first block
                             continue
-                            # stop = True
-                            # break
                         if currentBlock == Block.Chardef and currentBlock in self.blocks and value:
                             # self.log(f"-> chardef: {key} {value}")
                             self.chardef.append([key, value])
