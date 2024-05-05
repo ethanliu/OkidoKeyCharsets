@@ -11,6 +11,7 @@ import sys, os, glob
 import re
 # import shutil
 import sqlite3, json
+from tqdm import tqdm
 from datetime import datetime
 from lib.cintable import CinTable, Block
 
@@ -119,6 +120,7 @@ def createTable(outputPath):
         'splits': {},
     }
 
+    # for path in tqdm(sorted(glob.glob(f"{charsetPath}/*.charset.json")), unit = 'MB', unit_scale = True, ascii = True, desc = ""):
     for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('.db', '')
@@ -151,6 +153,13 @@ def createTable(outputPath):
             category = "pinying"
 
         content['category'] = category
+
+        # additional headers
+        headerpath = f"rawdata/misc/{filename}"
+        if os.path.exists(headerpath):
+            with open(headerpath, "r") as fp:
+                additional = uu.trim(fp.read())
+                content['license'] = f"{content['license']}\n\n{additional}"
 
         # print(content)
         jsondata['datatables'].append(content)

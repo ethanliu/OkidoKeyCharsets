@@ -91,6 +91,9 @@ keyboard:
 lexicon: splits-lexicon
 	@bin/resource.py -c lexicon -o ${DIST_DIR}/${QUEUE_DIR}/Lexicon.json
 
+tablex:
+	@bin/resource.py -c table -o ${DIST_DIR}/${QUEUE_DIR}/DataTables.json
+
 table: splits-table
 	@bin/resource.py -c table -o ${DIST_DIR}/${QUEUE_DIR}/DataTables.json
 
@@ -336,10 +339,10 @@ moe-revised:
 # original dict_idioms_2020_20230629.xls cam with incomplete fomular binding to foreign file
 # must manually save as another copy to fix above question before using csvkit
 moe-idioms:
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xlsx)))
-	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xlsx/\1/' ))
+	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xls)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xls/\1/' ))
 	@echo "idioms: ${version}"
-	@in2csv rawdata/moe/src/dict_idioms_${version}.xlsx > rawdata/moe/idioms-raw.csv
+	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/idioms-raw.csv
 	@csvcut -c 編號,成語,注音,漢語拼音 rawdata/moe/idioms-raw.csv > rawdata/moe/idioms.csv
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-idioms.csv.txt
 	@-rm rawdata/moe/idioms-raw.csv
