@@ -498,7 +498,6 @@ _xDC33__xDBAB_	0	wu
 芭蕉扇	0	bajiaoshan
 芭蕉芋	0	bajiaoyu
 芭苴	0	baju
-芭賽	0	basai
 疤痆	0	banie
 疤瘌餅	0	balabing
 疤瘌流星的	0	balaliuxingde
@@ -2151,7 +2150,6 @@ _xDC33__xDBAB_	0	wu
 白眼	0	baiyan
 白眼頻加	0	baiyanpinjia
 白眼珠	0	baiyanzhu
-白眼兒狼	0	baiyanrlang
 白眼望青天	0	baiyanwangqingtian
 白銀	0	baiyin
 白羊宮	0	baiyanggong
@@ -8683,7 +8681,7 @@ _xDC33__xDBAB_	0	wu
 不甘示弱	0	buganshiruo
 不甘雌伏	0	bugancifu
 不乾不淨	0	buganbujing
-不乾不淨，吃了沒病	0	bùgānbùjìngchī，leméibìng
+不乾不淨，吃了沒病	0	bùgānbùjìng，chīleméi
 不乾淨	0	buganjing
 不乾性油	0	buganxingyou
 不尷不尬	0	buganbuga
@@ -11693,7 +11691,7 @@ _xDD90__xD84F_飯	0	paofan
 潘河陽	0	panheyang
 潘金蓮	0	panjinlian
 潘金蓮的竹竿	0	panjinliandezhugan
-潘金蓮給武松敬酒	0	panjinliangeiwusongjinjiu
+潘金蓮給武松敬酒	0	panjinliangeiwusongjingjiu
 潘江陸海	0	panjiangluhai
 潘植	0	panzhi
 潘車	0	panche
@@ -20100,8 +20098,6 @@ _xDD90__xD84F_飯	0	paofan
 名都	0	mingdu
 名動公卿	0	mingdonggongqing
 名動金甌	0	mingdongjinou
-名特	0	mingte
-名特優新	0	mingteyouxin
 名頭	0	mingtou
 名壇	0	mingtan
 名堂	0	mingtang
@@ -27948,10 +27944,10 @@ _xDD90__xD84F_飯	0	paofan
 打蠟機	0	dalaji
 打了半跪	0	dalebangui
 打了偏手	0	dalepianshou
-打了個盹兒	0	dalegeduer
+打了個盹兒	0	dalegedunr
 打了個落花流水	0	dalegeluohualiushui
 打了個寒噤	0	dalegehanjin
-打了個千兒	0	dalegeqiar
+打了個千兒	0	dalegeqianr
 打了個照面	0	dalegezhaomian
 打了一個悶雷	0	daleyigemenlei
 打了牙肚裡嚥	0	daleyaduliyan
@@ -37799,7 +37795,7 @@ _xDD90__xD84F_飯	0	paofan
 太卜	0	taibu
 太婆	0	taipo
 太平	0	taiping
-太平本是將軍定，不許將軍見太平	0	tàipíngběnshìjiāngjūn，dìngbùxǔjiāngjūnjiàntàipíng
+太平本是將軍定，不許將軍見太平	0	tàipíngběnshìjiāngjūndìng，bùxǔjiāngjūnjiàntàipíng
 太平門	0	taipingmen
 太平道	0	taipingdao
 太平梯	0	taipingti
@@ -38917,7 +38913,7 @@ _xDD90__xD84F_飯	0	paofan
 頭行	0	touxing
 頭行	0	tou
 頭行	0	hang
-頭絮兒	0	touxur
+頭緒兒	0	touxur
 頭緒	0	touxu
 頭懸目眩	0	touxuanmuxuan
 頭眩	0	touxuan
@@ -41237,7 +41233,7 @@ _xDD90__xD84F_飯	0	paofan
 天下父母心	0	tianxiafumuxin
 天下大亂	0	tianxiadaluan
 天下大勢	0	tianxiadashi
-天下大勢分久必合，合久必分	0	tiānxiàdàshìfēnjiǔbì，héhéjiǔbìfēn
+天下大勢分久必合，合久必分	0	tiānxiàdàshìfēnjiǔbìhé，héjiǔbìfēn
 天下第一	0	tianxiadiyi
 天下鼎沸	0	tianxiadingfei
 天下多故	0	tianxiaduogu
@@ -41761,6 +41757,7 @@ _xDD90__xD84F_飯	0	paofan
 靦顏事仇	0	tianyanshichou
 靦冒	0	tianmao
 掭筆	0	tianbi
+蚺䗊	0	tiantan
 瑱圭	0	tiangui
 舚破	0	tianpo
 舚舕	0	tiantan
@@ -44973,7 +44970,6 @@ _xDD90__xD84F_飯	0	paofan
 男子漢大丈夫	0	nanzihandazhangfu
 男左女右	0	nanzuonuyou
 男尊女卑	0	nanzunnubei
-男廁	0	nance
 男色	0	nanse
 男僧寺對著女僧寺	0	nansengsiduizhenusengsi
 男兒	0	naner
@@ -46044,7 +46040,7 @@ _xDD90__xD84F_飯	0	paofan
 扭腰	0	niuyao
 扭腰撒胯	0	niuyaosakua
 狃習	0	niuxi
-紐襻兒	0	niupanr
+紐襻	0	niupan
 紐門	0	niumen
 紐芬蘭	0	niufenlan
 紐帶	0	niudai
@@ -46362,7 +46358,7 @@ _xDC57__xD85D_蝦	0	ningxia
 寧奈	0	ningnai
 寧個	0	ningge
 寧可	0	ningke
-寧可信其有，不可信其無	0	níngkěxìnqí，yǒubùkěxìnqíwú
+寧可信其有，不可信其無	0	níngkěxìnqíyǒu，bùkěxìnqí
 寧可折本，休要饑損	0	níngkězhéběn，xiūyàojīsǔn
 寧可無了有，不可有了無	0	níngkěwúleyǒu，bùkěyǒulewú
 寧可玉碎，不能瓦全	0	níngkěyùsuì，bùnéngwǎquán
@@ -46843,7 +46839,7 @@ _xDC57__xD85D_蝦	0	ningxia
 弄濤	0	nongtao
 弄堂	0	nongtang
 弄擰了	0	nongningle
-弄刺子兒	0	nonglazir
+弄剌子兒	0	nonglazir
 弄了個魚頭來拆	0	nonglegeyutoulaichai
 弄來弄去	0	nonglainongqu
 弄柳拈花	0	nongliunianhua
@@ -48416,10 +48412,6 @@ _xDC57__xD85D_蝦	0	ningxia
 老姑娘	0	niang
 老骨頭	0	laogutou
 老古董	0	laogudong
-老姑娘	0	laoguniang
-老姑娘	0	lao
-老姑娘	0	gu
-老姑娘	0	niang
 老寡婦死兒	0	laoguafusier
 老鴰	0	laogua
 老鴰窩裡出鳳凰	0	laoguawolichufenghuang
@@ -53946,7 +53938,7 @@ _xDC57__xD85D_蝦	0	ningxia
 盧比	0	lubi
 盧布	0	lubu
 盧同	0	lutong
-盧稜伽	0	lulingqie
+盧稜伽	0	lulengqie
 盧令	0	luling
 盧綸	0	lulun
 盧溝橋	0	lugouqiao
@@ -54606,7 +54598,7 @@ _xDC57__xD85D_蝦	0	ningxia
 蘿芙木	0	luofumu
 邏輯	0	luoji
 邏輯代數	0	luojidaishu
-邏輯閘	0	luojijia
+邏輯閘	0	luojizha
 邏輯學	0	luojixue
 邏輯主語	0	luojizhuyu
 邏輯重音	0	luojizhongyin
@@ -54872,7 +54864,6 @@ _xDC57__xD85D_蝦	0	ningxia
 巒兄巒弟	0	luanxiongluandi
 孌童	0	luantong
 孿生	0	luansheng
-孿生兄弟	0	luanshengxiongdi
 孿生子	0	luanshengzi
 孿子	0	luanzi
 欒櫨宏敞	0	luanluhongchang
@@ -55997,7 +55988,7 @@ _xDC57__xD85D_蝦	0	ningxia
 疙渣兒	0	gezhar
 疙顫顫	0	gezhanzhan
 紇繨	0	geda
-紇剌星	0	gelaxing
+紇刺星	0	gecixing
 紇絡	0	geluo
 咯噠	0	geda
 咯噹	0	gedang
@@ -60556,7 +60547,6 @@ _xDC57__xD85D_蝦	0	ningxia
 果決	0	guojue
 果汁	0	guozhi
 果汁機	0	guozhiji
-果擲行車	0	guozhixingche
 果真	0	guozhen
 果桌	0	guozhuo
 果饌	0	guozhuan
@@ -69685,7 +69675,7 @@ _xDE63__xD860_腰	0	hayao
 後起字	0	houqizi
 後秦	0	houqin
 後勤	0	houqin
-後學兒	0	houxiaor
+後學兒	0	houxuer
 後效	0	houxiao
 後先輝映	0	houxianhuiying
 後現代劇場	0	houxiandaijuchang
@@ -71014,7 +71004,7 @@ _xDE63__xD860_腰	0	hayao
 胡枝子	0	huzhizi
 胡志明	0	huzhiming
 胡志明市	0	huzhimingshi
-胡遮刺	0	huzhela
+胡遮剌	0	huzhela
 胡扯	0	huche
 胡柴	0	huchai
 胡臭	0	huchou
@@ -77752,7 +77742,7 @@ _xDE63__xD860_腰	0	hayao
 家燕	0	jiayan
 家秧子	0	jiayangzi
 家蠅	0	jiaying
-家無儋石	0	jiawudanshi
+家無儋石	0	jiawudandan
 家無擔石	0	jiawudanshi
 家無斗儲	0	jiawudouchu
 家無長物	0	jiawuzhangwu
@@ -80226,7 +80216,7 @@ _xDE63__xD860_腰	0	hayao
 九百	0	jiubai
 九辯	0	jiubian
 九賓	0	jiubin
-九烹十八火	0	jiupengshibahuo
+九焞十八火	0	jiudunshibahuo
 九嬪	0	jiupin
 九品	0	jiupin
 九品中正	0	jiupinzhongzheng
@@ -87214,7 +87204,6 @@ _xDE63__xD860_腰	0	hayao
 起身	0	qishen
 起身炮	0	qishenpao
 起數	0	qishu
-起水頭兒	0	qishuitour
 起子	0	qizi
 起早	0	qizao
 起早貪黑	0	qizaotanhei
@@ -100523,7 +100512,6 @@ _xDE63__xD860_腰	0	hayao
 懸溜	0	xuanliu
 懸梁	0	xuanliang
 懸梁刺股	0	xuanliangcigu
-懸梁刺骨	0	xuanliangcigu
 懸隔	0	xuange
 懸鉤子	0	xuangouzi
 懸掛	0	xuangua
@@ -107222,7 +107210,7 @@ _xDE63__xD860_腰	0	hayao
 斫頭	0	zhuotou
 斫蜋	0	zhuolang
 斫輪老手	0	zhuolunlaoshou
-斫鱠	0	zhuokui
+斫鱠	0	zhuokuai
 斫殺	0	zhuosha
 斫手	0	zhuoshou
 斫營	0	zhuoying
@@ -108544,7 +108532,7 @@ _xDE63__xD860_腰	0	hayao
 忠言讜論	0	zhongyandanglun
 忠言逆耳	0	zhongyannier
 忠言嘉謨	0	zhongyanjiamo
-忠言奇謀	0	zhongyanqimo
+忠言奇謀	0	zhongyanqimou
 忠於職守	0	zhongyuzhishou
 忠勇	0	zhongyong
 盅子	0	zhongzi
@@ -113257,7 +113245,7 @@ _xDE63__xD860_腰	0	hayao
 出豁	0	chuhuo
 出活	0	chuhuo
 出火	0	chuhuo
-出火炕	0	chuhuokeng
+出火坑	0	chuhuokeng
 出貨	0	chuhuo
 出紅差	0	chuhongchai
 出擊	0	chuji
@@ -117426,7 +117414,7 @@ _xDE63__xD860_腰	0	hayao
 沙荒	0	shahuang
 沙皇	0	shahuang
 沙基慘案	0	shajicanan
-沙雞	0	chaji
+沙雞	0	shaji
 沙金	0	shajin
 沙其馬	0	shaqima
 沙丘	0	shaqiu
@@ -128256,7 +128244,7 @@ _xDE63__xD860_腰	0	hayao
 鑿鑿有據	0	zuozuoyouju
 鑿飲耕食	0	zuoyingengshi
 鑿圓枘方	0	zuoyuanruifang
-羧酸	0	zuisuan
+羧酸	0	suosuan
 觜鼻	0	zuibi
 嘴巴巴	0	zuibaba
 嘴把式	0	zuibashi
@@ -130338,7 +130326,7 @@ _xDE63__xD860_腰	0	hayao
 倉庾	0	cangyu
 傖夫俗人	0	cangfusuren
 傖父	0	cangfu
-傖儜	0	cangning
+傖儜	0	cangneng
 傖俗	0	cangsu
 滄溟	0	cangming
 滄浪	0	canglang
@@ -132167,7 +132155,7 @@ _xDE63__xD860_腰	0	hayao
 賜帛	0	sibo
 賜名	0	siming
 賜福	0	sifu
-賜酺	0	sifu
+賜酺	0	sipu
 賜復	0	sifu
 賜履	0	silu
 賜告	0	sigao
@@ -133584,7 +133572,7 @@ _xDE63__xD860_腰	0	hayao
 訴願權	0	suyuanquan
 涑水	0	sushui
 涑水紀聞	0	sushuijiwen
-素女弦	0	sunuxuan
+素女弦	0	sunuxian
 速配	0	supei
 速讀	0	sudu
 速度	0	sudu
@@ -134719,7 +134707,7 @@ _xDE63__xD860_腰	0	hayao
 阿婆	0	apo
 阿旁	0	apang
 阿毗達磨	0	apidamo
-阿毗曇	0	apitian
+阿毗曇	0	apitan
 阿片	0	apian
 阿媽	0	ama
 阿馬	0	ama
@@ -138540,7 +138528,7 @@ _xDE28__xD84D_橠	0	enuo
 揖讓	0	yirang
 噫氣	0	yiqi
 噫嘻	0	yixi
-噫吁戲	0	yixuxi
+噫吁戲	0	yixuhu
 噫嗚	0	yiwu
 施施	0	yiyi
 訑謾	0	yiman
@@ -145453,7 +145441,7 @@ _xDF53__xD84D_絲	0	yansi
 羊癇瘋	0	yangxianfeng
 羊欣	0	yangxin
 羊性	0	yangxing
-羊鬚瘡	0	yangxucang
+羊鬚瘡	0	yangxuchuang
 羊續懸魚	0	yangxuxuanyu
 羊脂白	0	yangzhibai
 羊脂玉	0	yangzhiyu
@@ -153077,6 +153065,7 @@ _xDF53__xD84D_絲	0	yansi
 援軍	0	yuanjun
 援照	0	yuanzhao
 援助	0	yuanzhu
+援助交際	0	yuanzhujiaoji
 援手	0	yuanshou
 援引	0	yuanyin
 援外	0	yuanwai
@@ -154256,3 +154245,25 @@ _xDF53__xD84D_絲	0	yansi
 打扦	0	daqian
 八步床	0	babuchuang
 將相本無種，男兒當自強	0	jiàngxiàngběnwúzhǒng，nánérdāngzìqiáng
+博弈	0	boyi
+產露	0	chanlu
+哀嚎	0	ai
+遶境	0	raojing
+食欲	0	shiyu
+斑斑可考	0	banbankekao
+願景	0	yuanjing
+徹底	0	chedi
+招延	0	zhaoyan
+魯班門前掉大斧	0	lubanmenqiandiaodafu
+般門弄斧	0	banmennongfu
+縣份	0	xianfen
+縣分	0	xianfen
+嘗鮮	0	changxian
+白眼狼	0	baiyanlang
+發奮圖強	0	fafentuqiang
+乾和	0	qianhe
+末嬉	0	moxi
+花鬘	0	huaman
+手表	0	shoubiao
+繁華	0	fanhua
+月份	0	yuefen

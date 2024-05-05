@@ -3603,6 +3603,7 @@
 悶雷	0	menlei
 悶棍	0	mengun
 悶虧	0	menkui
+悶葫蘆	0	menhulu
 悶酒	0	menjiu
 悶氣	0	menqi
 悶氣	0	men
@@ -3746,6 +3747,7 @@
 米粉	0	mifen
 米粒	0	mili
 米糧	0	miliang
+米酒	0	mijiu
 米漿	0	mijiang
 米蟲	0	michong
 米壽	0	mishou
@@ -4419,6 +4421,7 @@
 法辦	0	faban
 法拍屋	0	fapaiwu
 法門	0	famen
+法典	0	fadian
 法定	0	fading
 法定代理人	0	fadingdailiren
 法定程序	0	fadingchengxu
@@ -4573,6 +4576,7 @@
 翡翠	0	feicui
 誹謗	0	feibang
 沸點	0	feidian
+沸騰	0	feiteng
 狒狒	0	feifei
 費力	0	feili
 費率	0	feilu
@@ -4680,6 +4684,7 @@
 煩言	0	fanyan
 藩籬	0	fanli
 藩鎮	0	fanzhen
+藩屬	0	fanshu
 樊籠	0	fanlong
 礬土	0	fantu
 礬石	0	fanshi
@@ -6790,6 +6795,7 @@
 單口相聲	0	dankouxiangsheng
 單機作業	0	danjizuoye
 單價	0	danjia
+單句	0	danju
 單據	0	danju
 單親家庭	0	danqinjiating
 單槍匹馬	0	danqiangpima
@@ -7250,6 +7256,7 @@
 地面	0	dimian
 地目	0	dimu
 地方	0	difang
+地方法院	0	difangfayuan
 地方官	0	difangguan
 地方戲	0	difangxi
 地方戲曲	0	difangxiqu
@@ -7934,6 +7941,7 @@
 訂立	0	dingli
 訂購	0	dinggou
 訂戶	0	dinghu
+訂婚	0	dinghun
 訂金	0	dingjin
 訂製	0	dingzhi
 訂正	0	dingzheng
@@ -8682,6 +8690,7 @@
 特准	0	tezhun
 特種	0	tezhong
 特種部隊	0	tezhongbudui
+特種考試	0	tezhongkaoshi
 特產	0	techan
 特長	0	techang
 特出	0	techu
@@ -8809,6 +8818,7 @@
 桃李不言，下自成蹊	0	taolibuyanxiazichengxi
 桃李滿天下	0	taolimantianxia
 桃花	0	taohua
+桃花劫	0	taohuajie
 桃花眼	0	taohuayan
 桃花源	0	taohuayuan
 桃花運	0	taohuayun
@@ -10017,7 +10027,7 @@
 土牆	0	tuqiang
 土星	0	tuxing
 土質	0	tuzhi
-土質液化	0	tuzhiyehua
+土壤液化	0	turangyehua
 土製	0	tuzhi
 土著	0	tuzhu
 土產	0	tuchan
@@ -10811,6 +10821,7 @@
 南迴鐵路	0	nanhuitielu
 南迴歸線	0	nanhuiguixian
 南極	0	nanji
+南腔北調	0	nanqiangbeidiao
 南下	0	nanxia
 南行	0	nanxing
 南征北討	0	nanzhengbeitao
@@ -10899,6 +10910,7 @@
 囊袋	0	nangdai
 囊括	0	nanggua
 囊空如洗	0	nangkongruxi
+囊中物	0	nangzhongwu
 能否	0	nengfou
 能耐	0	nengnai
 能力	0	nengli
@@ -13258,7 +13270,6 @@
 路基	0	luji
 路肩	0	lujian
 路見不平，拔刀相助	0	lujianbupingbadaoxiangzhu
-路警	0	lujing
 路徑	0	lujing
 路線	0	luxian
 路障	0	luzhang
@@ -13964,6 +13975,7 @@
 告示	0	gaoshi
 告辭	0	gaoci
 告訴	0	gaosu
+告訴乃論	0	gaosunailun
 告一段落	0	gaoyiduanluo
 告慰	0	gaowei
 誥封	0	gaofeng
@@ -14234,7 +14246,7 @@
 港埠	0	gangbu
 港都	0	gangdu
 港口	0	gangkou
-港警	0	gangjing
+港務警察	0	gangwujingcha
 港市	0	gangshi
 港務	0	gangwu
 港灣	0	gangwan
@@ -16486,7 +16498,6 @@
 核子	0	hezi
 核子戰爭	0	hezizhanzheng
 核子武器	0	heziwuqi
-核四	0	hesi
 核酸	0	hesuan
 核算	0	hesuan
 核汙染	0	hewuran
@@ -17213,6 +17224,7 @@
 花邊	0	huabian
 花邊新聞	0	huabianxinwen
 花盆	0	huapen
+花瓶	0	huaping
 花圃	0	huapu
 花蜜	0	huami
 花木	0	huamu
@@ -19401,6 +19413,7 @@
 酒樓	0	jiulou
 酒力	0	jiuli
 酒量	0	jiuliang
+酒令	0	jiuling
 酒過三巡	0	jiuguosanxun
 酒鬼	0	jiugui
 酒酣耳熱	0	jiuhanerre
@@ -19994,8 +20007,10 @@
 進擊	0	jinji
 進階	0	jinjie
 進剿	0	jinjiao
+進軍	0	jinjun
 進取	0	jinqu
 進去	0	jinqu
+進襲	0	jinxi
 進修	0	jinxiu
 進賢	0	jinxian
 進香	0	jinxiang
@@ -20725,6 +20740,7 @@
 眷戀	0	juanlian
 眷顧	0	juangu
 眷屬	0	juanshu
+眷村	0	juancun
 眷佑	0	juanyou
 絹印	0	juanyin
 雋爽	0	juanshuang
@@ -20952,6 +20968,7 @@
 崎嶇	0	qiqu
 騎兵	0	qibing
 騎縫	0	qifeng
+騎樓	0	qilou
 騎虎難下	0	qihunanxia
 騎車	0	qiche
 騎乘	0	qicheng
@@ -21941,6 +21958,7 @@
 輕俏	0	qingqiao
 輕取	0	qingqu
 輕信	0	qingxin
+輕舟	0	qingzhou
 輕裝	0	qingzhuang
 輕重	0	qingzhong
 輕重緩急	0	qingzhonghuanji
@@ -22065,6 +22083,7 @@
 請問	0	qingwen
 請願	0	qingyuan
 慶典	0	qingdian
+慶功	0	qinggong
 慶功宴	0	qinggongyan
 慶賀	0	qinghe
 慶幸	0	qingxing
@@ -22338,6 +22357,7 @@
 群居	0	qunju
 群聚	0	qunju
 群起攻之	0	qunqigongzhi
+群情激憤	0	qunqingjifen
 群賢	0	qunxian
 群雄	0	qunxiong
 群眾	0	qunzhong
@@ -22616,7 +22636,6 @@
 瞎扯	0	xiache
 瞎說	0	xiashuo
 瞎子	0	xiazi
-瞎子摸象	0	xiazimoxiang
 瞎猜	0	xiacai
 匣子	0	xiazi
 俠盜	0	xiadao
@@ -22698,6 +22717,7 @@
 下限	0	xiaxian
 下陷	0	xiaxian
 下鄉	0	xiaxiang
+下行	0	xiaxing
 下學	0	xiaxue
 下雪	0	xiaxue
 下旬	0	xiaxun
@@ -23091,6 +23111,7 @@
 孝親	0	xiaoqin
 孝心	0	xiaoxin
 孝順	0	xiaoshun
+孝子	0	xiaozi
 孝思	0	xiaosi
 酵母	0	xiaomu
 酵母菌	0	xiaomujun
@@ -23274,6 +23295,7 @@
 先期	0	xianqi
 先前	0	xianqian
 先遣部隊	0	xianqianbudui
+先驅	0	xianqu
 先下手為強	0	xianxiashouweiqiang
 先小人，後君子	0	xianxiaorenhoujunzi
 先賢	0	xianxian
@@ -23695,6 +23717,7 @@
 新式	0	xinshi
 新手	0	xinshou
 新生	0	xinsheng
+新生代	0	xinshengdai
 新人	0	xinren
 新人類	0	xinrenlei
 新任	0	xinren
@@ -24242,6 +24265,8 @@
 虛設	0	xushe
 虛弱	0	xuruo
 虛榮	0	xurong
+虛字	0	xuzi
+虛歲	0	xusui
 虛有其表	0	xuyouqibiao
 虛言	0	xuyan
 虛掩	0	xuyan
@@ -24330,6 +24355,7 @@
 學習	0	xuexi
 學系	0	xuexi
 學校	0	xuexiao
+學制	0	xuezhi
 學者	0	xuezhe
 學長	0	xuezhang
 學潮	0	xuechao
@@ -24351,6 +24377,8 @@
 學院	0	xueyuan
 學運	0	xueyun
 褶子	0	xuezi
+褶子	0	zhe
+褶子	0	zi
 雪白	0	xuebai
 雪崩	0	xuebeng
 雪片	0	xuepian
@@ -24938,6 +24966,7 @@
 紙婚	0	zhihun
 紙巾	0	zhijin
 紙漿	0	zhijiang
+紙錢	0	zhiqian
 紙屑	0	zhixie
 紙張	0	zhizhang
 紙扇	0	zhishan
@@ -25440,6 +25469,7 @@
 戰鬥力	0	zhandouli
 戰鬥機	0	zhandouji
 戰地	0	zhandi
+戰利品	0	zhanlipin
 戰慄	0	zhanli
 戰亂	0	zhanluan
 戰略	0	zhanlu
@@ -25654,6 +25684,7 @@
 張牙舞爪	0	zhangyawuzhao
 張揚	0	zhangyang
 張望	0	zhangwang
+長輩	0	zhangbei
 長大	0	zhangda
 長老	0	zhanglao
 長官	0	zhangguan
@@ -25775,6 +25806,7 @@
 徵信	0	zhengxin
 徵選	0	zhengxuan
 徵詢	0	zhengxun
+徵召	0	zhengzhao
 徵兆	0	zhengzhao
 徵收	0	zhengshou
 徵稅	0	zhengshui
@@ -25935,7 +25967,6 @@
 朱紅	0	zhuhong
 朱槿	0	zhujin
 朱脣皓齒	0	zhuchunhaochi
-朱提	0	zhushi
 朱砂	0	zhusha
 朱顏	0	zhuyan
 侏儒	0	zhuru
@@ -26021,6 +26052,7 @@
 主體	0	zhuti
 主腦	0	zhunao
 主力	0	zhuli
+主流	0	zhuliu
 主稿	0	zhugao
 主顧	0	zhugu
 主觀	0	zhuguan
@@ -26504,6 +26536,7 @@
 中性	0	zhongxing
 中選區	0	zhongxuanqu
 中旬	0	zhongxun
+中止	0	zhongzhi
 中指	0	zhongzhi
 中正	0	zhongzheng
 中裝	0	zhongzhuang
@@ -26560,6 +26593,7 @@
 終歸	0	zhonggui
 終極	0	zhongji
 終結	0	zhongjie
+終究	0	zhongjiu
 終局	0	zhongju
 終止	0	zhongzhi
 終場	0	zhongchang
@@ -27008,6 +27042,7 @@
 超越	0	chaoyue
 巢穴	0	chaoxue
 朝拜	0	chaobai
+朝代	0	chaodai
 朝廷	0	chaoting
 朝貢	0	chaogong
 朝覲	0	chaojin
@@ -27022,7 +27057,7 @@
 潮水	0	chaoshui
 潮湧	0	chaoyong
 嘲諷	0	chaofeng
-嘲諷漫罵	0	chaofengmanma
+漫罵	0	manma
 嘲弄	0	chaonong
 嘲笑	0	chaoxiao
 吵鬧	0	chaonao
@@ -27288,6 +27323,7 @@
 長紅	0	changhong
 長假	0	changjia
 長焦距鏡頭	0	changjiaojujingtou
+長久	0	changjiu
 長頸鹿	0	changjinglu
 長鏡頭	0	changjingtou
 長居	0	changju
@@ -27393,6 +27429,7 @@
 暢遊	0	changyou
 暢飲	0	changyin
 暢旺	0	changwang
+稱霸	0	chengba
 稱道	0	chengdao
 稱快	0	chengkuai
 稱號	0	chenghao
@@ -27405,6 +27442,7 @@
 稱雄	0	chengxiong
 稱讚	0	chengzan
 稱頌	0	chengsong
+稱謂	0	chengwei
 稱王封后	0	chengwangfenghou
 稱譽	0	chengyu
 撐不住	0	chengbuzhu
@@ -27423,6 +27461,7 @@
 成命	0	chengming
 成分	0	chengfen
 成天	0	chengtian
+成年	0	chengnian
 成年累月	0	chengnianleiyue
 成立	0	chengli
 成果	0	chengguo
@@ -27671,7 +27710,6 @@
 出洋相	0	chuyangxiang
 出外	0	chuwai
 出外景	0	chuwaijing
-出問題	0	chuwenti
 出亡	0	chuwang
 出淤泥而不染	0	chuyunierburan
 出浴	0	chuyu
@@ -27870,6 +27908,7 @@
 船錨	0	chuanmao
 船到橋頭自然直	0	chuandaoqiaotouziranzhi
 船隊	0	chuandui
+船工	0	chuangong
 船艦	0	chuanjian
 船舷	0	chuanxian
 船隻	0	chuanzhi
@@ -27891,6 +27930,7 @@
 傳道	0	chuandao
 傳單	0	chuandan
 傳遞	0	chuandi
+傳統	0	chuantong
 傳令	0	chuanling
 傳呼機	0	chuanhuji
 傳喚	0	chuanhuan
@@ -27949,6 +27989,7 @@
 春華	0	chunhua
 春暉	0	chunhui
 春假	0	chunjia
+春節	0	chunjie
 春酒	0	chunjiu
 春捲	0	chunjuan
 春秋	0	chunqiu
@@ -28175,6 +28216,7 @@
 失主	0	shizhu
 失察	0	shicha
 失常	0	shichang
+失傳	0	shichuan
 失寵	0	shichong
 失實	0	shishi
 失恃	0	shishi
@@ -28840,6 +28882,7 @@
 蛇吞象	0	shetunxiang
 蛇蠍	0	shexie
 蛇蠍美人	0	shexiemeiren
+蛇蠍心腸	0	shexiexinchang
 蛇信	0	shexin
 蛇行	0	shexing
 舍我其誰	0	shewoqishei
@@ -29151,6 +29194,7 @@
 守望	0	shouwang
 守望相助	0	shouwangxiangzhu
 首謀	0	shoumou
+首府	0	shoufu
 首富	0	shoufu
 首當其衝	0	shoudangqichong
 首都	0	shoudu
@@ -29566,6 +29610,7 @@
 神醫	0	shenyi
 神遊	0	shenyou
 神遊太虛	0	shenyoutaixu
+神位	0	shenwei
 神往	0	shenwang
 神韻	0	shenyun
 神勇	0	shenyong
@@ -29859,6 +29904,7 @@
 生殖	0	shengzhi
 生殖器官	0	shengzhiqiguan
 生長	0	shengzhang
+生吃	0	shengchi
 生產	0	shengchan
 生產力	0	shengchanli
 生產線	0	shengchanxian
@@ -29953,6 +29999,7 @@
 繩橋	0	shengqiao
 繩之以法	0	shengzhiyifa
 繩索	0	shengsuo
+省分	0	shengfen
 省府	0	shengfu
 省道	0	shengdao
 省力	0	shengli
@@ -30005,6 +30052,7 @@
 勝不驕，敗不餒	0	shengbujiaobaibunei
 勝負	0	shengfu
 勝地	0	shengdi
+勝利	0	shengli
 勝利投手	0	shenglitoushou
 勝景	0	shengjing
 勝局	0	shengju
@@ -30119,6 +30167,7 @@
 輸家	0	shujia
 輸精管	0	shujingguan
 輸血	0	shuxie
+輸誠	0	shucheng
 輸入	0	shuru
 輸入許可制	0	shuruxukezhi
 輸送	0	shusong
@@ -30143,7 +30192,9 @@
 署長	0	shuzhang
 薯條	0	shutiao
 屬地	0	shudi
+屬國	0	shuguo
 屬下	0	shuxia
+屬相	0	shuxiang
 屬性	0	shuxing
 屬實	0	shushi
 屬於	0	shuyu
@@ -30196,6 +30247,7 @@
 數據機	0	shujuji
 數學	0	shuxue
 數值	0	shuzhi
+數字	0	shuzi
 數額	0	shue
 數以千計	0	shuyiqianji
 數位	0	shuwei
@@ -30334,6 +30386,7 @@
 水泥	0	shuini
 水泥叢林	0	shuiniconglin
 水鳥	0	shuiniao
+水牛	0	shuiniu
 水來土掩	0	shuilaituyan
 水雷	0	shuilei
 水力	0	shuili
@@ -30428,6 +30481,7 @@
 稅款	0	shuikuan
 稅金	0	shuijin
 稅捐	0	shuijuan
+稅制	0	shuizhi
 稅收	0	shuishou
 稅則	0	shuize
 稅額	0	shuie
@@ -30597,6 +30651,7 @@
 惹事生非	0	reshishengfei
 惹是生非	0	reshishengfei
 惹人憐愛	0	rerenlianai
+惹眼	0	reyan
 熱病	0	rebing
 熱賣	0	remai
 熱門	0	remen
@@ -30756,6 +30811,7 @@
 人工血液	0	rengongxieye
 人工智慧	0	rengongzhihui
 人工受孕	0	rengongshouyun
+人口	0	renkou
 人口密度	0	renkoumidu
 人和	0	renhe
 人海	0	renhai
@@ -30899,6 +30955,7 @@
 認清	0	renqing
 認知	0	renzhi
 認真	0	renzhen
+認證	0	renzheng
 認識	0	renshi
 認輸	0	renshu
 認字	0	renzi
@@ -32094,6 +32151,7 @@
 尊翁	0	zunweng
 遵辦	0	zunban
 遵命	0	zunming
+遵奉	0	zunfeng
 遵循	0	zunxun
 遵照	0	zunzhao
 遵守	0	zunshou
@@ -33026,6 +33084,7 @@
 掃墓	0	saomu
 掃蕩	0	saodang
 掃地	0	saodi
+掃地出門	0	saodichumen
 掃毒	0	saodu
 掃黑	0	saohei
 掃黃	0	saohuang
@@ -33635,6 +33694,7 @@
 愛現	0	aixian
 愛心	0	aixin
 愛神	0	aishen
+愛滋病	0	aizibing
 愛子	0	aizi
 愛憎	0	aizeng
 愛才	0	aicai
@@ -34381,6 +34441,7 @@
 遺囑	0	yizhu
 遺著	0	yizhu
 遺臭萬年	0	yichouwannian
+遺產	0	yichan
 遺傳	0	yichuan
 遺傳工程	0	yichuangongcheng
 遺失	0	yishi
@@ -34990,6 +35051,7 @@
 鷂子	0	yaozi
 鑰匙	0	yaoshi
 攸關	0	youguan
+悠久	0	youjiu
 悠閒	0	youxian
 悠閒自在	0	youxianzizai
 悠然	0	youran
@@ -35055,6 +35117,7 @@
 優游	0	youyou
 優游自在	0	youyouzizai
 優渥	0	youwo
+優裕	0	youyu
 優越	0	youyue
 優越感	0	youyuegan
 尤其	0	youqi
@@ -35106,6 +35169,7 @@
 油煙	0	youyan
 油印	0	youyin
 油汙	0	youwu
+油源	0	youyuan
 游民	0	youmin
 游牧	0	youmu
 游離	0	youli
@@ -35647,6 +35711,7 @@
 音律	0	yinlu
 音感	0	yingan
 音階	0	yinjie
+音節	0	yinjie
 音界號	0	yinjiehao
 音效	0	yinxiao
 音效卡	0	yinxiaoka
@@ -35896,6 +35961,7 @@
 洋酒	0	yangjiu
 洋涇浜英語	0	yangjingbangyingyu
 洋裝	0	yangzhuang
+洋人	0	yangren
 洋蔥	0	yangcong
 洋傘	0	yangsan
 洋溢	0	yangyi
@@ -36228,6 +36294,7 @@
 烏合之眾	0	wuhezhizhong
 烏黑	0	wuhei
 烏腳病	0	wujiaobing
+烏金	0	wujin
 烏紗帽	0	wushamao
 烏茲衝鋒槍	0	wuzichongfengqiang
 烏賊	0	wuzei
@@ -36511,6 +36578,7 @@
 武器	0	wuqi
 武戲	0	wuxi
 武俠	0	wuxia
+武裝	0	wuzhuang
 武場	0	wuchang
 武士	0	wushi
 武士道	0	wushidao
@@ -36691,6 +36759,7 @@
 外丹功	0	waidangong
 外敵	0	waidi
 外地	0	waidi
+外電	0	waidian
 外太空	0	waitaikong
 外套	0	waitao
 外頭	0	waitou
@@ -36735,6 +36804,7 @@
 外向	0	waixiang
 外形	0	waixing
 外型	0	waixing
+外債	0	waizhai
 外傳	0	waizhuan
 外傳	0	wai
 外傳	0	chuan
@@ -36833,6 +36903,7 @@
 為人師表	0	weirenshibiao
 為所欲為	0	weisuoyuwei
 為伍	0	weiwu
+圍標	0	weibiao
 圍捕	0	weibu
 圍兜	0	weidou
 圍堵	0	weidu
@@ -36954,6 +37025,7 @@
 委員會	0	weiyuanhui
 諉過	0	weiguo
 偉大	0	weida
+偉人	0	weiren
 偉業	0	weiye
 緯度	0	weidu
 緯線	0	weixian
@@ -38165,6 +38237,7 @@
 孕育	0	yunyu
 運筆如飛	0	yunbirufei
 運費	0	yunfei
+運動	0	yundong
 運動會	0	yundonghui
 運動精神	0	yundongjingshen
 運動器材	0	yundongqicai
@@ -38396,7 +38469,7 @@
 發片	0	fapian
 首選	0	shouxuan
 正向	0	zhengxiang
-平板電腦	0	píngbānˇdiàn
+平板電腦	0	pingbandiannao
 智慧型手機	0	zhihuixingshou
 低頭族	0	ditou
 草莓族	0	caomeizu
@@ -38548,7 +38621,7 @@
 古厝	0	gucuo
 白袍	0	baipao
 回眸	0	huimou
-竹籟	0	ㄓㄨˊㄌㄞˋ
+竹籟	0	zhulai
 長篙	0	changgao
 街景	0	jiejing
 解說員	0	jieshuoyuan
@@ -38754,6 +38827,7 @@
 蓬裙	0	pengqun
 導盲鞍	0	daomangan
 平板車	0	pingbanche
+高等法院	0	gaodengfayuan
 飛梭	0	feisuo
 水刀	0	shuidao
 離巢	0	lichao
@@ -38934,6 +39008,7 @@
 話筒	0	huatong
 鼎立	0	dingli
 香酥	0	xiangsu
+陶塑	0	taosu
 眠床	0	mianchuang
 划槳	0	huajiang
 牙根	0	yagen
@@ -38952,3 +39027,65 @@
 甜湯	0	tiantang
 指示圖	0	zhishitu
 來年	0	lainian
+雲煙	0	yunyan
+晨風	0	chenfeng
+剝離	0	boli
+身邊	0	shenbian
+掀開	0	xiankai
+組裝	0	zuzhuang
+拐杖	0	guaizhang
+清明節	0	qingmingjie
+翻天	0	fantian
+盛飯	0	chengfan
+剩飯	0	shengfan
+蒸騰	0	zhengteng
+按語	0	anyu
+黑糖	0	heitang
+相助	0	xiangzhu
+相距	0	xiangju
+定定	0	dingding
+穿堂	0	chuantang
+盛暑	0	shengshu
+鵝黃	0	ehuang
+家鄉味	0	jiaxiangwei
+枯黃	0	kuhuang
+悠長	0	youchang
+夏日	0	xiari
+花朵	0	huaduo
+花苗	0	huamiao
+進出	0	jinchu
+進退	0	jintui
+鄉鎮	0	xiangzhen
+諸多	0	zhuduo
+發粉	0	fafen
+拉鋸	0	laju
+賣錢	0	maiqian
+奇招	0	qizhao
+茶水	0	chashui
+恆溫	0	hengwen
+闖進	0	chuangjin
+轉角	0	zhuanjiao
+球棒	0	qiubang
+緊追	0	jinzhui
+咬牙	0	yaoya
+潸然	0	shanran
+飯食	0	fanshi
+湊數	0	coushu
+悠遠	0	youyuan
+拉車	0	lache
+春茶	0	chuncha
+探險家	0	tanxianjia
+褶子	0	zhezi
+褶子	0	xue
+褶子	0	zi
+口占	0	kouzhan
+空橋	0	kongqiao
+門客	0	menke
+門窗	0	menchuang
+軍糧	0	junliang
+家常菜	0	jiachangcai
+氣焰	0	qiyan
+氣頭上	0	qitoushang
+凳子	0	dengzi
+盤飧	0	pansun
+闔上	0	ㄏㄜˊㄕㄤˋ
