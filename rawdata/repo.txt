@@ -8,3 +8,4 @@ https://github.com/gontera/array30
 https://github.com/gontera/array10
 https://github.com/unicode-org/cldr-json
 https://unicode.org/Public/UCD/latest/ucdxml/
+https://github.com/chinese-opendesktop/cin-tables.git
