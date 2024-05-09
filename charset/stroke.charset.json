@@ -24,17 +24,17 @@
     },
     {
         "name": "stroke-stroke5-keypad-choco",
-        "description": "筆順五碼(數字鍵)",
+        "description": "筆順五碼",
         "charsets":
         [
-            "[esc][2:－][5:｜][3:丿][del]",
-            "[(][4:丶][1:ㄣ][*:＊][「]",
+            "[esc][1:一][2:丨][3:丿][del]",
+            "[(][4:丶][5:フ][*:＊][「]",
             "[：][，][。][？][！]",
             "[next][globe][space][return]"
         ]
     },
     {
-        "name": "stroke-stroke5-choco",
+        "name": "_stroke-stroke5-choco",
         "description": "筆順五碼",
         "charsets":
         [
