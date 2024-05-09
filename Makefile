@@ -128,37 +128,43 @@ splits-lexicon:
 	done;
 
 splits: splits-table splits-lexicon
-
 table.db: init
-	$(eval excludes := \
-		_sample.cin _demo.cin \
-		array30.cin \
-		array-shortcode.cin array-special.cin \
-		boshiamy.cin liu.cin bossy.cin \
-		biaoyin.cin bpmf-ext.cin \
-		cj-ext.cin cj-j.cin cj-wildcard.cin simplex-ext.cin \
-		dayi4.cin \
-		jyutping.cin jyutping-toneless.cin \
-		ov_ezbig.cin \
-		ov_ezsmall.cin \
-		stroke-stroke5.cin wubizixing.cin \
-		egyptian.cin ehq-symbols.cin esperanto.cin \
-		kk.cin kks.cin klingon.cin morse.cin telecode.cin \
-	)
-	$(eval all := $(notdir $(wildcard ${TABLE_DIR}/*.cin)))
-	$(eval list := $(filter-out $(excludes), $(all)))
+	@bin/build.py -c table -t db -i table -o dist/queue/table
 
-	@for filename in ${list}; do \
-		if [[ -f "${TABLE_DIST_PATH}/$${filename}.db" ]]; then \
-			echo "[X] $${filename}.db" ; \
-		else \
-			if [[ "$${filename}" =~ ^array30* ]]; then \
-				bin/cin2db.py -i ${TABLE_DIR}/$${filename} -o ${TABLE_DIST_PATH}/$${filename}.db -e array ; \
-			else \
-				bin/cin2db.py -i ${TABLE_DIR}/$${filename} -o ${TABLE_DIST_PATH}/$${filename}.db ; \
-			fi ; \
-		fi ; \
-	done;
+# table.db: init
+# 	$(eval excludes := \
+# 		_sample.cin _demo.cin \
+# 		array30.cin \
+# 		array-shortcode.cin array-special.cin \
+# 		boshiamy.cin liu.cin bossy.cin \
+# 		bpmf-orig.cin \
+# 		biaoyin.cin bpmf-ext.cin \
+# 		cj-ext.cin cj-j.cin cj-wildcard.cin simplex-ext.cin \
+# 		NewCJ3.cin jtcj.cin tcj.cin qcj.cin \
+# 		jyutping.cin jyutping-toneless.cin \
+# 		ov_ezbig.cin \
+# 		ov_ezsmall.cin \
+# 		ov_ez75.cin \
+# 		ov_ez.cin \
+# 		pictograph.cin \
+# 		stroke-stroke5.cin wubizixing.cin wu.cin \
+# 		egyptian.cin ehq-symbols.cin esperanto.cin \
+# 		kk.cin kks.cin klingon.cin morse.cin telecode.cin \
+# 	)
+# 	$(eval all := $(notdir $(wildcard ${TABLE_DIR}/*.cin)))
+# 	$(eval list := $(filter-out $(excludes), $(all)))
+
+# 	@for filename in ${list}; do \
+# 		if [[ -f "${TABLE_DIST_PATH}/$${filename}.db" ]]; then \
+# 			echo "[X] $${filename}.db" ; \
+# 		else \
+# 			if [[ "$${filename}" =~ ^array30* ]]; then \
+# 				bin/cin2db.py -i ${TABLE_DIR}/$${filename} -o ${TABLE_DIST_PATH}/$${filename}.db -e array ; \
+# 			else \
+# 				bin/cin2db.py -i ${TABLE_DIR}/$${filename} -o ${TABLE_DIST_PATH}/$${filename}.db ; \
+# 			fi ; \
+# 		fi ; \
+# 	done;
 
 lexicon.db: init lexicon-array lexicon-jieba lexicon-jyutping lexicon-mcbpmf lexicon-moe
 
@@ -258,20 +264,21 @@ lexicon-moe:
 
 # 3rd party repo
 
-pull:
+upstream-pull:
 	@echo "Upstream pulling..."
-	@echo "upstream: array10"
 	@cd rawdata/array10; git pull
-	@echo "upstream: array30"
 	@cd rawdata/array30; git pull
-	@echo "upstream: ghcm"
 	@cd rawdata/ghcm; git pull
-	@echo "upstream: jeiba"
 	@cd rawdata/jieba; git pull
-	@echo "upstream: rime-cantones"
 	@cd rawdata/rime-cantonese; git pull
-	@echo "upstream: McBopomofo"
 	@cd rawdata/McBopomofo; git pull
+	@cd rawdata/McBopomofo; git pull
+	@cd rawdata/cin-tables; git pull
+
+# upstream: upstream-pull
+upstream:
+	@cp rawdata/cin-tables/bsm.cin table/stroke-bsm.cin
+	@cp rawdata/cin-tables/g6code.cin table/stroke-g6code.cin
 
 array10:
 	@echo "Update local version from upsteam..."
