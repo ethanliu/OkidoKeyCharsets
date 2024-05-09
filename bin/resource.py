@@ -82,30 +82,33 @@ def createKeyboard(outputPath):
                 category = cv
 
         for item in data:
-
-            if not 'name' in item:
-                print("name missing")
+            name = item['name']
+            if not name or name.startswith('_'):
                 continue
+
+            # if not 'name' in item:
+            #     print("name missing")
+            #     continue
 
             if not 'charsets' in item:
                 print("charsets missing")
                 continue
 
-            if item['name'] in jsondata['charsets']:
-                print(f"[exists] {item['name']}")
+            if name in jsondata['charsets']:
+                print(f"[exists] {name}")
                 continue
 
-            jsondata['charsets'][item['name']] = {
+            jsondata['charsets'][name] = {
                 'description': item['description'] or '',
                 'charsets': item['charsets'],
                 'category': category
             }
 
             if 'keynameType' in item:
-                jsondata['charsets'][item['name']]['keynameType'] = item['keynameType']
+                jsondata['charsets'][name]['keynameType'] = item['keynameType']
 
             if 'flicks' in item:
-                jsondata['charsets'][item['name']]['flicks'] = item['flicks']
+                jsondata['charsets'][name]['flicks'] = item['flicks']
 
     createJsonFile(outputPath, jsondata)
 

@@ -36,9 +36,22 @@ class Colors:
     def f(self):
         return 'xxx'
 
-def prompt(q):
+def prompt(q: str, defaultValue = None):
+    suffix = ' '
+    typeof = ''
+    if defaultValue != None:
+        typeof = f"{type(defaultValue)}"
+        if defaultValue == True:
+            suffix = ' [Y/n] '
+        elif defaultValue == False:
+            suffix = ' [y/N] '
     try:
-        a = input(q + ' ')
+        a = input(q + suffix)
+        a = trim(a)
+        if "bool" in typeof:
+            if a.lower() == "y" or a.lower() == "yes":
+                return True
+            return False
         return a
     except KeyboardInterrupt:
         try:
