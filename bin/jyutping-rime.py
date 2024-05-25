@@ -39,7 +39,7 @@ def phrase2csv(inputPath, outputPath):
                 # pinyin = uu.trim(''.join(row[1:] or []))
                 phrase = uu.trim(row[0] or '')
                 pinyin = uu.trim(row[1] or '')
-                pinyin = re.sub('[0-9\s]?', '', pinyin)
+                pinyin = re.sub('[0-9\\s]?', '', pinyin)
 
                 weight = '0'
 
@@ -113,7 +113,7 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
                 # print(f"row: {row}, weight: {weight}")
 
                 if toneless:
-                    pinyin = re.sub('[0-9\s]?', '', pinyin)
+                    pinyin = re.sub('[0-9\\s]?', '', pinyin)
 
                 if pinyin == phrase:
                     pinyin = ''
