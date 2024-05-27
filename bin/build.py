@@ -143,6 +143,7 @@ def _table_db(inputDir: str, outputDir: str):
 		"stroke-stroke5.cin",
 		"tcj.cin",
 		# "dayi4.cin",
+		"dayi3-patched.cin",
         "array-special.cin",
         "bossy.cin",
         "bpmf-ext.cin",

@@ -166,8 +166,8 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                         self.meta[key[1:]] = value
                         continue
 
-                    if currentBlock == Block.Keyname and disable:
-                        # self.log(f"-> keyname: {key} {value}")
+                    if currentBlock == Block.Keyname:
+                        self.log(f"-> keyname: {key} {value}")
                         self.keyname[key] = value
                     else:
                         if disable:
