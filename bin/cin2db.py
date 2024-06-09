@@ -41,11 +41,6 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
                 args = {'name': key, 'value': value}
                 cursor.execute(query, args)
 
-        # filename = os.path.basename(inputPath)
-        # if filename in HANS_TABLE:
-        #     args = {'name': 'locale', 'value': 'zh-Hans'}
-        #     cursor.execute(query, args)
-
         query = "INSERT OR IGNORE INTO `keyname` (`key`, `value`) VALUES (:name, :value)"
         for key in cin.keyname:
             args = {'name': key, 'value': cin.keyname[key]}
