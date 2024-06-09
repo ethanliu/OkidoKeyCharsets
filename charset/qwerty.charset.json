@@ -12,6 +12,62 @@
         ]
     },
     {
+        "name": "_qwerty-k14-swipe",
+        "description": "QWERTY (K14)",
+        "keynameType": "label",
+        "charsets":
+        [
+            "[1:QW][2:ER][3:TY][4:UI][5:OP]",
+            "[6:AS][7:DF][8:GH][9:JK][0:L]",
+            "[shift][.:ZX][,:CV][?:BN][!:M][del]",
+            "[next][globe][space][return]"
+        ],
+        "flicks": {
+            "1": {"down": "Q", "up": "W"},
+            "2": {"down": "E", "up": "R"},
+            "3": {"down": "T", "up": "Y"},
+            "4": {"down": "U", "up": "I"},
+            "5": {"down": "O", "up": "P"},
+            "6": {"down": "A", "up": "S"},
+            "7": {"down": "D", "up": "F"},
+            "8": {"down": "G", "up": "H"},
+            "9": {"down": "J", "up": "K"},
+            ".": {"down": "Z", "up": "X"},
+            ",": {"down": "C", "up": "V"},
+            "?": {"down": "B", "up": "N"},
+            "!": {"down": "M", "up": ""}
+        }
+    },
+    {
+        "name": "_qwerty-k9-swipe",
+        "description": "QWERTY (K9)",
+        "charsets":
+        [
+            "[esc][1][2][3][del]",
+            "[\"][4][5][6][⇡*]",
+            "[!][7][8][9][–*]",
+            "[?][,][0][.][⇣*]",
+            "[next][globe][space][w*:w][return]"
+        ],
+        "flicks": {
+            "1": {"down": "1⇣", "up": "1⇡"},
+            "2": {"down": "2⇣", "up": "2⇡"},
+            "3": {"down": "3⇣", "up": "3⇡"},
+            "4": {"down": "4⇣", "up": "4⇡"},
+            "5": {"down": "5⇣", "up": "5⇡"},
+            "6": {"down": "6⇣", "up": "6⇡"},
+            "7": {"down": "7⇣", "up": "7⇡"},
+            "8": {"down": "8⇣", "up": "8⇡"},
+            "9": {"down": "9⇣", "up": "9⇡"},
+            "0": {"down": "0⇣", "up": "0⇡"},
+            "\"": {"down": "(", "up": "["},
+            "!": {"down": "！", "up": "、"},
+            ",": {"down": "，"},
+            ".": {"down": "。"},
+            "?": {"down": "？"}
+        }
+    },
+    {
         "name": "qwerty",
         "description": "QWERTY",
         "charsets":

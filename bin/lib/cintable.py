@@ -12,8 +12,9 @@ import re
 # from collections import OrderedDict
 from tqdm import tqdm
 from enum import Enum
-
 from lib.util import trim, chunks, vprint
+
+verbose = False
 
 # class CinTableParseLevel(IntEnum):
 #     No = 0
@@ -78,8 +79,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         return True
 
     def log(self, msg, stop = False):
-        # verbose = True
-        # vprint(msg, verbose)
+        vprint(msg, verbose)
         if stop:
             tqdm.write(msg)
             sys.exit()
