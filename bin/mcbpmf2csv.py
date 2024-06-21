@@ -23,10 +23,17 @@ uu = importlib.import_module("lib.util")
 def parse(inputPath, outputPath):
     filename = os.path.basename(inputPath)
     contents = ""
+    delimiter = " "
     # _dir_ = uu.dir(__file__)
     # pool = multiprocessing.Pool(workers)
     with open(inputPath) as fp:
-        reader = csv.reader(fp, delimiter = "\t")
+        firstLine = fp.readline()
+        fp.seek(0)
+
+        if "\t" in firstLine:
+            delimiter = "\t"
+
+        reader = csv.reader(fp, delimiter = delimiter)
         for chunk in uu.chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 phrase = uu.trim(row[0] or '')
