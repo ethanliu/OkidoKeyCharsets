@@ -100,6 +100,15 @@ def color(text, fg = None):
 
 #     return _code(fg) + text + eval('Colors.reset')
 
+def whitespace(text):
+    replacement = r"\1 \2"
+    pattern1 = r"([\u4e00-\u9fa5\u3040-\u30FF])([a-z0-9@#&;=_\[\(])"
+    pattern2 = r"([a-z0-9#!~&;=_\]\,\.\:\?\)])([\u4e00-\u9fa5\u3040-\u30FF])"
+
+    text = re.sub(pattern1, replacement, text, flags=re.UNICODE)
+    text = re.sub(pattern2, replacement, text, flags=re.UNICODE)
+    return text
+
 def trim(str, needle = None, space = False):
     # _str = str(str)
     if not str:

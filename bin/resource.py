@@ -11,9 +11,10 @@ import sys, os, glob
 import re
 # import shutil
 import sqlite3, json
-from tqdm import tqdm
+# from tqdm import tqdm
 from datetime import datetime
 from lib.cintable import CinTable, Block
+from lib.util import trim
 
 uu = importlib.import_module("lib.util")
 cwd = uu.dir(__file__ + "/../")
@@ -26,11 +27,6 @@ repos = ["github", "gitee"]
 #     "github": f"{distPath}/github",
 #     "gitee": f"{distPath}/gitee"
 # }
-
-# print(cwd)
-# print(distPath)
-
-# sys.exit();
 
 # def splitFile(src, dst, size = 1024):
 #     # path1 = f"{cwd}/db/{filename}"
@@ -111,6 +107,45 @@ def createKeyboard(outputPath):
                 jsondata['charsets'][name]['flicks'] = item['flicks']
 
     createJsonFile(outputPath, jsondata)
+
+# TODO: patching additional description directly
+# def patchTableHeaders():
+#     srcDir = f"{cwd}/table"
+#     for basepath in sorted(glob.glob(f"rawdata/misc/*.cin")):
+#         filename = os.path.basename(basepath)
+#         srcPath = f"{srcDir}/{filename}"
+
+#         if not os.path.exists(srcPath):
+#             continue
+
+#         header = ""
+#         with open(basepath, "r") as fp:
+#             header = fp.read()
+
+#         if not header:
+#             continue
+
+#         with open(srcPath, 'r') as fp:
+#             contents = fp.readlines()
+#             valid = True
+#             targetIndex = 0
+#             for index, line in enumerate(contents):
+#                 print(f"#{index} -> {line}", end="")
+#                 if line == "\n":
+#                     continue
+#                 if line.startswith('#'):
+#                     valid = True
+#                     continue
+#                 if line.startswith('%gen_inp') and valid:
+#                     break
+
+#                 if line == "\n" or line.startswith('#') or line.startswith('%gen_inp') or line.startswith('%encoding'):
+#                     continue
+#                 print(index)
+#                 break
+#         print(srcPath)
+#         print(index)
+
 
 def createTable(outputPath):
     target = "table"
@@ -207,7 +242,7 @@ def createLexicon(outputPath):
         reader.close()
 
         tmp = template.split("\n")
-        name = tmp[0]
+        name = trim(tmp[0].lstrip('#').rstrip('#'))
         tmp = ''
 
         # sample
@@ -216,11 +251,11 @@ def createLexicon(outputPath):
         # cursor.execute("SELECT `phrase`, `pinyin` FROM `lexicon`, `pinyin` WHERE `lexicon`.`pinyin_id` = `pinyin`.`rowid` ORDER BY RANDOM() LIMIT 10")
         cursor.execute("SELECT `phrase`, `pinyin` FROM `lexicon` WHERE 1 ORDER BY RANDOM() LIMIT 10")
         result = cursor.fetchall()
-        template += "\n\n詞庫範例\n=======\n"
+        template += "\n\n#### 詞庫範例\n\n"
         for item in result:
             phrase = item[0] or ''
             pinyin = item[1] or ''
-            template += f"{phrase} {pinyin}\n"
+            template += f"{phrase}\t{pinyin}\n"
 
         db.close()
 
@@ -255,6 +290,7 @@ def main():
         case 'keyboard':
             createKeyboard(args.output)
         case 'table':
+            # patchTableHeaders()
             createTable(args.output)
         case 'lexicon':
             createLexicon(args.output)
