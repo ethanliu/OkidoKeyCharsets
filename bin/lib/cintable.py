@@ -12,7 +12,7 @@ import re
 # from collections import OrderedDict
 from tqdm import tqdm
 from enum import Enum
-from lib.util import trim, chunks, vprint
+from lib.util import trim, chunks, vprint, whitespace
 
 verbose = False
 
@@ -112,7 +112,8 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                     # if line.startswith('#') and not self.info:
                     if line.startswith('#'):
                         # line = line.replace('#', '').strip()
-                        line = line.lstrip('# ').rstrip('# ')
+                        # line = line.lstrip('# ').rstrip('# ')
+                        line = trim(line.lstrip('#').rstrip('#'))
                         # if not line:
                         #     continue
                         # ignore comments in charset
@@ -129,7 +130,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                     value = trim((items[1:2] or ('', ''))[0])
                     # print(f"{key} => _{value}_")
 
-                    if acceptComments and value == "begin":
+                    if acceptComments and (value == "begin" or len(self.meta) > 0):
                         # once any section began, ignore all comments for "description"
                         acceptComments = False
 
@@ -187,7 +188,9 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                             # self.log(f"-> chardef: {key} {value}")
                             self.extra['shortcode'].append([key, value])
 
-        self.description = trim(self.description, space = True)
+        self.description = re.sub(r'([-=]{3,})\n', '---\n', self.description)
+        self.description = trim(whitespace(self.description), space = True)
+
         # if level == CinTableParseLevel.Validate:
         #     self.validate()
         # print(self)

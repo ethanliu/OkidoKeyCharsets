@@ -20,6 +20,7 @@
 %ename ZhengMa:en;中易郑码:zh_CN;中易鄭碼:zh;
 %cname 中易郑码
 #sname 鄭碼
+%locale zh-Hans
 %selkey 1234567890
 %keyname begin
 a 一
