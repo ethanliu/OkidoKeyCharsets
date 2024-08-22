@@ -89,10 +89,10 @@ def main():
     cursor = db.cursor()
 
     # schema
-    # cursor.execute("CREATE TABLE category (`name` CHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` CHAR(255) UNIQUE NOT NULL, `info` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE category (`name` CHAR(255) NOT NULL)")
-    cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` CHAR(255) NOT NULL, `info` CHAR(255) default '')")
+    # cursor.execute("CREATE TABLE category (`name` VARCHAR(255) UNIQUE NOT NULL)")
+    # cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` VARCHAR(255) UNIQUE NOT NULL, `info` VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE category (`name` VARCHAR(255) NOT NULL)")
+    cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` VARCHAR(255) NOT NULL, `info` VARCHAR(255) default '')")
 
     print(f"Importing file: {args.input}")
     importSymbol(cursor, args.input)
