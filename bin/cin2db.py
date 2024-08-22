@@ -119,7 +119,7 @@ def pluginArray(cursor, inputPath):
         query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
         query6 = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `{keydefTableName}` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-        cursor.execute(f"CREATE TABLE {keydefTableName} (`key` CHAR(255) UNIQUE NOT NULL)")
+        cursor.execute(f"CREATE TABLE {keydefTableName} (`key` VARCHAR(255) UNIQUE NOT NULL)")
         cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
@@ -170,10 +170,10 @@ def main():
     cursor = db.cursor()
 
     # main table
-    cursor.execute("CREATE TABLE info (`name` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keyname (`key` CHAR(255) UNIQUE NOT NULL, `value` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (`key` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (`char` CHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE info (`name` VARCHAR(255) UNIQUE NOT NULL, `value` VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE keyname (`key` VARCHAR(255) UNIQUE NOT NULL, `value` VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE keydef (`key` VARCHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE chardef (`char` VARCHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
 
     mode = Mode.CREATE
