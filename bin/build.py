@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
 # autor: Ethan Liu
 #
 # build helper for reducing Makefile hassel
@@ -23,38 +22,9 @@ def main():
     parser.add_argument('-t', '--target', choices=['json', 'db'], nargs='?')
     parser.add_argument('-i', '--inputDir', help='dir', nargs='?')
     parser.add_argument('-o', '--outputDir', help='dir', nargs='?')
-    # parser.add_argument('profile', nargs='?', help='Profile filename')
-    # parser.add_argument('-e', '--plugin', choices=['array', 'bossy'], help='plugin')
-    # parser.add_argument('-e', '--excludes', nargs='+', help='Excludes additional profile')
-    # parser.add_argument('-l', '--list', action='store_true', help='List profiles')
-    # parser.add_argument('-l', '--list', action=argparse.BooleanOptionalAction, help='profile list')
-    # parser.add_argument('-f', '--flush', action=argparse.BooleanOptionalAction, help='flush dns')
-    # parser.add_argument('-v', '--validate', action='store_true', help='validate on/off')
-
-    # vv = None
-
-    # print(type(vv))
-    # print(type(True))
-    # print(type(1))
-    # print(type(0))
-    # print(type(0.0))
-    # print(type(123))
-    # print(type(123.333))
-    # print(type("dddd"))
-    # _prompt = prompt("Delete all existing file? [y/N]", False)
-    # _prompt = prompt("Delete all existing file? [y/N]", 1)
-    # _prompt = prompt("Delete all existing file? [y/N]", False)
-    # _prompt = prompt("Delete all existing file? [y/N]", 'N')
-    # sys.exit()
 
     args = parser.parse_args()
-    print('args:', args)
-
-    # test
-    # args.category = 'table'
-    # args.target = 'db'
-    # args.inputDir = 'table'
-    # args.outputDir = 'dist/queue/table'
+    # print('args:', args)
 
     match args.category:
         case 'table':
@@ -68,28 +38,6 @@ def main():
         case _:
             print("No matching category")
             pass
-
-    # if args.flush:
-    #     flush()
-    #     sys.exit()
-
-    # if args.dir == None or args.dir == "":
-    #     args.dir = os.path.dirname(os.path.abspath(__file__)) + "/hosts.d"
-
-    # if os.path.exists(args.dir) == False:
-    #     sys.exit("Profiles dir \"" + args.dir + "\" not found")
-
-    # if args.list == True:
-    #     list(args.dir)
-    #     sys.exit(0)
-
-
-    # if args.profile == None:
-    #     sys.exit("Missing profile")
-
-    # profilePath = os.path.join(args.dir, args.profile + ".conf")
-    # if os.path.isfile(profilePath) == False:
-    #     sys.exit(profilePath + " not found")
 
 
 def _lexicon_db(inputDir: str, outputDir: str):
@@ -187,6 +135,7 @@ def _table_db(inputDir: str, outputDir: str):
         if filename.startswith('_') or filename in excludes:
             continue
 
+        # print(f"-> {filename}")
         cmd = f"bin/cin2db.py -i {path} -o {outputPath}"
         if filename.startswith("array30"):
             cmd = f"{cmd} -e array"
@@ -195,6 +144,13 @@ def _table_db(inputDir: str, outputDir: str):
 
     pass
 
-
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Interrupt by user")
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
+    # except BaseException as err:

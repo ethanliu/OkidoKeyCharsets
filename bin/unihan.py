@@ -206,8 +206,8 @@ def createDatabase(path):
     # the radical based on unihan
 
     cursor.execute('''CREATE TABLE `radical` (
-        `radical` CHAR(4) UNIQUE NOT NULL,
-        `pinyin` CHAR(10) default NULL,
+        `radical` VARCHAR(4) UNIQUE NOT NULL,
+        `pinyin` VARCHAR(10) default NULL,
         `definition` TEXT default NULL,
         `classified` INTEGER default 0,
         `stroke` INTEGER default 0,

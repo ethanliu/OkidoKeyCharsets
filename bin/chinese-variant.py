@@ -100,10 +100,10 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    cursor.execute("CREATE TABLE char_hans (`hans` CHAR(255) UNIQUE NOT NULL, `hant` CHAR(255) default '')")
-    cursor.execute("CREATE TABLE char_hant (`hant` CHAR(255) UNIQUE NOT NULL, `hans` CHAR(255) default '')")
-    # cursor.execute("CREATE TABLE phrase_hans (`hans` CHAR(255) UNIQUE NOT NULL, `hant` CHAR(255) default '')")
-    # cursor.execute("CREATE TABLE phrase_hant (`hant` CHAR(255) UNIQUE NOT NULL, `hans` CHAR(255) default '')")
+    cursor.execute("CREATE TABLE char_hans (`hans` VARCHAR(255) UNIQUE NOT NULL, `hant` VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE char_hant (`hant` VARCHAR(255) UNIQUE NOT NULL, `hans` VARCHAR(255) default '')")
+    # cursor.execute("CREATE TABLE phrase_hans (`hans` VARCHAR(255) UNIQUE NOT NULL, `hant` VARCHAR(255) default '')")
+    # cursor.execute("CREATE TABLE phrase_hant (`hant` VARCHAR(255) UNIQUE NOT NULL, `hans` VARCHAR(255) default '')")
 
     cursor.execute('CREATE UNIQUE INDEX char_hans_index ON char_hans (hans)')
     cursor.execute('CREATE UNIQUE INDEX char_hant_index ON char_hant (hant)')

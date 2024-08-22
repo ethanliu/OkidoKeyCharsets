@@ -77,8 +77,8 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    # cursor.execute("CREATE TABLE pinyin (`pinyin` CHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE `lexicon` (`phrase` CHAR(255) NOT NULL, `pinyin` CHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`, `category_id`))")
+    # cursor.execute("CREATE TABLE pinyin (`pinyin` VARCHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE `lexicon` (`phrase` TEXT NOT NULL, `pinyin` VARCHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`, `category_id`))")
 
     performImport(cursor, args.input)
 
