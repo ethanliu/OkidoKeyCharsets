@@ -1602,6 +1602,7 @@
 七國	5	qiguo
 七團	0	qituan
 七堵	7	qidu
+七堵區	0	qiduqu
 七夕	29	qixi
 七夜怪談	3	qiyeguaitan
 七天	59	qitian
@@ -1703,9 +1704,11 @@
 七絕	41	qijue
 七線	7	qixian
 七美	8	qimei
+七美鄉	0	qimeixiang
 七老八十	2	qilaobashi
 七聲	0	qisheng
 七股	40	qigu
+七股區	0	qiguqu
 七股鄉	8	qiguxiang
 七色	10	qise
 七色板	0	qiseban
@@ -1908,6 +1911,7 @@
 三圍	10	sanwei
 三圓	1	sanyuan
 三地門	10	sandimen
+三地門鄉	0	sandimenxiang
 三堆	0	sandui
 三場	35	sanchang
 三塊	27	sankuai
@@ -2080,6 +2084,7 @@
 三浦	2	sanpu
 三溫暖	66	sanwennuan
 三澤光晴	0	sanzeguangqing
+三灣	0	sanwan
 三灣鄉	5	sanwanxiang
 三爺	12	sanye
 三版	5	sanban
@@ -2122,6 +2127,7 @@
 三秒膠	1	sanmiaojiao
 三秒鐘	9	sanmiaozhong
 三稜鏡	1	sanlengjing
+三種	0	sanzhong
 三立八點檔	1	sanlibadiandang
 三立台灣台	0	sanlitaiwantai
 三立新聞台	0	sanlixinwentai
@@ -2168,6 +2174,7 @@
 三色筆	0	sansebi
 三色飯	1	sansefan
 三芝	35	sanzhi
+三芝區	0	sanzhiqu
 三芝國中	2	sanzhiguozhong
 三芝鄉	9	sanzhixiang
 三英戰呂布	1	sanyingzhanlvbu
@@ -2846,6 +2853,8 @@
 下滑	114	xiahua
 下潮	3	xiachao
 下瀉	12	xiaxie
+下營	0	xiaying
+下營區	0	xiayingqu
 下營鄉	5	xiayingxiang
 下片	2	xiapian
 下片時間	0	xiapianshijian
@@ -4633,6 +4642,7 @@
 中型	54	zhongxing
 中型客車	0	zhongxingkeche
 中型的	2	zhongxingde
+中埔	0	zhongpu
 中埔鄉	3	zhongpuxiang
 中堅	34	zhongjian
 中堅份子	7	zhongjianfenzi
@@ -4640,6 +4650,7 @@
 中場休息	8	zhongchangxiuxi
 中壢	125	zhongli
 中壢人	0	zhongliren
+中壢區	0	zhongliqu
 中壢國中	0	zhongliguozhong
 中壢地區	1	zhonglidiqu
 中壢市	25	zhonglishi
@@ -5036,6 +5047,7 @@
 中衛	2	zhongwei
 中裝	6	zhongzhuang
 中西	150	zhongxi
+中西區	0	zhongxiqu
 中西合併	2	zhongxihebing
 中西合璧	8	zhongxihebi
 中西合璧式	1	zhongxihebishi
@@ -5796,6 +5808,7 @@
 九科	1	jiuke
 九秒	3	jiumiao
 九秒鐘	0	jiumiaozhong
+九種	0	jiuzhong
 九站	1	jiuzhan
 九章	7	jiuzhang
 九章算術	0	jiuzhangsuanshu
@@ -6476,6 +6489,8 @@
 二屆	104	erjie
 二屆國代	1	erjieguodai
 二屆國代選舉	0	erjieguodaixuanju
+二崙	0	erlun
+二崙鄉	0	erlunxiang
 二帝三王	0	erdisanwang
 二幅	1	erfu
 二年	1201	ernian
@@ -7106,6 +7121,7 @@
 五粒	0	wuli
 五粒裝	0	wulizhuang
 五級	17	wuji
+五結	0	wujie
 五結鄉	6	wujiexiang
 五經	27	wujing
 五線	34	wuxian
@@ -7113,6 +7129,7 @@
 五罐	0	wuguan
 五聲	0	wusheng
 五股	18	wugu
+五股區	0	wuguqu
 五股國中	0	wuguguozhong
 五股工業區	0	wugugongyequ
 五股鄉	1	wuguxiang
@@ -8186,9 +8203,11 @@
 仁宗	7	renzong
 仁弟	0	rendi
 仁德	25	rende
+仁德區	0	rendequ
 仁心	3	renxin
 仁心仁術	1	renxinrenshu
 仁愛	134	renai
+仁愛區	0	renaiqu
 仁愛國中	4	renaiguozhong
 仁愛國小	7	renaiguoxiao
 仁愛路	33	renailu
@@ -8200,6 +8219,7 @@
 仁政	6	renzheng
 仁昌	1	renchang
 仁武	17	renwu
+仁武區	0	renwuqu
 仁武鄉	1	renwuxiang
 仁武高中	0	renwugaozhong
 仁民愛物	2	renminaiwu
@@ -10254,6 +10274,7 @@
 來福線	0	laifuxian
 來稿	13	laigao
 來給	64	laigei
+來義	0	laiyi
 來義鄉	6	laiyixiang
 來者	43	laizhe
 來者不善	0	laizhebushan
@@ -11012,6 +11033,7 @@
 信義計劃區	2	xinyijihuaqu
 信義計畫區	9	xinyijihuaqu
 信義路	21	xinyilu
+信義鄉	0	xinyixiang
 信號	103	xinhao
 信號台	0	xinhaotai
 信號彈	2	xinhaodan
@@ -13409,6 +13431,8 @@
 元老院	0	yuanlaoyuan
 元色	0	yuanse
 元配	13	yuanpei
+元長	0	yuanchang
+元長鄉	0	yuanchangxiang
 元首	96	yuanshou
 元首級	1	yuanshouji
 元龍高臥	0	yuanlonggaowo
@@ -14443,6 +14467,7 @@
 內鋪	0	neipu
 內錯角	0	neicuojiao
 內門	9	neimen
+內門區	0	neimenqu
 內閣	426	neige
 內閣制	8	neigezhi
 內閣大臣	2	neigedachen
@@ -15215,6 +15240,7 @@
 八張	6	bazhang
 八強	17	baqiang
 八德	50	bade
+八德區	0	badequ
 八德市	7	badeshi
 八德路	19	badelu
 八德鄉	3	badexiang
@@ -15277,6 +15303,7 @@
 八科	1	bake
 八秒	6	bamiao
 八秒鐘	2	bamiaozhong
+八種	0	bazhong
 八站	0	bazhan
 八章	4	bazhang
 八竿子打不到	1	baganzidabudao
@@ -15316,6 +15343,7 @@
 八部	19	babu
 八部合音	2	babuheyin
 八里	35	bali
+八里區	0	baliqu
 八里國小	1	baliguoxiao
 八里鄉	6	balixiang
 八錢	1	baqian
@@ -15879,6 +15907,7 @@
 六瓣	0	liuban
 六瓶	2	liuping
 六甲	41	liujia
+六甲區	0	liujiaqu
 六畜	1	liuchu
 六發	1	liufa
 六百	513	liubai
@@ -15911,6 +15940,7 @@
 六聲	0	liusheng
 六腑	8	liufu
 六腳	1	liujiao
+六腳鄉	0	liujiaoxiang
 六船	0	liuchuan
 六萬	199	liuwan
 六萬人	5	liuwanren
@@ -15966,6 +15996,7 @@
 六點鐘	14	liudianzhong
 六齣	2	liuchu
 六龜	26	liugui
+六龜區	0	liuguiqu
 六龜鄉	0	liuguixiang
 兮	440	xi
 共	12339	gong
@@ -16639,6 +16670,7 @@
 冬央鍋	2	dongyangguo
 冬季	225	dongji
 冬小麥	0	dongxiaomai
+冬山	0	dongshan
 冬山河	56	dongshanhe
 冬山鄉	13	dongshanxiang
 冬日	20	dongri
@@ -19057,6 +19089,7 @@
 前進	266	qianjin
 前邊	6	qianbian
 前部	12	qianbu
+前金	0	qianjin
 前金區	12	qianjinqu
 前金國小	0	qianjinguoxiao
 前鋒	75	qianfeng
@@ -21143,6 +21176,8 @@
 北寒帶	0	beihandai
 北寧	0	beining
 北寧鐵路	0	beiningtielu
+北屯	0	beitun
+北屯區	0	beitunqu
 北山	18	beishan
 北山酒精	0	beishanjiujing
 北山酒經	0	beishanjiujing
@@ -21221,6 +21256,7 @@
 北端	17	beiduan
 北竿	30	beigan
 北竿島	1	beigandao
+北竿鄉	0	beiganxiang
 北約	20	beiyue
 北約組織	1	beiyuezuzhi
 北緯	11	beiwei
@@ -21260,6 +21296,7 @@
 北醫	58	beiyi
 北門	57	beimen
 北門一帶	0	beimenyidai
+北門區	0	beimenqu
 北門車站	1	beimenchezhan
 北門農工	0	beimennonggong
 北門鄉	4	beimenxiang
@@ -22345,6 +22382,7 @@
 卓著	33	zhuozhu
 卓蘭	6	zhuolan
 卓蘭實中	0	zhuolanshizhong
+卓蘭鎮	0	zhuolanzhen
 卓見	5	zhuojian
 卓識	0	zhuoshi
 卓越	120	zhuoyue
@@ -22432,6 +22470,8 @@
 南勢角	2	nanshijiao
 南勢角站	2	nanshijiaozhan
 南匈奴	0	nanxiongnu
+南化	0	nanhua
+南化區	0	nanhuaqu
 南化水庫	3	nanhuashuiku
 南化鄉	6	nanhuaxiang
 南北	265	nanbei
@@ -22479,6 +22519,7 @@
 南寮	24	nanliao
 南寮村	1	nanliaocun
 南屯	28	nantun
+南屯區	0	nantunqu
 南山	75	nanshan
 南山人壽	1	nanshanrenshou
 南岡山站	0	nangangshanzhan
@@ -22492,6 +22533,8 @@
 南嵌溪	0	nanqianxi
 南嶺	0	nanling
 南嶽	0	nanyue
+南州	0	nanzhou
+南州鄉	0	nanzhouxiang
 南市	358	nanshi
 南師	3	nanshi
 南庄	10	nanzhuang
@@ -22584,6 +22627,7 @@
 南站	1	nanzhan
 南端	47	nanduan
 南竿	32	nangan
+南竿鄉	0	nanganxiang
 南管	68	nanguan
 南管樂舞	3	nanguanlewu
 南緯	1	nanwei
@@ -24251,6 +24295,7 @@
 口渴	21	kouke
 口渴難忍	0	koukenanren
 口湖	7	kouhu
+口湖鄉	0	kouhuxiang
 口無擇言	0	kouwuzeyan
 口無遮攔	0	kouwuzhelan
 口燥脣乾	0	kouzaochungan
@@ -24360,6 +24405,7 @@
 古名	7	guming
 古器物學	4	guqiwuxue
 古國	27	guguo
+古坑	0	gukeng
 古坑鄉	9	gukengxiang
 古坑鄉人	1	gukengxiangren
 古埃及	4	guaiji
@@ -26997,6 +27043,7 @@
 后綜高中	0	houzonggaozhong
 后羿	21	houyi
 后里	21	houli
+后里區	0	houliqu
 后里國中	0	houliguozhong
 后里鄉	7	houlixiang
 后里馬場	0	houlimachang
@@ -28031,6 +28078,7 @@
 和平主義	7	hepingzhuyi
 和平共存	2	hepinggongcun
 和平共處	6	hepinggongchu
+和平區	0	hepingqu
 和平協議	11	hepingxieyi
 和平口號	0	hepingkouhao
 和平國中	0	hepingguozhong
@@ -28089,6 +28137,7 @@
 和緩	30	hehuan
 和縣	15	hexian
 和美	113	hemei
+和美鎮	0	hemeizhen
 和而不同	5	heerbutong
 和聲	33	hesheng
 和興	22	hexing
@@ -28489,11 +28538,13 @@
 員	30203	yuan
 員外	24	yuanwai
 員山	24	yuanshan
+員山鄉	0	yuanshanxiang
 員工	1641	yuangong
 員工福利	3	yuangongfuli
 員工認股權	0	yuangongrenguquan
 員林	62	yuanlin
 員林國中	0	yuanlinguozhong
+員林市	0	yuanlinshi
 員林鎮	8	yuanlinzhen
 員警	199	yuanjing
 員額	84	yuane
@@ -30776,6 +30827,7 @@
 四海幫	4	sihaibang
 四海為家	0	sihaiweijia
 四海皆兄弟	0	sihaijiexiongdi
+四湖	0	sihu
 四湖鄉	1	sihuxiang
 四濺	9	sijian
 四爺	2	siye
@@ -30809,6 +30861,7 @@
 四科	12	sike
 四秒	11	simiao
 四秒鐘	3	simiaozhong
+四種	0	sizhong
 四站	2	sizhan
 四章	24	sizhang
 四端	2	siduan
@@ -32742,6 +32795,7 @@
 坩堝	1	ganguo
 坪	566	ping
 坪林	27	pinglin
+坪林區	0	pinglinqu
 坪林溪	1	pinglinxi
 坪林茶	5	pinglincha
 坪林鄉	4	pinglinxiang
@@ -34291,6 +34345,7 @@
 壽考	9	shoukao
 壽衣	6	shouyi
 壽誕	1	shoudan
+壽豐	0	shoufeng
 壽豐鄉	11	shoufengxiang
 壽辰	1	shouchen
 壽陽	0	shouyang
@@ -34450,6 +34505,8 @@
 外型	157	waixing
 外城	5	waicheng
 外埔	8	waipu
+外埔區	0	waipuqu
+外埔鄉	0	waipuxiang
 外埠	3	waibu
 外堡	0	waibao
 外場	7	waichang
@@ -35285,6 +35342,7 @@
 大元帥	0	dayuanshuai
 大兄	4	daxiong
 大內	39	danei
+大內區	0	daneiqu
 大全	27	daquan
 大全張	2	daquanzhang
 大公	166	dagong
@@ -35386,6 +35444,7 @@
 大同國中	0	datongguozhong
 大同小異	34	datongxiaoyi
 大同書	0	datongshu
+大同鄉	0	datongxiang
 大名	60	daming
 大名府	0	damingfu
 大名鼎鼎	13	damingdingding
@@ -35429,6 +35488,7 @@
 大國	185	daguo
 大國民	3	daguomin
 大園	46	dayuan
+大園區	0	dayuanqu
 大園國中	0	dayuanguozhong
 大園國小	0	dayuanguoxiao
 大園工業區	0	dayuangongyequ
@@ -35450,7 +35510,10 @@
 大型積體電路	0	daxingjitidianlu
 大城	80	dacheng
 大城小鎮	1	dachengxiaozhen
+大城鄉	0	dachengxiang
 大埔	38	dapu
+大埔鄉	0	dapuxiang
+大埤	0	dapi
 大埤鄉	1	dapixiang
 大堂	9	datang
 大堂哥	0	datangge
@@ -35528,6 +35591,7 @@
 大安森林公園	19	daansenlingongyuan
 大安溪	22	daanxi
 大安路	3	daanlu
+大安鄉	0	daanxiang
 大宋	1	dasong
 大宗	49	dazong
 大官	27	daguan
@@ -35545,6 +35609,7 @@
 大寫	31	daxie
 大寫字母	0	daxiezimu
 大寮	29	daliao
+大寮區	0	daliaoqu
 大寮站	1	daliaozhan
 大寮鄉	9	daliaoxiang
 大封	1	dafeng
@@ -35775,6 +35840,7 @@
 大樓裡	11	dalouli
 大模大樣	4	damodayang
 大樹	126	dashu
+大樹區	0	dashuqu
 大樹群	1	dashuqun
 大樹鄉	9	dashuxiang
 大橋國中	0	daqiaoguozhong
@@ -35785,8 +35851,10 @@
 大權獨攬	0	daquandulan
 大正	0	dazheng
 大步	32	dabu
+大武	0	dawu
 大武山	43	dawushan
 大武溪	0	dawuxi
+大武鄉	0	dawuxiang
 大殮	1	dalian
 大段	10	daduan
 大殿	20	dadian
@@ -35839,7 +35907,9 @@
 大湖	49	dahu
 大湖國小	1	dahuguoxiao
 大湖山莊	1	dahushanzhuang
+大湖鄉	0	dahuxiang
 大溪	107	daxi
+大溪區	0	daxiqu
 大溪地	5	daxidi
 大溪港	0	daxigang
 大溪豆乾	0	daxidougan
@@ -35906,6 +35976,7 @@
 大用	23	dayong
 大田	7	datian
 大甲	104	dajia
+大甲區	0	dajiaqu
 大甲國中	0	dajiaguozhong
 大甲溪	45	dajiaxi
 大甲鎮	12	dajiazhen
@@ -35958,6 +36029,8 @@
 大破	11	dapo
 大碗	37	dawan
 大礁溪	3	dajiaoxi
+大社	0	dashe
+大社區	0	dashequ
 大神	39	dashen
 大票	5	dapiao
 大票的	2	dapiaode
@@ -36042,10 +36115,12 @@
 大肆宣揚	2	dasixuanyang
 大肆批評	1	dasipiping
 大肚	46	dadu
+大肚區	0	daduqu
 大肚子	2	daduzi
 大肚山	3	dadushan
 大肚溪	11	daduxi
 大肚溪口	7	daduxikou
+大肚鄉	0	daduxiang
 大肚魚	3	daduyu
 大股	19	dagu
 大胃王	3	daweiwang
@@ -36223,6 +36298,8 @@
 大都會歌劇院	3	daduhuigejuyuan
 大都會隊	1	daduhuidui
 大里	32	dali
+大里區	0	daliqu
+大里市	0	dalishi
 大里鄉	5	dalixiang
 大量	1465	daliang
 大量生產	8	daliangshengchan
@@ -36286,6 +36363,7 @@
 大雄	24	daxiong
 大雄寶殿	1	daxiongbaodian
 大雅	62	daya
+大雅區	0	dayaqu
 大雅國中	0	dayaguozhong
 大雅鄉	1	dayaxiang
 大雜燴	5	dazahui
@@ -36833,6 +36911,7 @@
 太師	8	taishi
 太師椅	2	taishiyi
 太平	631	taiping
+太平區	0	taipingqu
 太平國小	1	taipingguoxiao
 太平天國	14	taipingtianguo
 太平夫人	0	taipingfuren
@@ -36840,6 +36919,7 @@
 太平山	13	taipingshan
 太平山頂	1	taipingshanding
 太平島	53	taipingdao
+太平市	0	taipingshi
 太平廣記	0	taipingguangji
 太平梯	0	taipingti
 太平洋	417	taipingyang
@@ -36981,6 +37061,7 @@
 太魯閣族	2	tailugezu
 太麻里	14	taimali
 太麻里溪	4	taimalixi
+太麻里鄉	0	taimalixiang
 夫	4382	fu
 夫人	428	furen
 夫倡婦隨	0	fuchangfusui
@@ -40023,6 +40104,8 @@
 學生證	43	xueshengzheng
 學生運動	10	xueshengyundong
 學生餐	1	xueshengcan
+學甲	0	xuejia
+學甲區	0	xuejiaqu
 學甲鎮	5	xuejiazhen
 學界	314	xuejie
 學的	1208	xuede
@@ -40265,6 +40348,7 @@
 安分守己	6	anfenshouji
 安卓	0	anzhuo
 安南	22	annan
+安南區	0	annanqu
 安卡拉	2	anqiala
 安危	30	anwei
 安危禍福	0	anweihuofu
@@ -40304,6 +40388,7 @@
 安定	342	anding
 安定下來	13	andingxialai
 安定力	2	andingli
+安定區	0	andingqu
 安定性	6	andingxing
 安定物	0	andingwu
 安定的	8	andingde
@@ -40317,6 +40402,7 @@
 安居樂業	9	anjuleye
 安山岩	3	anshanyan
 安平	121	anping
+安平區	0	anpingqu
 安平古堡	5	anpinggubao
 安平港	3	anpinggang
 安平蝦捲	0	anpingxiajuan
@@ -40376,6 +40462,7 @@
 安格斯	0	angesi
 安格魯薩克遜	1	angelusakexun
 安樂	74	anle
+安樂區	0	anlequ
 安樂國	0	anleguo
 安樂園	4	anleyuan
 安樂椅	1	anleyi
@@ -40670,6 +40757,7 @@
 官營	3	guanying
 官爵	0	guanjue
 官田	16	guantian
+官田區	0	guantianqu
 官癮	0	guanyin
 官祿	0	guanlu
 官私合營	0	guansiheying
@@ -41622,6 +41710,8 @@
 富足	24	fuzu
 富達投資	0	fudatouzi
 富邦	77	fubang
+富里	0	fuli
+富里鄉	0	fulixiang
 富野由悠季	0	fuyeyouyouji
 富陽	3	fuyang
 富餘	0	fuyu
@@ -42465,6 +42555,7 @@
 將計	8	jiangji
 將計就計	1	jiangjijiuji
 將軍	362	jiangjun
+將軍區	0	jiangjunqu
 將軍溪	2	jiangjunxi
 將軍鮮乳	2	jiangjunxianru
 將近	733	jiangjin
@@ -44436,6 +44527,7 @@
 屯	251	tun
 屯京拉麵	2	tunjinglamian
 屯兵	0	tunbing
+屯區	0	tunqu
 屯墾	12	tunken
 屯墾員	1	tunkenyuan
 屯子	1	tunzi
@@ -44453,6 +44545,7 @@
 山	12790	shan
 山上	137	shanshang
 山上人家	0	shanshangrenjia
+山上區	0	shanshangqu
 山下	56	shanxia
 山下人家	0	shanxiarenjia
 山不轉路轉	1	shanbuzhuanluzhuan
@@ -44722,6 +44815,7 @@
 岠	0	ju
 岡	272	gang
 岡山	63	gangshan
+岡山區	0	gangshanqu
 岡山國中	0	gangshanguozhong
 岡山縣	63	gangshanxian
 岡山鎮	12	gangshanzhen
@@ -45517,6 +45611,7 @@
 左鄰右舍	24	zuolinyoushe
 左鍵	7	zuojian
 左鎮	13	zuozhen
+左鎮區	0	zuozhenqu
 左鎮鄉	7	zuozhenxiang
 左面	3	zuomian
 左顧	3	zuogu
@@ -46728,6 +46823,7 @@
 平清盛	2	pingqingsheng
 平準	2	pingzhun
 平溪	69	pingxi
+平溪區	0	pingxiqu
 平溪天燈	3	pingxitiandeng
 平溪線	3	pingxixian
 平溪鄉	13	pingxixiang
@@ -46804,6 +46900,8 @@
 平輩	6	pingbei
 平野	12	pingye
 平鋪直敘	2	pingpuzhixu
+平鎮	0	pingzhen
+平鎮區	0	pingzhenqu
 平鎮市	7	pingzhenshi
 平陽	5	pingyang
 平隴望蜀	0	pinglongwangshu
@@ -48935,6 +49033,7 @@
 彌賽亞	4	misaiya
 彌足珍貴	7	mizuzhengui
 彌陀	44	mituo
+彌陀區	0	mituoqu
 彎	613	wan
 彎下	18	wanxia
 彎下來	0	wanxialai
@@ -49581,6 +49680,7 @@
 後塘國小	0	houtangguoxiao
 後塵	18	houchen
 後壁	29	houbi
+後壁區	0	houbiqu
 後壁湖	24	houbihu
 後壁鄉	4	houbixiang
 後壁高中	0	houbigaozhong
@@ -50163,6 +50263,7 @@
 復興劇校	6	fuxingjuxiao
 復興劇藝	0	fuxingjuyi
 復興北路	11	fuxingbeilu
+復興區	0	fuxingqu
 復興南路	8	fuxingnanlu
 復興商工	6	fuxingshanggong
 復興基地	0	fuxingjidi
@@ -65037,6 +65138,7 @@
 新動力	3	xindongli
 新勢國小	0	xinshiguoxiao
 新化	38	xinhua
+新化區	0	xinhuaqu
 新化國中	1	xinhuaguozhong
 新化站	1	xinhuazhan
 新化鎮	8	xinhuazhen
@@ -65066,6 +65168,7 @@
 新單元	3	xindanyuan
 新單曲	8	xindanqu
 新國家連線	2	xinguojialianxian
+新園	0	xinyuan
 新園鄉	1	xinyuanxiang
 新型	143	xinxing
 新城	41	xincheng
@@ -65126,6 +65229,7 @@
 新居	13	xinju
 新居落成	1	xinjuluocheng
 新屋	21	xinwu
+新屋區	0	xinwuqu
 新屋國中	0	xinwuguozhong
 新屋鄉	10	xinwuxiang
 新工作	18	xingongzuo
@@ -65247,6 +65351,7 @@
 新澤西州	8	xinzexizhou
 新烏	0	xinwu
 新營	24	xinying
+新營區	0	xinyingqu
 新營市	6	xinyingshi
 新片	63	xinpian
 新片試映	0	xinpianshiying
@@ -65299,6 +65404,7 @@
 新知	135	xinzhi
 新石器時代	2	xinshiqishidai
 新研發	31	xinyanfa
+新社	0	xinshe
 新社區	2	xinshequ
 新社鄉	14	xinshexiang
 新社高中	0	xinshegaozhong
@@ -65909,6 +66015,7 @@
 旗人	1	qiren
 旗子	34	qizi
 旗山	65	qishan
+旗山區	0	qishanqu
 旗山國中	0	qishanguozhong
 旗山國小	3	qishanguoxiao
 旗山鎮	10	qishanzhen
@@ -66888,6 +66995,7 @@
 春捲皮	3	chunjuanpi
 春播	0	chunbo
 春日	37	chunri
+春日鄉	0	chunrixiang
 春景	2	chunjing
 春暉	24	chunhui
 春暖花開	5	chunnuanhuakai
@@ -67588,6 +67696,8 @@
 暖室	1	nuanshi
 暖房	2	nuanfang
 暖手	0	nuanshou
+暖暖	0	nuannuan
+暖暖區	0	nuannuanqu
 暖氣	21	nuanqi
 暖氣團	0	nuanqituan
 暖氣機	0	nuanqiji
@@ -70114,6 +70224,7 @@
 杉木	15	shanmu
 杉材	0	shancai
 杉林	10	shanlin
+杉林區	0	shanlinqu
 杉林溪	2	shanlinxi
 杉篙	0	shangao
 杋	0	fan
@@ -70393,6 +70504,7 @@
 東勢厝	0	dongshicuo
 東勢國中	0	dongshiguozhong
 東勢國小	0	dongshiguoxiao
+東勢鄉	0	dongshixiang
 東勢鎮	12	dongshizhen
 東北	532	dongbei
 東北九省	0	dongbeijiusheng
@@ -70468,6 +70580,7 @@
 東尼	903	dongni
 東山	54	dongshan
 東山再起	15	dongshanzaiqi
+東山區	0	dongshanqu
 東山鴨頭	2	dongshanyatou
 東岸	40	dongan
 東岸的	3	dongande
@@ -70481,6 +70594,7 @@
 東廠	4	dongchang
 東引	12	dongyin
 東引島	4	dongyindao
+東引鄉	0	dongyinxiang
 東張西望	14	dongzhangxiwang
 東征	14	dongzheng
 東征西討	1	dongzhengxitao
@@ -70533,6 +70647,7 @@
 東沙島	22	dongshadao
 東沙群島	1	dongshaqundao
 東河	26	donghe
+東河鄉	0	donghexiang
 東洋	43	dongyang
 東洋史	1	dongyangshi
 東洋味	1	dongyangwei
@@ -70548,6 +70663,7 @@
 東港	88	donggang
 東港溪	18	donggangxi
 東港王船	2	donggangwangchuan
+東港鎮	0	donggangzhen
 東湖	7	donghu
 東湖國小	0	donghuguoxiao
 東湖路	2	donghulu
@@ -70563,6 +70679,7 @@
 東看西看	0	dongkanxikan
 東瞧西瞧	0	dongqiaoxiqiao
 東石	12	dongshi
+東石鄉	0	dongshixiang
 東移	24	dongyi
 東突	0	dongtu
 東突厥	0	dongtujue
@@ -71499,6 +71616,7 @@
 柳橙汁	9	liuchengzhi
 柳永	2	liuyong
 柳營	8	liuying
+柳營區	0	liuyingqu
 柳琴	90	liuqin
 柳眉	2	liumei
 柳絮	2	liuxu
@@ -71886,6 +72004,7 @@
 桃園	693	taoyuan
 桃園中正機場	3	taoyuanzhongzhengjichang
 桃園人	1	taoyuanren
+桃園區	0	taoyuanqu
 桃園國際機場	3	taoyuanguojijichang
 桃園地方法院	1	taoyuandifangfayuan
 桃園市	52	taoyuanshi
@@ -71904,6 +72023,7 @@
 桃李滿門	1	taolimanmen
 桃樹	12	taoshu
 桃源	63	taoyuan
+桃源區	0	taoyuanqu
 桃源街口	0	taoyuanjiekou
 桃源谷	4	taoyuangu
 桃猿	19	taoyuan
@@ -72156,6 +72276,7 @@
 梓	116	zi
 梓匠	0	zijiang
 梓官	6	ziguan
+梓官區	0	ziguanqu
 梓樹	1	zishu
 梓里	0	zili
 梔	2	zhi
@@ -72697,6 +72818,7 @@
 楊桃樹	1	yangtaoshu
 楊桃汁	2	yangtaozhi
 楊梅	47	yangmei
+楊梅區	0	yangmeiqu
 楊梅國中	0	yangmeiguozhong
 楊梅汁	0	yangmeizhi
 楊梅鎮	3	yangmeizhen
@@ -72787,6 +72909,8 @@
 楠梓區	6	nanziqu
 楠梓國小	2	nanziguoxiao
 楠梓糖廠	1	nanzitangchang
+楠西	0	nanxi
+楠西區	0	nanxiqu
 楠陽國小	0	nanyangguoxiao
 楢	0	you
 楣	92	mei
@@ -73497,6 +73621,7 @@
 樹杈	1	shucha
 樹杪	0	shumiao
 樹林	336	shulin
+樹林區	0	shulinqu
 樹林子	2	shulinzi
 樹林裡	14	shulinli
 樹林鎮	1	shulinzhen
@@ -75206,6 +75331,7 @@
 歸不得	10	guibude
 歸人	3	guiren
 歸仁	11	guiren
+歸仁區	0	guirenqu
 歸仁鄉	4	guirenxiang
 歸位	8	guiwei
 歸位鍵	0	guiweijian
@@ -76655,6 +76781,7 @@
 民防	9	minfang
 民雄	6	minxiong
 民雄農工	0	minxiongnonggong
+民雄鄉	0	minxiongxiang
 民風	32	minfeng
 民風淳樸	0	minfengchunpu
 民風純樸	0	minfengchunpu
@@ -77089,6 +77216,8 @@
 水木書苑	0	shuimushuyuan
 水木清華	0	shuimuqinghua
 水杉	1	shuishan
+水林	0	shuilin
+水林鄉	0	shuilinxiang
 水果	411	shuiguo
 水果刀	3	shuiguodao
 水果店	14	shuiguodian
@@ -77330,6 +77459,7 @@
 水鄉澤國	5	shuixiangzeguo
 水酒	4	shuijiu
 水里	11	shuili
+水里鄉	0	shuilixiang
 水野	3	shuiye
 水量	175	shuiliang
 水量計	0	shuiliangji
@@ -77405,6 +77535,7 @@
 永字八法	0	yongzibafa
 永存	5	yongcun
 永安	48	yongan
+永安區	0	yonganqu
 永安鄉	2	yonganxiang
 永定	5	yongding
 永定河	2	yongdinghe
@@ -77413,6 +77544,7 @@
 永平國小	1	yongpingguoxiao
 永年	5	yongnian
 永康	34	yongkang
+永康區	0	yongkangqu
 永康市	2	yongkangshi
 永康街	0	yongkangjie
 永康鄉	3	yongkangxiang
@@ -77450,6 +77582,7 @@
 永遠都是	16	yongyuandushi
 永野護	1	yongyehu
 永隆國小	0	yonglongguoxiao
+永靖	0	yongjing
 永靖國中	1	yongjingguozhong
 永靖鄉	3	yongjingxiang
 永靖高工	0	yongjinggaogong
@@ -77570,6 +77703,7 @@
 汐東線	0	xidongxian
 汐止	88	xizhi
 汐止人	1	xizhiren
+汐止區	0	xizhiqu
 汐止市	6	xizhishi
 汐止鎮	12	xizhizhen
 汐科	0	xike
@@ -77711,6 +77845,7 @@
 江面上	1	jiangmianshang
 池	1328	chi
 池上	32	chishang
+池上鄉	0	chishangxiang
 池中物	0	chizhongwu
 池塘	74	chitang
 池子	14	chizi
@@ -78471,6 +78606,7 @@
 沙鹿區	0	shaluqu
 沙鹿國中	0	shaluguozhong
 沙鹿國小	0	shaluguoxiao
+沙鹿鎮	0	shaluzhen
 沙黃色	0	shahuangse
 沙龍	47	shalong
 沙龍照	1	shalongzhao
@@ -79333,8 +79469,10 @@
 泰姬瑪哈	0	taijimaha
 泰安	30	taian
 泰安縣	0	taianxian
+泰安鄉	0	taianxiang
 泰山	93	taishan
 泰山北斗	1	taishanbeidou
+泰山區	0	taishanqu
 泰山壓卵	0	taishanyaluan
 泰山壓頂	0	taishanyading
 泰山收費站	0	taishanshoufeizhan
@@ -79350,6 +79488,8 @@
 泰族	0	taizu
 泰晤士報	14	taiwushibao
 泰晤士河	18	taiwushihe
+泰武	0	taiwu
+泰武鄉	0	taiwuxiang
 泰源國中	0	taiyuanguozhong
 泰源國小	0	taiyuanguoxiao
 泰然	19	tairan
@@ -80577,6 +80717,7 @@
 海神號	0	haishenhao
 海禁	5	haijin
 海端	6	haiduan
+海端鄉	0	haiduanxiang
 海納百川	1	hainabaichuan
 海綿	60	haimian
 海綿狀	18	haimianzhuang
@@ -81349,6 +81490,7 @@
 深圳	55	shenzhen
 深圳市	7	shenzhenshi
 深坑	17	shenkeng
+深坑區	0	shenkengqu
 深坑豆腐	0	shenkengdoufu
 深坑鄉	2	shenkengxiang
 深埋	3	shenmai
@@ -81760,11 +81902,13 @@
 清楚起來	0	qingchuqilai
 清樂	1	qingle
 清水	156	qingshui
+清水區	0	qingshuiqu
 清水巖	8	qingshuiyan
 清水牆	0	qingshuiqiang
 清水磚	1	qingshuizhuan
 清水米糕	1	qingshuimigao
 清水翔太	0	qingshuixiangtai
+清水鎮	0	qingshuizhen
 清水阿財米糕	1	qingshuiacaimigao
 清江	27	qingjiang
 清江國小	0	qingjiangguoxiao
@@ -82282,6 +82426,7 @@
 湖光	6	huguang
 湖光山色	4	huguangshanse
 湖內	7	hunei
+湖內區	0	huneiqu
 湖前	0	huqian
 湖北	53	hubei
 湖北人	1	hubeiren
@@ -82315,6 +82460,7 @@
 湖色	0	huse
 湖裡	5	huli
 湖西	3	huxi
+湖西鄉	0	huxixiang
 湖邊	9	hubian
 湖面	31	humian
 湘	118	xiang
@@ -82547,6 +82693,7 @@
 溧	0	li
 溪	1838	xi
 溪口	53	xikou
+溪口鄉	0	xikouxiang
 溪哥魚	1	xigeyu
 溪寮社區	2	xiliaoshequ
 溪尾	0	xiwei
@@ -83730,7 +83877,9 @@
 潬	0	dan
 潭	384	tan
 潭子	8	tanzi
+潭子區	0	tanziqu
 潭子國小	0	tanziguoxiao
+潭子鄉	0	tanzixiang
 潭州	0	tanzhou
 潭底	0	tandi
 潭影	0	tanying
@@ -83743,6 +83892,7 @@
 潮	2323	chao
 潮州	19	chaozhou
 潮州菜	1	chaozhoucai
+潮州鎮	0	chaozhouzhen
 潮氣	4	chaoqi
 潮水	16	chaoshui
 潮汐	19	chaoxi
@@ -85080,6 +85230,7 @@
 烏七八糟	0	wuqibazao
 烏亮	2	wuliang
 烏來	48	wulai
+烏來區	0	wulaiqu
 烏來溫泉	0	wulaiwenquan
 烏來鄉	3	wulaixiang
 烏克蘭	14	wukelan
@@ -85088,6 +85239,7 @@
 烏合之眾	4	wuhezhizhong
 烏呼	0	wuhu
 烏坵	48	wuqiu
+烏坵鄉	0	wuqiuxiang
 烏山頭	34	wushantou
 烏山頭水庫	14	wushantoushuiku
 烏巾	1	wujin
@@ -85099,6 +85251,7 @@
 烏拉山	2	wulashan
 烏拉草	1	wulacao
 烏日	24	wuri
+烏日區	0	wuriqu
 烏日鄉	3	wurixiang
 烏有	16	wuyou
 烏木	5	wumu
@@ -86870,6 +87023,7 @@
 燕尾服	2	yanweifu
 燕居	2	yanju
 燕巢	19	yanchao
+燕巢區	0	yanchaoqu
 燕巢幕上	0	yanchaomushang
 燕巢鄉	6	yanchaoxiang
 燕燕于飛	3	yanyanyufei
@@ -87689,6 +87843,7 @@
 牡丹社事件	1	mudansheshijian
 牡丹花	2	mudanhua
 牡丹花下死	0	mudanhuaxiasi
+牡丹鄉	0	mudanxiang
 牡牛	1	muniu
 牡羊	31	muyang
 牡羊座	28	muyangzuo
@@ -88726,9 +88881,12 @@
 獅子會長	1	shizihuichang
 獅子林	7	shizilin
 獅子狗	0	shizigou
+獅子鄉	0	shizixiang
 獅子頭	3	shizitou
 獅子魚	2	shiziyu
 獅心王	0	shixinwang
+獅潭	0	shitan
+獅潭鄉	0	shitanxiang
 獅王	9	shiwang
 獅甲國小	0	shijiaguoxiao
 獅甲站	0	shijiazhan
@@ -89119,6 +89277,7 @@
 玉	2091	yu
 玉不琢不成器	0	yubuzhuobuchengqi
 玉井	9	yujing
+玉井區	0	yujingqu
 玉井工商	0	yujinggongshang
 玉井鄉	3	yujingxiang
 玉佛	16	yufo
@@ -89939,6 +90098,7 @@
 琉球人	2	liuqiuren
 琉球嶼	0	liuqiuyu
 琉球群島	4	liuqiuqundao
+琉球鄉	0	liuqiuxiang
 琉璃	64	liuli
 琉璃廠	3	liulichang
 琉璃燈	0	liulideng
@@ -90118,6 +90278,7 @@
 瑪利亞	60	maliya
 瑪利歐	4	maliou
 瑪奇朵	0	maqiduo
+瑪家	0	majia
 瑪家水庫	0	majiashuiku
 瑪家鄉	5	majiaxiang
 瑪格麗特	9	magelite
@@ -91185,6 +91346,7 @@
 田契	1	tianqi
 田家	13	tianjia
 田寮	13	tianliao
+田寮區	0	tianliaoqu
 田尾	4	tianwei
 田尾鄉	1	tianweixiang
 田岸	0	tianan
@@ -91264,6 +91426,7 @@
 甲乙	17	jiayi
 甲乙丙丁	0	jiayibingding
 甲仙	18	jiaxian
+甲仙區	0	jiaxianqu
 甲仙鄉	7	jiaxianxiang
 甲兵	4	jiabing
 甲冑	2	jiazhou
@@ -91750,6 +91913,8 @@
 番薯藤	0	fanshuteng
 番號	2	fanhao
 番話	12	fanhua
+番路	0	fanlu
+番路鄉	0	fanluxiang
 番邦	3	fanbang
 番鬼	0	fangui
 畫	13307	hua
@@ -93232,6 +93397,7 @@
 白沙鄉人	1	baishaxiangren
 白沫	16	baimo
 白河	34	baihe
+白河區	0	baihequ
 白河商工	0	baiheshanggong
 白河水庫	5	baiheshuiku
 白活	3	baihuo
@@ -96072,8 +96238,10 @@
 石家莊市	0	shijiazhuangshi
 石屋	5	shiwu
 石山	15	shishan
+石岡	0	shigang
+石岡區	0	shigangqu
+石岡鄉	3	shigangxiang
 石崇	1	shichong
-石崗鄉	3	shigangxiang
 石川	3	shichuan
 石川氏鮭魚	15	shichuanshiguiyu
 石川縣	3	shichuanxian
@@ -96146,6 +96314,7 @@
 石破天驚	2	shipotianjing
 石碇	11	shiding
 石碇中學	0	shidingzhongxue
+石碇區	0	shidingqu
 石碇國小	0	shidingguoxiao
 石碇鄉	2	shidingxiang
 石碇高中	0	shidinggaozhong
@@ -96189,6 +96358,7 @@
 石鍋拌飯	1	shiguobanfan
 石鐘乳	1	shizhongru
 石門	125	shimen
+石門區	0	shimenqu
 石門水庫	55	shimenshuiku
 石門鄉	5	shimenxiang
 石階	19	shijie
@@ -97577,6 +97747,8 @@
 神射手	2	shensheshou
 神將	2	shenjiang
 神岡	8	shengang
+神岡區	0	shengangqu
+神岡鄉	0	shengangxiang
 神州	22	shenzhou
 神州大陸	0	shenzhoudalu
 神工鬼斧	1	shengongguifu
@@ -97981,6 +98153,7 @@
 福祿壽	6	fulushou
 福科國中	0	fukeguozhong
 福至心靈	1	fuzhixinling
+福興	0	fuxing
 福興鄉	8	fuxingxiang
 福興鄉人	1	fuxingxiangren
 福華	17	fuhua
@@ -98169,9 +98342,11 @@
 秀朗	10	xiulang
 秀朗國小	0	xiulangguoxiao
 秀林	15	xiulin
+秀林鄉	0	xiulinxiang
 秀氣	11	xiuqi
 秀水	0	xiushui
 秀水國中	0	xiushuiguozhong
+秀水鄉	0	xiushuixiang
 秀眉	0	xiumei
 秀美	23	xiumei
 秀而不實	1	xiuerbushi
@@ -100210,6 +100385,8 @@
 竹園	9	zhuyuan
 竹報	2	zhubao
 竹報平安	1	zhubaopingan
+竹塘	0	zhutang
+竹塘鄉	0	zhutangxiang
 竹塹	51	zhuqian
 竹女	0	zhunv
 竹子	104	zhuzi
@@ -100219,6 +100396,7 @@
 竹山鎮	7	zhushanzhen
 竹山高中	0	zhushangaozhong
 竹島	0	zhudao
+竹崎	0	zhuqi
 竹崎鄉	2	zhuqixiang
 竹工	31	zhugong
 竹工業	3	zhugongye
@@ -100243,6 +100421,7 @@
 竹槓	4	zhugang
 竹樓	4	zhulou
 竹片	11	zhupian
+竹田	0	zhutian
 竹田鄉	8	zhutianxiang
 竹竿	43	zhugan
 竹笠	5	zhuli
@@ -104191,6 +104370,7 @@
 綠壩	1	lvba
 綠寶石	1	lvbaoshi
 綠島	180	lvdao
+綠島鄉	0	lvdaoxiang
 綠巨人	6	lvjuren
 綠帶	14	lvdai
 綠帽	3	lvmao
@@ -104607,6 +104787,8 @@
 線蟲病	1	xianchongbing
 線裝	7	xianzhuang
 線裝書	1	xianzhuangshu
+線西	0	xianxi
+線西鄉	0	xianxixiang
 線路	123	xianlu
 線路圖	1	xianlutu
 線軸	3	xianzhou
@@ -106442,6 +106624,8 @@
 義犬	0	yiquan
 義理	25	yili
 義田	0	yitian
+義竹	0	yizhu
+義竹鄉	0	yizhuxiang
 義節	0	yijie
 義結金蘭	1	yijiejinlan
 義美	13	yimei
@@ -110853,6 +111037,8 @@
 臺北體院	0	taibeitiyuan
 臺南縣	0	tainanxian
 臺商	0	taishang
+臺東	0	taidong
+臺東市	0	taidongshi
 臺東縣	0	taidongxian
 臺灣	0	taiwan
 臺灣區	0	taiwanqu
@@ -110868,6 +111054,8 @@
 臺灣關係法	0	taiwanguanxifa
 臺灣電力公司	0	taiwandianligongsi
 臺灣高等法院	0	taiwangaodengfayuan
+臺西	0	taixi
+臺西鄉	0	taixixiang
 臺鐵	0	taitie
 臻	93	zhen
 臻於完善	0	zhenyuwanshan
@@ -112247,6 +112435,7 @@
 苒苒	0	ranran
 苓	197	ling
 苓耳	0	linger
+苓雅	0	lingya
 苓雅區	17	lingyaqu
 苔	65	tai
 苔原	0	taiyuan
@@ -112627,6 +112816,7 @@
 茂密	51	maomi
 茂年	0	maonian
 茂林	37	maolin
+茂林區	0	maolinqu
 茂盛	35	maosheng
 茂竹	0	maozhu
 范	404	fan
@@ -112643,6 +112833,7 @@
 茄芷袋	0	qiezhidai
 茄苳	68	qiedong
 茄萣	3	qie萣
+茄萣區	0	qie萣qu
 茅	189	mao
 茅利塔尼亞	0	maolitaniya
 茅台	2	maotai
@@ -113157,6 +113348,7 @@
 莒光日	6	juguangri
 莒光號	11	juguanghao
 莒光週	0	juguangzhou
+莒光鄉	0	juguangxiang
 莒城	0	jucheng
 莒拳	2	juquan
 莓	142	mei
@@ -113254,6 +113446,7 @@
 莽蒼	0	mangcang
 莽蕩	0	mangdang
 莿	8	ci
+莿桐	0	citong
 莿桐鄉	4	citongxiang
 菀	6	wan
 菁	297	jing
@@ -113602,6 +113795,8 @@
 萘	0	nai
 萘酚	0	naifen
 萛	1	jiu
+萜烯	0	tiexi
+萜類	0	tielei
 萣	3	
 萩	2	qiu
 萫	0	xiang
@@ -113615,6 +113810,7 @@
 萬世	8	wanshi
 萬世師表	0	wanshishibiao
 萬丹	6	wandan
+萬丹鄉	0	wandanxiang
 萬事	51	wanshi
 萬事俱備	1	wanshijubei
 萬事如意	4	wanshiruyi
@@ -113697,6 +113893,8 @@
 萬有引力	6	wanyouyinli
 萬有引力定律	2	wanyouyinlidinglv
 萬桶	6	wantong
+萬榮	0	wanrong
+萬榮鄉	0	wanrongxiang
 萬步	5	wanbu
 萬歲	65	wansui
 萬死	3	wansi
@@ -113757,6 +113955,7 @@
 萬邦	7	wanbang
 萬部	3	wanbu
 萬里	164	wanli
+萬里區	0	wanliqu
 萬里晴空	3	wanliqingkong
 萬里無雲	10	wanliwuyun
 萬里鄉	2	wanlixiang
@@ -114059,6 +114258,7 @@
 董監	75	dongjian
 董監事	67	dongjianshi
 董監事會	7	dongjianshihui
+葤	0	zhou
 葥	0	qian
 葦	56	wei
 葧	0	bo
@@ -114649,6 +114849,7 @@
 蔯	0	chen
 蔰	0	hu
 蔱	0	sha
+蔴薏	0	mayi
 蔻	17	kou
 蔻丹	0	koudan
 蔽	218	bi
@@ -115295,6 +115496,7 @@
 蘆洲鄉	3	luzhouxiang
 蘆溝橋	21	lugouqiao
 蘆竹	20	luzhu
+蘆竹區	0	luzhuqu
 蘆竹鄉	5	luzhuxiang
 蘆笙	5	lusheng
 蘆笛	3	ludi
@@ -115432,6 +115634,7 @@
 蘭室	14	lanshi
 蘭嶼	191	lanyu
 蘭嶼角鴞	6	lanyujiaoxiao
+蘭嶼鄉	0	lanyuxiang
 蘭州	42	lanzhou
 蘭州市	1	lanzhoushi
 蘭斯	1	lansi
@@ -118428,6 +118631,8 @@
 西寧南路	4	xiningnanlu
 西寧市	0	xiningshi
 西屋科學獎	0	xiwukexuejiang
+西屯	0	xitun
+西屯區	0	xitunqu
 西山	21	xishan
 西岸	70	xian
 西島	1	xidao
@@ -118515,6 +118720,8 @@
 西海	31	xihai
 西海岸	19	xihaian
 西涼	7	xiliang
+西港	0	xigang
+西港區	0	xigangqu
 西湖	59	xihu
 西湖國中	0	xihuguozhong
 西湖國小	2	xihuguoxiao
@@ -119184,6 +119391,7 @@
 觀賞魚	2	guanshangyu
 觀霧	15	guanwu
 觀音	135	guanyin
+觀音區	0	guanyinqu
 觀音大士	0	guanyindashi
 觀音山	24	guanyinshan
 觀音柳	0	guanyinliu
@@ -123231,6 +123439,7 @@
 貢品	3	gongpin
 貢奉	0	gongfeng
 貢寮	45	gongliao
+貢寮區	0	gongliaoqu
 貢寮溪	1	gongliaoxi
 貢寮鄉	13	gongliaoxiang
 貢獻	736	gongxian
@@ -125533,6 +125742,7 @@
 路祭	6	luji
 路程	94	lucheng
 路竹	19	luzhu
+路竹區	0	luzhuqu
 路竹鄉	5	luzhuxiang
 路經	16	lujing
 路線	576	luxian
@@ -126187,6 +126397,7 @@
 車前燈	0	cheqiandeng
 車商	14	cheshang
 車城	7	checheng
+車城鄉	0	chechengxiang
 車墊	0	chedian
 車外	10	chewai
 車夫	15	chefu
@@ -130213,6 +130424,7 @@
 達	10408	da
 達人	43	daren
 達人女中	0	darennvzhong
+達仁	0	daren
 達仁鄉	4	darenxiang
 達令	1	daling
 達到	1847	dadao
@@ -132537,6 +132749,7 @@
 里民	37	limin
 里民大會	10	limindahui
 里港	5	ligang
+里港鄉	0	ligangxiang
 里程	95	licheng
 里程碑	63	lichengbei
 里程表	1	lichengbiao
@@ -133009,6 +133222,8 @@
 金字塔形	2	jinzitaxing
 金字塔狀	1	jinzitazhuang
 金字招牌	10	jinzizhaopai
+金寧	0	jinning
+金寧鄉	0	jinningxiang
 金寶	30	jinbao
 金寶山	4	jinbaoshan
 金小蜂	0	jinxiaofeng
@@ -133041,8 +133256,11 @@
 金屬鍵	0	jinshujian
 金屬類	5	jinshulei
 金山	241	jinshan
+金山區	0	jinshanqu
 金山寺	1	jinshansi
 金山鄉	3	jinshanxiang
+金峰	0	jinfeng
+金峰鄉	0	jinfengxiang
 金崙溪	0	jinlunxi
 金州勇士	0	jinzhouyongshi
 金州勇士隊	0	jinzhouyongshidui
@@ -133081,9 +133299,12 @@
 金水	39	jinshui
 金沙	26	jinsha
 金沙江	1	jinshajiang
+金沙鎮	0	jinshazhen
 金波	3	jinbo
 金流	0	jinliu
+金湖	0	jinhu
 金湖盃	0	jinhubei
+金湖鎮	0	jinhuzhen
 金溥聰	9	jinpucong
 金澤	7	jinze
 金烏玉兔	0	jinwuyutu
@@ -136477,9 +136698,11 @@
 關子嶺	10	guanziling
 關山	56	guanshan
 關山萬里	0	guanshanwanli
+關山鎮	0	guanshanzhen
 關島	66	guandao
 關帝廟	5	guandimiao
 關廟	8	guanmiao
+關廟區	0	guanmiaoqu
 關心	2271	guanxin
 關愛	117	guanai
 關懷	668	guanhuai
@@ -136927,6 +137150,8 @@
 阿莎力	3	ashali
 阿華田	2	ahuatian
 阿蒙	0	ameng
+阿蓮	0	alian
+阿蓮區	0	alianqu
 阿薩姆	10	asamu
 阿裡	1	ali
 阿諛	10	ayu
@@ -138552,6 +138777,7 @@
 雙流	5	shuangliu
 雙溪	72	shuangxi
 雙溪公園	0	shuangxigongyuan
+雙溪區	0	shuangxiqu
 雙溪高中	3	shuangxigaozhong
 雙球菌	1	shuangqiujun
 雙生	15	shuangsheng
@@ -139833,6 +140059,7 @@
 霧台	16	wutai
 霧台村	1	wutaicun
 霧峰	49	wufeng
+霧峰區	0	wufengqu
 霧峰鄉	6	wufengxiang
 霧峰鄉代	1	wufengxiangdai
 霧氣	20	wuqi
@@ -139840,6 +140067,7 @@
 霧煞煞	6	wushasha
 霧社	27	wushe
 霧社茶	1	wushecha
+霧臺	0	wutai
 霧臺鄉	0	wutaixiang
 霧茫茫	4	wumangmang
 霧裡	17	wuli
@@ -141472,6 +141700,7 @@
 頭上	154	toushang
 頭上腳下	1	toushangjiaoxia
 頭份	29	toufen
+頭份市	0	toufenshi
 頭份鎮	6	toufenzhen
 頭像	14	touxiang
 頭兒	72	touer
@@ -141483,6 +141712,7 @@
 頭家	14	toujia
 頭寸	4	toucun
 頭尾	16	touwei
+頭屋	0	touwu
 頭屋鄉	7	touwuxiang
 頭巾	18	toujin
 頭彩	23	toucai
@@ -141742,6 +141972,7 @@
 類神經	4	leishenjing
 類神經網路	1	leishenjingwanglu
 類經	8	leijing
+類萜	0	leitie
 類風溼性	3	leifengshixing
 類風溼關節炎	1	leifengshiguanjieyan
 類風濕關節炎	1	leifengshiguanjieyan
@@ -143129,6 +143360,7 @@
 香奈兒	5	xiangnaier
 香客	34	xiangke
 香山	67	xiangshan
+香山區	0	xiangshanqu
 香山高中	0	xiangshangaozhong
 香川	2	xiangchuan
 香川縣	2	xiangchuanxian
@@ -144088,6 +144320,7 @@
 驛	32	yi
 驛丞	0	yicheng
 驛使	0	yishi
+驛傳	1	yichuan
 驛動	1	yidong
 驛吏	0	yili
 驛書	0	yishu
@@ -144585,6 +144818,7 @@
 高樓大廈	26	gaoloudasha
 高標	24	gaobiao
 高標準	16	gaobiaozhun
+高樹	0	gaoshu
 高樹鄉	6	gaoshuxiang
 高橋	23	gaoqiao
 高橋克典	1	gaoqiaokedian
@@ -145774,6 +146008,7 @@
 鳥店	3	niaodian
 鳥會	35	niaohui
 鳥松	34	niaosong
+鳥松區	0	niaosongqu
 鳥松村	0	niaosongcun
 鳥松樹	2	niaosongshu
 鳥松鄉	6	niaosongxiang
@@ -145859,6 +146094,8 @@
 鳳山縣舊城	1	fengshanxianjiucheng
 鳳山西站	1	fengshanxizhan
 鳳新高中	0	fengxingaozhong
+鳳林	0	fenglin
+鳳林鎮	0	fenglinzhen
 鳳梨	52	fengli
 鳳梨汁	1	fenglizhi
 鳳梨蝦球	1	fenglixiaqiu
@@ -146178,6 +146415,7 @@
 鶯	256	ying
 鶯啼燕語	1	yingtiyanyu
 鶯歌	72	yingge
+鶯歌區	0	yinggequ
 鶯歌國中	1	yinggeguozhong
 鶯歌鎮	11	yinggezhen
 鶯燕	2	yingyan
@@ -146398,6 +146636,7 @@
 鹽土	0	yantu
 鹽城	1	yancheng
 鹽埔	2	yanpu
+鹽埔鄉	0	yanpuxiang
 鹽埕	41	yancheng
 鹽埕區	13	yanchengqu
 鹽埕商圈	1	yanchengshangquan
@@ -146421,6 +146660,7 @@
 鹽業	9	yanye
 鹽民	0	yanmin
 鹽水	69	yanshui
+鹽水區	0	yanshuiqu
 鹽水溪	7	yanshuixi
 鹽水蜂炮	9	yanshuifengpao
 鹽水袋	2	yanshuidai
@@ -146529,6 +146769,8 @@
 麝香鹿	0	shexianglu
 麟	320	lin
 麟兒	13	liner
+麟洛	0	linluo
+麟洛鄉	0	linluoxiang
 麟經	0	linjing
 麟角	8	linjiao
 麠	0	jing
@@ -146552,6 +146794,7 @@
 麥哲倫星雲	1	maizhelunxingyun
 麥哲倫號	5	maizhelunhao
 麥子	20	maizi
+麥寮	0	mailiao
 麥寮鄉	2	mailiaoxiang
 麥寮高中	5	mailiaogaozhong
 麥收	29	maishou
@@ -146689,8 +146932,10 @@
 麻繩	6	masheng
 麻胡	0	mahu
 麻臉	0	malian
+麻芛	0	mawei
 麻花	8	mahua
 麻花捲	3	mahuajuan
+麻薏	0	mayi
 麻薩諸塞	2	masazhusai
 麻薩諸塞州	2	masazhusaizhou
 麻藥	9	mayao
@@ -146698,6 +146943,7 @@
 麻衣	5	mayi
 麻袋	5	madai
 麻豆	44	madou
+麻豆區	0	madouqu
 麻豆文旦	2	madouwendan
 麻豆鎮	8	madouzhen
 麻辣	41	mala
@@ -147803,7 +148049,9 @@
 齾	0	ya
 龍	3313	long
 龍井	19	longjing
+龍井區	0	longjingqu
 龍井茶	4	longjingcha
+龍井鄉	0	longjingxiang
 龍元路	1	longyuanlu
 龍兄	2	longxiong
 龍兄虎弟	2	longxionghudi
@@ -147826,6 +148074,7 @@
 龍岡	1	longgang
 龍岩	1	longyan
 龍崎	6	longqi
+龍崎區	0	longqiqu
 龍崎鄉	5	longqixiang
 龍崗社區	1	longgangshequ
 龍巖	2	longyan
@@ -147846,6 +148095,7 @@
 龍涎	0	longxian
 龍涎香	0	longxianxiang
 龍潭	68	longtan
+龍潭區	0	longtanqu
 龍潭虎穴	2	longtanhuxue
 龍潭農工	0	longtannonggong
 龍潭鄉	12	longtanxiang
@@ -147937,6 +148187,7 @@
 龜兔賽跑	2	guitusaipao
 龜卜	0	guibu
 龜山	73	guishan
+龜山區	0	guishanqu
 龜山國小	2	guishanguoxiao
 龜山島	23	guishandao
 龜山鄉	12	guishanxiang
