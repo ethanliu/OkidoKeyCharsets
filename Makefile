@@ -35,3 +35,8 @@ lexicon:
 dist:
 	@make -f Makefile.dist.mk build
 	@make -f Makefile.dev.mk sync
+
+dev:
+	@make -f Makefile.table.mk json
+	@make -f Makefile.lexicon.mk json
+	@make -f Makefile.dev.mk sync

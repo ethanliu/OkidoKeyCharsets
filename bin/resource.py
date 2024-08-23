@@ -239,6 +239,7 @@ def createLexicon(outputPath):
 
         reader = open(f"{srcPath}/{filename}.txt", 'r')
         template = reader.read()
+        template = template.strip()
         reader.close()
 
         tmp = template.split("\n")
