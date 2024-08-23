@@ -251,11 +251,12 @@ def createLexicon(outputPath):
         # cursor.execute("SELECT `phrase`, `pinyin` FROM `lexicon`, `pinyin` WHERE `lexicon`.`pinyin_id` = `pinyin`.`rowid` ORDER BY RANDOM() LIMIT 10")
         cursor.execute("SELECT `phrase`, `pinyin` FROM `lexicon` WHERE 1 ORDER BY RANDOM() LIMIT 10")
         result = cursor.fetchall()
-        template += "\n\n#### 詞庫範例\n\n"
+        template += "\n\n#### 詞庫範例\n\n```\n"
         for item in result:
             phrase = item[0] or ''
             pinyin = item[1] or ''
             template += f"{phrase}\t{pinyin}\n"
+        template += "```\n\n"
 
         db.close()
 

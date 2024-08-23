@@ -11,15 +11,20 @@ import argparse
 import sys, os
 import csv
 import re
-# import codecs
-import pinyin as tp
 from tqdm import tqdm
-from lib.util import chunks
+from lib.util import chunks, list_flatten, list_unique
+from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
+# import codecs
+# import pinyin as tp
+from pypinyin import lazy_pinyin, Style
+
+kZhuyinPronouncePattern = r"[（\(][變|一|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
+kSpacePattern = r"[\u3000|\s|，|；]+"
 
 def parse2(inputPath, outputPath):
     filename = os.path.basename(inputPath)
     # [A-Z][a-z][0-9] etc?
-    pattern = f"[，。「」“”『』）【】\"\',.]+"
+    # pattern = f"[，。「」“”『』）【】\"\',.]+"
     skipHeader = True
     contents = ""
 
@@ -35,13 +40,28 @@ def parse2(inputPath, outputPath):
                     continue
 
                 phrase = row[0].strip()
-
                 if len(phrase) < 2 or ".gif" in phrase or ".png" in phrase or phrase.startswith("_x"):
                     continue
 
-                _phrase = re.sub(pattern, "", phrase)
-                pinyin = tp.get(_phrase, format = "strip", delimiter = "")
-                contents += f"{phrase}\t0\t{pinyin}\n"
+                # _phrase = re.sub(pattern, "", phrase)
+                # pinyin = tp.get(_phrase, format = "strip", delimiter = "")
+
+                shortcuts = []
+                try:
+                    shortcuts = re.split(kZhuyinPronouncePattern, bpmf_remove_tones(row[1]))
+                    shortcuts = [re.split(kSpacePattern, item.strip()) for item in shortcuts]
+                    shortcuts = list_unique([bpmf_to_pinyin(item) for item in shortcuts])
+                except IndexError:
+                    shortcuts = []
+
+                if not shortcuts:
+                    shortcuts.append("".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL))))
+
+                for shortcut in shortcuts:
+                    contents += f"{phrase}\t0\t{shortcut}\n"
+
+                # print(contents)
+                # sys.exit(0)
 
     with open(outputPath, 'w') as fp:
         fp.write(contents)

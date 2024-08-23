@@ -90,7 +90,7 @@ moe-revised:
 	@echo "revised: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-revised.csv.txt
 	@in2csv rawdata/moe/src/dict_revised_${version}.xlsx > rawdata/moe/tmp1.csv
-	@csvcut -c 字詞名 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
+	@csvcut -c 字詞名,注音一式 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
 	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-revised.csv
 	@-rm rawdata/moe/tmp1.csv
 	@-rm rawdata/moe/tmp2.csv
@@ -104,7 +104,7 @@ moe-idioms:
 	@echo "idioms: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-idioms.csv.txt
 	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/tmp1.csv
-	@csvcut -c 成語 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
+	@csvcut -c 成語,注音 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
 	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-idioms.csv
 	@-rm rawdata/moe/tmp1.csv
 	@-rm rawdata/moe/tmp2.csv
@@ -126,7 +126,8 @@ moe-concised-csv:
 	@echo "concised: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-concised.csv.txt
 	@cp rawdata/moe/src/dict_concised_${version}.csv rawdata/moe/tmp1.csv
-	@csvcut --no-header-row --skip-lines 6 --columns a rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
+# @csvcut --no-header-row --skip-lines 6 --columns a rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
+	@csvcut -c 字詞名,注音一式 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
 	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-concised.csv
 	@-rm rawdata/moe/tmp1.csv
 	@-rm rawdata/moe/tmp2.csv
