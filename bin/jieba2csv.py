@@ -11,8 +11,10 @@ import sys, os
 import csv
 # import sqlite3
 # import multiprocessing
-import pinyin as tp
 from tqdm import tqdm
+# import pinyin as tp
+from pypinyin import lazy_pinyin, Style
+from bin.lib.util import list_flatten
 
 uu = importlib.import_module("lib.util")
 
@@ -44,7 +46,8 @@ def parse(inputPath, outputPath):
                 pinyin = ''
 
                 # pinyin = translate(phrase)
-                pinyin = tp.get(phrase, format = "strip", delimiter = "")
+                # pinyin = tp.get(phrase, format = "strip", delimiter = "")
+                pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
 
                 if pinyin == phrase or pinyin == '':
                     continue

@@ -200,3 +200,10 @@ def vprint(message: str, verbose = True):
     if not verbose:
         return
     print(message)
+
+
+def list_flatten(xss):
+    return [x for xs in xss for x in xs]
+
+def list_unique(rows):
+    return list(dict.fromkeys(filter(None, rows)))
