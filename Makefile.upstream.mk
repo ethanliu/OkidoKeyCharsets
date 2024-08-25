@@ -20,7 +20,7 @@ update: pull patch
 	@cp rawdata/cin-tables/g6code.cin ${TABLE_DIR}/stroke-g6code.cin
 	@echo "fin."
 
-pull:
+pull: moe-pull
 	@echo "Upstream pulling..."
 	@for path in array10 array30 ghcm jieba rime-cantonese McBopomofo cin-tables; do \
 		echo "🤝 $${path}"; \
@@ -84,53 +84,57 @@ jyutping:
 	@echo "Patching jyutping phrase..."
 	@bin/jyutping-rime.py -i rawdata/rime-cantonese/jyut6ping3.words.dict.yaml -o ${LEXICON_DIR}/jyutping.csv -t phrase
 
+moe-pull:
+	@echo "🤝 MoE resources"
+	@bin/moe_spider.py
+
 moe-revised:
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_revised_*.xlsx)))
+	@$(eval version = $(notdir $(wildcard rawdata/moe/dict_revised_*.xlsx)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)\.xlsx/\1/' ))
 	@echo "revised: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-revised.csv.txt
-	@in2csv rawdata/moe/src/dict_revised_${version}.xlsx > rawdata/moe/tmp1.csv
-	@csvcut -c 字詞名,注音一式 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
-	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-revised.csv
-	@-rm rawdata/moe/tmp1.csv
-	@-rm rawdata/moe/tmp2.csv
+	@in2csv rawdata/moe/dict_revised_${version}.xlsx > tmp/tmp1.csv
+	@csvcut -c 字詞名,注音一式 tmp/tmp1.csv > tmp/tmp2.csv
+	@bin/moe2csv.py -i tmp/tmp2.csv -o ${LEXICON_DIR}/moe-revised.csv
+	@-rm tmp/tmp1.csv
+	@-rm tmp/tmp2.csv
 
-# original dict_idioms_2020_20230629.xls cam with incomplete fomular binding to foreign file
+# original dict_idioms_2020_20230629.xls came with incomplete fomular binding to foreign file
 # must manually save as another copy to fix above question before using csvkit
 
 moe-idioms:
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_idioms_*.xls)))
+	@$(eval version = $(notdir $(wildcard rawdata/moe/dict_idioms_*.xls)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xls/\1/' ))
 	@echo "idioms: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-idioms.csv.txt
-	@in2csv rawdata/moe/src/dict_idioms_${version}.xls > rawdata/moe/tmp1.csv
-	@csvcut -c 成語,注音 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
-	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-idioms.csv
-	@-rm rawdata/moe/tmp1.csv
-	@-rm rawdata/moe/tmp2.csv
+	@in2csv rawdata/moe/dict_idioms_${version}.xls > tmp/tmp1.csv
+	@csvcut -c 成語,注音 tmp/tmp1.csv > tmp/tmp2.csv
+	@bin/moe2csv.py -i tmp/tmp2.csv -o ${LEXICON_DIR}/moe-idioms.csv
+	@-rm tmp/tmp1.csv
+	@-rm tmp/tmp2.csv
 
 moe-concised-xls:
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_concised_*.xlsx)))
+	@$(eval version = $(notdir $(wildcard rawdata/moe/dict_concised_*.xlsx)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_concised_\(.*\)\.xlsx/\1/' ))
 	@echo "concised: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-concised.csv.txt
-	@in2csv rawdata/moe/src/dict_concised_${version}.xlsx > rawdata/moe/tmp1.csv
-	@csvcut -c 字詞名 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
-	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-concised.csv
-	@-rm rawdata/moe/tmp1.csv
-	@-rm rawdata/moe/tmp2.csv
+	@in2csv rawdata/moe/dict_concised_${version}.xlsx > tmp/tmp1.csv
+	@csvcut -c 字詞名,注音一式 tmp/tmp1.csv > tmp/tmp2.csv
+	@bin/moe2csv.py -i tmp/tmp2.csv -o ${LEXICON_DIR}/moe-concised.csv
+	@-rm tmp/tmp1.csv
+	@-rm tmp/tmp2.csv
 
 moe-concised-csv:
-	@$(eval version = $(notdir $(wildcard rawdata/moe/src/dict_concised_*.csv)))
+	@$(eval version = $(notdir $(wildcard rawdata/moe/dict_concised_*.csv)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_concised_\(.*\)\.csv/\1/' ))
 	@echo "concised: ${version}"
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' ${LEXICON_DIR}/moe-concised.csv.txt
-	@cp rawdata/moe/src/dict_concised_${version}.csv rawdata/moe/tmp1.csv
-# @csvcut --no-header-row --skip-lines 6 --columns a rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
-	@csvcut -c 字詞名,注音一式 rawdata/moe/tmp1.csv > rawdata/moe/tmp2.csv
-	@bin/moe2csv.py -i rawdata/moe/tmp2.csv -o ${LEXICON_DIR}/moe-concised.csv
-	@-rm rawdata/moe/tmp1.csv
-	@-rm rawdata/moe/tmp2.csv
+	@cp rawdata/moe/dict_concised_${version}.csv tmp/tmp1.csv
+# @csvcut --no-header-row --skip-lines 6 --columns a tmp/tmp1.csv > tmp/tmp2.csv
+	@csvcut -c 字詞名,注音一式 tmp/tmp1.csv > tmp/tmp2.csv
+	@bin/moe2csv.py -i tmp/tmp2.csv -o ${LEXICON_DIR}/moe-concised.csv
+	@-rm tmp/tmp1.csv
+	@-rm tmp/tmp2.csv
 
 mcbpmf:
 	@bin/mcbpmf2csv.py -i rawdata/McBopomofo/Source/Data/phrase.occ -o ${LEXICON_DIR}/mcbopomofo.csv
