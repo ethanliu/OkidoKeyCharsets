@@ -123,13 +123,13 @@ def trim(str, needle = None, space = False):
         _str = re.sub(pattern2, "\\1 \\2", _str, 0,re.MULTILINE | re.IGNORECASE | re.UNICODE)
     return _str.strip()
 
-def stripAccents(str):
+def strip_accents(str):
     return ''.join(c for c in unicodedata.normalize('NFD', str) if unicodedata.category(c) != 'Mn')
 
 def dir(path):
     return os.path.dirname(os.path.realpath(path))
 
-def totalLines(path):
+def total_lines(path):
     total = 0
     with open(path, 'r') as fp:
         total = len(fp.readlines())
@@ -160,14 +160,14 @@ def dict_factory(cursor, row):
         d[col[0]] = row[idx]
     return d
 
-def getAll(cursor, query, args = None):
+def db_get_all(cursor, query, args = None):
     if args == None:
         res = cursor.execute(query)
     else:
         res = cursor.execute(query, args)
     return res.fetchall()
 
-def getOne(cursor, query, args = None):
+def db_get_one(cursor, query, args = None):
     if args == None:
         cursor.execute(query)
     else:

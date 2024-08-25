@@ -6,37 +6,38 @@
 # convert McBopomofo BPMFMappings.txt to csv
 
 import argparse
-import importlib
+# import importlib
 import sys, os
 import csv
 # import sqlite3
 # import multiprocessing
 import pinyin as tp
 from tqdm import tqdm
+from lib.util import trim, chunks
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
-# _dir_ = uu.dir(__file__)
+# _dir_ = dir(__file__)
 # workers = 2 * multiprocessing.cpu_count()
 # print(f"num of workers: \(workers)")
 
-def parse(inputPath, outputPath):
-    filename = os.path.basename(inputPath)
+def parse(input_path, output_path):
+    filename = os.path.basename(input_path)
     contents = ""
     delimiter = " "
-    # _dir_ = uu.dir(__file__)
+    # _dir_ = dir(__file__)
     # pool = multiprocessing.Pool(workers)
-    with open(inputPath) as fp:
-        firstLine = fp.readline()
+    with open(input_path) as fp:
+        first_line = fp.readline()
         fp.seek(0)
 
-        if "\t" in firstLine:
+        if "\t" in first_line:
             delimiter = "\t"
 
         reader = csv.reader(fp, delimiter = delimiter)
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
-                phrase = uu.trim(row[0] or '')
+                phrase = trim(row[0] or '')
                 if not phrase:
                     continue
 
@@ -49,16 +50,16 @@ def parse(inputPath, outputPath):
 
                 contents += f"{phrase}\t{weight}\t{pinyin}\n"
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description='McBopomofo tookit')
-    argParser.add_argument('-i', '--input', help='Original csv file path')
-    argParser.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
+    arg_reader = argparse.ArgumentParser(description='McBopomofo tookit')
+    arg_reader.add_argument('-i', '--input', help='Original csv file path')
+    arg_reader.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
     if not os.path.exists(args.input):

@@ -7,9 +7,9 @@
 
 import re
 
-kZhuyinTones = r"[ˇˊˋ˙]+"
+_BPMF_TONES = r"[ˇˊˋ˙]+"
 
-kZhuyinTable = {
+_BPMF_TABLE = {
     "ㄅ": "b", "ㄅㄚ": "ba", "ㄅㄛ": "bo", "ㄅㄞ": "bai", "ㄅㄟ": "bei", "ㄅㄠ": "bao", "ㄅㄢ": "ban", "ㄅㄣ": "ben", "ㄅㄤ": "bang", "ㄅㄥ": "beng", "ㄅㄧ": "bi", "ㄅㄧㄝ": "bie", "ㄅㄧㄠ": "biao", "ㄅㄧㄢ": "bian", "ㄅㄧㄣ": "bin", "ㄅㄧㄥ": "bing", "ㄅㄨ": "bu",
     "ㄆ": "p", "ㄆㄚ": "pa", "ㄆㄛ": "po", "ㄆㄞ": "pai", "ㄆㄟ": "pei", "ㄆㄠ": "pao", "ㄆㄡ": "pou", "ㄆㄢ": "pan", "ㄆㄣ": "pen", "ㄆㄤ": "pang", "ㄆㄥ": "peng", "ㄆㄧ": "pi", "ㄆㄧㄝ": "pie", "ㄆㄧㄠ": "piao", "ㄆㄧㄢ": "pian", "ㄆㄧㄣ": "pin", "ㄆㄧㄥ": "ping", "ㄆㄨ": "pu",
     "ㄇ": "m", "ㄇㄚ": "ma", "ㄇㄛ": "mo", "ㄇㄜ": "me", "ㄇㄞ": "mai", "ㄇㄟ": "mei", "ㄇㄠ": "mao", "ㄇㄡ": "mou", "ㄇㄢ": "man", "ㄇㄣ": "men", "ㄇㄤ": "mang", "ㄇㄥ": "meng", "ㄇㄧ": "mi", "ㄇㄧㄝ": "mie", "ㄇㄧㄠ": "miao", "ㄇㄧㄡ": "miu", "ㄇㄧㄢ": "mian", "ㄇㄧㄣ": "min", "ㄇㄧㄥ": "ming", "ㄇㄨ": "mu",
@@ -55,7 +55,7 @@ kZhuyinTable = {
 # since in bpmf, tones only appear in the first or the last position
 # repace with " " si much safe then ""
 def bpmf_remove_tones(bpmf, replacement = " "):
-    return re.sub(kZhuyinTones, replacement, bpmf)
+    return re.sub(_BPMF_TONES, replacement, bpmf)
 
 def bpmf_fix_er(text):
     result = []
@@ -71,7 +71,7 @@ def bpmf_to_pinyin(bpmf = []):
         cc = cc.strip()
         if not cc:
             continue
-        pp = kZhuyinTable.get(cc)
+        pp = _BPMF_TABLE.get(cc)
         if pp:
             result.append(pp)
         else:

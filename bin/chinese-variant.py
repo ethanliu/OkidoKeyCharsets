@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 # uu = importlib.import_module("lib.util")
 
-def performImport(cursor, inputPath):
+def perform_import(cursor, inputPath):
     filename = os.path.basename(inputPath)
     csvfile = open(inputPath, 'r')
     reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
@@ -54,7 +54,7 @@ def performImport(cursor, inputPath):
 
 def tongwen2db(cursor, inputPath):
     categories = ["s2t", "t2s"]
-    tableNames = {"s2t": "char_hans", "t2s": "char_hant"}
+    table_names = {"s2t": "char_hans", "t2s": "char_hant"}
 
     cursor.execute("BEGIN TRANSACTION")
 
@@ -64,7 +64,7 @@ def tongwen2db(cursor, inputPath):
         data = json.load(file)
         file.close()
 
-        tableName = tableNames[category]
+        tableName = table_names[category]
         query = f"INSERT INTO `{tableName}` VALUES (:k, :v)"
         for k, v in tqdm(data.items(), unit = 'MB', unit_scale = True, ascii = True, desc = f"Import {category}"):
         # for k, v in data.items():

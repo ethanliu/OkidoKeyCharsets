@@ -6,21 +6,21 @@
 # OkidoKey/Frankie resources generator
 
 import argparse
-import importlib
+# import importlib
 import sys, os, glob
 import re
 # import shutil
 import sqlite3, json
 # from tqdm import tqdm
 from datetime import datetime
-from lib.cintable import CinTable, Block
-from lib.util import trim
+from lib.cintable import CinTable
+from lib.util import trim, dir, trim, color
 
-uu = importlib.import_module("lib.util")
-cwd = uu.dir(__file__ + "/../")
+# uu = importlib.import_module("lib.util")
+cwd = dir(__file__ + "/../")
 repos = ["github", "gitee"]
 
-# distPath = uu.dir(__file__ + "/../../") + "/repo-dist"
+# distPath = dir(__file__ + "/../../") + "/repo-dist"
 # distPath = f"{cwd}/dist"
 
 # repos = {
@@ -40,20 +40,20 @@ repos = ["github", "gitee"]
 #         os.remove(file)
 
 #     shutil.copy(src, dst)
-#     uu.call([f"{cwd}/bin/LoveMachine -s --{size} {dst}"])
+#     call([f"{cwd}/bin/LoveMachine -s --{size} {dst}"])
 #     os.remove(dst)
 
-def createJsonFile(path, content):
-    print(uu.color(f"{os.path.basename(path)} created.", fg = 'cyan'))
+def create_json_file(path, content):
+    print(color(f"{os.path.basename(path)} created.", fg = 'cyan'))
     with open(path, 'w') as f:
         f.write(json.dumps(content, ensure_ascii = False, indent = 4, sort_keys = True))
         f.close()
     # shutil.copy(path, f"{repos['gitee']}/")
     # shutil.copy(path, f"{repos['github']}/")
 
-def createKeyboard(outputPath):
+def create_keyboard(output_path):
     # outputPath = f"{cwd}/KeyboardLayouts.json"
-    charsetPath = f"{cwd}/charset"
+    charset_path = f"{cwd}/charset"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -66,7 +66,7 @@ def createKeyboard(outputPath):
         "easy": "cangjie",
     }
 
-    for path in sorted(glob.glob(f"{charsetPath}/*.charset.json")):
+    for path in sorted(glob.glob(f"{charset_path}/*.charset.json")):
         file = open(path, 'r')
         data = json.load(file)
         file.close()
@@ -106,7 +106,7 @@ def createKeyboard(outputPath):
             if 'flicks' in item:
                 jsondata['charsets'][name]['flicks'] = item['flicks']
 
-    createJsonFile(outputPath, jsondata)
+    create_json_file(output_path, jsondata)
 
 # TODO: patching additional description directly
 # def patchTableHeaders():
@@ -147,10 +147,10 @@ def createKeyboard(outputPath):
 #         print(index)
 
 
-def createTable(outputPath):
+def create_table(outputPath):
     target = "table"
-    srcPath = f"{cwd}/{target}"
-    dbPath = f"{cwd}/dist/queue/{target}"
+    src_path = f"{cwd}/{target}"
+    db_path = f"{cwd}/dist/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -159,14 +159,14 @@ def createTable(outputPath):
     }
 
     # for path in tqdm(sorted(glob.glob(f"{charsetPath}/*.charset.json")), unit = 'MB', unit_scale = True, ascii = True, desc = ""):
-    for path in sorted(glob.glob(f"{dbPath}/*.cin.db")):
+    for path in sorted(glob.glob(f"{db_path}/*.cin.db")):
         dbFilename = os.path.basename(path)
         filename = dbFilename.replace('.db', '')
 
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
 
-        cin = CinTable(f"{srcPath}/{filename}", [])
+        cin = CinTable(f"{src_path}/{filename}", [])
         content = {
             'ename': cin.meta.get('ename') or '',
             'cname': cin.meta.get('cname') or '',
@@ -178,16 +178,16 @@ def createTable(outputPath):
         }
 
         category = "misc"
-        categoryTestString = f"{content['ename']} {content['cname']} {content['name']} {dbFilename}"
-        if re.search("(array|行列)", categoryTestString, re.IGNORECASE):
+        category_test_string = f"{content['ename']} {content['cname']} {content['name']} {dbFilename}"
+        if re.search("(array|行列)", category_test_string, re.IGNORECASE):
             category = "array"
-        elif re.search("(bpmf|注音)", categoryTestString, re.IGNORECASE):
+        elif re.search("(bpmf|注音)", category_test_string, re.IGNORECASE):
             category = "zhuyin"
-        elif re.search("(cj|simplex|cangjie|快倉|亂倉|倉頡|簡易|輕鬆)", categoryTestString, re.IGNORECASE):
+        elif re.search("(cj|simplex|cangjie|快倉|亂倉|倉頡|簡易|輕鬆)", category_test_string, re.IGNORECASE):
             category = "cangjie"
-        elif re.search("(dayi|大易)", categoryTestString, re.IGNORECASE):
+        elif re.search("(dayi|大易)", category_test_string, re.IGNORECASE):
             category = "dayi"
-        elif re.search("(pin|拼)", categoryTestString, re.IGNORECASE):
+        elif re.search("(pin|拼)", category_test_string, re.IGNORECASE):
             category = "pinying"
 
         content['category'] = category
@@ -196,7 +196,7 @@ def createTable(outputPath):
         headerpath = f"rawdata/misc/{filename}"
         if os.path.exists(headerpath):
             with open(headerpath, "r") as fp:
-                additional = uu.trim(fp.read())
+                additional = trim(fp.read())
                 content['license'] = f"{content['license']}\n\n{additional}"
 
         # print(content)
@@ -212,12 +212,12 @@ def createTable(outputPath):
             if not repo in jsondata['splits'][dbFilename]:
                 jsondata['splits'][dbFilename][repo] = len(list)
 
-    createJsonFile(outputPath, jsondata)
+    create_json_file(outputPath, jsondata)
 
-def createLexicon(outputPath):
+def create_lexicon(outputPath):
     target = "lexicon"
-    srcPath = f"{cwd}/{target}"
-    dbPath = f"{cwd}/dist/queue/{target}"
+    src_path = f"{cwd}/{target}"
+    db_path = f"{cwd}/dist/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -225,19 +225,19 @@ def createLexicon(outputPath):
         'splits': {},
     }
 
-    for path in sorted(glob.glob(f"{dbPath}/*.csv.db")):
-        dbFilename = os.path.basename(path)
-        filename = dbFilename.replace('.db', '')
-        txtPath = f"{srcPath}/{filename}.txt"
+    for path in sorted(glob.glob(f"{db_path}/*.csv.db")):
+        db_filename = os.path.basename(path)
+        filename = db_filename.replace('.db', '')
+        txt_path = f"{src_path}/{filename}.txt"
 
-        if not os.path.exists(txtPath):
+        if not os.path.exists(txt_path):
             print("File not found: {txtPath}")
             continue
 
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['gitee']}/{target}/{dbFilename}", 1024)
 
-        reader = open(f"{srcPath}/{filename}.txt", 'r')
+        reader = open(f"{src_path}/{filename}.txt", 'r')
         template = reader.read()
         template = template.strip()
         reader.close()
@@ -264,38 +264,38 @@ def createLexicon(outputPath):
         # print(template)
         jsondata['resources'].append({
             'name': name,
-            'path': f"{target}/{dbFilename}",
+            'path': f"{target}/{db_filename}",
             'description': template,
         })
 
         # splits counter
-        if not dbFilename in jsondata['splits']:
-            jsondata['splits'][dbFilename] = {}
+        if not db_filename in jsondata['splits']:
+            jsondata['splits'][db_filename] = {}
 
         for repo in repos:
-            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{dbFilename}*")
+            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{db_filename}*")
             # print(f"{filename}: {len(list)}")
-            if not repo in jsondata['splits'][dbFilename]:
-                jsondata['splits'][dbFilename][repo] = len(list)
+            if not repo in jsondata['splits'][db_filename]:
+                jsondata['splits'][db_filename][repo] = len(list)
 
-    createJsonFile(outputPath, jsondata)
+    create_json_file(outputPath, jsondata)
 
 def main():
-    argParser = argparse.ArgumentParser(description='Resource files generator')
-    argParser.add_argument('-c', '--category', required = True, choices=['keyboard', 'lexicon', 'table'], help='Resource category')
-    argParser.add_argument('-o', '--output', type = str, required = True, help='Output file path')
+    arg_reader = argparse.ArgumentParser(description='Resource files generator')
+    arg_reader.add_argument('-c', '--category', required = True, choices=['keyboard', 'lexicon', 'table'], help='Resource category')
+    arg_reader.add_argument('-o', '--output', type = str, required = True, help='Output file path')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
     match args.category:
         case 'keyboard':
-            createKeyboard(args.output)
+            create_keyboard(args.output)
         case 'table':
             # patchTableHeaders()
-            createTable(args.output)
+            create_table(args.output)
         case 'lexicon':
-            createLexicon(args.output)
+            create_lexicon(args.output)
 
     sys.exit(0)
 

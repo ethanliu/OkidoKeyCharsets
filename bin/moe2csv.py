@@ -18,17 +18,17 @@ from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
 # import pinyin as tp
 from pypinyin import lazy_pinyin, Style
 
-kZhuyinPronouncePattern = r"[（\(][變|一|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
-kSpacePattern = r"[\u3000|\s|，|；]+"
+_ZHUYIN_PRONOUNCE_PATTERN = r"[（\(][變|一|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
+_SPACE_PATTERN = r"[\u3000|\s|，|；]+"
 
-def parse2(inputPath, outputPath):
-    filename = os.path.basename(inputPath)
+def parse2(input_path, output_path):
+    filename = os.path.basename(input_path)
     # [A-Z][a-z][0-9] etc?
     # pattern = f"[，。「」“”『』）【】\"\',.]+"
     skipHeader = True
     contents = ""
 
-    with open(inputPath) as fp:
+    with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = ',')
         for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
@@ -48,8 +48,8 @@ def parse2(inputPath, outputPath):
 
                 shortcuts = []
                 try:
-                    shortcuts = re.split(kZhuyinPronouncePattern, bpmf_remove_tones(row[1]))
-                    shortcuts = [re.split(kSpacePattern, item.strip()) for item in shortcuts]
+                    shortcuts = re.split(_ZHUYIN_PRONOUNCE_PATTERN, bpmf_remove_tones(row[1]))
+                    shortcuts = [re.split(_SPACE_PATTERN, item.strip()) for item in shortcuts]
                     shortcuts = list_unique([bpmf_to_pinyin(item) for item in shortcuts])
                 except IndexError:
                     shortcuts = []
@@ -63,18 +63,23 @@ def parse2(inputPath, outputPath):
                 # print(contents)
                 # sys.exit(0)
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the original excel/csv format')
+    arg_reader = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the original excel/csv format')
     # argParser.add_argument('-c', '--category', choices=['concised', 'idoms', 'revised'], help='Lexicon category')
-    argParser.add_argument('-i', '--input', help='Original csv file path')
-    argParser.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
+    # argParser.add_argument('-d', '--download', action='store_true', help='download...')
+    arg_reader.add_argument('-i', '--input', help='Original csv file path')
+    arg_reader.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
+
+    # if args.download:
+    #     download()
+    #     sys.exit("download fin.")
 
     if not os.path.exists(args.input):
         sys.exit(f"File not found: {args.input}")
