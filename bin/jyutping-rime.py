@@ -6,24 +6,25 @@
 # convert McBopomofo BPMFMappings.txt to csv
 
 import argparse
-import importlib
+# import importlib
 import sys, os
 import csv
 import re
 # import sqlite3
 # import pinyin as tp
 from tqdm import tqdm
+from lib.util import trim, chunks
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
-def phrase2csv(inputPath, outputPath):
-    filename = os.path.basename(inputPath)
+def phrase2csv(input_path, output_path):
+    filename = os.path.basename(input_path)
     contents = ""
     began = False
 
-    with open(inputPath) as fp:
+    with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
@@ -35,10 +36,10 @@ def phrase2csv(inputPath, outputPath):
                         began = True
                     continue
 
-                # phrase = uu.trim(row[0] or '')
-                # pinyin = uu.trim(''.join(row[1:] or []))
-                phrase = uu.trim(row[0] or '')
-                pinyin = uu.trim(row[1] or '')
+                # phrase = trim(row[0] or '')
+                # pinyin = trim(''.join(row[1:] or []))
+                phrase = trim(row[0] or '')
+                pinyin = trim(row[1] or '')
                 pinyin = re.sub('[0-9\\s]?', '', pinyin)
 
                 weight = '0'
@@ -65,20 +66,20 @@ def phrase2csv(inputPath, outputPath):
 
         # fp.close()
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 
-def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
-    filename = os.path.basename(outputPath)
+def yaml2cin(input_path, output_path, header_path, toneless = False):
+    filename = os.path.basename(output_path)
     contents = ""
     began = False
     version = ''
 
-    with open(inputPath) as fp:
+    with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
@@ -94,8 +95,8 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
                         began = True
                     continue
 
-                phrase = uu.trim(row[0] or '')
-                pinyin = uu.trim(row[1] or '')
+                phrase = trim(row[0] or '')
+                pinyin = trim(row[1] or '')
                 # weight = '0'
 
                 # try:
@@ -122,7 +123,7 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
 
         fp.close()
 
-    with open(headerPath, 'r') as fp:
+    with open(header_path, 'r') as fp:
         template = fp.read()
         template = template.replace('{{version}}', version)
         template = template.replace('{{chardef}}', contents)
@@ -132,18 +133,18 @@ def yaml2cin(inputPath, outputPath, headerPath, toneless = False):
 
     # contents = header + "\n%chardef begin\n" + contents + "%chardef end\n"
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert jyutping')
-    argParser.add_argument('-i', '--input', help='Input file path')
-    argParser.add_argument('-o', '--output', default='', help='Output file path')
-    argParser.add_argument('-t', '--target', choices=['tone', 'toneless', 'phrase'], help='Convert mode')
-    argParser.add_argument('--header', help='CIN table header')
+    arg_reader = argparse.ArgumentParser(description='Convert jyutping')
+    arg_reader.add_argument('-i', '--input', help='Input file path')
+    arg_reader.add_argument('-o', '--output', default='', help='Output file path')
+    arg_reader.add_argument('-t', '--target', choices=['tone', 'toneless', 'phrase'], help='Convert mode')
+    arg_reader.add_argument('--header', help='CIN table header')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
     if not os.path.exists(args.input):

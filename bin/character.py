@@ -12,7 +12,7 @@ import sys, os
 import json
 import sqlite3
 
-def importSymbol(cursor, path):
+def import_symbol(cursor, path):
     file = open(path, 'r')
     data = json.load(file)
     file.close()
@@ -33,7 +33,7 @@ def importSymbol(cursor, path):
                 print(row)
     cursor.execute("COMMIT TRANSACTION")
 
-def runTest(path):
+def run_test(path):
     db = sqlite3.connect(path)
     cursor = db.cursor()
 
@@ -57,19 +57,19 @@ def runTest(path):
     db.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description = 'Character.db Utility')
-    argParser.add_argument('--test', action = argparse.BooleanOptionalAction, help = 'Run test')
-    argParser.add_argument('-i', '--input', type = str, help = 'The file path of symbol.json')
-    argParser.add_argument('output', type = str, help = 'The output file path of Character.db')
+    argparser = argparse.ArgumentParser(description = 'Character.db Utility')
+    argparser.add_argument('--test', action = argparse.BooleanOptionalAction, help = 'Run test')
+    argparser.add_argument('-i', '--input', type = str, help = 'The file path of symbol.json')
+    argparser.add_argument('output', type = str, help = 'The output file path of Character.db')
 
-    args = argParser.parse_args()
+    args = argparser.parse_args()
     # print(args)
 
     if args.test:
         if not os.path.exists(args.output):
             print(f"File not found: {args.output}")
             sys.exit(0)
-        runTest(args.output)
+        run_test(args.output)
         sys.exit(0)
 
     if not args.input or not os.path.exists(args.input):
@@ -95,7 +95,7 @@ def main():
     cursor.execute("CREATE TABLE symbol (`category_id` INTEGER NOT NULL, `char` VARCHAR(255) NOT NULL, `info` VARCHAR(255) default '')")
 
     print(f"Importing file: {args.input}")
-    importSymbol(cursor, args.input)
+    import_symbol(cursor, args.input)
 
     db.commit()
 

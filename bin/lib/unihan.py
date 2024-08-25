@@ -8,7 +8,7 @@
 
 # import xml.etree.ElementTree as xet
 from enum import IntEnum
-from lib.util import stripAccents, trim
+from lib.util import strip_accents, trim
 
 # https://www.unicode.org/reports/tr38/#kCompatibilityVariant
 
@@ -23,7 +23,7 @@ class Classified(IntEnum):
     Unclassified = 99
 
     @staticmethod
-    def fromCategory(category):
+    def from_category(category):
         match category:
             case 'A':
                 return Classified.Common
@@ -101,7 +101,7 @@ class UnihanChar:
         # kMandarin: [a-z\x{300}-\x{302}\x{304}\x{308}\x{30C}]+
         self.mandarin = node.get('kMandarin')
         if self.mandarin:
-            self.mandarin = stripAccents(self.mandarin)
+            self.mandarin = strip_accents(self.mandarin)
         # kPhonetic: [1-9][0-9]{0,3}[A-Dx]?[*+]?
         # self.phonetic = node.get('kPhonetic')
         # kSpoofingVariant

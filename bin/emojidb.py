@@ -11,13 +11,15 @@
 # https://carpedm20.github.io/emoji/docs
 
 import argparse
-import sys, os, importlib
+import sys, os
+# import importlib
 import urllib3, shutil
 import re, json, sqlite3
 from tqdm import tqdm
+from lib.util import db_get_one
 # from emoji import is_emoji
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
 # import requests
 # import ssl
@@ -50,7 +52,7 @@ RANKING = [
     '😺🥞🏄🔨🏝️🔆👥👓🥒🏈🇵🇭🏋️0️⃣🚘🦖🌕🎭👾🍳🏵️🍧🔗🕋☃️🌅🤴🖖🐊🐘🌤️🥑🥚⛈️🐵🔜🍶🐄🇻🇪🐮🦈🚲⛔🕯️➕🔺💇🧠📻🥤🍝🍥💴🌬️🥓🙍⚓👰🐂📽️🏅⛅🇦🇪🇵🇪🧜📮⛳🔽🚂🏌️🐇🏍️🎲🥛🎣👱🎏🕷️🦍🔘🐅🏇🔐🏩👺🅱️🚙🐧⚖️🎃🌄🎾🐚🎺❇️🎫⌚🌋💒👳❎👟👃🛌🚓⏬📈⛄⏱️😾🛫🤱🍐☮️🚃⏳🌜📹🐛👔👗🐌🎱🌰🌮🕵️🔅✉️🇪🇬🚑📦🤥🔄🤳💲🎋🗓️🤖🥔🆗🔑🇨🇳🐤4️⃣🐑➰👩‍🎓☂️🇦🇹🦆🚌💿🏥🐋🚒🏐🇪🇨🥐🎷🗽🗡️🏏🐭🙎🌑🚔🇮🇩🚿🥝🕌🐀🛡️🔒✳️🕶️👩‍❤️‍💋‍👩🎟️🐉🔱🔎🇦🇺⚰️🐩🦑🧟🆕🦊👕🏹🇩🇿👬🍱📰🥋🚤🏰5️⃣🦉🚢🌨️📆🗝️🎌🧔💳🇺🇾🥗☯️⚙️💶⛩️🗻✒️🇺🇲🇵🇹🍠',
 ]
 
-def updateResources(basedir):
+def update_resources(basedir):
     baseurl = 'https://github.com/unicode-org/cldr-json/raw/main/cldr-json'
     pool = urllib3.PoolManager()
 
@@ -66,7 +68,7 @@ def updateResources(basedir):
             res.release_conn()
     print("Update finished")
 
-def charToLongHex(char):
+def char_to_long_hex(char):
     codes = char.encode('unicode-escape').decode('ascii')
     codes = list(filter(None, re.split(r'\\U|\\x', codes, flags=re.IGNORECASE)))
     # print(char, codes, path),
@@ -86,7 +88,7 @@ def charToLongHex(char):
     codes = ' '.join(codes).upper()
     return codes
 
-def isCharacter(code):
+def is_character(code):
     hex = int(code, 16)
     # specified to the source list
     ranges = [
@@ -148,7 +150,7 @@ def parse(cursor, path):
     cursor.execute("BEGIN TRANSACTION")
 
     for emoji in tqdm(node, unit = 'MB', unit_scale = True, ascii = True):
-        codes = charToLongHex(emoji)
+        codes = char_to_long_hex(emoji)
 
         if codes == None:
             # print(f"[c]: {emoji}")
@@ -163,7 +165,7 @@ def parse(cursor, path):
         #     # print(f"New emoji: {emoji} => {codes}")
 
         if codes.startswith('0000') and len(codes) <= 8:
-            if isCharacter(codes):
+            if is_character(codes):
                 # tqdm.write(f"[c]: {codes} => {emoji}")
                 continue
             # else:
@@ -172,7 +174,7 @@ def parse(cursor, path):
 
         # chardef
         cursor.execute("INSERT OR IGNORE INTO chardef (char) VALUES (:char)", {'char': codes})
-        chardefId = uu.getOne(cursor, "SELECT rowid FROM chardef WHERE char = :char LIMIT 1", {'char': codes})
+        chardefId = db_get_one(cursor, "SELECT rowid FROM chardef WHERE char = :char LIMIT 1", {'char': codes})
         # print(f"[emoji]: {emoji} => {codes}")
 
         # a quick but unsafe check but since prefix is all we need here
@@ -187,18 +189,18 @@ def parse(cursor, path):
 
             # keydef
             cursor.execute("INSERT OR IGNORE INTO keydef (key) VALUES (:key)", {'key': keyword})
-            keydefId = uu.getOne(cursor, "SELECT rowid FROM keydef WHERE key = :key LIMIT 1", {'key': keyword})
+            keydefId = db_get_one(cursor, "SELECT rowid FROM keydef WHERE key = :key LIMIT 1", {'key': keyword})
 
             # entry pivot
             cursor.execute("INSERT OR IGNORE INTO entry (keydef_id, chardef_id) VALUES (:kid, :cid)", {'kid': keydefId, 'cid': chardefId})
 
     cursor.execute("COMMIT TRANSACTION")
 
-def performImport(repoPath, dbPath):
-    if os.path.isfile(dbPath):
-        os.remove(dbPath)
+def perform_import(repo_path, db_path):
+    if os.path.isfile(db_path):
+        os.remove(db_path)
 
-    db = sqlite3.connect(dbPath)
+    db = sqlite3.connect(db_path)
     cursor = db.cursor()
 
     # cursor.execute("CREATE TABLE info (`name` VARCHAR(255) UNIQUE NOT NULL, `value` VARCHAR(255) default '')")
@@ -209,7 +211,7 @@ def performImport(repoPath, dbPath):
     for package in PACKAGES_LIST:
         for lang in LANGS:
             # path = f"{args.repo}/{package}".format(lang)
-            path = f"{repoPath}/{package.format(lang).replace('/', '_')}"
+            path = f"{repo_path}/{package.format(lang).replace('/', '_')}"
             # print(path)
             if not os.path.isfile(path):
                 print(f"Path not found: {path}")
@@ -230,11 +232,11 @@ def performImport(repoPath, dbPath):
 
     db.close()
 
-    print(f"\nOutput: {dbPath}")
+    print(f"\nOutput: {db_path}")
     print(f"Counter: chardef: {characterCounter}, keydef: {keywordsCounter}")
 
-def applyRanking(dbPath):
-    db = sqlite3.connect(dbPath)
+def apply_ranking(db_path):
+    db = sqlite3.connect(db_path)
     cursor = db.cursor()
 
     columns = [i[1] for i in cursor.execute("PRAGMA table_info(`chardef`)")]
@@ -247,7 +249,7 @@ def applyRanking(dbPath):
         # print(weight, items)
         for item in items[::-1]:
             weight += 1
-            code = charToLongHex(item)
+            code = char_to_long_hex(item)
             # print(f"{item} {weight} ", end = ' \n'),
             cursor.execute("UPDATE `chardef` SET weight = :weight WHERE char = :code", {'code': code, 'weight': weight})
 
@@ -312,14 +314,14 @@ def test(phrase, dbPath):
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='emoji.db Utility')
-    argParser.add_argument('--update', action=argparse.BooleanOptionalAction, help='Update emoji cldr json files')
-    argParser.add_argument('--run', action=argparse.BooleanOptionalAction, help='Run import')
-    argParser.add_argument('-test', type = str, help='Test keyword')
-    argParser.add_argument('-d', '--dir', type = str, help='The directory path of cldr-json files')
-    argParser.add_argument('-o', '--output', type = str, help='The file path of emoji.db')
+    arg_reader = argparse.ArgumentParser(description='emoji.db Utility')
+    arg_reader.add_argument('--update', action=argparse.BooleanOptionalAction, help='Update emoji cldr json files')
+    arg_reader.add_argument('--run', action=argparse.BooleanOptionalAction, help='Run import')
+    arg_reader.add_argument('-test', type = str, help='Test keyword')
+    arg_reader.add_argument('-d', '--dir', type = str, help='The directory path of cldr-json files')
+    arg_reader.add_argument('-o', '--output', type = str, help='The file path of emoji.db')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
 
@@ -331,7 +333,7 @@ def main():
         if not args.dir or not os.path.exists(args.dir):
             print(f"Directory (rawdata/emoji) not found: {args.dir}")
             sys.exit(0)
-        updateResources(args.dir)
+        update_resources(args.dir)
         sys.exit(0)
 
     if args.test:
@@ -345,8 +347,8 @@ def main():
         if not args.dir or not os.path.exists(args.dir):
             print(f"Directory (rawdata/emoji) not found: {args.dir}")
             sys.exit(0)
-        performImport(args.dir, args.output)
-        applyRanking(args.output)
+        perform_import(args.dir, args.output)
+        apply_ranking(args.output)
 
     sys.exit(0)
 

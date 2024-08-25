@@ -20,8 +20,8 @@ def main():
     parser = argparse.ArgumentParser(description='builder')
     parser.add_argument('-c', '--category', choices=['table', 'lexicon', 'keyboard'], nargs='?')
     parser.add_argument('-t', '--target', choices=['json', 'db'], nargs='?')
-    parser.add_argument('-i', '--inputDir', help='dir', nargs='?')
-    parser.add_argument('-o', '--outputDir', help='dir', nargs='?')
+    parser.add_argument('-i', '--input_dir', help='dir', nargs='?')
+    parser.add_argument('-o', '--output_dir', help='dir', nargs='?')
 
     args = parser.parse_args()
     # print('args:', args)
@@ -29,10 +29,10 @@ def main():
     match args.category:
         case 'table':
             if args.target == 'db':
-                _table_db(args.inputDir, args.outputDir)
+                _table_db(args.input_dir, args.output_dir)
         case 'lexicon':
             if args.target == 'db':
-                _lexicon_db(args.inputDir, args.outputDir)
+                _lexicon_db(args.input_dir, args.output_dir)
         case 'keyboard':
             pass
         case _:
@@ -40,22 +40,22 @@ def main():
             pass
 
 
-def _lexicon_db(inputDir: str, outputDir: str):
-    if not os.path.exists(inputDir):
-        print(f"[404]: {inputDir}")
-    if not os.path.exists(outputDir):
-        print(f"[404]: {outputDir}")
+def _lexicon_db(input_dir: str, output_dir: str):
+    if not os.path.exists(input_dir):
+        print(f"[404]: {input_dir}")
+    if not os.path.exists(output_dir):
+        print(f"[404]: {output_dir}")
 
-    deleteOldFile = prompt("Delete old file before build?", False)
-    for path in os_sorted(list(pathlib.Path(inputDir).glob("*.csv"))):
+    delete_old_file = prompt("Delete old file before build?", False)
+    for path in os_sorted(list(pathlib.Path(input_dir).glob("*.csv"))):
         # filename = pathlib.Path(path).stem
         filename = pathlib.Path(path).name
-        outputPath = f"{outputDir}/{filename}.db"
+        output_path = f"{output_dir}/{filename}.db"
 
-        if os.path.exists(outputPath):
-            if deleteOldFile:
+        if os.path.exists(output_path):
+            if delete_old_file:
                 # print(f"[X] delete {outputPath}")
-                os.remove(outputPath)
+                os.remove(output_path)
             else:
                 print(f"[X] {filename}")
                 continue
@@ -63,15 +63,15 @@ def _lexicon_db(inputDir: str, outputDir: str):
         if filename.startswith('_'):
             continue
 
-        cmd = f"bin/lexicon2db.py -i {path} -o {outputPath}"
+        cmd = f"bin/lexicon2db.py -i {path} -o {output_path}"
         # print(f"-> cmd: {cmd}")
         run(cmd)
 
-def _table_db(inputDir: str, outputDir: str):
-    if not os.path.exists(inputDir):
-        print(f"[404]: {inputDir}")
-    if not os.path.exists(outputDir):
-        print(f"[404]: {outputDir}")
+def _table_db(input_dir: str, output_dir: str):
+    if not os.path.exists(input_dir):
+        print(f"[404]: {input_dir}")
+    if not os.path.exists(output_dir):
+        print(f"[404]: {output_dir}")
 
     excludes = [
 		"array-shortcode.cin",
@@ -118,16 +118,16 @@ def _table_db(inputDir: str, outputDir: str):
         "wus.cin",
     ]
 
-    deleteOldFile = prompt("Delete old file before build?", False)
-    for path in os_sorted(list(pathlib.Path(inputDir).glob("*.cin"))):
+    delete_old_file = prompt("Delete old file before build?", False)
+    for path in os_sorted(list(pathlib.Path(input_dir).glob("*.cin"))):
         # filename = pathlib.Path(path).stem
         filename = pathlib.Path(path).name
-        outputPath = f"{outputDir}/{filename}.db"
+        output_path = f"{output_dir}/{filename}.db"
 
-        if os.path.exists(outputPath):
-            if deleteOldFile:
+        if os.path.exists(output_path):
+            if delete_old_file:
                 # print(f"[X] delete {outputPath}")
-                os.remove(outputPath)
+                os.remove(output_path)
             else:
                 print(f"[X] {filename}")
                 continue
@@ -136,7 +136,7 @@ def _table_db(inputDir: str, outputDir: str):
             continue
 
         # print(f"-> {filename}")
-        cmd = f"bin/cin2db.py -i {path} -o {outputPath}"
+        cmd = f"bin/cin2db.py -i {path} -o {output_path}"
         if filename.startswith("array30"):
             cmd = f"{cmd} -e array"
         # print(f"-> cmd: {cmd}")
