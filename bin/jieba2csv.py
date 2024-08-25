@@ -15,33 +15,34 @@ from tqdm import tqdm
 # import pinyin as tp
 from pypinyin import lazy_pinyin, Style
 from bin.lib.util import list_flatten
+from lib.util import dir, exec, trim, chunks
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
-_dir_ = uu.dir(__file__)
+_dir_ = dir(__file__)
 
 # workers = 2 * multiprocessing.cpu_count()
 # print(f"num of workers: \(workers)")
 
-def translate(str):
-    if not str:
-        return ''
+# def translate(str):
+#     if not str:
+#         return ''
 
-    result = uu.exec([f"{_dir_}/CharTransformer", '-pinyin', str])
-    result = ''.join(result.decode()).replace(' ', '').strip()
-    return result
+#     result = exec([f"{_dir_}/CharTransformer", '-pinyin', str])
+#     result = ''.join(result.decode()).replace(' ', '').strip()
+#     return result
 
-def parse(inputPath, outputPath):
-    filename = os.path.basename(inputPath)
+def parse(input_path, output_path):
+    filename = os.path.basename(input_path)
     contents = ""
-    # _dir_ = uu.dir(__file__)
+    # _dir_ = dir(__file__)
     # pool = multiprocessing.Pool(workers)
 
-    with open(inputPath) as fp:
+    with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = ' ')
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
-                phrase = uu.trim(row[0] or '')
+                phrase = trim(row[0] or '')
                 weight = row[1] or 0
                 pinyin = ''
 
@@ -58,16 +59,16 @@ def parse(inputPath, outputPath):
         fp.close()
         # tqdm.write(contents)
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the Jeiba dict.txt')
-    argParser.add_argument('-i', '--input', help='Original csv file path')
-    argParser.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
+    arg_reader = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the Jeiba dict.txt')
+    arg_reader.add_argument('-i', '--input', help='Original csv file path')
+    arg_reader.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
     if not os.path.exists(args.input):

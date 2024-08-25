@@ -6,22 +6,23 @@
 # convert rime yaml to cin table
 
 import sys, os, argparse
-import importlib
+# import importlib
 import csv
 from datetime import datetime
 from tqdm import tqdm
+from lib.util import trim, chunks
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
-def yaml2cin(inputPath, outputPath, headerPath):
-    filename = os.path.basename(outputPath)
+def yaml2cin(input_path, output_path, header_path):
+    filename = os.path.basename(output_path)
     contents = ""
     began = False
     version = ''
 
-    with open(inputPath) as fp:
+    with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row:
                     # print(f"skip empty: {row}")
@@ -36,8 +37,8 @@ def yaml2cin(inputPath, outputPath, headerPath):
                         began = True
                     continue
 
-                phrase = uu.trim(row[0] or '')
-                pinyin = uu.trim(row[1] or '')
+                phrase = trim(row[0] or '')
+                pinyin = trim(row[1] or '')
 
                 if pinyin == phrase:
                     pinyin = ''
@@ -46,7 +47,7 @@ def yaml2cin(inputPath, outputPath, headerPath):
 
         # fp.close()
 
-    with open(headerPath, 'r') as fp:
+    with open(header_path, 'r') as fp:
         template = fp.read()
         today = datetime.now()
         template = f"# build: {today.strftime(f'%Y/%m/%d %H:%M:%S')}\n" + template
@@ -58,17 +59,17 @@ def yaml2cin(inputPath, outputPath, headerPath):
 
     # contents = header + "\n%chardef begin\n" + contents + "%chardef end\n"
 
-    with open(outputPath, 'w') as fp:
+    with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert CIN table from Rime YAML')
-    argParser.add_argument('-i', '--input', required = True, help='Input file path')
-    argParser.add_argument('-o', '--output', required = True, help='Output file path')
-    argParser.add_argument('-x', '--header', required = True, help='CIN table header')
+    arg_reader = argparse.ArgumentParser(description='Convert CIN table from Rime YAML')
+    arg_reader.add_argument('-i', '--input', required = True, help='Input file path')
+    arg_reader.add_argument('-o', '--output', required = True, help='Output file path')
+    arg_reader.add_argument('-x', '--header', required = True, help='CIN table header')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
     if not os.path.exists(args.input):

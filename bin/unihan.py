@@ -8,7 +8,7 @@
 #
 
 import argparse
-import importlib
+# import importlib
 import json
 import sys, os
 # import re
@@ -18,14 +18,15 @@ import sqlite3
 import xml.etree.ElementTree as xet
 from tqdm import tqdm
 # from enum import IntEnum
-
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
+from lib.util import trim, chunks, db_get_one, db_get_all, dict_factory
 from lib.unihan import Classified, UnihanChar
+
 
 basedir = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
 
-def importWeight(cursor):
+def import_weight(cursor):
     path = f"{basedir}/rawdata/McBopomofo/Source/Data/phrase.occ"
     if not os.path.exists(path):
         sys.exit(f"File not found: {path}")
@@ -35,11 +36,11 @@ def importWeight(cursor):
 
     with open(path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"Lexicon[Weight]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row or not len(row) == 2:
                     continue
-                radical = uu.trim(row[0])
+                radical = trim(row[0])
                 weight = int(row[1])
                 if len(radical) > 1 or weight < 1:
                     continue
@@ -52,7 +53,7 @@ def importWeight(cursor):
 
     cursor.execute("BEGIN TRANSACTION")
     for item in contents:
-        rowid = uu.getOne(cursor, query1, {"radical": item[0]})
+        rowid = db_get_one(cursor, query1, {"radical": item[0]})
         if not rowid:
             # ???: classified zero?
             # cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
@@ -62,7 +63,7 @@ def importWeight(cursor):
             cursor.execute(query3, {"id": rowid, "weight": item[1]})
     cursor.execute("COMMIT TRANSACTION")
 
-def importClassified(cursor):
+def import_classified(cursor):
     path = f"{basedir}/rawdata/Unihan/tca.csv"
     if not os.path.exists(path):
         sys.exit(f"File not found: {path}")
@@ -73,17 +74,17 @@ def importClassified(cursor):
     cursor.execute("BEGIN TRANSACTION")
     with open(path) as fp:
         reader = csv.reader(fp, delimiter = ',')
-        for rows in uu.chunks(reader, 100000):
+        for rows in chunks(reader, 100000):
             for row in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"Classified"):
                 if not row or not len(row) == 2:
                     continue
                 # print(row)
-                radical = uu.trim(row[0])
+                radical = trim(row[0])
                 category = row[1][:1]
-                classified = Classified.fromCategory(category)
+                classified = Classified.from_category(category)
                 # print(f"{radical} => {category} / {classified}")
 
-                rowid = uu.getOne(cursor, query1, {"radical": radical})
+                rowid = db_get_one(cursor, query1, {"radical": radical})
                 if not rowid:
                     tqdm.write(f"Radical not exists: {radical}/{category}")
                     continue
@@ -94,12 +95,12 @@ def importClassified(cursor):
         fp.close()
     cursor.execute("COMMIT TRANSACTION")
 
-def importUnihanRadical(cursor, repo, namespace):
+def import_unihan_radical(cursor, repo, namespace):
     query = "INSERT INTO `radical` (`radical`, `pinyin`, `definition`, `classified`, `score`, `stroke`, `weight`) VALUES (:radical, :pinyin, :definition, :classified, :score, :stroke, :weight)"
 
     cursor.execute("BEGIN TRANSACTION")
 
-    for chunk in uu.chunks(repo.findall('ucd:char', namespace), max = 0):
+    for chunk in chunks(repo.findall('ucd:char', namespace), max = 0):
         for child in tqdm(chunk, desc = f"Unihan[Radical]", unit = 'MB', unit_scale = True, ascii = True):
         # for child in tqdm(repo.findall('ucd:char', namespace), unit = 'MB', unit_scale = True, ascii = True, desc = f"Radical"):
         # for child in repo.findall('ucd:char', namespace):
@@ -118,7 +119,7 @@ def importUnihanRadical(cursor, repo, namespace):
 
     cursor.execute("COMMIT TRANSACTION")
 
-def importUnihanLocale(cursor, repo, namespace, table):
+def import_unihan_locale(cursor, repo, namespace, table):
     query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
     query2 = f"INSERT INTO `{table}` (`hant_id`, `hans_id`) VALUES (:hant_id, :hans_id)"
 
@@ -132,27 +133,27 @@ def importUnihanLocale(cursor, repo, namespace, table):
         target_name = "hant_id"
 
     cursor.execute("BEGIN TRANSACTION")
-    for chunk in uu.chunks(repo.findall('ucd:char', namespace), max = 0):
+    for chunk in chunks(repo.findall('ucd:char', namespace), max = 0):
         for child in tqdm(chunk, desc = f"Unihan[{table}]", unit = 'MB', unit_scale = True, ascii = True):
             char = UnihanChar(child)
             variants = getattr(char, target)
             if not variants:
                 continue
 
-            radical_id = uu.getOne(cursor, query1, {"radical": char.text})
+            radical_id = db_get_one(cursor, query1, {"radical": char.text})
             if not radical_id:
                 tqdm.write(f"Radical Not found: {char.text}")
                 continue
 
             for variant in variants:
-                target_id = uu.getOne(cursor, query1, {"radical": variant})
+                target_id = db_get_one(cursor, query1, {"radical": variant})
                 if not target_id:
                     tqdm.write(f"Radical Not found: {variant}")
                     continue
                 cursor.execute(query2, {radical_name: radical_id, target_name: target_id})
     cursor.execute("COMMIT TRANSACTION")
 
-def importTongwenLocale(cursor, table, dir):
+def import_tongwen_locale(cursor, table, dir):
     def _import(path):
         query1 = "SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
         query2 = f"INSERT INTO `{table}` (`hans_id`, `hant_id`) VALUES (:hans_id, :hant_id)"
@@ -168,8 +169,8 @@ def importTongwenLocale(cursor, table, dir):
             cursor.execute("BEGIN TRANSACTION")
             for key, value in tqdm(data.items(), desc = prefix, unit = 'MB', unit_scale = True, ascii = True):
                 # print(f"{key} => {value}")
-                radical_id = uu.getOne(cursor, query1, {"radical": key})
-                target_id = uu.getOne(cursor, query1, {"radical": value})
+                radical_id = db_get_one(cursor, query1, {"radical": key})
+                target_id = db_get_one(cursor, query1, {"radical": value})
                 if not radical_id or not target_id:
                     tqdm.write(f"{prefix} Radical not found: {key} => {value}")
                     continue
@@ -178,7 +179,7 @@ def importTongwenLocale(cursor, table, dir):
     _import(f"{dir}/{table}-char.json")
     # _import(f"{dir}/s2t-phrase.json")
 
-def importUnihan(cursor, task):
+def import_unihan(cursor, task):
     path = f"{basedir}/rawdata/Unihan/ucd.unihan.flat.xml"
     namespace = {
         'ucd': 'http://www.unicode.org/ns/2003/ucd/1.0',
@@ -187,16 +188,16 @@ def importUnihan(cursor, task):
     repo = root.find('ucd:repertoire', namespace)
 
     if task == "radical":
-        importUnihanRadical(cursor, repo, namespace)
+        import_unihan_radical(cursor, repo, namespace)
     else:
-        importUnihanLocale(cursor, repo, namespace, task)
+        import_unihan_locale(cursor, repo, namespace, task)
 
 
-def importTongwen(cursor, task):
+def import_tongwen(cursor, task):
     dir = f"{basedir}/rawdata/tongwen-core/dictionaries/"
-    importTongwenLocale(cursor, task, dir)
+    import_tongwen_locale(cursor, task, dir)
 
-def createDatabase(path):
+def create_database(path):
     if os.path.isfile(path):
         os.remove(path)
 
@@ -231,13 +232,13 @@ def createDatabase(path):
 def test(cursor):
     print("test [t2s]")
     query = f"SELECT a.hant_id, a.hans_id, t.radical AS hant, s.radical AS hans FROM t2s AS a LEFT JOIN radical AS t ON (a.hant_id = t.rowid) LEFT JOIN radical AS s ON (a.hans_id = s.rowid) ORDER BY random() LIMIT 5"
-    result = uu.getAll(cursor, query)
+    result = db_get_all(cursor, query)
     for row in result:
         print(f"{row.get('hant')} => {row.get('hans')}")
 
     print("test [s2t]")
     query = f"SELECT a.hant_id, a.hans_id, t.radical AS hant, s.radical AS hans FROM s2t AS a LEFT JOIN radical AS t ON (a.hant_id = t.rowid) LEFT JOIN radical AS s ON (a.hans_id = s.rowid) ORDER BY random() LIMIT 5"
-    result = uu.getAll(cursor, query)
+    result = db_get_all(cursor, query)
     for row in result:
         print(f"{row.get('hans')} => {row.get('hant')}")
 
@@ -254,7 +255,7 @@ def test(cursor):
     WHERE hant IN ({list})
     ORDER BY hant
     '''
-    result = uu.getAll(cursor, query)
+    result = db_get_all(cursor, query)
     for row in result:
         print(f"{row.get('hant')} => {row.get('hans')}")
 
@@ -268,25 +269,25 @@ def test(cursor):
     WHERE hans IN ({list})
     ORDER BY hans
     '''
-    result = uu.getAll(cursor, query)
+    result = db_get_all(cursor, query)
     for row in result:
         print(f"{row.get('hans')} => {row.get('hant')}")
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='Unihan Utility')
+    arg_reader = argparse.ArgumentParser(description='Unihan Utility')
     # argParser.add_argument('-i', '--input', help='base dir of the repo')
-    argParser.add_argument('-o', '--output', default='', help='output db path')
-    args = argParser.parse_args()
+    arg_reader.add_argument('-o', '--output', default='', help='output db path')
+    args = arg_reader.parse_args()
 
-    preferTonwen = False
+    prefer_tonwen = False
     dryrun = False
 
     if not dryrun:
-        createDatabase(args.output)
+        create_database(args.output)
 
     db = sqlite3.connect(args.output)
-    db.row_factory = uu.dict_factory
+    db.row_factory = dict_factory
     # db.row_factory = sqlite3.Row
     cursor = db.cursor()
 
@@ -297,15 +298,15 @@ def main():
         test(cursor)
         sys.exit(0)
 
-    importUnihan(cursor, "radical")
-    if preferTonwen:
-        importTongwen(cursor, "t2s")
-        importTongwen(cursor, "s2t")
+    import_unihan(cursor, "radical")
+    if prefer_tonwen:
+        import_tongwen(cursor, "t2s")
+        import_tongwen(cursor, "s2t")
     else:
-        importUnihan(cursor, "t2s")
-        importUnihan(cursor, "s2t")
+        import_unihan(cursor, "t2s")
+        import_unihan(cursor, "s2t")
     # ## importClassified(cursor)
-    importWeight(cursor)
+    import_weight(cursor)
     # test(cursor)
 
     # classfied, score not very useful at this moment

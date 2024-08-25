@@ -14,7 +14,7 @@ from tqdm import tqdm
 from enum import Enum
 from lib.util import trim, chunks, vprint, whitespace
 
-verbose = False
+_verbose = False
 
 # class CinTableParseLevel(IntEnum):
 #     No = 0
@@ -30,7 +30,7 @@ class Block(Enum):
     Special = "%special"
 
 class CinTable:
-    definedTags = [
+    defined_tags = [
         '%gen_inp',
         '%encoding',
         '%name',
@@ -47,8 +47,8 @@ class CinTable:
         self.path = path
         self.blocks = blocks # or [Block.Chardef]
 
-        self.duplicateChardef = []
-        self.unknownTags = []
+        self.duplicate_chardef = []
+        self.unknown_tags = []
 
         self.description = ""
         self.meta = {}
@@ -64,14 +64,14 @@ class CinTable:
             self.parse()
 
     def __str__(self):
-        return f"""Name: {self.getName()}
+        return f"""Name: {self.get_name()}
 Info: {self.meta}
-Unknown Tags: {self.unknownTags}
+Unknown Tags: {self.unknown_tags}
 Total Keyname: {len(self.keyname)}
 Total Chardef: {len(self.chardef)}
-Total Duplicate Chardef: {len(self.duplicateChardef)}"""
+Total Duplicate Chardef: {len(self.duplicate_chardef)}"""
 
-    def fileExists(self):
+    def file_exists(self):
         if not self.path:
             return False
         if not os.path.exists(self.path):
@@ -79,21 +79,21 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         return True
 
     def log(self, msg, stop = False):
-        vprint(msg, verbose)
+        vprint(msg, _verbose)
         if stop:
             tqdm.write(msg)
             sys.exit()
 
     def parse(self):
-        if not self.fileExists():
+        if not self.file_exists():
             self.log("File not exists", stop = True)
 
         filename = os.path.basename(self.path)
         with open(self.path, "r") as fp:
 
-            currentBlock: Block | None = None
-            ignoreBlockName = None
-            acceptComments = True
+            current_block: Block | None = None
+            ignore_block_name = None
+            accept_comments = True
             stop = False
             disable = False if len(self.blocks) > 0 else True
 
@@ -117,7 +117,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                         # if not line:
                         #     continue
                         # ignore comments in charset
-                        if acceptComments:
+                        if accept_comments:
                             self.description += f"{line}\n"
                         continue
 
@@ -130,61 +130,61 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
                     value = trim((items[1:2] or ('', ''))[0])
                     # print(f"{key} => _{value}_")
 
-                    if acceptComments and (value == "begin" or len(self.meta) > 0):
+                    if accept_comments and (value == "begin" or len(self.meta) > 0):
                         # once any section began, ignore all comments for "description"
-                        acceptComments = False
+                        accept_comments = False
 
                     try:
                         _block = Block(key)
-                        if currentBlock == _block and value == "end":
-                            currentBlock = None
-                            ignoreBlockName = None
+                        if current_block == _block and value == "end":
+                            current_block = None
+                            ignore_block_name = None
                             self.log(f"end of block: {key}")
                         else:
-                            currentBlock = _block
-                            ignoreBlockName = None
+                            current_block = _block
+                            ignore_block_name = None
                             self.log(f"beginning of block: {key}")
                         continue
                     except:
                         # self.log(f"Invalid block: {key}")
                         pass
 
-                    if not currentBlock:
-                        if ignoreBlockName:
-                            self.log(f"Ignore block: {ignoreBlockName}")
+                    if not current_block:
+                        if ignore_block_name:
+                            self.log(f"Ignore block: {ignore_block_name}")
                             continue
                         if key.startswith('%') and (value == 'begin' or value == 'end'):
-                            ignoreBlockName = key
+                            ignore_block_name = key
                             self.log(f"[?] Unknown block: {key}")
-                            self.unknownTags.append(key)
+                            self.unknown_tags.append(key)
                             continue
 
-                        if not key in self.definedTags:
+                        if not key in self.defined_tags:
                             self.log(f"[?] Unknown tag: {key} {value}")
-                            self.unknownTags.append(key)
+                            self.unknown_tags.append(key)
                             continue
 
                         self.meta[key[1:]] = value
                         continue
 
-                    if currentBlock == Block.Keyname:
+                    if current_block == Block.Keyname:
                         self.log(f"-> keyname: {key} {value}")
                         self.keyname[key] = value
                     else:
                         if disable:
                             stop = True
                             break
-                        if currentBlock and not currentBlock in self.blocks:
+                        if current_block and not current_block in self.blocks:
                             # tqdm.write(f"<-- {currentBlock} / {self.blocks}")
                             # continue instead of stop incase charset is not the first block
                             continue
-                        if currentBlock == Block.Chardef and currentBlock in self.blocks and value:
+                        if current_block == Block.Chardef and current_block in self.blocks and value:
                             # self.log(f"-> chardef: {key} {value}")
                             self.chardef.append([key, value])
-                        elif currentBlock == Block.Special and currentBlock in self.blocks and value:
+                        elif current_block == Block.Special and current_block in self.blocks and value:
                             # self.log(f"-> chardef: {key} {value}")
                             self.extra['special'].append([key, value])
-                        elif currentBlock == Block.Shortcode and currentBlock in self.blocks and value:
+                        elif current_block == Block.Shortcode and current_block in self.blocks and value:
                             # self.log(f"-> chardef: {key} {value}")
                             self.extra['shortcode'].append([key, value])
 
@@ -195,7 +195,7 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         #     self.validate()
         # print(self)
 
-    def removeDuplicateCharde(self):
+    def remove_duplicate_chardef(self):
         unique = []
         duplicate = []
         for item in tqdm(self.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"[CIN]"):
@@ -205,9 +205,9 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
             else:
                 duplicate.append(item)
         self.chardef = unique
-        self.duplicateChardef = duplicate
+        self.duplicate_chardef = duplicate
 
-    def getName(self):
+    def get_name(self):
         tags = ["cname", "tcname", "scname", "name"]
         for tag in tags:
             # print(self.info.get(tag))
@@ -216,5 +216,5 @@ Total Duplicate Chardef: {len(self.duplicateChardef)}"""
         return "Noname"
 
     def validate(self):
-        self.removeDuplicateCharde
+        self.remove_duplicate_chardef
 

@@ -6,12 +6,13 @@
 # convert cin table to sqlite db
 
 import argparse
-import importlib
+# import importlib
 import sys, os
 import sqlite3
+from lib.util import db_get_one
 # from tqdm import tqdm
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
 def db2cin(args):
 
@@ -19,7 +20,7 @@ def db2cin(args):
     cursor = db.cursor()
 
     query = "SELECT count(*) FROM sqlite_master WHERE `type` = 'table' AND (`name` = 'info' OR `name` = 'keyname' OR `name` = 'chardef' OR `name` = 'keydef' OR `name` = 'entry')"
-    result = uu.getOne(cursor, query)
+    result = db_get_one(cursor, query)
 
     if result != 5:
         print(f'The file "{os.path.basename(args.input)}" is not a valid Frankie/OkidoKey db file')
@@ -69,12 +70,12 @@ def db2cin(args):
 
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert sqlite db to cin table')
-    argParser.add_argument('-i', '--input', type = str, required = True, help='The sqlite db file path')
-    argParser.add_argument('-o', '--output', type = str, required = True, help='The cin table file path')
-    argParser.add_argument('--header', type = str, help='The custom CIN table header file path (without charset tags)')
+    arg_reader = argparse.ArgumentParser(description='Convert sqlite db to cin table')
+    arg_reader.add_argument('-i', '--input', type = str, required = True, help='The sqlite db file path')
+    arg_reader.add_argument('-o', '--output', type = str, required = True, help='The cin table file path')
+    arg_reader.add_argument('--header', type = str, help='The custom CIN table header file path (without charset tags)')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
 

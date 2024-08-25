@@ -25,9 +25,9 @@ class Mode(IntEnum):
     def __str__(self):
         return self.name[0]
 
-def performImport(cursor, inputPath, mode = Mode.CREATE):
+def perform_import(cursor, input_path, mode = Mode.CREATE):
     # tqdm.write(uu.color(f"[{filename}]", fg = 'green'))
-    cin = CinTable(inputPath, [Block.Chardef])
+    cin = CinTable(input_path, [Block.Chardef])
 
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
@@ -53,7 +53,7 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
     # query5 = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :cid)"
     query6 = "INSERT INTO `entry` (`keydef_id`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `keydef` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}[1]"):
+    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.get_name()}[1]"):
         # print(f"{item[0]} => {item[1]}")
         key = item[0]
         value = item[1]
@@ -64,12 +64,12 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
         # # keydef
         # args = {'value': key}
         # cursor.execute(query1, args)
-        # keydefId = uu.getOne(cursor, query2, args)
+        # keydefId = uu.db_get_one(cursor, query2, args)
 
         # # chardef
         # args = {'value': value}
         # cursor.execute(query3, args)
-        # chardefId = uu.getOne(cursor, query4, args)
+        # chardefId = uu.db_get_one(cursor, query4, args)
 
         # #entry pivot
         # args = {'kid': keydefId, 'cid': chardefId}
@@ -80,7 +80,7 @@ def performImport(cursor, inputPath, mode = Mode.CREATE):
         cursor.execute(query3, {'value': value})
 
     # v2: entry
-    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.getName()}[2]"):
+    for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.get_name()}[2]"):
         key = item[0]
         value = item[1]
         cursor.execute(query6, {'key': key, 'value': value})
@@ -95,12 +95,12 @@ def validate(cursor):
     result = cursor.fetchall()
     for item in tqdm(result, unit_scale = True, ascii = True, desc = f"Validation"):
         query = "SELECT COUNT(rowid) FROM `keydef` WHERE key LIKE :key"
-        check = uu.getOne(cursor, query, {'key': f"%{item[0]}%"})
+        check = uu.db_get_one(cursor, query, {'key': f"%{item[0]}%"})
         if not check or check <= 1:
             tqdm.write(f"[?] keyname: {item[0]} ({item[1]}) never or rarely used")
 
-def pluginArray(cursor, inputPath):
-    cin = CinTable(inputPath, [Block.Shortcode, Block.Special])
+def plugin_array(cursor, input_path):
+    cin = CinTable(input_path, [Block.Shortcode, Block.Special])
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
@@ -111,16 +111,16 @@ def pluginArray(cursor, inputPath):
             # tqdm.write(f"No data for {category}")
             continue
 
-        keydefTableName = f"keydef_{category}"
-        entryTableName = f"entry_{category}"
-        entryKeydefColumnName = f"keydef_{category}_id"
+        keydef_table_name = f"keydef_{category}"
+        entry_table_name = f"entry_{category}"
+        entry_keydef_column_name = f"keydef_{category}_id"
 
-        query1 = f"INSERT OR IGNORE INTO `{keydefTableName}` (`key`) VALUES (:value)"
+        query1 = f"INSERT OR IGNORE INTO `{keydef_table_name}` (`key`) VALUES (:value)"
         query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
-        query6 = f"INSERT OR IGNORE INTO `{entryTableName}` (`{entryKeydefColumnName}`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `{keydefTableName}` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+        query6 = f"INSERT OR IGNORE INTO `{entry_table_name}` (`{entry_keydef_column_name}`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `{keydef_table_name}` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-        cursor.execute(f"CREATE TABLE {keydefTableName} (`key` VARCHAR(255) UNIQUE NOT NULL)")
-        cursor.execute(f"CREATE TABLE {entryTableName} (`{entryKeydefColumnName}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+        cursor.execute(f"CREATE TABLE {keydef_table_name} (`key` VARCHAR(255) UNIQUE NOT NULL)")
+        cursor.execute(f"CREATE TABLE {entry_table_name} (`{entry_keydef_column_name}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
             key = item[0]
@@ -136,7 +136,7 @@ def pluginArray(cursor, inputPath):
     cursor.execute("COMMIT TRANSACTION")
     cursor.execute('VACUUM')
 
-def pluginBossy(cursor):
+def plugin_bossy(cursor):
     query = "UPDATE `info` SET value = :value WHERE `name` = :name"
     args = {'name': 'ename', 'value': "Bossy"}
     cursor.execute(query, args)
@@ -145,15 +145,15 @@ def pluginBossy(cursor):
     pass
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert cin table to sqlite db file')
-    argParser.add_argument('-i', '--input', type = str, required = True, nargs = '+', help='The cin table file(s), the first one would be the major table for information')
-    argParser.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
+    arg_reader = argparse.ArgumentParser(description='Convert cin table to sqlite db file')
+    arg_reader.add_argument('-i', '--input', type = str, required = True, nargs = '+', help='The cin table file(s), the first one would be the major table for information')
+    arg_reader.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
     # argParser.add_argument('-t', '--test', type = str, help='The database file path')
     # argParser.add_argument('--header', type = str, help='The custom CIN table header file path')
-    argParser.add_argument('-e', '--plugin', choices=['array', 'bossy'], help='plugin')
-    argParser.add_argument('-v', '--validate', action='store_true', help='validate on/off')
+    arg_reader.add_argument('-e', '--plugin', choices=['array', 'bossy'], help='plugin')
+    arg_reader.add_argument('-v', '--validate', action='store_true', help='validate on/off')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
 
@@ -181,15 +181,15 @@ def main():
         if index > 0:
             mode = Mode.APPEND
         # print(f"{index}: {mode} {path}")
-        performImport(cursor, path, mode)
+        perform_import(cursor, path, mode)
         db.commit()
 
     if args.plugin:
         match args.plugin:
             case "array":
-                pluginArray(cursor, args.input[0])
+                plugin_array(cursor, args.input[0])
             case "bossy":
-                pluginBossy(cursor)
+                plugin_bossy(cursor)
         db.commit()
 
     if args.validate:

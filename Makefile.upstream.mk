@@ -86,7 +86,7 @@ jyutping:
 
 moe-pull:
 	@echo "🤝 MoE resources"
-	@bin/moe_spider.py
+	@bin/moe-spider.py
 
 moe-revised:
 	@$(eval version = $(notdir $(wildcard rawdata/moe/dict_revised_*.xlsx)))

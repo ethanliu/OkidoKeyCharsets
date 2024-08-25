@@ -5,31 +5,32 @@
 # convert lexicon csv to sqlite db
 
 import argparse
-import importlib
+# import importlib
 import sys, os
 import csv
 import re
 import sqlite3
 from tqdm import tqdm
+from lib.util import chunks, strip_accents
 
 kPatternPhrase = r"_x([0-9A-F]{4})_"
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
-def performImport(cursor, inputPath):
+def perform_import(cursor, input_path):
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
 
-    filename = os.path.basename(inputPath)
+    filename = os.path.basename(input_path)
 
-    with open(inputPath, 'r') as csvfile:
+    with open(input_path, 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
-        for chunk in uu.chunks(reader, max = 0):
+        for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
                 phrase = (row[0] or '').strip()
                 weight = row[1] or 0
-                pinyin = uu.stripAccents(row[2] or '').replace('，', '').strip()
+                pinyin = strip_accents(row[2] or '').replace('，', '').strip()
 
                 if not phrase or len(phrase) < 2:
                     # tqdm.write(f"too short: {phrase}")
@@ -52,12 +53,12 @@ def performImport(cursor, inputPath):
     cursor.execute("COMMIT TRANSACTION")
 
 def main():
-    argParser = argparse.ArgumentParser(description='Convert lexicon csv to sqlite db file')
-    argParser.add_argument('-i', '--input', type = str, required = True, help='The lexicon csv file path')
-    argParser.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
+    arg_reader = argparse.ArgumentParser(description='Convert lexicon csv to sqlite db file')
+    arg_reader.add_argument('-i', '--input', type = str, required = True, help='The lexicon csv file path')
+    arg_reader.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
     # argParser.add_argument('--readme', type = str, help='The readme file path')
 
-    args = argParser.parse_args()
+    args = arg_reader.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
 
@@ -80,7 +81,7 @@ def main():
     # cursor.execute("CREATE TABLE pinyin (`pinyin` VARCHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE `lexicon` (`phrase` TEXT NOT NULL, `pinyin` VARCHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`, `category_id`))")
 
-    performImport(cursor, args.input)
+    perform_import(cursor, args.input)
 
     cursor.execute('VACUUM')
     cursor.execute("CREATE INDEX IF NOT EXISTS `phrase_index` ON `lexicon` (phrase, category_id, weight)")
