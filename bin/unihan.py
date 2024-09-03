@@ -32,10 +32,16 @@ def import_weight(cursor):
         sys.exit(f"File not found: {path}")
 
     contents = []
+    delimiter = " "
     # filename = os.path.basename(path)
 
     with open(path) as fp:
-        reader = csv.reader(fp, delimiter = '\t')
+        first_line = fp.readline()
+        fp.seek(0)
+
+        if "\t" in first_line:
+            delimiter = "\t"
+        reader = csv.reader(fp, delimiter = delimiter)
         for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"Lexicon[Weight]", unit = 'MB', unit_scale = True, ascii = True):
                 if not row or not len(row) == 2:
