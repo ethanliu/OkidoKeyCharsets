@@ -44,7 +44,7 @@ class MoeSpider(Spider):
                 )
 
     def parse_content_page(self, response):
-        links = response.xpath('//text()[contains(., "文字資料庫")]/following::a[1]/@href').db_get_all()
+        links = response.xpath('//text()[contains(., "文字資料庫")]/following::a[1]/@href').getall()
         # print(links)
         for link in links:
             full_url = response.urljoin(link)
