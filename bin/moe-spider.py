@@ -73,14 +73,14 @@ class MoeSpider(Spider):
 
         if os.path.exists(file_path):
             # self.logger.info(f"File exists: {file_path}")
-            print(f"[exists]: {file_path}")
+            print(f"[exists] {file_path}")
             return
 
         try:
             with open(file_path, 'wb') as f:
                 f.write(response.body)
             # self.logger.info(f"Downloaded: {file_path}")
-            print(f"[new]: {file_path}")
+            print(f"[new] {file_path}")
         except Exception as e:
             self.logger.error(f"Failed to download {file_url}: {str(e)}")
             # print(f"Failed to download {file_url}: {str(e)}")
