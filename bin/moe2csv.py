@@ -14,9 +14,9 @@ import re
 from tqdm import tqdm
 from lib.util import chunks, list_flatten, list_unique
 from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
+from lib.pinyin import PinyinQuery
+
 # import codecs
-# import pinyin as tp
-from pypinyin import lazy_pinyin, Style
 
 
 _ZHUYIN_PRONOUNCE_PATTERN = r"[（\(][變|一|ㄧ|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
@@ -44,6 +44,7 @@ def parse2(input_path, output_path):
     # pattern = f"[，。「」“”『』）【】\"\',.]+"
     skipHeader = True
     contents = ""
+    qm = PinyinQuery(query=False)
 
     with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = ',')
@@ -83,7 +84,10 @@ def parse2(input_path, output_path):
                     shortcuts = []
 
                 if not shortcuts:
-                    shortcuts.append("".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL))))
+                    # shortcuts.append("".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL))))
+                    phrase_pinyin = qm.pinyin(phrase)
+                    if phrase_pinyin:
+                        shortcuts.append(phrase_pinyin)
 
                 for shortcut in shortcuts:
                     contents += f"{phrase}\t0\t{shortcut}\n"
@@ -91,6 +95,7 @@ def parse2(input_path, output_path):
                 # print(contents)
                 # sys.exit(0)
 
+    qm.close()
     with open(output_path, 'w') as fp:
         fp.write(contents)
 

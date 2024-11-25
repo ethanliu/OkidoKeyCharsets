@@ -17,10 +17,11 @@ from lib.util import trim, chunks
 
 # uu = importlib.import_module("lib.util")
 
-def phrase2csv(input_path, output_path):
+def phrase2csv(input_path, output_path, header_path):
     filename = os.path.basename(input_path)
     contents = ""
     began = False
+    version = ''
 
     with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = '\t')
@@ -32,6 +33,8 @@ def phrase2csv(input_path, output_path):
 
                 if not began:
                     # print(f"skip info: {row}")
+                    if "version:" in row[0]:
+                        version = row[0].replace('version:', '').replace('"', '').replace('\'', '').strip()
                     if row and row[0] == '...':
                         began = True
                     continue
@@ -69,6 +72,15 @@ def phrase2csv(input_path, output_path):
     with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
+
+    pirnt(f"Patching version: {version}")
+    header_content = ''
+    with open(header_path, 'r') as file:
+        header_content = file.read()
+    header_content = re.sub(r'版本 (.*)。', f"版本 {version}。", header_content)
+    # print(header_content)
+    with open(header_path, 'w') as file:
+        file.write(header_content)
 
 
 def yaml2cin(input_path, output_path, header_path, toneless = False):
@@ -123,6 +135,7 @@ def yaml2cin(input_path, output_path, header_path, toneless = False):
 
         fp.close()
 
+    pirnt(f"Patching version: {version}")
     with open(header_path, 'r') as fp:
         template = fp.read()
         template = template.replace('{{version}}', version)
@@ -151,7 +164,7 @@ def main():
         sys.exit(f"File not found: {args.input}")
 
     if args.target == 'phrase':
-        phrase2csv(args.input, args.output)
+        phrase2csv(args.input, args.output, args.header)
     else:
         if not os.path.exists(args.header):
             sys.exit(f"File not found: {args.header}")
