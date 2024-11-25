@@ -1,5 +1,7 @@
 .vscode
+.python-version
 __pycache__
+*.pyc
 bin/test.py
 dist/*
 rawdata/*

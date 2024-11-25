@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 _REPO_URL = "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/respub/index.html"
 # _REPO_URL = "http://localhost/moe/index.html"
 
-_DOWNLOAD_DIR = "rawdata/moe/src"
+_DOWNLOAD_DIR = ""
 
 class MoeSpider(Spider):
     name = 'moe'
@@ -27,9 +27,6 @@ class MoeSpider(Spider):
 
     def __init__(self, *args, **kwargs):
         super(MoeSpider, self).__init__(*args, **kwargs)
-        self.download_folder = _DOWNLOAD_DIR
-        if not os.path.exists(self.download_folder):
-            os.makedirs(self.download_folder)
 
     def parse(self, response):
         # Extract URLs from the index page
@@ -64,12 +61,18 @@ class MoeSpider(Spider):
     #     return url.endswith(('.pdf', '.doc', '.docx', '.txt'))
 
     def download_file(self, response):
+        global _DOWNLOAD_DIR
+        # self.download_folder = _DOWNLOAD_DIR
+
+        if not os.path.exists(_DOWNLOAD_DIR):
+            os.makedirs(_DOWNLOAD_DIR)
+
         file_url = response.url
         # source_url = response.meta['source_url']
 
         # Generate a filename from the URL
         file_name = os.path.basename(urlparse(file_url).path)
-        file_path = os.path.join(self.download_folder, file_name)
+        file_path = os.path.join(_DOWNLOAD_DIR, file_name)
 
         if os.path.exists(file_path):
             # self.logger.info(f"File exists: {file_path}")
@@ -102,6 +105,7 @@ def run_spider():
     process.start()
 
 def archive(prefix: str):
+    global _DOWNLOAD_DIR
     paths = glob.glob(f"{_DOWNLOAD_DIR}/{prefix}_*")
     sorted_paths = sorted(paths, key=os.path.getmtime)
     sorted_paths.pop()
@@ -115,7 +119,10 @@ def archive(prefix: str):
     return result
 
 def main():
-    run_spider()
+    global _DOWNLOAD_DIR
+    _DOWNLOAD_DIR = sys.argv[1]
+
+    # run_spider()
     archive("dict_concised")
     archive("dict_idioms")
     # archive("dict_mini")

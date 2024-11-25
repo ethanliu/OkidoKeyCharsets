@@ -3,7 +3,7 @@
 # version: 0.0.1
 # autor: Ethan Liu
 #
-# convert McBopomofo BPMFMappings.txt to csv
+# convert jyutping from rime to cin format.
 
 import argparse
 # import importlib

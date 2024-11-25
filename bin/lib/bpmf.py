@@ -81,6 +81,7 @@ def bpmf_to_pinyin(bpmf = []):
                 result.append(partial)
             else:
                 # sys.exit(f"{cc} from {bpmf} not found => {fixes}")
-                raise SystemExit(f"{cc} from {bpmf} not found => {fixes}")
+                # raise SystemExit(f"[bpmf_to_pinyin] {cc} from {bpmf} not found")
+                raise Exception(f"\"{cc}\" not found")
     # print(bpmf, result)
     return "".join(result)

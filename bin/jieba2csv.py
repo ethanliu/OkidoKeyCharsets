@@ -14,12 +14,12 @@ import csv
 from tqdm import tqdm
 # import pinyin as tp
 from pypinyin import lazy_pinyin, Style
-from bin.lib.util import list_flatten
+from lib.util import list_flatten
 from lib.util import dir, exec, trim, chunks
 
 # uu = importlib.import_module("lib.util")
 
-_dir_ = dir(__file__)
+# _dir_ = dir(__file__)
 
 # workers = 2 * multiprocessing.cpu_count()
 # print(f"num of workers: \(workers)")

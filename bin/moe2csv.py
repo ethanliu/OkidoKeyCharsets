@@ -18,8 +18,25 @@ from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
 # import pinyin as tp
 from pypinyin import lazy_pinyin, Style
 
-_ZHUYIN_PRONOUNCE_PATTERN = r"[（\(][變|一|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
+
+_ZHUYIN_PRONOUNCE_PATTERN = r"[（\(][變|一|ㄧ|二|三|四|五|六|語音|讀音|又音|\d]+[）\)]|<br>"
 _SPACE_PATTERN = r"[\u3000|\s|，|；]+"
+
+_INCORRECT_CHARACTER_MAPPING = {
+    "一": "ㄧ",
+}
+_cache_pattern = '|'.join(map(re.escape, _INCORRECT_CHARACTER_MAPPING.keys()))
+
+def replace_all(match):
+    return _INCORRECT_CHARACTER_MAPPING[match.group(0)]
+
+def moe_fixes(bpmf, phrase):
+    global _cache_pattern
+    # result = re.sub('|'.join(map(re.escape, _INCORRECT_CHARACTER_MAPPING.keys())), lambda m: _INCORRECT_CHARACTER_MAPPING[m.group()], bpmf)
+    result = re.sub(_cache_pattern, replace_all, bpmf)
+    if result != bpmf:
+        print(f"[moe-fixed] {phrase} {bpmf} => {result}")
+    return result
 
 def parse2(input_path, output_path):
     filename = os.path.basename(input_path)
@@ -46,12 +63,23 @@ def parse2(input_path, output_path):
                 # _phrase = re.sub(pattern, "", phrase)
                 # pinyin = tp.get(_phrase, format = "strip", delimiter = "")
 
+                zhuyin = moe_fixes(row[1], phrase)
+
                 shortcuts = []
                 try:
-                    shortcuts = re.split(_ZHUYIN_PRONOUNCE_PATTERN, bpmf_remove_tones(row[1]))
+                    # remove accent
+                    shortcuts = re.split(_ZHUYIN_PRONOUNCE_PATTERN, bpmf_remove_tones(zhuyin))
+                    # split into array
                     shortcuts = [re.split(_SPACE_PATTERN, item.strip()) for item in shortcuts]
+                    # mapping
                     shortcuts = list_unique([bpmf_to_pinyin(item) for item in shortcuts])
-                except IndexError:
+                # except IndexError:
+                #     print(f"Index error: {e}")
+                #     shortcuts = []
+                except Exception as e:
+                    print(f"Error occurred: {e}")
+                    print(f"origin: {row}")
+                    print(f"zhuyin: {zhuyin}")
                     shortcuts = []
 
                 if not shortcuts:
