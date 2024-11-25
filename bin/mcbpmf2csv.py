@@ -11,7 +11,9 @@ import sys, os
 import csv
 # import sqlite3
 # import multiprocessing
-import pinyin as tp
+# import pinyin as tp
+from pypinyin import lazy_pinyin, Style
+from lib.util import list_flatten
 from tqdm import tqdm
 from lib.util import trim, chunks
 
@@ -43,7 +45,8 @@ def parse(input_path, output_path):
 
                 weight = (row[1:2] or ('0', ''))[0]
                 # pinyin = translate(phrase)
-                pinyin = tp.get(phrase, format = "strip", delimiter = "")
+                # pinyin = tp.get(phrase, format = "strip", delimiter = "")
+                pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
 
                 if pinyin == phrase:
                     pinyin = ''
