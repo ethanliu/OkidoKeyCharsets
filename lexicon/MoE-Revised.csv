@@ -439,7 +439,6 @@
 芭棚	0	bapeng
 芭芒	0	bamang
 芭蒂	0	badi
-芭拉	0	bala
 芭樂	0	bale
 芭樂票	0	balepiao
 芭蕾舞	0	baleiwu
@@ -8659,6 +8658,7 @@
 不悔	0	buhui
 不惠	0	buhui
 不會	0	buhui
+不會說話	0	buhuishuohua
 不慧	0	buhui
 不諱	0	buhui
 不諱之變	0	buhuizhibian
@@ -20246,6 +20246,7 @@
 母以子貴	0	muyizigui
 母夜叉	0	muyecha
 母音	0	muyin
+母語	0	muyu
 拇量	0	muliang
 拇指	0	muzhi
 拇趾	0	muzhi
@@ -29106,7 +29107,6 @@
 大嗓門	0	dasangmen
 大顙	0	dasang
 大蘇打	0	dasuda
-大俗賣	0	dasumai
 大索	0	dasuo
 大蒜	0	dasuan
 大蒜效應	0	dasuanxiaoying
@@ -29569,7 +29569,6 @@
 歹毒	0	daidu
 歹徒	0	daitu
 歹徒橫行	0	daituhengxing
-歹路	0	dailu
 歹路不可行	0	dailubukexing
 歹口	0	daikou
 歹話	0	daihua
@@ -29578,7 +29577,6 @@
 歹竹出好筍	0	daizhuchuhaosun
 歹事	0	daishi
 歹事頭	0	daishitou
-歹勢	0	daishi
 歹生活	0	daishenghuo
 歹人	0	dairen
 歹做出	0	daizuochu
@@ -44813,6 +44811,7 @@
 牛山下涕	0	niushanxiati
 牛山濯濯	0	niushanzhuozhuo
 牛肉	0	niurou
+牛肉秀	0	niurouxiu
 牛肉場	0	niurouchang
 牛人	0	niuren
 牛乳	0	niuru
@@ -53394,6 +53393,7 @@
 落紙如飛	0	luozhirufei
 落著臉	0	luozhelian
 落照	0	luozhao
+落翅仔	0	luochizi
 落差	0	luocha
 落鈔	0	luochao
 落潮	0	luochao
@@ -66791,7 +66791,6 @@
 黑白顛倒	0	heibaidiandao
 黑白電視	0	heibaidianshi
 黑白電視機	0	heibaidianshiji
-黑白來	0	heibailai
 黑白兩道	0	heibailiangdao
 黑白畫	0	heibaihua
 黑白混淆	0	heibaihunyao
@@ -87448,7 +87447,6 @@
 強諫	0	qiangjian
 強將手下無弱兵	0	qiangjiangshouxiawuruobing
 強勁	0	qiangjing
-強強滾	0	qiangqianggun
 強權	0	qiangquan
 強權政治	0	qiangquanzhengzhi
 強權外交	0	qiangquanwaijiao
@@ -89150,7 +89148,6 @@
 全球	0	quanqiu
 全球電話卡	0	quanqiudianhuaka
 全球定位系統衛星測量	0	quanqiudingweixitongweixingceliang
-全球環境變遷資訊系統	0	quanqiuhuanjingbianqianzixunxitong
 全勤	0	quanqin
 全球資訊服務網	0	quanqiuzixunfuwuwang
 全球資訊網	0	quanqiuzixunwang
@@ -105036,6 +105033,7 @@
 中國科學院	0	zhongguokexueyuan
 中國海	0	zhongguohai
 中國畫	0	zhongguohua
+中國話	0	zhongguohua
 中國結	0	zhongguojie
 中國之春	0	zhongguozhichun
 中國超新星	0	zhongguochaoxinxing
@@ -106646,10 +106644,8 @@
 查票	0	chapiao
 查票員	0	chapiaoyuan
 查明	0	chaming
-查某	0	chamou
 查訪	0	chafang
 查封	0	chafeng
-查甫	0	chafu
 查德	0	chade
 查德共和國	0	chadegongheguo
 查點	0	chadian
@@ -114951,7 +114947,6 @@
 手模	0	shoumo
 手忙腳亂	0	shoumangjiaoluan
 手面	0	shoumian
-手面賺吃	0	shoumianzhuanchi
 手民	0	shoumin
 手法	0	shoufa
 手風	0	shoufeng
@@ -117188,6 +117183,7 @@
 生發	0	shengfa
 生佛萬家	0	shengfowanjia
 生非作歹	0	shengfeizuodai
+生番	0	shengfan
 生分	0	shengfen
 生放	0	shengfang
 生父	0	shengfu
@@ -126975,7 +126971,6 @@
 嵯峨	0	cuoe
 鹺使	0	cuoshi
 鹺務	0	cuowu
-厝邊	0	cuobian
 厝火積薪	0	cuohuojixin
 厝基	0	cuoji
 厝薪於火	0	cuoxinyuhuo
@@ -128533,6 +128528,7 @@
 薩福主義	0	safuzhuyi
 薩丁尼亞島	0	sadingniyadao
 薩都剌	0	sadula
+薩克管	0	sakeguan
 薩克號	0	sakehao
 薩克斯風	0	sakesifeng
 薩迦派	0	sajiapai
@@ -131699,7 +131695,6 @@
 愛國主義	0	aiguozhuyi
 愛國如家	0	aiguorujia
 愛克斯光	0	aikesiguang
-愛睏	0	aikun
 愛河	0	aihe
 愛荷華州	0	aihehuazhou
 愛海	0	aihai
@@ -144495,7 +144490,6 @@
 歪打正著	0	waidazhengzhao
 歪談亂道	0	waitanluandao
 歪談亂講	0	waitanluanjiang
-歪哥	0	waige
 歪話	0	waihua
 歪七扭八	0	waiqiniuba
 歪曲	0	waiqu
@@ -146602,7 +146596,6 @@
 汪汪	0	wangwang
 汪元量	0	wangyuanliang
 尪羸	0	wanglei
-尪仔標	0	wangzibiao
 亡歿	0	wangmo
 亡命	0	wangming
 亡命之徒	0	wangmingzhitu
@@ -150214,3 +150207,5 @@
 繁華	0	fanhua
 月份	0	yuefen
 步步生蓮華	0	bubushenglianhua
+客語	0	keyu
+胡毋敬	0	huwujing
