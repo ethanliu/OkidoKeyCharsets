@@ -1,0 +1,6 @@
+[tools]
+python = "3.11"
+
+[env]
+PYTHONPATH = "{{ cwd }}"
+PROJECT_ROOT = "{{ cwd | basename }}"
