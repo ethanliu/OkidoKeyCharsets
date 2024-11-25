@@ -191,6 +191,7 @@
 白板	0	baiban
 白璧無瑕	0	baibiwuxia
 白皮書	0	baipishu
+白馬王子	0	baimawangzi
 白忙	0	baimang
 白茫茫	0	baimangmang
 白米	0	baimi
@@ -238,6 +239,7 @@
 白晝	0	baizhou
 白煮蛋	0	baizhudan
 白吃	0	baichi
+白痴	0	baichi
 白砂	0	baisha
 白紗	0	baisha
 白手起家	0	baishouqijia
@@ -1176,6 +1178,7 @@
 臂彎	0	biwan
 璧還	0	bihuan
 璧謝	0	bixie
+璧人	0	biren
 碧波	0	bibo
 碧波萬頃	0	bibowanqing
 碧落	0	biluo
@@ -1306,6 +1309,8 @@
 編印	0	bianyin
 鞭辟入裡	0	bianbiruli
 鞭炮	0	bianpao
+鞭打	0	bianda
+鞭笞	0	bianchi
 鞭長莫及	0	bianchangmoji
 鞭策	0	biance
 邊門	0	bianmen
@@ -1450,6 +1455,7 @@
 冰涼	0	bingliang
 冰塊	0	bingkuai
 冰河	0	binghe
+冰肌玉骨	0	bingjiyugu
 冰窖	0	bingjiao
 冰淇淋	0	bingqilin
 冰清玉潔	0	bingqingyujie
@@ -1552,6 +1558,7 @@
 捕撈	0	bulao
 捕獲	0	buhuo
 捕捉	0	buzhuo
+捕殺	0	busha
 捕手	0	bushou
 哺乳	0	buru
 哺乳動物	0	burudongwu
@@ -1561,6 +1568,7 @@
 補票	0	bupiao
 補品	0	bupin
 補發	0	bufa
+補丁	0	buding
 補貼	0	butie
 補課	0	buke
 補考	0	bukao
@@ -2077,6 +2085,7 @@
 潑猴	0	pohou
 潑水	0	poshui
 潑灑	0	posa
+婆婆媽媽	0	popomama
 婆婆	0	popo
 婆家	0	pojia
 婆媳	0	poxi
@@ -2147,6 +2156,7 @@
 拍掌	0	paizhang
 拍攝	0	paishe
 拍手	0	paishou
+拍手稱快	0	paishouchengkuai
 拍子	0	paizi
 拍案叫絕	0	paianjiaojue
 拍外景	0	paiwaijing
@@ -2237,6 +2247,7 @@
 陪侍	0	peishi
 陪審	0	peishen
 陪審團	0	peishentuan
+陪葬	0	peizang
 陪罪	0	peizui
 賠本	0	peiben
 賠不是	0	peibushi
@@ -2278,6 +2289,7 @@
 拋開	0	paokai
 拋棄	0	paoqi
 拋繡球	0	paoxiuqiu
+拋擲	0	paozhi
 拋磚引玉	0	paozhuanyinyu
 拋售	0	paoshou
 拋在腦後	0	paozainaohou
@@ -2416,6 +2428,7 @@
 膀胱	0	pangguang
 螃蟹	0	pangxie
 篣婦公	0	pangfugong
+篣楚	0	pangchu
 龐大	0	pangda
 龐克	0	pangke
 龐然	0	pangran
@@ -2653,6 +2666,7 @@
 片斷	0	pianduan
 片頭	0	piantou
 片刻	0	pianke
+片甲不留	0	pianjiabuliu
 片紙隻字	0	pianzhizhizi
 片場	0	pianchang
 片商	0	pianshang
@@ -2704,6 +2718,7 @@
 品目	0	pinmu
 品德	0	pinde
 品脫	0	pintuo
+品頭論足	0	pintoulunzu
 品類	0	pinlei
 品格	0	pinge
 品管	0	pinguan
@@ -3004,6 +3019,7 @@
 磨墨	0	momo
 磨滅	0	momie
 磨難	0	monan
+磨練	0	molian
 磨鍊	0	molian
 磨光	0	moguang
 磨成	0	mocheng
@@ -3018,6 +3034,7 @@
 魔頭	0	motou
 魔力	0	moli
 魔鬼	0	mogui
+魔掌	0	mozhang
 魔爪	0	mozhao
 魔手	0	moshou
 魔術	0	moshu
@@ -3103,6 +3120,7 @@
 墨守成規	0	moshouchenggui
 墨水	0	moshui
 墨魚	0	moyu
+默不作聲	0	mobuzuosheng
 默片	0	mopian
 默默	0	momo
 默默無聞	0	momowuwen
@@ -3298,6 +3316,7 @@
 魅力	0	meili
 魅影	0	meiying
 媚力	0	meili
+媚外	0	meiwai
 貓頭鷹	0	maotouying
 貓熊	0	maoxiong
 毛筆	0	maobi
@@ -3707,6 +3726,7 @@
 覓食	0	mishi
 滅門血案	0	miemenxiean
 滅頂	0	mieding
+滅口	0	miekou
 滅火器	0	miehuoqi
 滅跡	0	mieji
 滅絕	0	miejue
@@ -3830,6 +3850,7 @@
 面陳	0	mianchen
 面呈	0	miancheng
 面試	0	mianshi
+面紗	0	miansha
 面熟	0	mianshou
 面授機宜	0	mianshoujiyi
 面善	0	mianshan
@@ -4094,6 +4115,7 @@
 木板	0	muban
 木本	0	muben
 木本植物	0	mubenzhiwu
+木棒	0	mubang
 木片	0	mupian
 木麻黃	0	mumahuang
 木馬	0	muma
@@ -4450,6 +4472,7 @@
 肥壯	0	feizhuang
 肥碩	0	feishuo
 肥水不落外人田	0	feishuibuluowairentian
+肥肉	0	feirou
 肥皂	0	feizao
 肥沃	0	feiwo
 淝水	0	feishui
@@ -4571,6 +4594,7 @@
 藩籬	0	fanli
 藩鎮	0	fanzhen
 藩屬	0	fanshu
+樊籠	0	fanlong
 礬土	0	fantu
 礬石	0	fanshi
 繁茂	0	fanmao
@@ -4597,6 +4621,7 @@
 繁文縟節	0	fanwenrujie
 反駁	0	fanbo
 反敗為勝	0	fanbaiweisheng
+反綁	0	fanbang
 反比	0	fanbi
 反比例	0	fanbili
 反哺	0	fanbu
@@ -4694,10 +4719,13 @@
 泛舟	0	fanzhou
 販賣	0	fanmai
 販賣機	0	fanmaiji
+販夫走卒	0	fanfuzouzu
 販毒	0	fandu
 販售	0	fanshou
+販子	0	fanzi
 飯店	0	fandian
 飯廳	0	fanting
+飯桶	0	fantong
 飯來張口，茶來伸手	0	fanlaizhangkouchalaishenshou
 飯量	0	fanliang
 飯鍋	0	fanguo
@@ -5005,6 +5033,7 @@
 放空氣	0	fangkongqi
 放虎歸山	0	fanghuguishan
 放話	0	fanghua
+放火	0	fanghuo
 放懷	0	fanghuai
 放假	0	fangjia
 放棄	0	fangqi
@@ -5143,6 +5172,7 @@
 瘋狗	0	fenggou
 瘋狂	0	fengkuang
 瘋話	0	fenghua
+瘋子	0	fengzi
 峰巒	0	fengluan
 峰迴路轉	0	fenghuiluzhuan
 烽火	0	fenghuo
@@ -5233,9 +5263,11 @@
 敷衍塞責	0	fuyanseze
 膚淺	0	fuqian
 膚色	0	fuse
+扶梯	0	futi
 扶老攜幼	0	fulaoxiyou
 扶乩	0	fuji
 扶植	0	fuzhi
+扶正	0	fuzheng
 扶助	0	fuzhu
 扶持	0	fuchi
 扶手	0	fushou
@@ -5481,6 +5513,7 @@
 富有	0	fuyou
 富翁	0	fuweng
 富裕	0	fuyu
+婦道人家	0	fudaorenjia
 婦女	0	funu
 婦女運動	0	funuyundong
 婦科	0	fuke
@@ -5660,6 +5693,7 @@
 打擂臺	0	daleitai
 打撈	0	dalao
 打理	0	dali
+打獵	0	dalie
 打量	0	daliang
 打領帶	0	dalingdai
 打落水狗	0	daluoshuigou
@@ -8090,6 +8124,7 @@
 短片	0	duanpian
 短評	0	duanping
 短命	0	duanming
+短命鬼	0	duanminggui
 短髮	0	duanfa
 短打	0	duanda
 短漏	0	duanlou
@@ -9574,6 +9609,7 @@
 聽聞	0	tingwen
 廳堂	0	tingtang
 廳舍	0	tingshe
+廷杖	0	tingzhang
 廷試	0	tingshi
 庭訊	0	tingxun
 庭訓	0	tingxun
@@ -9626,6 +9662,7 @@
 聽其自然	0	tingqiziran
 聽任	0	tingren
 禿頂	0	tuding
+禿頭	0	tutou
 禿鷲	0	tujiu
 禿鷹	0	tuying
 凸透鏡	0	tutoujing
@@ -9637,6 +9674,7 @@
 突發奇想	0	tufaqixiang
 突飛猛進	0	tufeimengjin
 突地	0	tudi
+突擊	0	tuji
 突擊檢查	0	tujijiancha
 突襲	0	tuxi
 突顯	0	tuxian
@@ -9670,6 +9708,7 @@
 屠刀	0	tudao
 屠戶	0	tuhu
 屠場	0	tuchang
+屠城	0	tucheng
 屠宰	0	tuzai
 屠宰稅	0	tuzaishui
 屠蘇酒	0	tusujiu
@@ -9713,6 +9752,7 @@
 土風舞	0	tufengwu
 土豆	0	tudou
 土地	0	tudi
+土地婆	0	tudipo
 土地廟	0	tudimiao
 土地公	0	tudigong
 土地信託	0	tudixintuo
@@ -9805,6 +9845,7 @@
 拖船	0	tuochuan
 拖曳	0	tuoyi
 拖曳傘	0	tuoyisan
+拖油瓶	0	tuoyouping
 拖延	0	tuoyan
 拖網	0	tuowang
 脫班	0	tuoban
@@ -10000,6 +10041,7 @@
 團扇	0	tuanshan
 團員	0	tuanyuan
 團圓	0	tuanyuan
+吞併	0	tunbing
 吞沒	0	tunmo
 吞服	0	tunfu
 吞吐	0	tuntu
@@ -10064,6 +10106,7 @@
 通行費	0	tongxingfei
 通行證	0	tongxingzheng
 通行無阻	0	tongxingwuzu
+通性	0	tongxing
 通學	0	tongxue
 通訊	0	tongxun
 通訊錄	0	tongxunlu
@@ -10248,6 +10291,7 @@
 痛擊	0	tongji
 痛惜	0	tongxi
 痛心	0	tongxin
+痛心疾首	0	tongxinjishou
 痛斥	0	tongchi
 痛楚	0	tongchu
 痛處	0	tongchu
@@ -10467,6 +10511,8 @@
 男子漢	0	nanzihan
 男尊女卑	0	nanzunnubei
 男廁	0	nance
+男兒	0	naner
+南北	0	nanbei
 南北貨	0	nanbeihuo
 南半球	0	nanbanqiu
 南邊	0	nanbian
@@ -10640,6 +10686,7 @@
 逆風	0	nifeng
 逆來順受	0	nilaishunshou
 逆料	0	niliao
+逆流	0	niliu
 逆境	0	nijing
 逆向	0	nixiang
 逆向公車	0	nixianggongche
@@ -11129,6 +11176,7 @@
 肋間肌	0	lejianji
 勒令	0	leling
 勒戒	0	lejie
+勒贖	0	leshu
 勒索	0	lesuo
 垃圾	0	lese
 垃圾分類	0	lesefenlei
@@ -11206,6 +11254,8 @@
 賴債	0	laizhai
 賴帳	0	laizhang
 賴床	0	laichuang
+癩蝦蟆	0	laihama
+癩蝦蟆想吃天鵝肉	0	laihamaxiangchitianerou
 雷劈	0	leipi
 雷鳴	0	leiming
 雷達	0	leida
@@ -11342,6 +11392,7 @@
 老牌	0	laopai
 老朋友	0	laopengyou
 老媽	0	laoma
+老媽子	0	laomazi
 老馬識途	0	laomashitu
 老邁	0	laomai
 老毛病	0	laomaobing
@@ -13875,6 +13926,7 @@
 姑爺	0	guye
 呱呱	0	gugu
 呱呱墜地	0	guguzhuidi
+孤僻	0	gupi
 孤芳自賞	0	gufangzishang
 孤單	0	gudan
 孤獨	0	gudu
@@ -15006,6 +15058,7 @@
 磕牙	0	keya
 瞌睡	0	keshui
 咳嗽	0	kesou
+可悲	0	kebei
 可變性	0	kebianxing
 可怖	0	kebu
 可不是	0	kebushi
@@ -19151,6 +19204,7 @@
 建都	0	jiandu
 建立	0	jianli
 建構	0	jiangou
+建國	0	jianguo
 建功	0	jiangong
 建交	0	jianjiao
 建教合作	0	jianjiaohezuo
@@ -20646,6 +20700,7 @@
 敲邊鼓	0	qiaobiangu
 敲門	0	qiaomen
 敲門磚	0	qiaomenzhuan
+敲打	0	qiaoda
 敲定	0	qiaoding
 敲骨吸髓	0	qiaoguxisui
 敲開	0	qiaokai
@@ -22122,7 +22177,9 @@
 邪魔外道	0	xiemowaidao
 邪門	0	xiemen
 邪念	0	xienian
+邪教	0	xiejiao
 邪氣	0	xieqi
+邪說	0	xieshuo
 邪惡	0	xiee
 協辦	0	xieban
 協防	0	xiefang
@@ -23376,6 +23433,7 @@
 刑期	0	xingqi
 刑事	0	xingshi
 刑責	0	xingze
+刑案	0	xingan
 形貌	0	xingmao
 形單影隻	0	xingdanyingzhi
 形態	0	xingtai
@@ -24676,6 +24734,7 @@
 輾轉	0	zhanzhuan
 斬釘截鐵	0	zhandingjietie
 斬獲	0	zhanhuo
+斬首	0	zhanshou
 斬草除根	0	zhancaochugen
 嶄露頭角	0	zhanlutoujiao
 嶄新	0	zhanxin
@@ -29935,6 +29994,7 @@
 人工血液	0	rengongxieye
 人工智慧	0	rengongzhihui
 人工受孕	0	rengongshouyun
+人口	0	renkou
 人口密度	0	renkoumidu
 人和	0	renhe
 人海	0	renhai
@@ -31650,11 +31710,13 @@
 殘酷	0	canku
 殘骸	0	canhai
 殘害	0	canhai
+殘疾	0	canji
 殘局	0	canju
 殘缺	0	canque
 殘渣	0	canzha
 殘照	0	canzhao
 殘障	0	canzhang
+殘殺	0	cansha
 殘忍	0	canren
 殘存	0	cancun
 殘餘	0	canyu
@@ -35694,6 +35756,7 @@
 外部	0	waibu
 外埠	0	waibu
 外婆	0	waipo
+外貿	0	waimao
 外面	0	waimian
 外放	0	waifang
 外丹功	0	waidangong
@@ -35720,6 +35783,7 @@
 外行人	0	waihangren
 外貨	0	waihuo
 外匯	0	waihui
+外匯存底	0	waihuicundi
 外患	0	waihuan
 外籍	0	waiji
 外加	0	waijia
