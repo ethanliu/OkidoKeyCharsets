@@ -2,3 +2,4 @@ tqdm
 natsort
 scrapy
 pypinyin
+pypinyin_dict

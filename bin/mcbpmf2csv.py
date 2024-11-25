@@ -1,29 +1,24 @@
 #!/usr/bin/env python
 #
-# version: 0.0.1
 # autor: Ethan Liu
 #
-# convert McBopomofo BPMFMappings.txt to csv
+# convert McBopomofo phrase.occ to csv
 
 import argparse
-# import importlib
 import sys, os
 import csv
-# import sqlite3
-# import multiprocessing
-# import pinyin as tp
-from pypinyin import lazy_pinyin, Style
-from lib.util import list_flatten
 from tqdm import tqdm
 from lib.util import trim, chunks
+from lib.pinyin import PinyinQuery
 
-# uu = importlib.import_module("lib.util")
-
-# _dir_ = dir(__file__)
-# workers = 2 * multiprocessing.cpu_count()
-# print(f"num of workers: \(workers)")
+# def exam(phrase, pinyin):
+#     if phrase in exam_list:
+#         print(f"-> {phrase} {pinyin}")
 
 def parse(input_path, output_path):
+
+    qm = PinyinQuery()
+
     filename = os.path.basename(input_path)
     contents = ""
     delimiter = " "
@@ -46,13 +41,18 @@ def parse(input_path, output_path):
                 weight = (row[1:2] or ('0', ''))[0]
                 # pinyin = translate(phrase)
                 # pinyin = tp.get(phrase, format = "strip", delimiter = "")
-                pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+                # phrase_pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+                # phrase_pinyin = "".join(list_flatten(pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+                phrase_pinyin = qm.find(phrase)
 
-                if pinyin == phrase:
-                    pinyin = ''
+                if phrase_pinyin == phrase or phrase_pinyin == None:
+                    phrase_pinyin = ''
 
-                contents += f"{phrase}\t{weight}\t{pinyin}\n"
+                contents += f"{phrase}\t{weight}\t{phrase_pinyin}\n"
+                # for quick exam
+                # exam(phrase, phrase_pinyin)
 
+    qm.close()
     with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()

@@ -78,8 +78,9 @@ jyutping:
 	@$(BIN_DIR)/run.sh jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3.cin -t tone --header $(RAWDATA_DIR)/misc/jyut6ping3-header.cin
 	@$(BIN_DIR)/run.sh jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3-toneless.cin -t toneless --header $(RAWDATA_DIR)/misc/jyut6ping3-toneless-header.cin
 	@echo "Patching jyutping phrase..."
-	@$(BIN_DIR)/run.sh jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase
+	@$(BIN_DIR)/run.sh jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase --header $(LEXICON_DIR)/jyutping.csv.txt
 
 mcbpmf:
+	@echo "NOTE: moe must be ready before running this task"
 	@$(BIN_DIR)/run.sh mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source/Data/phrase.occ -o $(LEXICON_DIR)/mcbopomofo.csv
 

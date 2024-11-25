@@ -11,8 +11,8 @@ endef
 usage:
 	@echo $(SYNOPSIS)
 
-demo:
-	@$(BIN_DIR)/run.sh demo.py $(DIST_DIR)
+test:
+	@$(BIN_DIR)/run.sh test.py $(DIST_DIR)
 
 keyboard:
 	@$(BIN_DIR)/run.sh resource.py -c keyboard -o $(QUEUE_DIR)/KeyboardLayouts.json
@@ -37,7 +37,7 @@ dist:
 	@make -f makefiles/dist.mk build
 	@make -f makefiles/dev.mk sync
 
-dev:
+json:
 	@make -f makefiles/table.mk json
 	@make -f makefiles/lexicon.mk json
 	@make -f makefiles/dev.mk sync

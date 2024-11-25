@@ -9,13 +9,9 @@ import argparse
 import importlib
 import sys, os
 import csv
-# import sqlite3
-# import multiprocessing
 from tqdm import tqdm
-# import pinyin as tp
-from pypinyin import lazy_pinyin, Style
-from lib.util import list_flatten
 from lib.util import dir, exec, trim, chunks
+from lib.pinyin import PinyinQuery
 
 # uu = importlib.import_module("lib.util")
 
@@ -38,6 +34,8 @@ def parse(input_path, output_path):
     # _dir_ = dir(__file__)
     # pool = multiprocessing.Pool(workers)
 
+    qm = PinyinQuery()
+
     with open(input_path) as fp:
         reader = csv.reader(fp, delimiter = ' ')
         for chunk in chunks(reader, max = 0):
@@ -48,9 +46,10 @@ def parse(input_path, output_path):
 
                 # pinyin = translate(phrase)
                 # pinyin = tp.get(phrase, format = "strip", delimiter = "")
-                pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+                # pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+                pinyin = qm.find(phrase)
 
-                if pinyin == phrase or pinyin == '':
+                if pinyin == phrase or pinyin == '' or pinyin == None:
                     continue
                     # pinyin = ''
 
@@ -59,6 +58,7 @@ def parse(input_path, output_path):
         fp.close()
         # tqdm.write(contents)
 
+    qm.close()
     with open(output_path, 'w') as fp:
         fp.write(contents)
         fp.close()
