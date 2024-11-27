@@ -43,7 +43,7 @@ def phrase2csv(input_path, output_path, header_path):
                 # pinyin = trim(''.join(row[1:] or []))
                 phrase = trim(row[0] or '')
                 pinyin = trim(row[1] or '')
-                pinyin = re.sub('[0-9\\s]?', '', pinyin)
+                # pinyin = re.sub('[0-9\\s]?', '', pinyin)
 
                 weight = '0'
 
@@ -73,7 +73,7 @@ def phrase2csv(input_path, output_path, header_path):
         fp.write(contents)
         fp.close()
 
-    pirnt(f"Patching version: {version}")
+    print(f"Patching version: {version}")
     header_content = ''
     with open(header_path, 'r') as file:
         header_content = file.read()
@@ -135,7 +135,7 @@ def yaml2cin(input_path, output_path, header_path, toneless = False):
 
         fp.close()
 
-    pirnt(f"Patching version: {version}")
+    print(f"Patching version: {version}")
     with open(header_path, 'r') as fp:
         template = fp.read()
         template = template.replace('{{version}}', version)

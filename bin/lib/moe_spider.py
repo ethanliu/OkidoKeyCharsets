@@ -5,28 +5,23 @@
 # description...
 #
 
-import sys
-# import argparse
-# import json
 import os
-import glob
 from scrapy import Spider, Request
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 # from scrapy.item import Item, Field
 from urllib.parse import urlparse
 
-_REPO_URL = "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/respub/index.html"
-# _REPO_URL = "http://localhost/moe/index.html"
-
-_DOWNLOAD_DIR = ""
-
 class MoeSpider(Spider):
     name = 'moe'
-    start_urls = [_REPO_URL]
+    start_urls = ["https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/respub/index.html"]
+    # start_urls = ["http://localhost/tmp/moe/index.html"]
+    # base_url = ''
+    download_dir = ''
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, download_dir = None, *args, **kwargs):
         super(MoeSpider, self).__init__(*args, **kwargs)
+        self.download_dir = download_dir
 
     def parse(self, response):
         # Extract URLs from the index page
@@ -61,18 +56,15 @@ class MoeSpider(Spider):
     #     return url.endswith(('.pdf', '.doc', '.docx', '.txt'))
 
     def download_file(self, response):
-        global _DOWNLOAD_DIR
-        # self.download_folder = _DOWNLOAD_DIR
-
-        if not os.path.exists(_DOWNLOAD_DIR):
-            os.makedirs(_DOWNLOAD_DIR)
+        if not os.path.exists(self.download_dir):
+            os.makedirs(self.download_dir)
 
         file_url = response.url
         # source_url = response.meta['source_url']
 
         # Generate a filename from the URL
         file_name = os.path.basename(urlparse(file_url).path)
-        file_path = os.path.join(_DOWNLOAD_DIR, file_name)
+        file_path = os.path.join(self.download_dir, file_name)
 
         if os.path.exists(file_path):
             # self.logger.info(f"File exists: {file_path}")
@@ -88,7 +80,7 @@ class MoeSpider(Spider):
             self.logger.error(f"Failed to download {file_url}: {str(e)}")
             # print(f"Failed to download {file_url}: {str(e)}")
 
-def run_spider():
+def run_spider(download_dir):
     settings = get_project_settings()
     settings.update({
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -101,40 +93,6 @@ def run_spider():
     })
 
     process = CrawlerProcess(settings)
-    process.crawl(MoeSpider)
+    process.crawl(MoeSpider, download_dir = download_dir)
     process.start()
 
-def archive(prefix: str):
-    global _DOWNLOAD_DIR
-    paths = glob.glob(f"{_DOWNLOAD_DIR}/{prefix}_*")
-    sorted_paths = sorted(paths, key=os.path.getmtime)
-    sorted_paths.pop()
-    # print(sorted_paths)
-    result = False
-    if len(sorted_paths) > 1:
-        result = True
-    for path in sorted_paths:
-        # print(f"Delete {path}")
-        os.remove(path)
-    return result
-
-def main():
-    global _DOWNLOAD_DIR
-    _DOWNLOAD_DIR = sys.argv[1]
-
-    # run_spider()
-    archive("dict_concised")
-    archive("dict_idioms")
-    # archive("dict_mini")
-    archive("dict_revised")
-
-if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("Interrupt by user")
-        try:
-            sys.exit(0)
-        except SystemExit:
-            os._exit(0)
-    # except BaseException as err:

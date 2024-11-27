@@ -7,27 +7,27 @@
 
 import os, sys
 import sqlite3
-from lib.util import list_flatten, db_get_one
+from lib.util import list_flatten, db_get_one, dir, parent_dir
 from pypinyin import lazy_pinyin, Style
 
 # issue: not helping at all
 # from pypinyin_dict.phrase_pinyin_data import cc_cedict
 # cc_cedict.load()
 
-BASE_DIR = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir, os.path.pardir))
+BASE_DIR = parent_dir(__file__, 2)
 DIST_DIR = f"{BASE_DIR}/dist/queue"
 
 class PinyinQuery:
-    conn = None
-    def __init__(self, query: bool = True):
-        if query:
-            self.conn = sqlite3.connect(":memory:")
-            self.cursor = self.conn.cursor()
-            self.attach_databases()
+
+    valid_aliases = []
+
+    def __init__(self):
+        self.conn = sqlite3.connect(":memory:")
+        self.cursor = self.conn.cursor()
+        self.attach_databases()
 
     def close(self):
-        if self.conn:
-            self.conn.close()
+        self.conn.close()
 
     def attach_databases(self):
         if not self.cursor:
@@ -37,14 +37,51 @@ class PinyinQuery:
             "idioms": f"{DIST_DIR}/lexicon/moe-idioms.csv.db",
             "concised": f"{DIST_DIR}/lexicon/moe-concised.csv.db",
             "revised": f"{DIST_DIR}/lexicon/moe-revised.csv.db",
+            "tcedict": f"{DIST_DIR}/lexicon/cedict-hant.csv.db",
+            "scedict": f"{DIST_DIR}/lexicon/cedict-hans.csv.db",
         }
 
         for alias, path in paths.items():
-            if not os.path.exists(path):
-                SystemExit("File missing: {path}")
-            self.cursor.execute(f"ATTACH DATABASE '{path}' AS {alias}")
+            if os.path.exists(path):
+                self.cursor.execute(f"ATTACH DATABASE '{path}' AS {alias}")
+                self.valid_aliases.append(alias)
 
-    def find(self, phrase: str):
+    def find(self, locale, phrase):
+        db_alias = []
+        if locale == "hans":
+            db_alias = [
+                "scedict",
+            ]
+        else:
+            db_alias = [
+                "tcedict",
+                "tcedict",
+                "concised",
+                "idioms",
+                "revised",
+            ]
+
+        db_alias = [x for x in db_alias if x in self.valid_aliases]
+        result = self.find_in(db_alias, phrase)
+        if result:
+            return result
+
+        result = self.pinyin(phrase)
+        print(f" ~> [pinyin] {phrase} {result}")
+        return result
+
+    def find_in(self, db_alias, phrase):
+        for alias in db_alias:
+            query = f"SELECT pinyin FROM {alias}.lexicon WHERE phrase = :phrase LIMIT 1"
+            args = {'phrase': phrase}
+            result = db_get_one(self.cursor, query, args)
+            if result:
+                print(f" ~> [{alias}] {phrase} {result} ")
+                return result
+        return None
+
+
+    def ufind(self, phrase: str):
         if not self.cursor:
             return None
 
@@ -72,7 +109,10 @@ class PinyinQuery:
         return result or ""
 
     def pinyin(self, phrase: str):
-        result = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
+        # cedict 5 tones
+        result = " ".join(lazy_pinyin(phrase, strict=False, errors='default', style=Style.TONE3, neutral_tone_with_five=True))
+
+        # result = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='default', style=Style.NORMAL)))
         # pp1 = pinyin(phrase, heteronym=True, strict=False, style=Style.NORMAL)
         # pp2 = pinyin(phrase, heteronym=False, strict=False, style=Style.NORMAL)
         return result or ""
