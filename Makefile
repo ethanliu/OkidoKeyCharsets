@@ -12,20 +12,20 @@ usage:
 	@echo $(SYNOPSIS)
 
 test:
-	@$(BIN_DIR)/run.sh test.py $(DIST_DIR)
+	@$(MISE_RUN) test.py $(DIST_DIR)
 
 keyboard:
-	@$(BIN_DIR)/run.sh resource.py -c keyboard -o $(QUEUE_DIR)/KeyboardLayouts.json
+	@$(MISE_RUN) resource.py -c keyboard -o $(QUEUE_DIR)/KeyboardLayouts.json
 
 emoji:
-	@$(BIN_DIR)/run.sh emojidb.py --update -d $(RAWDATA_DIR)/emoji
-	@$(BIN_DIR)/run.sh emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(DIST_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py --update -d $(RAWDATA_DIR)/emoji
+	@$(MISE_RUN) emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(DIST_DIR)/emoji.db
 
 unihan:
-	@$(BIN_DIR)/run.sh unihan.py -o $(DIST_DIR)/Unihan.db
+	@$(MISE_RUN) unihan.py -o $(DIST_DIR)/Unihan.db
 
 char:
-	@$(BIN_DIR)/run.sh character.py -i $(LEXICON_DIR)/symbol.json $(DIST_DIR)/Character.db
+	@$(MISE_RUN) character.py -i $(LEXICON_DIR)/symbol.json $(DIST_DIR)/Character.db
 
 table:
 	@make -f makefiles/table.mk build
