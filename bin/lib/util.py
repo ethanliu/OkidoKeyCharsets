@@ -12,6 +12,7 @@ import subprocess
 import re
 import os
 import unicodedata
+import string
 # from tqdm import tqdm
 from itertools import islice
 
@@ -105,8 +106,9 @@ def whitespace(text):
     pattern1 = r"([\u4e00-\u9fa5\u3040-\u30FF])([a-z0-9@#&;=_\[\(])"
     pattern2 = r"([a-z0-9#!~&;=_\]\,\.\:\?\)])([\u4e00-\u9fa5\u3040-\u30FF])"
 
-    text = re.sub(pattern1, replacement, text, flags=re.UNICODE)
-    text = re.sub(pattern2, replacement, text, flags=re.UNICODE)
+    text = re.sub(pattern1, replacement, text, flags=re.UNICODE|re.IGNORECASE)
+    text = re.sub(pattern2, replacement, text, flags=re.UNICODE|re.IGNORECASE)
+    text = trim(text)
     return text
 
 def trim(str, needle = None, space = False):
@@ -123,11 +125,20 @@ def trim(str, needle = None, space = False):
         _str = re.sub(pattern2, "\\1 \\2", _str, 0,re.MULTILINE | re.IGNORECASE | re.UNICODE)
     return _str.strip()
 
-def strip_accents(str):
-    return ''.join(c for c in unicodedata.normalize('NFD', str) if unicodedata.category(c) != 'Mn')
+def strip_accents(text, numeric = False):
+    if numeric:
+        return text.translate(str.maketrans('', '', string.digits))
+    else:
+        return ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')
 
 def dir(path):
     return os.path.dirname(os.path.realpath(path))
+
+def parent_dir(file_path, level = 1):
+    dirs = [os.path.dirname(__file__)]
+    for i in range(level):
+        dirs.append(os.path.pardir)
+    return os.path.normpath(os.path.join(*dirs))
 
 def total_lines(path):
     total = 0
@@ -207,3 +218,16 @@ def list_flatten(xss):
 
 def list_unique(rows):
     return list(dict.fromkeys(filter(None, rows)))
+
+# clean code purpose
+
+def read_file(path):
+    with open(path, mode = 'r', encoding = 'utf-8') as fp:
+        content = fp.read()
+        return content
+
+def write_file(path, cntents, mode = 'w'):
+    with open(path, mode = mode, encoding = 'utf-8') as fp:
+        fp.write(contents)
+
+
