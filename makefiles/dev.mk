@@ -12,17 +12,17 @@ usage:
 	@echo $(SYNOPSIS)
 
 test:
-	@$(BIN_DIR)/run.sh test.py
+	@$(MISE_RUN) test.py
 
 test2holder:
-	@$(BIN_DIR)/run.sh cin2db.py -i table/array30.cin -o tmp/array30.cin.db -e array
+	@$(MISE_RUN) cin2db.py -i table/array30.cin -o tmp/array30.cin.db -e array
 	@#bin/unihan.py -o tmp/Unihan.db > tmp/tmp.txt
-	@$(BIN_DIR)/run.sh cin2db.py -i table/array30-OkidoKey-big.cin -o tmp/array30-OkidoKey-big.cin.db -e array
+	@$(MISE_RUN) cin2db.py -i table/array30-OkidoKey-big.cin -o tmp/array30-OkidoKey-big.cin.db -e array
 
 emoji-test:
 	@echo "Test new emoji..."
-	@$(BIN_DIR)/run.sh emojidb.py -test "停" -o $(DIST_DIR)/emoji.db
-	@$(BIN_DIR)/run.sh emojidb.py -test "鵝" -o $(DIST_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py -test "停" -o $(DIST_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py -test "鵝" -o $(DIST_DIR)/emoji.db
 
 sync:
 	@echo "Distribute resource files...\n"
@@ -72,42 +72,42 @@ define bossy_header
 endef
 
 bossy-cjk:
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/boshiamy_t.cin -m $(RAWDATA_DIR)/bossy/boshiamy_ct.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin > $(RAWDATA_DIR)/bossy/ext/bossy-cjk.cin
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/boshiamy_t.cin -m $(RAWDATA_DIR)/bossy/boshiamy_ct.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin > $(RAWDATA_DIR)/bossy/ext/bossy-cjk.cin
 	@$(call bossy_header, "cjk")
 	@mv $(RAWDATA_DIR)/bossy/ext/bossy-cjk.cin $(RAWDATA_DIR)/bossy/
 
 # depencency: bossycjk
 bossy-diff:
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b x1 x2 > "$(RAWDATA_DIR)/bossy/ext/bossy-ext.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b x1 x2 > "$(RAWDATA_DIR)/bossy/ext/bossy-ext.cin"
 	@$(call bossy_header, "ext")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b a > "$(RAWDATA_DIR)/bossy/ext/bossy-a.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b a > "$(RAWDATA_DIR)/bossy/ext/bossy-a.cin"
 	@$(call bossy_header, "a")
 
 bossy-diffxfull:
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b b > "$(RAWDATA_DIR)/bossy/ext/bossy-b.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b b > "$(RAWDATA_DIR)/bossy/ext/bossy-b.cin"
 	@$(call bossy_header, "b")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b c > "$(RAWDATA_DIR)/bossy/ext/bossy-c.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b c > "$(RAWDATA_DIR)/bossy/ext/bossy-c.cin"
 	@$(call bossy_header, "c")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b d > "$(RAWDATA_DIR)/bossy/ext/bossy-d.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b d > "$(RAWDATA_DIR)/bossy/ext/bossy-d.cin"
 	@$(call bossy_header, "d")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b e > "$(RAWDATA_DIR)/bossy/ext/bossy-e.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b e > "$(RAWDATA_DIR)/bossy/ext/bossy-e.cin"
 	@$(call bossy_header, "e")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b f > "$(RAWDATA_DIR)/bossy/ext/bossy-f.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b f > "$(RAWDATA_DIR)/bossy/ext/bossy-f.cin"
 	@$(call bossy_header, "f")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b g > "$(RAWDATA_DIR)/bossy/ext/bossy-g.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b g > "$(RAWDATA_DIR)/bossy/ext/bossy-g.cin"
 	@$(call bossy_header, "g")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b h > "$(RAWDATA_DIR)/bossy/ext/bossy-h.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b h > "$(RAWDATA_DIR)/bossy/ext/bossy-h.cin"
 	@$(call bossy_header, "h")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b i > "$(RAWDATA_DIR)/bossy/ext/bossy-i.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b i > "$(RAWDATA_DIR)/bossy/ext/bossy-i.cin"
 	@$(call bossy_header, "i")
-	@$(BIN_DIR)/run.sh cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b x > "$(RAWDATA_DIR)/bossy/ext/bossy-x.cin"
+	@$(MISE_RUN) cinkit.py $(RAWDATA_DIR)/bossy/bossy-cjk.cin -b x > "$(RAWDATA_DIR)/bossy/ext/bossy-x.cin"
 	@$(call bossy_header, "x")
 
 bossy:
-	@$(BIN_DIR)/run.sh cin2db.py -i $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin -o $(DIST_DIR)/bossy.cin.db -e bossy
+	@$(MISE_RUN) cin2db.py -i $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin -o $(DIST_DIR)/bossy.cin.db -e bossy
 	@echo "Generate CIN table..."
-	@$(BIN_DIR)/run.sh db2cin.py -i $(RAWDATA_DIR)/bossy/bossy.cin.db -o $(DIST_DIR)/bossy.cin --header $(RAWDATA_DIR)/bossy/bossy-header.cin
+	@$(MISE_RUN) db2cin.py -i $(RAWDATA_DIR)/bossy/bossy.cin.db -o $(DIST_DIR)/bossy.cin --header $(RAWDATA_DIR)/bossy/bossy-header.cin
 
 # bossydiff:
-# 	@$(BIN_DIR)/run.sh xxcin.py -m diff -s a -i ${TABLE_DIR}/array30.cin -x $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_c.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin -o tmp/diff.txt
+# 	@$(MISE_RUN) xxcin.py -m diff -s a -i ${TABLE_DIR}/array30.cin -x $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_c.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin -o tmp/diff.txt
 

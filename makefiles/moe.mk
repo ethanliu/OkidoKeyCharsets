@@ -18,8 +18,9 @@ usage:
 update: idioms revised concised-csv
 
 pull:
-	@echo "🤝 MoE resources"
-	@$(BIN_DIR)/run.sh moe-spider.py $(RAWDATA_DIR)/moe/src
+	@echo "🤝 Checking version..."
+	@$(MISE_RUN) moe2csv.py -d -o $(RAWDATA_DIR)/moe/src
+# @$(MISE_RUN) moe-spider.py $(RAWDATA_DIR)/moe/src
 
 revised:
 	@$(eval version = $(notdir $(wildcard $(RAWDATA_DIR)/moe/dict_revised_*.xlsx)))
@@ -28,7 +29,7 @@ revised:
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' $(LEXICON_DIR)/moe-revised.csv.txt
 	@in2csv $(RAWDATA_DIR)/moe/dict_revised_${version}.xlsx > $(TMP_DIR)/tmp1.csv
 	@csvcut -c 字詞名,注音一式 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
-	@$(BIN_DIR)/run.sh moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-revised.csv
+	@$(MISE_RUN) moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-revised.csv
 	@-rm $(TMP_DIR)/tmp1.csv
 	@-rm $(TMP_DIR)/tmp2.csv
 
@@ -42,7 +43,7 @@ idioms:
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' $(LEXICON_DIR)/moe-idioms.csv.txt
 	@in2csv $(RAWDATA_DIR)/moe/dict_idioms_${version}.xls > $(TMP_DIR)/tmp1.csv
 	@csvcut -c 成語,注音 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
-	@$(BIN_DIR)/run.sh moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-idioms.csv
+	@$(MISE_RUN) moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-idioms.csv
 	@-rm $(TMP_DIR)/tmp1.csv
 	@-rm $(TMP_DIR)/tmp2.csv
 
@@ -53,7 +54,7 @@ concised-xls:
 	@sed -i '' -e 's/編號 .* 版本/編號 ${version} 版本/g' $(LEXICON_DIR)/moe-concised.csv.txt
 	@in2csv $(RAWDATA_DIR)/moe/dict_concised_${version}.xlsx > $(TMP_DIR)/tmp1.csv
 	@csvcut -c 字詞名,注音一式 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
-	@$(BIN_DIR)/run.sh moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-concised.csv
+	@$(MISE_RUN) moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-concised.csv
 	@-rm $(TMP_DIR)/tmp1.csv
 	@-rm $(TMP_DIR)/tmp2.csv
 
@@ -65,7 +66,7 @@ concised-csv:
 	@cp $(RAWDATA_DIR)/moe/dict_concised_${version}.csv $(TMP_DIR)/tmp1.csv
 # @csvcut --no-header-row --skip-lines 6 --columns a $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
 	@csvcut -c 字詞名,注音一式 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
-	@$(BIN_DIR)/run.sh moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-concised.csv
+	@$(MISE_RUN) moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-concised.csv
 	@-rm $(TMP_DIR)/tmp1.csv
 	@-rm $(TMP_DIR)/tmp2.csv
 

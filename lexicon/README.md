@@ -1,25 +1,32 @@
 # Lexicon
 
-字詞 CSV 檔案不含欄位名稱，分為字詞、比重及拼音(不含空白)三欄，應以 Tab 區分。  
+詞庫將不同來源的詞庫匯整為純文字格式，以 Tab 分隔依序為字詞、詞頻及拼音，三個欄位。
 
-    氓	0	mang
-    氓	0	meng
-    盲從	0	mangcong
-    盲人摸象	0	mangrenmoxiang
-    盲人	0	mangren
-    盲腸	0	mangchang
-    盲腸炎	0	mangchangyan
-    盲點	0	mangdian
-    盲目	0	mangmu
-    盲胞	0	mangbao
-    芒刺在背	0	mangcizaibei
-    一丁不識	0	yidingbushi
-    一丘之貉	0	yiqiuzhihao
-    一了百了	0	yilebaile
+詞庫若無特別說明，皆使用以下規則：
 
-比重為數值，數值越大優先權越高。    
-拼音並不限於漢語拼音，但仍應為連續不含空白及調號的英文為主。  
-若來源無資訊可供轉換拼音時，則另以 CFStringTransform 產生無調號漢語拼音，但此方式無法兼顧多音字詞，所以並不能保證全部正確。  
-若無另行標識時，其內容為繁體中文字詞  
+- 詞頻為數值，數字越大表示使用率越高，但數值的計算單位及計算方式，依不同詞庫來源而定，無統一標準。
+- 拼音採用 5 音階漢語拼音，即分別一 1234 表示一、二、三、四聲，及 5 表示輕聲。每個單字拼音以空格分隔。
+- 若原始來源詞庫包含拼音或注音時，將以原始資料進轉換，不包含拼音或注音時，則對照 cedict 及教育部字庫拼音資料，皆缺乏時則採用其他方式轉換。
+- 拼音欄位不限於只能存放拼音，依詞庫所屬目的不同，也可能會是其他文字或輸入法拆碼。
+- 一詞多音時，將會包含多筆字詞。
 
-所有字詞各別的說明及其授權方式，請參閱同檔名的 .txt 文件。  
+詞庫各別的說明及其授權方式，請參閱同檔名的 .txt 文件。
+
+#### 詞庫範例
+
+```
+一心一意	0	yi1 xin1 yi1 yi4
+一心一意	0	yi4 xin1 yi2 yi4
+韋編三絕	0	wei2 bian1 san1 jue2
+一了百了	0	yi1 liao3 bai3 liao3
+一了百了	0	yi4 liao3 bai3 liao3
+天馬行空	0	tian1 ma3 xing2 kong1  
+烏煙瘴氣	0	wu1 yan1 zhang4 qi4  
+參差不齊	0	cen1 ci1 bu4 qi2  
+噬臍莫及	0	shi4 qi2 mo4 ji2  
+賠了夫人又折兵	0	pei2 None5 fu1 ren2 you4 zhe2 bing1  
+天誅地滅	0	tian1 zhu1 di4 mie4  
+天羅地網	0	tian1 luo2 di4 wang3  
+龍蟠虎踞	0	long2 pan2 hu3 ju4  
+切膚之痛	0	qie4 fu1 zhi1 tong4  
+```
