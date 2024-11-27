@@ -7,7 +7,12 @@
 
 import re
 
-_BPMF_TONES = r"[ˇˊˋ˙]+"
+_BPMF_TONES = {
+    "ˊ": "2",
+    "ˇ": "3",
+    "ˋ": "4",
+    "˙": "5",
+}
 
 _BPMF_TABLE = {
     "ㄅ": "b", "ㄅㄚ": "ba", "ㄅㄛ": "bo", "ㄅㄞ": "bai", "ㄅㄟ": "bei", "ㄅㄠ": "bao", "ㄅㄢ": "ban", "ㄅㄣ": "ben", "ㄅㄤ": "bang", "ㄅㄥ": "beng", "ㄅㄧ": "bi", "ㄅㄧㄝ": "bie", "ㄅㄧㄠ": "biao", "ㄅㄧㄢ": "bian", "ㄅㄧㄣ": "bin", "ㄅㄧㄥ": "bing", "ㄅㄨ": "bu",
@@ -55,7 +60,14 @@ _BPMF_TABLE = {
 # since in bpmf, tones only appear in the first or the last position
 # repace with " " si much safe then ""
 def bpmf_remove_tones(bpmf, replacement = " "):
-    return re.sub(_BPMF_TONES, replacement, bpmf)
+    pattern = r"[ˇˊˋ˙]+"
+    return re.sub(pattern, replacement, bpmf)
+
+def bpmf_split_tones(text):
+    parts = re.split('([ˇˊˋ˙])', text)
+    if parts and parts[-1] == '':
+        return parts[:-1]
+    return parts
 
 def bpmf_fix_er(text):
     result = []
@@ -65,23 +77,28 @@ def bpmf_fix_er(text):
     # print(result)
     return result
 
-def bpmf_to_pinyin(bpmf = []):
-    result = []
-    for cc in bpmf:
-        cc = cc.strip()
-        if not cc:
-            continue
-        pp = _BPMF_TABLE.get(cc)
-        if pp:
-            result.append(pp)
-        else:
-            fixes = bpmf_fix_er(cc)
-            if fixes:
-                partial = bpmf_to_pinyin(fixes)
-                result.append(partial)
-            else:
-                # sys.exit(f"{cc} from {bpmf} not found => {fixes}")
-                # raise SystemExit(f"[bpmf_to_pinyin] {cc} from {bpmf} not found")
-                raise Exception(f"\"{cc}\" not found")
-    # print(bpmf, result)
-    return "".join(result)
+def bpmf_to_pinyin(text: str):
+    parts = bpmf_split_tones(text)
+    pinyin = _BPMF_TABLE.get(parts[0] or '')
+    tone = _BPMF_TONES.get(parts[1] if len(parts) > 1 else '') or '1'
+    return f"{pinyin}{tone}"
+
+    # result = []
+    # for cc in bpmf:
+    #     cc = cc.strip()
+    #     if not cc:
+    #         continue
+    #     pp = _BPMF_TABLE.get(cc)
+    #     if pp:
+    #         result.append(pp)
+    #     else:
+    #         fixes = bpmf_fix_er(cc)
+    #         if fixes:
+    #             partial = bpmf_to_pinyin(fixes)
+    #             result.append(partial)
+    #         else:
+    #             # sys.exit(f"{cc} from {bpmf} not found => {fixes}")
+    #             # raise SystemExit(f"[bpmf_to_pinyin] {cc} from {bpmf} not found")
+    #             raise Exception(f"\"{cc}\" not found")
+    # # print(bpmf, result)
+    # return "".join(result)

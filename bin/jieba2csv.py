@@ -10,7 +10,7 @@ import importlib
 import sys, os
 import csv
 from tqdm import tqdm
-from lib.util import dir, exec, trim, chunks
+from lib.util import dir, exec, trim, chunks, whitespace
 from lib.pinyin import PinyinQuery
 
 # uu = importlib.import_module("lib.util")
@@ -40,14 +40,9 @@ def parse(input_path, output_path):
         reader = csv.reader(fp, delimiter = ' ')
         for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
-                phrase = trim(row[0] or '')
+                phrase = whitespace(row[0] or '')
                 weight = row[1] or 0
-                pinyin = ''
-
-                # pinyin = translate(phrase)
-                # pinyin = tp.get(phrase, format = "strip", delimiter = "")
-                # pinyin = "".join(list_flatten(lazy_pinyin(phrase, strict=False, errors='ignore', style=Style.NORMAL)))
-                pinyin = qm.find(phrase)
+                pinyin = qm.find("hans", phrase)
 
                 if pinyin == phrase or pinyin == '' or pinyin == None:
                     continue
