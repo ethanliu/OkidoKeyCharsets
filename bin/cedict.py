@@ -10,7 +10,7 @@ import sys
 import re
 import argparse
 from tqdm import tqdm
-from lib.util import dir, chunks, trim, strip_accents, write_file
+from lib.util import dir, chunks, trim, strip_accents, write_file, whitespace
 from lib.cedict_spider import run_spider
 
 # BASE_DIR = dir(__file__ + "/../")
@@ -28,8 +28,14 @@ def parse(path):
                 items = [trim(x) for x in re.split(pattern, row) if x]
                 hant = whitespace(items[0])
                 hans = whitespace(items[1])
-                # TODO: middle dot ・, hyphen, comma
-                pinyin = items[2]
+                # TODO: middle dot , hyphen, comma
+                pinyin = (items[2] or '').lower()
+                # hyphen
+                pinyin = pinyin.replace(" - ", " ")
+                # comma
+                pinyin = pinyin.replace(" , ", ", ")
+                # middle dot?
+                # pinyin = pinyin.replace("・", " ")
                 # pinyin2 = strip_accents(pinyin, True)
                 glosses = [trim(x) for x in re.split(r';', items[3]) if x]
                 # print(f"=> {row}")

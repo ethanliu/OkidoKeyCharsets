@@ -15,7 +15,7 @@ collaborative effort, with users providing entries and corrections to the main f
 
 ### 關於本詞庫 (簡)
 
-本詞庫基於 2020_20240926 釋出版本。
+本詞庫來源版本：2020_20240926
 
 取簡體中文字詞及拼音資料。
-
+保留以 xx5 表示一些無法標示音標的字詞。

@@ -9,6 +9,7 @@ https://github.com/openvanilla/McBopomofo
 
 ### 關於本詞庫
 
-本詞庫來源為小麥注音輸入法 2.8.1 版本。
+本詞庫來源版本：2.8.1
+
 取其 phrase.occ 及對照表 BPMFMappings.txt 中的注音符號，將注音轉換為漢語拼音。
 

@@ -42,3 +42,14 @@ json:
 	@make -f makefiles/lexicon.mk json
 	@make -f makefiles/dev.mk sync
 
+pull:
+	@make -f makefiles/upstream.mk pull
+	@echo "pull cedict"
+	@make -f makefiles/cedict.mk pull
+	@echo "pull moe"
+	@make -f makefiles/moe.mk pull
+
+update:
+	@make -f makefiles/cedict.mk update
+	@make -f makefiles/moe.mk update
+	@make -f makefiles/upstream.mk update

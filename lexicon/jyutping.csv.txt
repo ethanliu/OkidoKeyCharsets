@@ -13,5 +13,7 @@ https://github.com/rime/rime-cantonese
 
 ### 關於本詞庫
 
-本詞庫使用 Rime 粵語拼音方案 jyut6ping3.words.dict.yaml 版本 2023.06.01。
+本詞庫來源版本：2023.06.01
+
+本詞庫使用 Rime 粵語拼音方案 jyut6ping3.words.dict.yaml 檔案。
 依原詞頻規則轉換為泛用型數值詞頻。

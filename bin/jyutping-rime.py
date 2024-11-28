@@ -77,7 +77,7 @@ def phrase2csv(input_path, output_path, header_path):
     header_content = ''
     with open(header_path, 'r') as file:
         header_content = file.read()
-    header_content = re.sub(r'版本 (.*)。', f"版本 {version}。", header_content)
+    header_content = re.sub(r'本詞庫來源版本：(.*)\n', f"本詞庫來源版本：{version}\n", header_content)
     # print(header_content)
     with open(header_path, 'w') as file:
         file.write(header_content)
