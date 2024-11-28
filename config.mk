@@ -15,4 +15,5 @@ DIST_GITHUB_DIR := $(DIST_DIR)/github
 # DIST_TABLE_DIR := ${DIST_QUEUE_DIR}/table
 # DIST_LEXICON_DIR := ${DIST_QUEUE_DIR}/lexicon
 
+REPO_DIR := $(CURDIR)/../repo-dist
 SRC_DIR := $(CURDIR)/../src/baker/baker/Supporting\ Files/
