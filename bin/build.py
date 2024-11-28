@@ -14,7 +14,10 @@ from natsort import os_sorted
 #import subprocess
 #import importlib
 
-from lib.util import prompt, run
+from lib.util import prompt, run, parent_dir
+
+BASE_DIR = parent_dir(__file__, 1)
+RUN = f"{BASE_DIR}/bin/run.sh"
 
 def main():
     parser = argparse.ArgumentParser(description='builder')
@@ -42,9 +45,9 @@ def main():
 
 def _lexicon_db(input_dir: str, output_dir: str):
     if not os.path.exists(input_dir):
-        print(f"[404]: {input_dir}")
+        sys.exit(f"[404]: {input_dir}")
     if not os.path.exists(output_dir):
-        print(f"[404]: {output_dir}")
+        sys.exit(f"[404]: {output_dir}")
 
     delete_old_file = prompt("Delete old file before build?", False)
     for path in os_sorted(list(pathlib.Path(input_dir).glob("*.csv"))):
@@ -63,15 +66,15 @@ def _lexicon_db(input_dir: str, output_dir: str):
         if filename.startswith('_'):
             continue
 
-        cmd = f"bin/lexicon2db.py -i {path} -o {output_path}"
+        cmd = f"{RUN} lexicon2db.py -i {path} -o {output_path}"
         # print(f"-> cmd: {cmd}")
         run(cmd)
 
 def _table_db(input_dir: str, output_dir: str):
     if not os.path.exists(input_dir):
-        print(f"[404]: {input_dir}")
+        sys.exit(f"[404]: {input_dir}")
     if not os.path.exists(output_dir):
-        print(f"[404]: {output_dir}")
+        sys.exit(f"[404]: {output_dir}")
 
     excludes = [
 		"array-shortcode.cin",
@@ -136,7 +139,7 @@ def _table_db(input_dir: str, output_dir: str):
             continue
 
         # print(f"-> {filename}")
-        cmd = f"bin/cin2db.py -i {path} -o {output_path}"
+        cmd = f"{RUN} cin2db.py -i {path} -o {output_path}"
         if filename.startswith("array30"):
             cmd = f"{cmd} -e array"
         # print(f"-> cmd: {cmd}")

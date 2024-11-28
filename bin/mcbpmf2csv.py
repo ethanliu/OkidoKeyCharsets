@@ -9,9 +9,8 @@ import sys, os
 import csv
 import re
 from tqdm import tqdm
-from lib.util import trim, chunks
 from lib.pinyin import PinyinQuery
-from lib.util import chunks, list_flatten, list_unique
+from lib.util import chunks, list_flatten, list_unique, trim, chunks, whitespace
 from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
 
 # def exam(phrase, pinyin):
@@ -74,7 +73,7 @@ def parse(input_path, output_path):
         reader = csv.reader(fp, delimiter = delimiter)
         for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
-                phrase = trim(row[0] or '')
+                phrase = whitespace(row[0] or '')
                 if not phrase:
                     continue
 
@@ -115,7 +114,7 @@ def updateVersion(input_path):
         contents = ''
         with open(path, 'r') as file:
             contents = file.read()
-        contents = re.sub(r'小麥注音輸入法 (.*) 版本', f"小麥注音輸入法 {version} 版本", contents)
+        contents = re.sub(r'本詞庫來源版本：(.*)\n', f"本詞庫來源版本：{version}\n", contents)
         # print(contents)
         with open(path, 'w') as file:
             file.write(contents)
