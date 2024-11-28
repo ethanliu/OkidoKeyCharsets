@@ -24,9 +24,9 @@ init:
 
 build: init table lexicon
 	@echo "Update dest: github"
-	@cp -aR $(DIST_GITHUB_DIR)/* ../repo-dist/github
+	@cp -aR $(DIST_GITHUB_DIR)/* $(REPO_DIR)/github
 	@echo "Update dest: gitee"
-	@cp -aR $(DIST_GITEE_DIR)/* ../repo-dist/gitee
+	@cp -aR $(DIST_GITEE_DIR)/* $(REPO_DIR)/gitee
 
 table:
 	@$(eval src := $(DIST_QUEUE_DIR)/table)
