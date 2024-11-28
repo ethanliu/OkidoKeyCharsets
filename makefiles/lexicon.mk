@@ -15,7 +15,7 @@ init:
 	@echo "Build lexicon"
 	@mkdir -p $(DIST_QUEUE_DIR)/lexicon
 
-build: init array jieba jyutping mcbpmf moe
+build: init cedict moe array jieba jyutping mcbpmf
 
 json:
 	@$(MISE_RUN) resource.py -c lexicon -o $(DIST_QUEUE_DIR)/Lexicon.json

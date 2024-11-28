@@ -134,8 +134,8 @@ def strip_accents(text, numeric = False):
 def dir(path):
     return os.path.dirname(os.path.realpath(path))
 
-def parent_dir(file_path, level = 1):
-    dirs = [os.path.dirname(__file__)]
+def parent_dir(path, level = 1):
+    dirs = [os.path.dirname(path)]
     for i in range(level):
         dirs.append(os.path.pardir)
     return os.path.normpath(os.path.join(*dirs))
@@ -226,7 +226,7 @@ def read_file(path):
         content = fp.read()
         return content
 
-def write_file(path, cntents, mode = 'w'):
+def write_file(path, contents, mode = 'w'):
     with open(path, mode = mode, encoding = 'utf-8') as fp:
         fp.write(contents)
 
