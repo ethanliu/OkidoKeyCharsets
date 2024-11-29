@@ -1,4 +1,4 @@
-.PHONY: usage clear
+.PHONY: usage clear build
 include config.mk
 
 define SYNOPSIS
@@ -12,11 +12,11 @@ usage:
 	@echo $(SYNOPSIS)
 
 build:
-	@mkdir -p $(DIST_QUEUE_DIR)/table
-	@$(MISE_RUN) build.py -c table -t db -i $(TABLE_DIR) -o $(DIST_QUEUE_DIR)/table
+	@mkdir -p $(BUILD_QUEUE_DIR)/table
+	@$(MISE_RUN) build.py -c table -t db -i $(TABLE_DIR) -o $(BUILD_QUEUE_DIR)/table
 
 json:
-	@$(MISE_RUN) resource.py -c table -o $(DIST_QUEUE_DIR)/DataTables.json
+	@$(MISE_RUN) resource.py -c table -o $(BUILD_QUEUE_DIR)/DataTables.json
 
 
 

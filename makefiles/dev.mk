@@ -21,17 +21,17 @@ test2holder:
 
 emoji-test:
 	@echo "Test new emoji..."
-	@$(MISE_RUN) emojidb.py -test "停" -o $(DIST_DIR)/emoji.db
-	@$(MISE_RUN) emojidb.py -test "鵝" -o $(DIST_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py -test "停" -o $(BUILD_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py -test "鵝" -o $(BUILD_DIR)/emoji.db
 
 sync:
 	@echo "Distribute resource files...\n"
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
-		if [[ -f "$(DIST_QUEUE_DIR)/$${file}" ]]; then \
+		if [[ -f "$(BUILD_QUEUE_DIR)/$${file}" ]]; then \
 			echo "[v] $${file}" ; \
-			cp $(DIST_QUEUE_DIR)/$${file} $(DIST_GITHUB_DIR)/$${file} ; \
-			cp $(DIST_QUEUE_DIR)/$${file} $(DIST_GITEE_DIR)/$${file} ; \
-			cp $(DIST_QUEUE_DIR)/$${file} $(SRC_DIR)/$${file} ; \
+			cp $(BUILD_QUEUE_DIR)/$${file} $(BUILD_GITHUB_DIR)/$${file} ; \
+			cp $(BUILD_QUEUE_DIR)/$${file} $(BUILD_GITEE_DIR)/$${file} ; \
+			cp $(BUILD_QUEUE_DIR)/$${file} $(SRC_DIR)/$${file} ; \
 		else \
 			echo "[404] $${file}" ; \
 		fi ; \
@@ -40,8 +40,8 @@ sync:
 	@for file in KeyMapping.json ; do \
 		if [[ -f "./$${file}" ]]; then \
 			echo "[v] $${file}" ; \
-			cp $${file} $(DIST_GITHUB_DIR)/$${file} ; \
-			cp $${file} $(DIST_GITEE_DIR)/$${file} ; \
+			cp $${file} $(BUILD_GITHUB_DIR)/$${file} ; \
+			cp $${file} $(BUILD_GITEE_DIR)/$${file} ; \
 			cp $${file} $(SRC_DIR)/$${file} ; \
 		else \
 			echo "[404] $${file}" ; \
@@ -49,9 +49,9 @@ sync:
 	done;
 
 	@for file in emoji.db Character.db Unihan.db ; do \
-		if [[ -f "$(DIST_DIR)/$${file}" ]]; then \
+		if [[ -f "$(BUILD_DIR)/$${file}" ]]; then \
 			echo "[v] $${file}" ; \
-			cp $(DIST_DIR)/$${file} $(SRC_DIR)/$${file} ; \
+			cp $(BUILD_DIR)/$${file} $(SRC_DIR)/$${file} ; \
 		else \
 			echo "[404] $${file}" ; \
 		fi ; \
@@ -104,9 +104,9 @@ bossy-diffxfull:
 	@$(call bossy_header, "x")
 
 bossy:
-	@$(MISE_RUN) cin2db.py -i $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin -o $(DIST_DIR)/bossy.cin.db -e bossy
+	@$(MISE_RUN) cin2db.py -i $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin $(RAWDATA_DIR)/bossy/hangulromaja.cin -o $(BUILD_DIR)/bossy.cin.db -e bossy
 	@echo "Generate CIN table..."
-	@$(MISE_RUN) db2cin.py -i $(RAWDATA_DIR)/bossy/bossy.cin.db -o $(DIST_DIR)/bossy.cin --header $(RAWDATA_DIR)/bossy/bossy-header.cin
+	@$(MISE_RUN) db2cin.py -i $(RAWDATA_DIR)/bossy/bossy.cin.db -o $(BUILD_DIR)/bossy.cin --header $(RAWDATA_DIR)/bossy/bossy-header.cin
 
 # bossydiff:
 # 	@$(MISE_RUN) xxcin.py -m diff -s a -i ${TABLE_DIR}/array30.cin -x $(RAWDATA_DIR)/bossy/boshiamy_t.cin $(RAWDATA_DIR)/bossy/boshiamy_c.cin $(RAWDATA_DIR)/bossy/boshiamy_j.cin -o tmp/diff.txt
