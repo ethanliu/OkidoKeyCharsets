@@ -1,4 +1,4 @@
-.PHONY: usage clear
+.PHONY: usage clear build
 include config.mk
 
 # the syntax of sed in this Makefile is specified for macOS

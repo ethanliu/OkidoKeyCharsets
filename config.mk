@@ -3,17 +3,14 @@ MISE_RUN := $(CURDIR)/bin/run.sh
 BIN_DIR := $(CURDIR)/bin
 TMP_DIR = $(CURDIR)/tmp
 
+BUILD_DIR := $(CURDIR)/build
 DIST_DIR := $(CURDIR)/dist
 LEXICON_DIR := $(CURDIR)/lexicon
 RAWDATA_DIR := $(CURDIR)/rawdata
 TABLE_DIR := $(CURDIR)/table
 
-DIST_QUEUE_DIR := $(DIST_DIR)/queue
-DIST_GITEE_DIR := $(DIST_DIR)/gitee
-DIST_GITHUB_DIR := $(DIST_DIR)/github
+BUILD_QUEUE_DIR := $(BUILD_DIR)/queue
+BUILD_GITEE_DIR := $(BUILD_DIR)/gitee
+BUILD_GITHUB_DIR := $(BUILD_DIR)/github
 
-# DIST_TABLE_DIR := ${DIST_QUEUE_DIR}/table
-# DIST_LEXICON_DIR := ${DIST_QUEUE_DIR}/lexicon
-
-REPO_DIR := $(CURDIR)/../repo-dist
 SRC_DIR := $(CURDIR)/../src/baker/baker/Supporting\ Files/

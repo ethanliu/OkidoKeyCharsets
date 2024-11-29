@@ -1,4 +1,4 @@
-.PHONY: usage clear table lexicon dist
+.PHONY: usage clear table lexicon dist build
 include config.mk
 
 define SYNOPSIS
@@ -13,25 +13,25 @@ usage:
 
 clear:
 	@echo "Remove dist files..."
-	@-rm -fr $(DIST_GITHUB_DIR)/*
-	@-rm -fr $(DIST_GITEE_DIR)/*
+	@-rm -fr $(BUILD_GITHUB_DIR)/*
+	@-rm -fr $(BUILD_GITEE_DIR)/*
 
 init:
-	@mkdir -p $(DIST_GITHUB_DIR)/table
-	@mkdir -p $(DIST_GITHUB_DIR)/lexicon
-	@mkdir -p $(DIST_GITEE_DIR)/table
-	@mkdir -p $(DIST_GITEE_DIR)/lexicon
+	@mkdir -p $(BUILD_GITHUB_DIR)/table
+	@mkdir -p $(BUILD_GITHUB_DIR)/lexicon
+	@mkdir -p $(BUILD_GITEE_DIR)/table
+	@mkdir -p $(BUILD_GITEE_DIR)/lexicon
 
 build: init table lexicon
-	@echo "Update dest: github"
-	@cp -aR $(DIST_GITHUB_DIR)/* $(REPO_DIR)/github
-	@echo "Update dest: gitee"
-	@cp -aR $(DIST_GITEE_DIR)/* $(REPO_DIR)/gitee
+	@echo "Update dist repo: github"
+	@cp -aR $(BUILD_GITHUB_DIR)/* $(DIST_DIR)/github
+	@echo "Update dist repo: gitee"
+	@cp -aR $(BUILD_GITEE_DIR)/* $(DIST_DIR)/gitee
 
 table:
-	@$(eval src := $(DIST_QUEUE_DIR)/table)
-	@$(eval dst1 := $(DIST_GITHUB_DIR)/table)
-	@$(eval dst2 := $(DIST_GITEE_DIR)/table)
+	@$(eval src := $(BUILD_QUEUE_DIR)/table)
+	@$(eval dst1 := $(BUILD_GITHUB_DIR)/table)
+	@$(eval dst2 := $(BUILD_GITEE_DIR)/table)
 	$(eval list := $(notdir $(wildcard ${src}/*.db)))
 	@for filename in ${list}; do \
 		echo "💔 $${filename}" ; \
@@ -46,9 +46,9 @@ table:
 	@make -f makefiles/table.mk json
 
 lexicon:
-	@$(eval src := $(DIST_QUEUE_DIR)/lexicon)
-	@$(eval dst1 := $(DIST_GITHUB_DIR)/lexicon)
-	@$(eval dst2 := $(DIST_GITEE_DIR)/lexicon)
+	@$(eval src := $(BUILD_QUEUE_DIR)/lexicon)
+	@$(eval dst1 := $(BUILD_GITHUB_DIR)/lexicon)
+	@$(eval dst2 := $(BUILD_GITEE_DIR)/lexicon)
 	$(eval list := $(notdir $(wildcard ${src}/*.db)))
 	@for filename in ${list}; do \
 		echo $${filename} ; \
