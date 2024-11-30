@@ -14,19 +14,12 @@ import sqlite3, json
 # from tqdm import tqdm
 from datetime import datetime
 from lib.cintable import CinTable
-from lib.util import trim, dir, trim, color
+from lib.util import trim, parent_dir, trim, color
 
 # uu = importlib.import_module("lib.util")
-cwd = dir(__file__ + "/../")
+base_dir = parent_dir(__file__, 1)
+build_dir = f"{base_dir}/build"
 repos = ["github", "gitee"]
-
-# distPath = dir(__file__ + "/../../") + "/repo-dist"
-# distPath = f"{cwd}/dist"
-
-# repos = {
-#     "github": f"{distPath}/github",
-#     "gitee": f"{distPath}/gitee"
-# }
 
 # def splitFile(src, dst, size = 1024):
 #     # path1 = f"{cwd}/db/{filename}"
@@ -53,7 +46,7 @@ def create_json_file(path, content):
 
 def create_keyboard(output_path):
     # outputPath = f"{cwd}/KeyboardLayouts.json"
-    charset_path = f"{cwd}/charset"
+    charset_path = f"{base_dir}/charset"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -149,8 +142,8 @@ def create_keyboard(output_path):
 
 def create_table(outputPath):
     target = "table"
-    src_path = f"{cwd}/{target}"
-    db_path = f"{cwd}/dist/queue/{target}"
+    src_path = f"{base_dir}/{target}"
+    db_path = f"{base_dir}/build/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -207,7 +200,7 @@ def create_table(outputPath):
             jsondata['splits'][dbFilename] = {}
 
         for repo in repos:
-            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{dbFilename}*")
+            list = glob.glob(f"{build_dir}/{repo}/{target}/{dbFilename}*")
             # print(f"{filename}: {len(list)}")
             if not repo in jsondata['splits'][dbFilename]:
                 jsondata['splits'][dbFilename][repo] = len(list)
@@ -216,8 +209,8 @@ def create_table(outputPath):
 
 def create_lexicon(outputPath):
     target = "lexicon"
-    src_path = f"{cwd}/{target}"
-    db_path = f"{cwd}/dist/queue/{target}"
+    src_path = f"{base_dir}/{target}"
+    db_path = f"{base_dir}/build/queue/{target}"
 
     jsondata = {
         'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
@@ -273,7 +266,7 @@ def create_lexicon(outputPath):
             jsondata['splits'][db_filename] = {}
 
         for repo in repos:
-            list = glob.glob(f"{cwd}/dist/{repo}/{target}/{db_filename}*")
+            list = glob.glob(f"{build_dir}/{repo}/{target}/{db_filename}*")
             # print(f"{filename}: {len(list)}")
             if not repo in jsondata['splits'][db_filename]:
                 jsondata['splits'][db_filename][repo] = len(list)

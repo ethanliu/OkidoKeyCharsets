@@ -14,8 +14,8 @@ from pypinyin import lazy_pinyin, Style
 # from pypinyin_dict.phrase_pinyin_data import cc_cedict
 # cc_cedict.load()
 
-BASE_DIR = parent_dir(__file__, 2)
-DIST_DIR = f"{BASE_DIR}/dist/queue"
+base_dir = parent_dir(__file__, 2)
+build_dir = f"{base_dir}/build/queue"
 
 class PinyinQuery:
 
@@ -34,11 +34,11 @@ class PinyinQuery:
             return
 
         paths = {
-            "idioms": f"{DIST_DIR}/lexicon/moe-idioms.csv.db",
-            "concised": f"{DIST_DIR}/lexicon/moe-concised.csv.db",
-            "revised": f"{DIST_DIR}/lexicon/moe-revised.csv.db",
-            "tcedict": f"{DIST_DIR}/lexicon/cedict-hant.csv.db",
-            "scedict": f"{DIST_DIR}/lexicon/cedict-hans.csv.db",
+            "idioms": f"{build_dir}/lexicon/moe-idioms.csv.db",
+            "concised": f"{build_dir}/lexicon/moe-concised.csv.db",
+            "revised": f"{build_dir}/lexicon/moe-revised.csv.db",
+            "tcedict": f"{build_dir}/lexicon/cedict-hant.csv.db",
+            "scedict": f"{build_dir}/lexicon/cedict-hans.csv.db",
         }
 
         for alias, path in paths.items():
