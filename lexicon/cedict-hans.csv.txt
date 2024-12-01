@@ -1,4 +1,4 @@
-# CC-CEDICT (hans)
+# CC-CEDICT (簡)
 
 CC-CEDICT - CC 4.0
 https://www.mdbg.net/chinese/dictionary?page=cc-cedict
@@ -13,7 +13,7 @@ For the most part, the project is modeled on Jim Breen's highly
 successful EDICT (Japanese-English dictionary) project and is intended to be a
 collaborative effort, with users providing entries and corrections to the main file.
 
-### 關於本詞庫 (簡)
+### 關於本詞庫
 
 本詞庫來源版本：2020_20240926
 
