@@ -61,6 +61,10 @@ lexicon:
 dist:
 	@make -f makefiles/dist.mk build
 	@make -f makefiles/dev.mk sync
+	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitee
+	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
+	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitee
+	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/github
 	@make clear
 
 json:
