@@ -29,8 +29,6 @@ sync:
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
 		if [[ -f "$(BUILD_QUEUE_DIR)/$${file}" ]]; then \
 			echo "[v] $${file}" ; \
-			cp $(BUILD_QUEUE_DIR)/$${file} $(BUILD_GITHUB_DIR)/$${file} ; \
-			cp $(BUILD_QUEUE_DIR)/$${file} $(BUILD_GITEE_DIR)/$${file} ; \
 			cp $(BUILD_QUEUE_DIR)/$${file} $(SRC_DIR)/$${file} ; \
 		else \
 			echo "[404] $${file}" ; \
@@ -40,8 +38,6 @@ sync:
 	@for file in KeyMapping.json ; do \
 		if [[ -f "./$${file}" ]]; then \
 			echo "[v] $${file}" ; \
-			cp $${file} $(BUILD_GITHUB_DIR)/$${file} ; \
-			cp $${file} $(BUILD_GITEE_DIR)/$${file} ; \
 			cp $${file} $(SRC_DIR)/$${file} ; \
 		else \
 			echo "[404] $${file}" ; \
