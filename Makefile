@@ -55,26 +55,12 @@ lexicon:
 	@make -f makefiles/lexicon.mk build
 
 dist:
-	@mkdir -p build/gitee/table
-	@mkdir -p build/gitee/lexicon
-	@mkdir -p $(DIST_DIR)/gitee
-
-	@mkdir -p build/github/table
-	@mkdir -p build/github/lexicon
-	@mkdir -p $(DIST_DIR)/github
-
 	@make -f makefiles/dist.mk build
 	@make -f makefiles/dev.mk sync
-
-	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitee
-	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitee
-
 	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
 	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/github
-
-	@-rm -fr build/gitee
-	@-rm -fr build/github
-
+	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitlab
+	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitlab
 
 json:
 	@make -f makefiles/table.mk json
