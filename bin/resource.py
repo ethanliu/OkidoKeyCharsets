@@ -19,7 +19,7 @@ from lib.util import trim, parent_dir, trim, color
 # uu = importlib.import_module("lib.util")
 base_dir = parent_dir(__file__, 1)
 build_dir = f"{base_dir}/build"
-repos = ["github", "gitee"]
+repos = ["github", "gitlab"]
 
 # def splitFile(src, dst, size = 1024):
 #     # path1 = f"{cwd}/db/{filename}"
