@@ -11,53 +11,46 @@ endef
 usage:
 	@echo $(SYNOPSIS)
 
-clear:
-	@echo "Remove dist files..."
-	@-rm -fr $(BUILD_GITHUB_DIR)/*
-	@-rm -fr $(BUILD_GITEE_DIR)/*
-
-init:
-	@mkdir -p $(BUILD_GITHUB_DIR)/table
-	@mkdir -p $(BUILD_GITHUB_DIR)/lexicon
-	@mkdir -p $(BUILD_GITEE_DIR)/table
-	@mkdir -p $(BUILD_GITEE_DIR)/lexicon
-
-build: init table lexicon
-	@echo "Update dist repo: github"
-	@cp -aR $(BUILD_GITHUB_DIR)/* $(DIST_DIR)/github
-	@echo "Update dist repo: gitee"
-	@cp -aR $(BUILD_GITEE_DIR)/* $(DIST_DIR)/gitee
+build: table lexicon
+	@echo "Push..."
+	@cp -aR $(BUILD_DIR)/github/* $(DIST_DIR)/github
+	@rm -fr $(BUILD_DIR)/github
+	@cp -aR $(BUILD_DIR)/gitlab/* $(DIST_DIR)/gitlab
+	@rm -fr $(BUILD_DIR)/gitlab
 
 table:
-	@$(eval src := $(BUILD_QUEUE_DIR)/table)
-	@$(eval dst1 := $(BUILD_GITHUB_DIR)/table)
-	@$(eval dst2 := $(BUILD_GITEE_DIR)/table)
-	$(eval list := $(notdir $(wildcard ${src}/*.db)))
-	@for filename in ${list}; do \
-		echo "💔 $${filename}" ; \
-		cp ${src}/$${filename} ${dst1} ; \
-		cp ${src}/$${filename} ${dst2} ; \
-		bin/LoveMachine -s --2048 ${dst1}/$${filename} ;\
-		bin/LoveMachine -s --1024 ${dst2}/$${filename} ;\
-		rm ${dst1}/$${filename} ; \
-		rm ${dst2}/$${filename} ; \
-	done;
-	@echo "Update resouce file"
+	$(call build_table,github,2048)
+	$(call build_table,gitlab,2048)
 	@make -f makefiles/table.mk json
 
 lexicon:
-	@$(eval src := $(BUILD_QUEUE_DIR)/lexicon)
-	@$(eval dst1 := $(BUILD_GITHUB_DIR)/lexicon)
-	@$(eval dst2 := $(BUILD_GITEE_DIR)/lexicon)
-	$(eval list := $(notdir $(wildcard ${src}/*.db)))
-	@for filename in ${list}; do \
-		echo $${filename} ; \
-		cp ${src}/$${filename} ${dst1} ; \
-		cp ${src}/$${filename} ${dst2} ; \
-		bin/LoveMachine -s --2048 ${dst1}/$${filename} ;\
-		bin/LoveMachine -s --1024 ${dst2}/$${filename} ;\
-		rm ${dst1}/$${filename} ; \
-		rm ${dst2}/$${filename} ; \
-	done;
-	@echo "Update resouce file"
+	$(call build_lexicon,github,2048)
+	$(call build_lexicon,gitlab,2048)
 	@make -f makefiles/lexicon.mk json
+
+
+define build_table
+	$(eval name := $(1))
+	$(eval size := $(2))
+	$(eval list := $(notdir $(wildcard $(BUILD_QUEUE_DIR)/table/*.db)))
+	@mkdir -p $(BUILD_DIR)/$(name)/table
+	@for filename in ${list}; do \
+		echo "💔 $${filename}" ; \
+		cp $(BUILD_QUEUE_DIR)/table/$${filename} $(BUILD_DIR)/$(name)/table ; \
+		$(BIN_DIR)/LoveMachine -s --$(size) $(BUILD_DIR)/$(name)/table/$${filename} ;\
+		rm $(BUILD_DIR)/$(name)/table/$${filename} ; \
+	done;
+endef
+
+define build_lexicon
+	$(eval name := $(1))
+	$(eval size := $(2))
+	$(eval list := $(notdir $(wildcard $(BUILD_QUEUE_DIR)/lexicon/*.db)))
+	@mkdir -p $(BUILD_DIR)/$(name)/lexicon
+	@for filename in ${list}; do \
+		echo "💔 $${filename}" ; \
+		cp $(BUILD_QUEUE_DIR)/lexicon/$${filename} $(BUILD_DIR)/$(name)/lexicon ; \
+		$(BIN_DIR)/LoveMachine -s --$(size) $(BUILD_DIR)/$(name)/lexicon/$${filename} ;\
+		rm $(BUILD_DIR)/$(name)/lexicon/$${filename} ; \
+	done;
+endef
