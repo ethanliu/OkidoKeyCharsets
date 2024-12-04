@@ -11,7 +11,7 @@ import csv
 import re
 import sqlite3
 from tqdm import tqdm
-from lib.util import chunks, strip_accents
+from lib.util import chunks, strip_accents, db_get_all
 
 kPatternPhrase = r"_x([0-9A-F]{4})_"
 
@@ -32,7 +32,8 @@ def perform_import(cursor, input_path):
                 weight = row[1] or 0
                 pinyin = strip_accents(row[2] or '').replace('，', '').strip()
 
-                if not phrase or len(phrase) < 2:
+                # if not phrase or len(phrase) < 2:
+                if not phrase:
                     # tqdm.write(f"too short: {phrase}")
                     continue
 
@@ -54,17 +55,12 @@ def perform_import(cursor, input_path):
 
 def main():
     arg_reader = argparse.ArgumentParser(description='Convert lexicon csv to sqlite db file')
-    arg_reader.add_argument('-i', '--input', type = str, required = True, help='The lexicon csv file path')
-    arg_reader.add_argument('-o', '--output', type = str, required = True, help='The sqlite file path')
-    # argParser.add_argument('--readme', type = str, help='The readme file path')
+    arg_reader.add_argument('-i', '--input', type=str, required=True, help='The lexicon csv file path')
+    arg_reader.add_argument('-o', '--output', type=str, required=True, help='The sqlite file path')
 
     args = arg_reader.parse_args()
     # print(args, len(sys.argv))
     # sys.exit(0)
-
-    if not args.input or not os.path.exists(args.input):
-        print(f"Input file missing or not found: {args.input}")
-        sys.exit(0)
 
     if not args.output:
         print(f"Output file path missing")
@@ -74,6 +70,9 @@ def main():
         # print(f"Remove existing file: {args.output}")
         os.remove(args.output)
 
+    if not args.input or not os.path.exists(args.input):
+        print(f"Input file missing or not found: {args.input}")
+        sys.exit(0)
 
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
@@ -88,15 +87,13 @@ def main():
     cursor.execute("CREATE INDEX IF NOT EXISTS `pinyin_index` ON `lexicon` (pinyin, category_id, weight)")
 
     db.commit()
+    db.close()
+
 
     # if args.readme:
     #     if not os.path.exists(args.readme):
     #         print(f"File not found: {args.readme}")
     #         sys.exit(0)
-
-    db.close()
-
-    sys.exit(0)
 
 if __name__ == "__main__":
     try:

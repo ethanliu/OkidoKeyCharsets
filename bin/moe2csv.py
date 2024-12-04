@@ -116,7 +116,7 @@ def archive(dir: str, prefix: str):
 
 def main():
     arg_reader = argparse.ArgumentParser(description='Convert to lexicon-CSV-format from the original excel/csv format')
-    # argParser.add_argument('-c', '--category', choices=['concised', 'idoms', 'revised'], help='Lexicon category')
+    # arg_reader.add_argument('-c', '--category', choices=['concised', 'idoms', 'revised'], help='Lexicon category')
     arg_reader.add_argument('-i', '--input', help='Original csv file path')
     arg_reader.add_argument('-o', '--output', default='', help='Lexicon format csv file path')
     arg_reader.add_argument('-d', '--download', action=argparse.BooleanOptionalAction, help='download')

@@ -25,49 +25,48 @@ from lib.unihan import Classified, UnihanChar
 
 basedir = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
+# def import_weight_legacy(cursor):
+#     path = f"{basedir}/rawdata/McBopomofo/Source/Data/phrase.occ"
+#     if not os.path.exists(path):
+#         sys.exit(f"File not found: {path}")
 
-def import_weight(cursor):
-    path = f"{basedir}/rawdata/McBopomofo/Source/Data/phrase.occ"
-    if not os.path.exists(path):
-        sys.exit(f"File not found: {path}")
+#     contents = []
+#     delimiter = " "
+#     # filename = os.path.basename(path)
 
-    contents = []
-    delimiter = " "
-    # filename = os.path.basename(path)
+#     with open(path) as fp:
+#         first_line = fp.readline()
+#         fp.seek(0)
 
-    with open(path) as fp:
-        first_line = fp.readline()
-        fp.seek(0)
+#         if "\t" in first_line:
+#             delimiter = "\t"
+#         reader = csv.reader(fp, delimiter = delimiter)
+#         for chunk in chunks(reader, max = 0):
+#             for row in tqdm(chunk, desc = f"Lexicon[Weight]", unit = 'MB', unit_scale = True, ascii = True):
+#                 if not row or not len(row) == 2:
+#                     continue
+#                 radical = trim(row[0])
+#                 weight = int(row[1])
+#                 if len(radical) > 1 or weight < 1:
+#                     continue
+#                 contents.append([radical, weight])
+#         fp.close()
 
-        if "\t" in first_line:
-            delimiter = "\t"
-        reader = csv.reader(fp, delimiter = delimiter)
-        for chunk in chunks(reader, max = 0):
-            for row in tqdm(chunk, desc = f"Lexicon[Weight]", unit = 'MB', unit_scale = True, ascii = True):
-                if not row or not len(row) == 2:
-                    continue
-                radical = trim(row[0])
-                weight = int(row[1])
-                if len(radical) > 1 or weight < 1:
-                    continue
-                contents.append([radical, weight])
-        fp.close()
+#     query1 = f"SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
+#     query2 = f"INSERT INTO `radical` (`radical`, `weight`, `score`, `classified`) VALUES (:radical, :weight, :score, :classified)"
+#     query3 = f"UPDATE `radical` SET `weight` = :weight WHERE rowid = :id"
 
-    query1 = f"SELECT `rowid` FROM `radical` WHERE `radical` = :radical LIMIT 1"
-    query2 = f"INSERT INTO `radical` (`radical`, `weight`, `score`, `classified`) VALUES (:radical, :weight, :score, :classified)"
-    query3 = f"UPDATE `radical` SET `weight` = :weight WHERE rowid = :id"
-
-    cursor.execute("BEGIN TRANSACTION")
-    for item in contents:
-        rowid = db_get_one(cursor, query1, {"radical": item[0]})
-        if not rowid:
-            # ???: classified zero?
-            # cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
-            # tqdm.write(f"Add new radical: {item[0]}")
-            pass
-        else:
-            cursor.execute(query3, {"id": rowid, "weight": item[1]})
-    cursor.execute("COMMIT TRANSACTION")
+#     cursor.execute("BEGIN TRANSACTION")
+#     for item in contents:
+#         rowid = db_get_one(cursor, query1, {"radical": item[0]})
+#         if not rowid:
+#             # ???: classified zero?
+#             # cursor.execute(query2, {"radical": item[0], "weight": item[1], "score": 1, "classified": Classified.Unclassified})
+#             # tqdm.write(f"Add new radical: {item[0]}")
+#             pass
+#         else:
+#             cursor.execute(query3, {"id": rowid, "weight": item[1]})
+#     cursor.execute("COMMIT TRANSACTION")
 
 def import_classified(cursor):
     path = f"{basedir}/rawdata/Unihan/tca.csv"
@@ -284,12 +283,14 @@ def main():
     arg_reader = argparse.ArgumentParser(description='Unihan Utility')
     # argParser.add_argument('-i', '--input', help='base dir of the repo')
     arg_reader.add_argument('-o', '--output', default='', help='output db path')
+    # arg_reader.add_argument('-sd', '--megadict', help='super dict path')
+    arg_reader.add_argument('--dryrun', default=False, action=argparse.BooleanOptionalAction, help='super dict path')
     args = arg_reader.parse_args()
 
     prefer_tonwen = False
-    dryrun = False
+    # dryrun = False
 
-    if not dryrun:
+    if not args.dryrun:
         create_database(args.output)
 
     db = sqlite3.connect(args.output)
@@ -300,8 +301,8 @@ def main():
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
 
-    if dryrun:
-        test(cursor)
+    if args.dryrun:
+        # test(cursor)
         sys.exit(0)
 
     import_unihan(cursor, "radical")
@@ -312,7 +313,9 @@ def main():
         import_unihan(cursor, "t2s")
         import_unihan(cursor, "s2t")
     # ## importClassified(cursor)
-    import_weight(cursor)
+
+    # if args.megadict:
+    #     import_weight(cursor, args.megadict)
     # test(cursor)
 
     # classfied, score not very useful at this moment

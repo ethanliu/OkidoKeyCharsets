@@ -1,6 +1,6 @@
 # CC-CEDICT (簡)
 
-CC-CEDICT - CC 4.0
+CC-CEDICT - CC 3.0
 https://www.mdbg.net/chinese/dictionary?page=cc-cedict
 
 ### 關於 CC-CEDICT

@@ -18,26 +18,22 @@ init:
 	@echo "initial env"
 	@mkdir -p build/queue/table
 	@mkdir -p build/queue/lexicon
-	@mkdir -p build/gitee/table
-	@mkdir -p build/gitee/lexicon
-	@mkdir -p build/github/table
-	@mkdir -p build/github/lexicon
-	@mkdir -p dist/gitee
-	@mkdir -p dist/github
+	@mkdir -p dist
 
-clear:
-	@echo "Clean up build folder..."
-	@-rm build/gitee/table/*
-	@-rm build/gitee/lexicon/*
-	@-rm build/github/table/*
-	@-rm build/github/lexicon/*
 
 clear-all: clear
 	@-rm build/queue/table/*
 	@-rm build/queue/lexicon/*
 
-all: table lexicon emoji unihan char keyboard json dist
-	@echo "Buill everything"
+all: table lexicon emoji unihan char keyboard
+	@echo "Build dependency..."
+	@make -f makefiles/mega.mk build
+
+	@echo "Patching..."
+	@make -f makefiles/mega.mk unihan
+	@make -f makefiles/mega.mk lexicon
+
+	@make dist
 
 keyboard:
 	@$(MISE_RUN) resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
@@ -59,13 +55,26 @@ lexicon:
 	@make -f makefiles/lexicon.mk build
 
 dist:
+	@mkdir -p build/gitee/table
+	@mkdir -p build/gitee/lexicon
+	@mkdir -p $(DIST_DIR)/gitee
+
+	@mkdir -p build/github/table
+	@mkdir -p build/github/lexicon
+	@mkdir -p $(DIST_DIR)/github
+
 	@make -f makefiles/dist.mk build
 	@make -f makefiles/dev.mk sync
+
 	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitee
-	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
 	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitee
+
+	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
 	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/github
-	@make clear
+
+	@-rm -fr build/gitee
+	@-rm -fr build/github
+
 
 json:
 	@make -f makefiles/table.mk json
