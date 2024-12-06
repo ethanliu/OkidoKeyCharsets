@@ -2,7 +2,7 @@
 #
 # autor: Ethan Liu
 #
-# mega lexicon
+# general purpos utilties for lexicon
 
 import argparse
 # import importlib
@@ -41,6 +41,11 @@ def build(inputs, output):
         for item in data:
             # print(item)
             super_cursor.execute(query1, {'phrase': item[0], 'weight': item[1], 'source_id': source_id})
+
+        # remove single character phrase from lexcion
+        _cursor.execute("DELETE FROM lexicon WHERE length(phrase) = 1")
+        _db.commit()
+        _cursor.execute("VACUUM")
         _db.close()
 
     superdb.commit()
