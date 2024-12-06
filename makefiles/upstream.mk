@@ -86,7 +86,6 @@ jyutping:
 	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase --header $(LEXICON_DIR)/jyutping.csv.txt
 
 mcbpmf:
-	@echo "NOTE: moe must be ready before running this task"
 # @$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source/Data/phrase.occ -o $(LEXICON_DIR)/mcbopomofo.csv
 	@$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source -o $(LEXICON_DIR)/mcbopomofo.csv
 
