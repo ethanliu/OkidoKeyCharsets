@@ -19,7 +19,41 @@ from lib.bpmf import bpmf_remove_tones, bpmf_to_pinyin
 
 mapping = {}
 
-def prepareMapping(input_path):
+def prepare_base_mapping(input_path):
+    global mapping
+    path = f"{input_path}/Data/BPMFBase.txt"
+
+    _mapping = {}
+    filename = os.path.basename(path)
+    delimiter = " "
+
+    with open(path) as fp:
+        first_line = fp.readline()
+        fp.seek(0)
+
+        if "\t" in first_line:
+            delimiter = "\t"
+
+        reader = csv.reader(fp, delimiter = delimiter)
+        for chunk in chunks(reader, max = 0):
+            for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
+                phrase = trim(row[0] or '')
+                # bpmf = " ".join(row[1])
+                pinyin = trim(row[2])
+                tone = pinyin[-1]
+                if not tone in "12345":
+                    pinyin = f"{pinyin}1"
+
+                if not phrase or not pinyin:
+                    tmqd.write(f"[mcbpmf] mismatch {phrase} {pinyin}")
+                    continue
+
+                # simply overwrite since it will be removed later
+                _mapping[phrase] = pinyin
+
+    mapping = mapping | _mapping
+
+def prepare_mapping(input_path):
     global mapping
     path = f"{input_path}/Data/BPMFMappings.txt"
 
@@ -52,7 +86,7 @@ def prepareMapping(input_path):
                 # print(f"{phrase} => {bpmf} {pinyin}")
                 _mapping[phrase] = pinyin
 
-    mapping = _mapping
+    mapping = mapping | _mapping
 
 
 def parse(input_path, output_path):
@@ -95,7 +129,7 @@ def parse(input_path, output_path):
         fp.write(contents)
         fp.close()
 
-def updateVersion(input_path):
+def update_version(input_path):
     # version...
     path = f"{input_path}/McBopomofo-Info.plist"
     contents = ''
@@ -130,9 +164,10 @@ def main():
     if not os.path.exists(args.input):
         sys.exit(f"File not found: {args.input}")
 
-    prepareMapping(args.input)
+    prepare_base_mapping(args.input)
+    prepare_mapping(args.input)
     parse(args.input, args.output)
-    updateVersion(args.input)
+    update_version(args.input)
 
 if __name__ == "__main__":
     try:
