@@ -15,17 +15,17 @@ build: table lexicon
 	@echo "Push..."
 	@cp -aR $(BUILD_DIR)/github/* $(DIST_DIR)/github
 	@rm -fr $(BUILD_DIR)/github
-	@cp -aR $(BUILD_DIR)/gitlab/* $(DIST_DIR)/gitlab
-	@rm -fr $(BUILD_DIR)/gitlab
+# @cp -aR $(BUILD_DIR)/gitlab/* $(DIST_DIR)/gitlab
+# @rm -fr $(BUILD_DIR)/gitlab
 
 table:
 	$(call build_table,github,2048)
-	# $(call build_table,gitlab,2048)
+# $(call build_table,gitlab,2048)
 	@make -f makefiles/table.mk json
 
 lexicon:
 	$(call build_lexicon,github,2048)
-	# $(call build_lexicon,gitlab,2048)
+# $(call build_lexicon,gitlab,2048)
 	@make -f makefiles/lexicon.mk json
 
 
