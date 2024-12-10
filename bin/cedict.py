@@ -28,15 +28,18 @@ def parse(path):
                 items = [trim(x) for x in re.split(pattern, row) if x]
                 hant = whitespace(items[0])
                 hans = whitespace(items[1])
-                # TODO: middle dot , hyphen, comma
+
                 pinyin = (items[2] or '').lower()
-                # hyphen
+                # ü (u:) -> u
+                pinyin = pinyin.replace("u:", "u")
+                # hyphen, syllable
                 pinyin = pinyin.replace(" - ", " ")
-                # comma
-                pinyin = pinyin.replace(" , ", ", ")
-                # middle dot?
-                # pinyin = pinyin.replace("・", " ")
+                # Commas are sometimes used in Chinese proverbs
+                pinyin = pinyin.replace(" , ", " ")
+                # Middle dots are often used for separating western names:
+                pinyin = pinyin.replace("・", " ")
                 # pinyin2 = strip_accents(pinyin, True)
+
                 glosses = [trim(x) for x in re.split(r';', items[3]) if x]
                 # print(f"=> {row}")
                 item = {
