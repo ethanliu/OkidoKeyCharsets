@@ -52,6 +52,9 @@ RANKING = [
     '😺🥞🏄🔨🏝️🔆👥👓🥒🏈🇵🇭🏋️0️⃣🚘🦖🌕🎭👾🍳🏵️🍧🔗🕋☃️🌅🤴🖖🐊🐘🌤️🥑🥚⛈️🐵🔜🍶🐄🇻🇪🐮🦈🚲⛔🕯️➕🔺💇🧠📻🥤🍝🍥💴🌬️🥓🙍⚓👰🐂📽️🏅⛅🇦🇪🇵🇪🧜📮⛳🔽🚂🏌️🐇🏍️🎲🥛🎣👱🎏🕷️🦍🔘🐅🏇🔐🏩👺🅱️🚙🐧⚖️🎃🌄🎾🐚🎺❇️🎫⌚🌋💒👳❎👟👃🛌🚓⏬📈⛄⏱️😾🛫🤱🍐☮️🚃⏳🌜📹🐛👔👗🐌🎱🌰🌮🕵️🔅✉️🇪🇬🚑📦🤥🔄🤳💲🎋🗓️🤖🥔🆗🔑🇨🇳🐤4️⃣🐑➰👩‍🎓☂️🇦🇹🦆🚌💿🏥🐋🚒🏐🇪🇨🥐🎷🗽🗡️🏏🐭🙎🌑🚔🇮🇩🚿🥝🕌🐀🛡️🔒✳️🕶️👩‍❤️‍💋‍👩🎟️🐉🔱🔎🇦🇺⚰️🐩🦑🧟🆕🦊👕🏹🇩🇿👬🍱📰🥋🚤🏰5️⃣🦉🚢🌨️📆🗝️🎌🧔💳🇺🇾🥗☯️⚙️💶⛩️🗻✒️🇺🇲🇵🇹🍠',
 ]
 
+def _collect_keywords(string_list, prefix):
+    return [item.replace(prefix, '').strip() for item in string_list]
+
 def update_resources(basedir):
     baseurl = 'https://github.com/unicode-org/cldr-json/raw/main/cldr-json'
     pool = urllib3.PoolManager()
@@ -183,8 +186,18 @@ def parse(cursor, path):
             continue
 
         keywords = node[emoji]['default']
+
+        if keywords == ['flag']:
+            keywords = _collect_keywords(node[emoji]['tts'], 'flag: ')
+        elif keywords == ['keycap']:
+            keywords = _collect_keywords(node[emoji]['tts'], 'keycap: ')
+
+        # print(emoji, keywords)
+
         for keyword in keywords:
-            if any(words in keyword for words in COMMON_WORDS_LIST):
+            _keyword = keyword.strip()
+            if any(words in _keyword for words in COMMON_WORDS_LIST):
+                # print(f"ignore: {_keyword}")
                 continue
 
             # keydef
