@@ -3,3 +3,4 @@ natsort
 scrapy
 pypinyin
 # pypinyin_dict
+# csvkit

@@ -21,7 +21,6 @@ init:
 	@mkdir -p dist
 	@mkdir -p tmp
 
-
 clear-all: clear
 	@-rm build/queue/table/*
 	@-rm build/queue/lexicon/*
