@@ -32,8 +32,7 @@ def perform_import(cursor, input_path):
                 weight = row[1] or 0
                 pinyin = strip_accents(row[2] or '').replace('，', '').strip()
 
-                # if not phrase or len(phrase) < 2:
-                if not phrase:
+                if not phrase or len(phrase) < 2:
                     # tqdm.write(f"too short: {phrase}")
                     continue
 
