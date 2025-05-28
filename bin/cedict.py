@@ -74,8 +74,6 @@ def main():
         export_csv(rows, "hant", f"{args.output}/cedict-hant.csv")
         export_csv(rows, "hans", f"{args.output}/cedict-hans.csv")
 
-
-
 if __name__ == "__main__":
     try:
         main()
