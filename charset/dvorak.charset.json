@@ -4,11 +4,11 @@
         "description": "DVORAK",
         "charsets":
         [
-             "['][,][.][P][Y][F][G][C][R][L]",
-             "[dummy:2][A][O][E][U][I][D][H][T][N][S][dummy:2]",
-             "[shift][Q][J][K][X][B][M][W][V][Z][del]",
-             "[next][globe][space][return]"
-         ]
+            "['][,][.][P][Y][F][G][C][R][L]",
+            "[dummy:2][A][O][E][U][I][D][H][T][N][S][dummy:2]",
+            "[shift][Q][J][K][X][B][M][W][V][Z][del]",
+            "[next][globe][space][return]"
+        ]
     },
     {
         "name": "dvorak-pad",

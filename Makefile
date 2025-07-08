@@ -14,6 +14,9 @@ usage:
 test:
 	@$(MISE_RUN) test.py $(BUILD_DIR)
 
+dev:
+	@make -f makefiles/dev.mk sync
+
 init:
 	@echo "initial env"
 	@mkdir -p build/queue/table
