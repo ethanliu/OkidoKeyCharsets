@@ -100,6 +100,9 @@ def create_keyboard(output_path):
             if 'flicks' in item:
                 jsondata['charsets'][name]['flicks'] = item['flicks']
 
+            if 'popups' in item:
+                jsondata['charsets'][name]['popups'] = item['popups']
+
     create_json_file(output_path, jsondata)
 
 # TODO: patching additional description directly

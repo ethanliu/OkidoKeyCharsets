@@ -9,7 +9,7 @@
             "[A:人][S:革][D:日][F:土][G:手][H:鳥][J:月][K:立][L:女][;:虫]",
             "[Z:心][X:水][C:七][V:禾][B:馬][N:魚][M:雨][,:力][.:點][/:竹]",
             "[next][shift][globe][space][del][return]"
-       ]
+        ]
     },
     {
         "name": "dayi-6row",
@@ -22,7 +22,7 @@
             "[A:人][S:革][D:日][F:土][G:手][H:鳥][J:月][K:立][L:女][;:虫]",
             "[Z:心][X:水][C:七][V:禾][B:馬][N:魚][M:雨][,:力][.:點][/:竹]",
             "[next][globe][space][return]"
-       ]
+        ]
     },
     {
         "name": "dayi-pad",
@@ -34,7 +34,7 @@
             "[dummy:2][A:人][S:革][D:日][F:土][G:手][H:鳥][J:月][K:立][L:女][;:虫][return]",
             "[shift][Z:心][X:水][C:七][V:禾][B:馬][N:魚][M:雨][,:力][.:點][/:竹][shift]",
             "[next][globe][space][next][dismiss]"
-       ]
+        ]
     },
     {
         "name": "dayi-fullsize",
@@ -46,6 +46,6 @@
             "[capslock][A:人][S:革][D:日][F:土][G:手][H:鳥][J:月][K:立][L:女][;:虫]['][return]",
             "[shift][Z:心][X:水][C:七][V:禾][B:馬][N:魚][M:雨][,:力][.:點][/:竹][shift]",
             "[next][globe][space][next][dismiss]"
-       ]
+        ]
     }
 ]

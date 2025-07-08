@@ -1,0 +1,81 @@
+[
+    {
+        "name": "array10-choco",
+        "description": "行列10",
+        "charsets":
+        [
+            "[1][2][3]",
+            "[4][5][6]",
+            "[7][8][9]",
+            "[，][0][。]",
+            "[next][globe][space][del][return]"
+        ]
+    },
+    {
+        "name": "array10-layout2-choco",
+        "description": "行列10",
+        "charsets":
+        [
+            "[esc][1][2][3][del]",
+            "[（][4][5][6][：]",
+            "[“][7][8][9][！]",
+            "[、][，][0][。][？]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
+        "name": "array10-layout3-choco",
+        "description": "行列10",
+        "charsets":
+        [
+            "[esc][1:QZ][2:ABC][3:DEF][del]",
+            "[（][4:GHI][5:JKL][6:MNO][：]",
+            "[“][7:PRS][8:TUV][9:WXY][！]",
+            "[、][，][0][。][？]",
+            "[next][globe][space][return]"
+        ],
+        "popups": {
+            "1": ["q", "z"],
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y"]
+        }
+    },
+    {
+        "name": "array10-k14-flick-choco",
+        "description": "行列10 (K14)",
+        "charsets":
+        [
+            "[（][1][2][3][“]",
+            "[「][4][5][6][、]",
+            "[！][7][8][9][？]",
+            "[esc][，][0][。][del]",
+            "[next][globe][space][shift][return]"
+        ],
+        "flicks": {
+            "（": {"down": "Q", "up": "W"},
+            "1": {"down": "E", "up": "R"},
+            "2": {"down": "T", "up": "Y"},
+            "3": {"down": "U", "up": "I"},
+            "“": {"down": "O", "up": "P"},
+            "「": {"down": "A", "up": "S"},
+            "4": {"down": "D", "up": "F"},
+            "5": {"down": "H", "up": "G"},
+            "6": {"down": "J", "up": "K"},
+            "、": {"down": "L", "up": ""},
+            "！": {"down": "Z", "up": "X"},
+            "7": {"down": "C", "up": "V"},
+            "8": {"down": "B", "up": "N"},
+            "9": {"down": "M", "up": ""},
+            "，": {"down": ",", "up": "23"},
+            "。": {"down": ".", "up": "255"},
+            "？": {"down": "?", "up": "!"}
+        }
+    }
+
+]
