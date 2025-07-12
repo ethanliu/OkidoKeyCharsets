@@ -4,28 +4,50 @@
         "description": "行列10",
         "charsets":
         [
-            "[1][2][3]",
-            "[4][5][6]",
-            "[7][8][9]",
+            "[1][2:abc][3:def]",
+            "[4:ghi][5:jkl][6:mno]",
+            "[7:pqrs][8:tuv][9:wxyz]",
             "[，][0][。]",
             "[next][globe][space][del][return]"
-        ]
+        ],
+        "popups": {
+            "1": ["_", "#", "@"],
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"]
+        }
     },
     {
         "name": "array10-layout2-choco",
         "description": "行列10",
         "charsets":
         [
-            "[esc][1][2][3][del]",
-            "[（][4][5][6][：]",
-            "[“][7][8][9][！]",
+            "[esc][1][2:abc][3:def][del]",
+            "[（][4:ghi][5:jkl][6:mno][：]",
+            "[“][7:pqrs][8:tuv][9:wxyz][！]",
             "[、][，][0][。][？]",
             "[next][globe][space][return]"
-        ]
+        ],
+        "popups": {
+            "1": ["_", "#", "@"],
+            "2": ["a", "b", "c"],
+            "3": ["d", "e", "f"],
+            "4": ["g", "h", "i"],
+            "5": ["j", "k", "l"],
+            "6": ["m", "n", "o"],
+            "7": ["p", "q", "r", "s"],
+            "8": ["t", "u", "v"],
+            "9": ["w", "x", "y", "z"]
+        }
     },
     {
-        "name": "array10-layout3-choco",
-        "description": "行列10",
+        "name": "array10-qz-choco",
+        "description": "行列10 (QZ)",
         "charsets":
         [
             "[esc][1:QZ][2:ABC][3:DEF][del]",
