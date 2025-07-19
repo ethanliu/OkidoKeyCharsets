@@ -3,6 +3,9 @@
 # 行列輸入法 30 鍵版鍵碼表 array30 for OkidoKey/Frankie (v2023-1.0), 2023-02-11
 # 官方下載網址 https://github.com/gontera/array30
 # 有關本鍵碼表使用說明，請參閱 https://github.com/gontera/array30/wiki
+#
+# 此表格包含簡碼 (%shortcode) 及特別碼 (%special)
+#
 
 %ename array30
 %cname 行列30
