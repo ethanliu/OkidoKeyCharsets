@@ -190,8 +190,9 @@ def create_table(outputPath):
         content['category'] = category
 
         # additional headers
-        headerpath = f"rawdata/misc/{filename}"
+        headerpath = f"{base_dir}/rawdata/misc/{filename}"
         if os.path.exists(headerpath):
+            print(headerpath)
             with open(headerpath, "r") as fp:
                 additional = trim(fp.read())
                 content['license'] = f"{content['license']}\n\n{additional}"
