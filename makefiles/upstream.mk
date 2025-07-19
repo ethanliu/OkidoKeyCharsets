@@ -52,6 +52,12 @@ array30:
 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-big*.cin))
 	@cp ${file} $(TABLE_DIR)/array30-OkidoKey-big.cin
 
+	@TEXT="#\n# 此表格包含簡碼 (%%shortcode) 及特別碼 (%%special)\n#" ; \
+	printf "$$TEXT\n" | sed -i '' '5r /dev/stdin' $(TABLE_DIR)/array30-OkidoKey.cin
+
+	@TEXT="#\n# 此表格包含簡碼 (%%shortcode) 及特別碼 (%%special)\n#" ; \
+	printf "$$TEXT\n" | sed -i '' '5r /dev/stdin' $(TABLE_DIR)/array30-OkidoKey-big.cin
+
 	@cat $(TABLE_DIR)/array-special.cin | sed -n '/%chardef begin/,/%chardef end/p' | sed 's/chardef/special/g' > tmp/array-special.cin
 	@cat $(TABLE_DIR)/array-shortcode.cin | sed -n '/%chardef begin/,/%chardef end/p' | sed 's/chardef/shortcode/g' > tmp/array-shortcode.cin
 	@cat tmp/array-shortcode.cin >> $(TABLE_DIR)/array30-OkidoKey.cin
