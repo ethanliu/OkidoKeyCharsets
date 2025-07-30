@@ -117,7 +117,11 @@ def trim(str, needle = None, space = False):
         return ""
     _str = str
     if needle:
-        _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
+        # _str = re.sub(r'(?m)^ *' + needle + '.*\n?', '', _str)
+        # Remove everything from needle to the end of the string (including needle)
+        idx = _str.find(needle)
+        if idx != -1:
+            _str = _str[:idx]
     if space:
         pattern1 = r"([\u4e00-\u9fa5\u3040-\u30FF])([a-z0-9@#&;=_\\[\\(])"
         pattern2 = r"([a-z0-9#!~&;=_\],\\.:\\?\\)])([\u4e00-\u9fa5\u3040-\u30FF])"
