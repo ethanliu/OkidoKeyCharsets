@@ -95,3 +95,6 @@ mcbpmf:
 # @$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source/Data/phrase.occ -o $(LEXICON_DIR)/mcbopomofo.csv
 	@$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source -o $(LEXICON_DIR)/mcbopomofo.csv
 
+# moe:
+# 	@curl -o $(RAWDATA_DIR)/moe/sutian.json https://raw.githubusercontent.com/g0v/moedict-webkit/refs/heads/master/t/index.json
+# 	@curl -o $(RAWDATA_DIR)/moe/hakka.json https://raw.githubusercontent.com/g0v/moedict-webkit/refs/heads/master/h/index.json

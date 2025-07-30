@@ -28,9 +28,16 @@ def perform_import(cursor, input_path):
         reader = csv.reader(csvfile, delimiter = '\t', quotechar = None)
         for chunk in chunks(reader, max = 0):
             for row in tqdm(chunk, desc = f"{filename}[]", unit = 'MB', unit_scale = True, ascii = True):
-                phrase = (row[0] or '').strip()
-                weight = row[1] or 0
-                pinyin = strip_accents(row[2] or '').replace('，', '').strip()
+                if not row:
+                    continue
+
+                # phrase = (row[0] or '').strip()
+                # weight = row[1] if row[1] else 0
+                # pinyin = strip_accents(row[2] or '').replace('，', '').strip()
+                length = len(row)
+                phrase = row[0].strip() if length >= 1 else ""
+                weight = int(row[1].strip(), 10) if length >= 2 else 0
+                pinyin = strip_accents(row[2] or '').replace('，', '').strip() if length >= 3 else ""
 
                 if not phrase or len(phrase) < 2:
                     # tqdm.write(f"too short: {phrase}")

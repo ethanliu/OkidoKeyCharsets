@@ -70,4 +70,3 @@ concised-csv:
 	@-rm $(TMP_DIR)/tmp1.csv
 	@-rm $(TMP_DIR)/tmp2.csv
 
-

@@ -15,7 +15,7 @@ init:
 	@echo "Build lexicon"
 	@mkdir -p $(BUILD_QUEUE_DIR)/lexicon
 
-build: init cedict moe array jieba jyutping mcbpmf
+build: init cedict moe array jieba jyutping mcbpmf moe2
 
 json:
 	@$(MISE_RUN) resource.py -c lexicon -o $(BUILD_QUEUE_DIR)/Lexicon.json
@@ -40,3 +40,7 @@ moe:
 	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/moe-concised.csv -o $(BUILD_QUEUE_DIR)/lexicon/moe-concised.csv.db
 	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/moe-idioms.csv -o $(BUILD_QUEUE_DIR)/lexicon/moe-idioms.csv.db
 	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/moe-revised.csv -o $(BUILD_QUEUE_DIR)/lexicon/moe-revised.csv.db
+
+moe2:
+	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/moe-sutian.csv -o $(BUILD_QUEUE_DIR)/lexicon/moe-sutian.csv.db
+	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/moe-hakka.csv -o $(BUILD_QUEUE_DIR)/lexicon/moe-hakka.csv.db
