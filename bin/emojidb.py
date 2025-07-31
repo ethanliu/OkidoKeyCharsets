@@ -24,11 +24,11 @@ DB_PATH = ''
 
 
 EMOJI_DATA_LIST = {
-	"emoji-data.txt": "https://www.unicode.org/Public/16.0.0/ucd/emoji/emoji-data.txt",
-	"emoji-variation-sequences.txt": "https://www.unicode.org/Public/16.0.0/ucd/emoji/emoji-variation-sequences.txt",
+	"emoji-data.txt": "https://www.unicode.org/Public/17.0.0/ucd/emoji/emoji-data.txt",
+	"emoji-variation-sequences.txt": "https://www.unicode.org/Public/17.0.0/ucd/emoji/emoji-variation-sequences.txt",
 
-	"emoji-sequences.txt": "https://www.unicode.org/Public/emoji/16.0/emoji-sequences.txt",
-	"emoji-zwj-sequences.txt": "https://www.unicode.org/Public/emoji/16.0/emoji-zwj-sequences.txt",
+	"emoji-sequences.txt": "https://www.unicode.org/Public/emoji/17.0/emoji-sequences.txt",
+	"emoji-zwj-sequences.txt": "https://www.unicode.org/Public/emoji/17.0/emoji-zwj-sequences.txt",
 
 	"annotations_en.json": "https://github.com/unicode-org/cldr-json/raw/main/cldr-json/cldr-annotations-full/annotations/en/annotations.json",
 	"annotations_hant.json": "https://github.com/unicode-org/cldr-json/raw/main/cldr-json/cldr-annotations-full/annotations/zh-Hant/annotations.json",
@@ -132,18 +132,33 @@ def char_to_long_hex(char):
 # Removes all standard Unicode skin tone modifiers and VS16
 # from a space-separated string of hex Unicode code points.
 # Also handles extra spaces.
-def remove_skin_tone_and_vs16(hex_codes_string):
+def remove_skin_tone(hex_codes_string, remove_vs = False):
 	if hex_codes_string is None:
 		return None
+	elif hex_codes_string == EMOJI_VS:
+		return None
 
-	# Combine skin tones and VS16 into one set for removal
-	to_remove = SKIN_TONE_MODIFIERS_HEX.union({EMOJI_VS})
+	to_remove = SKIN_TONE_MODIFIERS_HEX
+	if remove_vs is True:
+		# Combine skin tones and VS16 into one set for removal
+		to_remove = SKIN_TONE_MODIFIERS_HEX.union({EMOJI_VS})
 
 	pattern = r'\b(' + '|'.join(re.escape(s) for s in to_remove) + r')\b'
 	cleaned_string = re.sub(pattern, "", hex_codes_string)
+	cleaned_node = cleaned_string.split()
+
+	if len(cleaned_node) == 1:
+		if EMOJI_VS in cleaned_string:
+			# print(cleaned_node)
+			# print(f"xxx: {hex_codes_string} vs {cleaned_string}")
+			return None
 
 	# Normalize whitespace: split by any whitespace, filter out empty, join with single space, strip ends
-	final_string = ' '.join(cleaned_string.split()).strip()
+	final_string = ' '.join(cleaned_node).strip()
+
+	if final_string == "0001FE0F" or final_string == "1FE0F":
+		print("xxxx???")
+		return None
 
 	return final_string
 
@@ -174,7 +189,7 @@ def apply_emojis(basedir):
 
 	import_from_emoji_data(cursor, path1)
 	import_from_emoji_data(cursor, path2)
-	# import_from_emoji_data(cursor, path3)
+	# # import_from_emoji_data(cursor, path3)
 	import_from_emoji_data(cursor, path4)
 
 	db.commit()
@@ -194,6 +209,8 @@ def import_from_emoji_data(cursor, file_path):
 	# Regex to capture the code hex range and the category, ignoring comments
 	# pattern = re.compile(r'^\s*([0-9A-F]+(?:..[0-9A-F]+)?)\s*;\s*([A-Za-z_]+)(?:.*#.*)?$')
 
+	filename = os.path.basename(file_path)
+
 	insert_chardef_query = "INSERT OR IGNORE INTO chardef (char) VALUES (:char)"
 	select_chardef_query = "SELECT rowid FROM chardef WHERE char = :char LIMIT 1"
 	insert_category_query = "INSERT OR IGNORE INTO category (chardef_id, category_id) VALUES (:chardef_id, :category_id)"
@@ -201,8 +218,12 @@ def import_from_emoji_data(cursor, file_path):
 	cursor.execute("BEGIN TRANSACTION")
 
 	with open(file_path, 'r', encoding='utf-8') as f:
-		for line in f:
+		# for line in f:
+		for line in tqdm(f, desc = f"{filename}", unit_scale = True, ascii = True):
 			# line = line.strip()
+			if "<reserved" in line:
+				continue
+
 			line = trim(line, '#')
 			if not line:
 				continue
@@ -216,8 +237,8 @@ def import_from_emoji_data(cursor, file_path):
 
 			# Simple and more robust than re
 			nodes = line.split(';')
-			hex_code = nodes[0].strip() if nodes[0] else None
-			category = nodes[1].strip() if nodes[1] else None
+			hex_code_raw = nodes[0].strip() if nodes[0] else ""
+			category = nodes[1].strip() if nodes[1] else ""
 
 			# TODO: variations
 			if category == "text style":
@@ -233,18 +254,24 @@ def import_from_emoji_data(cursor, file_path):
 				print(f"{category} not exists")
 				sys.exit(0)
 
-			if ".." in hex_code:
-				emoji_block = hex_code.split('..')
+			if ".." in hex_code_raw:
+				emoji_block = hex_code_raw.split('..')
 				begin = int(emoji_block[0], 16)
 				end = int(emoji_block[1], 16) if len(emoji_block) > 1 and emoji_block[1] else begin
 
 				for codepoint in range(begin, end + 1):
 					hex_code = f"{codepoint:08X}"  # or :08X for 8 digits
+
 					cursor.execute(insert_chardef_query, {'char': hex_code})
 					chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 					cursor.execute(insert_category_query, {'chardef_id': chardef_id, 'category_id': category_id})
 			else:
-				hex_code = pad_hex_to_8_digits(hex_code)
+				hex_code = pad_hex_to_8_digits(hex_code_raw)
+				hex_code = remove_skin_tone(hex_code)
+				if not hex_code:
+					continue
+
+				# print(f"===> \n{hex_code}\n{hex_code_raw}")
 				cursor.execute(insert_chardef_query, {'char': hex_code})
 				chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 				cursor.execute(insert_category_query, {'chardef_id': chardef_id, 'category_id': category_id})
@@ -292,7 +319,7 @@ def apply_annotation_data(cursor, path):
 
 	for emoji_char, annotations in tqdm(node.items(), unit = filename, ascii = True):
 		hex_code_raw = char_to_long_hex(emoji_char)
-		hex_code = remove_skin_tone_and_vs16(hex_code_raw)
+		hex_code = remove_skin_tone(hex_code_raw)
 
 		if not hex_code:
 			# tqdm.write(f"[annotation][invalid] ignore {emoji_char}")
@@ -301,9 +328,9 @@ def apply_annotation_data(cursor, path):
 		chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 		if not chardef_id:
 			# tqdm.write(f"[annotation][new] {emoji_char} {hex_code_raw} | {hex_code}")
-			# continue
 			cursor.execute(insert_chardef_query, {'char': hex_code})
 			chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
+			# continue
 
 		keywords = []
 		if 'default' in annotations:
@@ -344,7 +371,10 @@ def apply_emoticons():
 
 	for emoji, emoticons in data.get("emoticons", {}).items():
 		codes = char_to_long_hex(emoji)
-		codes = remove_skin_tone_and_vs16(codes) # Use the updated cleaning function
+		codes = remove_skin_tone(codes)
+
+		if not codes:
+			continue
 
 		if codes is None or codes == "":
 			# print(f"Skipping emoticon '{emoji}' due to invalid or empty hex code after processing.")
@@ -386,7 +416,7 @@ def apply_ranking():
 		for item in items[::-1]:
 			weight += 1
 			code = char_to_long_hex(item)
-			code = remove_skin_tone_and_vs16(code) # Use the updated cleaning function
+			code = remove_skin_tone(code) # Use the updated cleaning function
 
 			if code is None or code == "":
 				# print(f"Skipping ranking item '{item}' due to invalid or empty hex code after processing.")
@@ -397,15 +427,6 @@ def apply_ranking():
 	cursor.execute("COMMIT TRANSACTION")
 
 	db.commit()
-
-	print(f"\nTop Ranking\n===========")
-	cursor.execute("SELECT char FROM `chardef` WHERE weight > 0 ORDER BY weight DESC")
-	result = cursor.fetchall()
-	for item in result:
-		emoji = emojilized(item[0])
-		print(emoji, end = ' ')
-	print('')
-
 	db.close()
 
 def test(phrase, dbPath):
@@ -415,8 +436,8 @@ def test(phrase, dbPath):
 	db = sqlite3.connect(dbPath)
 	cursor = db.cursor()
 
+	print(f"\n--- Searching for phrase: '{phrase}' ---")
 	if phrase == 'emoji':
-		print("\n--- Random Emojis ---")
 		cursor.execute("SELECT char, weight FROM chardef ORDER BY RANDOM() LIMIT 100")
 		result = cursor.fetchall()
 
@@ -429,8 +450,34 @@ def test(phrase, dbPath):
 			print(f"{emoji} (Weight: {item[1]})", end = ' ')
 		print('\n')
 
+	elif phrase == 'ranking':
+		cursor.execute("SELECT char FROM `chardef` WHERE weight > 0 ORDER BY weight DESC")
+		result = cursor.fetchall()
+		for item in result:
+			emoji = emojilized(item[0])
+			print(emoji, end = ' ')
+		print('')
+
+	elif phrase == 'zwj':
+		zwj_id = EMOJI_CATEGORY_MAP['RGI_Emoji_ZWJ_Sequence']
+		query = f"""
+		SELECT DISTINCT chardef.char
+		FROM chardef, category
+		WHERE chardef.rowid = category.chardef_id
+			AND category.category_id = {zwj_id}
+		"""
+		cursor.execute(query)
+		result = cursor.fetchall()
+
+		if not result:
+			print(f"No result for phrase: '{phrase}'")
+			return
+
+		for item in result:
+			# print(f"{emojilized(item[0])}", end=' ')
+			print(f"{emojilized(item[0])}: {item[0]}")
+
 	else:
-		print(f"\n--- Searching for phrase: '{phrase}' ---")
 		query = f"""
 		SELECT DISTINCT chardef.char, keydef.key, chardef.weight
 		FROM keydef, chardef, entry
@@ -511,6 +558,13 @@ def main():
 		apply_ranking()
 
 		sys.exit(0)
+
+	if args.test:
+		if not args.output:
+			print("Error: Output database file path (-o/--output) is required for --run.")
+			sys.exit(1)
+		test(args.test, args.output)
+
 
 	if not any(vars(args).values()):
 		arg_reader.print_help()
