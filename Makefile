@@ -42,8 +42,12 @@ keyboard:
 	@$(MISE_RUN) resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
 
 emoji:
-	@$(MISE_RUN) emojidb.py --update -d $(RAWDATA_DIR)/emoji
+# 	@$(MISE_RUN) emojidb.py --update -d $(RAWDATA_DIR)/emoji
 	@$(MISE_RUN) emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(BUILD_DIR)/emoji.db
+
+emoji-test:
+	@$(MISE_RUN) emojidb.py -test zwj -o $(BUILD_DIR)/emoji.db
+	@$(MISE_RUN) emojidb.py -test ranking -o $(BUILD_DIR)/emoji.db
 
 unihan:
 	@$(MISE_RUN) unihan.py -o $(BUILD_DIR)/Unihan.db
