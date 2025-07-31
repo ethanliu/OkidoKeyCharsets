@@ -132,16 +132,16 @@ def char_to_long_hex(char):
 # Removes all standard Unicode skin tone modifiers and VS16
 # from a space-separated string of hex Unicode code points.
 # Also handles extra spaces.
-def remove_skin_tone(hex_codes_string, remove_vs = False):
+def remove_skin_tone(hex_codes_string):
 	if hex_codes_string is None:
 		return None
 	elif hex_codes_string == EMOJI_VS:
 		return None
 
+	# 	# Combine skin tones and VS16 into one set for removal
 	to_remove = SKIN_TONE_MODIFIERS_HEX
-	if remove_vs is True:
-		# Combine skin tones and VS16 into one set for removal
-		to_remove = SKIN_TONE_MODIFIERS_HEX.union({EMOJI_VS})
+	# if remove_vs == True:
+	# 	to_remove = SKIN_TONE_MODIFIERS_HEX.union({EMOJI_VS})
 
 	pattern = r'\b(' + '|'.join(re.escape(s) for s in to_remove) + r')\b'
 	cleaned_string = re.sub(pattern, "", hex_codes_string)
@@ -155,10 +155,6 @@ def remove_skin_tone(hex_codes_string, remove_vs = False):
 
 	# Normalize whitespace: split by any whitespace, filter out empty, join with single space, strip ends
 	final_string = ' '.join(cleaned_node).strip()
-
-	if final_string == "0001FE0F" or final_string == "1FE0F":
-		print("xxxx???")
-		return None
 
 	return final_string
 
@@ -271,6 +267,10 @@ def import_from_emoji_data(cursor, file_path):
 				if not hex_code:
 					continue
 
+				if category_id == EMOJI_CATEGORY_MAP["RGI_Emoji_ZWJ_Sequence"]:
+					if not hex_code.endswith(EMOJI_VS):
+						hex_code = f"{hex_code} {EMOJI_VS}"
+
 				# print(f"===> \n{hex_code}\n{hex_code_raw}")
 				cursor.execute(insert_chardef_query, {'char': hex_code})
 				chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
@@ -327,10 +327,20 @@ def apply_annotation_data(cursor, path):
 
 		chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 		if not chardef_id:
-			# tqdm.write(f"[annotation][new] {emoji_char} {hex_code_raw} | {hex_code}")
-			cursor.execute(insert_chardef_query, {'char': hex_code})
-			chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
-			# continue
+			# if hex_code.startswith('0001F486'):
+			# 	tqdm.write(f"[annotation][new] {emoji_char} {hex_code_raw} | {hex_code}")
+
+			# Missing VS in CLDR?
+			if not hex_code.endswith(EMOJI_VS):
+				hex_code = f"{hex_code} {EMOJI_VS}"
+				chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
+
+			if not chardef_id:
+				# tqdm.write(f"[annotation][new] {emoji_char} {hex_code_raw} | {hex_code}")
+				cursor.execute(insert_chardef_query, {'char': hex_code})
+				chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
+				# continue
+
 
 		keywords = []
 		if 'default' in annotations:
@@ -437,7 +447,22 @@ def test(phrase, dbPath):
 	cursor = db.cursor()
 
 	print(f"\n--- Searching for phrase: '{phrase}' ---")
-	if phrase == 'emoji':
+	if phrase == 'dev':
+
+# 0001F486
+# 0001F486 0000200D 00002642
+# 0001F486 0000200D 00002640
+
+		query = "select * from chardef where char like '0001F486%'"
+		cursor.execute(query)
+		result = cursor.fetchall()
+
+		for item in result:
+			emoji = emojilized(item[0])
+			print(f"{emoji} {item[0]})")
+
+
+	elif phrase == 'emoji':
 		cursor.execute("SELECT char, weight FROM chardef ORDER BY RANDOM() LIMIT 100")
 		result = cursor.fetchall()
 
@@ -473,9 +498,13 @@ def test(phrase, dbPath):
 			print(f"No result for phrase: '{phrase}'")
 			return
 
+		# All zwj should end with vs
 		for item in result:
 			# print(f"{emojilized(item[0])}", end=' ')
-			print(f"{emojilized(item[0])}: {item[0]}")
+			if not f"{item[0]}".endswith(EMOJI_VS):
+				print(f"[incorrect] {emojilized(item[0])}: {item[0]}")
+			else:
+				print(f"{emojilized(item[0])}: {item[0]}")
 
 	else:
 		query = f"""
@@ -556,6 +585,9 @@ def main():
 
 		apply_emoticons()
 		apply_ranking()
+
+		test('dev', args.output)
+
 
 		sys.exit(0)
 
