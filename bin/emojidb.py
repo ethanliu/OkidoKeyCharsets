@@ -449,10 +449,6 @@ def test(phrase, dbPath):
 	print(f"\n--- Searching for phrase: '{phrase}' ---")
 	if phrase == 'dev':
 
-# 0001F486
-# 0001F486 0000200D 00002642
-# 0001F486 0000200D 00002640
-
 		query = "select * from chardef where char like '0001F486%'"
 		cursor.execute(query)
 		result = cursor.fetchall()
