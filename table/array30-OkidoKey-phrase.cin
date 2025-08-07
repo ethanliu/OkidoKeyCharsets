@@ -8,8 +8,8 @@
 # 及行列輸入法官方收錄 6 萬詞的詞庫檔
 #
 
-%ename array30
-%cname 行列30
+%ename array30-phrase
+%cname 行列30(詞庫版)
 %encoding UTF-8
 %selkey 1234567890
 %keyname begin

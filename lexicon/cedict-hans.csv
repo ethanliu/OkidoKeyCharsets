@@ -1,11 +1,16 @@
 %	0	pa1
+110	0	yao1 yao1 ling2
+119	0	yao1 yao1 jiu3
 11 区	0	shi2 yi1 qu1
+120	0	yao1 er4 ling2
 2019 冠状病毒病	0	er4 ling2 yi1 jiu3 guan1 zhuang4 bing4 du2 bing4
 21 三体综合症	0	er4 shi2 yi1 san1 ti3 zong1 he2 zheng4
 3C	0	san1 c
+3D 打印	0	san1 d da3 yin4
 3P	0	san1 p
 3Q	0	san1 q
 421	0	si4 er4 yi1
+4S 店	0	4s dian4
 502 胶	0	wu3 ling2 er4 jiao1
 88	0	ba1 ba1
 95 后	0	jiu3 wu3 hou4
@@ -21,14 +26,14 @@ A 菜	0	a cai4
 A 货	0	a huo4
 B	0	bi1
 BM	0	b m
-BP 机	0	b p ji1
+BP 机	0	bp ji1
 B 型超声	0	b xing2 chao1 sheng1
 B 格	0	bi1 ge2
 B 站	0	b zhan4
 B 超	0	b chao1
 CJB	0	c j b
 CP	0	c p
-CP 值	0	c p zhi2
+CP 值	0	cp zhi2
 C 位	0	c wei4
 C 盘	0	c pan2
 C 罗	0	c luo2
@@ -92,7 +97,6 @@ T 恤	0	t xu4
 T 裇	0	t xu1
 UP 主	0	u p zhu3
 USB 手指	0	u s b shou3 zhi3
-USB 记忆棒	0	u s b ji4 yi4 bang4
 U 凸内裤	0	u tu1 nei4 ku4
 U 型枕	0	u xing2 zhen3
 U 型池	0	u xing2 chi2
@@ -309,6 +313,7 @@ word 姐	0	w o r d jie3
 趟	0	tang1
 䠞	0	cu4
 射	0	she4
+䠷	0	tiao3
 䢺	0	chu1
 䤈	0	xi1
 鿏	0	mai4
@@ -374,6 +379,7 @@ word 姐	0	w o r d jie3
 一并	0	yi1 bing4
 一来	0	yi1 lai2
 一来二去	0	yi1 lai2 er4 qu4
+一个	0	yi1 ge5
 一个中国政策	0	yi1 ge4 zhong1 guo2 zheng4 ce4
 一个人	0	yi1 ge4 ren2
 一个个	0	yi1 ge4 ge4
@@ -408,7 +414,6 @@ word 姐	0	w o r d jie3
 一分钱一分货	0	yi1 fen1 qian2 yi1 fen1 huo4
 一分钱两分货	0	yi1 fen1 qian2 liang3 fen1 huo4
 一切	0	yi1 qie4
-一切事物	0	yi1 qie4 shi4 wu4
 一切向钱看	0	yi1 qie4 xiang4 qian2 kan4
 一切如旧	0	yi1 qie4 ru2 jiu4
 一切就绪	0	yi1 qie4 jiu4 xu4
@@ -456,6 +461,7 @@ word 姐	0	w o r d jie3
 一哄而散	0	yi1 hong1 er2 san4
 一哄而起	0	yi1 hong1 er2 qi3
 一员	0	yi1 yuan2
+一哥	0	yi1 ge1
 一哭二闹三上吊	0	yi1 ku1 er4 nao4 san1 shang4 diao4
 一唱一和	0	yi1 chang4 yi1 he4
 一唱三叹	0	yi1 chang4 san1 tan4
@@ -488,6 +494,7 @@ word 姐	0	w o r d jie3
 一夜露水	0	yi1 ye4 lu4 shui5
 一大早	0	yi1 da4 zao3
 一大早儿	0	yi1 da4 zao3 r5
+一大通	0	yi1 da4 tong1
 一天一个样	0	yi1 tian1 yi1 ge5 yang4
 一天到晚	0	yi1 tian1 dao4 wan3
 一夫一妻	0	yi1 fu1 yi1 qi1
@@ -500,10 +507,11 @@ word 姐	0	w o r d jie3
 一如所料	0	yi1 ru2 suo3 liao4
 一如既往	0	yi1 ru2 ji4 wang3
 一妻制	0	yi1 qi1 zhi4
+一姐	0	yi1 jie3
 一孔之见	0	yi1 kong3 zhi1 jian4
 一字	0	yi1 zi4
 一字一泪	0	yi1 zi4 yi1 lei4
-一字不差	0	yi1 zi4 bu4 cha1
+一字不差	0	yi1 zi4 bu4 cha4
 一字不提	0	yi1 zi4 bu4 ti2
 一字不漏	0	yi1 zi4 bu4 lou4
 一字不落	0	yi1 zi4 bu4 la4
@@ -550,7 +558,7 @@ word 姐	0	w o r d jie3
 一年多	0	yi1 nian2 duo1
 一年期	0	yi1 nian2 qi1
 一年生	0	yi1 nian2 sheng1
-一年被蛇咬十年怕井绳	0	yi1 nian2 bei4 she2 yao3 shi2 nian2 pa4 jing3 sheng2
+一年被蛇咬，十年怕井绳	0	yi1 nian2 bei4 she2 yao3 shi2 nian2 pa4 jing3 sheng2
 一度	0	yi1 du4
 一厢情愿	0	yi1 xiang1 qing2 yuan4
 一式二份	0	yi1 shi4 er4 fen4
@@ -771,6 +779,7 @@ word 姐	0	w o r d jie3
 一笔抹杀	0	yi1 bi3 mo3 sha1
 一笔抹煞	0	yi1 bi3 mo3 sha1
 一等	0	yi1 deng3
+一等一	0	yi1 deng3 yi1
 一等奖	0	yi1 deng3 jiang3
 一箭之仇	0	yi1 jian4 zhi1 chou2
 一箭双雕	0	yi1 jian4 shuang1 diao1
@@ -846,6 +855,7 @@ word 姐	0	w o r d jie3
 一血	0	yi1 xue4
 一行	0	yi1 xing2
 一衣带水	0	yi1 yi1 dai4 shui3
+一袭	0	yi1 xi2
 一见倾心	0	yi1 jian4 qing1 xin1
 一见如故	0	yi1 jian4 ru2 gu4
 一见钟情	0	yi1 jian4 zhong1 qing2
@@ -858,7 +868,6 @@ word 姐	0	w o r d jie3
 一览无余	0	yi1 lan3 wu2 yu2
 一览众山小	0	yi1 lan3 zhong4 shan1 xiao3
 一览表	0	yi1 lan3 biao3
-一角银币	0	yi1 jiao3 yin2 bi4
 一角鲸	0	yi1 jiao3 jing1
 一触即溃	0	yi1 chu4 ji2 kui4
 一触即发	0	yi1 chu4 ji2 fa1
@@ -1209,6 +1218,7 @@ word 姐	0	w o r d jie3
 三分	0	san1 fen1
 三分之一	0	san1 fen1 zhi1 yi1
 三分熟	0	san1 fen1 shu2
+三分球	0	san1 fen1 qiu2
 三分钟热度	0	san1 fen1 zhong1 re4 du4
 三分头	0	san1 fen1 tou2
 三包	0	san1 bao1
@@ -1226,7 +1236,6 @@ word 姐	0	w o r d jie3
 三十而立	0	san1 shi2 er2 li4
 三千大千世界	0	san1 qian1 da4 qian1 shi4 jie4
 三原	0	san1 yuan2
-三原则	0	san1 yuan2 ze2
 三原县	0	san1 yuan2 xian4
 三叉戟	0	san1 cha1 ji3
 三叉神经	0	san1 cha1 shen2 jing1
@@ -1268,6 +1277,7 @@ word 姐	0	w o r d jie3
 三对三斗牛	0	san1 dui4 san1 dou4 niu2
 三小	0	san1 xiao3
 三尖杉酯碱	0	san1 jian1 shan1 zhi3 jian3
+三尖瓣	0	san1 jian1 ban4
 三屉桌	0	san1 ti4 zhuo1
 三岔口	0	san1 cha4 kou3
 三岛由纪夫	0	san1 dao3 you2 ji4 fu1
@@ -1446,6 +1456,7 @@ word 姐	0	w o r d jie3
 三角形	0	san1 jiao3 xing2
 三角恐龙	0	san1 jiao3 kong3 long2
 三角恋爱	0	san1 jiao3 lian4 ai4
+三角旗	0	san1 jiao3 qi2
 三角板	0	san1 jiao3 ban3
 三角柱体	0	san1 jiao3 zhu4 ti3
 三角法	0	san1 jiao3 fa3
@@ -1467,6 +1478,7 @@ word 姐	0	w o r d jie3
 三资企业	0	san1 zi1 qi3 ye4
 三足乌	0	san1 zu2 wu1
 三足金乌	0	san1 zu2 jin1 wu1
+三足鼎立	0	san1 zu2 ding3 li4
 三趾啄木鸟	0	san1 zhi3 zhuo2 mu4 niao3
 三趾滨鹬	0	san1 zhi3 bin1 yu4
 三趾翠鸟	0	san1 zhi3 cui4 niao3
@@ -1567,9 +1579,11 @@ word 姐	0	w o r d jie3
 上升趋势	0	shang4 sheng1 qu1 shi4
 上午	0	shang4 wu3
 上半	0	shang4 ban4
+上半场	0	shang4 ban4 chang3
 上半夜	0	shang4 ban4 ye4
 上半天	0	shang4 ban4 tian1
 上半年	0	shang4 ban4 nian2
+上半时	0	shang4 ban4 shi2
 上半晌	0	shang4 ban4 shang3
 上半叶	0	shang4 ban4 ye4
 上半身	0	shang4 ban4 shen1
@@ -1737,6 +1751,7 @@ word 姐	0	w o r d jie3
 上算	0	shang4 suan4
 上箭头	0	shang4 jian4 tou2
 上箭头键	0	shang4 jian4 tou2 jian4
+上篮	0	shang4 lan2
 上级	0	shang4 ji2
 上级领导	0	shang4 ji2 ling3 dao3
 上纲上线	0	shang4 gang1 shang4 xian4
@@ -1807,7 +1822,6 @@ word 姐	0	w o r d jie3
 上门费	0	shang4 men2 fei4
 上限	0	shang4 xian4
 上阵	0	shang4 zhen4
-上阵杀敌	0	shang4 zhen4 sha1 di2
 上面	0	shang4 mian4
 上面级	0	shang4 mian4 ji2
 上鞋	0	shang4 xie2
@@ -1862,8 +1876,10 @@ word 姐	0	w o r d jie3
 下午好	0	xia4 wu3 hao3
 下午茶	0	xia4 wu3 cha2
 下半	0	xia4 ban4
+下半场	0	xia4 ban4 chang3
 下半天	0	xia4 ban4 tian1
 下半年	0	xia4 ban4 nian2
+下半时	0	xia4 ban4 shi2
 下半身	0	xia4 ban4 shen1
 下去	0	xia4 qu4
 下同	0	xia4 tong2
@@ -2164,6 +2180,7 @@ word 姐	0	w o r d jie3
 不分情由	0	bu4 fen1 qing2 you2
 不分昼夜	0	bu4 fen1 zhou4 ye4
 不分皂白	0	bu4 fen1 zao4 bai2
+不分系	0	bu4 fen1 xi4
 不分轩轾	0	bu4 fen1 xuan1 zhi4
 不分青红皂白	0	bu4 fen1 qing1 hong2 zao4 bai2
 不分高下	0	bu4 fen1 gao1 xia4
@@ -2241,7 +2258,7 @@ word 姐	0	w o r d jie3
 不可抗拒	0	bu4 ke3 kang4 ju4
 不可挽回	0	bu4 ke3 wan3 hui2
 不可撤销信用证	0	bu4 ke3 che4 xiao1 xin4 yong4 zheng4
-不可收拾	0	bu4 ke3 shou1 shi2
+不可收拾	0	bu4 ke3 shou1 shi5
 不可救药	0	bu4 ke3 jiu4 yao4
 不可数	0	bu4 ke3 shu3
 不可数名词	0	bu4 ke3 shu3 ming2 ci2
@@ -2305,7 +2322,7 @@ word 姐	0	w o r d jie3
 不在	0	bu4 zai4
 不在乎	0	bu4 zai4 hu5
 不在了	0	bu4 zai4 le5
-不在其位不谋其政	0	bu4 zai4 qi2 wei4 bu4 mou2 qi2 zheng4
+不在其位，不谋其政	0	bu4 zai4 qi2 wei4 bu4 mou2 qi2 zheng4
 不在意	0	bu4 zai4 yi4
 不在状态	0	bu4 zai4 zhuang4 tai4
 不在话下	0	bu4 zai4 hua4 xia4
@@ -2323,6 +2340,7 @@ word 姐	0	w o r d jie3
 不大离	0	bu4 da4 li2
 不大离儿	0	bu4 da4 li2 r5
 不太好	0	bu4 tai4 hao3
+不失	0	bu4 shi1
 不失时机	0	bu4 shi1 shi2 ji1
 不失为	0	bu4 shi1 wei2
 不好	0	bu4 hao3
@@ -2492,7 +2510,6 @@ word 姐	0	w o r d jie3
 不提也罢	0	bu4 ti2 ye3 ba4
 不插电	0	bu4 cha1 dian4
 不揣冒昧	0	bu4 chuai3 mao4 mei4
-不搭理	0	bu4 da1 li3
 不摸头	0	bu4 mo1 tou2
 不撞南墙不回头	0	bu4 zhuang4 nan2 qiang2 bu4 hui2 tou2
 不择手段	0	bu4 ze2 shou3 duan4
@@ -2695,7 +2712,6 @@ word 姐	0	w o r d jie3
 不等式	0	bu4 deng3 shi4
 不等号	0	bu4 deng3 hao4
 不等边三角形	0	bu4 deng3 bian1 san1 jiao3 xing2
-不答理	0	bu4 da1 li3
 不算	0	bu4 suan4
 不管	0	bu4 guan3
 不管三七二十一	0	bu4 guan3 san1 qi1 er4 shi2 yi1
@@ -2740,7 +2756,6 @@ word 姐	0	w o r d jie3
 不自在	0	bu4 zi4 zai5
 不自然	0	bu4 zi4 ran2
 不自由，毋宁死	0	bu4 zi4 you2 wu2 ning4 si3
-不自觉	0	bu4 zi4 jue2
 不自量	0	bu4 zi4 liang4
 不自量力	0	bu4 zi4 liang4 li4
 不至于	0	bu4 zhi4 yu2
@@ -2833,6 +2848,7 @@ word 姐	0	w o r d jie3
 不负	0	bu4 fu4
 不负众望	0	bu4 fu4 zhong4 wang4
 不赀	0	bu4 zi1
+不贰过	0	bu4 er4 guo4
 不费事	0	bu4 fei4 shi4
 不费吹灰之力	0	bu4 fei4 chui1 hui1 zhi1 li4
 不赖	0	bu4 lai4
@@ -2899,7 +2915,6 @@ word 姐	0	w o r d jie3
 不长进	0	bu4 zhang3 jin4
 不开窍	0	bu4 kai1 qiao4
 不关痛痒	0	bu4 guan1 tong4 yang3
-不随大流	0	bu4 sui2 da4 liu2
 不随意	0	bu4 sui2 yi4
 不随意肌	0	bu4 sui2 yi4 ji1
 不雅	0	bu4 ya3
@@ -3144,6 +3159,7 @@ word 姐	0	w o r d jie3
 并坐	0	bing4 zuo4
 并存	0	bing4 cun2
 并排	0	bing4 pai2
+并未	0	bing4 wei4
 并条	0	bing4 tiao2
 并激	0	bing4 ji1
 并发	0	bing4 fa1
@@ -3297,6 +3313,7 @@ word 姐	0	w o r d jie3
 中国梦	0	zhong1 guo2 meng4
 中国大百科全书出版社	0	zhong1 guo2 da4 bai3 ke1 quan2 shu1 chu1 ban3 she4
 中国大蝾螈	0	zhong1 guo2 da4 rong2 yuan2
+中国大陆	0	zhong1 guo2 da4 lu4
 中国天主教爱国会	0	zhong1 guo2 tian1 zhu3 jiao4 ai4 guo2 hui4
 中国好声音	0	zhong1 guo2 hao3 sheng1 yin1
 中国小说史略	0	zhong1 guo2 xiao3 shuo1 shi3 lue4
@@ -3319,7 +3336,6 @@ word 姐	0	w o r d jie3
 中国东方航空	0	zhong1 guo2 dong1 fang1 hang2 kong1
 中国林蛙	0	zhong1 guo2 lin2 wa1
 中国核能总公司	0	zhong1 guo2 he2 neng2 zong3 gong1 si1
-中国历史博物馆	0	zhong1 guo2 li4 shi3 bo2 wu4 guan3
 中国残疾人联合会	0	zhong1 guo2 can2 ji2 ren2 lian2 he2 hui4
 中国残联	0	zhong1 guo2 can2 lian2
 中国民主促进会	0	zhong1 guo2 min2 zhu3 cu4 jin4 hui4
@@ -3414,6 +3430,8 @@ word 姐	0	w o r d jie3
 中央研究院	0	zhong1 yang1 yan2 jiu1 yuan4
 中央社	0	zhong1 yang1 she4
 中央空调	0	zhong1 yang1 kong1 tiao2
+中央处理单元	0	zhong1 yang1 chu3 li3 dan1 yuan2
+中央处理器	0	zhong1 yang1 chu3 li3 qi4
 中央处理机	0	zhong1 yang1 chu3 li3 ji1
 中央财经大学	0	zhong1 yang1 cai2 jing1 da4 xue2
 中央军事委员会	0	zhong1 yang1 jun1 shi4 wei3 yuan2 hui4
@@ -3543,6 +3561,7 @@ word 姐	0	w o r d jie3
 中段	0	zhong1 duan4
 中毒	0	zhong4 du2
 中毒性	0	zhong4 du2 xing4
+中毒者	0	zhong4 du2 zhe3
 中气层	0	zhong1 qi4 ceng2
 中气层顶	0	zhong1 qi4 ceng2 ding3
 中水	0	zhong1 shui3
@@ -3707,6 +3726,7 @@ word 姐	0	w o r d jie3
 中远	0	zhong1 yuan3
 中选	0	zhong4 xuan3
 中邪	0	zhong4 xie2
+中郎将	0	zhong1 lang2 jiang4
 中部	0	zhong1 bu4
 中都	0	zhong1 du1
 中医	0	zhong1 yi1
@@ -3814,12 +3834,12 @@ word 姐	0	w o r d jie3
 丹江口市	0	dan1 jiang1 kou3 shi4
 丹沙	0	dan1 sha1
 丹瑞	0	dan1 rui4
-丹瑞大将	0	dan1 rui4 da4 jiang4
 丹田	0	dan1 tian2
 丹皮	0	dan1 pi2
 丹砂	0	dan1 sha1
 丹棱	0	dan1 leng2
 丹棱县	0	dan1 leng2 xian4
+丹药	0	dan1 yao4
 丹衷	0	dan1 zhong1
 丹贝	0	dan1 bei4
 丹阳	0	dan1 yang2
@@ -4007,7 +4027,6 @@ word 姐	0	w o r d jie3
 久别重逢	0	jiu3 bie2 chong2 feng2
 久已	0	jiu3 yi3
 久慕	0	jiu3 mu4
-久慕盛名	0	jiu3 mu4 sheng4 ming2
 久攻不下	0	jiu3 gong1 bu4 xia4
 久旷	0	jiu3 kuang4
 久治	0	jiu3 zhi4
@@ -4148,6 +4167,9 @@ word 姐	0	w o r d jie3
 乙型脑炎	0	yi3 xing2 nao3 yan2
 乙基	0	yi3 ji1
 乙太	0	yi3 tai4
+乙太网路	0	yi3 tai4 wang3 lu4
+乙女	0	yi3 nu3
+乙女心	0	yi3 nu3 xin1
 乙巳	0	yi3 si4
 乙方	0	yi3 fang1
 乙未	0	yi3 wei4
@@ -4176,7 +4198,6 @@ word 姐	0	w o r d jie3
 乙醇酸	0	yi3 chun2 suan1
 乙醚	0	yi3 mi2
 乙醛	0	yi3 quan2
-乚	0	ya4
 乛	0	zhe2
 乜	0	nie4
 乜	0	mie1
@@ -4309,6 +4330,7 @@ word 姐	0	w o r d jie3
 乳晕	0	ru3 yun4
 乳果糖	0	ru3 guo3 tang2
 乳杆菌	0	ru3 gan3 jun1
+乳业	0	ru3 ye4
 乳母	0	ru3 mu3
 乳汁	0	ru3 zhi1
 乳液	0	ru3 ye4
@@ -4321,6 +4343,7 @@ word 姐	0	w o r d jie3
 乳燕	0	ru3 yan4
 乳牙	0	ru3 ya2
 乳牛	0	ru3 niu2
+乳痂	0	ru3 jia1
 乳癌	0	ru3 ai2
 乳白	0	ru3 bai2
 乳白天空	0	ru3 bai2 tian1 kong1
@@ -4399,7 +4422,6 @@ word 姐	0	w o r d jie3
 干洗	0	gan1 xi3
 干涸	0	gan1 he2
 干净	0	gan1 jing4
-干净俐落	0	gan1 jing4 li4 luo4
 干净利落	0	gan1 jing4 li4 luo5
 干渴	0	gan1 ke3
 干潮	0	gan1 chao2
@@ -4662,6 +4684,7 @@ word 姐	0	w o r d jie3
 二奶	0	er4 nai3
 二婚	0	er4 hun1
 二婚头	0	er4 hun1 tou2
+二审	0	er4 shen3
 二宝	0	er4 bao3
 二尕子	0	er4 ga3 zi5
 二尖瓣	0	er4 jian1 ban4
@@ -4827,6 +4850,8 @@ word 姐	0	w o r d jie3
 于归之喜	0	yu2 gui1 zhi1 xi3
 于洪	0	yu2 hong2
 于洪区	0	yu2 hong2 qu1
+于田	0	yu2 tian2
+于田县	0	yu2 tian2 xian4
 于都	0	yu2 du1
 于都县	0	yu2 du1 xian4
 亐	0	yu2
@@ -4943,6 +4968,7 @@ word 姐	0	w o r d jie3
 五度	0	wu3 du4
 五形	0	wu3 xing2
 五彩	0	wu3 cai3
+五彩纸屑	0	wu3 cai3 zhi3 xie4
 五彩缤纷	0	wu3 cai3 bin1 fen1
 五打一	0	wu3 da3 yi1
 五指	0	wu3 zhi3
@@ -5030,6 +5056,7 @@ word 姐	0	w o r d jie3
 五行八作	0	wu3 hang2 ba1 zuo1
 五角	0	wu3 jiao3
 五角场	0	wu3 jiao3 chang3
+五角大厦	0	wu3 jiao3 da4 sha4
 五角大楼	0	wu3 jiao3 da4 lou2
 五角形	0	wu3 jiao3 xing2
 五角星	0	wu3 jiao3 xing1
@@ -5046,6 +5073,7 @@ word 姐	0	w o r d jie3
 五金店	0	wu3 jin1 dian4
 五金店铺	0	wu3 jin1 dian4 pu4
 五院	0	wu3 yuan4
+五险一金	0	wu3 xian3 yi1 jin1
 五霸	0	wu3 ba4
 五音	0	wu3 yin1
 五音不全	0	wu3 yin1 bu4 quan2
@@ -5079,7 +5107,7 @@ word 姐	0	w o r d jie3
 井研县	0	jing3 yan2 xian4
 井绳	0	jing3 sheng2
 井盖	0	jing3 gai4
-井号	0	jing3 hao4
+	0	
 井蛙之见	0	jing3 wa1 zhi1 jian4
 井陉	0	jing3 xing2
 井陉矿区	0	jing3 xing2 kuang4 qu1
@@ -5107,6 +5135,7 @@ word 姐	0	w o r d jie3
 亚伦	0	ya4 lun2
 亚健康	0	ya4 jian4 kang1
 亚克力	0	ya4 ke4 li4
+亚冬会	0	ya4 dong1 hui4
 亚利安娜	0	ya4 li4 an1 na4
 亚利桑纳州	0	ya4 li4 sang1 na4 zhou1
 亚利桑那	0	ya4 li4 sang1 na4
@@ -5118,7 +5147,7 @@ word 姐	0	w o r d jie3
 亚喀巴	0	ya4 ka1 ba1
 亚单位	0	ya4 dan1 wei4
 亚型	0	ya4 xing2
-亚塞拜然	0	ya4 se4 bai4 ran2
+亚塞拜然	0	ya4 sai4 bai4 ran2
 亚太	0	ya4 tai4
 亚太区	0	ya4 tai4 qu1
 亚太地区	0	ya4 tai4 di4 qu1
@@ -5207,7 +5236,7 @@ word 姐	0	w o r d jie3
 亚临界	0	ya4 lin2 jie4
 亚兰	0	ya4 lan2
 亚裔	0	ya4 yi4
-亚西尔·阿拉法特	0	ya4 xi1 er3 · a1 la1 fa3 te4
+亚西尔·阿拉法特	0	ya4 xi1 er3 a1 la1 fa3 te4
 亚该亚	0	ya4 gai1 ya4
 亚足联	0	ya4 zu2 lian2
 亚军	0	ya4 jun1
@@ -5230,6 +5259,7 @@ word 姐	0	w o r d jie3
 亚马逊	0	ya4 ma3 xun4
 亚马逊河	0	ya4 ma3 xun4 he2
 亚麻	0	ya4 ma2
+亚麻仁	0	ya4 ma2 ren2
 亚麻子	0	ya4 ma2 zi3
 亚麻布	0	ya4 ma2 bu4
 亚麻籽	0	ya4 ma2 zi3
@@ -5336,7 +5366,6 @@ word 姐	0	w o r d jie3
 交换机	0	jiao1 huan4 ji1
 交换生	0	jiao1 huan4 sheng1
 交换码	0	jiao1 huan4 ma3
-交换端	0	jiao1 huan4 duan1
 交换网路	0	jiao1 huan4 wang3 lu4
 交换虚电路	0	jiao1 huan4 xu1 dian4 lu4
 交易	0	jiao1 yi4
@@ -5529,6 +5558,7 @@ word 姐	0	w o r d jie3
 亮出	0	liang4 chu1
 亮堂	0	liang4 tang2
 亮堂堂	0	liang4 tang2 tang2
+亮屏	0	liang4 ping2
 亮底牌	0	liang4 di3 pai2
 亮度	0	liang4 du4
 亮彩	0	liang4 cai3
@@ -5536,6 +5566,7 @@ word 姐	0	w o r d jie3
 亮星云	0	liang4 xing1 yun2
 亮晶晶	0	liang4 jing1 jing1
 亮氨酸	0	liang4 an1 suan1
+亮灯	0	liang4 deng1
 亮相	0	liang4 xiang4
 亮眼	0	liang4 yan3
 亮眼人	0	liang4 yan3 ren2
@@ -5628,10 +5659,12 @@ word 姐	0	w o r d jie3
 人在江湖，身不由己	0	ren2 zai4 jiang1 hu2 shen1 bu4 you2 ji3
 人均	0	ren2 jun1
 人士	0	ren2 shi4
+人寿	0	ren2 shou4
 人寿保险	0	ren2 shou4 bao3 xian3
 人寿年丰	0	ren2 shou4 nian2 feng1
 人外有人，天外有天	0	ren2 wai4 you3 ren2 tian1 wai4 you3 tian1
 人多势众	0	ren2 duo1 shi4 zhong4
+人大	0	ren2 da4
 人大	0	ren2 da4
 人夫	0	ren2 fu1
 人如其名	0	ren2 ru2 qi2 ming2
@@ -5836,6 +5869,7 @@ word 姐	0	w o r d jie3
 人艰不拆	0	ren2 jian1 bu4 chai1
 人蛇	0	ren2 she2
 人蛇集团	0	ren2 she2 ji2 tuan2
+人行	0	ren2 hang2
 人行区	0	ren2 xing2 qu1
 人行地下通道	0	ren2 xing2 di4 xia4 tong1 dao4
 人行横道	0	ren2 xing2 heng2 dao4
@@ -5913,7 +5947,6 @@ word 姐	0	w o r d jie3
 人体解剖学	0	ren2 ti3 jie3 pou1 xue2
 人高马大	0	ren2 gao1 ma3 da4
 人鱼	0	ren2 yu2
-人鱼小姐	0	ren2 yu2 xiao3 jie5
 人龙	0	ren2 long2
 亻	0	ren2
 亼	0	ji2
@@ -6058,6 +6091,7 @@ word 姐	0	w o r d jie3
 介于	0	jie4 yu2
 介壳	0	jie4 qiao4
 介绍	0	jie4 shao4
+介绍信	0	jie4 shao4 xin4
 介胄	0	jie4 zhou4
 介蒂	0	jie4 di4
 介词	0	jie4 ci2
@@ -6215,6 +6249,7 @@ word 姐	0	w o r d jie3
 代入	0	dai4 ru4
 代利斯	0	dai4 li4 si1
 代劳	0	dai4 lao2
+代可可脂	0	dai4 ke3 ke3 zhi1
 代名词	0	dai4 ming2 ci2
 代填	0	dai4 tian2
 代孕	0	dai4 yun4
@@ -6378,7 +6413,6 @@ word 姐	0	w o r d jie3
 以太网	0	yi3 tai4 wang3
 以太网络	0	yi3 tai4 wang3 luo4
 以太网络端口	0	yi3 tai4 wang3 luo4 duan1 kou3
-以太网路	0	yi3 tai4 wang3 lu4
 以失败而告终	0	yi3 shi1 bai4 er2 gao4 zhong1
 以夷制夷	0	yi3 yi2 zhi4 yi2
 以子之矛，攻子之盾	0	yi3 zi3 zhi1 mao2 gong1 zi3 zhi1 dun4
@@ -6511,6 +6545,7 @@ word 姐	0	w o r d jie3
 件	0	jian4
 件件桩桩	0	jian4 jian4 zhuang1 zhuang1
 件数	0	jian4 shu3
+价	0	jie4
 任	0	ren2
 任	0	ren4
 任一	0	ren4 yi1
@@ -6696,11 +6731,10 @@ word 姐	0	w o r d jie3
 伊水	0	yi1 shui3
 伊波拉	0	yi1 bo1 la1
 伊洛瓦底	0	yi1 luo4 wa3 di3
-伊洛瓦底三角洲	0	yi1 luo4 wa3 di3 san1 jiao3 zhou1
-伊洛瓦底江	0	yi1 luo4 wa3 di3 jiang1
 伊尔库茨克	0	yi1 er3 ku4 ci2 ke4
 伊犁	0	yi1 li2
 伊犁哈萨克自治州	0	yi1 li2 ha1 sa4 ke4 zi4 zhi4 zhou1
+伊犁州	0	yi1 li2 zhou1
 伊犁河	0	yi1 li2 he2
 伊犁盆地	0	yi1 li2 pen2 di4
 伊瑞克提翁庙	0	yi1 rui4 ke4 ti2 weng1 miao4
@@ -6820,6 +6854,7 @@ word 姐	0	w o r d jie3
 休止符	0	xiu1 zhi3 fu2
 休氏旋木雀	0	xiu1 shi4 xuan2 mu4 que4
 休氏树莺	0	xiu1 shi4 shu4 ying1
+休沐	0	xiu1 mu4
 休眠	0	xiu1 mian2
 休眠火山	0	xiu1 mian2 huo3 shan1
 休耕	0	xiu1 geng1
@@ -6868,7 +6903,6 @@ word 姐	0	w o r d jie3
 伯恩	0	bo2 en1
 伯恩斯	0	bo2 en1 si1
 伯恩茅斯	0	bo2 en1 mao2 si1
-伯拉第斯拉瓦	0	bo2 la1 di4 si1 la1 wa3
 伯明翰	0	bo2 ming2 han4
 伯乐	0	bo2 le4
 伯母	0	bo2 mu3
@@ -6919,7 +6953,6 @@ word 姐	0	w o r d jie3
 伴舞	0	ban4 wu3
 伴郎	0	ban4 lang2
 伴随	0	ban4 sui2
-伴随效应	0	ban4 sui2 xiao4 ying4
 伶	0	ling2
 伶人	0	ling2 ren2
 伶仃	0	ling2 ding1
@@ -6973,7 +7006,9 @@ word 姐	0	w o r d jie3
 似笑非笑	0	si4 xiao4 fei1 xiao4
 似雪	0	si4 xue3
 似鲴	0	si4 gu4
+伽	0	ga1
 伽	0	jia1
+伽	0	qie2
 伽倻	0	jia1 ye1
 伽倻琴	0	jia1 ye1 qin2
 伽利略	0	jia1 li4 lue4
@@ -6981,6 +7016,7 @@ word 姐	0	w o r d jie3
 伽利略号	0	jia1 li4 lue4 hao4
 伽师	0	jia1 shi1
 伽师县	0	jia1 shi1 xian4
+伽玛	0	ga1 ma3
 伽玛射线	0	jia1 ma3 she4 xian4
 伽罗瓦	0	jia1 luo2 wa3
 伽罗瓦理论	0	jia1 luo2 wa3 li3 lun4
@@ -7013,7 +7049,6 @@ word 姐	0	w o r d jie3
 布伍	0	bu4 wu3
 布告	0	bu4 gao4
 布告栏	0	bu4 gao4 lan2
-布囊其口	0	bu4 nang2 qi2 kou3
 布局	0	bu4 ju2
 布局投手	0	bu4 ju2 tou2 shou3
 布建	0	bu4 jian4
@@ -7085,6 +7120,8 @@ word 姐	0	w o r d jie3
 低栏	0	di1 lan2
 低气压	0	di1 qi4 ya1
 低沉	0	di1 chen2
+低消	0	di1 xiao1
+低消费	0	di1 xiao1 fei4
 低温	0	di1 wen1
 低潮	0	di1 chao2
 低浓缩铀	0	di1 nong2 suo1 you2
@@ -7153,6 +7190,7 @@ word 姐	0	w o r d jie3
 住区	0	zhu4 qu1
 住友	0	zhu4 you3
 住口	0	zhu4 kou3
+住商	0	zhu4 shang1
 住嘴	0	zhu4 zui3
 住地	0	zhu4 di4
 住址	0	zhu4 zhi3
@@ -7256,7 +7294,6 @@ word 姐	0	w o r d jie3
 何谓	0	he2 wei4
 何须	0	he2 xu1
 何首乌	0	he2 shou3 wu1
-何鲁晓夫	0	he2 lu3 xiao3 fu1
 佗	0	tuo2
 佘	0	she2
 余	0	yu2
@@ -7364,8 +7401,6 @@ word 姐	0	w o r d jie3
 作爱	0	zuo4 ai4
 作态	0	zuo4 tai4
 作战	0	zuo4 zhan4
-作战失踪	0	zuo4 zhan4 shi1 zong1
-作战失踪人员	0	zuo4 zhan4 shi1 zong1 ren2 yuan2
 作手	0	zuo4 shou3
 作揖	0	zuo4 yi1
 作数	0	zuo4 shu4
@@ -7378,6 +7413,7 @@ word 姐	0	w o r d jie3
 作案	0	zuo4 an4
 作梗	0	zuo4 geng3
 作业	0	zuo4 ye4
+作业员	0	zuo4 ye4 yuan2
 作业环境	0	zuo4 ye4 huan2 jing4
 作业系统	0	zuo4 ye4 xi4 tong3
 作乐	0	zuo4 le4
@@ -7772,7 +7808,6 @@ word 姐	0	w o r d jie3
 依次	0	yi1 ci4
 依法	0	yi1 fa3
 依法治国	0	yi1 fa3 zhi4 guo2
-依洛瓦底	0	yi1 luo4 wa3 di3
 依然	0	yi1 ran2
 依然如故	0	yi1 ran2 ru2 gu4
 依然故我	0	yi1 ran2 gu4 wo3
@@ -7934,19 +7969,19 @@ word 姐	0	w o r d jie3
 俄克拉何马	0	e2 ke4 la1 he2 ma3
 俄克拉何马城	0	e2 ke4 la1 he2 ma3 cheng2
 俄克拉何马州	0	e2 ke4 la1 he2 ma3 zhou1
+俄克拉荷马	0	e2 ke4 la1 he2 ma3
 俄勒冈	0	e2 le4 gang1
 俄勒冈州	0	e2 le4 gang1 zhou1
 俄国	0	e2 guo2
 俄国人	0	e2 guo2 ren2
 俄塔社	0	e2 ta3 she4
 俄巴底亚书	0	e2 ba1 di3 ya4 shu1
-俄底浦斯	0	e2 di3 pu3 si1
-俄底浦斯情结	0	e2 di3 pu3 si1 qing2 jie2
 俄文	0	e2 wen2
 俄期	0	e2 qi1
 俄乌	0	e2 wu1
 俄尔	0	e2 er3
 俄狄浦斯	0	e2 di2 pu3 si1
+俄狄浦斯情结	0	e2 di2 pu3 si1 qing2 jie2
 俄狄浦斯期	0	e2 di2 pu3 si1 qi1
 俄罗斯	0	e2 luo2 si1
 俄罗斯人	0	e2 luo2 si1 ren2
@@ -8105,6 +8140,7 @@ word 姐	0	w o r d jie3
 保税区	0	bao3 shui4 qu1
 保管	0	bao3 guan3
 保管员	0	bao3 guan3 yuan2
+保管箱	0	bao3 guan3 xiang1
 保罗	0	bao3 luo2
 保育	0	bao3 yu4
 保育箱	0	bao3 yu4 xiang1
@@ -8207,7 +8243,6 @@ word 姐	0	w o r d jie3
 信天翁	0	xin4 tian1 weng1
 信奉	0	xin4 feng4
 信子	0	xin4 zi5
-信孚中外	0	xin4 fu2 zhong1 wai4
 信守	0	xin4 shou3
 信宜	0	xin4 yi2
 信宜市	0	xin4 yi2 shi4
@@ -8343,6 +8378,7 @@ word 姐	0	w o r d jie3
 修练	0	xiu1 lian4
 修缮	0	xiu1 shan4
 修罗	0	xiu1 luo2
+修罗场	0	xiu1 luo2 chang3
 修习	0	xiu1 xi2
 修脚	0	xiu1 jiao3
 修脚师	0	xiu1 jiao3 shi1
@@ -8745,7 +8781,6 @@ word 姐	0	w o r d jie3
 借译词	0	jie4 yi4 ci2
 借读	0	jie4 du2
 借贷	0	jie4 dai4
-借资挹注	0	jie4 zi1 yi4 zhu4
 借账	0	jie4 zhang4
 借过	0	jie4 guo4
 借酒浇愁	0	jie4 jiu3 jiao1 chou2
@@ -9307,6 +9342,7 @@ word 姐	0	w o r d jie3
 偶联反应	0	ou3 lian2 fan3 ying4
 偶见	0	ou3 jian4
 偶语弃市	0	ou3 yu3 qi4 shi4
+偶买嘎	0	ou3 mai3 ga1
 偶蹄	0	ou3 ti2
 偶蹄目	0	ou3 ti2 mu4
 偶蹄类	0	ou3 ti2 lei4
@@ -9323,6 +9359,7 @@ word 姐	0	w o r d jie3
 偷安	0	tou1 an1
 偷工	0	tou1 gong1
 偷工减料	0	tou1 gong1 jian3 liao4
+偷师	0	tou1 shi1
 偷情	0	tou1 qing2
 偷惰	0	tou1 duo4
 偷懒	0	tou1 lan3
@@ -9406,6 +9443,7 @@ word 姐	0	w o r d jie3
 傈	0	li4
 傈僳	0	li4 su4
 傈僳族	0	li4 su4 zu2
+㐷	0	ma3
 㐷	0	ma4
 傍	0	bang4
 傍亮	0	bang4 liang4
@@ -9520,6 +9558,7 @@ word 姐	0	w o r d jie3
 催命	0	cui1 ming4
 催奶	0	cui1 nai3
 催婚	0	cui1 hun1
+催帐	0	cui1 zhang4
 催情	0	cui1 qing2
 催收	0	cui1 shou1
 催更	0	cui1 geng1
@@ -9546,6 +9585,7 @@ word 姐	0	w o r d jie3
 催讨	0	cui1 tao3
 催证	0	cui1 zheng4
 催谷	0	cui1 gu3
+催账	0	cui1 zhang4
 催逼	0	cui1 bi1
 佣	0	yong1
 佣人	0	yong1 ren2
@@ -9647,6 +9687,7 @@ word 姐	0	w o r d jie3
 传热学	0	zhuan4 re4 xue2
 传灯	0	chuan2 deng1
 传球	0	chuan2 qiu2
+传产	0	chuan2 chan3
 传略	0	zhuan4 lue4
 传发	0	chuan2 fa1
 传真	0	chuan2 zhen1
@@ -9729,6 +9770,7 @@ word 姐	0	w o r d jie3
 债务担保证券	0	zhai4 wu4 dan1 bao3 zheng4 quan4
 债务证券	0	zhai4 wu4 zheng4 quan4
 债务证书	0	zhai4 wu4 zheng4 shu1
+债多不愁	0	zhai4 duo1 bu4 chou2
 债户	0	zhai4 hu4
 债权	0	zhai4 quan2
 债权人	0	zhai4 quan2 ren2
@@ -9900,6 +9942,7 @@ word 姐	0	w o r d jie3
 侨务委员会	0	qiao2 wu4 wei3 yuan2 hui4
 侨居	0	qiao2 ju1
 侨民	0	qiao2 min2
+侨生	0	qiao2 sheng1
 侨眷	0	qiao2 juan4
 侨胞	0	qiao2 bao1
 侨乡	0	qiao2 xiang1
@@ -9953,6 +9996,8 @@ word 姐	0	w o r d jie3
 僯	0	lin3
 僰	0	bo2
 雇	0	gu4
+雇主	0	gu4 zhu3
+雇佣	0	gu4 yong1
 雇凶	0	gu4 xiong1
 雇用	0	gu4 yong4
 僳	0	su4
@@ -10363,6 +10408,7 @@ word 姐	0	w o r d jie3
 先	0	xian1
 先下手为强	0	xian1 xia4 shou3 wei2 qiang2
 先不先	0	xian1 bu4 xian1
+先主	0	xian1 zhu3
 先人	0	xian1 ren2
 先令	0	xian1 ling4
 先来后到	0	xian1 lai2 hou4 dao4
@@ -10574,6 +10620,7 @@ word 姐	0	w o r d jie3
 光临	0	guang1 lin2
 光艳	0	guang1 yan4
 光芒	0	guang1 mang2
+光芒万丈	0	guang1 mang2 wan4 zhang4
 光华	0	guang1 hua2
 光冲量	0	guang1 chong1 liang4
 光说不做	0	guang1 shuo1 bu4 zuo4
@@ -10632,6 +10679,7 @@ word 姐	0	w o r d jie3
 克娄巴特拉	0	ke4 lou2 ba1 te4 la1
 克孜勒	0	ke4 zi1 le4
 克孜勒苏	0	ke4 zi1 le4 su1
+克孜勒苏州	0	ke4 zi1 le4 su1 zhou1
 克孜勒苏柯尔克孜自治州	0	ke4 zi1 le4 su1 ke1 er3 ke4 zi1 zi4 zhi4 zhou1
 克孜勒苏河	0	ke4 zi1 le4 su1 he2
 克孜尔千佛洞	0	ke4 zi1 er3 qian1 fo2 dong4
@@ -10687,9 +10735,11 @@ word 姐	0	w o r d jie3
 克莉奥佩特拉	0	ke4 li4 ao4 pei4 te4 la1
 克莱	0	ke4 lai2
 克莱因	0	ke4 lai2 yin1
-克莱蒙特	0	ke4 lai2 meng2 te4
 克莱斯勒	0	ke4 lai2 si1 le4
 克莱尔	0	ke4 lai2 er3
+克莱尔蒙特	0	ke4 lai2 er3 meng2 te4
+克莱蒙	0	ke4 lai2 meng2
+克莱蒙特	0	ke4 lai2 meng2 te4
 克莱顿	0	ke4 lai2 dun4
 克蕾儿	0	ke4 lei3 r5
 克苏鲁	0	ke4 su1 lu3
@@ -10778,8 +10828,8 @@ word 姐	0	w o r d jie3
 儿女	0	er2 nu3
 儿女英雄传	0	er2 nu3 ying1 xiong2 zhuan4
 儿媳	0	er2 xi2
-儿媳妇	0	er2 xi2 fu5
-儿媳妇儿	0	er2 xi2 fu5 r5
+儿媳妇	0	er2 xi2 fu4
+儿媳妇儿	0	er2 xi2 fu4 r5
 儿子	0	er2 zi5
 儿孙	0	er2 sun1
 儿孙自有儿孙福	0	er2 sun1 zi4 you3 er2 sun1 fu2
@@ -11107,7 +11157,9 @@ word 姐	0	w o r d jie3
 内陆国	0	nei4 lu4 guo2
 内陆河	0	nei4 lu4 he2
 内需	0	nei4 xu1
+内飞地	0	nei4 fei1 di4
 内饰	0	nei4 shi4
+内馅	0	nei4 xian4
 内斗	0	nei4 dou4
 内哄	0	nei4 hong4
 内鬼	0	nei4 gui3
@@ -11226,13 +11278,13 @@ word 姐	0	w o r d jie3
 全球	0	quan2 qiu2
 全球位置测定系统	0	quan2 qiu2 wei4 zhi4 ce4 ding4 xi4 tong3
 全球化	0	quan2 qiu2 hua4
+全球南方	0	quan2 qiu2 nan2 fang1
 全球定位系统	0	quan2 qiu2 ding4 wei4 xi4 tong3
 全球性	0	quan2 qiu2 xing4
 全球暖化	0	quan2 qiu2 nuan3 hua4
 全球气候	0	quan2 qiu2 qi4 hou4
 全球气候升温	0	quan2 qiu2 qi4 hou4 sheng1 wen1
 全球气候变暖	0	quan2 qiu2 qi4 hou4 bian4 nuan3
-全球发展中心	0	quan2 qiu2 fa1 zhan3 zhong1 xin1
 全球而言	0	quan2 qiu2 er2 yan2
 全球卫星导航系统	0	quan2 qiu2 wei4 xing1 dao3 hang2 xi4 tong3
 全球变暖	0	quan2 qiu2 bian4 nuan3
@@ -11783,6 +11835,7 @@ word 姐	0	w o r d jie3
 公立学校	0	gong1 li4 xue2 xiao4
 公章	0	gong1 zhang1
 公筷	0	gong1 kuai4
+公筷母匙	0	gong1 kuai4 mu3 chi2
 公粮	0	gong1 liang2
 公约	0	gong1 yue1
 公约数	0	gong1 yue1 shu4
@@ -12099,6 +12152,7 @@ word 姐	0	w o r d jie3
 典型化	0	dian3 xing2 hua4
 典型用途	0	dian3 xing2 yong4 tu2
 典型登革热	0	dian3 xing2 deng1 ge2 re4
+典座	0	dian3 zuo4
 典押	0	dian3 ya1
 典故	0	dian3 gu4
 典狱长	0	dian3 yu4 zhang3
@@ -12281,7 +12335,6 @@ word 姐	0	w o r d jie3
 冗官	0	rong3 guan1
 冗散	0	rong3 san3
 冗数	0	rong3 shu4
-冗条子	0	rong3 tiao2 zi5
 冗笔	0	rong3 bi3
 冗繁	0	rong3 fan2
 冗职	0	rong3 zhi2
@@ -12412,11 +12465,15 @@ word 姐	0	w o r d jie3
 冬至点	0	dong1 zhi4 dian3
 冬菇	0	dong1 gu1
 冬菜	0	dong1 cai4
+冬荫	0	dong1 yin1
+冬荫功	0	dong1 yin1 gong1
 冬蛰	0	dong1 zhe2
 冬虫夏草	0	dong1 chong2 xia4 cao3
 冬衣	0	dong1 yi1
 冬运会	0	dong1 yun4 hui4
 冬闲	0	dong1 xian2
+冬阴	0	dong1 yin1
+冬阴功	0	dong1 yin1 gong1
 冬青	0	dong1 qing1
 冬青树	0	dong1 qing1 shu4
 冮	0	gang1
@@ -12444,6 +12501,7 @@ word 姐	0	w o r d jie3
 冰壶秋月	0	bing1 hu2 qiu1 yue4
 冰天雪地	0	bing1 tian1 xue3 di4
 冰封	0	bing1 feng1
+冰屋	0	bing1 wu1
 冰山	0	bing1 shan1
 冰山一角	0	bing1 shan1 yi1 jiao3
 冰岛	0	bing1 dao3
@@ -12613,6 +12671,8 @@ word 姐	0	w o r d jie3
 冷艳	0	leng3 yan4
 冷若冰霜	0	leng3 ruo4 bing1 shuang1
 冷菜	0	leng3 cai4
+冷萃	0	leng3 cui4
+冷萃咖啡	0	leng3 cui4 ka1 fei1
 冷落	0	leng3 luo4
 冷藏	0	leng3 cang2
 冷藏箱	0	leng3 cang2 xiang1
@@ -12660,7 +12720,7 @@ word 姐	0	w o r d jie3
 净心修身	0	jing4 xin1 xiu1 shen1
 净身	0	jing4 shen1
 净身出户	0	jing4 shen1 chu1 hu4
-凊	0	jing4
+凊	0	qing4
 凋	0	diao1
 凋敝	0	diao1 bi4
 凋落	0	diao1 luo4
@@ -12809,7 +12869,7 @@ word 姐	0	w o r d jie3
 凯特	0	kai3 te4
 凯瑟琳	0	kai3 se4 lin2
 凯芙拉	0	kai3 fu2 la1
-凯茜·弗里曼	0	kai3 xi1 · fu2 li3 man4
+凯茜·弗里曼	0	kai3 xi1 fu2 li3 man4
 凯蒂	0	kai3 di4
 凯蒂猫	0	kai3 di4 mao1
 凯迪拉克	0	kai3 di2 la1 ke4
@@ -12983,7 +13043,6 @@ word 姐	0	w o r d jie3
 出师未捷身先死	0	chu1 shi1 wei4 jie2 shen1 xian1 si3
 出席	0	chu1 xi2
 出席者	0	chu1 xi2 zhe3
-出席表决比例	0	chu1 xi2 biao3 jue2 bi3 li4
 出庭	0	chu1 ting2
 出厂	0	chu1 chang3
 出厂价	0	chu1 chang3 jia4
@@ -13191,6 +13250,7 @@ word 姐	0	w o r d jie3
 刀斧手	0	dao1 fu3 shou3
 刀枪	0	dao1 qiang1
 刀枪不入	0	dao1 qiang1 bu4 ru4
+刀枪剑戟	0	dao1 qiang1 jian4 ji3
 刀片	0	dao1 pian4
 刀片刺网	0	dao1 pian4 ci4 wang3
 刀片铁丝网	0	dao1 pian4 tie3 si1 wang3
@@ -13338,7 +13398,6 @@ word 姐	0	w o r d jie3
 分析师	0	fen1 xi1 shi1
 分析心理学	0	fen1 xi1 xin1 li3 xue2
 分析法	0	fen1 xi1 fa3
-分析研究	0	fen1 xi1 yan2 jiu1
 分析处理	0	fen1 xi1 chu3 li3
 分析语	0	fen1 xi1 yu3
 分枝	0	fen1 zhi1
@@ -13396,6 +13455,7 @@ word 姐	0	w o r d jie3
 分给	0	fen1 gei3
 分缝	0	fen1 feng4
 分而治之	0	fen1 er2 zhi4 zhi1
+分肥	0	fen1 fei2
 分至点	0	fen1 zhi4 dian3
 分色	0	fen1 se4
 分色镜头	0	fen1 se4 jing4 tou2
@@ -13471,7 +13531,7 @@ word 姐	0	w o r d jie3
 分点	0	fen1 dian3
 切	0	qie1
 切	0	qie4
-切·格瓦拉	0	qie4 · ge2 wa3 la1
+切·格瓦拉	0	qie4 ge2 wa3 la1
 切中	0	qie4 zhong4
 切中时弊	0	qie4 zhong4 shi2 bi4
 切中时病	0	qie4 zhong4 shi2 bing4
@@ -13631,7 +13691,7 @@ word 姐	0	w o r d jie3
 列别捷夫	0	lie4 bie2 jie2 fu1
 列印	0	lie4 yin4
 列国	0	lie4 guo2
-列夫·托尔斯泰	0	lie4 fu1 · tuo1 er3 si1 tai4
+列夫·托尔斯泰	0	lie4 fu1 tuo1 er3 si1 tai4
 列子	0	lie4 zi3
 列宁	0	lie4 ning2
 列宁主义	0	lie4 ning2 zhu3 yi4
@@ -13875,6 +13935,7 @@ word 姐	0	w o r d jie3
 利权	0	li4 quan2
 利比亚	0	li4 bi3 ya4
 利比里亚	0	li4 bi3 li3 ya4
+利民	0	li4 min2
 利津	0	li4 jin1
 利津县	0	li4 jin1 xian4
 利润	0	li4 run4
@@ -13950,6 +14011,7 @@ word 姐	0	w o r d jie3
 到家	0	dao4 jia1
 到岸价	0	dao4 an4 jia4
 到底	0	dao4 di3
+到府服务	0	dao4 fu3 fu2 wu4
 到得	0	dao4 de2
 到手	0	dao4 shou3
 到手软	0	dao4 shou3 ruan3
@@ -14005,6 +14067,7 @@ word 姐	0	w o r d jie3
 制订	0	zhi4 ding4
 制酸剂	0	zhi4 suan1 ji4
 制钱	0	zhi4 qian2
+制霸	0	zhi4 ba4
 刷	0	shua1
 刷	0	shua4
 刷入	0	shua1 ru4
@@ -14052,7 +14115,6 @@ word 姐	0	w o r d jie3
 刺激剂	0	ci4 ji1 ji4
 刺激性	0	ci4 ji1 xing4
 刺激物	0	ci4 ji1 wu4
-刺激素	0	ci4 ji1 su4
 刺痛	0	ci4 tong4
 刺目	0	ci4 mu4
 刺眼	0	ci4 yan3
@@ -14074,6 +14136,7 @@ word 姐	0	w o r d jie3
 刺身	0	ci4 shen1
 刺钢丝	0	ci4 gang1 si1
 刺青	0	ci4 qing1
+刺头	0	ci4 tou2
 刺骨	0	ci4 gu3
 刺鼻	0	ci4 bi2
 刻	0	ke4
@@ -14303,6 +14366,7 @@ word 姐	0	w o r d jie3
 前舱	0	qian2 cang1
 前茅	0	qian2 mao2
 前菜	0	qian2 cai4
+前药	0	qian2 yao4
 前苏联	0	qian2 su1 lian2
 前行	0	qian2 xing2
 前卫	0	qian2 wei4
@@ -14525,6 +14589,7 @@ word 姐	0	w o r d jie3
 副相	0	fu4 xiang4
 副省级	0	fu4 sheng3 ji2
 副省级城市	0	fu4 sheng3 ji2 cheng2 shi4
+副科	0	fu4 ke1
 副秘书长	0	fu4 mi4 shu1 zhang3
 副经理	0	fu4 jing1 li3
 副总理	0	fu4 zong3 li3
@@ -14587,10 +14652,8 @@ word 姐	0	w o r d jie3
 创作力	0	chuang4 zuo4 li4
 创作者	0	chuang4 zuo4 zhe3
 创伤	0	chuang1 shang1
-创伤后	0	chuang1 shang1 hou4
-创伤后压力	0	chuang1 shang1 hou4 ya1 li4
-创伤后压力紊乱	0	chuang1 shang1 hou4 ya1 li4 wen3 luan4
-创伤后心理压力紧张综合症	0	chuang1 shang1 hou4 xin1 li3 ya1 li4 jin3 zhang1 zong1 he2 zheng4
+创伤后压力症候群	0	chuang1 shang1 hou4 ya1 li4 zheng4 hou4 qun2
+创伤后应激障碍	0	chuang1 shang1 hou4 ying4 ji1 zhang4 ai4
 创价学会	0	chuang4 jia4 xue2 hui4
 创优	0	chuang4 you1
 创刊	0	chuang4 kan1
@@ -14654,6 +14717,7 @@ word 姐	0	w o r d jie3
 剿灭	0	jiao3 mie4
 剿袭	0	chao1 xi2
 剿说	0	chao1 shuo1
+劀	0	gua1
 劁	0	qiao1
 劂	0	jue2
 划	0	hua2
@@ -14676,6 +14740,7 @@ word 姐	0	w o r d jie3
 划清	0	hua4 qing1
 划痕	0	hua2 hen2
 划破	0	hua2 po4
+划等号	0	hua4 deng3 hao4
 划线	0	hua4 xian4
 划线板	0	hua4 xian4 ban3
 划花	0	hua4 hua1
@@ -14813,7 +14878,6 @@ word 姐	0	w o r d jie3
 剂子	0	ji4 zi5
 剂次	0	ji4 ci4
 剂量	0	ji4 liang4
-剂量效应	0	ji4 liang4 xiao4 ying4
 剂量当量	0	ji4 liang4 dang1 liang4
 剑	0	jian4
 劓	0	yi4
@@ -14994,7 +15058,6 @@ word 姐	0	w o r d jie3
 加封官阶	0	jia1 feng1 guan1 jie1
 加州	0	jia1 zhou1
 加州大学	0	jia1 zhou1 da4 xue2
-加州技术学院	0	jia1 zhou1 ji4 shu4 xue2 yuan4
 加州理工学院	0	jia1 zhou1 li3 gong1 xue2 yuan4
 加工	0	jia1 gong1
 加工厂	0	jia1 gong1 chang3
@@ -15004,6 +15067,7 @@ word 姐	0	w o r d jie3
 加强管制	0	jia1 qiang2 guan3 zhi4
 加强针	0	jia1 qiang2 zhen1
 加彭	0	jia1 peng2
+加征	0	jia1 zheng1
 加德士	0	jia1 de2 shi4
 加德满都	0	jia1 de2 man3 du1
 加德纳	0	jia1 de2 na4
@@ -15257,7 +15321,7 @@ word 姐	0	w o r d jie3
 勃然变色	0	bo2 ran2 bian4 se4
 勃发	0	bo2 fa1
 勃兴	0	bo2 xing1
-勃艮第	0	bo2 gen3 di4
+勃艮第	0	bo2 gen4 di4
 勃兰登堡	0	bo2 lan2 deng1 bao3
 勃起	0	bo2 qi3
 勃起功能障碍	0	bo2 qi3 gong1 neng2 zhang4 ai4
@@ -15358,6 +15422,7 @@ word 姐	0	w o r d jie3
 动情激素	0	dong4 qing2 ji1 su4
 动情素	0	dong4 qing2 su4
 动感	0	dong4 gan3
+动感单车	0	dong4 gan3 dan1 che1
 动态	0	dong4 tai4
 动态助词	0	dong4 tai4 zhu4 ci2
 动态图形	0	dong4 tai4 tu2 xing2
@@ -15391,7 +15456,6 @@ word 姐	0	w o r d jie3
 动物油	0	dong4 wu4 you2
 动物淀粉	0	dong4 wu4 dian4 fen3
 动物界	0	dong4 wu4 jie4
-动物脂肪	0	dong4 wu4 zhi1 fang2
 动物庄园	0	dong4 wu4 zhuang1 yuan2
 动物农场	0	dong4 wu4 nong2 chang3
 动产	0	dong4 chan3
@@ -15402,6 +15466,7 @@ word 姐	0	w o r d jie3
 动真格	0	dong4 zhen1 ge2
 动笔	0	dong4 bi3
 动粗	0	dong4 cu1
+动线	0	dong4 xian4
 动听	0	dong4 ting1
 动肝火	0	dong4 gan1 huo3
 动能	0	dong4 neng2
@@ -15701,7 +15766,7 @@ word 姐	0	w o r d jie3
 勾阑	0	gou1 lan2
 勾魂	0	gou1 hun2
 勿	0	wu4
-勿 cue	0	wu4 c u e
+勿 cue	0	wu4 cue
 勿忘国耻	0	wu4 wang4 guo2 chi3
 勿忘我	0	wu4 wang4 wo3
 勿求人	0	wu4 qiu2 ren2
@@ -15871,6 +15936,7 @@ word 姐	0	w o r d jie3
 化妆	0	hua4 zhuang1
 化妆品	0	hua4 zhuang1 pin3
 化妆室	0	hua4 zhuang1 shi4
+化妆师	0	hua4 zhuang1 shi1
 化妆水	0	hua4 zhuang1 shui3
 化妆舞会	0	hua4 zhuang1 wu3 hui4
 化子	0	hua1 zi5
@@ -15971,7 +16037,6 @@ word 姐	0	w o r d jie3
 北京晚报	0	bei3 jing1 wan3 bao4
 北京晨报	0	bei3 jing1 chen2 bao4
 北京林业大学	0	bei3 jing1 lin2 ye4 da4 xue2
-北京核武器研究所	0	bei3 jing1 he2 wu3 qi4 yan2 jiu1 suo3
 北京汽车制造厂有限公司	0	bei3 jing1 qi4 che1 zhi4 zao4 chang3 you3 xian4 gong1 si1
 北京烤鸭	0	bei3 jing1 kao3 ya1
 北京物资学院	0	bei3 jing1 wu4 zi1 xue2 yuan4
@@ -16142,6 +16207,7 @@ word 姐	0	w o r d jie3
 北韩	0	bei3 han2
 北领地	0	bei3 ling3 di4
 北领角鸮	0	bei3 ling3 jiao3 xiao1
+北马其顿	0	bei3 ma3 qi2 dun4
 北马里亚纳	0	bei3 ma3 li3 ya4 na4
 北马里亚纳群岛	0	bei3 ma3 li3 ya4 na4 qun2 dao3
 北魏	0	bei3 wei4
@@ -16509,6 +16575,7 @@ word 姐	0	w o r d jie3
 升格	0	sheng1 ge2
 升汞	0	sheng1 gong3
 升温	0	sheng1 wen1
+升班马	0	sheng1 ban1 ma3
 升空	0	sheng1 kong1
 升级	0	sheng1 ji2
 升结肠	0	sheng1 jie2 chang2
@@ -16576,6 +16643,7 @@ word 姐	0	w o r d jie3
 半天	0	ban4 tian1
 半失业	0	ban4 shi1 ye4
 半官方	0	ban4 guan1 fang1
+半宝石	0	ban4 bao3 shi2
 半封建	0	ban4 feng1 jian4
 半封建半殖民地	0	ban4 feng1 jian4 ban4 zhi2 min2 di4
 半导瓷	0	ban4 dao3 ci2
@@ -16707,6 +16775,7 @@ word 姐	0	w o r d jie3
 卑怯	0	bei1 qie4
 卑污	0	bei1 wu1
 卑尔根	0	bei1 er3 gen1
+卑亲属	0	bei1 qin1 shu3
 卑诗	0	bei1 shi1
 卑贱	0	bei1 jian4
 卑躬屈节	0	bei1 gong1 qu1 jie2
@@ -16807,8 +16876,6 @@ word 姐	0	w o r d jie3
 南北美	0	nan2 bei3 mei3
 南北长	0	nan2 bei3 chang2
 南北韩	0	nan2 bei3 han2
-南汇	0	nan2 hui4
-南汇区	0	nan2 hui4 qu1
 南十字座	0	nan2 shi2 zi4 zuo4
 南半球	0	nan2 ban4 qiu2
 南卡罗来纳	0	nan2 ka3 luo2 lai2 na4
@@ -16853,7 +16920,6 @@ word 姐	0	w o r d jie3
 南川区	0	nan2 chuan1 qu1
 南州	0	nan2 zhou1
 南州乡	0	nan2 zhou1 xiang1
-南市区	0	nan2 shi4 qu1
 南希	0	nan2 xi1
 南平	0	nan2 ping2
 南平市	0	nan2 ping2 shi4
@@ -17073,6 +17139,8 @@ word 姐	0	w o r d jie3
 博洛尼亚	0	bo2 luo4 ni2 ya4
 博湖	0	bo2 hu2
 博湖县	0	bo2 hu2 xian4
+博尔塔拉	0	bo2 er3 ta3 la1
+博尔塔拉州	0	bo2 er3 ta3 la1 zhou1
 博尔塔拉蒙古自治州	0	bo2 er3 ta3 la1 meng3 gu3 zi4 zhi4 zhou1
 博尔德	0	bo2 er3 de2
 博尔赫斯	0	bo2 er3 he4 si1
@@ -17098,7 +17166,6 @@ word 姐	0	w o r d jie3
 博兴	0	bo2 xing1
 博兴县	0	bo2 xing1 xian4
 博茨瓦纳	0	bo2 ci2 wa3 na4
-博茨瓦那	0	bo2 ci2 wa3 na4
 博蒂	0	bo2 di4
 博蒙特	0	bo2 meng2 te4
 博览	0	bo2 lan3
@@ -17214,7 +17281,6 @@ word 姐	0	w o r d jie3
 卡拉什尼科夫	0	ka3 la1 shi2 ni2 ke1 fu1
 卡拉卡斯	0	ka3 la1 ka3 si1
 卡拉奇	0	ka3 la1 qi2
-卡拉奇那	0	ka3 la1 ji1 na4
 卡拉姆昌德	0	ka3 la1 mu3 chang1 de2
 卡拉季奇	0	ka3 la1 ji4 qi2
 卡拉布里亚	0	ka3 la1 bu4 li3 ya4
@@ -17228,6 +17294,7 @@ word 姐	0	w o r d jie3
 卡斯翠	0	ka3 si1 cui4
 卡斯蒂利亚	0	ka3 si1 di4 li4 ya4
 卡斯蒂利亚·莱昂	0	ka3 si1 di4 li4 ya4 · lai2 ang2
+卡斯蒂利亚语	0	ka3 si1 di4 li4 ya4 yu3
 卡方	0	ka3 fang1
 卡昂	0	ka3 ang2
 卡桑德拉	0	ka3 sang1 de2 la1
@@ -17309,6 +17376,7 @@ word 姐	0	w o r d jie3
 卯时	0	mao3 shi2
 卯榫	0	mao3 sun3
 卯眼	0	mao3 yan3
+卯起来	0	mao3 qi3 lai5
 印	0	yin4
 印	0	yin4
 印信	0	yin4 xin4
@@ -17326,9 +17394,6 @@ word 姐	0	w o r d jie3
 印刷体	0	yin4 shua1 ti3
 印加	0	yin4 jia1
 印古什	0	yin4 gu3 shi2
-印地安	0	yin4 di4 an1
-印地安纳	0	yin4 di4 an1 na4
-印地安纳州	0	yin4 di4 an1 na4 zhou1
 印地语	0	yin4 di4 yu3
 印堂	0	yin4 tang2
 印堂穴	0	yin4 tang2 xue2
@@ -17357,9 +17422,9 @@ word 姐	0	w o r d jie3
 印度眼镜蛇	0	yin4 du4 yan3 jing4 she2
 印度航空公司	0	yin4 du4 hang2 kong1 gong1 si1
 印度金黄鹂	0	yin4 du4 jin1 huang2 li2
-印度雅利安	0	yin4 du4 ya3 li4 an1
 印度音乐	0	yin4 du4 yin1 yue4
 印度鬼椒	0	yin4 du4 gui3 jiao1
+印度－雅利安	0	yin4 du4 ya3 li4 an1
 印戒	0	yin4 jie4
 印把子	0	yin4 ba4 zi5
 印支	0	yin4 zhi1
@@ -17552,6 +17617,7 @@ word 姐	0	w o r d jie3
 卸货	0	xie4 huo4
 卸责	0	xie4 ze2
 卸载	0	xie4 zai4
+卸除	0	xie4 chu2
 卸头	0	xie4 tou2
 恤	0	xu4
 却	0	que4
@@ -17651,7 +17717,6 @@ word 姐	0	w o r d jie3
 原创力	0	yuan2 chuang4 li4
 原创性	0	yuan2 chuang4 xing4
 原动力	0	yuan2 dong4 li4
-原南斯拉夫	0	yuan2 nan2 si1 la1 fu1
 原原本本	0	yuan2 yuan2 ben3 ben3
 原名	0	yuan2 ming2
 原告	0	yuan2 gao4
@@ -17734,6 +17799,7 @@ word 姐	0	w o r d jie3
 原田	0	yuan2 tian2
 原由	0	yuan2 you2
 原发性进行性失语	0	yuan2 fa1 xing4 jin4 xing2 xing4 shi1 yu3
+原研药	0	yuan2 yan2 yao4
 原稿	0	yuan2 gao3
 原籍	0	yuan2 ji2
 原纤维	0	yuan2 xian1 wei2
@@ -17774,7 +17840,6 @@ word 姐	0	w o r d jie3
 厌学	0	yan4 xue2
 厌恨	0	yan4 hen4
 厌恶	0	yan4 wu4
-厌恶人类者	0	yan4 wu4 ren2 lei4 zhe3
 厌战	0	yan4 zhan4
 厌弃	0	yan4 qi4
 厌气	0	yan4 qi4
@@ -17851,6 +17916,7 @@ word 姐	0	w o r d jie3
 去重	0	qu4 chong2
 去除	0	qu4 chu2
 去颤	0	qu4 chan4
+去骨	0	qu4 gu3
 去魅	0	qu4 mei4
 厼	0	xx5
 厾	0	du1
@@ -18262,6 +18328,7 @@ word 姐	0	w o r d jie3
 取之不尽，用之不竭	0	qu3 zhi1 bu4 jin4 yong4 zhi1 bu4 jie2
 取代	0	qu3 dai4
 取代基	0	qu3 dai4 ji1
+取件	0	qu3 jian4
 取保候审	0	qu3 bao3 hou4 shen3
 取保释放	0	qu3 bao3 shi4 fang4
 取信	0	qu3 xin4
@@ -18295,6 +18362,7 @@ word 姐	0	w o r d jie3
 取决于	0	qu3 jue2 yu2
 取消	0	qu3 xiao1
 取消禁令	0	qu3 xiao1 jin4 ling4
+取消关注	0	qu3 xiao1 guan1 zhu4
 取火	0	qu3 huo3
 取灯儿	0	qu3 deng1 r5
 取现	0	qu3 xian4
@@ -18495,6 +18563,7 @@ word 姐	0	w o r d jie3
 口播	0	kou3 bo1
 口是心非	0	kou3 shi4 xin1 fei1
 口服	0	kou3 fu2
+口服液	0	kou3 fu2 ye4
 口条	0	kou3 tiao2
 口欲期	0	kou3 yu4 qi1
 口气	0	kou3 qi4
@@ -18718,6 +18787,7 @@ word 姐	0	w o r d jie3
 古体诗	0	gu3 ti3 shi1
 古鲁	0	gu3 lu3
 古鲁鲁	0	gu3 lu3 lu3
+古丽	0	gu3 li4
 古龙	0	gu3 long2
 古龙水	0	gu3 long2 shui3
 句	0	gou1
@@ -18731,7 +18801,6 @@ word 姐	0	w o r d jie3
 句数	0	ju4 shu4
 句法	0	ju4 fa3
 句法分析	0	ju4 fa3 fen1 xi1
-句法意识	0	ju4 fa3 yi4 shi2
 句群	0	ju4 qun2
 句号	0	ju4 hao4
 句读	0	ju4 dou4
@@ -18802,7 +18871,7 @@ word 姐	0	w o r d jie3
 只要	0	zhi3 yao4
 只要功夫深，铁杵磨成针	0	zhi3 yao4 gong1 fu5 shen1 tie3 chu3 mo2 cheng2 zhen1
 只见	0	zhi3 jian4
-只见树木不见森林	0	zhi3 jian4 shu4 mu4 bu4 jian4 sen1 lin2
+只见树木，不见森林	0	zhi3 jian4 shu4 mu4 bu4 jian4 sen1 lin2
 只言片语	0	zhi1 yan2 pian4 yu3
 只许州官放火，不许百姓点灯	0	zhi3 xu3 zhou1 guan1 fang4 huo3 bu4 xu3 bai3 xing4 dian3 deng1
 只说不做	0	zhi3 shuo1 bu4 zuo4
@@ -18901,6 +18970,8 @@ word 姐	0	w o r d jie3
 可可托海镇	0	ke3 ke3 tuo1 hai3 zhen4
 可可波罗	0	ke3 ke3 bo1 luo2
 可可米	0	ke3 ke3 mi3
+可可粉	0	ke3 ke3 fen3
+可可脂	0	ke3 ke3 zhi1
 可可西里	0	ke3 ke3 xi1 li3
 可吃	0	ke3 chi1
 可否	0	ke3 fou3
@@ -19232,6 +19303,7 @@ word 姐	0	w o r d jie3
 司空	0	si1 kong1
 司空见惯	0	si1 kong1 jian4 guan4
 司线员	0	si1 xian4 yuan2
+司美格鲁肽	0	si1 mei3 ge2 lu3 tai4
 司职	0	si1 zhi2
 司药	0	si1 yao4
 司铎	0	si1 duo2
@@ -19268,6 +19340,7 @@ word 姐	0	w o r d jie3
 吃不消	0	chi1 bu5 xiao1
 吃不准	0	chi1 bu4 zhun3
 吃不开	0	chi1 bu5 kai1
+吃干抹净	0	chi1 gan1 ma1 jing4
 吃干饭	0	chi1 gan1 fan4
 吃了定心丸	0	chi1 le5 ding4 xin1 wan2
 吃人	0	chi1 ren2
@@ -19553,6 +19626,7 @@ word 姐	0	w o r d jie3
 合群	0	he2 qun2
 合义复词	0	he2 yi4 fu4 ci2
 合而为一	0	he2 er2 wei2 yi1
+合聘	0	he2 pin4
 合股	0	he2 gu3
 合股线	0	he2 gu3 xian4
 合肥	0	he2 fei2
@@ -19944,6 +20018,7 @@ word 姐	0	w o r d jie3
 名列前茅	0	ming2 lie4 qian2 mao2
 名利	0	ming2 li4
 名利场	0	ming2 li4 chang3
+名利场	0	ming2 li4 chang3
 名利双收	0	ming2 li4 shuang1 shou1
 名刺	0	ming2 ci4
 名副其实	0	ming2 fu4 qi2 shi2
@@ -20103,7 +20178,6 @@ word 姐	0	w o r d jie3
 向来	0	xiang4 lai2
 向例	0	xiang4 li4
 向前	0	xiang4 qian2
-向前翻腾	0	xiang4 qian2 fan1 teng2
 向北	0	xiang4 bei3
 向南	0	xiang4 nan2
 向右拐	0	xiang4 you4 guai3
@@ -20114,7 +20188,6 @@ word 姐	0	w o r d jie3
 向左拐	0	xiang4 zuo3 guai3
 向巴平措	0	xiang4 ba1 ping2 cuo4
 向后	0	xiang4 hou4
-向后翻腾	0	xiang4 hou4 fan1 teng2
 向心力	0	xiang4 xin1 li4
 向性	0	xiang4 xing4
 向慕	0	xiang4 mu4
@@ -20138,6 +20211,7 @@ word 姐	0	w o r d jie3
 向阳区	0	xiang4 yang2 qu1
 向阳花	0	xiang4 yang2 hua1
 向隅	0	xiang4 yu2
+向隅而泣	0	xiang4 yu2 er2 qi4
 吒	0	zha1
 吒	0	zha4
 吔	0	ye1
@@ -20275,7 +20349,6 @@ word 姐	0	w o r d jie3
 含混	0	han2 hun4
 含片	0	han2 pian4
 含碳	0	han2 tan4
-含磷	0	han2 lin2
 含税	0	han2 shui4
 含笑	0	han2 xiao4
 含糊	0	han2 hu5
@@ -20294,7 +20367,6 @@ word 姐	0	w o r d jie3
 含量	0	han2 liang4
 含金	0	han2 jin1
 含金量	0	han2 jin1 liang4
-含钙	0	han2 gai4
 含饴弄孙	0	han2 yi2 nong4 sun1
 听	0	yin3
 吭	0	hang2
@@ -20523,8 +20595,10 @@ word 姐	0	w o r d jie3
 吾生也有涯，而知也无涯	0	wu2 sheng1 ye3 you3 ya2 er2 zhi1 ye3 wu2 ya2
 吾等	0	wu2 deng3
 吾辈	0	wu2 bei4
+吿	0	gao4
 呀	0	ya1
 呀	0	ya5
+呀呀学语	0	ya1 ya1 xue2 yu3
 呀诺达	0	ya1 nuo4 da2
 吕	0	lu3
 吕	0	lu3
@@ -20674,6 +20748,8 @@ word 姐	0	w o r d jie3
 周敦颐	0	zhou1 dun1 yi2
 周文王	0	zhou1 wen2 wang2
 周旋	0	zhou1 xuan2
+周日圈	0	zhou1 ri4 quan1
+周日运动	0	zhou1 ri4 yun4 dong4
 周易	0	zhou1 yi4
 周星驰	0	zhou1 xing1 chi2
 周晬	0	zhou1 zui4
@@ -21132,6 +21208,7 @@ word 姐	0	w o r d jie3
 咯吱	0	ge1 zhi1
 咯咯	0	ge1 ge1
 咯咯笑	0	ge1 ge1 xiao4
+咯噔	0	ge1 deng1
 咯嚓	0	ge1 cha1
 咯血	0	ka3 xie3
 咱	0	za2
@@ -21182,6 +21259,7 @@ word 姐	0	w o r d jie3
 咽鼓管	0	yan1 gu3 guan3
 咾	0	lao3
 咿	0	yi1
+咿呀学语	0	yi1 ya1 xue2 yu3
 哀	0	ai1
 哀	0	ai1
 哀伤	0	ai1 shang1
@@ -21222,6 +21300,7 @@ word 姐	0	w o r d jie3
 哀莫大于心死	0	ai1 mo4 da4 yu2 xin1 si3
 哀号	0	ai1 hao2
 哀词	0	ai1 ci2
+哀艳	0	ai1 yan4
 哀辞	0	ai1 ci2
 哀鸣	0	ai1 ming2
 哀鸿遍野	0	ai1 hong2 bian4 ye3
@@ -21266,6 +21345,7 @@ word 姐	0	w o r d jie3
 品行	0	pin3 xing2
 品评	0	pin3 ping2
 品议	0	pin3 yi4
+品读	0	pin3 du2
 品貌	0	pin3 mao4
 品质	0	pin3 zhi4
 品趣志	0	pin3 qu4 zhi4
@@ -21321,7 +21401,6 @@ word 姐	0	w o r d jie3
 哈利伯顿	0	ha1 li4 bo2 dun4
 哈利法克斯	0	ha1 li4 fa3 ke4 si1
 哈利路亚	0	ha1 li4 lu4 ya4
-哈利迪亚	0	ha1 li4 di2 ya4
 哈努卡	0	ha1 nu3 ka3
 哈努卡节	0	ha1 nu3 ka3 jie2
 哈勃	0	ha1 bo2
@@ -21485,6 +21564,7 @@ word 姐	0	w o r d jie3
 哦	0	o2
 哦	0	o4
 哦	0	o5
+哦买嘎	0	o4 mai3 ga1
 哧	0	chi1
 哧溜	0	chi1 liu1
 哧溜溜	0	chi1 liu1 liu1
@@ -21537,7 +21617,6 @@ word 姐	0	w o r d jie3
 哭穷	0	ku1 qiong2
 哭笑不得	0	ku1 xiao4 bu4 de2
 哭声	0	ku1 sheng1
-哭声震天	0	ku1 sheng1 zhen4 tian1
 哭腔	0	ku1 qiang1
 哭脸	0	ku1 lian3
 哭诉	0	ku1 su4
@@ -21555,7 +21634,7 @@ word 姐	0	w o r d jie3
 哲人其萎	0	zhe2 ren2 qi2 wei3
 哲人石	0	zhe2 ren2 shi2
 哲学	0	zhe2 xue2
-哲学博士学位	0	zhe2 xue2 bo2 shi4 xue2 wei4
+哲学博士	0	zhe2 xue2 bo2 shi4
 哲学史	0	zhe2 xue2 shi3
 哲学家	0	zhe2 xue2 jia1
 哲理	0	zhe2 li3
@@ -21814,7 +21893,7 @@ word 姐	0	w o r d jie3
 念	0	nian4
 念念有词	0	nian4 nian4 you3 ci2
 唹	0	yu2
-唻	0	lai4
+𫪁	0	lai5
 唼	0	sha3
 唾	0	tuo4
 唾手可得	0	tuo4 shou3 ke3 de2
@@ -21952,7 +22031,6 @@ word 姐	0	w o r d jie3
 商队	0	shang1 dui4
 商鞅	0	shang1 yang1
 商鞅变法	0	shang1 yang1 bian4 fa3
-商飙徐起	0	shang1 biao1 xu2 qi3
 啉	0	lin2
 啊	0	a1
 啊	0	a2
@@ -22187,7 +22265,7 @@ word 姐	0	w o r d jie3
 喇叭形	0	la3 ba5 xing2
 喇叭水仙	0	la1 ba1 shui3 xian1
 喇叭花	0	la3 ba5 hua1
-喇叭裙	0	la3 ba1 qun2
+喇叭裙	0	la3 ba5 qun2
 喇叭裤	0	la3 ba5 ku4
 喇合	0	la3 he2
 喇嘛	0	la3 ma5
@@ -22681,6 +22759,8 @@ word 姐	0	w o r d jie3
 嗑药	0	ke4 yao4
 嗒	0	da1
 嗒	0	ta4
+嗒丧	0	ta4 sang4
+嗒然	0	ta4 ran2
 嗓	0	sang3
 嗓子	0	sang3 zi5
 嗓子眼	0	sang3 zi5 yan3
@@ -22729,6 +22809,7 @@ word 姐	0	w o r d jie3
 嗜碱性粒细胞	0	shi4 jian3 xing4 li4 xi4 bao1
 嗝	0	ge2
 嗝儿屁	0	ge2 r5 pi4
+嗝屁	0	ge2 pi4
 嗞	0	zi1
 嗞啦	0	zi1 la1
 嗟	0	jie1
@@ -22830,8 +22911,8 @@ word 姐	0	w o r d jie3
 嘉义县	0	jia1 yi4 xian4
 嘉兴	0	jia1 xing1
 嘉兴市	0	jia1 xing1 shi4
-嘉荫	0	jia1 yin4
-嘉荫县	0	jia1 yin4 xian4
+嘉荫	0	jia1 yin1
+嘉荫县	0	jia1 yin1 xian4
 嘉许	0	jia1 xu3
 嘉宾	0	jia1 bin1
 嘉陵	0	jia1 ling2
@@ -23042,6 +23123,7 @@ word 姐	0	w o r d jie3
 哒	0	da1
 哒嗪	0	da1 qin2
 噢	0	o1
+噢买嘎	0	o1 mai3 ga1
 噤	0	jin4
 噤声	0	jin4 sheng1
 噤声令	0	jin4 sheng1 ling4
@@ -23603,8 +23685,6 @@ word 姐	0	w o r d jie3
 回应	0	hui2 ying4
 回怼	0	hui2 dui3
 回扣	0	hui2 kou4
-回折	0	hui2 zhe2
-回折格子	0	hui2 zhe2 ge2 zi5
 回抽	0	hui2 chou1
 回拜	0	hui2 bai4
 回扫	0	hui2 sao3
@@ -23834,14 +23914,17 @@ word 姐	0	w o r d jie3
 固有词	0	gu4 you3 ci2
 固然	0	gu4 ran2
 固穷	0	gu4 qiong2
+固网	0	gu4 wang3
 固网电信	0	gu4 wang3 dian4 xin4
 固若金汤	0	gu4 ruo4 jin1 tang1
+固话	0	gu4 hua4
 固醇	0	gu4 chun2
 固镇	0	gu4 zhen4
 固镇县	0	gu4 zhen4 xian4
 固阳县	0	gu4 yang2 xian4
 固体	0	gu4 ti3
 固体物理	0	gu4 ti3 wu4 li3
+固体胶	0	gu4 ti3 jiao1
 固体食物	0	gu4 ti3 shi2 wu4
 囻	0	guo2
 囿	0	you4
@@ -23891,6 +23974,7 @@ word 姐	0	w o r d jie3
 国内外	0	guo2 nei4 wai4
 国内安全保卫局	0	guo2 nei4 an1 quan2 bao3 wei4 ju2
 国内战争	0	guo2 nei4 zhan4 zheng1
+国内生产毛额	0	guo2 nei4 sheng1 chan3 mao2 e2
 国内生产总值	0	guo2 nei4 sheng1 chan3 zong3 zhi2
 国内线	0	guo2 nei4 xian4
 国共	0	guo2 gong4
@@ -23926,7 +24010,6 @@ word 姐	0	w o r d jie3
 国外市场	0	guo2 wai4 shi4 chang3
 国大	0	guo2 da4
 国大党	0	guo2 da4 dang3
-国奥会	0	guo2 ao4 hui4
 国姓	0	guo2 xing4
 国姓乡	0	guo2 xing4 xiang1
 国威	0	guo2 wei1
@@ -24027,9 +24110,9 @@ word 姐	0	w o r d jie3
 国有公司	0	guo2 you3 gong1 si1
 国有化	0	guo2 you3 hua4
 国有资产监督管理委员会	0	guo2 you3 zi1 chan3 jian1 du1 guan3 li3 wei3 yuan2 hui4
+国服	0	guo2 fu2
 国朝	0	guo2 chao2
 国柄	0	guo2 bing3
-国棋	0	guo2 qi2
 国槐	0	guo2 huai2
 国槐树	0	guo2 huai2 shu4
 国乐	0	guo2 yue4
@@ -24045,6 +24128,7 @@ word 姐	0	w o r d jie3
 国民年金保险	0	guo2 min2 nian2 jin1 bao3 xian3
 国民收入	0	guo2 min2 shou1 ru4
 国民政府	0	guo2 min2 zheng4 fu3
+国民生产毛额	0	guo2 min2 sheng1 chan3 mao2 e2
 国民生产总值	0	guo2 min2 sheng1 chan3 zong3 zhi2
 国民经济	0	guo2 min2 jing1 ji4
 国民警卫队	0	guo2 min2 jing3 wei4 dui4
@@ -24139,7 +24223,6 @@ word 姐	0	w o r d jie3
 国际单位制	0	guo2 ji4 dan1 wei4 zhi4
 国际外交	0	guo2 ji4 wai4 jiao1
 国际大赦	0	guo2 ji4 da4 she4
-国际太空站	0	guo2 ji4 tai4 kong1 zhan4
 国际奥委会	0	guo2 ji4 ao4 wei3 hui4
 国际奥林匹克委员会	0	guo2 ji4 ao4 lin2 pi3 ke4 wei3 yuan2 hui4
 国际妇女节	0	guo2 ji4 fu4 nu3 jie2
@@ -24168,6 +24251,7 @@ word 姐	0	w o r d jie3
 国际田联	0	guo2 ji4 tian2 lian2
 国际社会	0	guo2 ji4 she4 hui4
 国际私法	0	guo2 ji4 si1 fa3
+国际空间站	0	guo2 ji4 kong1 jian1 zhan4
 国际笔会	0	guo2 ji4 bi3 hui4
 国际米兰	0	guo2 ji4 mi3 lan2
 国际米兰足球俱乐部	0	guo2 ji4 mi3 lan2 zu2 qiu2 ju4 le4 bu4
@@ -24236,6 +24320,7 @@ word 姐	0	w o r d jie3
 围网	0	wei2 wang3
 围绕	0	wei2 rao4
 围脖	0	wei2 bo2
+围术期	0	wei2 shu4 qi1
 围裙	0	wei2 qun2
 围观	0	wei2 guan1
 围护	0	wei2 hu4
@@ -24343,6 +24428,8 @@ word 姐	0	w o r d jie3
 图形卡	0	tu2 xing2 ka3
 图形用户界面	0	tu2 xing2 yong4 hu4 jie4 mian4
 图形界面	0	tu2 xing2 jie4 mian4
+图形处理单元	0	tu2 xing2 chu3 li3 dan1 yuan2
+图形处理器	0	tu2 xing2 chu3 li3 qi4
 图恩	0	tu2 en1
 图景	0	tu2 jing3
 图书	0	tu2 shu1
@@ -24372,7 +24459,6 @@ word 姐	0	w o r d jie3
 图穷匕见	0	tu2 qiong2 bi3 xian4
 图穷匕首见	0	tu2 qiong2 bi3 shou3 xian4
 图章	0	tu2 zhang1
-图签	0	tu2 qian1
 图纸	0	tu2 zhi3
 图表	0	tu2 biao3
 图西族	0	tu2 xi1 zu2
@@ -24651,6 +24737,7 @@ word 姐	0	w o r d jie3
 地下水	0	di4 xia4 shui3
 地下街	0	di4 xia4 jie1
 地下通道	0	di4 xia4 tong1 dao4
+地下道	0	di4 xia4 dao4
 地下钱庄	0	di4 xia4 qian2 zhuang1
 地下铁路	0	di4 xia4 tie3 lu4
 地中海	0	di4 zhong1 hai3
@@ -24663,6 +24750,7 @@ word 姐	0	w o r d jie3
 地久天长	0	di4 jiu3 tian1 chang2
 地位	0	di4 wei4
 地保	0	di4 bao3
+地价	0	di4 jia4
 地儿	0	di4 r5
 地函	0	di4 han2
 地利	0	di4 li4
@@ -24762,6 +24850,7 @@ word 姐	0	w o r d jie3
 地炉	0	di4 lu2
 地牛翻身	0	di4 niu2 fan1 shen1
 地牢	0	di4 lao2
+地狭人稠	0	di4 xia2 ren2 chou2
 地狱	0	di4 yu4
 地球	0	di4 qiu2
 地球仪	0	di4 qiu2 yi2
@@ -25001,6 +25090,7 @@ word 姐	0	w o r d jie3
 坐落	0	zuo4 luo4
 坐药	0	zuo4 yao4
 坐蜡	0	zuo4 la4
+坐视	0	zuo4 shi4
 坐视不理	0	zuo4 shi4 bu4 li3
 坐视无睹	0	zuo4 shi4 wu2 du3
 坐观成败	0	zuo4 guan1 cheng2 bai4
@@ -25124,6 +25214,7 @@ word 姐	0	w o r d jie3
 垂直线	0	chui2 zhi2 xian4
 垂直起落飞机	0	chui2 zhi2 qi3 luo4 fei1 ji1
 垂直轴	0	chui2 zhi2 zhou2
+垂范	0	chui2 fan4
 垂帘听政	0	chui2 lian2 ting1 zheng4
 垂线	0	chui2 xian4
 垂老	0	chui2 lao3
@@ -25213,7 +25304,6 @@ word 姐	0	w o r d jie3
 埃塔	0	ai1 ta3
 埃塞俄比亚	0	ai1 sai4 e2 bi3 ya4
 埃塞俄比亚界	0	ai1 sai4 e2 bi3 ya4 jie4
-埃塞俄比亚语	0	ai1 sai1 e2 bi3 ya4 yu3
 埃夫伯里	0	ai1 fu1 bo2 li3
 埃奥罗斯	0	ai1 ao4 luo2 si1
 埃居	0	ai1 ju1
@@ -25228,7 +25318,7 @@ word 姐	0	w o r d jie3
 埃德蒙	0	ai1 de2 meng2
 埃德蒙·伯克	0	ai1 de2 meng2 · bo2 ke4
 埃德蒙顿	0	ai1 de2 meng2 dun4
-埃拉托塞尼斯	0	ai1 la1 tuo1 se4 ni2 si1
+埃拉托斯特尼	0	ai1 la1 tuo1 si1 te4 ni2
 埃拉特	0	ai1 la1 te4
 埃叙	0	ai1 xu4
 埃文	0	ai1 wen2
@@ -25367,7 +25457,6 @@ word 姐	0	w o r d jie3
 域名编码	0	yu4 ming2 bian1 ma3
 域名注册	0	yu4 ming2 zhu4 ce4
 域外	0	yu4 wai4
-域多利皇后	0	yu4 duo1 li4 huang2 hou4
 埠	0	bu4
 埠头	0	bu4 tou2
 垭	0	ya1
@@ -25602,6 +25691,8 @@ word 姐	0	w o r d jie3
 堂花	0	tang2 hua1
 堂食	0	tang2 shi2
 坤	0	kun1
+堃	0	kun1
+堃	0	kun1
 堄	0	ni4
 坚	0	jian1
 坚不可摧	0	jian1 bu4 ke3 cui1
@@ -25695,7 +25786,6 @@ word 姐	0	w o r d jie3
 堤岸	0	di1 an4
 堤拉米苏	0	di1 la1 mi3 su1
 堤防	0	di1 fang2
-堤顶大路	0	di1 ding3 da4 lu4
 阶	0	jie1
 堧	0	ruan2
 堨	0	e4
@@ -25909,8 +25999,8 @@ word 姐	0	w o r d jie3
 塔什库尔干塔吉克自治县	0	ta3 shi2 ku4 er3 gan1 ta3 ji2 ke4 zi4 zhi4 xian4
 塔什库尔干自治县	0	ta3 shi2 ku4 er3 gan1 zi4 zhi4 xian4
 塔什库尔干乡	0	ta3 shi2 ku4 er3 gan1 xiang1
+塔克拉玛干	0	ta3 ke4 la1 ma3 gan1
 塔克拉玛干沙漠	0	ta3 ke4 la1 ma3 gan1 sha1 mo4
-塔克拉马干	0	ta3 ke4 la1 ma3 gan1
 塔公	0	ta3 gong1
 塔公寺	0	ta3 gong1 si4
 塔列朗	0	ta3 lie4 lang3
@@ -25935,6 +26025,7 @@ word 姐	0	w o r d jie3
 塔塔尔	0	ta3 ta3 er3
 塔塔尔族	0	ta3 ta3 er3 zu2
 塔塔粉	0	ta3 ta3 fen3
+塔塔酱	0	ta3 ta3 jiang4
 塔夫绸	0	ta3 fu1 chou2
 塔尖	0	ta3 jian1
 塔尾树鹊	0	ta3 wei3 shu4 que4
@@ -26011,7 +26102,6 @@ word 姐	0	w o r d jie3
 冢中枯骨	0	zhong3 zhong1 ku1 gu3
 塝	0	bang4
 塞	0	sai1
-塞	0	sai1
 塞	0	sai4
 塞	0	se4
 塞内加尔	0	sai4 nei4 jia1 er3
@@ -26021,29 +26111,28 @@ word 姐	0	w o r d jie3
 塞外	0	sai4 wai4
 塞子	0	sai1 zi5
 塞尺	0	sai1 chi3
-塞巴斯蒂安	0	sai1 ba1 si1 di4 an1
-塞席尔	0	se4 xi2 er3
+塞巴斯蒂安	0	sai4 ba1 si1 di4 an1
+塞席尔	0	sai4 xi2 er3
 塞拉利昂	0	sai4 la1 li4 ang2
-塞拉耶佛	0	se4 la1 ye1 fo2
+塞拉耶佛	0	sai4 la1 ye1 fo2
 塞擦音	0	se4 ca1 yin1
 塞斯纳	0	sai1 si1 na4
 塞族	0	sai1 zu2
 塞浦路斯	0	sai4 pu3 lu4 si1
 塞渊	0	sai1 yuan1
 塞满	0	sai1 man3
-塞尔南	0	sai4 er3 nan2
 塞尔特	0	sai1 er3 te4
 塞尔特语	0	sai1 er3 te4 yu3
-塞尔维亚	0	sai1 er3 wei2 ya4
+塞尔维亚	0	sai4 er3 wei2 ya4
 塞尔维亚克罗地亚语	0	sai1 er3 wei2 ya4 ke4 luo2 di4 ya4 yu3
 塞尔维亚和黑山	0	sai1 er3 wei2 ya4 he2 hei1 shan1
 塞尔维亚语	0	sai1 er3 wei2 ya4 yu3
 塞尔达	0	sai4 er3 da2
 塞牙	0	sai1 ya2
-塞瓦斯托波尔	0	sai1 wa3 si1 tuo1 bo1 er3
-塞纳河	0	sai1 na4 he2
+塞瓦斯托波尔	0	sai4 wa3 si1 tuo1 bo1 er3
+塞纳河	0	sai4 na4 he2
 塞给	0	sai1 gei3
-塞维利亚	0	sai1 wei2 li4 ya4
+塞维利亚	0	sai4 wei2 li4 ya4
 塞缪尔	0	sai1 miu4 er3
 塞缪尔·约翰逊	0	sai1 miu4 er3 · yue1 han4 xun4
 塞翁失马	0	sai4 weng1 shi1 ma3
@@ -26052,7 +26141,7 @@ word 姐	0	w o r d jie3
 塞耳	0	sai1 er3
 塞舌尔	0	sai4 she2 er3
 塞舌尔群岛	0	sai4 she2 er3 qun2 dao3
-塞万提斯	0	sai1 wan4 ti2 si1
+塞万提斯	0	sai4 wan4 ti2 si1
 塞语	0	sai4 yu3
 塞责	0	se4 ze2
 塞车	0	sai1 che1
@@ -26272,6 +26361,7 @@ word 姐	0	w o r d jie3
 墨条	0	mo4 tiao2
 墨水	0	mo4 shui3
 墨水儿	0	mo4 shui3 r5
+墨水屏	0	mo4 shui3 ping2
 墨水瓶架	0	mo4 shui3 ping2 jia4
 墨汁	0	mo4 zhi1
 墨江哈尼族自治县	0	mo4 jiang1 ha1 ni2 zu2 zi4 zhi4 xian4
@@ -26287,6 +26377,7 @@ word 姐	0	w o r d jie3
 墨竹工卡	0	mo4 zhu2 gong1 ka3
 墨竹工卡县	0	mo4 zhu2 gong1 ka3 xian4
 墨笔	0	mo4 bi3
+墨粉	0	mo4 fen3
 墨纸	0	mo4 zhi3
 墨索里尼	0	mo4 suo3 li3 ni2
 墨累	0	mo4 lei4
@@ -26309,6 +26400,7 @@ word 姐	0	w o r d jie3
 墨镜	0	mo4 jing4
 墨鱼	0	mo4 yu2
 墩	0	dun1
+墩子	0	dun1 zi5
 墩布	0	dun1 bu4
 墩	0	dun1
 墫	0	dun1
@@ -26894,6 +26986,9 @@ word 姐	0	w o r d jie3
 外显子	0	wai4 xian3 zi3
 外显性	0	wai4 xian3 xing4
 外显率	0	wai4 xian3 lu4
+外飞地	0	wai4 fei1 di4
+外食	0	wai4 shi2
+外食族	0	wai4 shi2 zu2
 外骛	0	wai4 wu4
 外骨骼	0	wai4 gu3 ge2
 外高加索	0	wai4 gao1 jia1 suo3
@@ -27123,6 +27218,7 @@ word 姐	0	w o r d jie3
 多边	0	duo1 bian1
 多边形	0	duo1 bian1 xing2
 多那太罗	0	duo1 na3 tai4 luo2
+多邻国	0	duo1 lin2 guo2
 多醣	0	duo1 tang2
 多采	0	duo1 cai3
 多重	0	duo1 chong2
@@ -27372,6 +27468,7 @@ word 姐	0	w o r d jie3
 大动干戈	0	da4 dong4 gan1 ge1
 大动脉	0	da4 dong4 mai4
 大胜	0	da4 sheng4
+大势	0	da4 shi4
 大势所趋	0	da4 shi4 suo3 qu1
 大势至菩萨	0	da4 shi4 zhi4 pu2 sa4
 大包大揽	0	da4 bao1 da4 lan3
@@ -27520,6 +27617,7 @@ word 姐	0	w o r d jie3
 大宛	0	da4 yuan1
 大客车	0	da4 ke4 che1
 大家	0	da4 jia1
+大家伙儿	0	da4 jia1 huo3 r5
 大家庭	0	da4 jia1 ting2
 大家闺秀	0	da4 jia1 gui1 xiu4
 大容量	0	da4 rong2 liang4
@@ -27545,6 +27643,7 @@ word 姐	0	w o r d jie3
 大小姐	0	da4 xiao3 jie5
 大小写	0	da4 xiao3 xie3
 大小眼	0	da4 xiao3 yan3
+大小声	0	da4 xiao3 sheng1
 大尾巴狼	0	da4 yi3 ba5 lang2
 大局	0	da4 ju2
 大屠杀	0	da4 tu2 sha1
@@ -27615,7 +27714,6 @@ word 姐	0	w o r d jie3
 大打出手	0	da4 da3 chu1 shou3
 大批	0	da4 pi1
 大批特批	0	da4 pi1 te4 pi1
-大投资家	0	da4 tou2 zi1 jia1
 大抵	0	da4 di3
 大拇哥	0	da4 mu3 ge1
 大拇指	0	da4 mu5 zhi3
@@ -27660,7 +27758,6 @@ word 姐	0	w o r d jie3
 大日如来	0	da4 ri4 ru2 lai2
 大旱之望云霓	0	da4 han4 zhi1 wang4 yun2 ni2
 大旱望云霓	0	da4 han4 wang4 yun2 ni2
-大旱望霓	0	da4 han4 wang4 ni2
 大明历	0	da4 ming2 li4
 大明湖	0	da4 ming2 hu2
 大明虾	0	da4 ming2 xia1
@@ -27679,6 +27776,7 @@ word 姐	0	w o r d jie3
 大有人在	0	da4 you3 ren2 zai4
 大有作为	0	da4 you3 zuo4 wei2
 大有可为	0	da4 you3 ke3 wei2
+大有学问	0	da4 you3 xue2 wen4
 大有希望	0	da4 you3 xi1 wang4
 大有文章	0	da4 you3 wen2 zhang1
 大有裨益	0	da4 you3 bi4 yi4
@@ -27758,6 +27856,7 @@ word 姐	0	w o r d jie3
 大沙锥	0	da4 sha1 zhui1
 大河	0	da4 he2
 大油	0	da4 you2
+大油菜	0	da4 you2 cai4
 大沽口炮台	0	da4 gu1 kou3 pao4 tai2
 大沽炮台	0	da4 gu1 pao4 tai2
 大法官	0	da4 fa3 guan1
@@ -27893,6 +27992,7 @@ word 姐	0	w o r d jie3
 大石鸻	0	da4 shi2 heng2
 大炮	0	da4 pao4
 大破大立	0	da4 po4 da4 li4
+大码	0	da4 ma3
 大碍	0	da4 ai4
 大神	0	da4 shen2
 大祥	0	da4 xiang2
@@ -27949,7 +28049,6 @@ word 姐	0	w o r d jie3
 大耳窿	0	da4 er3 long2
 大圣	0	da4 sheng4
 大声	0	da4 sheng1
-大声喊叫	0	da4 sheng1 han3 jiao4
 大声疾呼	0	da4 sheng1 ji2 hu1
 大肆	0	da4 si4
 大肆攻击	0	da4 si4 gong1 ji1
@@ -28028,7 +28127,7 @@ word 姐	0	w o r d jie3
 大卫	0	da4 wei4
 大卫·尼尔	0	da4 wei4 · ni2 er3
 大卫·米利班德	0	da4 wei4 · mi3 li4 ban1 de2
-大卫·艾登堡	0	da4 wei4 · ai4 deng1 bao3
+大卫·艾登堡	0	da4 wei4 ai4 deng1 bao3
 大卫营和约	0	da4 wei4 ying2 he2 yue1
 大衣	0	da4 yi1
 大补帖	0	da4 bu3 tie3
@@ -28091,6 +28190,7 @@ word 姐	0	w o r d jie3
 大连市	0	da4 lian2 shi4
 大连理工大学	0	da4 lian2 li3 gong1 da4 xue2
 大进大出	0	da4 jin4 da4 chu1
+大运	0	da4 yun4
 大运	0	da4 yun4
 大运河	0	da4 yun4 he2
 大过	0	da4 guo4
@@ -28185,6 +28285,7 @@ word 姐	0	w o r d jie3
 大韵	0	da4 yun4
 大项	0	da4 xiang4
 大头	0	da4 tou2
+大头兵	0	da4 tou2 bing1
 大头照	0	da4 tou2 zhao4
 大头目	0	da4 tou2 mu4
 大头贴	0	da4 tou2 tie1
@@ -28195,6 +28296,7 @@ word 姐	0	w o r d jie3
 大显神通	0	da4 xian3 shen2 tong1
 大显身手	0	da4 xian3 shen1 shou3
 大风	0	da4 feng1
+大饭店	0	da4 fan4 dian4
 大饱口福	0	da4 bao3 kou3 fu2
 大饱眼福	0	da4 bao3 yan3 fu2
 大饼	0	da4 bing3
@@ -28263,6 +28365,7 @@ word 姐	0	w o r d jie3
 天上掉馅饼	0	tian1 shang4 diao4 xian4 bing3
 天下	0	tian1 xia4
 天下大乱	0	tian1 xia4 da4 luan4
+天下大势	0	tian1 xia4 da4 shi4
 天下太平	0	tian1 xia4 tai4 ping2
 天下没有不散的宴席	0	tian1 xia4 mei2 you3 bu4 san4 de5 yan4 xi2
 天下没有不散的筵席	0	tian1 xia4 mei2 you3 bu4 san4 de5 yan2 xi2
@@ -28286,6 +28389,8 @@ word 姐	0	w o r d jie3
 天作之合	0	tian1 zuo4 zhi1 he2
 天使	0	tian1 shi3
 天使报喜节	0	tian1 shi3 bao4 xi3 jie2
+天使投资	0	tian1 shi3 tou2 zi1
+天使投资人	0	tian1 shi3 tou2 zi1 ren2
 天候	0	tian1 hou4
 天伦	0	tian1 lun2
 天伦之乐	0	tian1 lun2 zhi1 le4
@@ -28732,7 +28837,6 @@ word 姐	0	w o r d jie3
 太阳微系统公司	0	tai4 yang2 wei1 xi4 tong3 gong1 si1
 太阳日	0	tai4 yang2 ri4
 太阳晒屁股	0	tai4 yang2 shai4 pi4 gu3
-太阳永不落	0	tai4 yang2 yong3 bu4 luo4
 太阳活动	0	tai4 yang2 huo2 dong4
 太阳照在桑干河上	0	tai4 yang2 zhao4 zai4 sang1 gan1 he2 shang4
 太阳灯	0	tai4 yang2 deng1
@@ -28790,6 +28894,7 @@ word 姐	0	w o r d jie3
 夭殇	0	yao1 shang1
 央	0	yang1
 央中	0	yang1 zhong1
+央人	0	yang1 ren2
 央企	0	yang1 qi3
 央及	0	yang1 ji2
 央告	0	yang1 gao5
@@ -28893,7 +28998,6 @@ word 姐	0	w o r d jie3
 失算	0	shi1 suan4
 失节	0	shi1 jie2
 失约	0	shi1 yue1
-失纵	0	shi1 zong4
 失而复得	0	shi1 er2 fu4 de2
 失联	0	shi1 lian2
 失聪	0	shi1 cong1
@@ -29015,11 +29119,13 @@ word 姐	0	w o r d jie3
 奇兵	0	qi2 bing1
 奇函数	0	ji1 han2 shu4
 奇努克	0	qi2 nu3 ke4
+奇卡诺人	0	qi2 ka3 nuo4 ren2
 奇台	0	qi2 tai2
 奇台县	0	qi2 tai2 xian4
 奇士	0	qi2 shi4
 奇妙	0	qi2 miao4
 奇崛	0	qi2 jue2
+奇差	0	qi2 cha4
 奇幻	0	qi2 huan4
 奇形怪状	0	qi2 xing2 guai4 zhuang4
 奇彩	0	qi2 cai3
@@ -29166,7 +29272,6 @@ word 姐	0	w o r d jie3
 奓	0	zha4
 奔	0	ben1
 奔	0	ben4
-奔三	0	ben1 san1
 奔三	0	ben4 san1
 奔命	0	ben1 ming4
 奔丧	0	ben1 sang1
@@ -29276,7 +29381,6 @@ word 姐	0	w o r d jie3
 奢	0	she1
 奢侈	0	she1 chi3
 奢侈品	0	she1 chi3 pin3
-奢易俭难	0	she1 yi4 jian3 nan2
 奢望	0	she1 wang4
 奢求	0	she1 qiu2
 奢泰	0	she1 tai4
@@ -29306,10 +29410,11 @@ word 姐	0	w o r d jie3
 奥卡姆剃刀	0	ao4 ka3 mu3 ti4 dao1
 奥古斯塔	0	ao4 gu3 si1 ta3
 奥古斯都	0	ao4 gu3 si1 du1
+奥司他韦	0	ao4 si1 ta1 wei2
 奥国	0	ao4 guo2
 奥地利	0	ao4 di4 li4
 奥塞梯	0	ao4 se4 ti1
-奥塞罗	0	ao4 sai1 luo2
+奥塞罗	0	ao4 sai4 luo2
 奥妙	0	ao4 miao4
 奥姆真理教	0	ao4 mu3 zhen1 li3 jiao4
 奥委会	0	ao4 wei3 hui4
@@ -29385,6 +29490,7 @@ word 姐	0	w o r d jie3
 奥陶纪	0	ao4 tao2 ji4
 奥马哈	0	ao4 ma3 ha1
 奥马尔	0	ao4 ma3 er3
+奥黛	0	ao4 dai4
 奥黛莉	0	ao4 dai4 li4
 奥黛丽	0	ao4 dai4 li4
 奨	0	jiang3
@@ -29512,6 +29618,7 @@ word 姐	0	w o r d jie3
 女票	0	nu3 piao4
 女童	0	nu3 tong2
 女管家	0	nu3 guan3 jia1
+女篮	0	nu3 lan2
 女红	0	nu3 gong1
 女继承人	0	nu3 ji4 cheng2 ren2
 女舍监	0	nu3 she4 jian1
@@ -29523,6 +29630,7 @@ word 姐	0	w o r d jie3
 女警员	0	nu3 jing3 yuan2
 女贞	0	nu3 zhen1
 女宾	0	nu3 bin1
+女足	0	nu3 zu2
 女郎	0	nu3 lang2
 女阴	0	nu3 yin1
 女双	0	nu3 shuang1
@@ -29538,6 +29646,7 @@ word 姐	0	w o r d jie3
 奴家	0	nu2 jia1
 奴工	0	nu2 gong1
 奴役	0	nu2 yi4
+奴性	0	nu2 xing4
 奴才	0	nu2 cai5
 奴隶	0	nu2 li4
 奴隶主	0	nu2 li4 zhu3
@@ -29573,6 +29682,7 @@ word 姐	0	w o r d jie3
 奶牛	0	nai3 niu2
 奶牛场	0	nai3 niu2 chang3
 奶瓶	0	nai3 ping2
+奶白菜	0	nai3 bai2 cai4
 奶皇	0	nai3 huang2
 奶皇包	0	nai3 huang2 bao1
 奶站	0	nai3 zhan4
@@ -29811,7 +29921,6 @@ word 姐	0	w o r d jie3
 如泣如诉	0	ru2 qi4 ru2 su4
 如火	0	ru2 huo3
 如火如荼	0	ru2 huo3 ru2 tu2
-如火晚霞	0	ru2 huo3 wan3 xia2
 如狼似虎	0	ru2 lang2 si4 hu3
 如获至宝	0	ru2 huo4 zhi4 bao3
 如画	0	ru2 hua4
@@ -29823,6 +29932,7 @@ word 姐	0	w o r d jie3
 如胶似漆	0	ru2 jiao1 si4 qi1
 如臂使指	0	ru2 bi4 shi3 zhi3
 如临大敌	0	ru2 lin2 da4 di2
+如临深渊	0	ru2 lin2 shen1 yuan1
 如花	0	ru2 hua1
 如花似玉	0	ru2 hua1 si4 yu4
 如若	0	ru2 ruo4
@@ -30165,6 +30275,7 @@ word 姐	0	w o r d jie3
 姨姐	0	yi2 jie3
 姨姥姥	0	yi2 lao3 lao5
 姨娘	0	yi2 niang2
+姨婆	0	yi2 po2
 姨妈	0	yi2 ma1
 姨妈巾	0	yi2 ma1 jin1
 姨母	0	yi2 mu3
@@ -30174,7 +30285,7 @@ word 姐	0	w o r d jie3
 侄儿	0	zhi2 er2
 侄女	0	zhi2 nu3
 侄女婿	0	zhi2 nu3 xu5
-侄媳妇	0	zhi2 xi2 fu5
+侄媳妇	0	zhi2 xi2 fu4
 侄子	0	zhi2 zi5
 侄孙	0	zhi2 sun1
 侄孙女	0	zhi2 sun1 nu3
@@ -30314,7 +30425,9 @@ word 姐	0	w o r d jie3
 娒	0	mu3
 娒	0	wu3
 娓	0	wei3
+娓娓	0	wei3 wei3
 娓娓动听	0	wei3 wei3 dong4 ting1
+娓娓而谈	0	wei3 wei3 er2 tan2
 娘	0	niang2
 娘儿们	0	niang2 r5 men5
 娘娘	0	niang2 niang5
@@ -30457,6 +30570,7 @@ word 姐	0	w o r d jie3
 妇女运动	0	fu4 nu3 yun4 dong4
 妇好	0	fu4 hao3
 妇姑勃溪	0	fu4 gu1 bo2 xi1
+妇孺	0	fu4 ru2
 妇孺皆知	0	fu4 ru2 jie1 zhi1
 妇幼	0	fu4 you4
 妇检	0	fu4 jian3
@@ -30495,6 +30609,7 @@ word 姐	0	w o r d jie3
 媒介	0	mei2 jie4
 媒合	0	mei2 he2
 媒妁	0	mei2 shuo4
+媒妁之言	0	mei2 shuo4 zhi1 yan2
 媒婆	0	mei2 po2
 媒材	0	mei2 cai2
 媒界	0	mei2 jie4
@@ -30531,6 +30646,8 @@ word 姐	0	w o r d jie3
 媲美	0	pi4 mei3
 媳	0	xi2
 媳妇	0	xi2 fu4
+媳妇	0	xi2 fu5
+媳妇儿	0	xi2 fu4 r5
 媳妇儿	0	xi2 fu5 r5
 媳妇熬成婆	0	xi2 fu4 ao2 cheng2 po2
 媵	0	ying4
@@ -30985,6 +31102,7 @@ word 姐	0	w o r d jie3
 存活	0	cun2 huo2
 存活率	0	cun2 huo2 lu4
 存留	0	cun2 liu2
+存异求同	0	cun2 yi4 qiu2 tong2
 存疑	0	cun2 yi2
 存簿	0	cun2 bu4
 存续	0	cun2 xu4
@@ -31168,7 +31286,7 @@ word 姐	0	w o r d jie3
 孙女	0	sun1 nu3
 孙女儿	0	sun1 nu3 r5
 孙女婿	0	sun1 nu3 xu5
-孙媳妇	0	sun1 xi2 fu5
+孙媳妇	0	sun1 xi2 fu4
 孙子	0	sun1 zi3
 孙子	0	sun1 zi5
 孙子兵法	0	sun1 zi3 bing1 fa3
@@ -31232,6 +31350,7 @@ word 姐	0	w o r d jie3
 学前班	0	xue2 qian2 ban1
 学力	0	xue2 li4
 学区	0	xue2 qu1
+学区房	0	xue2 qu1 fang2
 学友	0	xue2 you3
 学名	0	xue2 ming2
 学名药	0	xue2 ming2 yao4
@@ -31547,6 +31666,7 @@ word 姐	0	w o r d jie3
 安康	0	an1 kang1
 安康市	0	an1 kang1 shi4
 安徒生	0	an1 tu2 sheng1
+安得	0	an1 de2
 安得拉邦	0	an1 de2 la1 bang1
 安德海	0	an1 de2 hai3
 安德烈	0	an1 de2 lie4
@@ -31597,6 +31717,7 @@ word 姐	0	w o r d jie3
 安乐	0	an1 le4
 安乐	0	an1 le4
 安乐区	0	an1 le4 qu1
+安乐椅	0	an1 le4 yi3
 安乐死	0	an1 le4 si3
 安乐窝	0	an1 le4 wo1
 安检	0	an1 jian3
@@ -31737,7 +31858,6 @@ word 姐	0	w o r d jie3
 完备性	0	wan2 bei4 xing4
 完全	0	wan2 quan2
 完全归纳推理	0	wan2 quan2 gui1 na4 tui1 li3
-完全愈复	0	wan2 quan2 yu4 fu4
 完胜	0	wan2 sheng4
 完善	0	wan2 shan4
 完型填空	0	wan2 xing2 tian2 kong4
@@ -31849,6 +31969,7 @@ word 姐	0	w o r d jie3
 官报私仇	0	guan1 bao4 si1 chou2
 官场	0	guan1 chang3
 官场现形记	0	guan1 chang3 xian4 xing2 ji4
+官威	0	guan1 wei1
 官媒	0	guan1 mei2
 官子	0	guan1 zi3
 官学	0	guan1 xue2
@@ -31862,6 +31983,7 @@ word 姐	0	w o r d jie3
 官府	0	guan1 fu3
 官厅水库	0	guan1 ting1 shui3 ku4
 官复原职	0	guan1 fu4 yuan2 zhi2
+官微	0	guan1 wei1
 官房长官	0	guan1 fang2 zhang3 guan1
 官方	0	guan1 fang1
 官方语言	0	guan1 fang1 yu3 yan2
@@ -31903,6 +32025,7 @@ word 姐	0	w o r d jie3
 定	0	ding4
 定下	0	ding4 xia4
 定位	0	ding4 wei4
+定位球	0	ding4 wei4 qiu2
 定作	0	ding4 zuo4
 定例	0	ding4 li4
 定做	0	ding4 zuo4
@@ -32145,6 +32268,7 @@ word 姐	0	w o r d jie3
 宣	0	xuan1
 宣	0	xuan1
 宣介	0	xuan1 jie4
+宣布	0	xuan1 bu4
 宣传	0	xuan1 chuan2
 宣传册	0	xuan1 chuan2 ce4
 宣传攻势	0	xuan1 chuan2 gong1 shi4
@@ -32320,6 +32444,7 @@ word 姐	0	w o r d jie3
 家具	0	jia1 ju4
 家务	0	jia1 wu4
 家务活	0	jia1 wu4 huo2
+家去	0	jia1 qu4
 家叔	0	jia1 shu1
 家和万事兴	0	jia1 he2 wan4 shi4 xing1
 家喻户晓	0	jia1 yu4 hu4 xiao3
@@ -32373,6 +32498,7 @@ word 姐	0	w o r d jie3
 家族树	0	jia1 zu2 shu4
 家景	0	jia1 jing3
 家暴	0	jia1 bao4
+家书	0	jia1 shu1
 家业	0	jia1 ye4
 家乐氏	0	jia1 le4 shi4
 家乐福	0	jia1 le4 fu2
@@ -33199,6 +33325,7 @@ word 姐	0	w o r d jie3
 寮房	0	liao2 fang2
 寰	0	huan2
 寰宇	0	huan2 yu3
+寰球	0	huan2 qiu2
 寰螽	0	huan2 zhong1
 宝	0	bao3
 宠	0	chong3
@@ -33576,6 +33703,7 @@ word 姐	0	w o r d jie3
 尊者	0	zun1 zhe3
 尊号	0	zun1 hao4
 尊亲	0	zun1 qin1
+尊亲属	0	zun1 qin1 shu3
 尊贵	0	zun1 gui4
 尊贤使能	0	zun1 xian2 shi3 neng2
 尊贤爱物	0	zun1 xian2 ai4 wu4
@@ -33912,6 +34040,7 @@ word 姐	0	w o r d jie3
 小刀会	0	xiao3 dao1 hui4
 小别胜新婚	0	xiao3 bie2 sheng4 xin1 hun1
 小动作	0	xiao3 dong4 zuo4
+小胜	0	xiao3 sheng4
 小包	0	xiao3 bao1
 小区	0	xiao3 qu1
 小区广播	0	xiao3 qu1 guang3 bo1
@@ -33953,6 +34082,7 @@ word 姐	0	w o r d jie3
 小天鹅	0	xiao3 tian1 e2
 小太太	0	xiao3 tai4 tai5
 小太平鸟	0	xiao3 tai4 ping2 niao3
+小太阳	0	xiao3 tai4 yang2
 小女	0	xiao3 nu3
 小女人	0	xiao3 nu3 ren2
 小奶狗	0	xiao3 nai3 gou3
@@ -34072,6 +34202,7 @@ word 姐	0	w o r d jie3
 小本	0	xiao3 ben3
 小杓鹬	0	xiao3 shao2 yu4
 小杜鹃	0	xiao3 du4 juan1
+小松菜	0	xiao3 song1 cai4
 小林	0	xiao3 lin2
 小槌	0	xiao3 chui2
 小标题	0	xiao3 biao1 ti2
@@ -34092,6 +34223,7 @@ word 姐	0	w o r d jie3
 小池百合子	0	xiao3 chi2 bai3 he2 zi5
 小汽车	0	xiao3 qi4 che1
 小河	0	xiao3 he2
+小油菜	0	xiao3 you2 cai4
 小泉	0	xiao3 quan2
 小泉纯一郎	0	xiao3 quan2 chun2 yi1 lang2
 小泡	0	xiao3 pao4
@@ -34173,6 +34305,7 @@ word 姐	0	w o r d jie3
 小粉红	0	xiao3 fen3 hong2
 小精灵	0	xiao3 jing1 ling2
 小红帽	0	xiao3 hong2 mao4
+小红书	0	xiao3 hong2 shu1
 小红莓	0	xiao3 hong2 mei2
 小红萝卜	0	xiao3 hong2 luo2 bo5
 小组	0	xiao3 zu3
@@ -34268,6 +34401,7 @@ word 姐	0	w o r d jie3
 小道新闻	0	xiao3 dao4 xin1 wen2
 小道消息	0	xiao3 dao4 xiao1 xi5
 小酌	0	xiao3 zhuo2
+小酒馆	0	xiao3 jiu3 guan3
 小野	0	xiao3 ye3
 小野不由美	0	xiao3 ye3 bu4 you2 mei3
 小量	0	xiao3 liang4
@@ -34503,7 +34637,6 @@ word 姐	0	w o r d jie3
 尤诟	0	you2 gou4
 尤里斯·伊文思	0	you2 li3 si1 · yi1 wen2 si1
 尤金	0	you2 jin1
-尤金·塞尔南	0	you2 jin1 · sai4 er3 nan2
 尥	0	liao4
 尥蹶子	0	liao4 jue3 zi5
 尨	0	pang2
@@ -34617,7 +34750,6 @@ word 姐	0	w o r d jie3
 尼希米记	0	ni2 xi1 mi3 ji4
 尼康	0	ni2 kang1
 尼德兰	0	ni2 de2 lan2
-尼采	0	ni2 cai3
 尼散月	0	ni2 san4 yue4
 尼斯	0	ni2 si1
 尼斯湖水怪	0	ni2 si1 hu2 shui3 guai4
@@ -34640,10 +34772,10 @@ word 姐	0	w o r d jie3
 尼科西亚	0	ni2 ke1 xi1 ya4
 尼米兹	0	ni2 mi3 zi1
 尼米兹号	0	ni2 mi3 zi1 hao4
-尼罗	0	ni2 luo2
 尼罗河	0	ni2 luo2 he2
 尼苏	0	ni2 su1
 尼赫鲁	0	ni2 he4 lu3
+尼采	0	ni2 cai3
 尼雅	0	ni2 ya3
 尼雅河	0	ni2 ya3 he2
 尼龙	0	ni2 long2
@@ -35829,6 +35961,7 @@ word 姐	0	w o r d jie3
 工作人员	0	gong1 zuo4 ren2 yuan2
 工作列	0	gong1 zuo4 lie4
 工作单位	0	gong1 zuo4 dan1 wei4
+工作坊	0	gong1 zuo4 fang1
 工作报告	0	gong1 zuo4 bao4 gao4
 工作委员会	0	gong1 zuo4 wei3 yuan2 hui4
 工作室	0	gong1 zuo4 shi4
@@ -36117,6 +36250,7 @@ word 姐	0	w o r d jie3
 巫蛊	0	wu1 gu3
 巫蛊之祸	0	wu1 gu3 zhi1 huo4
 巫术	0	wu1 shu4
+巫裔	0	wu1 yi4
 巫觋	0	wu1 xi2
 巫医	0	wu1 yi1
 差	0	cha1
@@ -36145,14 +36279,16 @@ word 姐	0	w o r d jie3
 差失	0	cha1 shi1
 差强人意	0	cha1 qiang2 ren2 yi4
 差役	0	chai1 yi4
-差得多	0	cha4 de2 duo1
+差得多	0	cha4 de5 duo1
 差数	0	cha1 shu4
 差旅	0	chai1 lu3
 差旅费	0	chai1 lu3 fei4
 差池	0	cha1 chi2
 差派	0	chai1 pai4
 差生	0	cha4 sheng1
+差生文具多	0	cha4 sheng1 wen2 ju4 duo1
 差异	0	cha1 yi4
+差异化	0	cha1 yi4 hua4
 差异性	0	cha1 yi4 xing4
 差讹	0	cha1 e2
 差评	0	cha4 ping2
@@ -36247,7 +36383,7 @@ word 姐	0	w o r d jie3
 巴基斯坦	0	ba1 ji1 si1 tan3
 巴塘	0	ba1 tang2
 巴塘县	0	ba1 tang2 xian4
-巴塞尔	0	ba1 sai1 er3
+巴塞尔	0	ba1 sai4 er3
 巴塞罗那	0	ba1 sai4 luo2 na4
 巴塞隆纳	0	ba1 sai4 long2 na4
 巴士	0	ba1 shi4
@@ -36343,10 +36479,11 @@ word 姐	0	w o r d jie3
 巴特	0	ba1 te4
 巴特瓦族	0	ba1 te4 wa3 zu2
 巴特纳	0	ba1 te4 na4
+巴瑞	0	ba1 rui4
 巴生	0	ba1 sheng1
 巴甫洛夫	0	ba1 fu3 luo4 fu1
 巴登	0	ba1 deng1
-巴登·符腾堡州	0	ba1 deng1 · fu2 teng2 bao3 zhou1
+巴登－符腾堡州	0	ba1 deng1 fu2 teng2 bao3 zhou1
 巴祖卡	0	ba1 zu3 ka3
 巴纽	0	ba1 niu3
 巴结	0	ba1 jie5
@@ -36377,7 +36514,6 @@ word 姐	0	w o r d jie3
 巴里坤哈萨克自治县	0	ba1 li3 kun1 ha1 sa4 ke4 zi4 zhi4 xian4
 巴里坤县	0	ba1 li3 kun1 xian4
 巴里坤草原	0	ba1 li3 kun1 cao3 yuan2
-巴里岛	0	ba1 li3 dao3
 巴金	0	ba1 jin1
 巴金森氏症	0	ba1 jin1 sen1 shi4 zheng4
 巴录	0	ba1 lu4
@@ -36388,6 +36524,7 @@ word 姐	0	w o r d jie3
 巴青县	0	ba1 qing1 xian4
 巴音布克草原	0	ba1 yin1 bu4 ke4 cao3 yuan2
 巴音满都呼	0	ba1 yin1 man3 du1 hu1
+巴音郭楞	0	ba1 yin1 guo1 leng2
 巴音郭楞州	0	ba1 yin1 guo1 leng2 zhou1
 巴音郭楞蒙古自治州	0	ba1 yin1 guo1 leng2 meng3 gu3 zi4 zhi4 zhou1
 巴颂管	0	ba1 song4 guan3
@@ -36453,6 +36590,7 @@ word 姐	0	w o r d jie3
 市容	0	shi4 rong2
 市寸	0	shi4 cun4
 市尺	0	shi4 chi3
+市府	0	shi4 fu3
 市引	0	shi4 yin3
 市撮	0	shi4 cuo1
 市担	0	shi4 dan4
@@ -36523,7 +36661,6 @@ word 姐	0	w o r d jie3
 布干维尔岛	0	bu4 gan1 wei2 er3 dao3
 布托	0	bu4 tuo1
 布拉吉	0	bu4 la1 ji2
-布拉德·彼特	0	bu4 la1 de2 · bi3 te4
 布拉德福德	0	bu4 la1 de2 fu2 de2
 布拉戈维申斯克	0	bu4 la1 ge1 wei2 shen1 si1 ke4
 布拉提斯拉瓦	0	bu4 la1 ti2 si1 la1 wa3
@@ -36641,27 +36778,23 @@ word 姐	0	w o r d jie3
 希仁	0	xi1 ren2
 希伯来	0	xi1 bo2 lai2
 希伯来人	0	xi1 bo2 lai2 ren2
+希伯来大学	0	xi1 bo2 lai2 da4 xue2
 希伯来文	0	xi1 bo2 lai2 wen2
 希伯来书	0	xi1 bo2 lai2 shu1
 希伯来语	0	xi1 bo2 lai2 yu3
 希伯莱	0	xi1 bo2 lai2
-希伯莱大学	0	xi1 bo2 lai2 da4 xue2
-希伯莱文	0	xi1 bo2 lai2 wen2
-希伯莱语	0	xi1 bo2 lai2 yu3
 希冀	0	xi1 ji4
 希夏邦马峰	0	xi1 xia4 bang1 ma3 feng1
 希奇	0	xi1 qi2
 希奇古怪	0	xi1 qi2 gu3 guai4
 希律王	0	xi1 lu4 wang2
-希思罗	0	xi1 si1 luo2
 希拉克	0	xi1 la1 ke4
 希拉蕊	0	xi1 la1 rui3
 希拉里	0	xi1 la1 li3
 希拉里·克林顿	0	xi1 la1 li3 · ke4 lin2 dun4
 希斯	0	xi1 si1
-希斯·莱杰	0	xi1 si1 · lai2 jie2
+希斯·莱杰	0	xi1 si1 lai2 jie2
 希斯仑	0	xi1 si1 lun2
-希斯罗机场	0	xi1 si1 luo2 ji1 chang3
 希望	0	xi1 wang4
 希望落空	0	xi1 wang4 luo4 kong1
 希格斯	0	xi1 ge2 si1
@@ -36680,7 +36813,6 @@ word 姐	0	w o r d jie3
 希神	0	xi1 shen2
 希罕	0	xi1 han5
 希罗底	0	xi1 luo2 di3
-希耳伯特	0	xi1 er3 bo2 te4
 希腊	0	xi1 la4
 希腊字母	0	xi1 la4 zi4 mu3
 希腊文	0	xi1 la4 wen2
@@ -36718,6 +36850,7 @@ word 姐	0	w o r d jie3
 帕特里克	0	pa4 te4 li3 ke4
 帕特里夏	0	pa4 te4 li3 xia4
 帕特丽夏	0	pa4 te4 li4 xia4
+帕玛森	0	pa4 ma3 sen1
 帕瓦罗蒂	0	pa4 wa3 luo2 di4
 帕皮提	0	pa4 pi2 ti2
 帕福斯	0	pa4 fu2 si1
@@ -36732,8 +36865,8 @@ word 姐	0	w o r d jie3
 帕兰卡	0	pa4 lan2 ka3
 帕西	0	pa4 xi1
 帕金森	0	pa4 jin1 sen1
+帕金森氏症	0	pa4 jin1 sen1 shi4 zheng4
 帕金森病	0	pa4 jin1 sen1 bing4
-帕金森症	0	pa4 jin1 sen1 zheng4
 帕马森	0	pa4 ma3 sen1
 帕丽斯·希尔顿	0	pa4 li4 si1 · xi1 er3 dun4
 帖	0	tie1
@@ -36867,6 +37000,7 @@ word 姐	0	w o r d jie3
 带宽	0	dai4 kuan1
 带感	0	dai4 gan3
 带有	0	dai4 you3
+带歪	0	dai4 wai1
 带气	0	dai4 qi4
 带牛佩犊	0	dai4 niu2 pei4 du2
 带状疱疹	0	dai4 zhuang4 pao4 zhen3
@@ -36938,6 +37072,7 @@ word 姐	0	w o r d jie3
 常态化	0	chang2 tai4 hua4
 常态编班	0	chang2 tai4 bian1 ban1
 常数	0	chang2 shu4
+常数项	0	chang2 shu4 xiang4
 常春藤	0	chang2 chun1 teng2
 常春藤学府	0	chang2 chun1 teng2 xue2 fu3
 常时	0	chang2 shi2
@@ -36960,6 +37095,7 @@ word 姐	0	w o r d jie3
 常见问题	0	chang2 jian4 wen4 ti2
 常规	0	chang2 gui1
 常规武器	0	chang2 gui1 wu3 qi4
+常规赛	0	chang2 gui1 sai4
 常言	0	chang2 yan2
 常言说得好	0	chang2 yan2 shuo1 de5 hao3
 常设	0	chang2 she4
@@ -37081,9 +37217,11 @@ word 姐	0	w o r d jie3
 干扰	0	gan1 rao3
 干扰素	0	gan1 rao3 su4
 干支	0	gan1 zhi1
+干政	0	gan1 zheng4
 干涉	0	gan1 she4
 干涉仪	0	gan1 she4 yi2
 干与	0	gan1 yu4
+干谒	0	gan1 ye4
 干证	0	gan1 zheng4
 干邑	0	gan1 yi4
 干预	0	gan1 yu4
@@ -37304,6 +37442,7 @@ word 姐	0	w o r d jie3
 平乡	0	ping2 xiang1
 平乡县	0	ping2 xiang1 xian4
 平野	0	ping2 ye3
+平铺直叙	0	ping2 pu1 zhi2 xu4
 平锅	0	ping2 guo1
 平阴	0	ping2 yin1
 平阴县	0	ping2 yin1 xian4
@@ -37465,6 +37604,7 @@ word 姐	0	w o r d jie3
 干事长	0	gan4 shi5 zhang3
 干什么	0	gan4 shen2 me5
 干仗	0	gan4 zhang4
+干你娘	0	gan4 ni3 niang2
 干劲	0	gan4 jin4
 干吗	0	gan4 ma2
 干嘛	0	gan4 ma2
@@ -37588,7 +37728,7 @@ word 姐	0	w o r d jie3
 几倍	0	ji3 bei4
 几内亚	0	ji3 nei4 ya4
 几内亚比索	0	ji1 nei4 ya4 bi3 suo3
-几内亚比绍	0	ji1 nei4 ya4 bi3 shao4
+几内亚比绍	0	ji3 nei4 ya4 bi3 shao4
 几内亚湾	0	ji3 nei4 ya4 wan1
 几分	0	ji3 fen1
 几千	0	ji3 qian1
@@ -37599,6 +37739,7 @@ word 姐	0	w o r d jie3
 几希	0	ji1 xi1
 几年	0	ji3 nian2
 几年来	0	ji3 nian2 lai2
+几度	0	ji3 du4
 几微	0	ji1 wei1
 几时	0	ji3 shi2
 几案	0	ji1 an4
@@ -37764,6 +37905,7 @@ word 姐	0	w o r d jie3
 度量衡	0	du4 liang4 heng2
 座	0	zuo4
 座上客	0	zuo4 shang4 ke4
+座上宾	0	zuo4 shang4 bin1
 座位	0	zuo4 wei4
 座儿	0	zuo4 r5
 座右铭	0	zuo4 you4 ming2
@@ -38013,6 +38155,7 @@ word 姐	0	w o r d jie3
 庙号	0	miao4 hao4
 厂	0	chang3
 厂主	0	chang3 zhu3
+厂务	0	chang3 wu4
 厂史	0	chang3 shi3
 厂商	0	chang3 shang1
 厂址	0	chang3 zhi3
@@ -38237,6 +38380,7 @@ word 姐	0	w o r d jie3
 延期付款	0	yan2 qi1 fu4 kuan3
 延津	0	yan2 jin1
 延津县	0	yan2 jin1 xian4
+延烧	0	yan2 shao1
 延毕	0	yan2 bi4
 延发	0	yan2 fa1
 延禧攻略	0	yan2 xi3 gong1 lue4
@@ -38244,7 +38388,6 @@ word 姐	0	w o r d jie3
 延缓	0	yan2 huan3
 延续	0	yan2 xu4
 延聘	0	yan2 pin4
-延聘招揽	0	yan2 pin4 zhao1 lan3
 延见	0	yan2 jian4
 延误	0	yan2 wu4
 延误费	0	yan2 wu5 fei4
@@ -38299,6 +38442,7 @@ word 姐	0	w o r d jie3
 建材	0	jian4 cai2
 建业	0	jian4 ye4
 建构	0	jian4 gou4
+建模	0	jian4 mo2
 建树	0	jian4 shu4
 建水	0	jian4 shui3
 建水县	0	jian4 shui3 xian4
@@ -38470,6 +38614,7 @@ word 姐	0	w o r d jie3
 引导扇区	0	yin3 dao3 shan4 qu1
 引得	0	yin3 de2
 引征	0	yin3 zheng1
+引战	0	yin3 zhan4
 引擎	0	yin3 qing2
 引擎盖	0	yin3 qing2 gai4
 引叙	0	yin3 xu4
@@ -38550,8 +38695,6 @@ word 姐	0	w o r d jie3
 弗洛姆	0	fu2 luo4 mu3
 弗洛里斯岛	0	fu2 luo4 li3 si1 dao3
 弗罗茨瓦夫	0	fu2 luo2 ci2 wa3 fu1
-弗罗里达	0	fu2 luo2 li3 da2
-弗罗里达州	0	fu2 luo2 li3 da2 zhou1
 弗莱威厄斯	0	fu2 lai2 wei1 e4 si1
 弗莱福兰	0	fu2 lai2 fu2 lan2
 弗兰克	0	fu2 lan2 ke4
@@ -38714,7 +38857,6 @@ word 姐	0	w o r d jie3
 张扬	0	zhang1 yang2
 张择端	0	zhang1 ze2 duan1
 张敞	0	zhang1 chang3
-张斌	0	zhang1 bin1
 张旭	0	zhang1 xu4
 张易之	0	zhang1 yi4 zhi1
 张春帆	0	zhang1 chun1 fan1
@@ -38887,7 +39029,6 @@ word 姐	0	w o r d jie3
 弹子锁	0	dan4 zi5 suo3
 弹孔	0	dan4 kong3
 弹射	0	tan2 she4
-弹射出	0	tan2 she4 chu1
 弹射座椅	0	tan2 she4 zuo4 yi3
 弹射座舱	0	tan2 she4 zuo4 cang1
 弹幕	0	dan4 mu4
@@ -38907,6 +39048,7 @@ word 姐	0	w o r d jie3
 弹片	0	tan2 pian4
 弹牙	0	tan2 ya2
 弹珠	0	dan4 zhu1
+弹珠机	0	dan4 zhu1 ji1
 弹珠台	0	dan4 zhu1 tai2
 弹球	0	tan2 qiu2
 弹球盘	0	tan2 qiu2 pan2
@@ -39007,15 +39149,12 @@ word 姐	0	w o r d jie3
 彛	0	yi2
 彝	0	yi2
 彝	0	yi2
-彝伦	0	yi2 lun2
 彝剧	0	yi2 ju4
 彝器	0	yi2 qi4
-彝宪	0	yi2 xian4
 彝族	0	yi2 zu2
 彝族年	0	yi2 zu2 nian2
 彝良	0	yi2 liang2
 彝良县	0	yi2 liang2 xian4
-彝训	0	yi2 xun4
 彟	0	huo4
 彡	0	shan1
 形	0	xing2
@@ -39345,6 +39484,7 @@ word 姐	0	w o r d jie3
 徇私枉法	0	xun4 si1 wang3 fa3
 徇私舞弊	0	xun4 si1 wu3 bi4
 很	0	hen3
+很是	0	hen3 shi4
 徉	0	yang2
 徊	0	huai2
 律	0	lu4
@@ -39372,6 +39512,7 @@ word 姐	0	w o r d jie3
 后备	0	hou4 bei4
 后备箱	0	hou4 bei4 xiang1
 后备军	0	hou4 bei4 jun1
+后传	0	hou4 zhuan4
 后儿	0	hou4 r5
 后加	0	hou4 jia1
 后劲	0	hou4 jin4
@@ -39544,7 +39685,7 @@ word 姐	0	w o r d jie3
 徐祯卿	0	xu2 zhen1 qing1
 徐福	0	xu2 fu2
 徐缓	0	xu2 huan3
-徐继畲	0	xu2 ji4 yu2
+徐继畬	0	xu2 ji4 yu2
 徐闻	0	xu2 wen2
 徐闻县	0	xu2 wen2 xian4
 徐行	0	xu2 xing2
@@ -39644,6 +39785,8 @@ word 姐	0	w o r d jie3
 得病	0	de2 bing4
 得益	0	de2 yi4
 得益于	0	de2 yi4 yu2
+得直	0	de2 zhi2
+得看	0	dei3 kan4
 得知	0	de2 zhi1
 得票	0	de2 piao4
 得票率	0	de2 piao4 lu4
@@ -39677,7 +39820,6 @@ word 姐	0	w o r d jie3
 从不	0	cong2 bu4
 从中	0	cong2 zhong1
 从事	0	cong2 shi4
-从事研究	0	cong2 shi4 yan2 jiu1
 从井救人	0	cong2 jing3 jiu4 ren2
 从今以后	0	cong2 jin1 yi3 hou4
 从何	0	cong2 he2
@@ -39801,9 +39943,9 @@ word 姐	0	w o r d jie3
 复会	0	fu4 hui4
 复查	0	fu4 cha2
 复核	0	fu4 he2
+复权	0	fu4 quan2
 复归	0	fu4 gui1
 复活	0	fu4 huo2
-复活的军团	0	fu4 huo2 de5 jun1 tuan2
 复活节	0	fu4 huo2 jie2
 复活节岛	0	fu4 huo2 jie2 dao3
 复活赛	0	fu4 huo2 sai4
@@ -39813,6 +39955,7 @@ word 姐	0	w o r d jie3
 复苏	0	fu4 su1
 复发	0	fu4 fa1
 复盘	0	fu4 pan2
+复社	0	fu4 she4
 复秤	0	fu4 cheng4
 复称	0	fu4 cheng1
 复习	0	fu4 xi2
@@ -39871,6 +40014,7 @@ word 姐	0	w o r d jie3
 微分几何	0	wei1 fen1 ji3 he2
 微分几何学	0	wei1 fen1 ji3 he2 xue2
 微分方程	0	wei1 fen1 fang1 cheng2
+微创	0	wei1 chuang1
 微创手术	0	wei1 chuang1 shou3 shu4
 微劈恩	0	wei1 pi1 en1
 微动脉	0	wei1 dong4 mai4
@@ -39889,7 +40033,6 @@ word 姐	0	w o r d jie3
 微安	0	wei1 an1
 微安培	0	wei1 an1 pei2
 微小	0	wei1 xiao3
-微小病毒科	0	wei1 xiao3 bing4 du2 ke1
 微山	0	wei1 shan1
 微山县	0	wei1 shan1 xian4
 微弱	0	wei1 ruo4
@@ -40035,6 +40178,7 @@ word 姐	0	w o r d jie3
 德国战车	0	de2 guo2 zhan4 che1
 德国标准化学会	0	de2 guo2 biao1 zhun3 hua4 xue2 hui4
 德国汉莎航空公司	0	de2 guo2 han4 sha1 hang2 kong1 gong1 si1
+德国结	0	de2 guo2 jie2
 德国统一社会党	0	de2 guo2 tong3 yi1 she4 hui4 dang3
 德国酸菜	0	de2 guo2 suan1 cai4
 德国马克	0	de2 guo2 ma3 ke4
@@ -40093,7 +40237,7 @@ word 姐	0	w o r d jie3
 德乌帕	0	de2 wu1 pa4
 德牧	0	de2 mu4
 德班	0	de2 ban1
-德累斯顿	0	de2 lei4 si1 dun4
+德累斯顿	0	de2 lei2 si1 dun4
 德维尔潘	0	de2 wei2 er3 pan1
 德育	0	de2 yu4
 德兴	0	de2 xing1
@@ -40124,7 +40268,6 @@ word 姐	0	w o r d jie3
 彻底	0	che4 di3
 彻悟	0	che4 wu4
 彻查	0	che4 cha2
-彻西	0	che4 xi1
 彻头彻尾	0	che4 tou2 che4 wei3
 彻骨	0	che4 gu3
 徻	0	wei4
@@ -40211,6 +40354,7 @@ word 姐	0	w o r d jie3
 心思	0	xin1 si5
 心急	0	xin1 ji2
 心急吃不了热豆腐	0	xin1 ji2 chi1 bu5 liao3 re4 dou4 fu5
+心急如火	0	xin1 ji2 ru2 huo3
 心急如焚	0	xin1 ji2 ru2 fen2
 心急火燎	0	xin1 ji2 huo3 liao3
 心怦怦跳	0	xin1 peng1 peng1 tiao4
@@ -40327,6 +40471,7 @@ word 姐	0	w o r d jie3
 心肌炎	0	xin1 ji1 yan2
 心肝	0	xin1 gan1
 心肝宝贝	0	xin1 gan1 bao3 bei4
+心肺	0	xin1 fei4
 心肺复苏术	0	xin1 fei4 fu4 su1 shu4
 心胸	0	xin1 xiong1
 心胸狭窄	0	xin1 xiong1 xia2 zhai3
@@ -40375,6 +40520,7 @@ word 姐	0	w o r d jie3
 心醉	0	xin1 zui4
 心醉神迷	0	xin1 zui4 shen2 mi2
 心重	0	xin1 zhong4
+心防	0	xin1 fang2
 心杂音	0	xin1 za2 yin1
 心电图	0	xin1 dian4 tu2
 心电感应	0	xin1 dian4 gan3 ying4
@@ -40503,7 +40649,7 @@ word 姐	0	w o r d jie3
 志愿军	0	zhi4 yuan4 jun1
 志高气扬	0	zhi4 gao1 qi4 yang2
 忘	0	wang4
-忘不了	0	wang4 bu4 liao3
+忘不了	0	wang4 bu5 liao3
 忘乎所以	0	wang4 hu1 suo3 yi3
 忘八	0	wang4 ba1
 忘八旦	0	wang4 ba1 dan4
@@ -40717,6 +40863,7 @@ word 姐	0	w o r d jie3
 怍	0	zuo4
 怎	0	zen3
 怎一个愁字了得	0	zen3 yi1 ge4 chou2 zi4 liao3 de2
+怎奈	0	zen3 nai4
 怎样	0	zen3 yang4
 怎生	0	zen3 sheng1
 怎的	0	zen3 de5
@@ -40736,6 +40883,7 @@ word 姐	0	w o r d jie3
 怒	0	nu4
 怒不可遏	0	nu4 bu4 ke3 e4
 怒吼	0	nu4 hou3
+怒喝	0	nu4 he4
 怒容	0	nu4 rong2
 怒容满面	0	nu4 rong2 man3 mian4
 怒形于色	0	nu4 xing2 yu2 se4
@@ -40809,6 +40957,7 @@ word 姐	0	w o r d jie3
 思慕	0	si1 mu4
 思虑	0	si1 lu4
 思恋	0	si1 lian4
+思政	0	si1 zheng4
 思明	0	si1 ming2
 思明区	0	si1 ming2 qu1
 思春	0	si1 chun1
@@ -40853,6 +41002,7 @@ word 姐	0	w o r d jie3
 怡然自得	0	yi2 ran2 zi4 de2
 怡颜悦色	0	yi2 yan2 yue4 se4
 急	0	ji2
+急不及待	0	ji2 bu4 ji2 dai4
 急不可待	0	ji2 bu4 ke3 dai4
 急不可耐	0	ji2 bu4 ke3 nai4
 急中生智	0	ji2 zhong1 sheng1 zhi4
@@ -41160,10 +41310,10 @@ word 姐	0	w o r d jie3
 恐慌发作	0	kong3 huang1 fa1 zuo4
 恐惧	0	kong3 ju4
 恐惧症	0	kong3 ju4 zheng4
+恐攻	0	kong3 gong1
 恐旷症	0	kong3 kuang4 zheng4
 恐水病	0	kong3 shui3 bing4
 恐水症	0	kong3 shui3 zheng4
-恐法症	0	kong3 fa3 zheng4
 恐狼	0	kong3 lang2
 恐血症	0	kong3 xue4 zheng4
 恐袭	0	kong3 xi2
@@ -41313,7 +41463,6 @@ word 姐	0	w o r d jie3
 恭祝	0	gong1 zhu4
 恭维	0	gong1 wei5
 恭亲王	0	gong1 qin1 wang2
-恭亲王奕䜣	0	gong1 qin1 wang2 yi4 xin1
 恭谨	0	gong1 jin3
 恭贺	0	gong1 he4
 恭贺佳节	0	gong1 he4 jia1 jie2
@@ -41563,9 +41712,11 @@ word 姐	0	w o r d jie3
 情侣装	0	qing2 lu3 zhuang1
 情侣酒店	0	qing2 lu3 jiu3 dian4
 情侣鹦鹉	0	qing2 lu3 ying1 wu3
+情伤	0	qing2 shang1
 情儿	0	qing2 r5
 情分	0	qing2 fen4
 情势	0	qing2 shi4
+情史	0	qing2 shi3
 情同手足	0	qing2 tong2 shou3 zu2
 情同骨肉	0	qing2 tong2 gu3 rou4
 情味	0	qing2 wei4
@@ -41626,7 +41777,7 @@ word 姐	0	w o r d jie3
 情缘	0	qing2 yuan2
 情义	0	qing2 yi4
 情色	0	qing2 se4
-情蒐	0	qing2 sou1
+情搜	0	qing2 sou1
 情诗	0	qing2 shi1
 情话	0	qing2 hua4
 情谊	0	qing2 yi4
@@ -41637,6 +41788,7 @@ word 姐	0	w o r d jie3
 情趣商店	0	qing2 qu4 shang1 dian4
 情趣玩具	0	qing2 qu4 wan2 ju4
 情趣用品	0	qing2 qu4 yong4 pin3
+情趣酒店	0	qing2 qu4 jiu3 dian4
 情逾骨肉	0	qing2 yu2 gu3 rou4
 情郎	0	qing2 lang2
 情随事迁	0	qing2 sui2 shi4 qian1
@@ -41743,7 +41895,6 @@ word 姐	0	w o r d jie3
 恶凶凶	0	e4 xiong1 xiong1
 恶创	0	e4 chuang1
 恶劣	0	e4 lie4
-恶劣影响	0	e4 lie4 ying3 xiang3
 恶势力	0	e4 shi4 li4
 恶化	0	e4 hua4
 恶叉白赖	0	e4 cha1 bai2 lai4
@@ -41816,6 +41967,7 @@ word 姐	0	w o r d jie3
 恶迹	0	e4 ji4
 恶辣	0	e4 la4
 恶运	0	e4 yun4
+恶露	0	e4 lu4
 恶霸	0	e4 ba4
 恶斗	0	e4 dou4
 恶鬼	0	e4 gui3
@@ -42142,7 +42294,6 @@ word 姐	0	w o r d jie3
 爱玉子	0	ai4 yu4 zi3
 爱现	0	ai4 xian4
 爱理不理	0	ai4 li3 bu4 li3
-爱琴	0	ai4 qin2
 爱琴海	0	ai4 qin2 hai3
 爱玛	0	ai4 ma3
 爱玛·沃特森	0	ai4 ma3 · wo4 te4 sen1
@@ -42178,11 +42329,11 @@ word 姐	0	w o r d jie3
 爱达荷州	0	ai4 da2 he2 zhou1
 爱面子	0	ai4 mian4 zi5
 爱马仕	0	ai4 ma3 shi4
-爱丽舍宫	0	ai4 li4 she3 gong1
 爱丽斯泉	0	ai4 li4 si1 quan2
 爱丽丝	0	ai4 li4 si1
 爱丽丝泉	0	ai4 li4 si1 quan2
 爱丽丝漫游奇境记	0	ai4 li4 si1 man4 you2 qi2 jing4 ji4
+爱丽舍宫	0	ai4 li4 she4 gong1
 爱默生	0	ai4 mo4 sheng1
 惬	0	qie4
 惬意	0	qie4 yi4
@@ -42222,6 +42373,7 @@ word 姐	0	w o r d jie3
 感恩节	0	gan3 en1 jie2
 感悟	0	gan3 wu4
 感情	0	gan3 qing2
+感情史	0	gan3 qing2 shi3
 感情用事	0	gan3 qing2 yong4 shi4
 感想	0	gan3 xiang3
 感愧	0	gan3 kui4
@@ -42527,7 +42679,6 @@ word 姐	0	w o r d jie3
 戚戚	0	qi1 qi1
 戚	0	qi1
 欲	0	yu4
-欲仙欲死	0	yu4 xian1 yu4 si3
 欲壑难填	0	yu4 he4 nan2 tian2
 欲望	0	yu4 wang4
 欲火	0	yu4 huo3
@@ -42547,7 +42698,6 @@ word 姐	0	w o r d jie3
 忧虑	0	you1 lu4
 忧惧	0	you1 ju4
 忧灼	0	you1 zhuo2
-忧苦以终	0	you1 ku3 yi3 zhong1
 忧郁	0	you1 yu4
 忧郁症	0	you1 yu4 zheng4
 憃	0	chong1
@@ -42672,6 +42822,7 @@ word 姐	0	w o r d jie3
 憾恨	0	han4 hen4
 懂	0	dong3
 懂事	0	dong3 shi4
+懂哥	0	dong3 ge1
 懂局	0	dong3 ju2
 懂得	0	dong3 de5
 懂眼	0	dong3 yan3
@@ -42698,6 +42849,7 @@ word 姐	0	w o r d jie3
 应付自如	0	ying4 fu5 zi4 ru2
 应付裕如	0	ying4 fu5 yu4 ru2
 应付账款	0	ying1 fu4 zhang4 kuan3
+应付过去	0	ying4 fu5 guo4 qu5
 应允	0	ying1 yun3
 应分	0	ying1 fen4
 应制	0	ying4 zhi4
@@ -42730,7 +42882,6 @@ word 姐	0	w o r d jie3
 应战	0	ying4 zhan4
 应手	0	ying4 shou3
 应承	0	ying4 cheng2
-应采儿	0	ying1 cai3 er2
 应接	0	ying4 jie1
 应接不暇	0	ying4 jie1 bu4 xia2
 应援	0	ying4 yuan2
@@ -42792,6 +42943,7 @@ word 姐	0	w o r d jie3
 应选	0	ying4 xuan3
 应邀	0	ying4 yao1
 应酬	0	ying4 chou5
+应采儿	0	ying1 cai3 er2
 应门	0	ying4 men2
 应验	0	ying4 yan4
 应点	0	ying4 dian3
@@ -43360,7 +43512,6 @@ word 姐	0	w o r d jie3
 战战栗栗	0	zhan4 zhan4 li4 li4
 战抖	0	zhan4 dou3
 战败	0	zhan4 bai4
-战斗部	0	zhan4 dou4 bu4
 战斧	0	zhan4 fu3
 战旗	0	zhan4 qi2
 战时	0	zhan4 shi2
@@ -43407,6 +43558,7 @@ word 姐	0	w o r d jie3
 战斗群	0	zhan4 dou4 qun2
 战斗者	0	zhan4 dou4 zhe3
 战斗舰	0	zhan4 dou4 jian4
+战斗部	0	zhan4 dou4 bu4
 戱	0	xi4
 戏	0	xi4
 戏份	0	xi4 fen4
@@ -43468,7 +43620,6 @@ word 姐	0	w o r d jie3
 戴安娜王妃	0	dai4 an1 na4 wang2 fei1
 戴帽子	0	dai4 mao4 zi5
 戴月披星	0	dai4 yue4 pi1 xing1
-戴有色眼镜	0	dai4 you3 se4 yan3 jing4
 戴尔	0	dai4 er3
 戴盆望天	0	dai4 pen2 wang4 tian1
 戴秉国	0	dai4 bing3 guo2
@@ -43741,6 +43892,7 @@ word 姐	0	w o r d jie3
 手榴弹	0	shou3 liu2 dan4
 手枪	0	shou3 qiang1
 手机	0	shou3 ji1
+手机卡	0	shou3 ji1 ka3
 手机条码	0	shou3 ji1 tiao2 ma3
 手机壳	0	shou3 ji1 ke2
 手欠	0	shou3 qian4
@@ -43787,6 +43939,7 @@ word 姐	0	w o r d jie3
 手术	0	shou3 shu4
 手术室	0	shou3 shu4 shi4
 手术台	0	shou3 shu4 tai2
+手术镊	0	shou3 shu4 nie4
 手里	0	shou3 li3
 手里剑	0	shou3 li3 jian4
 手制	0	shou3 zhi4
@@ -44170,6 +44323,7 @@ word 姐	0	w o r d jie3
 打通宵	0	da3 tong1 xiao1
 打造	0	da3 zao4
 打进	0	da3 jin4
+打游戏	0	da3 you2 xi4
 打道回府	0	da3 dao4 hui2 fu3
 打边炉	0	da3 bian1 lu2
 打边鼓	0	da3 bian1 gu3
@@ -44194,6 +44348,7 @@ word 姐	0	w o r d jie3
 打开天窗说亮话	0	da3 kai1 tian1 chuang1 shuo1 liang4 hua4
 打开话匣子	0	da3 kai1 hua4 xia2 zi5
 打杂	0	da3 za2
+打杂的	0	da3 za2 de5
 打鸡血	0	da3 ji1 xue4
 打雪仗	0	da3 xue3 zhang4
 打雷	0	da3 lei2
@@ -44209,10 +44364,9 @@ word 姐	0	w o r d jie3
 打飞机	0	da3 fei1 ji1
 打食	0	da3 shi2
 打饭	0	da3 fan4
+打馕	0	da3 nang2
 打马虎眼	0	da3 ma3 hu5 yan3
 打马赛克	0	da3 ma3 sai4 ke4
-打高尔夫	0	da3 gao1 er3 fu1
-打高尔夫球	0	da3 gao1 er3 fu1 qiu2
 打斗	0	da3 dou4
 打闹	0	da3 nao4
 打鱼	0	da3 yu2
@@ -44465,7 +44619,7 @@ word 姐	0	w o r d jie3
 批萨	0	pi1 sa4
 批处理	0	pi1 chu3 li3
 批号	0	pi1 hao4
-批覆	0	pi1 fu4
+批复	0	pi1 fu4
 批注	0	pi1 zhu4
 批评	0	pi1 ping2
 批评家	0	pi1 ping2 jia1
@@ -44554,6 +44708,7 @@ word 姐	0	w o r d jie3
 承德	0	cheng2 de2
 承德市	0	cheng2 de2 shi4
 承德县	0	cheng2 de2 xian4
+承想	0	cheng2 xiang3
 承应	0	cheng2 ying4
 承托	0	cheng2 tuo1
 承接	0	cheng2 jie1
@@ -44621,7 +44776,6 @@ word 姐	0	w o r d jie3
 技术栈	0	ji4 shu4 zhan4
 技术标准	0	ji4 shu4 biao1 zhun3
 技术潜水	0	ji4 shu4 qian2 shui3
-技术发展	0	ji4 shu4 fa1 zhan3
 技术知识	0	ji4 shu4 zhi1 shi5
 技术规范	0	ji4 shu4 gui1 fan4
 抃	0	bian4
@@ -44856,6 +45010,7 @@ word 姐	0	w o r d jie3
 投喂	0	tou2 wei4
 投鼠忌器	0	tou2 shu3 ji4 qi4
 抖	0	dou3
+抖 M	0	dou3 m
 抖内	0	dou3 nei4
 抖动	0	dou3 dong4
 抖搂	0	dou3 lou5
@@ -44899,6 +45054,7 @@ word 姐	0	w o r d jie3
 抗炎性	0	kang4 yan2 xing4
 抗争	0	kang4 zheng1
 抗生素	0	kang4 sheng1 su4
+抗疫	0	kang4 yi4
 抗病	0	kang4 bing4
 抗病毒	0	kang4 bing4 du2
 抗病毒药	0	kang4 bing4 du2 yao4
@@ -45261,6 +45417,7 @@ word 姐	0	w o r d jie3
 拈酸	0	nian1 suan1
 拈香	0	nian1 xiang1
 拉	0	la1
+拉	0	la2
 拉	0	la4
 拉 K	0	la1 k
 拉㞎㞎	0	la1 ba3 ba5
@@ -45443,7 +45600,10 @@ word 姐	0	w o r d jie3
 抛出	0	pao1 chu1
 抛却	0	pao1 que4
 抛售	0	pao1 shou4
+抛夫弃子	0	pao1 fu1 qi4 zi3
+抛妻弃子	0	pao1 qi1 qi4 zi3
 抛媚眼	0	pao1 mei4 yan3
+抛家弃子	0	pao1 jia1 qi4 zi3
 抛射	0	pao1 she4
 抛射物	0	pao1 she4 wu4
 抛射体	0	pao1 she4 ti3
@@ -45506,6 +45666,7 @@ word 姐	0	w o r d jie3
 拍纸簿	0	pai1 zhi3 bu4
 拍胸脯	0	pai1 xiong1 pu2
 拍号	0	pai1 hao4
+拍谢	0	pai1 xie4
 拍卖	0	pai1 mai4
 拍卖商	0	pai1 mai4 shang1
 拍卖会	0	pai1 mai4 hui4
@@ -45642,7 +45803,7 @@ word 姐	0	w o r d jie3
 拖拉机	0	tuo1 la1 ji1
 拖拖拉拉	0	tuo1 tuo1 la1 la1
 拖拖沓沓	0	tuo1 tuo1 ta4 ta4
-拖拽	0	tuo1 ye4
+拖拽	0	tuo1 zhuai4
 拖挂	0	tuo1 gua4
 拖挂车	0	tuo1 gua4 che1
 拖放	0	tuo1 fang4
@@ -45779,6 +45940,7 @@ word 姐	0	w o r d jie3
 招牌纸	0	zhao1 pai2 zhi3
 招牌菜	0	zhao1 pai2 cai4
 招生	0	zhao1 sheng1
+招生官	0	zhao1 sheng1 guan1
 招租	0	zhao1 zu1
 招考	0	zhao1 kao3
 招聘	0	zhao1 pin4
@@ -46217,8 +46379,6 @@ word 姐	0	w o r d jie3
 按期	0	an4 qi1
 按步就班	0	an4 bu4 jiu4 ban1
 按照	0	an4 zhao4
-按照法律	0	an4 zhao4 fa3 lu4
-按照计划	0	an4 zhao4 ji4 hua4
 按理	0	an4 li3
 按理说	0	an4 li3 shuo1
 按立	0	an4 li4
@@ -46594,7 +46754,6 @@ word 姐	0	w o r d jie3
 卷	0	juan3
 卷入	0	juan3 ru4
 卷层云	0	juan3 ceng2 yun2
-卷帘门	0	juan3 lian2 men2
 卷带	0	juan3 dai4
 卷心菜	0	juan3 xin1 cai4
 卷扬	0	juan3 yang2
@@ -46602,6 +46761,7 @@ word 姐	0	w o r d jie3
 卷曲	0	juan3 qu1
 卷积云	0	juan3 ji1 yun2
 卷帘	0	juan3 lian2
+卷帘门	0	juan3 lian2 men2
 卷线器	0	juan3 xian4 qi4
 卷腹	0	juan3 fu4
 卷舌元音	0	juan3 she2 yuan2 yin1
@@ -46610,6 +46770,7 @@ word 姐	0	w o r d jie3
 卷边	0	juan3 bian1
 卷铺盖	0	juan3 pu1 gai5
 卷铺盖走人	0	juan3 pu1 gai4 zou3 ren2
+卷门	0	juan3 men2
 卷风	0	juan3 feng1
 卷饼	0	juan3 bing3
 卷发	0	juan3 fa4
@@ -46984,6 +47145,7 @@ word 姐	0	w o r d jie3
 挂镰	0	gua4 lian2
 挂靠	0	gua4 kao4
 挂靴	0	gua4 xue1
+挂饰	0	gua4 shi4
 挂马	0	gua4 ma3
 挂面	0	gua4 mian4
 挂齿	0	gua4 chi3
@@ -47069,6 +47231,7 @@ word 姐	0	w o r d jie3
 探月	0	tan4 yue4
 探望	0	tan4 wang4
 探查	0	tan4 cha2
+探案	0	tan4 an4
 探求	0	tan4 qiu2
 探测	0	tan4 ce4
 探测器	0	tan4 ce4 qi4
@@ -47132,7 +47295,6 @@ word 姐	0	w o r d jie3
 接力赛	0	jie1 li4 sai4
 接力赛跑	0	jie1 li4 sai4 pao3
 接受	0	jie1 shou4
-接受审问	0	jie1 shou4 shen3 wen4
 接受者	0	jie1 shou4 zhe3
 接口	0	jie1 kou3
 接口模块	0	jie1 kou3 mo2 kuai4
@@ -47222,10 +47384,13 @@ word 姐	0	w o r d jie3
 控制台	0	kong4 zhi4 tai2
 控制论	0	kong4 zhi4 lun4
 控告	0	kong4 gao4
+控方	0	kong4 fang1
+控球后卫	0	kong4 qiu2 hou4 wei4
 控管	0	kong4 guan3
 控罪	0	kong4 zui4
 控股	0	kong4 gu3
 控股公司	0	kong4 gu3 gong1 si1
+控卫	0	kong4 wei4
 控规	0	kong4 gui1
 控诉	0	kong4 su4
 控评	0	kong4 ping2
@@ -47341,6 +47506,7 @@ word 姐	0	w o r d jie3
 推头	0	tui1 tou2
 掩	0	yan3
 掩人耳目	0	yan3 ren2 er3 mu4
+掩卷	0	yan3 juan4
 掩埋	0	yan3 mai2
 掩映	0	yan3 ying4
 掩样法	0	yan3 yang4 fa3
@@ -47445,7 +47611,6 @@ word 姐	0	w o r d jie3
 提到	0	ti2 dao4
 提前	0	ti2 qian2
 提前投票	0	ti2 qian2 tou2 piao4
-提前起爆	0	ti2 qian2 qi3 bao4
 提包	0	ti2 bao1
 提升	0	ti2 sheng1
 提及	0	ti2 ji2
@@ -47609,6 +47774,7 @@ word 姐	0	w o r d jie3
 扬子鳄	0	yang2 zi3 e4
 扬州	0	yang2 zhou1
 扬州市	0	yang2 zhou1 shi4
+扬州炒饭	0	yang2 zhou1 chao3 fan4
 扬帆	0	yang2 fan1
 扬帆远航	0	yang2 fan1 yuan3 hang2
 扬幡招魂	0	yang2 fan1 zhao1 hun2
@@ -47869,6 +48035,7 @@ word 姐	0	w o r d jie3
 摇笔杆	0	yao2 bi3 gan3
 摇篮	0	yao2 lan2
 摇篮曲	0	yao2 lan2 qu3
+摇粒绒	0	yao2 li4 rong2
 摇臂	0	yao2 bi4
 摇船	0	yao2 chuan2
 摇号	0	yao2 hao4
@@ -47922,9 +48089,7 @@ word 姐	0	w o r d jie3
 搜索队	0	sou1 suo3 dui4
 搜罗	0	sou1 luo2
 搜肠刮肚	0	sou1 chang2 gua1 du4
-搜证	0	sou1 zheng4
 搜身	0	sou1 shen1
-搜集	0	sou1 ji2
 搞	0	gao3
 搞不好	0	gao3 bu5 hao3
 搞不懂	0	gao3 bu5 dong3
@@ -48067,6 +48232,7 @@ word 姐	0	w o r d jie3
 抢手货	0	qiang3 shou3 huo4
 抢掠	0	qiang3 lue4
 抢救	0	qiang3 jiu4
+抢断	0	qiang3 duan4
 抢滩	0	qiang3 tan1
 抢生意	0	qiang3 sheng1 yi5
 抢白	0	qiang3 bai2
@@ -48094,7 +48260,6 @@ word 姐	0	w o r d jie3
 摁	0	en4
 摁扣儿	0	en4 kou4 r5
 摁钉儿	0	en4 ding1 r5
-摂	0	she4
 扛	0	gang1
 摎	0	jiu1
 摏	0	chong1
@@ -48168,7 +48333,6 @@ word 姐	0	w o r d jie3
 摩尼教	0	mo2 ni2 jiao4
 摩德纳	0	mo2 de2 na4
 摩托	0	mo2 tuo1
-摩托罗垃	0	mo2 tuo1 luo2 la1
 摩托罗拉	0	mo2 tuo1 luo2 la1
 摩托艇	0	mo2 tuo1 ting3
 摩托车	0	mo2 tuo1 che1
@@ -48267,6 +48431,7 @@ word 姐	0	w o r d jie3
 摸脉	0	mo1 mai4
 摸着石头过河	0	mo1 zhe5 shi2 tou5 guo4 he2
 摸象	0	mo1 xiang4
+摸金校尉	0	mo1 jin1 xiao4 wei4
 摸鱼	0	mo1 yu2
 摸黑	0	mo1 hei1
 摹	0	mo2
@@ -48402,7 +48567,7 @@ word 姐	0	w o r d jie3
 撒野	0	sa1 ye3
 撒门	0	sa1 men2
 撒马利亚	0	sa1 ma3 li4 ya4
-撒马尔干	0	sa1 ma3 er3 gan4
+撒马尔干	0	sa1 ma3 er3 gan1
 撒马尔罕	0	sa1 ma3 er3 han3
 挠	0	nao2
 挠败	0	nao2 bai4
@@ -48452,6 +48617,7 @@ word 姐	0	w o r d jie3
 撞针	0	zhuang4 zhen1
 撞锁	0	zhuang4 suo3
 撞骗	0	zhuang4 pian4
+撞鬼	0	zhuang4 gui3
 挢	0	jiao3
 操	0	cao1
 撢	0	dan3
@@ -48935,6 +49101,7 @@ word 姐	0	w o r d jie3
 拧	0	ning2
 拧	0	ning3
 拧	0	ning4
+拧巴	0	ning3 ba5
 拧成一股绳	0	ning2 cheng2 yi1 gu3 sheng2
 拧开	0	ning3 kai1
 搁	0	ge1
@@ -49104,6 +49271,7 @@ word 姐	0	w o r d jie3
 攘夷	0	rang3 yi2
 攘夺	0	rang3 duo2
 攘攘	0	rang3 rang3
+攘攘熙熙	0	rang3 rang3 xi1 xi1
 攘灾	0	rang3 zai1
 攘窃	0	rang3 qie4
 攘羊	0	rang3 yang2
@@ -49569,11 +49737,9 @@ word 姐	0	w o r d jie3
 放射性沾染物	0	fang4 she4 xing4 zhan1 ran3 wu4
 放射性活度	0	fang4 she4 xing4 huo2 du4
 放射性烟羽	0	fang4 she4 xing4 yan1 yu3
-放射性碎片	0	fang4 she4 xing4 sui4 pian4
 放射性碘	0	fang4 she4 xing4 dian3
 放射性落下灰	0	fang4 she4 xing4 luo4 xia4 hui1
 放射性衰变	0	fang4 she4 xing4 shuai1 bian4
-放射性计时	0	fang4 she4 xing4 ji4 shi2
 放射治疗	0	fang4 she4 zhi4 liao2
 放射源	0	fang4 she4 yuan2
 放射物	0	fang4 she4 wu4
@@ -49620,6 +49786,7 @@ word 姐	0	w o r d jie3
 放牛班	0	fang4 niu2 ban1
 放牧	0	fang4 mu4
 放生	0	fang4 sheng1
+放疗	0	fang4 liao2
 放眼	0	fang4 yan3
 放眼望去	0	fang4 yan3 wang4 qu4
 放空	0	fang4 kong1
@@ -49728,6 +49895,7 @@ word 姐	0	w o r d jie3
 政治关系	0	zheng4 zhi4 guan1 xi4
 政治体制	0	zheng4 zhi4 ti3 zhi4
 政法	0	zheng4 fa3
+政法委	0	zheng4 fa3 wei3
 政派	0	zheng4 pai4
 政理	0	zheng4 li3
 政界	0	zheng4 jie4
@@ -50007,6 +50175,7 @@ word 姐	0	w o r d jie3
 教父	0	jiao4 fu4
 教理	0	jiao4 li3
 教皇	0	jiao4 huang2
+教众	0	jiao4 zhong4
 教研	0	jiao4 yan2
 教研室	0	jiao4 yan2 shi4
 教科文组织	0	jiao4 ke1 wen2 zu3 zhi1
@@ -50238,10 +50407,10 @@ word 姐	0	w o r d jie3
 敲开	0	qiao1 kai1
 敲响	0	qiao1 xiang3
 整	0	zheng3
+整人	0	zheng3 ren2
 整并	0	zheng3 bing4
 整修	0	zheng3 xiu1
 整个	0	zheng3 ge4
-整个地球	0	zheng3 ge4 di4 qiu2
 整倍数	0	zheng3 bei4 shu4
 整备	0	zheng3 bei4
 整合	0	zheng3 he2
@@ -50275,6 +50444,7 @@ word 姐	0	w o r d jie3
 整环	0	zheng3 huan2
 整肃	0	zheng3 su4
 整脊学	0	zheng3 ji3 xue2
+整蛊	0	zheng3 gu3
 整装	0	zheng3 zhuang1
 整装待发	0	zheng3 zhuang1 dai4 fa1
 整训	0	zheng3 xun4
@@ -50412,6 +50582,7 @@ word 姐	0	w o r d jie3
 数据段	0	shu4 ju4 duan4
 数据流	0	shu4 ju4 liu2
 数据组	0	shu4 ju4 zu3
+数据结构	0	shu4 ju4 jie2 gou4
 数据网络	0	shu4 ju4 wang3 luo4
 数据总线	0	shu4 ju4 zong3 xian4
 数据处理	0	shu4 ju4 chu3 li3
@@ -50498,6 +50669,8 @@ word 姐	0	w o r d jie3
 文具	0	wen2 ju4
 文具商	0	wen2 ju4 shang1
 文具店	0	wen2 ju4 dian4
+文创	0	wen2 chuang4
+文创商品	0	wen2 chuang4 shang1 pin3
 文创产业	0	wen2 chuang4 chan3 ye4
 文化	0	wen2 hua4
 文化交流	0	wen2 hua4 jiao1 liu2
@@ -50814,6 +50987,7 @@ word 姐	0	w o r d jie3
 斜方型	0	xie2 fang1 xing2
 斜方肌	0	xie2 fang1 ji1
 斜杠	0	xie2 gang4
+斜杠青年	0	xie2 gang4 qing1 nian2
 斜率	0	xie2 lu4
 斜眼	0	xie2 yan3
 斜眼看	0	xie2 yan3 kan4
@@ -50871,7 +51045,7 @@ word 姐	0	w o r d jie3
 斫	0	zhuo2
 斫丧	0	zhuo2 sang4
 斫营	0	zhuo2 ying2
-斫畲	0	zhuo2 yu2
+斫畬	0	zhuo2 she1
 斫白	0	zhuo2 bai2
 斩	0	zhan3
 斩新	0	zhan3 xin1
@@ -50896,8 +51070,6 @@ word 姐	0	w o r d jie3
 斯台普斯	0	si1 tai2 pu3 si1
 斯哥特	0	si1 ge1 te4
 斯图加特	0	si1 tu2 jia1 te4
-斯坦佛	0	si1 tan3 fo2
-斯坦佛大学	0	si1 tan3 fo2 da4 xue2
 斯坦利	0	si1 tan3 li4
 斯坦因	0	si1 tan3 yin1
 斯坦福	0	si1 tan3 fu2
@@ -50989,6 +51161,8 @@ word 姐	0	w o r d jie3
 新人	0	xin1 ren2
 新任	0	xin1 ren4
 新低	0	xin1 di1
+新余	0	xin1 yu2
+新余市	0	xin1 yu2 shi4
 新来乍到	0	xin1 lai2 zha4 dao4
 新修	0	xin1 xiu1
 新修本草	0	xin1 xiu1 ben3 cao3
@@ -51046,7 +51220,6 @@ word 姐	0	w o r d jie3
 新天地	0	xin1 tian1 di4
 新奇	0	xin1 qi2
 新奥尔良	0	xin1 ao4 er3 liang2
-新威胁	0	xin1 wei1 xie2
 新娘	0	xin1 niang2
 新娘子	0	xin1 niang2 zi5
 新娘秘书	0	xin1 niang2 mi4 shu1
@@ -51086,7 +51259,6 @@ word 姐	0	w o r d jie3
 新店溪	0	xin1 dian4 xi1
 新建	0	xin1 jian4
 新式	0	xin1 shi4
-新式拚法	0	xin1 shi4 pin1 fa3
 新德里	0	xin1 de2 li3
 新思想	0	xin1 si1 xiang3
 新愁旧恨	0	xin1 chou2 jiu4 hen4
@@ -51285,8 +51457,6 @@ word 姐	0	w o r d jie3
 新霉素	0	xin1 mei2 su4
 新风	0	xin1 feng1
 新风系统	0	xin1 feng1 xi4 tong3
-新余	0	xin1 yu2
-新余市	0	xin1 yu2 shi4
 新马	0	xin1 ma3
 新马泰	0	xin1 ma3 tai4
 新高	0	xin1 gao1
@@ -51403,6 +51573,7 @@ word 姐	0	w o r d jie3
 方寸	0	fang1 cun4
 方寸大乱	0	fang1 cun4 da4 luan4
 方寸已乱	0	fang1 cun4 yi3 luan4
+方尖碑	0	fang1 jian1 bei1
 方尾鹟	0	fang1 wei3 weng1
 方山	0	fang1 shan1
 方山县	0	fang1 shan1 xian4
@@ -51468,8 +51639,6 @@ word 姐	0	w o r d jie3
 于是	0	yu2 shi4
 于是乎	0	yu2 shi4 hu1
 于焉	0	yu2 yan1
-于田	0	yu2 tian2
-于田县	0	yu2 tian2 xian4
 施	0	shi1
 施	0	shi1
 施主	0	shi1 zhu3
@@ -51692,6 +51861,7 @@ word 姐	0	w o r d jie3
 旗舰店	0	qi2 jian4 dian4
 旗号	0	qi2 hao4
 旗袍	0	qi2 pao2
+旗装	0	qi2 zhuang1
 旗语	0	qi2 yu3
 旗开得胜	0	qi2 kai1 de2 sheng4
 旗鼓相当	0	qi2 gu3 xiang1 dang1
@@ -51722,6 +51892,7 @@ word 姐	0	w o r d jie3
 日	0	ri4
 日中	0	ri4 zhong1
 日中	0	ri4 zhong1
+日久	0	ri4 jiu3
 日久弥新	0	ri4 jiu3 mi2 xin1
 日久岁深	0	ri4 jiu3 sui4 shen1
 日久生情	0	ri4 jiu3 sheng1 qing2
@@ -51814,7 +51985,6 @@ word 姐	0	w o r d jie3
 日本歌鸲	0	ri4 ben3 ge1 qu2
 日本沼虾	0	ri4 ben3 zhao3 xia1
 日本海	0	ri4 ben3 hai3
-日本竹筷	0	ri4 ben3 zhu2 kuai4
 日本米酒	0	ri4 ben3 mi3 jiu3
 日本经济新闻	0	ri4 ben3 jing1 ji4 xin1 wen2
 日本绣眼鸟	0	ri4 ben3 xiu4 yan3 niao3
@@ -51895,6 +52065,7 @@ word 姐	0	w o r d jie3
 旨意	0	zhi3 yi4
 旨趣	0	zhi3 qu4
 早	0	zao3
+早 C 晚 A	0	zao3 c wan3 a
 早上	0	zao3 shang5
 早上好	0	zao3 shang5 hao3
 早些	0	zao3 xie1
@@ -51930,7 +52101,6 @@ word 姐	0	w o r d jie3
 早晚	0	zao3 wan3
 早晨	0	zao3 chen2
 早期	0	zao3 qi1
-早期效应	0	zao3 qi1 xiao4 ying4
 早岁	0	zao3 sui4
 早死	0	zao3 si3
 早死早超生	0	zao3 si3 zao3 chao1 sheng1
@@ -51960,6 +52130,7 @@ word 姐	0	w o r d jie3
 早饭	0	zao3 fan4
 早餐	0	zao3 can1
 早点	0	zao3 dian3
+早点儿	0	zao3 dian3 r5
 旪	0	xie2
 旬	0	xun2
 旬始	0	xun2 shi3
@@ -52109,7 +52280,6 @@ word 姐	0	w o r d jie3
 明光	0	ming2 guang1
 明光市	0	ming2 guang1 shi4
 明光度	0	ming2 guang1 du4
-明光蓝	0	ming2 guang1 lan2
 明儿	0	ming2 r5
 明儿个	0	ming2 r5 ge5
 明初	0	ming2 chu1
@@ -52225,6 +52395,7 @@ word 姐	0	w o r d jie3
 明达事理	0	ming2 da2 shi4 li3
 明邃	0	ming2 sui4
 明里	0	ming2 li5
+明锁	0	ming2 suo3
 明镜	0	ming2 jing4
 明镜	0	ming2 jing4
 明镜高悬	0	ming2 jing4 gao1 xuan2
@@ -52261,7 +52432,7 @@ word 姐	0	w o r d jie3
 易传	0	yi4 zhuan4
 易初莲花	0	yi4 chu1 lian2 hua1
 易北河	0	yi4 bei3 he2
-易卜拉辛	0	yi4 bu3 la1 xin1
+易卜拉欣	0	yi4 bu3 la1 xin1
 易卜生	0	yi4 bu3 sheng1
 易取得	0	yi4 qu3 de2
 易司马仪	0	yi4 si1 ma3 yi2
@@ -52436,6 +52607,7 @@ word 姐	0	w o r d jie3
 春妇	0	chun1 fu4
 春季	0	chun1 ji4
 春宫	0	chun1 gong1
+春宵	0	chun1 xiao1
 春岑	0	chun1 cen2
 春川市	0	chun1 chuan1 shi4
 春心	0	chun1 xin1
@@ -52490,6 +52662,7 @@ word 姐	0	w o r d jie3
 春闱	0	chun1 wei2
 春雨	0	chun1 yu3
 春霖	0	chun1 lin2
+春风	0	chun1 feng1
 春风一度	0	chun1 feng1 yi1 du4
 春风化雨	0	chun1 feng1 hua4 yu3
 春风和气	0	chun1 feng1 he2 qi4
@@ -52718,6 +52891,7 @@ word 姐	0	w o r d jie3
 晋级	0	jin4 ji2
 晋县	0	jin4 xian4
 晋见	0	jin4 jian4
+晋铎	0	jin4 duo2
 晌	0	shang3
 晌午	0	shang3 wu5
 晏	0	yan4
@@ -52770,6 +52944,7 @@ word 姐	0	w o r d jie3
 昼夜平分点	0	zhou4 ye4 ping2 fen1 dian3
 昼夜节律	0	zhou4 ye4 jie2 lu4
 昼短夜长	0	zhou4 duan3 ye4 chang2
+昼行性	0	zhou4 xing2 xing4
 晞	0	xi1
 晟	0	cheng2
 晟	0	sheng4
@@ -52803,8 +52978,6 @@ word 姐	0	w o r d jie3
 普	0	pu3
 普丁	0	pu3 ding1
 普世	0	pu3 shi4
-普世基督教	0	pu3 shi4 ji1 du1 jiao4
-普世教会	0	pu3 shi4 jiao4 hui4
 普京	0	pu3 jing1
 普什图语	0	pu3 shi2 tu2 yu3
 普信男	0	pu3 xin4 nan2
@@ -52854,9 +53027,9 @@ word 姐	0	w o r d jie3
 普法	0	pu3 fa3
 普法战争	0	pu3 fa3 zhan4 zheng1
 普洱	0	pu3 er3
-普洱哈尼族彝族自治县	0	pu3 er3 ha1 ni2 zu2 yi2 zu2 zi4 zhi4 xian4
 普洱市	0	pu3 er3 shi4
 普洱茶	0	pu3 er3 cha2
+普渡	0	pu3 du4
 普渡大学	0	pu3 du4 da4 xue2
 普济众生	0	pu3 ji4 zhong4 sheng1
 普照	0	pu3 zhao4
@@ -52943,7 +53116,6 @@ word 姐	0	w o r d jie3
 景区	0	jing3 qu1
 景宁	0	jing3 ning2
 景宁畲族自治县	0	jing3 ning2 she1 zu2 zi4 zhi4 xian4
-景宁畲乡	0	jing3 ning2 she1 xiang1
 景宁县	0	jing3 ning2 xian4
 景山	0	jing3 shan1
 景山公园	0	jing3 shan1 gong1 yuan2
@@ -53089,6 +53261,7 @@ word 姐	0	w o r d jie3
 暋	0	min3
 暌	0	kui2
 暌违	0	kui2 wei2
+暌隔	0	kui2 ge2
 暍	0	he4
 映	0	ying4
 𬀩	0	wei3
@@ -53159,6 +53332,7 @@ word 姐	0	w o r d jie3
 暗影	0	an4 ying3
 暗想	0	an4 xiang3
 暗恋	0	an4 lian4
+暗房	0	an4 fang2
 暗扣	0	an4 kou4
 暗指	0	an4 zhi3
 暗探	0	an4 tan4
@@ -53286,6 +53460,7 @@ word 姐	0	w o r d jie3
 暲	0	zhang1
 暴	0	bao4
 暴	0	bao4
+暴	0	pu4
 暴乱	0	bao4 luan4
 暴光	0	bao4 guang1
 暴利	0	bao4 li4
@@ -53440,6 +53615,7 @@ word 姐	0	w o r d jie3
 晒娃族	0	shai4 wa2 zu2
 晒客	0	shai4 ke4
 晒斑	0	shai4 ban1
+晒照	0	shai4 zhao4
 晒衣绳	0	shai4 yi1 sheng2
 晒骆驼	0	shai4 luo4 tuo5
 晒黑	0	shai4 hei1
@@ -53504,6 +53680,7 @@ word 姐	0	w o r d jie3
 曲面	0	qu1 mian4
 曲面论	0	qu1 mian4 lun4
 曲颈瓶	0	qu1 jing3 ping2
+曲风	0	qu3 feng1
 曲高和寡	0	qu3 gao1 he4 gua3
 曲麻莱	0	qu3 ma2 lai2
 曲麻莱县	0	qu3 ma2 lai2 xian4
@@ -53709,7 +53886,7 @@ word 姐	0	w o r d jie3
 曾经沧海	0	ceng2 jing1 cang1 hai3
 曾经沧海难为水，除却巫山不是云	0	ceng2 jing1 cang1 hai3 nan2 wei2 shui3 chu2 que4 wu1 shan1 bu4 shi4 yun2
 曾繁仁	0	zeng1 fan2 ren2
-曾荫权	0	zeng1 yin4 quan2
+曾荫权	0	zeng1 yin1 quan2
 曾都	0	zeng1 du1
 曾都区	0	zeng1 du1 qu1
 曾金燕	0	zeng1 jin1 yan4
@@ -53742,7 +53919,6 @@ word 姐	0	w o r d jie3
 最低音	0	zui4 di1 yin1
 最低点	0	zui4 di1 dian3
 最佳	0	zui4 jia1
-最佳利益	0	zui4 jia1 li4 yi4
 最佳化	0	zui4 jia1 hua4
 最优	0	zui4 you1
 最优化	0	zui4 you1 hua4
@@ -53777,6 +53953,7 @@ word 姐	0	w o r d jie3
 最惠国	0	zui4 hui4 guo2
 最惠国待遇	0	zui4 hui4 guo2 dai4 yu4
 最新	0	zui4 xin1
+最是	0	zui4 shi4
 最为	0	zui4 wei2
 最终	0	zui4 zhong1
 最终幻想	0	zui4 zhong1 huan4 xiang3
@@ -53813,11 +53990,11 @@ word 姐	0	w o r d jie3
 会堂	0	hui4 tang2
 会场	0	hui4 chang3
 会士	0	hui4 shi4
-会士考试	0	hui4 shi4 kao3 shi4
 会子	0	hui4 zi5
 会安	0	hui4 an1
 会客	0	hui4 ke4
 会客室	0	hui4 ke4 shi4
+会客厅	0	hui4 ke4 ting1
 会宁	0	hui4 ning2
 会宁县	0	hui4 ning2 xian4
 会审	0	hui4 shen3
@@ -53842,6 +54019,8 @@ word 姐	0	w o r d jie3
 会泽	0	hui4 ze2
 会泽县	0	hui4 ze2 xian4
 会奖旅游	0	hui4 jiang3 lu3 you2
+会理	0	hui4 li3
+会理市	0	hui4 li3 shi4
 会盟	0	hui4 meng2
 会众	0	hui4 zhong4
 会社	0	hui4 she4
@@ -53865,12 +54044,12 @@ word 姐	0	w o r d jie3
 会议厅	0	hui4 yi4 ting1
 会费	0	hui4 fei4
 会车	0	hui4 che1
-会里县	0	hui4 li3 xian4
 会错意	0	hui4 cuo4 yi4
 会长	0	hui4 zhang3
 会长团	0	hui4 zhang3 tuan2
 会门	0	hui4 men2
 会阴	0	hui4 yin1
+会阴穴	0	hui4 yin1 xue2
 会集	0	hui4 ji2
 会面	0	hui4 mian4
 会馆	0	hui4 guan3
@@ -53914,6 +54093,7 @@ word 姐	0	w o r d jie3
 月婆子	0	yue4 po2 zi5
 月嫂	0	yue4 sao3
 月子	0	yue4 zi5
+月子中心	0	yue4 zi5 zhong1 xin1
 月子病	0	yue4 zi5 bing4
 月孛	0	yue4 bei4
 月季	0	yue4 ji4
@@ -54264,6 +54444,7 @@ word 姐	0	w o r d jie3
 有色	0	you3 se4
 有色人种	0	you3 se4 ren2 zhong3
 有色无胆	0	you3 se4 wu2 dan3
+有色眼镜	0	you3 se4 yan3 jing4
 有色金属	0	you3 se4 jin1 shu3
 有苦说不出	0	you3 ku3 shuo1 bu5 chu1
 有着	0	you3 zhe5
@@ -54482,7 +54663,6 @@ word 姐	0	w o r d jie3
 朝族	0	chao2 zu2
 朝日	0	zhao1 ri4
 朝日	0	zhao1 ri4
-朝日放送	0	zhao1 ri4 fang4 song4
 朝日新闻	0	zhao1 ri4 xin1 wen2
 朝曦	0	zhao1 xi1
 朝服	0	chao2 fu2
@@ -54917,6 +55097,7 @@ word 姐	0	w o r d jie3
 本着	0	ben3 zhe5
 本处	0	ben3 chu4
 本行	0	ben3 hang2
+本贯	0	ben3 guan4
 本质	0	ben3 zhi4
 本质上	0	ben3 zhi4 shang4
 本身	0	ben3 shen1
@@ -54972,6 +55153,7 @@ word 姐	0	w o r d jie3
 朱祁钰	0	zhu1 qi2 yu4
 朱祁镇	0	zhu1 qi2 zhen4
 朱立伦	0	zhu1 li4 lun2
+朱笔	0	zhu1 bi3
 朱粉	0	zhu1 fen3
 朱红	0	zhu1 hong2
 朱红灯	0	zhu1 hong2 deng1
@@ -55624,6 +55806,7 @@ word 姐	0	w o r d jie3
 松原市	0	song1 yuan2 shi4
 松口蘑	0	song1 kou3 mo2
 松坡湖	0	song1 po1 hu2
+松塔	0	song1 ta3
 松子	0	song1 zi3
 松尾	0	song1 wei3
 松山	0	song1 shan1
@@ -55730,6 +55913,8 @@ word 姐	0	w o r d jie3
 板车	0	ban3 che1
 板门店	0	ban3 men2 dian4
 板门店停战村	0	ban3 men2 dian4 ting2 zhan4 cun1
+板鞋	0	ban3 xie2
+板鸭	0	ban3 ya1
 板鸭	0	ban3 ya1
 板面	0	ban3 mian4
 板鼓	0	ban3 gu3
@@ -55775,13 +55960,13 @@ word 姐	0	w o r d jie3
 枕木	0	zhen3 mu4
 枕状熔岩	0	zhen3 zhuang4 rong2 yan2
 枕石漱流	0	zhen3 shi2 shu4 liu2
-枕葄	0	zhen3 zuo4
 枕叶	0	zhen3 ye4
 枕藉	0	zhen3 jie4
 枕边人	0	zhen3 bian1 ren2
 枕边故事	0	zhen3 bian1 gu4 shi5
 枕边风	0	zhen3 bian1 feng1
 枕头	0	zhen3 tou5
+枕头大战	0	zhen3 tou5 da4 zhan4
 枕头套	0	zhen3 tou5 tao4
 枕头箱	0	zhen3 tou5 xiang1
 枕头蛋糕	0	zhen3 tou5 dan4 gao1
@@ -55847,9 +56032,9 @@ word 姐	0	w o r d jie3
 林芝	0	lin2 zhi1
 林芝市	0	lin2 zhi1 shi4
 林茨	0	lin2 ci2
-林荫大道	0	lin2 yin4 da4 dao4
-林荫路	0	lin2 yin4 lu4
-林荫道	0	lin2 yin4 dao4
+林荫大道	0	lin2 yin1 da4 dao4
+林荫路	0	lin2 yin1 lu4
+林荫道	0	lin2 yin1 dao4
 林薮	0	lin2 sou3
 林西	0	lin2 xi1
 林西县	0	lin2 xi1 xian4
@@ -55885,7 +56070,6 @@ word 姐	0	w o r d jie3
 果倍爽	0	guo3 bei4 shuang3
 果冻	0	guo3 dong4
 果切	0	guo3 qie1
-果味胶糖	0	guo3 wei4 jiao1 tang2
 果品	0	guo3 pin3
 果啤	0	guo3 pi2
 果园	0	guo3 yuan2
@@ -56278,6 +56462,7 @@ word 姐	0	w o r d jie3
 柳暗花明	0	liu3 an4 hua1 ming2
 柳杉	0	liu3 shan1
 柳杞	0	liu3 qi3
+柳松菇	0	liu3 song1 gu1
 柳林	0	liu3 lin2
 柳林县	0	liu3 lin2 xian4
 柳条	0	liu3 tiao2
@@ -56295,6 +56480,7 @@ word 姐	0	w o r d jie3
 柳营	0	liu3 ying2
 柳琴	0	liu3 qin2
 柳眉	0	liu3 mei2
+柳絮	0	liu3 xu4
 柳绿花红	0	liu3 lu4 hua1 hong2
 柳叶刀	0	liu3 ye4 dao1
 柳叶眉	0	liu3 ye4 mei2
@@ -56486,6 +56672,7 @@ word 姐	0	w o r d jie3
 核反应	0	he2 fan3 ying4
 核反应堆	0	he2 fan3 ying4 dui1
 核反击	0	he2 fan3 ji1
+核可	0	he2 ke3
 核合成	0	he2 he2 cheng2
 核问题	0	he2 wen4 ti2
 核四	0	he2 si4
@@ -56539,6 +56726,7 @@ word 姐	0	w o r d jie3
 核发电厂	0	he2 fa1 dian4 chang3
 核相互作用	0	he2 xiang1 hu4 zuo4 yong4
 核磁共振	0	he2 ci2 gong4 zhen4
+核种	0	he2 zhong3
 核算	0	he2 suan4
 核糖	0	he2 tang2
 核糖核酸	0	he2 tang2 he2 suan1
@@ -56570,6 +56758,7 @@ word 姐	0	w o r d jie3
 核连锁反应	0	he2 lian2 suo3 fan3 ying4
 核酮糖	0	he2 tong2 tang2
 核酸	0	he2 suan1
+核医学	0	he2 yi1 xue2
 核销	0	he2 xiao1
 核门槛	0	he2 men2 jian4
 核防御	0	he2 fang2 yu4
@@ -56652,6 +56841,7 @@ word 姐	0	w o r d jie3
 格林尼治本初子午线	0	ge2 lin2 ni2 zhi4 ben3 chu1 zi3 wu3 xian4
 格林尼治标准时间	0	ge2 lin2 ni2 zhi4 biao1 zhun3 shi2 jian1
 格林斯班	0	ge2 lin2 si1 ban1
+格林童话	0	ge2 lin2 tong2 hua4
 格林纳达	0	ge2 lin2 na4 da2
 格栅	0	ge2 shan1
 格格	0	ge2 ge5
@@ -56668,6 +56858,7 @@ word 姐	0	w o r d jie3
 格物致知	0	ge2 wu4 zhi4 zhi1
 格瑞那达	0	ge2 rui4 na4 da2
 格瓦斯	0	ge2 wa3 si1
+格登	0	ge1 deng1
 格筛	0	ge2 shai1
 格网	0	ge2 wang3
 格罗宁根	0	ge2 luo2 ning2 gen1
@@ -57143,6 +57334,7 @@ word 姐	0	w o r d jie3
 弃剧	0	qi4 ju4
 弃取	0	qi4 qu3
 弃婴	0	qi4 ying1
+弃子	0	qi4 zi3
 弃守	0	qi4 shou3
 弃市	0	qi4 shi4
 弃恶从善	0	qi4 e4 cong2 shan4
@@ -57185,6 +57377,7 @@ word 姐	0	w o r d jie3
 棉袄	0	mian2 ao3
 棉豆	0	mian2 dou4
 棉铃	0	mian2 ling2
+棉铃虫	0	mian2 ling2 chong2
 棉凫	0	mian2 fu2
 棋	0	qi2
 棋	0	qi2
@@ -57413,7 +57606,6 @@ word 姐	0	w o r d jie3
 棺材瓤子	0	guan1 cai5 rang2 zi5
 棺椁	0	guan1 guo3
 棻	0	fen1
-棻芳	0	fen1 fang1
 棼	0	fen2
 碗	0	wan3
 椄	0	jie1
@@ -57538,6 +57730,7 @@ word 姐	0	w o r d jie3
 杨森	0	yang2 sen1
 杨业	0	yang2 ye4
 杨树	0	yang2 shu4
+杨树菇	0	yang2 shu4 gu1
 杨浦区	0	yang2 pu3 qu1
 杨深秀	0	yang2 shen1 xiu4
 杨洁篪	0	yang2 jie2 chi2
@@ -57629,6 +57822,7 @@ word 姐	0	w o r d jie3
 业	0	ye4
 业主	0	ye4 zhu3
 业内	0	ye4 nei4
+业力	0	ye4 li4
 业务	0	ye4 wu4
 业务员	0	ye4 wu4 yuan2
 业务模式	0	ye4 wu4 mo2 shi4
@@ -57914,7 +58108,6 @@ word 姐	0	w o r d jie3
 构筑	0	gou4 zhu4
 构词	0	gou4 ci2
 构词学	0	gou4 ci2 xue2
-构词法意识	0	gou4 ci2 fa3 yi4 shi2
 构造	0	gou4 zao4
 构造运动	0	gou4 zao4 yun4 dong4
 构陷	0	gou4 xian4
@@ -57966,8 +58159,8 @@ word 姐	0	w o r d jie3
 槎	0	cha2
 槐	0	huai2
 槐树	0	huai2 shu4
-槐荫	0	huai2 yin4
-槐荫区	0	huai2 yin4 qu1
+槐荫	0	huai2 yin1
+槐荫区	0	huai2 yin1 qu1
 梅	0	mei2
 槑	0	dai1
 杠	0	gang4
@@ -58176,6 +58369,7 @@ word 姐	0	w o r d jie3
 楼阁塔	0	lou2 ge2 ta3
 楼面	0	lou2 mian4
 楼顶	0	lou2 ding3
+楼凤	0	lou2 feng4
 樕	0	su4
 樗	0	chu1
 樗蒱	0	chu1 pu2
@@ -58357,6 +58551,7 @@ word 姐	0	w o r d jie3
 朴素	0	pu3 su4
 朴门	0	pu3 men2
 树	0	shu4
+树上熟	0	shu4 shang4 shu2
 树上开花	0	shu4 shang4 kai1 hua1
 树人	0	shu4 ren2
 树倒猢狲散	0	shu4 dao3 hu2 sun1 san4
@@ -58383,6 +58578,7 @@ word 姐	0	w o r d jie3
 树欲静而风不止	0	shu4 yu4 jing4 er2 feng1 bu4 zhi3
 树洞	0	shu4 dong4
 树液	0	shu4 ye4
+树熟	0	shu4 shu2
 树状细胞	0	shu4 zhuang4 xi4 bao1
 树獭	0	shu4 ta3
 树皮	0	shu4 pi2
@@ -58397,6 +58593,7 @@ word 姐	0	w o r d jie3
 树苗	0	shu4 miao2
 树莓	0	shu4 mei2
 树莓派	0	shu4 mei2 pai4
+树菠萝	0	shu4 bo1 luo2
 树叶	0	shu4 ye4
 树葡萄	0	shu4 pu2 tao5
 树葬	0	shu4 zang4
@@ -58536,6 +58733,7 @@ word 姐	0	w o r d jie3
 机密文件	0	ji1 mi4 wen2 jian4
 机尾	0	ji1 wei3
 机巧	0	ji1 qiao3
+机师	0	ji1 shi1
 机床	0	ji1 chuang2
 机库	0	ji1 ku4
 机建费	0	ji1 jian4 fei4
@@ -58886,6 +59084,7 @@ word 姐	0	w o r d jie3
 棹	0	zhao4
 柜	0	gui4
 柜台	0	gui4 tai2
+柜员	0	gui4 yuan2
 柜员机	0	gui4 yuan2 ji1
 柜哥	0	gui4 ge1
 柜姐	0	gui4 jie3
@@ -58902,6 +59101,7 @@ word 姐	0	w o r d jie3
 栉孔扇贝	0	zhi4 kong3 shan4 bei4
 栉比	0	zhi4 bi3
 栉水母	0	zhi4 shui3 mu3
+栉瓜	0	zhi4 gua1
 栉风沐雨	0	zhi4 feng1 mu4 yu3
 櫜	0	gao1
 椟	0	du2
@@ -58919,7 +59119,7 @@ word 姐	0	w o r d jie3
 枥	0	li4
 橥	0	zhu1
 榇	0	chen4
-蘖	0	nie4
+櫱	0	nie4
 蘖枝	0	nie4 zhi1
 栊	0	long2
 榉	0	ju3
@@ -59062,6 +59262,7 @@ word 姐	0	w o r d jie3
 次重量级	0	ci4 zhong4 liang4 ji2
 次长	0	ci4 zhang3
 次韵	0	ci4 yun4
+欢忭	0	huan1 bian4
 欣	0	xin1
 欣喜	0	xin1 xi3
 欣喜若狂	0	xin1 xi3 ruo4 kuang2
@@ -59076,6 +59277,7 @@ word 姐	0	w o r d jie3
 欬	0	kai4
 欱	0	he1
 欲	0	yu4
+欲仙欲死	0	yu4 xian1 yu4 si3
 欲加之罪，何患无辞	0	yu4 jia1 zhi1 zui4 he2 huan4 wu2 ci2
 欲取姑予	0	yu4 qu3 gu1 yu3
 欲取姑与	0	yu4 qu3 gu1 yu3
@@ -59158,7 +59360,6 @@ word 姐	0	w o r d jie3
 款式	0	kuan3 shi4
 款式	0	kuan3 shi5
 款待	0	kuan3 dai4
-款新	0	kuan3 xin1
 款服	0	kuan3 fu2
 款款	0	kuan3 kuan3
 款步	0	kuan3 bu4
@@ -59203,6 +59404,7 @@ word 姐	0	w o r d jie3
 歌剧院魅影	0	ge1 ju4 yuan4 mei4 ying3
 歌功颂德	0	ge1 gong1 song4 de2
 歌台	0	ge1 tai2
+歌后	0	ge1 hou4
 歌吟	0	ge1 yin2
 歌唱	0	ge1 chang4
 歌唱家	0	ge1 chang4 jia1
@@ -59247,13 +59449,13 @@ word 姐	0	w o r d jie3
 欧亚鸲	0	ou1 ya4 qu2
 欧亚𫛭	0	ou1 ya4 kuang2
 欧仁	0	ou1 ren2
-欧伯林	0	ou1 bo2 lin2
 欧佩克	0	ou1 pei4 ke4
 欧元	0	ou1 yuan2
 欧元区	0	ou1 yuan2 qu1
 欧共体	0	ou1 gong4 ti3
 欧冠	0	ou1 guan4
 欧分	0	ou1 fen1
+欧包	0	ou1 bao1
 欧吉桑	0	ou1 ji2 sang1
 欧咪呀给	0	ou1 mi1 ya1 gei3
 欧夜鹰	0	ou1 ye4 ying1
@@ -59275,7 +59477,6 @@ word 姐	0	w o r d jie3
 欧文	0	ou1 wen2
 欧文斯	0	ou1 wen2 si1
 欧斑鸠	0	ou1 ban1 jiu1
-欧朋	0	ou1 peng2
 欧柏林	0	ou1 bo2 lin2
 欧柳莺	0	ou1 liu3 ying1
 欧楂	0	ou1 zha1
@@ -59305,10 +59506,8 @@ word 姐	0	w o r d jie3
 欧洲自由贸易联盟	0	ou1 zhou1 zi4 you2 mao4 yi4 lian2 meng2
 欧洲航天局	0	ou1 zhou1 hang2 tian1 ju2
 欧洲议会	0	ou1 zhou1 yi4 hui4
-欧洲货币	0	ou1 zhou1 huo4 bi4
 欧洲防风	0	ou1 zhou1 fang2 feng1
 欧洲电视	0	ou1 zhou1 dian4 shi4
-欧珀莱	0	ou1 po4 lai2
 欧当归	0	ou1 dang1 gui1
 欧盟	0	ou1 meng2
 欧盟委员会	0	ou1 meng2 wei3 yuan2 hui4
@@ -59326,6 +59525,7 @@ word 姐	0	w o r d jie3
 欧蕾	0	ou1 lei3
 欧蝶鱼	0	ou1 die2 yu2
 欧猪	0	ou1 zhu1
+欧买嘎	0	ou1 mai3 ga1
 欧车前	0	ou1 che1 qian2
 欧里庇得斯	0	ou1 li3 bi4 de2 si1
 欧金斑鸻	0	ou1 jin1 ban1 heng2
@@ -59361,6 +59561,7 @@ word 姐	0	w o r d jie3
 欢度	0	huan1 du4
 欢心	0	huan1 xin1
 欢快	0	huan1 kuai4
+欢忭鼓舞	0	huan1 bian4 gu3 wu3
 欢悦	0	huan1 yue4
 欢愉	0	huan1 yu2
 欢庆	0	huan1 qing4
@@ -59518,6 +59719,7 @@ word 姐	0	w o r d jie3
 正港	0	zheng4 gang3
 正然	0	zheng4 ran2
 正版	0	zheng4 ban3
+正牌	0	zheng4 pai2
 正生	0	zheng4 sheng1
 正用	0	zheng4 yong4
 正当	0	zheng4 dang1
@@ -59827,6 +60029,7 @@ word 姐	0	w o r d jie3
 岁俸	0	sui4 feng4
 岁入	0	sui4 ru4
 岁出	0	sui4 chu1
+岁初	0	sui4 chu1
 岁差	0	sui4 cha1
 岁序	0	sui4 xu4
 岁数	0	sui4 shu5
@@ -59856,7 +60059,6 @@ word 姐	0	w o r d jie3
 历代志下	0	li4 dai4 zhi4 xia4
 历任	0	li4 ren4
 历来	0	li4 lai2
-历来最低点	0	li4 lai2 zui4 di1 dian3
 历史	0	li4 shi3
 历史上	0	li4 shi3 shang4
 历史久远	0	li4 shi3 jiu3 yuan3
@@ -60014,6 +60216,7 @@ word 姐	0	w o r d jie3
 死尸	0	si3 shi1
 死巷	0	si3 xiang4
 死后	0	si3 hou4
+死循环	0	si3 xun2 huan2
 死心	0	si3 xin1
 死心塌地	0	si3 xin1 ta1 di4
 死心眼儿	0	si3 xin1 yan3 r5
@@ -60086,6 +60289,7 @@ word 姐	0	w o r d jie3
 死难	0	si3 nan4
 死难者	0	si3 nan4 zhe3
 死顽固	0	si3 wan2 gu4
+死飞	0	si3 fei1
 死马当活马医	0	si3 ma3 dang4 huo2 ma3 yi1
 死鬼	0	si3 gui3
 死面	0	si3 mian4
@@ -60150,6 +60354,7 @@ word 姐	0	w o r d jie3
 残局	0	can2 ju2
 残年短景	0	can2 nian2 duan3 jing3
 残废	0	can2 fei4
+残影	0	can2 ying3
 残忍	0	can2 ren3
 残念	0	can2 nian4
 残败	0	can2 bai4
@@ -60160,7 +60365,6 @@ word 姐	0	w o r d jie3
 残株	0	can2 zhu1
 残次品	0	can2 ci4 pin3
 残杀	0	can2 sha1
-残杀者	0	can2 sha1 zhe3
 残毒	0	can2 du2
 残民害物	0	can2 min2 hai4 wu4
 残渣	0	can2 zha1
@@ -60235,6 +60439,7 @@ word 姐	0	w o r d jie3
 段	0	duan4
 段位	0	duan4 wei4
 段子	0	duan4 zi5
+段子手	0	duan4 zi5 shou3
 段数	0	duan4 shu4
 段氏	0	duan4 shi4
 段玉裁	0	duan4 yu4 cai2
@@ -60281,6 +60486,8 @@ word 姐	0	w o r d jie3
 杀伤力	0	sha1 shang1 li4
 杀价	0	sha1 jia4
 杀出重围	0	sha1 chu1 chong2 wei2
+杀千刀	0	sha1 qian1 dao1
+杀千刀的	0	sha1 qian1 dao1 de5
 杀君马者道旁儿	0	sha1 jun1 ma3 zhe3 dao4 pang2 er2
 杀器	0	sha1 qi4
 杀婴	0	sha1 ying1
@@ -60327,7 +60534,7 @@ word 姐	0	w o r d jie3
 杀鸡宰鹅	0	sha1 ji1 zai3 e2
 杀鸡焉用牛刀	0	sha1 ji1 yan1 yong4 niu2 dao1
 杀鸡给猴看	0	sha1 ji1 gei3 hou2 kan4
-杀鸡警猴	0	sha1 ji1 jing3 hou2
+杀鸡骇猴	0	sha1 ji1 hai4 hou2
 杀青	0	sha1 qing1
 杀头	0	sha1 tou2
 杀风景	0	sha1 feng1 jing3
@@ -60663,6 +60870,7 @@ word 姐	0	w o r d jie3
 毛条	0	mao2 tiao2
 毛概	0	mao2 gai4
 毛毛	0	mao2 mao5
+毛毛的	0	mao2 mao2 de5
 毛毛虫	0	mao2 mao5 chong2
 毛毛雨	0	mao2 mao5 yu3
 毛毯	0	mao2 tan3
@@ -60761,7 +60969,7 @@ word 姐	0	w o r d jie3
 毫针	0	hao2 zhen1
 毫发	0	hao2 fa4
 毫发不爽	0	hao2 fa4 bu4 shuang3
-毬	0	qiu2
+球	0	qiu2
 毯	0	tan3
 毯子	0	tan3 zi5
 毳	0	cui4
@@ -60780,6 +60988,7 @@ word 姐	0	w o r d jie3
 氆氇	0	pu3 lu5
 毡	0	zhan1
 毡子	0	zhan1 zi5
+毡房	0	zhan1 fang2
 毡靴	0	zhan1 xue1
 氉	0	sao4
 毡	0	zhan1
@@ -60897,6 +61106,7 @@ word 姐	0	w o r d jie3
 民资	0	min2 zi1
 民贼独夫	0	min2 zei2 du2 fu1
 民办	0	min2 ban4
+民进	0	min2 jin4
 民进党	0	min2 jin4 dang3
 民运	0	min2 yun4
 民选	0	min2 xuan3
@@ -61029,6 +61239,7 @@ word 姐	0	w o r d jie3
 气炸	0	qi4 zha4
 气焊	0	qi4 han4
 气焰	0	qi4 yan4
+气焰嚣张	0	qi4 yan4 xiao1 zhang1
 气煤	0	qi4 mei2
 气球	0	qi4 qiu2
 气瓶	0	qi4 ping2
@@ -61302,6 +61513,7 @@ word 姐	0	w o r d jie3
 水晶	0	shui3 jing1
 水晶宫	0	shui3 jing1 gong1
 水晶球	0	shui3 jing1 qiu2
+水晶饺	0	shui3 jing1 jiao3
 水暖工	0	shui3 nuan3 gong1
 水曜日	0	shui3 yao4 ri4
 水杉	0	shui3 shan1
@@ -61612,7 +61824,9 @@ word 姐	0	w o r d jie3
 氽	0	tun3
 氽汤	0	tun3 tang1
 氽烫	0	tun3 tang4
+氾	0	fan2
 泛	0	fan4
+泛滥	0	fan4 lan4
 氿	0	gui3
 汀	0	ting1
 汀曲	0	ting1 qu1
@@ -61824,7 +62038,6 @@ word 姐	0	w o r d jie3
 江轮	0	jiang1 lun2
 江边	0	jiang1 bian1
 江郎才尽	0	jiang1 lang2 cai2 jin4
-江酌之喜	0	jiang1 zhuo2 zhi1 xi3
 江门	0	jiang1 men2
 江门市	0	jiang1 men2 shi4
 江阴	0	jiang1 yin1
@@ -61987,8 +62200,12 @@ word 姐	0	w o r d jie3
 汾阳	0	fen2 yang2
 汾阳市	0	fen2 yang2 shi4
 沁	0	qin4
+沁人心肺	0	qin4 ren2 xin1 fei4
 沁人心脾	0	qin4 ren2 xin1 pi2
+沁人心腑	0	qin4 ren2 xin1 fu3
+沁人肺腑	0	qin4 ren2 fei4 fu3
 沁入	0	qin4 ru4
+沁入心脾	0	qin4 ru4 xin1 pi2
 沁水	0	qin4 shui3
 沁水县	0	qin4 shui3 xian4
 沁源	0	qin4 yuan2
@@ -62048,8 +62265,6 @@ word 姐	0	w o r d jie3
 沈从文	0	shen3 cong2 wen2
 沈复	0	shen3 fu4
 沈括	0	shen3 kuo4
-沈河	0	shen3 he2
-沈河区	0	shen3 he2 qu1
 沈莹	0	shen3 ying2
 沈约	0	shen3 yue1
 沈葆桢	0	shen3 bao3 zhen1
@@ -62207,6 +62422,7 @@ word 姐	0	w o r d jie3
 没羞没臊	0	mei2 xiu1 mei2 sao4
 没脸	0	mei2 lian3
 没脸没皮	0	mei2 lian3 mei2 pi2
+没苦硬吃	0	mei2 ku3 ying4 chi1
 没落	0	mo4 luo4
 没药	0	mo4 yao4
 没亲没故	0	mei2 qin1 mei2 gu4
@@ -62238,7 +62454,7 @@ word 姐	0	w o r d jie3
 冲剂	0	chong1 ji4
 冲印	0	chong1 yin4
 冲塌	0	chong1 ta1
-冲压	0	chong4 ya1
+冲压	0	chong1 ya1
 冲天	0	chong1 tian1
 冲挹	0	chong1 yi4
 冲掉	0	chong1 diao4
@@ -62271,6 +62487,7 @@ word 姐	0	w o r d jie3
 沘	0	bi3
 沙	0	sha1
 沙	0	sha1
+沙	0	sha4
 沙䳭	0	sha1 ji2
 沙丁胺醇	0	sha1 ding1 an4 chun2
 沙丁鱼	0	sha1 ding1 yu2
@@ -62464,12 +62681,14 @@ word 姐	0	w o r d jie3
 河殇	0	he2 shang1
 河水	0	he2 shui3
 河水不犯井水	0	he2 shui3 bu4 fan4 jing3 shui3
+河汊	0	he2 cha4
 河池	0	he2 chi2
 河池市	0	he2 chi2 shi4
 河洛人	0	he2 luo4 ren2
 河津	0	he2 jin1
 河津市	0	he2 jin1 shi4
 河流	0	he2 liu2
+河涌	0	he2 chong1
 河清海晏	0	he2 qing1 hai3 yan4
 河渠	0	he2 qu2
 河港	0	he2 gang3
@@ -62527,7 +62746,6 @@ word 姐	0	w o r d jie3
 油嘴	0	you2 zui3
 油嘴滑舌	0	you2 zui3 hua2 she2
 油垢	0	you2 gou4
-油塔	0	you2 ta3
 油墨	0	you2 mo4
 油子	0	you2 zi5
 油尖旺	0	you2 jian1 wang4
@@ -62623,6 +62841,7 @@ word 姐	0	w o r d jie3
 治病	0	zhi4 bing4
 治病救人	0	zhi4 bing4 jiu4 ren2
 治疗	0	zhi4 liao2
+治疗师	0	zhi4 liao2 shi1
 治疗法	0	zhi4 liao2 fa3
 治愈	0	zhi4 yu4
 治愈系	0	zhi4 yu4 xi4
@@ -62734,6 +62953,7 @@ word 姐	0	w o r d jie3
 泌乳	0	mi4 ru3
 泌尿	0	mi4 niao4
 泌尿器	0	mi4 niao4 qi4
+泌尿外科	0	mi4 niao4 wai4 ke1
 泌尿系统	0	mi4 niao4 xi4 tong3
 泌阳	0	bi4 yang2
 泌阳县	0	bi4 yang2 xian4
@@ -62858,7 +63078,6 @@ word 姐	0	w o r d jie3
 法兰克福汇报	0	fa3 lan2 ke4 fu2 hui4 bao4
 法兰克福学派	0	fa3 lan2 ke4 fu2 xue2 pai4
 法兰克福证券交易所	0	fa3 lan2 ke4 fu2 zheng4 quan4 jiao1 yi4 suo3
-法兰克福车展	0	fa3 lan2 ke4 fu2 che1 zhan3
 法兰德斯	0	fa3 lan2 de2 si1
 法兰斯	0	fa3 lan2 si1
 法兰绒	0	fa3 lan2 rong2
@@ -62995,7 +63214,7 @@ word 姐	0	w o r d jie3
 波卡	0	bo1 ka3
 波及	0	bo1 ji2
 波哥大	0	bo1 ge1 da4
-波塞冬	0	bo1 sai1 dong1
+波塞冬	0	bo1 sai4 dong1
 波士尼亚	0	bo1 shi4 ni2 ya4
 波士尼亚与赫塞哥维纳	0	bo1 shi4 ni2 ya4 yu3 he4 se4 ge1 wei2 na4
 波士顿	0	bo1 shi4 dun4
@@ -63069,7 +63288,9 @@ word 姐	0	w o r d jie3
 波特	0	bo1 te4
 波特	0	bo1 te4
 波特率	0	bo1 te4 lu4
+波特菇	0	bo1 te4 gu1
 波特兰市	0	bo1 te4 lan2 shi4
+波特贝勒菇	0	bo1 te4 bei4 le4 gu1
 波特酒	0	bo1 te4 jiu3
 波状	0	bo1 zhuang4
 波状消光	0	bo1 zhuang4 xiao1 guang1
@@ -63096,7 +63317,6 @@ word 姐	0	w o r d jie3
 波兰	0	bo1 lan2
 波兰斯基	0	bo1 lan2 si1 ji1
 波兰语	0	bo1 lan2 yu3
-波西米亚	0	bo1 xi1 mi3 ya4
 波西米亚	0	bo1 xi1 mi3 ya4
 波语	0	bo1 yu3
 波谱	0	bo1 pu3
@@ -63131,14 +63351,13 @@ word 姐	0	w o r d jie3
 泥坑	0	ni2 keng1
 泥垢	0	ni2 gou4
 泥塑	0	ni2 su4
-泥涂轩冕	0	ni2 tu2 xuan1 mian3
 泥子	0	ni4 zi5
 泥孩	0	ni2 hai2
 泥守	0	ni4 shou3
 泥封	0	ni2 feng1
 泥岩	0	ni2 yan2
 泥工	0	ni2 gong1
-泥巴	0	ni2 ba1
+泥巴	0	ni2 ba5
 泥敷剂	0	ni2 fu1 ji4
 泥水	0	ni2 shui3
 泥水匠	0	ni2 shui3 jiang4
@@ -63284,6 +63503,7 @@ word 姐	0	w o r d jie3
 泲	0	ji3
 泳	0	yong3
 泳儿	0	yong3 er2
+泳姿	0	yong3 zi1
 泳帽	0	yong3 mao4
 泳池	0	yong3 chi2
 泳衣	0	yong3 yi1
@@ -63369,11 +63589,14 @@ word 姐	0	w o r d jie3
 洋芋	0	yang2 yu4
 洋芋片	0	yang2 yu4 pian4
 洋芫荽	0	yang2 yan2 sui5
+洋菇	0	yang2 gu1
 洋菜	0	yang2 cai4
 洋蒲桃	0	yang2 pu2 tao2
 洋葱	0	yang2 cong1
 洋葱圈	0	yang2 cong1 quan1
 洋蓟	0	yang2 ji4
+洋薏仁	0	yang2 yi4 ren2
+洋薏米	0	yang2 yi4 mi3
 洋姜	0	yang2 jiang1
 洋苏	0	yang2 su1
 洋行	0	yang2 hang2
@@ -63413,6 +63636,7 @@ word 姐	0	w o r d jie3
 洗手盆	0	xi3 shou3 pen2
 洗手间	0	xi3 shou3 jian1
 洗染店	0	xi3 ran3 dian4
+洗洗睡	0	xi3 xi3 shui4
 洗浴	0	xi3 yu4
 洗浴中心	0	xi3 yu4 zhong1 xin1
 洗消	0	xi3 xiao1
@@ -63762,6 +63986,7 @@ word 姐	0	w o r d jie3
 活蹦乱跳	0	huo2 beng4 luan4 tiao4
 活跃	0	huo2 yue4
 活跃分子	0	huo2 yue4 fen4 zi3
+活钱	0	huo2 qian2
 活门	0	huo2 men2
 活雷锋	0	huo2 lei2 feng1
 活灵活现	0	huo2 ling2 huo2 xian4
@@ -64000,6 +64225,7 @@ word 姐	0	w o r d jie3
 浦东机场	0	pu3 dong1 ji1 chang3
 浦江	0	pu3 jiang1
 浦江县	0	pu3 jiang1 xian4
+浦西	0	pu3 xi1
 浦那	0	pu3 na4
 浦项	0	pu3 xiang4
 浩	0	hao4
@@ -64148,7 +64374,6 @@ word 姐	0	w o r d jie3
 海上	0	hai3 shang4
 海上奇书	0	hai3 shang4 qi2 shu1
 海上花列传	0	hai3 shang4 hua1 lie4 zhuan4
-海上运动	0	hai3 shang4 yun4 dong4
 海事	0	hai3 shi4
 海事局	0	hai3 shi4 ju2
 海事法院	0	hai3 shi4 fa3 yuan4
@@ -64195,7 +64420,6 @@ word 姐	0	w o r d jie3
 海员	0	hai3 yuan2
 海啸	0	hai3 xiao4
 海地	0	hai3 di4
-海地岛	0	hai3 di4 dao3
 海城	0	hai3 cheng2
 海城区	0	hai3 cheng2 qu1
 海城市	0	hai3 cheng2 shi4
@@ -64299,6 +64523,7 @@ word 姐	0	w o r d jie3
 海洋性气候	0	hai3 yang2 xing4 qi4 hou4
 海洋性贫血	0	hai3 yang2 xing4 pin2 xue4
 海洋温差发电	0	hai3 yang2 wen1 cha1 fa1 dian4
+海洋雪	0	hai3 yang2 xue3
 海洛因	0	hai3 luo4 yin1
 海洛英	0	hai3 luo4 ying1
 海浪	0	hai3 lang4
@@ -64360,6 +64585,7 @@ word 姐	0	w o r d jie3
 海绵	0	hai3 mian2
 海绵宝宝	0	hai3 mian2 bao3 bao3
 海绵状	0	hai3 mian2 zhuang4
+海绵蛋糕	0	hai3 mian2 dan4 gao1
 海绵体	0	hai3 mian2 ti3
 海肠子	0	hai3 chang2 zi5
 海胆	0	hai3 dan3
@@ -64420,7 +64646,6 @@ word 姐	0	w o r d jie3
 海错	0	hai3 cuo4
 海阔天空	0	hai3 kuo4 tian1 kong1
 海关	0	hai3 guan1
-海关官员	0	hai3 guan1 guan1 yuan2
 海关总署	0	hai3 guan1 zong3 shu3
 海关部门	0	hai3 guan1 bu4 men2
 海防	0	hai3 fang2
@@ -64569,6 +64794,7 @@ word 姐	0	w o r d jie3
 消费券	0	xiao1 fei4 quan4
 消费品	0	xiao1 fei4 pin3
 消费税	0	xiao1 fei4 shui4
+消费级	0	xiao1 fei4 ji2
 消费群	0	xiao1 fei4 qun2
 消费者	0	xiao1 fei4 zhe3
 消费者保护	0	xiao1 fei4 zhe3 bao3 hu4
@@ -64720,6 +64946,8 @@ word 姐	0	w o r d jie3
 凉亭	0	liang2 ting2
 凉城	0	liang2 cheng2
 凉城县	0	liang2 cheng2 xian4
+凉山	0	liang2 shan1
+凉山州	0	liang2 shan1 zhou1
 凉山彝族自治州	0	liang2 shan1 yi2 zu2 zi4 zhi4 zhou1
 凉州	0	liang2 zhou1
 凉州区	0	liang2 zhou1 qu1
@@ -64929,6 +65157,7 @@ word 姐	0	w o r d jie3
 净尽	0	jing4 jin4
 净重	0	jing4 zhong4
 净零	0	jing4 ling2
+净高	0	jing4 gao1
 淩	0	ling2
 沦	0	lun2
 沦亡	0	lun2 wang2
@@ -65364,6 +65593,7 @@ word 姐	0	w o r d jie3
 清汤	0	qing1 tang1
 清汤寡水	0	qing1 tang1 gua3 shui3
 清涤	0	qing1 di2
+清浆	0	qing1 jiang1
 清洁	0	qing1 jie2
 清洁剂	0	qing1 jie2 ji4
 清洁器	0	qing1 jie2 qi4
@@ -65555,6 +65785,7 @@ word 姐	0	w o r d jie3
 渣男	0	zha1 nan2
 渤	0	bo2
 渤海	0	bo2 hai3
+渤海	0	bo2 hai3
 渤海湾	0	bo2 hai3 wan1
 渤澥桑田	0	bo2 xie4 sang1 tian2
 渥	0	wo4
@@ -65678,6 +65909,8 @@ word 姐	0	w o r d jie3
 游戏手柄	0	you2 xi4 shou3 bing3
 游戏池	0	you2 xi4 chi2
 游击	0	you2 ji1
+游击战	0	you2 ji1 zhan4
+游击队	0	you2 ji1 dui4
 游标	0	you2 biao1
 游水	0	you2 shui3
 游泳	0	you2 yong3
@@ -65853,6 +66086,7 @@ word 姐	0	w o r d jie3
 涌入	0	yong3 ru4
 涌出	0	yong3 chu1
 涌泉	0	yong3 quan2
+涌泉穴	0	yong3 quan2 xue2
 涌流	0	yong3 liu2
 涌浪	0	yong3 lang4
 涌溢	0	yong3 yi4
@@ -65960,6 +66194,7 @@ word 姐	0	w o r d jie3
 准则	0	zhun3 ze2
 准噶尔盆地	0	zhun3 ga2 er3 pen2 di4
 准噶尔翼龙	0	zhun3 ga2 er3 yi4 long2
+准妈妈	0	zhun3 ma1 ma5
 准星	0	zhun3 xing1
 准时	0	zhun3 shi2
 准决赛	0	zhun3 jue2 sai4
@@ -65988,6 +66223,7 @@ word 姐	0	w o r d jie3
 溜槽	0	liu1 cao2
 溜溜球	0	liu1 liu1 qiu2
 溜索	0	liu1 suo3
+溜肩	0	liu1 jian1
 溜肩膀	0	liu1 jian1 bang3
 溜舐	0	liu1 shi4
 溜号	0	liu1 hao4
@@ -66105,6 +66341,7 @@ word 姐	0	w o r d jie3
 温煦	0	wen1 xu4
 温热	0	wen1 re4
 温特图尔	0	wen1 te4 tu2 er3
+温玉	0	wen1 yu4
 温理	0	wen1 li3
 温网	0	wen1 wang3
 温县	0	wen1 xian4
@@ -66280,6 +66517,7 @@ word 姐	0	w o r d jie3
 滑旱冰	0	hua2 han4 bing1
 滑板	0	hua2 ban3
 滑板车	0	hua2 ban3 che1
+滑板鞋	0	hua2 ban3 xie2
 滑梯	0	hua2 ti1
 滑步机	0	hua2 bu4 ji1
 滑水	0	hua2 shui3
@@ -66290,6 +66528,7 @@ word 姐	0	w o r d jie3
 滑溜溜	0	hua2 liu1 liu1
 滑环	0	hua2 huan2
 滑石	0	hua2 shi2
+滑石粉	0	hua2 shi2 fen3
 滑移	0	hua2 yi2
 滑稽	0	hua2 ji1
 滑竿	0	hua2 gan1
@@ -66305,6 +66544,7 @@ word 姐	0	w o r d jie3
 滑腻	0	hua2 ni4
 滑落	0	hua2 luo4
 滑盖手机	0	hua2 gai4 shou3 ji1
+滑蛋	0	hua2 dan4
 滑行	0	hua2 xing2
 滑行道	0	hua2 xing2 dao4
 滑跪	0	hua2 gui4
@@ -66415,6 +66655,7 @@ word 姐	0	w o r d jie3
 滴管	0	di1 guan3
 滴翠	0	di1 cui4
 滴虫病	0	di1 chong2 bing4
+滴蜡	0	di1 la4
 滴道	0	di1 dao4
 滴道区	0	di1 dao4 qu1
 滴酒不沾	0	di1 jiu3 bu4 zhan1
@@ -66553,6 +66794,7 @@ word 姐	0	w o r d jie3
 满目琳琅	0	man3 mu4 lin2 lang2
 满目疮痍	0	man3 mu4 chuang1 yi2
 满眼	0	man3 yan3
+满福堡	0	man3 fu2 bao3
 满腔	0	man3 qiang1
 满腔热忱	0	man3 qiang1 re4 chen2
 满腹	0	man3 fu4
@@ -66589,6 +66831,7 @@ word 姐	0	w o r d jie3
 渔妇	0	yu2 fu4
 渔捞	0	yu2 lao1
 渔业	0	yu2 ye4
+渔樵	0	yu2 qiao2
 渔民	0	yu2 min2
 渔汛	0	yu2 xun4
 渔汛期	0	yu2 xun4 qi1
@@ -66797,7 +67040,6 @@ word 姐	0	w o r d jie3
 汉滨区	0	han4 bin1 qu1
 汉献帝	0	han4 xian4 di4
 汉白玉	0	han4 bai2 yu4
-汉福斯	0	han4 fu2 si1
 汉简	0	han4 jian3
 汉腔	0	han4 qiang1
 汉台	0	han4 tai2
@@ -67186,6 +67428,7 @@ word 姐	0	w o r d jie3
 澄粉	0	cheng2 fen3
 澄迈	0	cheng2 mai4
 澄迈县	0	cheng2 mai4 xian4
+澄面	0	cheng2 mian4
 浇	0	jiao1
 浇冷水	0	jiao1 leng3 shui3
 浇水	0	jiao1 shui3
@@ -67557,6 +67800,8 @@ word 姐	0	w o r d jie3
 泻盐	0	xie4 yan2
 沈	0	shen3
 沈	0	shen3
+沈河	0	shen3 he2
+沈河区	0	shen3 he2 qu1
 沈阳	0	shen3 yang2
 沈阳市	0	shen3 yang2 shi4
 沈阳故宫	0	shen3 yang2 gu4 gong1
@@ -67786,6 +68031,7 @@ word 姐	0	w o r d jie3
 火曜日	0	huo3 yao4 ri4
 火柱	0	huo3 zhu4
 火柴	0	huo3 chai2
+火柴人	0	huo3 chai2 ren2
 火枪	0	huo3 qiang1
 火枪手	0	huo3 qiang1 shou3
 火树银花	0	huo3 shu4 yin2 hua1
@@ -68070,6 +68316,7 @@ word 姐	0	w o r d jie3
 炒热	0	chao3 re4
 炒热气氛	0	chao3 re4 qi4 fen1
 炒米	0	chao3 mi3
+炒粿条	0	chao3 guo3 tiao2
 炒股	0	chao3 gu3
 炒股票	0	chao3 gu3 piao4
 炒菜	0	chao3 cai4
@@ -68120,6 +68367,7 @@ word 姐	0	w o r d jie3
 炮友	0	pao4 you3
 炮塔	0	pao4 ta3
 炮弹	0	pao4 dan4
+炮弹坑	0	pao4 dan4 keng1
 炮战	0	pao4 zhan4
 炮击	0	pao4 ji1
 炮决	0	pao4 jue2
@@ -68201,9 +68449,11 @@ word 姐	0	w o r d jie3
 为例	0	wei2 li4
 为啥	0	wei4 sha2
 为善最乐	0	wei2 shan4 zui4 le4
+为夫	0	wei2 fu1
 为富不仁	0	wei2 fu4 bu4 ren2
 为富不仁，为仁不富	0	wei2 fu4 bu4 ren2 wei2 ren2 bu4 fu4
 为己任	0	wei2 ji3 ren4
+为师	0	wei2 shi1
 为德不卒	0	wei2 de2 bu4 zu2
 为德不终	0	wei2 de2 bu4 zhong1
 为爱鼓掌	0	wei4 ai4 gu3 zhang3
@@ -68220,6 +68470,7 @@ word 姐	0	w o r d jie3
 为毛	0	wei4 mao2
 为民除害	0	wei4 min2 chu2 hai4
 为准	0	wei2 zhun3
+为父	0	wei2 fu4
 为生	0	wei2 sheng1
 为的是	0	wei4 de5 shi4
 为着	0	wei4 zhe5
@@ -68256,6 +68507,7 @@ word 姐	0	w o r d jie3
 烋	0	xiao1
 乌	0	wu1
 乌	0	wu1
+乌	0	wu4
 乌七八糟	0	wu1 qi1 ba1 zao1
 乌亮	0	wu1 liang4
 乌什	0	wu1 shi2
@@ -68290,6 +68542,7 @@ word 姐	0	w o r d jie3
 乌恰	0	wu1 qia4
 乌恰县	0	wu1 qia4 xian4
 乌托邦	0	wu1 tuo1 bang1
+乌拉	0	wu4 la5
 乌拉圭	0	wu1 la1 gui1
 乌拉尔	0	wu1 la1 er3
 乌拉尔山	0	wu1 la1 er3 shan1
@@ -68299,6 +68552,7 @@ word 姐	0	w o r d jie3
 乌拉特前旗	0	wu1 la1 te4 qian2 qi2
 乌拉特后旗	0	wu1 la1 te4 hou4 qi2
 乌拉特草原	0	wu1 la1 te4 cao3 yuan2
+乌拉草	0	wu4 la5 cao3
 乌拜迪	0	wu1 bai4 di2
 乌日	0	wu1 ri4
 乌普萨拉	0	wu1 pu3 sa4 la1
@@ -68641,7 +68895,6 @@ word 姐	0	w o r d jie3
 无家可归	0	wu2 jia1 ke3 gui1
 无容置疑	0	wu2 rong2 zhi4 yi2
 无宁	0	wu2 ning4
-无将牌	0	wu2 jiang4 pai2
 无尾熊	0	wu2 wei3 xiong2
 无尾猿	0	wu2 wei3 yuan2
 无局	0	wu2 ju2
@@ -68747,6 +69000,7 @@ word 姐	0	w o r d jie3
 无机	0	wu2 ji1
 无机化学	0	wu2 ji1 hua4 xue2
 无机物	0	wu2 ji1 wu4
+无机肥	0	wu2 ji1 fei2
 无机盐	0	wu2 ji1 yan2
 无权	0	wu2 quan2
 无止尽	0	wu2 zhi3 jin4
@@ -68768,7 +69022,7 @@ word 姐	0	w o r d jie3
 无烟	0	wu2 yan1
 无烟炭	0	wu2 yan1 tan4
 无烟煤	0	wu2 yan1 mei2
-无照经营	0	wu2 zhao4 jing1 ying2
+无照	0	wu2 zhao4
 无争议	0	wu2 zheng1 yi4
 无牌	0	wu2 pai2
 无牙	0	wu2 ya2
@@ -69081,6 +69335,7 @@ word 姐	0	w o r d jie3
 烟海	0	yan1 hai3
 烟消云散	0	yan1 xiao1 yun2 san4
 烟火	0	yan1 huo3
+烟火	0	yan1 huo5
 烟火气	0	yan1 huo3 qi4
 烟灰	0	yan1 hui1
 烟灰缸	0	yan1 hui1 gang1
@@ -69301,6 +69556,7 @@ word 姐	0	w o r d jie3
 熀	0	huang3
 熁	0	xie2
 熄	0	xi1
+熄屏	0	xi1 ping2
 熄灭	0	xi1 mie4
 熄火	0	xi1 huo3
 熄灯	0	xi1 deng1
@@ -69404,6 +69660,7 @@ word 姐	0	w o r d jie3
 熟手	0	shu2 shou3
 熟料	0	shu2 liao4
 熟炒	0	shu2 chao3
+熟男	0	shu2 nan2
 熟睡	0	shu2 shui4
 熟知	0	shu2 zhi1
 熟石灰	0	shu2 shi2 hui1
@@ -69433,6 +69690,7 @@ word 姐	0	w o r d jie3
 熟门熟路	0	shu2 men2 shu2 lu4
 熟食	0	shu2 shi2
 熟食店	0	shu2 shi2 dian4
+熟龄	0	shu2 ling2
 熠	0	yi4
 熠煜	0	yi4 yu4
 熠熠	0	yi4 yi4
@@ -69469,7 +69727,6 @@ word 姐	0	w o r d jie3
 热伤风	0	re4 shang1 feng1
 热函	0	re4 han2
 热切	0	re4 qie4
-热剌剌	0	re4 la4 la4
 热力	0	re4 li4
 热力学	0	re4 li4 xue2
 热力学温度	0	re4 li4 xue2 wen1 du4
@@ -69521,7 +69778,7 @@ word 姐	0	w o r d jie3
 热核聚变反应	0	re4 he2 ju4 bian4 fan3 ying4
 热机	0	re4 ji1
 热比亚	0	re4 bi3 ya4
-热比亚·卡德尔	0	re4 bi3 ya4 · ka3 de2 er3
+热比亚·卡德尔	0	re4 bi3 ya4 ka3 de2 er3
 热比娅	0	re4 bi3 ya4
 热比娅·卡德尔	0	re4 bi3 ya4 · ka3 de2 er3
 热气	0	re4 qi4
@@ -69566,6 +69823,7 @@ word 姐	0	w o r d jie3
 热补	0	re4 bu3
 热裤	0	re4 ku4
 热解	0	re4 jie3
+热评	0	re4 ping2
 热词	0	re4 ci2
 热诚	0	re4 cheng2
 热议	0	re4 yi4
@@ -69575,6 +69833,7 @@ word 姐	0	w o r d jie3
 热身赛	0	re4 shen1 sai4
 热轧	0	re4 zha2
 热辐射	0	re4 fu2 she4
+热辣辣	0	re4 la4 la4
 热那亚	0	re4 na4 ya4
 热释光	0	re4 shi4 guang1
 热量	0	re4 liang4
@@ -69657,6 +69916,7 @@ word 姐	0	w o r d jie3
 灯泡	0	deng1 pao4
 灯火	0	deng1 huo3
 灯火通明	0	deng1 huo3 tong1 ming2
+灯珠	0	deng1 zhu1
 灯盏	0	deng1 zhan3
 灯管	0	deng1 guan3
 灯节	0	deng1 jie2
@@ -69963,6 +70223,7 @@ word 姐	0	w o r d jie3
 爚	0	yue4
 烂	0	lan4
 烂俗	0	lan4 su2
+烂大街	0	lan4 da4 jie1
 烂好人	0	lan4 hao3 ren2
 烂尾	0	lan4 wei3
 烂尾楼	0	lan4 wei3 lou2
@@ -70098,6 +70359,7 @@ word 姐	0	w o r d jie3
 父慈子孝	0	fu4 ci2 zi3 xiao4
 父权制	0	fu4 quan2 zhi4
 父母	0	fu4 mu3
+父母之命，媒妁之言	0	fu4 mu3 zhi1 ming4 mei2 shuo4 zhi1 yan2
 父母亲	0	fu4 mu3 qin1
 父母双亡	0	fu4 mu3 shuang1 wang2
 父系	0	fu4 xi4
@@ -70260,6 +70522,7 @@ word 姐	0	w o r d jie3
 牙本质	0	ya2 ben3 zhi4
 牙根	0	ya2 gen1
 牙桥	0	ya2 qiao2
+牙牙学语	0	ya2 ya2 xue2 yu3
 牙病	0	ya2 bing4
 牙痛	0	ya2 tong4
 牙白	0	ya2 bai2
@@ -70457,11 +70720,11 @@ word 姐	0	w o r d jie3
 牧	0	mu4
 牧	0	mu4
 牧人	0	mu4 ren2
-牧夫座	0	mu4 fu1 zuo4
 牧区	0	mu4 qu1
 牧圉	0	mu4 yu3
 牧地	0	mu4 di4
 牧场	0	mu4 chang3
+牧夫座	0	mu4 fu1 zuo4
 牧师	0	mu4 shi1
 牧业	0	mu4 ye4
 牧歌	0	mu4 ge1
@@ -70760,7 +71023,6 @@ word 姐	0	w o r d jie3
 犄角旮旯	0	ji1 jiao3 ga1 la2
 犆	0	te4
 奔	0	ben1
-奔	0	ben4
 犇	0	ben1
 犉	0	run2
 犋	0	ju4
@@ -70807,6 +71069,7 @@ word 姐	0	w o r d jie3
 犬瘟热	0	quan3 wen1 re4
 犬科	0	quan3 ke1
 犬种	0	quan3 zhong3
+犬舍	0	quan3 she4
 犬马之劳	0	quan3 ma3 zhi1 lao2
 犬齿	0	quan3 chi3
 犭	0	quan3
@@ -70940,7 +71203,6 @@ word 姐	0	w o r d jie3
 狐群狗党	0	hu2 qun2 gou3 dang3
 狐臭	0	hu2 chou4
 狐蝠	0	hu2 fu2
-狐鬼神仙	0	hu2 gui3 shen2 xian1
 狒	0	fei4
 狒狒	0	fei4 fei4
 狓	0	pi2
@@ -70972,13 +71234,14 @@ word 姐	0	w o r d jie3
 狗拿耗子	0	gou3 na2 hao4 zi5
 狗改不了吃屎	0	gou3 gai3 bu4 liao3 chi1 shi3
 狗日	0	gou3 ri4
+狗东西	0	gou3 dong1 xi5
 狗洞	0	gou3 dong4
 狗熊	0	gou3 xiong2
 狗爬式	0	gou3 pa2 shi4
 狗牌	0	gou3 pai2
 狗狗	0	gou3 gou1
-狗狗币	0	gou3 gou3 bi4
-狗狗秀	0	gou3 gou3 xiu4
+狗狗币	0	gou3 gou1 bi4
+狗狗秀	0	gou3 gou1 xiu4
 狗獾	0	gou3 huan1
 狗玩儿的	0	gou3 wan2 r5 de5
 狗男女	0	gou3 nan2 nu3
@@ -70992,6 +71255,7 @@ word 姐	0	w o r d jie3
 狗腿	0	gou3 tui3
 狗腿子	0	gou3 tui3 zi5
 狗胆包天	0	gou3 dan3 bao1 tian1
+狗舍	0	gou3 she4
 狗血	0	gou3 xie3
 狗血喷头	0	gou3 xie3 pen1 tou2
 狗血淋头	0	gou3 xue4 lin2 tou2
@@ -71315,7 +71579,6 @@ word 姐	0	w o r d jie3
 独一无二	0	du2 yi1 wu2 er4
 独二代	0	du2 er4 dai4
 独占	0	du2 zhan4
-独占鳌头	0	du2 zhan4 ao2 tou2
 独来独往	0	du2 lai2 du2 wang3
 独个	0	du2 ge4
 独具	0	du2 ju4
@@ -71327,6 +71590,8 @@ word 姐	0	w o r d jie3
 独创	0	du2 chuang4
 独创性	0	du2 chuang4 xing4
 独力	0	du2 li4
+独占	0	du2 zhan4
+独占鳌头	0	du2 zhan4 ao2 tou2
 独吞	0	du2 tun1
 独唱	0	du2 chang4
 独在异乡为异客	0	du2 zai4 yi4 xiang1 wei2 yi4 ke4
@@ -71365,6 +71630,7 @@ word 姐	0	w o r d jie3
 独树一格	0	du2 shu4 yi1 ge2
 独步	0	du2 bu4
 独特	0	du2 te4
+独狼	0	du2 lang2
 独独	0	du2 du2
 独生	0	du2 sheng1
 独生女	0	du2 sheng1 nu3
@@ -71451,7 +71717,6 @@ word 姐	0	w o r d jie3
 获悉	0	huo4 xi1
 获批	0	huo4 pi1
 获救	0	huo4 jiu4
-获暴利者	0	huo4 bao4 li4 zhe3
 获奖	0	huo4 jiang3
 获奖者	0	huo4 jiang3 zhe3
 获益	0	huo4 yi4
@@ -71518,6 +71783,7 @@ word 姐	0	w o r d jie3
 献出	0	xian4 chu1
 献媚	0	xian4 mei4
 献宝	0	xian4 bao3
+献爱心	0	xian4 ai4 xin1
 献殷勤	0	xian4 yin1 qin2
 献祭	0	xian4 ji4
 献礼	0	xian4 li3
@@ -71574,6 +71840,7 @@ word 姐	0	w o r d jie3
 率	0	lu4
 率	0	shuai4
 率先	0	shuai4 xian1
+率性	0	shuai4 xing4
 率然	0	shuai4 ran2
 率尔操觚	0	shuai4 er3 cao1 gu1
 率兽食人	0	shuai4 shou4 shi2 ren2
@@ -71684,7 +71951,6 @@ word 姐	0	w o r d jie3
 王侯公卿	0	wang2 hou2 gong1 qing1
 王储	0	wang2 chu3
 王充	0	wang2 chong1
-王光良	0	wang2 guang1 liang2
 王八	0	wang2 ba5
 王八犊子	0	wang2 ba1 du2 zi5
 王八羔子	0	wang2 ba1 gao1 zi5
@@ -71714,7 +71980,6 @@ word 姐	0	w o r d jie3
 王室	0	wang2 shi4
 王宫	0	wang2 gong1
 王家	0	wang2 jia1
-王家瑞	0	wang2 jia1 rui4
 王家卫	0	wang2 jia1 wei4
 王实甫	0	wang2 shi2 fu3
 王导	0	wang2 dao3
@@ -71726,7 +71991,6 @@ word 姐	0	w o r d jie3
 王府	0	wang2 fu3
 王府井	0	wang2 fu3 jing3
 王座	0	wang2 zuo4
-王建民	0	wang2 jian4 min2
 王弼	0	wang2 bi4
 王心凌	0	wang2 xin1 ling2
 王敦	0	wang2 dun1
@@ -71906,8 +72170,6 @@ word 姐	0	w o r d jie3
 珇	0	zu3
 珈	0	jia1
 珉	0	min2
-珉玉	0	min2 yu4
-珉玉杂淆	0	min2 yu4 za2 xiao2
 珊	0	shan1
 珊卓	0	shan1 zhuo2
 珊瑚	0	shan1 hu2
@@ -72097,6 +72359,7 @@ word 姐	0	w o r d jie3
 现场会议	0	xian4 chang3 hui4 yi4
 现场直播	0	xian4 chang3 zhi2 bo1
 现场视察	0	xian4 chang3 shi4 cha2
+现如今	0	xian4 ru2 jin1
 现存	0	xian4 cun2
 现学现用	0	xian4 xue2 xian4 yong4
 现实	0	xian4 shi2
@@ -72176,6 +72439,7 @@ word 姐	0	w o r d jie3
 球网	0	qiu2 wang3
 球腔菌	0	qiu2 qiang1 jun1
 球芽甘蓝	0	qiu2 ya2 gan1 lan2
+球茎	0	qiu2 jing1
 球菌	0	qiu2 jun1
 球蛋白	0	qiu2 dan4 bai2
 球虫	0	qiu2 chong2
@@ -72232,6 +72496,7 @@ word 姐	0	w o r d jie3
 理想国	0	li3 xiang3 guo2
 理想国	0	li3 xiang3 guo2
 理应	0	li3 ying1
+理所应当	0	li3 suo3 ying1 dang1
 理所当然	0	li3 suo3 dang1 ran2
 理据	0	li3 ju4
 理智	0	li3 zhi4
@@ -72287,11 +72552,11 @@ word 姐	0	w o r d jie3
 琉球角鸮	0	liu2 qiu2 jiao3 xiao1
 琉球乡	0	liu2 qiu2 xiang1
 琉璃	0	liu2 li5
-琉璃塔	0	liu2 li2 ta3
+琉璃塔	0	liu2 li5 ta3
 琉璃庙	0	liu2 li2 miao4
-琉璃瓦	0	liu2 li2 wa3
+琉璃瓦	0	liu2 li5 wa3
 琉璃苣	0	liu2 li2 ju4
-琉璃蓝鹟	0	liu2 li2 lan2 weng1
+琉璃蓝鹟	0	liu2 li5 lan2 weng1
 琊	0	ya2
 璃	0	li2
 琖	0	zhan3
@@ -72711,12 +72976,12 @@ word 姐	0	w o r d jie3
 瓜葛	0	gua1 ge2
 瓜蒂	0	gua1 di4
 瓜农	0	gua1 nong2
-瓜达卡纳尔岛	0	gua1 da2 ka3 na4 er3 dao3
-瓜达卡纳尔战役	0	gua1 da2 ka3 na4 er3 zhan4 yi4
 瓜达拉哈拉	0	gua1 da2 la1 ha1 la1
 瓜达拉马	0	gua1 da2 la1 ma3
 瓜达拉马山	0	gua1 da2 la1 ma3 shan1
 瓜达尔	0	gua1 da2 er3
+瓜达尔卡纳尔岛	0	gua1 da2 er3 ka3 na4 er3 dao3
+瓜达尔卡纳尔岛战役	0	gua1 da2 er3 ka3 na4 er3 dao3 zhan4 yi4
 瓜达尔港	0	gua1 da2 er3 gang3
 瓞	0	die2
 瓠	0	hu4
@@ -72911,6 +73176,7 @@ word 姐	0	w o r d jie3
 甘蔗渣	0	gan1 zhe5 zha1
 甘薯	0	gan1 shu3
 甘蓝	0	gan1 lan2
+甘蓝型油菜	0	gan1 lan2 xing2 you2 cai4
 甘蓝菜	0	gan1 lan2 cai4
 甘言蜜语	0	gan1 yan2 mi4 yu3
 甘谷	0	gan1 gu3
@@ -72935,7 +73201,7 @@ word 姐	0	w o r d jie3
 甚而至于	0	shen4 er2 zhi4 yu2
 甚至	0	shen4 zhi4
 甚至于	0	shen4 zhi4 yu2
-甚钜	0	shen4 ju4
+甚巨	0	shen4 ju4
 甚高频	0	shen4 gao1 pin2
 甛	0	tian2
 甜	0	tian2
@@ -73091,6 +73357,7 @@ word 姐	0	w o r d jie3
 生殖细胞	0	sheng1 zhi2 xi4 bao1
 生殖腺	0	sheng1 zhi2 xian4
 生殖轮	0	sheng1 zhi2 lun2
+生杀予夺	0	sheng1 sha1 yu3 duo2
 生杀大权	0	sheng1 sha1 da4 quan2
 生母	0	sheng1 mu3
 生气	0	sheng1 qi4
@@ -73208,6 +73475,7 @@ word 姐	0	w o r d jie3
 生石膏	0	sheng1 shi2 gao1
 生硬	0	sheng1 ying4
 生祠	0	sheng1 ci2
+生管	0	sheng1 guan3
 生米	0	sheng1 mi3
 生米做成熟饭	0	sheng1 mi3 zuo4 cheng2 shu2 fan4
 生米煮成熟饭	0	sheng1 mi3 zhu3 cheng2 shu2 fan4
@@ -73309,6 +73577,7 @@ word 姐	0	w o r d jie3
 产钳	0	chan3 qian2
 产销	0	chan3 xiao1
 产院	0	chan3 yuan4
+产露	0	chan3 lu4
 产	0	chan3
 甥	0	sheng1
 甥女	0	sheng1 nu3
@@ -73334,6 +73603,7 @@ word 姐	0	w o r d jie3
 用坏	0	yong4 huai4
 用字	0	yong4 zi4
 用完	0	yong4 wan2
+用家	0	yong4 jia1
 用工	0	yong4 gong1
 用度	0	yong4 du4
 用得上	0	yong4 de5 shang4
@@ -73363,6 +73633,7 @@ word 姐	0	w o r d jie3
 用语	0	yong4 yu3
 用途	0	yong4 tu2
 用量	0	yong4 liang4
+用钱	0	yong4 qian2
 用钱	0	yong4 qian5
 用间	0	yong4 jian4
 用项	0	yong4 xiang4
@@ -73695,6 +73966,7 @@ word 姐	0	w o r d jie3
 界址	0	jie4 zhi3
 界定	0	jie4 ding4
 界尺	0	jie4 chi3
+界桩	0	jie4 zhuang1
 界标	0	jie4 biao1
 界河	0	jie4 he2
 界画	0	jie4 hua4
@@ -73948,15 +74220,14 @@ word 姐	0	w o r d jie3
 画虎不成反类犬	0	hua4 hu3 bu4 cheng2 fan3 lei4 quan3
 画虎类犬	0	hua4 hu3 lei4 quan3
 画蛇添足	0	hua4 she2 tian1 zu2
+画质	0	hua4 zhi4
 画轴	0	hua4 zhou2
 画面	0	hua4 mian4
 画风	0	hua4 feng1
 画饼充饥	0	hua4 bing3 chong1 ji1
 画龙点睛	0	hua4 long2 dian3 jing1
-畲	0	she1
-畲	0	yu2
-畲族	0	she1 zu2
-畲乡	0	yu2 xiang1
+畬	0	she1
+畬	0	yu2
 亩	0	mu3
 畯	0	jun4
 异	0	yi4
@@ -74059,6 +74330,8 @@ word 姐	0	w o r d jie3
 异体字	0	yi4 ti3 zi4
 异龙	0	yi4 long2
 留	0	liu2
+畲	0	she1
+畲族	0	she1 zu2
 畳	0	die2
 畵	0	hua4
 当	0	dang1
@@ -74465,13 +74738,13 @@ word 姐	0	w o r d jie3
 病院	0	bing4 yuan4
 病魔	0	bing4 mo2
 症	0	zheng4
-症侯群	0	zheng4 hou2 qun2
 症候	0	zheng4 hou4
 症候群	0	zheng4 hou4 qun2
 症状	0	zheng4 zhuang4
 症状性	0	zheng4 zhuang4 xing4
 症象	0	zheng4 xiang4
 痊	0	quan2
+痊可	0	quan2 ke3
 痊愈	0	quan2 yu4
 痌	0	tong1
 痍	0	yi2
@@ -74563,6 +74836,7 @@ word 姐	0	w o r d jie3
 痴	0	chi1
 痴人痴福	0	chi1 ren2 chi1 fu2
 痴人说梦	0	chi1 ren2 shuo1 meng4
+痴呆	0	chi1 dai1
 痴呆症	0	chi1 dai1 zheng4
 痴心	0	chi1 xin1
 痴心妄想	0	chi1 xin1 wang4 xiang3
@@ -74748,7 +75022,6 @@ word 姐	0	w o r d jie3
 癠	0	ji4
 痴	0	chi1
 痴傻	0	chi1 sha3
-痴呆	0	chi1 dai1
 痴情	0	chi1 qing2
 痒	0	yang3
 痒痒	0	yang3 yang5
@@ -74896,6 +75169,7 @@ word 姐	0	w o r d jie3
 发奋图强	0	fa1 fen4 tu2 qiang2
 发奋有为	0	fa1 fen4 you3 wei2
 发好人卡	0	fa1 hao3 ren2 ka3
+发威	0	fa1 wei1
 发家	0	fa1 jia1
 发射	0	fa1 she4
 发射井	0	fa1 she4 jing3
@@ -75103,6 +75377,7 @@ word 姐	0	w o r d jie3
 白俄罗斯人	0	bai2 e2 luo2 si1 ren2
 白兀鹫	0	bai2 wu4 jiu4
 白先勇	0	bai2 xian1 yong3
+白兔	0	bai2 tu4
 白内障	0	bai2 nei4 zhang4
 白冠噪鹛	0	bai2 guan1 zao4 mei2
 白冠攀雀	0	bai2 guan1 pan1 que4
@@ -75315,6 +75590,7 @@ word 姐	0	w o r d jie3
 白秋沙鸭	0	bai2 qiu1 sha1 ya1
 白种	0	bai2 zhong3
 白米	0	bai2 mi3
+白米饭	0	bai2 mi3 fan4
 白粉	0	bai2 fen3
 白粉病	0	bai2 fen3 bing4
 白粥	0	bai2 zhou1
@@ -75394,6 +75670,7 @@ word 姐	0	w o r d jie3
 白苋紫茄	0	bai2 xian4 zi3 qie2
 白菜	0	bai2 cai4
 白菜价	0	bai2 cai4 jia4
+白菜型油菜	0	bai2 cai4 xing2 you2 cai4
 白菜豆	0	bai2 cai4 dou4
 白莲	0	bai2 lian2
 白莲教	0	bai2 lian2 jiao4
@@ -75636,6 +75913,8 @@ word 姐	0	w o r d jie3
 百日咳	0	bai3 ri4 ke2
 百日维新	0	bai3 ri4 wei2 xin1
 百日菊	0	bai3 ri4 ju2
+百会	0	bai3 hui4
+百会穴	0	bai3 hui4 xue2
 百果	0	bai3 guo3
 百乐餐	0	bai3 le4 can1
 百步穿杨	0	bai3 bu4 chuan1 yang2
@@ -75965,6 +76244,7 @@ word 姐	0	w o r d jie3
 盆友	0	pen2 you3
 盆地	0	pen2 di4
 盆子	0	pen2 zi5
+盆底	0	pen2 di3
 盆景	0	pen2 jing3
 盆栽	0	pen2 zai1
 盆浴	0	pen2 yu4
@@ -76160,6 +76440,7 @@ word 姐	0	w o r d jie3
 监牢	0	jian1 lao2
 监牧	0	jian1 mu4
 监狱	0	jian1 yu4
+监理	0	jian1 li3
 监理所	0	jian1 li3 suo3
 监看	0	jian1 kan4
 监督	0	jian1 du1
@@ -76309,6 +76590,7 @@ word 姐	0	w o r d jie3
 目不转睛	0	mu4 bu4 zhuan3 jing1
 目不转瞬	0	mu4 bu4 zhuan3 shun4
 目中无人	0	mu4 zhong1 wu2 ren2
+目之所及	0	mu4 zhi1 suo3 ji2
 目今	0	mu4 jin1
 目光	0	mu4 guang1
 目光呆滞	0	mu4 guang1 dai1 zhi4
@@ -76318,6 +76600,7 @@ word 姐	0	w o r d jie3
 目前	0	mu4 qian2
 目劄	0	mu4 zha1
 目力	0	mu4 li4
+目力所及	0	mu4 li4 suo3 ji2
 目怔口呆	0	mu4 zheng1 kou3 dai1
 目怆有天	0	mu4 chuang4 you3 tian1
 目成	0	mu4 cheng2
@@ -76349,6 +76632,7 @@ word 姐	0	w o r d jie3
 目空一切	0	mu4 kong1 yi1 qie4
 目空四海	0	mu4 kong1 si4 hai3
 目视	0	mu4 shi4
+目视飞行	0	mu4 shi4 fei1 xing2
 目语	0	mu4 yu3
 目迷五色	0	mu4 mi2 wu3 se4
 目送	0	mu4 song4
@@ -76564,8 +76848,8 @@ word 姐	0	w o r d jie3
 相命者	0	xiang1 ming4 zhe3
 相国	0	xiang4 guo2
 相图	0	xiang4 tu2
-相城	0	xiang1 cheng2
-相城区	0	xiang1 cheng2 qu1
+相城	0	xiang4 cheng2
+相城区	0	xiang4 cheng2 qu1
 相士	0	xiang4 shi4
 相夫教子	0	xiang4 fu1 jiao4 zi3
 相契	0	xiang1 qi4
@@ -76708,6 +76992,7 @@ word 姐	0	w o r d jie3
 省份	0	sheng3 fen4
 省便	0	sheng3 bian4
 省俭	0	sheng3 jian3
+省分	0	sheng3 fen4
 省力	0	sheng3 li4
 省劲	0	sheng3 jin4
 省劲儿	0	sheng3 jin4 r5
@@ -76755,6 +77040,7 @@ word 姐	0	w o r d jie3
 眇小	0	miao3 xiao3
 眇眇	0	miao3 miao3
 眈	0	dan1
+眈眈	0	dan1 dan1
 眉	0	mei2
 眉来眼去	0	mei2 lai2 yan3 qu4
 眉宇	0	mei2 yu3
@@ -76873,6 +77159,7 @@ word 姐	0	w o r d jie3
 看起来	0	kan4 qi3 lai5
 看轻	0	kan4 qing1
 看透	0	kan4 tou4
+看医生	0	kan4 yi1 sheng1
 看重	0	kan4 zhong4
 看错	0	kan4 cuo4
 看门人	0	kan1 men2 ren2
@@ -76941,6 +77228,7 @@ word 姐	0	w o r d jie3
 真有你的	0	zhen1 you3 ni3 de5
 真核	0	zhen1 he2
 真格	0	zhen1 ge2
+真格的	0	zhen1 ge2 de5
 真棒	0	zhen1 bang4
 真正	0	zhen1 zheng4
 真武	0	zhen1 wu3
@@ -77055,9 +77343,10 @@ word 姐	0	w o r d jie3
 眼前	0	yan3 qian2
 眼前一亮	0	yan3 qian2 yi1 liang4
 眼力	0	yan3 li4
+眼力见	0	yan3 li4 jian4
+眼力见儿	0	yan3 li4 jian4 r5
 眼动	0	yan3 dong4
 眼动技术	0	yan3 dong4 ji4 shu4
-眼动记录	0	yan3 dong4 ji4 lu4
 眼圈	0	yan3 quan1
 眼圈红了	0	yan3 quan1 hong2 le5
 眼压	0	yan3 ya1
@@ -77463,6 +77752,7 @@ word 姐	0	w o r d jie3
 睑	0	jian3
 睑腺炎	0	jian3 xian4 yan2
 瞽	0	gu3
+瞽者	0	gu3 zhe3
 瞽阇	0	gu3 she2
 瞿	0	qu2
 瞿	0	qu2
@@ -77516,6 +77806,7 @@ word 姐	0	w o r d jie3
 知之甚微	0	zhi1 zhi1 shen4 wei1
 知乎	0	zhi1 hu1
 知了	0	zhi1 liao3
+知了猴	0	zhi1 liao3 hou2
 知交	0	zhi1 jiao1
 知人善任	0	zhi1 ren2 shan4 ren4
 知人善用	0	zhi1 ren2 shan4 yong4
@@ -77556,7 +77847,6 @@ word 姐	0	w o r d jie3
 知县	0	zhi1 xian4
 知觉	0	zhi1 jue2
 知觉力	0	zhi1 jue2 li4
-知觉解体	0	zhi1 jue2 jie3 ti3
 知识	0	zhi1 shi5
 知识共享	0	zhi1 shi5 gong4 xiang3
 知识分子	0	zhi1 shi5 fen4 zi3
@@ -77734,7 +78024,6 @@ word 姐	0	w o r d jie3
 石化	0	shi2 hua4
 石化厂	0	shi2 hua4 chang3
 石匠	0	shi2 jiang4
-石匠痨	0	shi2 jiang4 lao2
 石南属	0	shi2 nan2 shu3
 石南树	0	shi2 nan2 shu4
 石南花	0	shi2 nan2 hua1
@@ -77779,15 +78068,12 @@ word 姐	0	w o r d jie3
 石斛	0	shi2 hu2
 石景山	0	shi2 jing3 shan1
 石景山区	0	shi2 jing3 shan1 qu1
-石末沉着病	0	shi2 mo4 chen2 zhuo2 bing4
-石末肺	0	shi2 mo4 fei4
 石板	0	shi2 ban3
 石板瓦	0	shi2 ban3 wa3
 石板路	0	shi2 ban3 lu4
 石林	0	shi2 lin2
 石林彝族自治县	0	shi2 lin2 yi2 zu2 zi4 zhi4 xian4
 石林县	0	shi2 lin2 xian4
-石林风景区	0	shi2 lin2 feng1 jing3 qu1
 石柱	0	shi2 zhu4
 石柱	0	shi2 zhu4
 石柱土家族自治县	0	shi2 zhu4 tu3 jia1 zu2 zi4 zhi4 xian4
@@ -77914,7 +78200,6 @@ word 姐	0	w o r d jie3
 矽	0	xi1
 矽利康	0	xi1 li4 kang1
 矽晶片	0	xi1 jing1 pian4
-矽末病	0	xi1 mo4 bing4
 矽橡胶	0	xi1 xiang4 jiao1
 矽片	0	xi1 pian4
 矽肺	0	xi1 fei4
@@ -77995,7 +78280,6 @@ word 姐	0	w o r d jie3
 研究	0	yan2 jiu1
 研究中心	0	yan2 jiu1 zhong1 xin1
 研究人员	0	yan2 jiu1 ren2 yuan2
-研究反应堆	0	yan2 jiu1 fan3 ying4 dui1
 研究员	0	yan2 jiu1 yuan2
 研究报告	0	yan2 jiu1 bao4 gao4
 研究小组	0	yan2 jiu1 xiao3 zu3
@@ -78520,7 +78804,6 @@ word 姐	0	w o r d jie3
 确切	0	que4 qie4
 确定	0	que4 ding4
 确定性	0	que4 ding4 xing4
-确定效应	0	que4 ding4 xiao4 ying4
 确实	0	que4 shi2
 确山	0	que4 shan1
 确山县	0	que4 shan1 xian4
@@ -78558,6 +78841,7 @@ word 姐	0	w o r d jie3
 碾碎	0	nian3 sui4
 碾磨	0	nian3 mo2
 碾米机	0	nian3 mi3 ji1
+碾轧	0	nian3 ya4
 碾过	0	nian3 guo4
 磁	0	ci2
 磁共振	0	ci2 gong4 zhen4
@@ -78622,6 +78906,7 @@ word 姐	0	w o r d jie3
 磊落大方	0	lei3 luo4 da4 fang1
 磋	0	cuo1
 磋商	0	cuo1 shang1
+磋磨	0	cuo1 mo2
 磎	0	xi1
 磐	0	pan2
 磐安	0	pan2 an1
@@ -78684,7 +78969,6 @@ word 姐	0	w o r d jie3
 磨坊	0	mo4 fang2
 磨坊主	0	mo4 fang2 zhu3
 磨子	0	mo4 zi5
-磨工病	0	mo4 gong1 bing4
 磨床	0	mo2 chuang2
 磨得开	0	mo4 de5 kai1
 磨快	0	mo2 kuai4
@@ -78804,6 +79088,7 @@ word 姐	0	w o r d jie3
 矿	0	kuang4
 矿主	0	kuang4 zhu3
 矿井	0	kuang4 jing3
+矿企	0	kuang4 qi3
 矿务局	0	kuang4 wu4 ju2
 矿区	0	kuang4 qu1
 矿坑	0	kuang4 keng1
@@ -78965,7 +79250,6 @@ word 姐	0	w o r d jie3
 祅	0	yao1
 祆	0	xian1
 祆教	0	xian1 jiao4
-祆道	0	xian1 dao4
 只	0	zhi3
 祇	0	qi2
 祈	0	qi2
@@ -79158,6 +79442,7 @@ word 姐	0	w o r d jie3
 神祠	0	shen2 ci2
 神秘	0	shen2 mi4
 神秘主义	0	shen2 mi4 zhu3 yi4
+神秘面纱	0	shen2 mi4 mian4 sha1
 神童	0	shen2 tong2
 神笔	0	shen2 bi3
 神经	0	shen2 jing1
@@ -79281,6 +79566,7 @@ word 姐	0	w o r d jie3
 祫	0	xia2
 祭	0	zhai4
 祭	0	ji4
+祭仪	0	ji4 yi2
 祭典	0	ji4 dian3
 祭出	0	ji4 chu1
 祭司	0	ji4 si1
@@ -79648,6 +79934,7 @@ word 姐	0	w o r d jie3
 秀水乡	0	xiu4 shui3 xiang1
 秀洲	0	xiu4 zhou1
 秀洲区	0	xiu4 zhou1 qu1
+秀珍菇	0	xiu4 zhen1 gu1
 秀美	0	xiu4 mei3
 秀色可餐	0	xiu4 se4 ke3 can1
 秀色孙鲽	0	xiu4 se4 sun1 die2
@@ -79656,7 +79943,6 @@ word 姐	0	w o r d jie3
 秀逗	0	xiu4 dou4
 秀雅	0	xiu4 ya3
 秀发	0	xiu4 fa4
-秀发垂肩	0	xiu4 fa4 chui2 jian1
 秀丽	0	xiu4 li4
 私	0	si1
 私下	0	si1 xia4
@@ -79678,6 +79964,7 @@ word 姐	0	w o r d jie3
 私囊	0	si1 nang2
 私塾	0	si1 shu2
 私奔	0	si1 ben1
+私宅	0	si1 zhai2
 私定终身	0	si1 ding4 zhong1 shen1
 私家	0	si1 jia1
 私家车	0	si1 jia1 che1
@@ -79700,6 +79987,7 @@ word 姐	0	w o r d jie3
 私法	0	si1 fa3
 私营	0	si1 ying2
 私营企业	0	si1 ying2 qi3 ye4
+私生女	0	si1 sheng1 nu3
 私生子	0	si1 sheng1 zi3
 私生子女	0	si1 sheng1 zi3 nu3
 私生活	0	si1 sheng1 huo2
@@ -79707,6 +79995,7 @@ word 姐	0	w o r d jie3
 私秘	0	si1 mi4
 私立	0	si1 li4
 私立学校	0	si1 li4 xue2 xiao4
+私第	0	si1 di4
 私聊	0	si1 liao2
 私自	0	si1 zi4
 私藏	0	si1 cang2
@@ -79718,6 +80007,7 @@ word 姐	0	w o r d jie3
 私办	0	si1 ban4
 私通	0	si1 tong1
 私运	0	si1 yun4
+私邸	0	si1 di3
 私酿	0	si1 niang4
 私钥	0	si1 yao4
 私闯	0	si1 chuang3
@@ -80260,7 +80550,9 @@ word 姐	0	w o r d jie3
 种群	0	zhong3 qun2
 种脐	0	zhong3 qi2
 种花	0	zhong4 hua1
+种苗	0	zhong3 miao2
 种草	0	zhong4 cao3
+种菜	0	zhong4 cai4
 种薯	0	zhong3 shu3
 种蛋	0	zhong3 dan4
 种类	0	zhong3 lei4
@@ -80358,6 +80650,7 @@ word 姐	0	w o r d jie3
 谷草	0	gu3 cao3
 谷雨	0	gu3 yu3
 谷类	0	gu3 lei4
+谷饲	0	gu3 si4
 穂	0	sui4
 穄	0	ji4
 糠	0	kang1
@@ -80365,6 +80658,7 @@ word 姐	0	w o r d jie3
 穆	0	mu4
 穆加贝	0	mu4 jia1 bei4
 穆勒鞋	0	mu4 le4 xie2
+穆夫提	0	mu4 fu1 ti2
 穆巴拉克	0	mu4 ba1 la1 ke4
 穆斯林	0	mu4 si1 lin2
 穆桂英	0	mu4 gui4 ying1
@@ -80374,7 +80668,7 @@ word 姐	0	w o r d jie3
 穆棱市	0	mu4 ling2 shi4
 穆索尔斯基	0	mu4 suo3 er3 si1 ji1
 穆罕默德	0	mu4 han3 mo4 de2
-穆罕默德·欧玛	0	mu4 han3 mo4 de2 · ou1 ma3
+穆罕默德·欧玛	0	mu4 han3 mo4 de2 ou1 ma3
 穆罕默德六世	0	mu4 han3 mo4 de2 liu4 shi4
 穆圣	0	mu4 sheng4
 穆萨维	0	mu4 sa4 wei2
@@ -80425,6 +80719,7 @@ word 姐	0	w o r d jie3
 积极性	0	ji1 ji2 xing4
 积极进取	0	ji1 ji2 jin4 qu3
 积水	0	ji1 shui3
+积沙成塔	0	ji1 sha1 cheng2 ta3
 积渐	0	ji1 jian4
 积淀	0	ji1 dian4
 积物	0	ji1 wu4
@@ -80605,6 +80900,7 @@ word 姐	0	w o r d jie3
 空战	0	kong1 zhan4
 空房间	0	kong1 fang2 jian1
 空手	0	kong1 shou3
+空手套白狼	0	kong1 shou3 tao4 bai2 lang2
 空手而归	0	kong1 shou3 er2 gui1
 空手道	0	kong1 shou3 dao4
 空投	0	kong1 tou2
@@ -80631,6 +80927,7 @@ word 姐	0	w o r d jie3
 空气净化器	0	kong1 qi4 jing4 hua4 qi4
 空气炸锅	0	kong1 qi4 zha2 guo1
 空气调节	0	kong1 qi4 tiao2 jie2
+空气调节器	0	kong1 qi4 tiao2 jie2 qi4
 空气阻力	0	kong1 qi4 zu3 li4
 空气凤梨	0	kong1 qi4 feng4 li2
 空泛	0	kong1 fan4
@@ -80673,6 +80970,8 @@ word 姐	0	w o r d jie3
 空话	0	kong1 hua4
 空话连篇	0	kong1 hua4 lian2 pian1
 空调	0	kong1 tiao2
+空调房	0	kong1 tiao2 fang2
+空调病	0	kong1 tiao2 bing4
 空调车	0	kong1 tiao2 che1
 空谈	0	kong1 tan2
 空谷足音	0	kong1 gu3 zu2 yin1
@@ -80782,6 +81081,7 @@ word 姐	0	w o r d jie3
 突飞猛进	0	tu1 fei1 meng3 jin4
 窂	0	lao2
 窄	0	zhai3
+窄小	0	zhai3 xiao3
 窄巷	0	zhai3 xiang4
 窄狭	0	zhai3 xia2
 窄缝	0	zhai3 feng4
@@ -81129,6 +81429,7 @@ word 姐	0	w o r d jie3
 童床	0	tong2 chuang2
 童心	0	tong2 xin1
 童星	0	tong2 xing1
+童模	0	tong2 mo2
 童玩	0	tong2 wan2
 童生	0	tong2 sheng1
 童男	0	tong2 nan2
@@ -81437,6 +81738,7 @@ word 姐	0	w o r d jie3
 第	0	di4
 第一	0	di4 yi1
 第一世界	0	di4 yi1 shi4 jie4
+第一人称射击	0	di4 yi1 ren2 cheng1 she4 ji2
 第一例	0	di4 yi1 li4
 第一国际	0	di4 yi1 guo2 ji4
 第一型糖尿病	0	di4 yi1 xing2 tang2 niao4 bing4
@@ -81499,6 +81801,7 @@ word 姐	0	w o r d jie3
 第四堵墙	0	di4 si4 du3 qiang2
 第四季	0	di4 si4 ji4
 第四季度	0	di4 si4 ji4 du4
+第四权	0	di4 si4 quan2
 第四纪	0	di4 si4 ji4
 第四声	0	di4 si4 sheng1
 第四台	0	di4 si4 tai2
@@ -81629,6 +81932,7 @@ word 姐	0	w o r d jie3
 等边三角形	0	deng3 bian1 san1 jiao3 xing2
 等闲	0	deng3 xian2
 等闲之辈	0	deng3 xian2 zhi1 bei4
+等离子	0	deng3 li2 zi3
 等离子体	0	deng3 li2 zi3 ti3
 等额比基金	0	deng3 e2 bi3 ji1 jin1
 等额选举	0	deng3 e2 xuan3 ju3
@@ -82148,6 +82452,7 @@ word 姐	0	w o r d jie3
 简短介绍	0	jian3 duan3 jie4 shao4
 简称	0	jian3 cheng1
 简章	0	jian3 zhang1
+简笔画	0	jian3 bi3 hua4
 简约	0	jian3 yue1
 简编	0	jian3 bian1
 简练	0	jian3 lian4
@@ -82187,6 +82492,7 @@ word 姐	0	w o r d jie3
 簪	0	zan1
 簰	0	pai2
 檐	0	yan2
+檐篷	0	yan2 peng2
 簸	0	bo3
 簸	0	bo4
 簸扬	0	bo3 yang2
@@ -82213,7 +82519,6 @@ word 姐	0	w o r d jie3
 签派室	0	qian1 pai4 shi4
 签发	0	qian1 fa1
 签发地点	0	qian1 fa1 di4 dian3
-签发日期	0	qian1 fa1 ri4 qi1
 签章	0	qian1 zhang1
 签约	0	qian1 yue1
 签约奖金	0	qian1 yue1 jiang3 jin1
@@ -82242,6 +82547,7 @@ word 姐	0	w o r d jie3
 篮板球	0	lan2 ban3 qiu2
 篮球	0	lan2 qiu2
 篮球场	0	lan2 qiu2 chang3
+篮球队	0	lan2 qiu2 dui4
 篮筐	0	lan2 kuang1
 篮网球	0	lan2 wang3 qiu2
 𥫣	0	yu2
@@ -82324,7 +82630,7 @@ word 姐	0	w o r d jie3
 米	0	mi3
 米	0	mi3
 米仓	0	mi3 cang1
-米兔	0	mi3 tu4
+	0	
 米其林	0	mi3 qi2 lin2
 米凯拉	0	mi3 kai3 la1
 米利班德	0	mi3 li4 ban1 de2
@@ -82336,6 +82642,7 @@ word 姐	0	w o r d jie3
 米奇老鼠	0	mi3 qi2 lao3 shu3
 米姆	0	mi3 mu3
 米字旗	0	mi3 zi4 qi2
+米尺	0	mi3 chi3
 米已成炊	0	mi3 yi3 cheng2 chui1
 米底亚	0	mi3 di3 ya4
 米德尔伯里	0	mi3 de2 er3 bo2 li3
@@ -82344,7 +82651,6 @@ word 姐	0	w o r d jie3
 米易县	0	mi3 yi4 xian4
 米果	0	mi3 guo3
 米格	0	mi3 ge2
-米格尔·德·塞万提斯·萨维德拉	0	mi3 ge2 er3 · de2 · sai1 wan4 ti2 si1 · sa4 wei2 de2 la1
 米歇尔	0	mi3 xie1 er3
 米欧	0	mi3 ou1
 米汤	0	mi3 tang1
@@ -82417,6 +82723,7 @@ word 姐	0	w o r d jie3
 粉碎	0	fen3 sui4
 粉碎机	0	fen3 sui4 ji1
 粉笔	0	fen3 bi3
+粉粿	0	fen3 guo3
 粉红	0	fen3 hong2
 粉红山椒鸟	0	fen3 hong2 shan1 jiao1 niao3
 粉红椋鸟	0	fen3 hong2 liang2 niao3
@@ -82719,6 +83026,7 @@ word 姐	0	w o r d jie3
 糆	0	mian4
 糈	0	xu3
 粽	0	zong4
+糊	0	hu1
 糊	0	hu2
 糊	0	hu4
 糊剂	0	hu2 ji4
@@ -82737,7 +83045,7 @@ word 姐	0	w o r d jie3
 糊里糊涂	0	hu2 li5 hu2 tu2
 糊里糊涂	0	hu2 li5 hu2 tu2
 糌	0	zan1
-糌粑	0	zan1 ba1
+糌粑	0	zan1 ba5
 糍	0	ci2
 糍粑	0	ci2 ba1
 糒	0	bei4
@@ -82771,7 +83079,6 @@ word 姐	0	w o r d jie3
 糖蜜	0	tang2 mi4
 糖衣	0	tang2 yi1
 糖衣炮弹	0	tang2 yi1 pao4 dan4
-糖酯	0	tang2 zhi3
 糖酵解	0	tang2 jiao4 jie3
 糖醇	0	tang2 chun2
 糖醋	0	tang2 cu4
@@ -82939,6 +83246,7 @@ word 姐	0	w o r d jie3
 约制	0	yue1 zhi4
 约合	0	yue1 he2
 约同	0	yue1 tong2
+约吗	0	yue1 ma5
 约坦	0	yue1 tan3
 约塔	0	yao1 ta3
 约契	0	yue1 qi4
@@ -83078,7 +83386,6 @@ word 姐	0	w o r d jie3
 红星	0	hong2 xing1
 红景天	0	hong2 jing3 tian1
 红晕	0	hong2 yun4
-红曲	0	hong2 qu1
 红木	0	hong2 mu4
 红杏出墙	0	hong2 xing4 chu1 qiang2
 红果	0	hong2 guo3
@@ -83101,6 +83408,7 @@ word 姐	0	w o r d jie3
 红毛丹	0	hong2 mao2 dan1
 红毯	0	hong2 tan3
 红汞	0	hong2 gong3
+红河	0	hong2 he2
 红河	0	hong2 he2
 红河哈尼族彝族自治州	0	hong2 he2 ha1 ni2 zu2 yi2 zu2 zi4 zhi4 zhou1
 红河州	0	hong2 he2 zhou1
@@ -83261,6 +83569,8 @@ word 姐	0	w o r d jie3
 红高粱	0	hong2 gao1 liang2
 红魔鬼	0	hong2 mo2 gui3
 红鲣	0	hong2 jian1
+红曲	0	hong2 qu1
+红曲米	0	hong2 qu1 mi3
 红黑名单	0	hong2 hei1 ming2 dan1
 红霉素	0	hong2 mei2 su4
 纡	0	yu1
@@ -83287,6 +83597,7 @@ word 姐	0	w o r d jie3
 纹丝儿	0	wen2 si1 r5
 纹缕	0	wen2 lu3
 纹缕儿	0	wen2 lu3 r5
+纹绣	0	wen2 xiu4
 纹背捕蛛鸟	0	wen2 bei4 bu3 zhu1 niao3
 纹胸啄木鸟	0	wen2 xiong1 zhuo2 mu4 niao3
 纹胸斑翅鹛	0	wen2 xiong1 ban1 chi4 mei2
@@ -83314,7 +83625,6 @@ word 姐	0	w o r d jie3
 纳尼	0	na4 ni2
 纳尼亚	0	na4 ni2 ya4
 纳尼亚传奇	0	na4 ni2 ya4 chuan2 qi2
-纳德阿里	0	na4 de2 a1 li3
 纳闷	0	na4 men4
 纳闷儿	0	na4 men4 r5
 纳扎尔巴耶夫	0	na4 zha1 er3 ba1 ye1 fu1
@@ -83410,7 +83720,6 @@ word 姐	0	w o r d jie3
 纯情	0	chun2 qing2
 纯爱	0	chun2 ai4
 纯文字	0	chun2 wen2 zi4
-纯文字页	0	chun2 wen2 zi4 ye4
 纯文本	0	chun2 wen2 ben3
 纯棉	0	chun2 mian2
 纯朴	0	chun2 pu3
@@ -83433,6 +83742,7 @@ word 姐	0	w o r d jie3
 纯素食主义	0	chun2 su4 shi2 zhu3 yi4
 纯素食者	0	chun2 su4 shi2 zhe3
 纯良	0	chun2 liang2
+纯色	0	chun2 se4
 纯色啄花鸟	0	chun2 se4 zhuo2 hua1 niao3
 纯色噪鹛	0	chun2 se4 zao4 mei2
 纯色岩燕	0	chun2 se4 yan2 yan4
@@ -83442,6 +83752,7 @@ word 姐	0	w o r d jie3
 纯褐鹱	0	chun2 he4 hu4
 纯金	0	chun2 jin1
 纯音	0	chun2 yin1
+纯音乐	0	chun2 yin1 yue4
 纯碱	0	chun2 jian3
 纰	0	pi1
 纰漏	0	pi1 lou4
@@ -83492,6 +83803,7 @@ word 姐	0	w o r d jie3
 纸片	0	zhi3 pian4
 纸牌	0	zhi3 pai2
 纸盆	0	zhi3 pen2
+纸盒	0	zhi3 he2
 纸短情长	0	zhi3 duan3 qing2 chang2
 纸箔	0	zhi3 bo2
 纸箱	0	zhi3 xiang1
@@ -83631,7 +83943,6 @@ word 姐	0	w o r d jie3
 索马利亚	0	suo3 ma3 li4 ya4
 索马甜	0	suo3 ma3 tian2
 索马里	0	suo3 ma3 li3
-索马里亚	0	suo3 ma3 li3 ya4
 扎	0	za1
 扎	0	zha1
 紩	0	zhi4
@@ -83688,6 +83999,7 @@ word 姐	0	w o r d jie3
 紫菜包饭	0	zi3 cai4 bao1 fan4
 紫菜属	0	zi3 cai4 shu3
 紫菜苔	0	zi3 cai4 tai2
+紫菜薹	0	zi3 cai4 tai2
 紫薇	0	zi3 wei1
 紫藤	0	zi3 teng2
 紫苏	0	zi3 su1
@@ -83714,7 +84026,6 @@ word 姐	0	w o r d jie3
 扎实	0	zha1 shi5
 扎寨	0	zha1 zhai4
 扎染	0	za1 ran3
-扎欧扎翁	0	za1 ou1 za1 weng1
 扎营	0	zha1 ying2
 扎线带	0	za1 xian4 dai4
 扎马剌丁	0	za1 ma3 la2 ding1
@@ -83756,6 +84067,8 @@ word 姐	0	w o r d jie3
 细密	0	xi4 mi4
 细察	0	xi4 cha2
 细小	0	xi4 xiao3
+细小病毒	0	xi4 xiao3 bing4 du2
+细小病毒科	0	xi4 xiao3 bing4 du2 ke1
 细尾獴	0	xi4 wei3 meng3
 细微	0	xi4 wei1
 细微末节	0	xi4 wei1 mo4 jie2
@@ -84183,6 +84496,7 @@ word 姐	0	w o r d jie3
 给你点颜色看看	0	gei3 ni3 dian3 yan2 se4 kan4 kan5
 给力	0	gei3 li4
 给定	0	gei3 ding4
+给排水	0	ji3 pai2 shui3
 给水	0	ji3 shui3
 给皂器	0	ji3 zao4 qi4
 给与	0	ji3 yu3
@@ -84288,6 +84602,7 @@ word 姐	0	w o r d jie3
 丝毫	0	si1 hao2
 丝毫不差	0	si1 hao2 bu4 cha1
 丝氨酸	0	si1 an1 suan1
+丝滑	0	si1 hua2
 丝状	0	si1 zhuang4
 丝状物	0	si1 zhuang4 wu4
 丝状病毒	0	si1 zhuang4 bing4 du2
@@ -84588,7 +84903,10 @@ word 姐	0	w o r d jie3
 绿草如茵	0	lu4 cao3 ru2 yin1
 绿菜花	0	lu4 cai4 hua1
 绿叶	0	lu4 ye4
-绿荫	0	lu4 yin4
+绿叶菜	0	lu4 ye4 cai4
+绿叶蔬菜	0	lu4 ye4 shu1 cai4
+绿荫	0	lu4 yin1
+绿藻	0	lu4 zao3
 绿豆	0	lu4 dou4
 绿豆凸	0	lu4 dou4 tu1
 绿豆椪	0	lu4 dou4 peng4
@@ -84685,6 +85003,7 @@ word 姐	0	w o r d jie3
 维管束植物	0	wei2 guan3 shu4 zhi2 wu4
 维管柱	0	wei2 guan3 zhu4
 维纳斯	0	wei2 na4 si1
+维维安	0	wei2 wei2 an1
 维纶	0	wei2 lun2
 维系	0	wei2 xi4
 维罗纳	0	wei2 luo2 na4
@@ -84782,6 +85101,7 @@ word 姐	0	w o r d jie3
 网络管理员	0	wang3 luo4 guan3 li3 yuan2
 网络管理系统	0	wang3 luo4 guan3 li3 xi4 tong3
 网络红人	0	wang3 luo4 hong2 ren2
+网络色情	0	wang3 luo4 se4 qing2
 网络规划人员	0	wang3 luo4 gui1 hua4 ren2 yuan2
 网络设备	0	wang3 luo4 she4 bei4
 网络设计	0	wang3 luo4 she4 ji4
@@ -84826,7 +85146,6 @@ word 姐	0	w o r d jie3
 网际协定	0	wang3 ji4 xie2 ding4
 网际网络	0	wang3 ji4 wang3 luo4
 网际网路	0	wang3 ji4 wang3 lu4
-网际色情	0	wang3 ji4 se4 qing2
 网页	0	wang3 ye4
 网页地址	0	wang3 ye4 di4 zhi3
 网页设计	0	wang3 ye4 she4 ji4
@@ -85209,6 +85528,7 @@ word 姐	0	w o r d jie3
 缞	0	cui1
 縚	0	tao1
 缚	0	fu4
+缚鸡之力	0	fu4 ji1 zhi1 li4
 缜	0	zhen3
 缜匝	0	zhen3 za1
 缜密	0	zhen3 mi4
@@ -85345,6 +85665,7 @@ word 姐	0	w o r d jie3
 䌸	0	zhuan4
 纤	0	qian4
 纤夫	0	qian4 fu1
+纤手	0	qian4 shou3
 纤道	0	qian4 dao4
 缦	0	man4
 絷	0	zhi2
@@ -85475,6 +85796,7 @@ word 姐	0	w o r d jie3
 绩溪县	0	ji4 xi1 xian4
 绩点	0	ji4 dian3
 縿	0	shan1
+繁	0	po2
 繁	0	fan2
 繁冗	0	fan2 rong3
 繁博	0	fan2 bo2
@@ -85526,7 +85848,6 @@ word 姐	0	w o r d jie3
 缫	0	sao1
 缪	0	miao4
 缪	0	liao3
-缪	0	miao4
 缪	0	miu4
 缪	0	mou2
 缪	0	mu4
@@ -85680,6 +86001,7 @@ word 姐	0	w o r d jie3
 继父母	0	ji4 fu4 mu3
 继统	0	ji4 tong3
 继续	0	ji4 xu4
+继续教育	0	ji4 xu4 jiao4 yu4
 继而	0	ji4 er2
 继亲	0	ji4 qin1
 继轨	0	ji4 gui3
@@ -86184,7 +86506,6 @@ word 姐	0	w o r d jie3
 罗马法	0	luo2 ma3 fa3
 罗马凉鞋	0	luo2 ma3 liang2 xie2
 罗马诺	0	luo2 ma3 nuo4
-罗马里奥	0	luo2 ma3 li3 ao4
 罗马鞋	0	luo2 ma3 xie2
 罗马斗兽场	0	luo2 ma3 dou4 shou4 chang3
 罴	0	pi2
@@ -86404,6 +86725,7 @@ word 姐	0	w o r d jie3
 美玉	0	mei3 yu4
 美玲	0	mei3 ling2
 美甲	0	mei3 jia3
+美甲师	0	mei3 jia3 shi1
 美白	0	mei3 bai2
 美的	0	mei3 di2
 美眄	0	mei3 mian3
@@ -86572,6 +86894,7 @@ word 姐	0	w o r d jie3
 义冢	0	yi4 zhong3
 义士	0	yi4 shi4
 义大利	0	yi4 da4 li4
+义大利语	0	yi4 da4 li4 yu3
 义大利面	0	yi4 da4 li4 mian4
 义女	0	yi4 nu3
 义子	0	yi4 zi3
@@ -86825,6 +87148,7 @@ word 姐	0	w o r d jie3
 翻手为云覆手变雨	0	fan1 shou3 wei2 yun2 fu4 shou3 bian4 yu3
 翻拍	0	fan1 pai1
 翻拣	0	fan1 jian3
+翻摄	0	fan1 she4
 翻搅	0	fan1 jiao3
 翻斗卡车	0	fan1 dou3 ka3 che1
 翻新	0	fan1 xin1
@@ -87198,7 +87522,6 @@ word 姐	0	w o r d jie3
 考拉	0	kao3 la1
 考据	0	kao3 ju4
 考文垂	0	kao3 wen2 chui2
-考文垂市	0	kao3 wen2 chui2 shi4
 考期	0	kao3 qi1
 考本	0	kao3 ben3
 考查	0	kao3 cha2
@@ -87543,6 +87866,7 @@ word 姐	0	w o r d jie3
 圣代	0	sheng4 dai4
 圣伯多禄大殿	0	sheng4 bo2 duo1 lu4 da4 dian4
 圣但尼	0	sheng4 dan4 ni2
+圣何塞	0	sheng4 he2 sai4
 圣佛明节	0	sheng4 fo2 ming2 jie2
 圣保罗	0	sheng4 bao3 luo2
 圣像	0	sheng4 xiang4
@@ -87654,6 +87978,7 @@ word 姐	0	w o r d jie3
 圣诞前夕	0	sheng4 dan4 qian2 xi1
 圣诞卡	0	sheng4 dan4 ka3
 圣诞岛	0	sheng4 dan4 dao3
+圣诞帽	0	sheng4 dan4 mao4
 圣诞快乐	0	sheng4 dan4 kuai4 le4
 圣诞树	0	sheng4 dan4 shu4
 圣诞节	0	sheng4 dan4 jie2
@@ -87727,7 +88052,6 @@ word 姐	0	w o r d jie3
 聚积	0	ju4 ji1
 聚精会神	0	ju4 jing1 hui4 shen2
 聚义	0	ju4 yi4
-聚脂	0	ju4 zhi1
 聚苯乙烯	0	ju4 ben3 yi3 xi1
 聚落	0	ju4 luo4
 聚萤映雪	0	ju4 ying2 ying4 xue3
@@ -87849,6 +88173,7 @@ word 姐	0	w o r d jie3
 联结主义	0	lian2 jie2 zhu3 yi4
 联结车	0	lian2 jie2 che1
 联络	0	lian2 luo4
+联络人	0	lian2 luo4 ren2
 联络官	0	lian2 luo4 guan1
 联络簿	0	lian2 luo4 bu4
 联网	0	lian2 wang3
@@ -87861,6 +88186,7 @@ word 姐	0	w o r d jie3
 联署	0	lian2 shu3
 联翩	0	lian2 pian1
 联考	0	lian2 kao3
+联聘	0	lian2 pin4
 联航	0	lian2 hang2
 联号	0	lian2 hao4
 联袂	0	lian2 mei4
@@ -88005,6 +88331,8 @@ word 姐	0	w o r d jie3
 职级	0	zhi2 ji2
 职缺	0	zhi2 que1
 职能	0	zhi2 neng2
+职能治疗	0	zhi2 neng2 zhi4 liao2
+职能治疗师	0	zhi2 neng2 zhi4 liao2 shi1
 职责	0	zhi2 ze2
 职军	0	zhi2 jun1
 职衔	0	zhi2 xian2
@@ -88195,6 +88523,7 @@ word 姐	0	w o r d jie3
 肉丝	0	rou4 si1
 肉羹	0	rou4 geng1
 肉脯	0	rou4 fu3
+肉芽肿	0	rou4 ya2 zhong3
 肉蒲团	0	rou4 pu2 tuan2
 肉袒	0	rou4 tan3
 肉豆蔻	0	rou4 dou4 kou4
@@ -88421,7 +88750,6 @@ word 姐	0	w o r d jie3
 肯德基炸鸡	0	ken3 de2 ji1 zha2 ji1
 肯德拉	0	ken3 de2 la1
 肯普索恩	0	ken3 pu3 suo3 en1
-肯沃伦	0	ken3 wo4 lun2
 肯特	0	ken3 te4
 肰	0	ran2
 肱	0	gong1
@@ -88471,6 +88799,7 @@ word 姐	0	w o r d jie3
 肺结核病	0	fei4 jie2 he2 bing4
 肺腑	0	fei4 fu3
 肺腑之言	0	fei4 fu3 zhi1 yan2
+肺脏	0	fei4 zang4
 肺通气	0	fei4 tong1 qi4
 肼	0	jing3
 肽	0	tai4
@@ -88502,7 +88831,6 @@ word 姐	0	w o r d jie3
 胄子	0	zhou4 zi3
 胄甲	0	zhou4 jia3
 胄裔	0	zhou4 yi4
-胄裔繁衍	0	zhou4 yi4 fan2 yan3
 胇	0	fei4
 胊	0	qu2
 背	0	bei1
@@ -88695,7 +89023,6 @@ word 姐	0	w o r d jie3
 胡瓜	0	hu2 gua1
 胡瓜鱼	0	hu2 gua1 yu2
 胡笙	0	hu2 sheng1
-胡紫微	0	hu2 zi3 wei1
 胡紫薇	0	hu2 zi3 wei1
 胡编	0	hu2 bian1
 胡编乱造	0	hu2 bian1 luan4 zao4
@@ -88951,8 +89278,13 @@ word 姐	0	w o r d jie3
 脒	0	mi3
 脖	0	bo2
 脖子	0	bo2 zi5
+脖梗	0	bo2 geng3
+脖梗儿	0	bo2 geng3 r5
+脖梗子	0	bo2 geng3 zi5
 脖领	0	bo2 ling3
+脖颈	0	bo2 geng3
 脖颈儿	0	bo2 geng3 r5
+脖颈子	0	bo2 geng3 zi5
 吻	0	wen3
 脘	0	wan3
 胫	0	jing4
@@ -88964,6 +89296,7 @@ word 姐	0	w o r d jie3
 唇	0	chun2
 脤	0	shen4
 𣍰	0	qian3
+朘	0	zui1
 脧	0	juan1
 脨	0	ji2
 修	0	xiu1
@@ -89045,6 +89378,7 @@ word 姐	0	w o r d jie3
 脱脂棉	0	tuo1 zhi1 mian2
 脱脱	0	tuo1 tuo1
 脱肠	0	tuo1 chang2
+脱胶	0	tuo1 jiao1
 脱臼	0	tuo1 jiu4
 脱色	0	tuo1 se4
 脱色剂	0	tuo1 se4 ji4
@@ -89107,6 +89441,7 @@ word 姐	0	w o r d jie3
 腋窝	0	ye4 wo1
 腋臭	0	ye4 chou4
 腋芽	0	ye4 ya2
+腌	0	a1
 腌	0	yan1
 腌臜	0	a1 za1
 腌制	0	yan1 zhi4
@@ -89181,6 +89516,7 @@ word 姐	0	w o r d jie3
 腠	0	cou4
 脶	0	luo2
 腥	0	xing1
+腥臭	0	xing1 chou4
 腥风血雨	0	xing1 feng1 xue4 yu3
 脑	0	nao3
 脑下垂体	0	nao3 xia4 chui2 ti3
@@ -89199,7 +89535,6 @@ word 姐	0	w o r d jie3
 脑垂体	0	nao3 chui2 ti3
 脑子	0	nao3 zi5
 脑子有泡	0	nao3 zi5 you3 pao4
-脑子生锈	0	nao3 zi5 sheng1 xiu4
 脑子进水	0	nao3 zi5 jin4 shui3
 脑室	0	nao3 shi4
 脑岛	0	nao3 dao3
@@ -89340,6 +89675,7 @@ word 姐	0	w o r d jie3
 脚掌	0	jiao3 zhang3
 脚本	0	jiao3 ben3
 脚板	0	jiao3 ban3
+脚架	0	jiao3 jia4
 脚根	0	jiao3 gen1
 脚杆	0	jiao3 gan3
 脚正不怕鞋歪	0	jiao3 zheng4 bu4 pa4 xie2 wai1
@@ -89353,6 +89689,7 @@ word 姐	0	w o r d jie3
 脚脖子	0	jiao3 bo2 zi5
 脚腕	0	jiao3 wan4
 脚腕子	0	jiao3 wan4 zi5
+脚色	0	jue2 se4
 脚误	0	jiao3 wu4
 脚趾	0	jiao3 zhi3
 脚趾头	0	jiao3 zhi3 tou5
@@ -89564,6 +89901,7 @@ word 姐	0	w o r d jie3
 膣	0	zhi4
 膦	0	lin4
 膨	0	peng2
+膨化	0	peng2 hua4
 膨压	0	peng2 ya1
 膨大	0	peng2 da4
 膨润土	0	peng2 run4 tu3
@@ -89594,6 +89932,7 @@ word 姐	0	w o r d jie3
 膻	0	dan4
 膻	0	shan1
 膻中	0	dan4 zhong1
+膻中穴	0	dan4 zhong1 xue2
 胆	0	dan3
 胆儿	0	dan3 r5
 胆力	0	dan3 li4
@@ -89639,6 +89978,7 @@ word 姐	0	w o r d jie3
 脓毒症	0	nong2 du2 zheng4
 脓水	0	nong2 shui3
 脓泡	0	nong2 pao4
+脓液	0	nong2 ye4
 脓痂疹	0	nong2 jia1 zhen3
 脓疱	0	nong2 pao4
 脓肿	0	nong2 zhong3
@@ -89849,7 +90189,6 @@ word 姐	0	w o r d jie3
 临时抱佛脚	0	lin2 shi2 bao4 fo2 jiao3
 临时政府	0	lin2 shi2 zheng4 fu3
 临时演员	0	lin2 shi2 yan3 yuan2
-临时澳门市政执行委员会	0	lin2 shi2 ao4 men2 shi4 zheng4 zhi2 xing2 wei3 yuan2 hui4
 临时贷款	0	lin2 shi2 dai4 kuan3
 临月儿	0	lin2 yue4 r5
 临朐	0	lin2 qu2
@@ -89983,6 +90322,7 @@ word 姐	0	w o r d jie3
 自力更生	0	zi4 li4 geng1 sheng1
 自助	0	zi4 zhu4
 自助洗衣店	0	zi4 zhu4 xi3 yi1 dian4
+自助游	0	zi4 zhu4 you2
 自助餐	0	zi4 zhu4 can1
 自勉	0	zi4 mian3
 自动	0	zi4 dong4
@@ -90145,6 +90485,7 @@ word 姐	0	w o r d jie3
 自杀式爆炸	0	zi4 sha1 shi4 bao4 zha4
 自杀炸弹杀手	0	zi4 sha1 zha4 dan4 sha1 shou3
 自毁	0	zi4 hui3
+自比	0	zi4 bi3
 自民党	0	zi4 min2 dang3
 自沉	0	zi4 chen2
 自治	0	zi4 zhi4
@@ -90337,7 +90678,6 @@ word 姐	0	w o r d jie3
 自转	0	zi4 zhuan4
 自转轴	0	zi4 zhuan4 zhou2
 自述	0	zi4 shu4
-自游	0	zi4 you2
 自适应	0	zi4 shi4 ying4
 自选	0	zi4 xuan3
 自酌	0	zi4 zhuo2
@@ -91184,6 +91524,7 @@ word 姐	0	w o r d jie3
 艰苦奋斗	0	jian1 ku3 fen4 dou4
 艰苦朴素	0	jian1 ku3 pu3 su4
 艰辛	0	jian1 xin1
+艰巨	0	jian1 ju4
 艰险	0	jian1 xian3
 艰难	0	jian1 nan2
 艰难险阻	0	jian1 nan2 xian3 zu3
@@ -91195,7 +91536,6 @@ word 姐	0	w o r d jie3
 色厉内荏	0	se4 li4 nei4 ren3
 色厉词严	0	se4 li4 ci2 yan2
 色友	0	se4 you3
-色当	0	se4 dang1
 色域	0	se4 yu4
 色夷	0	se4 yi2
 色子	0	shai3 zi5
@@ -91284,7 +91624,6 @@ word 姐	0	w o r d jie3
 艾实	0	ai4 shi2
 艾弥尔	0	ai4 mi2 er3
 艾德蒙顿	0	ai4 de2 meng2 dun4
-艾德蕾德	0	ai4 de2 lei3 de2
 艾扑西龙	0	ai4 pu1 xi1 long2
 艾曼塔	0	ai4 man4 ta3
 艾未未	0	ai4 wei4 wei4
@@ -91403,11 +91742,14 @@ word 姐	0	w o r d jie3
 芡实	0	qian4 shi2
 芡粉	0	qian4 fen3
 芣	0	fu2
+芣苡	0	fu2 yi3
+芣苢	0	fu2 yi3
 芤	0	kou1
 芥	0	gai4
 芥	0	jie4
 芥子气	0	jie4 zi3 qi4
 芥末	0	jie4 mo5
+芥花油	0	jie4 hua1 you2
 芥茉	0	jie4 mo5
 芥菜	0	jie4 cai4
 芥菜籽	0	jie4 cai4 zi3
@@ -91515,6 +91857,7 @@ word 姐	0	w o r d jie3
 花式	0	hua1 shi4
 花式游泳	0	hua1 shi4 you2 yong3
 花式溜冰	0	hua1 shi4 liu1 bing1
+花式滑冰	0	hua1 shi4 hua2 bing1
 花式足球	0	hua1 shi4 zu2 qiu2
 花彩	0	hua1 cai3
 花彩雀莺	0	hua1 cai3 que4 ying1
@@ -91569,12 +91912,14 @@ word 姐	0	w o r d jie3
 花活	0	hua1 huo2
 花溪	0	hua1 xi1
 花溪区	0	hua1 xi1 qu1
+花滑	0	hua1 hua2
 花洒	0	hua1 sa3
 花火	0	hua1 huo3
 花炮	0	hua1 pao4
 花无百日红	0	hua1 wu2 bai3 ri4 hong2
 花灯	0	hua1 deng1
 花灯戏	0	hua1 deng1 xi4
+花烛	0	hua1 zhu2
 花环	0	hua1 huan2
 花瓣	0	hua1 ban4
 花瓶	0	hua1 ping2
@@ -91632,6 +91977,8 @@ word 姐	0	w o r d jie3
 花莲县	0	hua1 lian2 xian4
 花蕊	0	hua1 rui3
 花蕾	0	hua1 lei3
+花艺	0	hua1 yi4
+花艺师	0	hua1 yi4 shi1
 花药	0	hua1 yao4
 花蛤	0	hua1 ge2
 花蜜	0	hua1 mi4
@@ -91706,8 +92053,6 @@ word 姐	0	w o r d jie3
 芸编	0	yun2 bian1
 芸芸	0	yun2 yun2
 芸芸众生	0	yun2 yun2 zhong4 sheng1
-芸苔子	0	yun2 tai2 zi3
-芸苔属	0	yun2 tai2 shu3
 芸草	0	yun2 cao3
 芸豆	0	yun2 dou4
 芸阁	0	yun2 ge2
@@ -91773,7 +92118,6 @@ word 姐	0	w o r d jie3
 苛性钾	0	ke1 xing4 jia3
 苛捐	0	ke1 juan1
 苛捐杂税	0	ke1 juan1 za2 shui4
-苛政猛于虎	0	ke1 zheng4 meng3 yu2 hu3
 苛求	0	ke1 qiu2
 苛责	0	ke1 ze2
 苜	0	mu4
@@ -91800,6 +92144,7 @@ word 姐	0	w o r d jie3
 苠	0	min2
 苡	0	yi3
 苡米	0	yi3 mi3
+苢	0	yi3
 苣	0	ju4
 苣	0	qu3
 苣荬菜	0	qu3 mai5 cai4
@@ -92166,7 +92511,7 @@ word 姐	0	w o r d jie3
 茱莉亚	0	zhu1 li4 ya4
 茱莉娅	0	zhu1 li4 ya4
 茱莉雅	0	zhu1 li4 ya3
-茱莉雅·吉拉德	0	zhu1 li4 ya3 · ji2 la1 de2
+茱莉雅·吉拉德	0	zhu1 li4 ya3 ji2 la1 de2
 茱萸	0	zhu1 yu2
 茱丽叶	0	zhu1 li4 ye4
 兹	0	ci2
@@ -92352,6 +92697,7 @@ word 姐	0	w o r d jie3
 草鞋	0	cao3 xie2
 草食	0	cao3 shi2
 草食动物	0	cao3 shi2 dong4 wu4
+草饲	0	cao3 si4
 草体	0	cao3 ti3
 草鱼	0	cao3 yu2
 草鸮	0	cao3 xiao1
@@ -92432,6 +92778,7 @@ word 姐	0	w o r d jie3
 荷包	0	he2 bao1
 荷包蛋	0	he2 bao1 dan4
 荷塘区	0	he2 tang2 qu1
+荷官	0	he2 guan1
 荷尼阿拉	0	he2 ni2 a1 la1
 荷属安的列斯	0	he2 shu3 an1 de5 lie4 si1
 荷属圣马丁	0	he2 shu3 sheng4 ma3 ding1
@@ -92488,6 +92835,7 @@ word 姐	0	w o r d jie3
 庄稼活儿	0	zhuang1 jia5 huo2 r5
 庄稼汉	0	zhuang1 jia5 han4
 庄老	0	zhuang1 lao3
+庄荷	0	zhuang1 he2
 庄重	0	zhuang1 zhong4
 莎	0	sha1
 莎	0	suo1
@@ -92524,6 +92872,7 @@ word 姐	0	w o r d jie3
 莘莘	0	shen1 shen1
 莘莘学子	0	shen1 shen1 xue2 zi3
 莙	0	jun1
+莙荙菜	0	jun1 da2 cai4
 莚	0	yan2
 莛	0	ting2
 莜	0	you2
@@ -92668,7 +93017,6 @@ word 姐	0	w o r d jie3
 菏	0	he2
 菏泽	0	he2 ze2
 菏泽市	0	he2 ze2 shi4
-菏兰	0	he2 lan2
 菐	0	pu2
 灾	0	zai1
 菑	0	zi1
@@ -92824,6 +93172,7 @@ word 姐	0	w o r d jie3
 华硕	0	hua2 shuo4
 华章	0	hua2 zhang1
 华米科技	0	hua2 mi3 ke1 ji4
+华约	0	hua2 yue1
 华纳兄弟	0	hua2 na4 xiong1 di4
 华纳音乐集团	0	hua2 na4 yin1 yue4 ji2 tuan2
 华罗庚	0	hua4 luo2 geng1
@@ -92881,13 +93230,13 @@ word 姐	0	w o r d jie3
 菲律宾语	0	fei1 lu4 bin1 yu3
 菲律宾鹃鸠	0	fei1 lu4 bin1 juan1 jiu1
 菲德尔	0	fei1 de2 er3
-菲舍尔	0	fei1 she3 er3
 菲林	0	fei1 lin2
 菲涅耳透镜	0	fei1 nie4 er3 tou4 jing4
 菲尔普斯	0	fei1 er3 pu3 si1
 菲尔特	0	fei1 er3 te4
 菲尔兹	0	fei1 er3 zi1
 菲尔兹奖	0	fei1 er3 zi1 jiang3
+菲舍尔	0	fei1 she3 er3
 菲茨杰拉德	0	fei1 ci2 jie2 la1 de2
 菲菲	0	fei1 fei1
 菲薄	0	fei3 bo2
@@ -92901,8 +93250,12 @@ word 姐	0	w o r d jie3
 烟斗	0	yan1 dou3
 烟硷	0	yan1 jian3
 烟蒂	0	yan1 di4
+烟酰胺	0	yan1 xian1 an4
+烟醯胺	0	yan1 xi1 an4
 烟碱	0	yan1 jian3
+烟碱素	0	yan1 jian3 su4
 烟碱酸	0	yan1 jian3 suan1
+烟碱醯胺	0	yan1 jian3 xi1 an4
 菹	0	zu1
 菹醢	0	zu1 hai3
 菺	0	jian1
@@ -93250,6 +93603,7 @@ word 姐	0	w o r d jie3
 落花有意，流水无情	0	luo4 hua1 you3 yi4 liu2 shui3 wu2 qing2
 落花流水	0	luo4 hua1 liu2 shui3
 落花生	0	luo4 hua1 sheng1
+落草	0	luo4 cao3
 落草为寇	0	luo4 cao3 wei2 kou4
 落荒而逃	0	luo4 huang1 er2 tao2
 落莫	0	luo4 mo4
@@ -93289,7 +93643,6 @@ word 姐	0	w o r d jie3
 叶利钦	0	ye4 li4 qin1
 叶卡捷琳堡	0	ye4 ka3 jie2 lin2 bao3
 叶卡捷琳娜	0	ye4 ka3 jie2 lin2 na4
-叶卡特琳娜堡	0	ye4 ka3 te4 lin2 na4 bao3
 叶口蝠科	0	ye4 kou3 fu2 ke1
 叶问	0	ye4 wen4
 叶城	0	ye4 cheng2
@@ -93316,6 +93669,7 @@ word 姐	0	w o r d jie3
 叶脉	0	ye4 mai4
 叶脉序	0	ye4 mai4 xu4
 叶苔	0	ye4 tai2
+叶菜	0	ye4 cai4
 叶落归根	0	ye4 luo4 gui1 gen1
 叶轮	0	ye4 lun2
 叶轮机械	0	ye4 lun2 ji1 xie4
@@ -93375,6 +93729,7 @@ word 姐	0	w o r d jie3
 着笔	0	zhuo2 bi3
 着紧	0	zhao2 jin3
 着色	0	zhuo2 se4
+着色书	0	zhuo2 se4 shu1
 着花	0	zhao2 hua1
 着花	0	zhuo2 hua1
 着落	0	zhuo2 luo4
@@ -93410,7 +93765,7 @@ word 姐	0	w o r d jie3
 葛瑞格尔	0	ge3 rui4 ge2 er3
 葛粉	0	ge2 fen3
 葛缕子	0	ge3 lu3 zi5
-葛莱美奖	0	ge3 lai2 mei3 jiang3
+葛莱美奖	0	ge2 lai2 mei3 jiang3
 葛藤	0	ge2 teng2
 葛兰素史克	0	ge3 lan2 su4 shi3 ke4
 葛逻禄	0	ge3 luo2 lu4
@@ -93514,9 +93869,9 @@ word 姐	0	w o r d jie3
 蒂芙尼	0	di4 fu2 ni2
 蒄	0	guan1
 蒎	0	pai4
+搜	0	sou1
 蒐	0	sou1
-蒐寻	0	sou1 xun2
-蒐证	0	sou1 zheng4
+搜证	0	sou1 zheng4
 搜集	0	sou1 ji2
 莼	0	chun2
 莳	0	shi2
@@ -93573,6 +93928,7 @@ word 姐	0	w o r d jie3
 蒙昧	0	meng2 mei4
 蒙昧无知	0	meng2 mei4 wu2 zhi1
 蒙求	0	meng2 qiu2
+蒙汗药	0	meng2 han4 yao4
 蒙牛	0	meng3 niu2
 蒙特内哥罗	0	meng2 te4 nei4 ge1 luo2
 蒙特利尔	0	meng2 te4 li4 er3
@@ -93593,6 +93949,7 @@ word 姐	0	w o r d jie3
 蒙药	0	meng3 yao4
 蒙茏	0	meng2 long2
 蒙覆	0	meng2 fu4
+蒙语	0	meng3 yu3
 蒙阴	0	meng2 yin1
 蒙阴县	0	meng2 yin1 xian4
 蒙难	0	meng2 nan4
@@ -93984,6 +94341,7 @@ word 姐	0	w o r d jie3
 蔬果	0	shu1 guo3
 蔬菜	0	shu1 cai4
 蔬食	0	shu1 shi2
+荫	0	yin1
 荫	0	yin4
 荫凉	0	yin4 liang2
 荫蔽	0	yin4 bi4
@@ -94029,6 +94387,7 @@ word 姐	0	w o r d jie3
 荬	0	mai3
 芸	0	yun2
 芸薹	0	yun2 tai2
+芸薹子	0	yun2 tai2 zi3
 芸薹属	0	yun2 tai2 shu3
 蕔	0	bao1
 莸	0	you2
@@ -94168,6 +94527,7 @@ word 姐	0	w o r d jie3
 薅羊毛	0	hao1 yang2 mao2
 薆	0	ai4
 薇	0	wei1
+薇薇安	0	wei1 wei1 an1
 荟	0	hui4
 荟萃	0	hui4 cui4
 薉	0	wei4
@@ -94373,7 +94733,6 @@ word 姐	0	w o r d jie3
 藉由	0	jie4 you2
 借着	0	jie4 zhe5
 借词推搪	0	jie4 ci2 tui1 tang2
-藉资挹注	0	jie4 zi1 yi4 zhu4
 藊	0	bian3
 藊豆	0	bian3 dou4
 藋	0	diao4
@@ -94764,6 +95123,7 @@ word 姐	0	w o r d jie3
 苏莱曼	0	su1 lai2 man4
 苏西洛	0	su1 xi1 luo4
 苏贞昌	0	su1 zhen1 chang1
+苏超	0	su1 chao1
 苏轼	0	su1 shi4
 苏辙	0	su1 zhe2
 苏迪曼杯	0	su1 di2 man4 bei1
@@ -94811,7 +95171,8 @@ word 姐	0	w o r d jie3
 蘑菇汤	0	mo2 gu5 tang1
 蘑菇云	0	mo2 gu1 yun2
 苏	0	su1
-蘗	0	nie4
+蘖	0	nie4
+蘗	0	bo4
 蘘	0	rang2
 蘘荷	0	rang2 he2
 藓	0	xian3
@@ -95117,6 +95478,7 @@ word 姐	0	w o r d jie3
 号咷	0	hao2 tao2
 号哭	0	hao2 ku1
 号啕	0	hao2 tao2
+号啕大哭	0	hao2 tao2 da4 ku1
 号丧	0	hao2 sang5
 号外	0	hao4 wai4
 号子	0	hao4 zi5
@@ -95259,6 +95621,7 @@ word 姐	0	w o r d jie3
 蛆虫	0	qu1 chong2
 蛇	0	she2
 蛇	0	yi2
+蛇信	0	she2 xin4
 蛇夫座	0	she2 fu1 zuo4
 蛇岛	0	she2 dao3
 蛇岛蝮	0	she2 dao3 fu4
@@ -95300,6 +95663,7 @@ word 姐	0	w o r d jie3
 蛋卷儿	0	dan4 juan3 r5
 蛋品	0	dan4 pin3
 蛋塔	0	dan4 ta3
+蛋奶冻	0	dan4 nai3 dong4
 蛋奶素	0	dan4 nai3 su4
 蛋奶酥	0	dan4 nai3 su1
 蛋挞	0	dan4 ta4
@@ -95596,6 +95960,7 @@ word 姐	0	w o r d jie3
 虱	0	shi1
 虱多不痒	0	shi1 duo1 bu4 yang3
 虱子	0	shi1 zi5
+虱目鱼	0	shi1 mu4 yu2
 蝮	0	fu4
 蝮蛇	0	fu4 she2
 猿	0	yuan2
@@ -95701,6 +96066,7 @@ word 姐	0	w o r d jie3
 蚊	0	wen2
 萤	0	ying2
 萤光	0	ying2 guang1
+萤光棒	0	ying2 guang1 bang4
 萤光灯	0	ying2 guang1 deng1
 萤光绿	0	ying2 guang1 lu4
 萤幕	0	ying2 mu4
@@ -95724,6 +96090,7 @@ word 姐	0	w o r d jie3
 螯肢	0	ao2 zhi1
 螯虾	0	ao2 xia1
 螳	0	tang2
+螳臂挡车	0	tang2 bi4 dang3 che1
 螳臂当车	0	tang2 bi4 dang1 che1
 螳螂	0	tang2 lang2
 螳螂捕蝉	0	tang2 lang2 bu3 chan2
@@ -95802,6 +96169,7 @@ word 姐	0	w o r d jie3
 螨虫	0	man3 chong2
 蟑	0	zhang1
 蟑螂	0	zhang1 lang2
+蟑螂屋	0	zhang1 lang2 wu1
 蟒	0	mang3
 蟒蛇	0	mang3 she2
 蟒袍	0	mang3 pao2
@@ -95831,6 +96199,7 @@ word 姐	0	w o r d jie3
 蟪蛄	0	hui4 gu1
 蟪蛄不知春秋	0	hui4 gu1 bu4 zhi1 chun1 qiu1
 蝉	0	chan2
+蝉猴	0	chan2 hou2
 蝉科	0	chan2 ke1
 蝉翼	0	chan2 yi4
 蝉联	0	chan2 lian2
@@ -95859,7 +96228,6 @@ word 姐	0	w o r d jie3
 虫蜡	0	chong2 la4
 虫豸	0	chong2 zhi4
 虫类	0	chong2 lei4
-虫鸟叫声	0	chong2 niao3 jiao4 sheng1
 蟳	0	xun2
 蛏	0	cheng1
 蟷	0	dang1
@@ -95893,6 +96261,7 @@ word 姐	0	w o r d jie3
 蠃	0	luo3
 蝇	0	ying2
 蝇子	0	ying2 zi5
+蝇营狗苟	0	ying2 ying2 gou3 gou3
 蝇虎	0	ying2 hu3
 虿	0	chai4
 蠉	0	xuan1
@@ -95911,6 +96280,7 @@ word 姐	0	w o r d jie3
 蠓	0	meng3
 蚝	0	hao2
 蚝油	0	hao2 you2
+蚝菇	0	hao2 gu1
 蚝豉	0	hao2 chi3
 蠕	0	ru2
 蠕动	0	ru2 dong4
@@ -95988,7 +96358,6 @@ word 姐	0	w o r d jie3
 蠲苛	0	juan1 ke1
 蠲赋	0	juan1 fu4
 蠲除	0	juan1 chu2
-蠲除苛政	0	juan1 chu2 ke1 zheng4
 蠲体	0	juan1 ti3
 蠵	0	xi1
 蠵龟	0	xi1 gui1
@@ -96134,6 +96503,7 @@ word 姐	0	w o r d jie3
 血竭	0	xue4 jie2
 血管	0	xue4 guan3
 血管摄影	0	xue4 guan3 she4 ying3
+血管支架	0	xue4 guan3 zhi1 jia4
 血管瘤	0	xue4 guan3 liu2
 血管粥样硬化	0	xue4 guan3 zhou1 yang4 ying4 hua4
 血管造影	0	xue4 guan3 zao4 ying3
@@ -96191,6 +96561,7 @@ word 姐	0	w o r d jie3
 蔑	0	mie4
 衋	0	xi4
 行	0	hang2
+行	0	heng2
 行	0	xing2
 行不从径	0	xing2 bu4 cong2 jing4
 行不改姓，坐不改名	0	xing2 bu4 gai3 xing4 zuo4 bu4 gai3 ming2
@@ -96229,6 +96600,7 @@ word 姐	0	w o r d jie3
 行动计划	0	xing2 dong4 ji4 hua4
 行动电源	0	xing2 dong4 dian4 yuan2
 行动电话	0	xing2 dong4 dian4 hua4
+行员	0	hang2 yuan2
 行唐	0	xing2 tang2
 行唐县	0	xing2 tang2 xian4
 行商	0	hang2 shang1
@@ -96318,7 +96690,7 @@ word 姐	0	w o r d jie3
 行船	0	xing2 chuan2
 行色匆匆	0	xing2 se4 cong1 cong1
 行草	0	xing2 cao3
-行万里路胜读万卷书	0	xing2 wan4 li3 lu4 sheng4 du2 wan4 juan3 shu1
+行万里路胜读万卷书	0	xing2 wan4 li3 lu4 sheng4 du2 wan4 juan4 shu1
 行号	0	hang2 hao4
 行行出状元	0	hang2 hang2 chu1 zhuang4 yuan2
 行装	0	xing2 zhuang1
@@ -96339,6 +96711,7 @@ word 姐	0	w o r d jie3
 行辈	0	hang2 bei4
 行进	0	xing2 jin4
 行进挡	0	xing2 jin4 dang3
+行道	0	xing2 dao4
 行道树	0	xing2 dao4 shu4
 行酒令	0	xing2 jiu3 ling4
 行医	0	xing2 yi1
@@ -96397,8 +96770,10 @@ word 姐	0	w o r d jie3
 街谈巷议	0	jie1 tan2 xiang4 yi4
 街道	0	jie1 dao4
 街道办事处	0	jie1 dao4 ban4 shi4 chu4
+街门	0	jie1 men2
 街头	0	jie1 tou2
 街头巷尾	0	jie1 tou2 xiang4 wei3
+街头艺人	0	jie1 tou2 yi4 ren2
 街头霸王	0	jie1 tou2 ba4 wang2
 衔	0	xian2
 衙	0	ya2
@@ -96479,6 +96854,7 @@ word 姐	0	w o r d jie3
 冲口而出	0	chong1 kou3 er2 chu1
 冲向	0	chong1 xiang4
 冲垮	0	chong1 kua3
+冲压	0	chong4 ya1
 冲床	0	chong4 chuang2
 冲打	0	chong1 da3
 冲撞	0	chong1 zhuang4
@@ -96888,6 +97264,7 @@ word 姐	0	w o r d jie3
 裎	0	cheng3
 里	0	li3
 里番	0	li3 fan1
+里面	0	li3 mian4
 裒	0	pou2
 裒多益寡	0	pou2 duo1 yi4 gua3
 裒敛无厌	0	pou2 lian3 wu2 yan4
@@ -96916,7 +97293,9 @@ word 姐	0	w o r d jie3
 裙带资本主义	0	qun2 dai4 zi1 ben3 zhu3 yi4
 裙带关系	0	qun2 dai4 guan1 xi5
 裙带风	0	qun2 dai4 feng1
+裙摆	0	qun2 bai3
 裙裤	0	qun2 ku4
+裙摆	0	qun2 bai3
 裙边	0	qun2 bian1
 裛	0	yi4
 补	0	bu3
@@ -97206,6 +97585,7 @@ word 姐	0	w o r d jie3
 复合弓	0	fu4 he2 gong1
 复合材料	0	fu4 he2 cai2 liao4
 复合母音	0	fu4 he2 mu3 yin1
+复合肥	0	fu4 he2 fei2
 复合词	0	fu4 he2 ci2
 复姓	0	fu4 xing4
 复写	0	fu4 xie3
@@ -97224,7 +97604,6 @@ word 姐	0	w o r d jie3
 复用	0	fu4 yong4
 复叠	0	fu4 die2
 复眼	0	fu4 yan3
-复社	0	fu4 she4
 复线	0	fu4 xian4
 复习	0	fu4 xi2
 复听	0	fu4 ting1
@@ -97434,6 +97813,7 @@ word 姐	0	w o r d jie3
 袜裤	0	wa4 ku4
 襫	0	shi4
 䙓	0	bai3
+摆	0	bai3
 襭	0	xie2
 襮	0	bo2
 衬	0	chen4
@@ -97486,6 +97866,7 @@ word 姐	0	w o r d jie3
 西南交通大学	0	xi1 nan2 jiao1 tong1 da4 xue2
 西南冠纹柳莺	0	xi1 nan2 guan1 wen2 liu3 ying1
 西南大学	0	xi1 nan2 da4 xue2
+西南官话	0	xi1 nan2 guan1 hua4
 西南栗耳凤鹛	0	xi1 nan2 li4 er3 feng4 mei2
 西南部	0	xi1 nan2 bu4
 西印度	0	xi1 yin4 du4
@@ -97590,6 +97971,7 @@ word 姐	0	w o r d jie3
 西格玛	0	xi1 ge2 ma3
 西格蒙德	0	xi1 ge2 meng1 de2
 西格马	0	xi1 ge2 ma3
+西棕胸佛法僧	0	xi1 zong1 xiong1 fo2 fa3 seng1
 西欧	0	xi1 ou1
 西欧联盟	0	xi1 ou1 lian2 meng2
 西江	0	xi1 jiang1
@@ -97874,11 +98256,11 @@ word 姐	0	w o r d jie3
 见访	0	jian4 fang3
 见说	0	jian4 shuo1
 见谅	0	jian4 liang4
+见诸	0	jian4 zhu1
 见诸行动	0	jian4 zhu1 xing2 dong4
 见证	0	jian4 zheng4
 见证人	0	jian4 zheng4 ren2
 见识	0	jian4 shi5
-见识浅	0	jian4 shi5 qian3
 见财起意	0	jian4 cai2 qi3 yi4
 见贤思齐	0	jian4 xian2 si1 qi2
 见钱眼开	0	jian4 qian2 yan3 kai1
@@ -97904,7 +98286,6 @@ word 姐	0	w o r d jie3
 规则	0	gui1 ze2
 规则化	0	gui1 ze2 hua4
 规则性	0	gui1 ze2 xing4
-规则性效应	0	gui1 ze2 xing4 xiao4 ying4
 规划	0	gui1 hua4
 规划人员	0	gui1 hua4 ren2 yuan2
 规划局	0	gui1 hua4 ju2
@@ -98576,6 +98957,7 @@ word 姐	0	w o r d jie3
 计算机辅助设计	0	ji4 suan4 ji1 fu3 zhu4 she4 ji4
 计算机集成制造	0	ji4 suan4 ji1 ji2 cheng2 zhi4 zao4
 计算复杂性	0	ji4 suan4 fu4 za2 xing4
+计薪	0	ji4 xin1
 计谋	0	ji4 mou2
 计议	0	ji4 yi4
 计较	0	ji4 jiao4
@@ -98683,7 +99065,7 @@ word 姐	0	w o r d jie3
 记帐员	0	ji4 zhang4 yuan2
 记得	0	ji4 de5
 记念	0	ji4 nian4
-记念品	0	ji4 nian4 pin3
+记念	0	ji4 nian5
 记性	0	ji4 xing5
 记恨	0	ji4 hen4
 记忆	0	ji4 yi4
@@ -98692,6 +99074,7 @@ word 姐	0	w o r d jie3
 记忆卡	0	ji4 yi4 ka3
 记忆器	0	ji4 yi4 qi4
 记忆广度	0	ji4 yi4 guang3 du4
+记忆棒	0	ji4 yi4 bang4
 记忆犹新	0	ji4 yi4 you2 xin1
 记忆电路	0	ji4 yi4 dian4 lu4
 记忆体	0	ji4 yi4 ti3
@@ -98700,6 +99083,7 @@ word 姐	0	w o r d jie3
 记叙文	0	ji4 xu4 wen2
 记法	0	ji4 fa3
 记为	0	ji4 wei2
+记牢	0	ji4 lao2
 记者	0	ji4 zhe3
 记者报道	0	ji4 zhe3 bao4 dao4
 记者招待会	0	ji4 zhe3 zhao1 dai4 hui4
@@ -98757,6 +99141,7 @@ word 姐	0	w o r d jie3
 访港	0	fang3 gang3
 访美	0	fang3 mei3
 访台	0	fang3 tai2
+访华	0	fang3 hua2
 访亲问友	0	fang3 qin1 wen4 you3
 访谈	0	fang3 tan2
 访贫问苦	0	fang3 pin2 wen4 ku3
@@ -98909,6 +99294,7 @@ word 姐	0	w o r d jie3
 评审	0	ping2 shen3
 评审团	0	ping2 shen3 tuan2
 评审团特别奖	0	ping2 shen3 tuan2 te4 bie2 jiang3
+评弹	0	ping2 tan2
 评断	0	ping2 duan4
 评书	0	ping2 shu1
 评比	0	ping2 bi3
@@ -98924,6 +99310,7 @@ word 姐	0	w o r d jie3
 评论	0	ping2 lun4
 评论员	0	ping2 lun4 yuan2
 评论家	0	ping2 lun4 jia1
+评讲	0	ping2 jiang3
 评议	0	ping2 yi4
 评议会	0	ping2 yi4 hui4
 评述	0	ping2 shu4
@@ -98947,7 +99334,6 @@ word 姐	0	w o r d jie3
 词人墨客	0	ci2 ren2 mo4 ke4
 词令	0	ci2 ling4
 词位	0	ci2 wei4
-词优效应	0	ci2 you1 xiao4 ying4
 词典	0	ci2 dian3
 词典学	0	ci2 dian3 xue2
 词汇	0	ci2 hui4
@@ -98983,11 +99369,9 @@ word 姐	0	w o r d jie3
 词讼费	0	ci2 song4 fei4
 词话	0	ci2 hua4
 词语	0	ci2 yu3
-词长效应	0	ci2 chang2 xiao4 ying4
 词项逻辑	0	ci2 xiang4 luo2 ji5
 词头	0	ci2 tou2
 词频	0	ci2 pin2
-词频效应	0	ci2 pin2 xiao4 ying4
 词类	0	ci2 lei4
 咏	0	yong3
 咏叹调	0	yong3 tan4 diao4
@@ -99129,6 +99513,7 @@ word 姐	0	w o r d jie3
 话不投机半句多	0	hua4 bu4 tou2 ji1 ban4 ju4 duo1
 话中有刺	0	hua4 zhong1 you3 ci4
 话中有话	0	hua4 zhong1 you3 hua4
+话事人	0	hua4 shi4 ren2
 话亭	0	hua4 ting2
 话别	0	hua4 bie2
 话到嘴边	0	hua4 dao4 zui3 bian1
@@ -99277,6 +99662,7 @@ word 姐	0	w o r d jie3
 认识	0	ren4 shi5
 认识不能	0	ren4 shi5 bu4 neng2
 认识论	0	ren4 shi5 lun4
+认负	0	ren4 fu4
 认贼作父	0	ren4 zei2 zuo4 fu4
 认赔	0	ren4 pei2
 认账	0	ren4 zhang4
@@ -99764,6 +100150,7 @@ word 姐	0	w o r d jie3
 请假条	0	qing3 jia4 tiao2
 请别见怪	0	qing3 bie2 jian4 guai4
 请功	0	qing3 gong1
+请勿	0	qing3 wu4
 请勿吸烟	0	qing3 wu4 xi1 yan1
 请勿打扰	0	qing3 wu4 da3 rao3
 请君入瓮	0	qing3 jun1 ru4 weng4
@@ -99845,6 +100232,8 @@ word 姐	0	w o r d jie3
 谥	0	shi4
 谥号	0	shi4 hao4
 诨	0	hun4
+诨名	0	hun4 ming2
+诨号	0	hun4 hao4
 谔	0	e4
 谛	0	di4
 谛听	0	di4 ting1
@@ -100053,11 +100442,11 @@ word 姐	0	w o r d jie3
 谦辞	0	qian1 ci2
 谦逊	0	qian1 xun4
 谥	0	shi4
-谥	0	yi4
 讲	0	jiang3
 讲不通	0	jiang3 bu4 tong1
 讲价	0	jiang3 jia4
 讲到	0	jiang3 dao4
+讲台	0	jiang3 tai2
 讲史	0	jiang3 shi3
 讲和	0	jiang3 he2
 讲堂	0	jiang3 tang2
@@ -100133,7 +100522,7 @@ word 姐	0	w o r d jie3
 谣传	0	yao2 chuan2
 谣言	0	yao2 yan2
 谣言惑众	0	yao2 yan2 huo4 zhong4
-謡	0	yao2
+谣	0	yao2
 謦	0	qi4
 谟	0	mo2
 谟	0	mo2
@@ -100180,6 +100569,7 @@ word 姐	0	w o r d jie3
 证人席	0	zheng4 ren2 xi2
 证件	0	zheng4 jian4
 证件照	0	zheng4 jian4 zhao4
+证供	0	zheng4 gong4
 证伪	0	zheng4 wei3
 证券	0	zheng4 quan4
 证券交易所	0	zheng4 quan4 jiao1 yi4 suo3
@@ -100297,6 +100687,7 @@ word 姐	0	w o r d jie3
 警区	0	jing3 qu1
 警句	0	jing3 ju4
 警告	0	jing3 gao4
+警员	0	jing3 yuan2
 警报	0	jing3 bao4
 警报器	0	jing3 bao4 qi4
 警官	0	jing3 guan1
@@ -100411,6 +100802,7 @@ word 姐	0	w o r d jie3
 护犊子	0	hu4 du2 zi5
 护理	0	hu4 li3
 护理学	0	hu4 li3 xue2
+护理师	0	hu4 li3 shi1
 护生	0	hu4 sheng1
 护甲	0	hu4 jia3
 护目镜	0	hu4 mu4 jing4
@@ -100715,6 +101107,7 @@ word 姐	0	w o r d jie3
 豆苗	0	dou4 miao2
 豆荚	0	dou4 jia2
 豆菊	0	dou4 ju2
+豆萁	0	dou4 qi2
 豆蓉	0	dou4 rong2
 豆蓉包	0	dou4 rong2 bao1
 豆蔻	0	dou4 kou4
@@ -100793,6 +101186,7 @@ word 姐	0	w o r d jie3
 丰度	0	feng1 du4
 丰收	0	feng1 shou1
 丰水	0	feng1 shui3
+丰水期	0	feng1 shui3 qi1
 丰沛	0	feng1 pei4
 丰溪	0	feng1 xi1
 丰溪里	0	feng1 xi1 li3
@@ -100920,6 +101314,7 @@ word 姐	0	w o r d jie3
 猪排	0	zhu1 pai2
 猪朋狗友	0	zhu1 peng2 gou3 you3
 猪柳	0	zhu1 liu3
+猪栏	0	zhu1 lan2
 猪水泡病	0	zhu1 shui3 pao4 bing4
 猪油	0	zhu1 you2
 猪流感	0	zhu1 liu2 gan3
@@ -100929,12 +101324,14 @@ word 姐	0	w o r d jie3
 猪狗不如	0	zhu1 gou3 bu4 ru2
 猪瘟	0	zhu1 wen1
 猪窠	0	zhu1 ke1
+猪窝	0	zhu1 wo1
 猪笼	0	zhu1 long2
 猪笼草	0	zhu1 long2 cao3
 猪精	0	zhu1 jing1
 猪肉	0	zhu1 rou4
 猪肚	0	zhu1 du3
 猪膻味	0	zhu1 shan1 wei4
+猪舍	0	zhu1 she4
 猪苓	0	zhu1 ling2
 猪草	0	zhu1 cao3
 猪血糕	0	zhu1 xie3 gao1
@@ -100970,7 +101367,6 @@ word 姐	0	w o r d jie3
 貂熊	0	diao1 xiong2
 貂皮	0	diao1 pi2
 貂蝉	0	diao1 chan2
-貂裘换酒	0	diao1 qiu2 huan4 jiu3
 貅	0	xiu1
 貆	0	huan2
 貉	0	he2
@@ -100993,7 +101389,6 @@ word 姐	0	w o r d jie3
 猫儿	0	mao1 er2
 猫儿山	0	mao1 er2 shan1
 猫匿	0	mao1 ni4
-猫叫声	0	mao1 jiao4 sheng1
 猫咖	0	mao1 ka1
 猫咪	0	mao1 mi1
 猫哭老鼠	0	mao1 ku1 lao3 shu3
@@ -101030,7 +101425,7 @@ word 姐	0	w o r d jie3
 貜	0	jue2
 贝	0	bei4
 贝	0	bei4
-贝·布托	0	bei4 · bu4 tuo1
+贝·布托	0	bei4 bu4 tuo1
 贝丘	0	bei4 qiu1
 贝九	0	bei4 jiu3
 贝克	0	bei4 ke4
@@ -101051,7 +101446,7 @@ word 姐	0	w o r d jie3
 贝多	0	bei4 duo1
 贝多罗树	0	bei4 duo1 luo2 shu4
 贝多芬	0	bei4 duo1 fen1
-贝娜齐尔·布托	0	bei4 na4 qi2 er3 · bu4 tuo1
+贝娜齐尔·布托	0	bei4 na4 qi2 er3 bu4 tuo1
 贝娅特丽克丝	0	bei4 ya4 te4 li4 ke4 si1
 贝嫂	0	bei4 sao3
 贝宁	0	bei4 ning2
@@ -101373,6 +101768,7 @@ word 姐	0	w o r d jie3
 责任	0	ze2 ren4
 责任事故	0	ze2 ren4 shi4 gu4
 责任人	0	ze2 ren4 ren2
+责任保险	0	ze2 ren4 bao3 xian3
 责任制	0	ze2 ren4 zhi4
 责任心	0	ze2 ren4 xin1
 责任感	0	ze2 ren4 gan3
@@ -101439,7 +101835,6 @@ word 姐	0	w o r d jie3
 贵族	0	gui4 zu2
 贵族化	0	gui4 zu2 hua4
 贵族社会	0	gui4 zu2 she4 hui4
-贵族身份	0	gui4 zu2 shen1 fen4
 贵校	0	gui4 xiao4
 贵格会	0	gui4 ge2 hui4
 贵池	0	gui4 chi2
@@ -101503,6 +101898,7 @@ word 姐	0	w o r d jie3
 买笑追欢	0	mai3 xiao4 zhui1 huan1
 买菜	0	mai3 cai4
 买卖	0	mai3 mai4
+买卖	0	mai3 mai5
 买账	0	mai3 zhang4
 买路财	0	mai3 lu4 cai2
 买路钱	0	mai3 lu4 qian2
@@ -101548,9 +101944,7 @@ word 姐	0	w o r d jie3
 费尔干纳	0	fei4 er3 gan4 na4
 费尔干纳盆地	0	fei4 er3 gan4 na4 pen2 di4
 费尔马	0	fei4 er3 ma3
-费尔马大定理	0	fei4 er3 ma3 da4 ding4 li3
 费率	0	fei4 lu4
-费玛	0	fei4 ma3
 费用	0	fei4 yong4
 费用报销单	0	fei4 yong4 bao4 xiao1 dan1
 费尽心思	0	fei4 jin4 xin1 si5
@@ -101560,10 +101954,12 @@ word 姐	0	w o r d jie3
 费米	0	fei4 mi3
 费米子	0	fei4 mi3 zi3
 费县	0	fei4 xian4
+费舍尔	0	fei4 she3 er3
 费解	0	fei4 jie3
 费话	0	fei4 hua4
 费边社	0	fei4 bian1 she4
 费马	0	fei4 ma3
+费马大定理	0	fei4 ma3 da4 ding4 li3
 贴	0	tie1
 贴切	0	tie1 qie4
 贴合	0	tie1 he2
@@ -101686,6 +102082,7 @@ word 姐	0	w o r d jie3
 资料传输	0	zi1 liao4 chuan2 shu1
 资料夹	0	zi1 liao4 jia1
 资料库	0	zi1 liao4 ku4
+资料片	0	zi1 liao4 pian4
 资料量	0	zi1 liao4 liang4
 资料链结层	0	zi1 liao4 lian4 jie2 ceng2
 资斧	0	zi1 fu3
@@ -101741,7 +102138,6 @@ word 姐	0	w o r d jie3
 贾	0	gu3
 贾伯斯	0	jia3 bo2 si1
 贾南德拉	0	jia3 nan2 de2 la1
-贾夹威德	0	jia3 jia1 wei1 de2
 贾客	0	gu3 ke4
 贾宝玉	0	jia3 bao3 yu4
 贾平凹	0	jia3 ping2 wa1
@@ -101802,7 +102198,6 @@ word 姐	0	w o r d jie3
 宾治	0	bin1 zhi4
 宾县	0	bin1 xian4
 宾至如归	0	bin1 zhi4 ru2 gui1
-宾西法尼亚	0	bin1 xi1 fa3 ni2 ya4
 宾词	0	bin1 ci2
 宾语	0	bin1 yu3
 宾阳	0	bin1 yang2
@@ -101822,6 +102217,7 @@ word 姐	0	w o r d jie3
 赐姓	0	ci4 xing4
 赐教	0	ci4 jiao4
 赐死	0	ci4 si3
+赐爵	0	ci4 jue2
 赐福	0	ci4 fu2
 赐给	0	ci4 gei3
 赐与	0	ci4 yu3
@@ -101895,6 +102291,8 @@ word 姐	0	w o r d jie3
 卖国贼	0	mai4 guo2 zei2
 卖场	0	mai4 chang3
 卖完	0	mai4 wan2
+卖官	0	mai4 guan1
+卖官鬻爵	0	mai4 guan1 yu4 jue2
 卖家	0	mai4 jia1
 卖座	0	mai4 zuo4
 卖弄	0	mai4 nong5
@@ -102050,6 +102448,7 @@ word 姐	0	w o r d jie3
 赚钱	0	zhuan4 qian2
 赚头	0	zhuan4 tou5
 赙	0	fu4
+赙仪	0	fu4 yi2
 购	0	gou4
 购汇	0	gou4 hui4
 购得	0	gou4 de2
@@ -102070,8 +102469,10 @@ word 姐	0	w o r d jie3
 赛	0	sai4
 赛事	0	sai4 shi4
 赛先生	0	sai4 xian1 sheng5
+赛制	0	sai4 zhi4
 赛力斯	0	sai4 li4 si1
 赛博	0	sai4 bo2
+赛博朋克	0	sai4 bo2 peng2 ke4
 赛因斯	0	sai4 yin1 si1
 赛场	0	sai4 chang3
 赛夏族	0	sai4 xia4 zu2
@@ -102260,7 +102661,7 @@ word 姐	0	w o r d jie3
 赤身露体	0	chi4 shen1 lu4 ti3
 赤道	0	chi4 dao4
 赤道仪	0	chi4 dao4 yi2
-赤道几内亚	0	chi4 dao4 ji1 nei4 ya4
+赤道几内亚	0	chi4 dao4 ji3 nei4 ya4
 赤道逆流	0	chi4 dao4 ni4 liu2
 赤道雨林	0	chi4 dao4 yu3 lin2
 赤金	0	chi4 jin1
@@ -102297,7 +102698,7 @@ word 姐	0	w o r d jie3
 赫拉特	0	he4 la1 te4
 赫拉特省	0	he4 la1 te4 sheng3
 赫斯提亚	0	he4 si1 ti2 ya4
-赫曼·麦尔维尔	0	he4 man4 · mai4 er3 wei2 er3
+赫曼·麦尔维尔	0	he4 man4 mai4 er3 wei2 er3
 赫本	0	he4 ben3
 赫氏角鹰	0	he4 shi4 jue2 ying1
 赫然	0	he4 ran2
@@ -102493,6 +102894,7 @@ word 姐	0	w o r d jie3
 起床	0	qi3 chuang2
 起床气	0	qi3 chuang2 qi4
 起床号	0	qi3 chuang2 hao2
+起底	0	qi3 di3
 起征点	0	qi3 zheng1 dian3
 起意	0	qi3 yi4
 起手	0	qi3 shou3
@@ -102504,6 +102906,7 @@ word 姐	0	w o r d jie3
 起早摸黑	0	qi3 zao3 mo1 hei1
 起早贪黑	0	qi3 zao3 tan1 hei1
 起步	0	qi3 bu4
+起步价	0	qi3 bu4 jia4
 起死回生	0	qi3 si3 hui2 sheng1
 起毛	0	qi3 mao2
 起泡	0	qi3 pao4
@@ -103065,6 +103468,7 @@ word 姐	0	w o r d jie3
 跟前	0	gen1 qian2
 跟前	0	gen1 qian5
 跟包	0	gen1 bao1
+跟团游	0	gen1 tuan2 you2
 跟屁股	0	gen1 pi4 gu5
 跟屁虫	0	gen1 pi4 chong2
 跟差	0	gen1 chai1
@@ -103178,7 +103582,6 @@ word 姐	0	w o r d jie3
 路数	0	lu4 shu4
 路旁	0	lu4 pang2
 路易	0	lu4 yi4
-路易·皮埃尔·阿尔都塞	0	lu4 yi4 · pi2 ai1 er3 · a1 er3 dou1 sai1
 路易威登	0	lu4 yi4 wei1 deng1
 路易斯	0	lu4 yi4 si1
 路易斯·伊纳西奥·卢拉·达席尔瓦	0	lu4 yi4 si1 · yi1 na4 xi1 ao4 · lu2 la1 · da2 xi2 er3 wa3
@@ -103247,6 +103650,7 @@ word 姐	0	w o r d jie3
 跳出火坑	0	tiao4 chu1 huo3 keng1
 跳出釜底进火坑	0	tiao4 chu1 fu3 di3 jin4 huo3 keng1
 跳动	0	tiao4 dong4
+跳大神	0	tiao4 da4 shen2
 跳弹	0	tiao4 dan4
 跳房子	0	tiao4 fang2 zi5
 跳挡	0	tiao4 dang3
@@ -103667,6 +104071,7 @@ word 姐	0	w o r d jie3
 身板	0	shen1 ban3
 身板儿	0	shen1 ban3 r5
 身正不怕影子斜	0	shen1 zheng4 bu4 pa4 ying3 zi5 xie2
+身历声	0	shen1 li4 sheng1
 身段	0	shen1 duan4
 身法	0	shen1 fa3
 身为	0	shen1 wei2
@@ -103753,6 +104158,7 @@ word 姐	0	w o r d jie3
 车到山前必有路	0	che1 dao4 shan1 qian2 bi4 you3 lu4
 车到山前必有路，船到桥头自然直	0	che1 dao4 shan1 qian2 bi4 you3 lu4 chuan2 dao4 qiao2 tou2 zi4 ran2 zhi2
 车到山前自有路	0	che1 dao4 shan1 qian2 zi4 you3 lu4
+车前	0	che1 qian2
 车前草	0	che1 qian2 cao3
 车型	0	che1 xing2
 车城	0	che1 cheng2
@@ -103993,7 +104399,6 @@ word 姐	0	w o r d jie3
 软件技术	0	ruan3 jian4 ji4 shu4
 软件系统	0	ruan3 jian4 xi4 tong3
 软件开发	0	ruan3 jian4 kai1 fa1
-软件开发人员	0	ruan3 jian4 kai1 fa1 ren2 yuan2
 软刀子	0	ruan3 dao1 zi5
 软包	0	ruan3 bao1
 软化	0	ruan3 hua4
@@ -104279,6 +104684,7 @@ word 姐	0	w o r d jie3
 辄	0	zhe2
 辆	0	liang4
 辎	0	zi1
+辎重	0	zi1 zhong4
 辉	0	hui1
 辉南	0	hui1 nan2
 辉南县	0	hui1 nan2 xian4
@@ -104329,6 +104735,7 @@ word 姐	0	w o r d jie3
 轮回	0	lun2 hui2
 轮奸	0	lun2 jian1
 轮子	0	lun2 zi5
+轮岗	0	lun2 gang3
 轮廓	0	lun2 kuo4
 轮廓线	0	lun2 kuo4 xian4
 轮廓鲜明	0	lun2 kuo4 xian1 ming2
@@ -104432,8 +104839,9 @@ word 姐	0	w o r d jie3
 辐条	0	fu2 tiao2
 辐照	0	fu2 zhao4
 輼	0	wen1
+辗	0	nian3
 辗	0	zhan3
-辗轧	0	zhan3 ya4
+辗轧	0	nian3 ya4
 辗转	0	zhan3 zhuan3
 辗转反侧	0	zhan3 zhuan3 fan3 ce4
 舆	0	yu2
@@ -104455,7 +104863,8 @@ word 姐	0	w o r d jie3
 辘	0	lu4
 辘辘	0	lu4 lu4
 辘轳	0	lu4 lu5
-轇	0	jiu1
+𫐖	0	jiao1
+𫐖𮝺	0	jiao1 ge2
 转	0	zhuai3
 转	0	zhuan3
 转	0	zhuan4
@@ -104529,7 +104938,6 @@ word 姐	0	w o r d jie3
 转托	0	zhuan3 tuo1
 转折	0	zhuan3 zhe2
 转折点	0	zhuan3 zhe2 dian3
-转抵	0	zhuan3 di3
 转捩	0	zhuan3 lie4
 转捩点	0	zhuan3 lie4 dian3
 转授	0	zhuan3 shou4
@@ -104563,6 +104971,7 @@ word 姐	0	w o r d jie3
 转发	0	zhuan3 fa1
 转盘	0	zhuan4 pan2
 转眼	0	zhuan3 yan3
+转眼之间	0	zhuan3 yan3 zhi1 jian1
 转眼便忘	0	zhuan3 yan3 bian4 wang4
 转眼即逝	0	zhuan3 yan3 ji2 shi4
 转瞬	0	zhuan3 shun4
@@ -104587,12 +104996,14 @@ word 姐	0	w o r d jie3
 转义字符	0	zhuan3 yi4 zi4 fu2
 转义序列	0	zhuan3 yi4 xu4 lie4
 转而	0	zhuan3 er2
+转职	0	zhuan3 zhi2
 转背	0	zhuan3 bei4
 转腰子	0	zhuan4 yao1 zi5
 转脸	0	zhuan3 lian3
 转船	0	zhuan3 chuan2
 转蛋	0	zhuan3 dan4
 转行	0	zhuan3 hang2
+转制	0	zhuan3 zhi4
 转角	0	zhuan3 jiao3
 转诊	0	zhuan3 zhen3
 转调	0	zhuan3 diao4
@@ -104653,7 +105064,7 @@ word 姐	0	w o r d jie3
 轑	0	lao3
 轒	0	fen2
 辚	0	lin2
-轕	0	ge2
+𮝺	0	ge2
 轖	0	se4
 𫐘	0	kan3
 𫐘轲	0	kan3 ke3
@@ -104771,6 +105182,7 @@ word 姐	0	w o r d jie3
 办法	0	ban4 fa3
 办理	0	ban4 li3
 办罪	0	ban4 zui4
+办证	0	ban4 zheng4
 办货	0	ban4 huo4
 办酒席	0	ban4 jiu3 xi2
 辨	0	bian4
@@ -105108,6 +105520,7 @@ word 姐	0	w o r d jie3
 迪士尼乐园	0	di2 shi4 ni2 le4 yuan2
 迪奥	0	di2 ao4
 迪厅	0	di2 ting1
+迪庆	0	di2 qing4
 迪庆州	0	di2 qing4 zhou1
 迪庆藏族自治州	0	di2 qing4 zang4 zu2 zi4 zhi4 zhou1
 迪戈·加西亚岛	0	di2 ge1 · jia1 xi1 ya4 dao3
@@ -105153,6 +105566,7 @@ word 姐	0	w o r d jie3
 述说	0	shu4 shuo1
 回	0	hui2
 回力镖	0	hui2 li4 biao1
+回圈	0	hui2 quan1
 回廊	0	hui2 lang2
 回旋	0	hui2 xuan2
 回旋加速器	0	hui2 xuan2 jia1 su4 qi4
@@ -105227,7 +105641,6 @@ word 姐	0	w o r d jie3
 迸	0	beng4
 迸流	0	beng4 liu2
 迸发	0	beng4 fa1
-迸发出	0	beng4 fa1 chu1
 迸裂	0	beng4 lie4
 迹	0	ji4
 迺	0	nai3
@@ -105300,6 +105713,7 @@ word 姐	0	w o r d jie3
 追诉时效	0	zhui1 su4 shi2 xiao4
 追询	0	zhui1 xun2
 追认	0	zhui1 ren4
+追谥	0	zhui1 shi4
 追责	0	zhui1 ze2
 追购	0	zhui1 gou4
 追赠	0	zhui1 zeng4
@@ -105521,6 +105935,7 @@ word 姐	0	w o r d jie3
 逆运	0	ni4 yun4
 逆运算	0	ni4 yun4 suan4
 逆风	0	ni4 feng1
+逆鳞	0	ni4 lin2
 逆龄	0	ni4 ling2
 迥	0	jiong3
 逋	0	bu1
@@ -105676,7 +106091,6 @@ word 姐	0	w o r d jie3
 通	0	tong4
 通乳	0	tong1 ru3
 通人	0	tong1 ren2
-通布图	0	tong1 bu4 tu2
 通例	0	tong1 li4
 通便	0	tong1 bian4
 通俗	0	tong1 su2
@@ -105720,6 +106134,7 @@ word 姐	0	w o r d jie3
 通报	0	tong1 bao4
 通夜	0	tong1 ye4
 通天彻地	0	tong1 tian1 che4 di4
+通太	0	tong1 tai4
 通奸	0	tong1 jian1
 通婚	0	tong1 hun1
 通学	0	tong1 xue2
@@ -105730,6 +106145,7 @@ word 姐	0	w o r d jie3
 通川区	0	tong1 chuan1 qu1
 通州	0	tong1 zhou1
 通州区	0	tong1 zhou1 qu1
+通布图	0	tong1 bu4 tu2
 通常	0	tong1 chang2
 通往	0	tong1 wang3
 通彻	0	tong1 che4
@@ -105755,6 +106171,7 @@ word 姐	0	w o r d jie3
 通江县	0	tong1 jiang1 xian4
 通河	0	tong1 he2
 通河县	0	tong1 he2 xian4
+通泰	0	tong1 tai4
 通海	0	tong1 hai3
 通海县	0	tong1 hai3 xian4
 通渭	0	tong1 wei4
@@ -106102,6 +106519,7 @@ word 姐	0	w o r d jie3
 连铸	0	lian2 zhu4
 连镳并轸	0	lian2 biao1 bing4 zhen3
 连长	0	lian2 zhang3
+连阴雨	0	lian2 yin1 yu3
 连队	0	lian2 dui4
 连云	0	lian2 yun2
 连云区	0	lian2 yun2 qu1
@@ -106118,7 +106536,7 @@ word 姐	0	w o r d jie3
 连体双胞胎	0	lian2 ti3 shuang1 bao1 tai1
 连麦	0	lian2 mai4
 回	0	hui2
-奔	0	ben1
+奔	0	ben4
 逭	0	huan4
 逮	0	dai3
 逮	0	dai4
@@ -106138,6 +106556,7 @@ word 姐	0	w o r d jie3
 周天	0	zhou1 tian1
 周年	0	zhou1 nian2
 周径	0	zhou1 jing4
+周日	0	zhou1 ri4
 周日	0	zhou1 ri4
 周期	0	zhou1 qi1
 周期性	0	zhou1 qi1 xing4
@@ -106179,6 +106598,7 @@ word 姐	0	w o r d jie3
 进学	0	jin4 xue2
 进宫	0	jin4 gong1
 进展	0	jin4 zhan3
+进帐	0	jin4 zhang4
 进度	0	jin4 du4
 进度条	0	jin4 du4 tiao2
 进度表	0	jin4 du4 biao3
@@ -106208,6 +106628,7 @@ word 姐	0	w o r d jie3
 进行曲	0	jin4 xing2 qu3
 进补	0	jin4 bu3
 进袭	0	jin4 xi2
+进见	0	jin4 jian4
 进言	0	jin4 yan2
 进贡	0	jin4 gong4
 进货	0	jin4 huo4
@@ -106273,6 +106694,7 @@ word 姐	0	w o r d jie3
 逼奸	0	bi1 jian1
 逼宫	0	bi1 gong1
 逼将	0	bi1 jiang1
+逼尖	0	bi1 jian1
 逼格	0	bi1 ge2
 逼死	0	bi1 si3
 逼真	0	bi1 zhen1
@@ -106356,8 +106778,6 @@ word 姐	0	w o r d jie3
 游手	0	you2 shou3
 游手好闲	0	you2 shou3 hao4 xian2
 游抏	0	you2 wan2
-游击战	0	you2 ji1 zhan4
-游击队	0	you2 ji1 dui4
 游星	0	you2 xing1
 游春	0	you2 chun1
 游乐	0	you2 le4
@@ -106602,6 +107022,7 @@ word 姐	0	w o r d jie3
 过站大厅	0	guo4 zhan4 da4 ting1
 过节	0	guo4 jie2
 过节儿	0	guo4 jie2 r5
+过筛	0	guo4 shai1
 过细	0	guo4 xi4
 过继	0	guo4 ji4
 过而能改，善莫大焉	0	guo4 er2 neng2 gai3 shan4 mo4 da4 yan1
@@ -106783,7 +107204,6 @@ word 姐	0	w o r d jie3
 达尔文主义	0	da2 er3 wen2 zhu3 yi4
 达尔文学说	0	da2 er3 wen2 xue2 shuo1
 达尔文港	0	da2 er3 wen2 gang3
-达尔福尔	0	da2 er3 fu2 er3
 达尔罕茂明安联合旗	0	da2 er3 han3 mao4 ming2 an1 lian2 he2 qi2
 达尔马提亚	0	da2 er3 ma3 ti2 ya4
 达特茅斯	0	da2 te4 mao2 si1
@@ -106860,6 +107280,7 @@ word 姐	0	w o r d jie3
 遥控车	0	yao2 kong4 che1
 遥望	0	yao2 wang4
 遥测	0	yao2 ce4
+遥祝	0	yao2 zhu4
 遥观	0	yao2 guan1
 遥遥	0	yao2 yao2
 遥遥无期	0	yao2 yao2 wu2 qi1
@@ -107030,6 +107451,7 @@ word 姐	0	w o r d jie3
 适温	0	shi4 wen1
 适用	0	shi4 yong4
 适当	0	shi4 dang4
+适老化	0	shi4 lao3 hua4
 适者生存	0	shi4 zhe3 sheng1 cun2
 适航	0	shi4 hang2
 适逢	0	shi4 feng2
@@ -107202,7 +107624,6 @@ word 姐	0	w o r d jie3
 遗墨	0	yi2 mo4
 遗失	0	yi2 shi1
 遗妻	0	yi2 qi1
-遗妻弃子	0	yi2 qi1 qi4 zi3
 遗孀	0	yi2 shuang1
 遗存	0	yi2 cun2
 遗孤	0	yi2 gu1
@@ -107333,7 +107754,7 @@ word 姐	0	w o r d jie3
 迈克尔	0	mai4 ke4 er3
 迈克尔·杰克逊	0	mai4 ke4 er3 · jie2 ke4 xun4
 迈克尔·克莱顿	0	mai4 ke4 er3 · ke4 lai2 dun4
-迈克尔·乔丹	0	mai4 ke4 er3 · qiao2 dan1
+迈克尔·乔丹	0	mai4 ke4 er3 qiao2 dan1
 迈入	0	mai4 ru4
 迈凯伊	0	mai4 kai3 yi1
 迈凯轮	0	mai4 kai3 lun2
@@ -107626,7 +108047,6 @@ word 姐	0	w o r d jie3
 郁	0	yu4
 郁	0	yu4
 郁达夫	0	yu4 da2 fu1
-郁金香	0	yu4 jin1 xiang1
 郃	0	he2
 郄	0	qie4
 郄	0	xi4
@@ -107710,6 +108130,7 @@ word 姐	0	w o r d jie3
 部首编排法	0	bu4 shou3 bian1 pai2 fa3
 郪	0	qi1
 郫	0	pi2
+郫县	0	pi2 xian4
 郭	0	guo1
 郭	0	guo1
 郭台铭	0	guo1 tai2 ming2
@@ -107784,6 +108205,7 @@ word 姐	0	w o r d jie3
 都匀市	0	du1 yun2 shi4
 都卜勒	0	dou1 bu3 le4
 都城	0	du1 cheng2
+都察院	0	du1 cha2 yuan4
 都尉	0	du1 wei4
 都市	0	du1 shi4
 都市传奇	0	du1 shi4 chuan2 qi2
@@ -108062,7 +108484,6 @@ word 姐	0	w o r d jie3
 配售	0	pei4 shou4
 配型	0	pei4 xing2
 配套	0	pei4 tao4
-配套完善	0	pei4 tao4 wan2 shan4
 配子	0	pei4 zi3
 配对	0	pei4 dui4
 配对儿	0	pei4 dui4 r5
@@ -108075,6 +108496,7 @@ word 姐	0	w o r d jie3
 配方法	0	pei4 fang1 fa3
 配有	0	pei4 you3
 配乐	0	pei4 yue4
+配比	0	pei4 bi3
 配用	0	pei4 yong4
 配发	0	pei4 fa1
 配眼镜	0	pei4 yan3 jing4
@@ -108097,8 +108519,12 @@ word 姐	0	w o r d jie3
 配送地址	0	pei4 song4 di4 zhi3
 配送者	0	pei4 song4 zhe3
 配速	0	pei4 su4
+配速员	0	pei4 su4 yuan2
 配重	0	pei4 zhong4
 配销	0	pei4 xiao1
+配镜	0	pei4 jing4
+配镜人员	0	pei4 jing4 ren2 yuan2
+配镜师	0	pei4 jing4 shi1
 配钥匙	0	pei4 yao4 shi5
 配电器	0	pei4 dian4 qi4
 配电柜	0	pei4 dian4 gui4
@@ -108343,6 +108769,7 @@ word 姐	0	w o r d jie3
 酸甜苦辣	0	suan1 tian2 ku3 la4
 酸疼	0	suan1 teng2
 酸痛	0	suan1 tong4
+酸种	0	suan1 zhong3
 酸莓	0	suan1 mei2
 酸菜	0	suan1 cai4
 酸葡萄	0	suan1 pu2 tao5
@@ -108402,6 +108829,7 @@ word 姐	0	w o r d jie3
 醋意	0	cu4 yi4
 醋栗	0	cu4 li4
 醋海生波	0	cu4 hai3 sheng1 bo1
+醋磺内酯钾	0	cu4 huang2 nei4 zhi3 jia3
 醋坛子	0	cu4 tan2 zi5
 醋酸	0	cu4 suan1
 醋酸乙酯	0	cu4 suan1 yi3 zhi3
@@ -108581,6 +109009,7 @@ word 姐	0	w o r d jie3
 释名	0	shi4 ming2
 释回	0	shi4 hui2
 释嫌	0	shi4 xian2
+释家	0	shi4 jia1
 释尊	0	shi4 zun1
 释念	0	shi4 nian4
 释怀	0	shi4 huai2
@@ -108658,12 +109087,14 @@ word 姐	0	w o r d jie3
 重兵	0	zhong4 bing1
 重典	0	zhong4 dian3
 重出江湖	0	chong2 chu1 jiang1 hu2
+重刊	0	chong2 kan1
 重判	0	zhong4 pan4
 重利	0	zhong4 li4
 重利轻义	0	zhong4 li4 qing1 yi4
 重创	0	zhong4 chuang1
 重剑	0	zhong4 jian4
 重力	0	zhong4 li4
+重力加速度	0	zhong4 li4 jia1 su4 du4
 重力场	0	zhong4 li4 chang3
 重力异常	0	zhong4 li4 yi4 chang2
 重午	0	chong2 wu3
@@ -109507,12 +109938,15 @@ word 姐	0	w o r d jie3
 钾盐	0	jia3 yan2
 鉄	0	tie3
 鉄	0	zhi4
+巨	0	ju4
 钜	0	ju4
+巨子	0	ju4 zi3
 钜子	0	ju4 zi3
+巨惠	0	ju4 hui4
 钜惠	0	ju4 hui4
-钜款	0	ju4 kuan3
-钜防	0	ju4 fang2
-钜额	0	ju4 e2
+巨款	0	ju4 kuan3
+巨防	0	ju4 fang2
+巨额	0	ju4 e2
 鉆	0	zhen1
 铊	0	ta1
 铉	0	xuan4
@@ -109522,6 +109956,7 @@ word 姐	0	w o r d jie3
 铋	0	bi4
 鉏	0	chu2
 铂	0	bo2
+铂金	0	bo2 jin1
 钷	0	po3
 钳	0	qian2
 钳住	0	qian2 zhu4
@@ -109701,6 +110136,7 @@ word 姐	0	w o r d jie3
 铜梁区	0	tong2 liang2 qu1
 铜水	0	tong2 shui3
 铜墙铁壁	0	tong2 qiang2 tie3 bi4
+铜版	0	tong2 ban3
 铜牌	0	tong2 pai2
 铜环	0	tong2 huan2
 铜矿	0	tong2 kuang4
@@ -109813,7 +110249,6 @@ word 姐	0	w o r d jie3
 销铄	0	xiao1 shuo4
 销魂	0	xiao1 hun2
 锈	0	xiu4
-锈蚀	0	xiu4 shi2
 锑	0	ti1
 锉	0	cuo4
 锉刀	0	cuo4 dao1
@@ -110042,7 +110477,8 @@ word 姐	0	w o r d jie3
 锱	0	zi1
 锱铢必较	0	zi1 zhu1 bi4 jiao4
 铮	0	zheng1
-铮亮	0	zheng1 liang4
+铮	0	zheng4
+铮亮	0	zheng4 liang4
 铮铮铁汉	0	zheng1 zheng1 tie3 han4
 铮铮铁骨	0	zheng1 zheng1 tie3 gu3
 锛	0	ben1
@@ -110218,6 +110654,7 @@ word 姐	0	w o r d jie3
 锅巴	0	guo1 ba1
 锅底	0	guo1 di3
 锅灶	0	guo1 zao4
+锅烧意面	0	guo1 shao1 yi4 mian4
 锅炉	0	guo1 lu2
 锅盔	0	guo1 kui1
 锅碗瓢盆	0	guo1 wan3 piao2 pen2
@@ -110322,6 +110759,7 @@ word 姐	0	w o r d jie3
 锁钥	0	suo3 yue4
 锁门	0	suo3 men2
 锁闩	0	suo3 shuan1
+锁头	0	suo3 tou5
 锁骨	0	suo3 gu3
 枪	0	qiang1
 镉	0	ge2
@@ -110389,7 +110827,6 @@ word 姐	0	w o r d jie3
 镇流器	0	zhen4 liu2 qi4
 镇海	0	zhen4 hai3
 镇海区	0	zhen4 hai3 qu1
-镇源县	0	zhen4 yuan2 xian4
 镇痉剂	0	zhen4 jing4 ji4
 镇痛	0	zhen4 tong4
 镇痛剂	0	zhen4 tong4 ji4
@@ -110508,8 +110945,8 @@ word 姐	0	w o r d jie3
 锈胸蓝姬鹟	0	xiu4 xiong1 lan2 ji1 weng1
 锈腹短翅鸫	0	xiu4 fu4 duan3 chi4 dong1
 锈脸钩嘴鹛	0	xiu4 lian3 gou1 zui3 mei2
+锈蚀	0	xiu4 shi2
 锈迹	0	xiu4 ji4
-锈铁	0	xiu4 tie3
 锈额斑翅鹛	0	xiu4 e2 ban1 chi4 mei2
 鏾	0	san3
 铙	0	nao2
@@ -110731,13 +111168,13 @@ word 姐	0	w o r d jie3
 铸铁	0	zhu4 tie3
 鑅	0	heng2
 镬	0	huo4
+镬气	0	huo4 qi4
 镔	0	bin1
 鑐	0	xu1
 鉴	0	jian4
 鉴价	0	jian4 jia4
 鉴别	0	jian4 bie2
 鉴定	0	jian4 ding4
-鉴权	0	jian4 quan2
 鉴证	0	jian4 zheng4
 鉴识	0	jian4 shi2
 鉴赏	0	jian4 shang3
@@ -110748,6 +111185,7 @@ word 姐	0	w o r d jie3
 鉴往知来	0	jian4 wang3 zhi1 lai2
 鉴戒	0	jian4 jie4
 鉴于	0	jian4 yu2
+鉴权	0	jian4 quan2
 鉴此	0	jian4 ci3
 鉴真	0	jian4 zhen1
 鉴真和尚	0	jian4 zhen1 he2 shang5
@@ -110837,6 +111275,8 @@ word 姐	0	w o r d jie3
 凿岩	0	zao2 yan2
 凿岩机	0	zao2 yan2 ji1
 凿枘	0	zao2 rui4
+凿死卯子	0	zao2 si3 mao3 zi5
+凿死铆子	0	zao2 si3 mao3 zi5
 凿沉	0	zao2 chen2
 凿石场	0	zao2 shi2 chang3
 凿空	0	zao2 kong1
@@ -110895,6 +111335,7 @@ word 姐	0	w o r d jie3
 长宁	0	chang2 ning2
 长宁区	0	chang2 ning2 qu1
 长宁县	0	chang2 ning2 xian4
+长宽	0	chang2 kuan1
 长尾	0	chang2 wei3
 长尾地鸫	0	chang2 wei3 di4 dong1
 长尾夜鹰	0	chang2 wei3 ye4 ying1
@@ -110947,6 +111388,7 @@ word 姐	0	w o r d jie3
 长期共存	0	chang2 qi1 gong4 cun2
 长期性	0	chang2 qi1 xing4
 长期饭票	0	chang2 qi1 fan4 piao4
+长板	0	chang2 ban3
 长柄	0	chang2 bing3
 长柄勺子	0	chang2 bing3 shao2 zi5
 长柄大镰刀	0	chang2 bing3 da4 lian2 dao1
@@ -111046,6 +111488,7 @@ word 姐	0	w o r d jie3
 长肉	0	zhang3 rou4
 长脚秧鸡	0	chang2 jiao3 yang1 ji1
 长臂猿	0	chang2 bi4 yuan2
+长脸	0	zhang3 lian3
 长至	0	chang2 zhi4
 长兴	0	chang2 xing1
 长兴县	0	chang2 xing1 xian4
@@ -111089,7 +111532,6 @@ word 姐	0	w o r d jie3
 长辔远驭	0	chang2 pei4 yuan3 yu4
 长途	0	chang2 tu2
 长途汽车	0	chang2 tu2 qi4 che1
-长途网路	0	chang2 tu2 wang3 lu4
 长途话费	0	chang2 tu2 hua4 fei4
 长途跋涉	0	chang2 tu2 ba2 she4
 长途车	0	chang2 tu2 che1
@@ -111101,6 +111543,7 @@ word 姐	0	w o r d jie3
 长野	0	chang2 ye3
 长野县	0	chang2 ye3 xian4
 长钉	0	chang2 ding4
+长针	0	chang2 zhen1
 长阳土家族自治县	0	chang2 yang2 tu3 jia1 zu2 zi4 zhi4 xian4
 长阳县	0	chang2 yang2 xian4
 长队	0	chang2 dui4
@@ -111192,6 +111635,7 @@ word 姐	0	w o r d jie3
 门卫	0	men2 wei4
 门诊	0	men2 zhen3
 门诊室	0	men2 zhen3 shi4
+门诊部	0	men2 zhen3 bu4
 门路	0	men2 lu4
 门道	0	men2 dao4
 门道	0	men2 dao5
@@ -111288,6 +111732,7 @@ word 姐	0	w o r d jie3
 闭子集	0	bi4 zi3 ji2
 闭幕	0	bi4 mu4
 闭幕式	0	bi4 mu4 shi4
+闭幕词	0	bi4 mu4 ci2
 闭会	0	bi4 hui4
 闭会祈祷	0	bi4 hui4 qi2 dao3
 闭月羞花	0	bi4 yue4 xiu1 hua1
@@ -111406,6 +111851,7 @@ word 姐	0	w o r d jie3
 开平	0	kai1 ping2
 开平区	0	kai1 ping2 qu1
 开平市	0	kai1 ping2 shi4
+开年	0	kai1 nian2
 开店	0	kai1 dian4
 开庭	0	kai1 ting2
 开弓不放箭	0	kai1 gong1 bu4 fang4 jian4
@@ -111505,10 +111951,8 @@ word 姐	0	w o r d jie3
 开发区	0	kai1 fa1 qu1
 开发周期	0	kai1 fa1 zhou1 qi1
 开发商	0	kai1 fa1 shang1
-开发环境	0	kai1 fa1 huan2 jing4
 开发者	0	kai1 fa1 zhe3
 开发周期	0	kai1 fa1 zhou1 qi1
-开发过程	0	kai1 fa1 guo4 cheng2
 开发银行	0	kai1 fa1 yin2 hang2
 开皌	0	kai1 mo4
 开盒	0	kai1 he2
@@ -111759,6 +112203,7 @@ word 姐	0	w o r d jie3
 哄	0	hong4
 闺	0	gui1
 闺女	0	gui1 nu5
+闺密	0	gui1 mi4
 闺情	0	gui1 qing2
 闺房	0	gui1 fang2
 闺秀	0	gui1 xiu4
@@ -111826,8 +112271,10 @@ word 姐	0	w o r d jie3
 阎君	0	yan2 jun1
 阎王	0	yan2 wang5
 阎王好见，小鬼难当	0	yan2 wang2 hao3 jian4 xiao3 gui3 nan2 dang1
+阎王殿	0	yan2 wang2 dian4
 阎王爷	0	yan2 wang2 ye2
 阎罗	0	yan2 luo2
+阎罗殿	0	yan2 luo2 dian4
 阎罗王	0	yan2 luo2 wang2
 阎老	0	yan2 lao3
 阎良	0	yan2 liang2
@@ -111932,6 +112379,7 @@ word 姐	0	w o r d jie3
 关系户	0	guan1 xi5 hu4
 关系网	0	guan1 xi5 wang3
 关停	0	guan1 ting2
+关内	0	guan1 nei4
 关公	0	guan1 gong1
 关公面前耍大刀	0	guan1 gong1 mian4 qian2 shua3 da4 dao1
 关切	0	guan1 qie4
@@ -112127,7 +112575,6 @@ word 姐	0	w o r d jie3
 防毒靴套	0	fang2 du2 xue1 tao4
 防水	0	fang2 shui3
 防汛	0	fang2 xun4
-防油溅网	0	fang2 you2 jian4 wang3
 防治	0	fang2 zhi4
 防波堤	0	fang2 bo1 di1
 防洪	0	fang2 hong2
@@ -112164,7 +112611,6 @@ word 姐	0	w o r d jie3
 防腐剂	0	fang2 fu3 ji4
 防艾	0	fang2 ai4
 防蚊液	0	fang2 wen2 ye4
-防血凝	0	fang2 xue4 ning2
 防卫	0	fang2 wei4
 防卫大臣	0	fang2 wei4 da4 chen2
 防卫武器	0	fang2 wei4 wu3 qi4
@@ -112188,6 +112634,7 @@ word 姐	0	w o r d jie3
 阻	0	zu3
 阻值	0	zu3 zhi2
 阻力	0	zu3 li4
+阻吓	0	zu3 he4
 阻塞	0	zu3 se4
 阻尼	0	zu3 ni2
 阻差办公	0	zu3 chai1 ban4 gong1
@@ -112223,7 +112670,7 @@ word 姐	0	w o r d jie3
 阿 Q	0	a1 q
 阿 Q 正传	0	a1 q zheng4 zhuan4
 阿三	0	a1 san1
-阿不来提·阿不都热西提	0	a1 bu4 lai2 ti2 · a1 bu4 du1 re4 xi1 ti2
+阿不来提·阿不都热西提	0	a1 bu4 lai2 ti2 a1 bu4 du1 re4 xi1 ti2
 阿丹	0	a1 dan1
 阿亚图拉	0	a1 ya4 tu2 la1
 阿亨	0	a1 heng1
@@ -112300,7 +112747,6 @@ word 姐	0	w o r d jie3
 阿堵	0	e1 du3
 阿堵物	0	e1 du3 wu4
 阿塞拜疆	0	a1 sai4 bai4 jiang1
-阿塞拜疆人	0	a1 sai4 bai4 jiang1 ren2
 阿坝	0	a1 ba4
 阿坝州	0	a1 ba4 zhou1
 阿坝县	0	a1 ba4 xian4
@@ -112483,7 +112929,7 @@ word 姐	0	w o r d jie3
 阿尔盖达	0	a1 er3 gai4 da2
 阿尔萨斯	0	a1 er3 sa4 si1
 阿尔衮琴	0	a1 er3 gun3 qin2
-阿尔都塞	0	a1 er3 dou1 sai1
+阿尔都塞	0	a1 er3 du1 sai4
 阿片	0	a1 pian4
 阿物儿	0	a1 wu4 r5
 阿特拉斯	0	a1 te4 la1 si1
@@ -112522,7 +112968,6 @@ word 姐	0	w o r d jie3
 阿美族	0	a1 mei3 zu2
 阿耳忒弥斯	0	a1 er3 te4 mi2 si1
 阿耳戈斯	0	a1 er3 ge1 si1
-阿耳茨海默氏病	0	a1 er3 ci2 hai3 mo4 shi4 bing4
 阿联酋	0	a1 lian2 qiu2
 阿联酋航空	0	a1 lian2 qiu2 hang2 kong1
 阿联酋长国	0	a1 lian2 qiu2 zhang3 guo2
@@ -112654,6 +113099,7 @@ word 姐	0	w o r d jie3
 附注	0	fu4 zhu4
 附议	0	fu4 yi4
 附赘悬疣	0	fu4 zhui4 xuan2 you2
+附赠	0	fu4 zeng4
 附身	0	fu4 shen1
 附近	0	fu4 jin4
 附送	0	fu4 song4
@@ -112763,6 +113209,7 @@ word 姐	0	w o r d jie3
 陕飞集团	0	shan3 fei1 ji2 tuan2
 升	0	sheng1
 陟	0	zhi4
+陟罚臧否	0	zhi4 fa2 zang1 pi3
 陡	0	dou3
 陡削	0	dou3 xiao1
 陡坡	0	dou3 po1
@@ -113107,7 +113554,9 @@ word 姐	0	w o r d jie3
 陆川	0	lu4 chuan1
 陆川县	0	lu4 chuan1 xian4
 陆征祥	0	lu4 zheng1 xiang2
+陆战	0	lu4 zhan4
 陆战棋	0	lu4 zhan4 qi2
+陆战队	0	lu4 zhan4 dui4
 陆探微	0	lu4 tan4 wei1
 陆架	0	lu4 jia4
 陆栖	0	lu4 qi1
@@ -113910,6 +114359,7 @@ word 姐	0	w o r d jie3
 双人滑	0	shuang1 ren2 hua2
 双人舞	0	shuang1 ren2 wu3
 双人间	0	shuang1 ren2 jian1
+双休	0	shuang1 xiu1
 双休日	0	shuang1 xiu1 ri4
 双倍	0	shuang1 bei4
 双倍体	0	shuang1 bei4 ti3
@@ -113937,6 +114387,7 @@ word 姐	0	w o r d jie3
 双子	0	shuang1 zi3
 双子座	0	shuang1 zi3 zuo4
 双子叶	0	shuang1 zi3 ye4
+双孢蘑菇	0	shuang1 bao1 mo2 gu1
 双学位	0	shuang1 xue2 wei4
 双宿双飞	0	shuang1 su4 shuang1 fei1
 双射	0	shuang1 she4
@@ -113958,6 +114409,7 @@ word 姐	0	w o r d jie3
 双抽	0	shuang1 chou1
 双拐	0	shuang1 guai3
 双拼	0	shuang1 pin1
+双拥	0	shuang1 yong1
 双击	0	shuang1 ji1
 双摆	0	shuang1 bai3
 双数	0	shuang1 shu4
@@ -114162,6 +114614,7 @@ word 姐	0	w o r d jie3
 杂色山雀	0	za2 se4 shan1 que4
 杂草	0	za2 cao3
 杂处	0	za2 chu3
+杂讯	0	za2 xun4
 杂记	0	za2 ji4
 杂志	0	za2 zhi4
 杂志社	0	za2 zhi4 she4
@@ -114197,6 +114650,7 @@ word 姐	0	w o r d jie3
 鸡同鸭讲	0	ji1 tong2 ya1 jiang3
 鸡块	0	ji1 kuai4
 鸡奸	0	ji1 jian1
+鸡奸	0	ji1 jian1
 鸡娃	0	ji1 wa2
 鸡婆	0	ji1 po2
 鸡子儿	0	ji1 zi3 r5
@@ -114210,6 +114664,8 @@ word 姐	0	w o r d jie3
 鸡掰	0	ji1 bai1
 鸡东	0	ji1 dong1
 鸡东县	0	ji1 dong1 xian4
+鸡柳	0	ji1 liu3
+鸡柳条	0	ji1 liu3 tiao2
 鸡枞	0	ji1 zong1
 鸡母虫	0	ji1 mu3 chong2
 鸡毛	0	ji1 mao2
@@ -114269,17 +114725,16 @@ word 姐	0	w o r d jie3
 离合器	0	li2 he2 qi4
 离合板	0	li2 he2 ban3
 离合词	0	li2 he2 ci2
+离型纸	0	li2 xing2 zhi3
 离场	0	li2 chang3
 离境	0	li2 jing4
 离奇	0	li2 qi2
-离奇有趣	0	li2 qi2 you3 qu4
 离婚	0	li2 hun1
 离子	0	li2 zi3
 离子交换	0	li2 zi3 jiao1 huan4
 离子键	0	li2 zi3 jian4
 离宫	0	li2 gong1
 离家出走	0	li2 jia1 chu1 zou3
-离家别井	0	li2 jia1 bie2 jing3
 离岸	0	li2 an4
 离岸价	0	li2 an4 jia4
 离峰	0	li2 feng1
@@ -114347,6 +114802,7 @@ word 姐	0	w o r d jie3
 难吃	0	nan2 chi1
 难喝	0	nan2 he1
 难堪	0	nan2 kan1
+难字	0	nan2 zi4
 难度	0	nan2 du4
 难弹	0	nan2 tan2
 难得	0	nan2 de2
@@ -114532,6 +114988,7 @@ word 姐	0	w o r d jie3
 云梦县	0	yun2 meng4 xian4
 云室	0	yun2 shi4
 云层	0	yun2 ceng2
+云山雾罩	0	yun2 shan1 wu4 zhao4
 云冈石窟	0	yun2 gang1 shi2 ku1
 云岩	0	yun2 yan2
 云岩区	0	yun2 yan2 qu1
@@ -114546,6 +115003,7 @@ word 姐	0	w o r d jie3
 云气	0	yun2 qi4
 云沙	0	yun2 sha1
 云泥之别	0	yun2 ni2 zhi1 bie2
+云泥之差	0	yun2 ni2 zhi1 cha4
 云浮	0	yun2 fu2
 云浮市	0	yun2 fu2 shi4
 云消雾散	0	yun2 xiao1 wu4 san4
@@ -114840,6 +115298,7 @@ word 姐	0	w o r d jie3
 电影制作	0	dian4 ying3 zhi4 zuo4
 电影制片	0	dian4 ying3 zhi4 pian4
 电影院	0	dian4 ying3 yuan4
+电爱	0	dian4 ai4
 电感	0	dian4 gan3
 电扇	0	dian4 shan4
 电扶梯	0	dian4 fu2 ti1
@@ -114951,6 +115410,7 @@ word 姐	0	w o r d jie3
 电表	0	dian4 biao3
 电视	0	dian4 shi4
 电视剧	0	dian4 shi4 ju4
+电视台	0	dian4 shi4 tai2
 电视塔	0	dian4 shi4 ta3
 电视广播	0	dian4 shi4 guang3 bo1
 电视棒	0	dian4 shi4 bang4
@@ -114970,7 +115430,6 @@ word 姐	0	w o r d jie3
 电话区码	0	dian4 hua4 qu1 ma3
 电话卡	0	dian4 hua4 ka3
 电话会议	0	dian4 hua4 hui4 yi4
-电话服务	0	dian4 hua4 fu2 wu4
 电话本	0	dian4 hua4 ben3
 电话机	0	dian4 hua4 ji1
 电话簿	0	dian4 hua4 bu4
@@ -115126,7 +115585,6 @@ word 姐	0	w o r d jie3
 霍尔木兹海峡	0	huo4 er3 mu4 zi1 hai3 xia2
 霍尔滕	0	huo4 er3 teng2
 霍英东	0	huo4 ying1 dong1
-霍华得	0	huo4 hua2 de2
 霍华德	0	huo4 hua2 de2
 霍赛	0	huo4 sai4
 霍邱	0	huo4 qiu1
@@ -115191,10 +115649,10 @@ word 姐	0	w o r d jie3
 雾台乡	0	wu4 tai2 xiang1
 雾幔	0	wu4 man4
 雾气	0	wu4 qi4
+雾蒙蒙	0	wu4 meng2 meng2
 雾灯	0	wu4 deng1
 雾台乡	0	wu4 tai2 xiang1
 雾茫茫	0	wu4 mang2 mang2
-雾蒙蒙	0	wu4 meng2 meng2
 雾里看花	0	wu4 li3 kan4 hua1
 雾锁	0	wu4 suo3
 雾霾	0	wu4 mai2
@@ -115247,6 +115705,7 @@ word 姐	0	w o r d jie3
 露马脚	0	lou4 ma3 jiao3
 露骨	0	lu4 gu3
 露体	0	lu4 ti3
+露点	0	lou4 dian3
 露点	0	lu4 dian3
 露齿	0	lu4 chi3
 露齿而笑	0	lu4 chi3 er2 xiao4
@@ -115385,7 +115844,6 @@ word 姐	0	w o r d jie3
 青原区	0	qing1 yuan2 qu1
 青史	0	qing1 shi3
 青囊	0	qing1 nang2
-青囊经	0	qing1 nang2 jing1
 青城山	0	qing1 cheng2 shan1
 青堂瓦舍	0	qing1 tang2 wa3 she4
 青壮年	0	qing1 zhuang4 nian2
@@ -115468,6 +115926,7 @@ word 姐	0	w o r d jie3
 青秀区	0	qing1 xiu4 qu1
 青稞	0	qing1 ke1
 青筋	0	qing1 jin1
+青团	0	qing1 tuan2
 青红帮	0	qing1 hong2 bang1
 青红皂白	0	qing1 hong2 zao4 bai2
 青紫	0	qing1 zi3
@@ -115490,6 +115949,7 @@ word 姐	0	w o r d jie3
 青苔	0	qing1 tai2
 青荇	0	qing1 xing4
 青草	0	qing1 cao3
+青草茶	0	qing1 cao3 cha2
 青菜	0	qing1 cai4
 青葙	0	qing1 xiang1
 青葙子	0	qing1 xiang1 zi5
@@ -115730,9 +116190,9 @@ word 姐	0	w o r d jie3
 非诚勿扰	0	fei1 cheng2 wu4 rao3
 非议	0	fei1 yi4
 非负数	0	fei1 fu4 shu4
-非赢利组织	0	fei1 ying2 li4 zu3 zhi1
 非军事区	0	fei1 jun1 shi4 qu1
 非递推	0	fei1 di4 tui1
+非遗	0	fei1 yi2
 非遗传多型性	0	fei1 yi2 chuan2 duo1 xing2 xing4
 非都会郡	0	fei1 du1 hui4 jun4
 非金属	0	fei1 jin1 shu3
@@ -115905,6 +116365,7 @@ word 姐	0	w o r d jie3
 韧	0	ren4
 靮	0	di2
 靰	0	wu4
+靰鞡	0	wu4 la5
 韧	0	ren4
 靲	0	qin2
 靳	0	jin4
@@ -116075,7 +116536,6 @@ word 姐	0	w o r d jie3
 韎	0	mei4
 韩	0	han2
 韩世昌	0	han2 shi4 chang1
-韩亚	0	han2 ya4
 韩亚航空	0	han2 ya4 hang2 kong1
 韩亚龙	0	han2 ya4 long2
 韩信	0	han2 xin4
@@ -116137,6 +116597,7 @@ word 姐	0	w o r d jie3
 袜	0	wa4
 韭	0	jiu3
 韭菜	0	jiu3 cai4
+韭菜盒子	0	jiu3 cai4 he2 zi5
 韭菜花	0	jiu3 cai4 hua1
 韭	0	jiu3
 韱	0	xian1
@@ -116177,6 +116638,7 @@ word 姐	0	w o r d jie3
 音箱	0	yin1 xiang1
 音节	0	yin1 jie2
 音节体	0	yin1 jie2 ti3
+音系学	0	yin1 xi4 xue2
 音级	0	yin1 ji2
 音素	0	yin1 su4
 音义	0	yin1 yi4
@@ -116278,6 +116740,7 @@ word 姐	0	w o r d jie3
 顶住	0	ding3 zhu4
 顶冒	0	ding3 mao4
 顶刊	0	ding3 kan1
+顶刮刮	0	ding3 gua1 gua1
 顶包	0	ding3 bao1
 顶名冒姓	0	ding3 ming2 mao4 xing4
 顶呱呱	0	ding3 gua1 gua1
@@ -116335,8 +116798,6 @@ word 姐	0	w o r d jie3
 顶头	0	ding3 tou2
 顶头上司	0	ding3 tou2 shang4 si5
 顶风	0	ding3 feng1
-顶风停止	0	ding3 feng1 ting2 zhi3
-顶刮刮	0	ding3 gua1 gua1
 顶骨	0	ding3 gu3
 顶点	0	ding3 dian3
 顷	0	qing1
@@ -116617,6 +117078,7 @@ word 姐	0	w o r d jie3
 领导者	0	ling3 dao3 zhe3
 领导能力	0	ling3 dao3 neng2 li4
 领导集体	0	ling3 dao3 ji2 ti3
+领属	0	ling3 shu3
 领岩鹨	0	ling3 yan2 liu4
 领工	0	ling3 gong1
 领巾	0	ling3 jin1
@@ -117013,6 +117475,7 @@ word 姐	0	w o r d jie3
 类似	0	lei4 si4
 类似点	0	lei4 si4 dian3
 类别	0	lei4 bie2
+类同	0	lei4 tong2
 类器官	0	lei4 qi4 guan1
 类固醇	0	lei4 gu4 chun2
 类地行星	0	lei4 di4 xing2 xing1
@@ -117043,6 +117506,7 @@ word 姐	0	w o r d jie3
 顾不上	0	gu4 bu5 shang4
 顾不及	0	gu4 bu5 ji2
 顾不得	0	gu4 bu5 de5
+顾主	0	gu4 zhu3
 顾全	0	gu4 quan2
 顾全大局	0	gu4 quan2 da4 ju2
 顾及	0	gu4 ji2
@@ -117242,6 +117706,7 @@ word 姐	0	w o r d jie3
 风琴	0	feng1 qin2
 风生水起	0	feng1 sheng1 shui3 qi3
 风疹	0	feng1 zhen3
+风痱	0	feng1 fei4
 风瘫	0	feng1 tan1
 风穴	0	feng1 xue2
 风窗	0	feng1 chuang1
@@ -117251,6 +117716,7 @@ word 姐	0	w o r d jie3
 风箱	0	feng1 xiang1
 风范	0	feng1 fan4
 风纪	0	feng1 ji4
+风习	0	feng1 xi2
 风闻	0	feng1 wen2
 风声	0	feng1 sheng1
 风声紧	0	feng1 sheng1 jin3
@@ -117265,6 +117731,7 @@ word 姐	0	w o r d jie3
 风行	0	feng1 xing2
 风行一时	0	feng1 xing2 yi1 shi2
 风衣	0	feng1 yi1
+风评	0	feng1 ping2
 风调	0	feng1 diao4
 风调雨顺	0	feng1 tiao2 yu3 shun4
 风谕	0	feng1 yu4
@@ -117288,6 +117755,7 @@ word 姐	0	w o r d jie3
 风险管理	0	feng1 xian3 guan3 li3
 风雅	0	feng1 ya3
 风雨	0	feng1 yu3
+风雨交加	0	feng1 yu3 jiao1 jia1
 风雨同舟	0	feng1 yu3 tong2 zhou1
 风雨如晦	0	feng1 yu3 ru2 hui4
 风雨晦冥	0	feng1 yu3 hui4 ming2
@@ -117302,6 +117770,7 @@ word 姐	0	w o r d jie3
 风电	0	feng1 dian4
 风电厂	0	feng1 dian4 chang3
 风霜	0	feng1 shuang1
+风霜雨雪	0	feng1 shuang1 yu3 xue3
 风靡	0	feng1 mi3
 风靡一时	0	feng1 mi3 yi1 shi2
 风韵	0	feng1 yun4
@@ -117403,6 +117872,7 @@ word 姐	0	w o r d jie3
 飞快	0	fei1 kuai4
 飞手	0	fei1 shou3
 飞抓	0	fei1 zhua1
+飞拉达	0	fei1 la1 da2
 飞扬	0	fei1 yang2
 飞扬跋扈	0	fei1 yang2 ba2 hu4
 飞挝	0	fei1 zhua1
@@ -117466,7 +117936,6 @@ word 姐	0	w o r d jie3
 飞跃	0	fei1 yue4
 飞跃道	0	fei1 yue4 dao4
 飞身	0	fei1 shen1
-飞身翻腾	0	fei1 shen1 fan1 teng2
 飞车	0	fei1 che1
 飞轮	0	fei1 lun2
 飞轮海	0	fei1 lun2 hai3
@@ -117719,7 +118188,7 @@ word 姐	0	w o r d jie3
 饼铛	0	bing3 cheng1
 饼饵	0	bing3 er3
 餇	0	tong2
-餈	0	ci2
+糍	0	ci2
 饷	0	xiang3
 饷银	0	xiang3 yin2
 养	0	yang3
@@ -117810,9 +118279,11 @@ word 姐	0	w o r d jie3
 餐桌盐	0	can1 zhuo1 yan2
 餐牌	0	can1 pai2
 餐车	0	can1 che1
+餐酒馆	0	can1 jiu3 guan3
 餐食	0	can1 shi2
 餐饮	0	can1 yin3
 餐饮店	0	can1 yin3 dian4
+餐饮业	0	can1 yin3 ye4
 餐馆	0	can1 guan3
 餐点	0	can1 dian3
 饽	0	bo1
@@ -118027,6 +118498,8 @@ word 姐	0	w o r d jie3
 馕	0	nang2
 馕	0	nang3
 馕嗓	0	nang3 sang3
+馕坑	0	nang2 keng1
+馕饼	0	nang2 bing3
 首	0	shou3
 首付	0	shou3 fu4
 首付款	0	shou3 fu4 kuan3
@@ -118038,8 +118511,8 @@ word 姐	0	w o r d jie3
 首创	0	shou3 chuang4
 首创者	0	shou3 chuang4 zhe3
 首善之区	0	shou3 shan4 zhi1 qu1
+首善之地	0	shou3 shan4 zhi1 di4
 首字母	0	shou3 zi4 mu3
-首字母拚音词	0	shou3 zi4 mu3 pin1 yin1 ci2
 首字母缩写	0	shou3 zi4 mu3 suo1 xie3
 首季	0	shou3 ji4
 首家	0	shou3 jia1
@@ -118199,6 +118672,7 @@ word 姐	0	w o r d jie3
 香胰子	0	xiang1 yi2 zi5
 香脂	0	xiang1 zhi1
 香肠	0	xiang1 chang2
+香肠嘴	0	xiang1 chang2 zui3
 香腺	0	xiang1 xian4
 香艳	0	xiang1 yan4
 香花	0	xiang1 hua1
@@ -118304,7 +118778,6 @@ word 姐	0	w o r d jie3
 马列毛	0	ma3 lie4 mao2
 马利	0	ma3 li4
 马利亚	0	ma3 li4 ya4
-马利亚纳海沟	0	ma3 li4 ya4 na4 hai3 gou1
 马利亚纳群岛	0	ma3 li4 ya4 na4 qun2 dao3
 马利基	0	ma3 li4 ji1
 马利筋	0	ma3 li4 jin1
@@ -118312,6 +118785,7 @@ word 姐	0	w o r d jie3
 马刺	0	ma3 ci4
 马前卒	0	ma3 qian2 zu2
 马力	0	ma3 li4
+马加骆	0	ma3 jia1 luo4
 马勃菌	0	ma3 bo2 jun4
 马勒	0	ma3 le4
 马勺	0	ma3 shao2
@@ -118323,8 +118797,8 @@ word 姐	0	w o r d jie3
 马友友	0	ma3 you3 you3
 马口铁	0	ma3 kou3 tie3
 马可·奥勒留	0	ma3 ke3 · ao4 lei1 liu2
+马可·波罗	0	ma3 ke3 bo1 luo2
 马可尼	0	ma3 ke3 ni2
-马可波罗	0	ma3 ke3 bo1 luo2
 马可福音	0	ma3 ke3 fu2 yin1
 马哈拉施特拉邦	0	ma3 ha1 la1 shi1 te4 la1 bang1
 马哈迪	0	ma3 ha1 di2
@@ -118398,6 +118872,7 @@ word 姐	0	w o r d jie3
 马拉维	0	ma3 la1 wei2
 马拉开波	0	ma3 la1 kai1 bo1
 马拿瓜	0	ma3 na2 gua1
+马掌	0	ma3 zhang3
 马提尼克	0	ma3 ti2 ni2 ke4
 马斯克	0	ma3 si1 ke4
 马斯内	0	ma3 si1 nei4
@@ -118439,18 +118914,17 @@ word 姐	0	w o r d jie3
 马尔地夫	0	ma3 er3 di4 fu1
 马尔堡病毒	0	ma3 er3 bao3 bing4 du2
 马尔库斯	0	ma3 er3 ku4 si1
-马尔扎赫	0	ma3 er3 zha1 he4
 马尔斯	0	ma3 er3 si1
 马尔维纳斯群岛	0	ma3 er3 wei2 na4 si1 qun2 dao3
 马尔谷	0	ma3 er3 gu3
 马尔贝克	0	ma3 er3 bei4 ke4
-马尔贾	0	ma3 er3 jia3
 马尔马拉海	0	ma3 er3 ma3 la1 hai3
 马尔默	0	ma3 er3 mo4
 马王堆	0	ma3 wang2 dui1
 马球	0	ma3 qiu2
 马瑙斯	0	ma3 nao3 si1
 马甲	0	ma3 jia3
+马甲线	0	ma3 jia3 xian4
 马略卡	0	ma3 lue4 ka3
 马眼	0	ma3 yan3
 马祖	0	ma3 zu3
@@ -118572,6 +119046,7 @@ word 姐	0	w o r d jie3
 马黛茶	0	ma3 dai4 cha2
 马齿徒增	0	ma3 chi3 tu2 zeng1
 马齿苋	0	ma3 chi3 xian4
+马龙派	0	ma3 long2 pai4
 驭	0	yu4
 驭手	0	yu4 shou3
 驭气	0	yu4 qi4
@@ -118813,6 +119288,7 @@ word 姐	0	w o r d jie3
 骑警	0	qi2 jing3
 骑警队	0	qi2 jing3 dui4
 骑车	0	qi2 che1
+骑都尉	0	qi2 du1 wei4
 骑马	0	qi2 ma3
 骑马找马	0	qi2 ma3 zhao3 ma3
 骑马者	0	qi2 ma3 zhe3
@@ -118857,10 +119333,10 @@ word 姐	0	w o r d jie3
 腾出	0	teng2 chu1
 腾出手	0	teng2 chu1 shou3
 腾挪	0	teng2 nuo2
+腾格里	0	teng2 ge2 li3
 腾格里沙漠	0	teng2 ge2 li3 sha1 mo4
 腾空	0	teng2 kong1
 腾讯	0	teng2 xun4
-腾讯控股有限公司	0	teng2 xun4 kong4 gu3 you3 xian4 gong1 si1
 腾越	0	teng2 yue4
 腾飞	0	teng2 fei1
 腾腾	0	teng2 teng2
@@ -119103,6 +119579,7 @@ word 姐	0	w o r d jie3
 骊山	0	li2 shan1
 骊黄牝牡	0	li2 huang2 pin4 mu3
 骉	0	biao1
+骨	0	gu1
 骨	0	gu3
 骨刺	0	gu3 ci4
 骨刻	0	gu3 ke4
@@ -119244,6 +119721,7 @@ word 姐	0	w o r d jie3
 体力	0	ti3 li4
 体力劳动	0	ti3 li4 lao2 dong4
 体势	0	ti3 shi4
+体协	0	ti3 xie2
 体味	0	ti3 wei4
 体团	0	ti3 tuan2
 体型	0	ti3 xing2
@@ -119343,6 +119821,7 @@ word 姐	0	w o r d jie3
 髋骨	0	kuan1 gu3
 高	0	gao1
 高	0	gao1
+高䠷	0	gao1 tiao3
 高下	0	gao1 xia4
 高不可攀	0	gao1 bu4 ke3 pan1
 高不成低不就	0	gao1 bu4 cheng2 di1 bu4 jiu4
@@ -119488,6 +119967,8 @@ word 姐	0	w o r d jie3
 高抬	0	gao1 tai2
 高抬贵手	0	gao1 tai2 gui4 shou3
 高招	0	gao1 zhao1
+高挑	0	gao1 tiao3
+高挑子	0	gao1 tiao3 zi5
 高接梨	0	gao1 jie1 li2
 高扬	0	gao1 yang2
 高攀	0	gao1 pan1
@@ -119496,6 +119977,7 @@ word 姐	0	w o r d jie3
 高效率	0	gao1 xiao4 lu4
 高效能	0	gao1 xiao4 neng2
 高教	0	gao1 jiao4
+高教机	0	gao1 jiao4 ji1
 高敞	0	gao1 chang3
 高数	0	gao1 shu4
 高斯	0	gao1 si1
@@ -119716,6 +120198,7 @@ word 姐	0	w o r d jie3
 高音喇叭	0	gao1 yin1 la3 ba5
 高音部	0	gao1 yin1 bu4
 高头	0	gao1 tou5
+高头大马	0	gao1 tou2 da4 ma3
 高频	0	gao1 pin2
 高额	0	gao1 e2
 高风亮节	0	gao1 feng1 liang4 jie2
@@ -119957,6 +120440,7 @@ word 姐	0	w o r d jie3
 郁闷	0	yu4 men4
 郁江	0	yu4 jiang1
 郁结	0	yu4 jie2
+郁金香	0	yu4 jin1 xiang1
 郁郁不得志	0	yu4 yu4 bu4 de2 zhi4
 郁郁不乐	0	yu4 yu4 bu4 le4
 郁郁寡欢	0	yu4 yu4 gua3 huan1
@@ -120342,6 +120826,7 @@ word 姐	0	w o r d jie3
 鲜菜	0	xian1 cai4
 鲜血	0	xian1 xue4
 鲜血淋漓	0	xian1 xue4 lin2 li2
+鲜艳	0	xian1 yan4
 鲜货	0	xian1 huo4
 鲪	0	jun1
 𩾃	0	mian3
@@ -120360,6 +120845,7 @@ word 姐	0	w o r d jie3
 鲤城	0	li3 cheng2
 鲤城区	0	li3 cheng2 qu1
 鲤鱼	0	li3 yu2
+鲤鱼打挺	0	li3 yu2 da3 ting3
 鲤鱼旗	0	li3 yu2 qi2
 鲤鱼跳龙门	0	li3 yu2 tiao4 long2 men2
 鲨	0	sha1
@@ -120392,6 +120878,7 @@ word 姐	0	w o r d jie3
 鲸	0	jing1
 鲸波	0	jing1 bo1
 鲸目	0	jing1 mu4
+鲸落	0	jing1 luo4
 鲸豚	0	jing1 tun2
 鲸头鹳	0	jing1 tou2 guan4
 鲸鱼	0	jing1 yu2
@@ -120485,7 +120972,7 @@ word 姐	0	w o r d jie3
 鳖甲	0	bie1 jia3
 鳖裙	0	bie1 qun2
 鳖边	0	bie1 bian1
-鱎	0	jiao3
+𱇩	0	jiao3
 鱐	0	su4
 鳟	0	zun1
 鳟鱼	0	zun1 yu2
@@ -120726,7 +121213,6 @@ word 姐	0	w o r d jie3
 鸱甍	0	chi1 meng2
 鸱鸮	0	chi1 xiao1
 鴠	0	dan4
-鴢	0	you4
 鸪	0	gu1
 鴥	0	yu4
 鸯	0	yang1
@@ -120751,6 +121237,7 @@ word 姐	0	w o r d jie3
 鸻科	0	heng2 ke1
 䴕	0	lie4
 鸿	0	hong2
+鸿喜菇	0	hong2 xi3 gu1
 鸿图	0	hong2 tu2
 鸿图大计	0	hong2 tu2 da4 ji4
 鸿毛泰山	0	hong2 mao2 tai4 shan1
@@ -120890,7 +121377,7 @@ word 姐	0	w o r d jie3
 鹤庆县	0	he4 qing4 xian4
 鹤立鸡群	0	he4 li4 ji1 qun2
 鹤鹬	0	he4 yu4
-鶵	0	chu2
+𬸅	0	chu2
 鶸	0	ruo4
 鹠	0	liu2
 鹡	0	ji2
@@ -121053,6 +121540,7 @@ word 姐	0	w o r d jie3
 碱性金属	0	jian3 xing4 jin1 shu3
 碱斑	0	jian3 ban1
 碱水	0	jian3 shui3
+碱水面包	0	jian3 shui3 mian4 bao1
 碱腺	0	jian3 xian4
 碱荒	0	jian3 huang1
 碱金属	0	jian3 jin1 shu3
@@ -121231,6 +121719,7 @@ word 姐	0	w o r d jie3
 麦德林	0	mai4 de2 lin2
 麦德蒙	0	mai4 de2 meng2
 麦德龙	0	mai4 de2 long2
+麦提莎	0	mai4 ti2 sha1
 麦枷	0	mai4 jia1
 麦氏贼鸥	0	mai4 shi4 zei2 ou1
 麦淇淋	0	mai4 qi2 lin2
@@ -121271,6 +121760,7 @@ word 姐	0	w o r d jie3
 麦阿密	0	mai4 a1 mi4
 麦霸	0	mai4 ba4
 麦香堡	0	mai4 xiang1 bao3
+麦丽素	0	mai4 li4 su4
 麦麸	0	mai4 fu1
 麸	0	fu1
 麸皮	0	fu1 pi2
@@ -121992,6 +122482,7 @@ word 姐	0	w o r d jie3
 黑颏穗鹛	0	hei1 ke1 sui4 mei2
 黑头噪鸦	0	hei1 tou2 zao4 ya1
 黑头奇鹛	0	hei1 tou2 qi2 mei2
+黑头文鸟	0	hei1 tou2 wen2 niao3
 黑头白鹮	0	hei1 tou2 bai2 huan2
 黑头穗鹛	0	hei1 tou2 sui4 mei2
 黑头蜡嘴雀	0	hei1 tou2 la4 zui3 que4
@@ -122119,6 +122610,7 @@ word 姐	0	w o r d jie3
 点对点	0	dian3 dui4 dian3
 点对点加密	0	dian3 dui4 dian3 jia1 mi4
 点心	0	dian3 xin5
+点按	0	dian3 an4
 点拨	0	dian3 bo1
 点播	0	dian3 bo1
 点击	0	dian3 ji1
@@ -122183,6 +122675,7 @@ word 姐	0	w o r d jie3
 点金术	0	dian3 jin1 shu4
 点钟	0	dian3 zhong1
 点铁成金	0	dian3 tie3 cheng2 jin1
+点开	0	dian3 kai1
 点阅率	0	dian3 yue4 lu4
 点阵	0	dian3 zhen4
 点阵字体	0	dian3 zhen4 zi4 ti3
@@ -122835,5 +123328,6 @@ word 姐	0	w o r d jie3
 𬭶	0	hei1
 𬭳	0	xi3
 𱅒	0	cheng3
+𩵚魠鱼	0	tu3 tuo1 yu2
 𰻝	0	biang2
 𰻝𰻝面	0	biang2 biang2 mian4
