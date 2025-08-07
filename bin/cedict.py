@@ -26,10 +26,11 @@ def parse(path):
                 if row == "":
                     continue
                 items = [trim(x) for x in re.split(pattern, row) if x]
-                hant = whitespace(items[0])
-                hans = whitespace(items[1])
+                counter = len(items)
+                hant = whitespace(items[0]) if counter >= 1 else ''
+                hans = whitespace(items[1]) if counter >= 2 else ''
 
-                pinyin = (items[2] or '').lower()
+                pinyin = items[2].lower() if counter >= 3 else ''
                 # ü (u:) -> u
                 pinyin = pinyin.replace("u:", "u")
                 # hyphen, syllable
@@ -40,7 +41,7 @@ def parse(path):
                 pinyin = pinyin.replace("・", " ")
                 # pinyin2 = strip_accents(pinyin, True)
 
-                glosses = [trim(x) for x in re.split(r';', items[3]) if x]
+                glosses = [trim(x) for x in re.split(r';', items[3]) if x] if counter >= 4 else []
                 # print(f"=> {row}")
                 item = {
                     "hant": hant,

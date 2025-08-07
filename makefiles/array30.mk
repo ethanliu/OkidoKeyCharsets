@@ -125,6 +125,8 @@ $(TABLE_DIR)/array30-OkidoKey-phrase.cin: $(TMP_DIR)/array30-OkidoKey.base \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '5r /dev/stdin' $@
 	@TEXT_TO_INSERT="$$(echo "$$TEXT_PHRASE")"; \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '7r /dev/stdin' $@
+	@sed -i '' 's/^%ename array30/%ename array30-phrase/' $@
+	@sed -i '' 's/^%cname 行列30/%cname 行列30(詞庫版)/' $@
 	# Append phrase content
 	@sed -i '' 's/^%chardef end/ /' $@ # Remove original end marker
 	@echo "# Begin of phrase\n" >> $@
@@ -144,6 +146,8 @@ $(TABLE_DIR)/array30-OkidoKey-big-phrase.cin: $(TMP_DIR)/array30-OkidoKey-big.ba
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '5r /dev/stdin' $@
 	@TEXT_TO_INSERT="$$(echo "$$TEXT_PHRASE")"; \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '7r /dev/stdin' $@
+	@sed -i '' 's/^%ename array30-big/%ename array30-big-phrase/' $@
+	@sed -i '' 's/^%cname 行列30-大字集/%cname 行列30-大字集(詞庫版)/' $@
 	# Append phrase content
 	@sed -i '' 's/^%chardef end/ /' $@ # Remove original end marker
 	@echo "# Begin of phrase\n" >> $@
