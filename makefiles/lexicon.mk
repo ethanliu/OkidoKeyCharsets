@@ -15,13 +15,13 @@ init:
 	@echo "Build lexicon"
 	@mkdir -p $(BUILD_QUEUE_DIR)/lexicon
 
-build: init cedict moe array jieba jyutping mcbpmf moe2
+build: init cedict moe jieba jyutping mcbpmf moe2
 
 json:
 	@$(MISE_RUN) resource.py -c lexicon -o $(BUILD_QUEUE_DIR)/Lexicon.json
 
-array:
-	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/array30.csv -o $(BUILD_QUEUE_DIR)/lexicon/array30.csv.db
+# array:
+# 	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/array30.csv -o $(BUILD_QUEUE_DIR)/lexicon/array30.csv.db
 
 cedict:
 	@$(MISE_RUN) lexicon2db.py -i $(LEXICON_DIR)/cedict-hant.csv -o $(BUILD_QUEUE_DIR)/lexicon/cedict-hant.csv.db
