@@ -15,7 +15,7 @@ usage:
 
 pull:
 	@echo "Upstream pulling..."
-	@for path in array10 ghcm jieba rime-cantonese McBopomofo cin-tables; do \
+	@for path in array10 array30 ghcm jieba rime-cantonese McBopomofo cin-tables; do \
 		echo "🤝 $${path}"; \
 		cd "$(RAWDATA_DIR)/$${path}" && git pull --rebase --autostash && cd ../..; \
 	done;
@@ -39,18 +39,18 @@ array10:
 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array10/OpenVanilla/array10c*.cin))
 	@cp ${file} $(TABLE_DIR)/array10c.cin
 
-# array30:
-# 	@echo "Patching array30..."
-# 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array30*.cin))
-# 	@cp ${file} $(TABLE_DIR)/array30.cin
-# 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array-special*.cin))
-# 	@cp ${file} $(TABLE_DIR)/array-special.cin
-# 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array-shortcode*.cin))
-# 	@cp ${file} $(TABLE_DIR)/array-shortcode.cin
-# 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-regular*.cin))
-# 	@cp ${file} $(TABLE_DIR)/array30-OkidoKey.cin
-# 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-big*.cin))
-# 	@cp ${file} $(TABLE_DIR)/array30-OkidoKey-big.cin
+array30:
+	@echo "Patching array30..."
+	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array30*.cin))
+	@cp ${file} $(TABLE_DIR)/array30.cin
+	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array-special*.cin))
+	@cp ${file} $(TABLE_DIR)/array-special.cin
+	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OpenVanilla/array-shortcode*.cin))
+	@cp ${file} $(TABLE_DIR)/array-shortcode.cin
+	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-regular*.cin))
+	@cp ${file} $(TABLE_DIR)/array30-OkidoKey.cin
+	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-big*.cin))
+	@cp ${file} $(TABLE_DIR)/array30-OkidoKey-big.cin
 
 # 	@TEXT="#\n# 此表格包含簡碼 (%%shortcode) 及特別碼 (%%special)\n#" ; \
 # 	printf "$$TEXT\n" | sed -i '' '5r /dev/stdin' $(TABLE_DIR)/array30-OkidoKey.cin
