@@ -19,8 +19,8 @@ from lib.util import trim, parent_dir, trim, color
 # uu = importlib.import_module("lib.util")
 base_dir = parent_dir(__file__, 1)
 build_dir = f"{base_dir}/build"
-# repos = ["github", "gitlab"]
-repos = ["github"]
+repos = ["github", "gitlab"]
+# repos = ["github"]
 
 # def splitFile(src, dst, size = 1024):
 #     # path1 = f"{cwd}/db/{filename}"
@@ -229,7 +229,7 @@ def create_lexicon(outputPath):
         txt_path = f"{src_path}/{filename}.txt"
 
         if not os.path.exists(txt_path):
-            print("File not found: {txtPath}")
+            print(f"File not found: {txt_path}")
             continue
 
         # splitFile(f"{dbPath}/{dbFilename}", f"{repos['github']}/{target}/{dbFilename}", 2048)
