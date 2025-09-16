@@ -579,7 +579,9 @@ def main():
 		apply_emojis(args.dir)
 		apply_annotations(args.dir)
 
-		apply_emoticons()
+		# Not working well
+		# apply_emoticons()
+
 		apply_ranking()
 
 		test('dev', args.output)
