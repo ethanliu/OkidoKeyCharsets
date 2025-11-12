@@ -121,7 +121,7 @@ array30:
 
 ghcm:
 	@echo "Patching ghcm..."
-	@$(MISE_RUN) rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(RAWDATA_DIR)/misc/ghcm-header.cin
+	@$(MISE_RUN) rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(MISC_DIR)ghcm-header.cin
 
 jieba:
 	@echo "Patching jieba..."
@@ -130,8 +130,8 @@ jieba:
 
 jyutping:
 	@echo "Patching jyutping..."
-	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3.cin -t tone --header $(RAWDATA_DIR)/misc/jyut6ping3-header.cin
-	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3-toneless.cin -t toneless --header $(RAWDATA_DIR)/misc/jyut6ping3-toneless-header.cin
+	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3.cin -t tone --header $(MISC_DIR)/jyut6ping3-header.cin
+	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3-toneless.cin -t toneless --header $(MISC_DIR)/jyut6ping3-toneless-header.cin
 	@echo "Patching jyutping phrase..."
 	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase --header $(LEXICON_DIR)/jyutping.csv.txt
 

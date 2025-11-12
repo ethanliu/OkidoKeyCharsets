@@ -6,5 +6,6 @@ bin/test.py
 dist/*
 build/*
 rawdata/*
+!rawdata/repo.txt
 tmp
 tmp.*

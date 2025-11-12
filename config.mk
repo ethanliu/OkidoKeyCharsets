@@ -8,6 +8,7 @@ DIST_DIR := $(CURDIR)/dist
 LEXICON_DIR := $(CURDIR)/lexicon
 RAWDATA_DIR := $(CURDIR)/rawdata
 TABLE_DIR := $(CURDIR)/table
+MISC_DIR := $(CURDIR)/misc
 
 BUILD_QUEUE_DIR := $(BUILD_DIR)/queue
 

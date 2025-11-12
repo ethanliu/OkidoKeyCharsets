@@ -190,7 +190,7 @@ def create_table(outputPath):
         content['category'] = category
 
         # additional headers
-        headerpath = f"{base_dir}/rawdata/misc/{filename}"
+        headerpath = f"{base_dir}/misc/{filename}"
         if os.path.exists(headerpath):
             # print(headerpath)
             with open(headerpath, "r") as fp:
