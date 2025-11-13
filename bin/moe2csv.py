@@ -39,7 +39,7 @@ def moe_fixes(bpmf, phrase):
     # result = re.sub('|'.join(map(re.escape, _INCORRECT_CHARACTER_MAPPING.keys())), lambda m: _INCORRECT_CHARACTER_MAPPING[m.group()], bpmf)
     result = re.sub(_cache_pattern, replace_all, bpmf)
     if result != bpmf:
-        print(f"[moe-fixed] {phrase} {bpmf} => {result}")
+        print(f"[moe-fix] {phrase} {bpmf} => {result}")
     return result
 
 def parse2(input_path, output_path):

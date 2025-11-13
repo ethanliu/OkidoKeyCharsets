@@ -83,6 +83,7 @@ def prepare_mapping(input_path):
                 except Exception as e:
                     pinyin = ""
 
+				# keep the latest phrase/bpmf pair, not good idea but no rules for that
                 # print(f"{phrase} => {bpmf} {pinyin}")
                 _mapping[phrase] = pinyin
 

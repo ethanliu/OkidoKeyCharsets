@@ -21,7 +21,7 @@ export TEXT_PHRASE
 build: $(TABLE_DIR)/array30.cin \
          $(TABLE_DIR)/array-special.cin \
          $(TABLE_DIR)/array-shortcode.cin \
-         $(LEXICON_DIR)/array30.csv \
+         $(TMP_DIR)/array30-phrase.csv \
          $(TABLE_DIR)/array30-OkidoKey.cin \
          $(TABLE_DIR)/array30-OkidoKey-big.cin \
          $(TABLE_DIR)/array30-OkidoKey-phrase.cin \
@@ -79,7 +79,7 @@ $(TMP_DIR)/array30-phrase.processed: $(wildcard $(RAWDATA_DIR)/array30/array30-p
 	@grep '\t' $< > $@
 .INTERMEDIATE: $(TMP_DIR)/array30-phrase.processed
 
-$(LEXICON_DIR)/array30.csv: $(TMP_DIR)/array30-phrase.processed
+$(TMP_DIR)/array30-phrase.csv: $(TMP_DIR)/array30-phrase.processed
 	@mkdir -p $(@D)
 	@echo "Converting processed phrase file to CSV: $<"
 	@$(MISE_RUN) txt2csv.py -i $< -o $@ -c 3 1 0
@@ -95,7 +95,7 @@ $(TABLE_DIR)/array30-OkidoKey.cin: $(TMP_DIR)/array30-OkidoKey.base \
 	@cp $< $@
 	@TEXT_TO_INSERT="$$(echo "$$TEXT_SHORT_SPECIAL")"; \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '5r /dev/stdin' $@
-	# Append processed shortcode and special block
+
 	@cat $(TMP_DIR)/array-shortcode-processed.cin >> $@
 	@cat $(TMP_DIR)/array-special-processed.cin >> $@
 
@@ -106,7 +106,7 @@ $(TABLE_DIR)/array30-OkidoKey-big.cin: $(TMP_DIR)/array30-OkidoKey-big.base \
 	@cp $< $@
 	@TEXT_TO_INSERT="$$(echo "$$TEXT_SHORT_SPECIAL")"; \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '5r /dev/stdin' $@
-	# Append processed shortcode and special block
+
 	@cat $(TMP_DIR)/array-shortcode-processed.cin >> $@
 	@cat $(TMP_DIR)/array-special-processed.cin >> $@
 
@@ -127,12 +127,12 @@ $(TABLE_DIR)/array30-OkidoKey-phrase.cin: $(TMP_DIR)/array30-OkidoKey.base \
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '7r /dev/stdin' $@
 	@sed -i '' 's/^%ename array30/%ename array30-phrase/' $@
 	@sed -i '' 's/^%cname 行列30/%cname 行列30(詞庫版)/' $@
-	# Append phrase content
+
 	@sed -i '' 's/^%chardef end/ /' $@ # Remove original end marker
 	@echo "# Begin of phrase\n" >> $@
 	@cat $(TMP_DIR)/array30-phrase.processed >> $@
 	@echo "# End of phrase\n%chardef end\n" >> $@ # Re-add end marker
-	# Append processed shortcode and special block
+
 	@cat $(TMP_DIR)/array-shortcode-processed.cin >> $@
 	@cat $(TMP_DIR)/array-special-processed.cin >> $@
 
@@ -148,15 +148,15 @@ $(TABLE_DIR)/array30-OkidoKey-big-phrase.cin: $(TMP_DIR)/array30-OkidoKey-big.ba
 	printf "$$TEXT_TO_INSERT\n" | sed -i '' '7r /dev/stdin' $@
 	@sed -i '' 's/^%ename array30-big/%ename array30-big-phrase/' $@
 	@sed -i '' 's/^%cname 行列30-大字集/%cname 行列30-大字集(詞庫版)/' $@
-	# Append phrase content
+
 	@sed -i '' 's/^%chardef end/ /' $@ # Remove original end marker
 	@echo "# Begin of phrase\n" >> $@
 	@cat $(TMP_DIR)/array30-phrase.processed >> $@
 	@echo "# End of phrase\n%chardef end\n" >> $@ # Re-add end marker
-	# Append processed shortcode and special block
+
 	@cat $(TMP_DIR)/array-shortcode-processed.cin >> $@
 	@cat $(TMP_DIR)/array-special-processed.cin >> $@
 
 clear:
 	@rm $(TABLE_DIR)/array30-OkidoKey*.cin
-	@rm $(LEXICON_DIR)/array30.csv
+	@rm $(TMP_DIR)/array30-phrase.csv

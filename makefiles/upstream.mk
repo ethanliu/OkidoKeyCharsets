@@ -121,7 +121,7 @@ array30:
 
 ghcm:
 	@echo "Patching ghcm..."
-	@$(MISE_RUN) rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(MISC_DIR)ghcm-header.cin
+	@$(MISE_RUN) rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(MISC_DIR)/ghcm-header.cin
 
 jieba:
 	@echo "Patching jieba..."

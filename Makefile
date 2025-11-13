@@ -21,6 +21,7 @@ init:
 	@echo "initial env"
 	@mkdir -p build/queue/table
 	@mkdir -p build/queue/lexicon
+	@mkdir -p rawdata
 	@mkdir -p dist
 	@mkdir -p tmp
 
