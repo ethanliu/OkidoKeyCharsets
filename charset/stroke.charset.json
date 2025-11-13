@@ -12,6 +12,18 @@
         ]
     },
     {
+        "name": "stroke-cbs-choco",
+        "description": "中易輸入法",
+        "charsets":
+        [
+            "[esc][1:豎][2:橫][3:水][del]",
+            "[(][4:火][5:順][6:逆][*:＊]",
+            "[“][7:撇][8:捺][9][？]",
+            "[：][，][0:口][。][！]",
+            "[next][globe][space][return]"
+        ]
+    },
+    {
         "name": "stroke-g6code-choco",
         "description": "六碼筆畫",
         "charsets":
