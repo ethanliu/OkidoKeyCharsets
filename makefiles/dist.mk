@@ -28,6 +28,29 @@ lexicon:
 	$(call build_lexicon,gitlab,2048)
 	@make -f makefiles/lexicon.mk json
 
+publish: rebase_github rebase_gitlab
+	@echo "Push binary distribution to remote repos"
+
+rebase_github:
+	@cd $(DIST_DIR)/github; \
+	rm -fr .git; \
+	git init; \
+	git add .; \
+	git commit -m "Upstream update"; \
+	git branch -M v3.0; \
+	git remote add origin git@github.com:ethanliu/OkidoKeyAssets.git; \
+	git push -u --force origin v3.0
+
+rebase_gitlab:
+	@cd $(DIST_DIR)/gitlab; \
+	rm -fr .git; \
+	git init; \
+	git add .; \
+	git commit -m "Upstream update"; \
+	git branch -M v3.0; \
+	git remote add origin git@gitlab.com:ethanliu/okidokey-assets.git; \
+	git push -u --force origin v3.0
+
 
 define build_table
 	$(eval name := $(1))

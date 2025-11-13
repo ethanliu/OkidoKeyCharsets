@@ -67,8 +67,8 @@ dist:
 	@make -f makefiles/dev.mk sync
 	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
 	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/github
-# @cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitlab
-# @cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitlab
+	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitlab
+	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitlab
 
 json:
 	@make -f makefiles/table.mk json
