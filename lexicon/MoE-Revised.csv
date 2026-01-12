@@ -153,7 +153,6 @@
 八仙花	0	ba1 xian1 hua1
 八仙桌	0	ba1 xian1 zhuo1
 八仙桌上擺夜壺	0	ba1 xian1 zhuo1 shang4 bai3 ye4 hu2
-八仙山	0	ba1 xian1 shan1
 八相	0	ba1 xiang4
 八刑	0	ba1 xing2
 八指頭陀	0	ba1 zhi3 tou2 tuo2
@@ -339,6 +338,7 @@
 巴倫支海	0	ba1 lun2 zhi1 hai3
 巴格達	0	ba1 ge2 da2
 巴高枝兒	0	ba1 gao1 zhi1
+巴羔子	0	ba1 gao1 zi5
 巴高望上	0	ba1 gao1 wang4 shang4
 巴寡婦清	0	ba1 gua3 fu4 qing1
 巴國	0	ba1 guo2
@@ -449,7 +449,6 @@
 芭蕉洞	0	ba1 jiao1 dong4
 芭蕉科	0	ba1 jiao1 ke1
 芭蕉扇	0	ba1 jiao1 shan4
-芭蕉芋	0	ba1 jiao1 yu4
 芭苴	0	ba1 ju3
 疤痆	0	ba1 nie4
 疤瘌餅	0	ba1 la5 bing3
@@ -994,6 +993,7 @@
 剝剝啄啄	0	bo1 bo5 zhuo2 zhuo2
 剝皮	0	bo1 pi2
 剝皮剔骨	0	bo1 pi2 ti1 gu3
+剝皮抽筋	0	bo1 pi2 chou1 jin1
 剝皮剉骨	0	bo1 pi2 cuo4 gu3
 剝面皮	0	bo1 mian4 pi2
 剝膚	0	bo1 fu1
@@ -1144,6 +1144,8 @@
 柏鄉縣	0	bo2 xiang1 xian4
 柏舟	0	bo2 zhou1
 柏舟之痛	0	bo2 zhou1 zhi1 tong4
+柏舟之節	0	bo2 zhou1 zhi1 jie2
+柏舟操	0	bo2 zhou1 cao1
 柏樹	0	bo2 shu4
 柏子	0	bo2 zi5
 柏塞麥	0	bo2 se4 mai4
@@ -1441,9 +1443,11 @@
 襏襫	0	bo2 shi4
 跛鱉千里	0	bo3 bie1 qian1 li3
 跛羅蓋子	0	bo3 luo2 gai4 zi5
+跛腳	0	bo3 jiao3
 跛蹇	0	bo3 jian3
 跛蹶	0	bo3 jue2
 跛躓	0	bo3 zhi4
+跛子	0	bo3 zi5
 跛足	0	bo3 zu2
 簸盪	0	bo3 dang4
 簸弄	0	bo3 nong4
@@ -1917,6 +1921,7 @@
 白吃	0	bai2 chi1
 白吃白喝	0	bai2 chi1 bai2 he1
 白吃白住	0	bai2 chi1 bai2 zhu4
+白痴	0	bai2 chi1
 白翅	0	bai2 chi4
 白熾	0	bai2 chi4
 白熾燈	0	bai2 chi4 deng1
@@ -2670,6 +2675,7 @@
 敗壞門風	0	bai4 huai4 men2 feng1
 敗績	0	bai4 ji1
 敗家	0	bai4 jia1
+敗家子	0	bai4 jia1 zi3
 敗將殘兵	0	bai4 jiang4 can2 bing1
 敗醬	0	bai4 jiang4
 敗局	0	bai4 ju2
@@ -2762,7 +2768,10 @@
 卑田院	0	bei1 tian2 yuan4
 卑南鄉	0	bei1 nan2 xiang1
 卑南文化	0	bei1 nan2 wen2 hua4
+卑陋齷齪	0	bei1 lou4 wo4 chuo4
 卑禮厚幣	0	bei1 li3 hou4 bi4
+卑劣	0	bei1 lie4
+卑劣手段	0	bei1 lie4 shou3 duan4
 卑梁之釁	0	bei1 liang2 zhi1 xin4
 卑論	0	bei1 lun4
 卑高	0	bei1 gao1
@@ -2918,7 +2927,6 @@
 北票	0	bei3 piao4
 北平圖書館	0	bei3 ping2 tu2 shu1 guan3
 北平故宮	0	bei3 ping2 gu4 gong1
-北埔鄉	0	bei3 pu3 xiang1
 北美狼	0	bei3 mei3 lang2
 北美洲	0	bei3 mei3 zhou1
 北美事務協調委員會	0	bei3 mei3 shi4 wu4 xie2 tiao2 wei3 yuan2 hui4
@@ -2946,6 +2954,7 @@
 北方話	0	bei3 fang1 hua4
 北方之強	0	bei3 fang1 zhi1 qiang2
 北方戰爭	0	bei3 fang1 zhan4 zheng1
+北方人	0	bei3 fang1 ren2
 北風	0	bei3 feng1
 北府	0	bei3 fu3
 北達科他州	0	bei3 da2 ke1 ta1 zhou1
@@ -3056,8 +3065,6 @@
 北所羅門	0	bei3 suo3 luo2 men2
 北宋	0	bei3 song4
 北歐	0	bei3 ou1
-北安市	0	bei3 an1 shi4
-北二高	0	bei3 er4 gao1
 北宜公路	0	bei3 yi2 gong1 lu4
 北葉門	0	bei3 ye4 men2
 北燕	0	bei3 yan1
@@ -3163,6 +3170,7 @@
 背水	0	bei4 shui3
 背水陣	0	bei4 shui3 zhen4
 背水一戰	0	bei4 shui3 yi1 zhan4
+背人	0	bei4 ren2
 背若芒刺	0	bei4 ruo4 mang2 ci4
 背紫腰金	0	bei4 zi3 yao1 jin1
 背子	0	bei4 zi5
@@ -3554,7 +3562,6 @@
 褒賢遏惡	0	bao1 xian2 e4 e4
 褒章	0	bao1 zhang1
 褒狀	0	bao1 zhuang4
-褒忠鄉	0	bao1 zhong1 xiang1
 褒成侯	0	bao1 cheng2 hou2
 褒城縣	0	bao1 cheng2 xian4
 褒善貶惡	0	bao1 shan4 bian3 e4
@@ -3835,6 +3842,7 @@
 飽足	0	bao3 zu2
 飽參	0	bao3 can1
 飽餐	0	bao3 can1
+飽以老拳	0	bao3 yi3 lao3 quan2
 飽颺	0	bao3 yang2
 飽聞	0	bao3 wen2
 鴇母	0	bao3 mu3
@@ -4065,6 +4073,7 @@
 豹變	0	bao4 bian4
 豹皮帽	0	bao4 pi2 mao4
 豹貓	0	bao4 mao1
+豹房	0	bao4 fang2
 豹頭環眼	0	bao4 tou2 huan2 yan3
 豹頭猿臂	0	bao4 tou2 yuan2 bi4
 豹立直	0	bao4 li4 zhi2
@@ -4120,7 +4129,6 @@
 報錄人	0	bao4 lu4 ren2
 報告	0	bao4 gao4
 報告小說	0	bao4 gao4 xiao3 shuo1
-報告傳染病	0	bao4 gao4 chuan2 ran3 bing4
 報告書	0	bao4 gao4 shu1
 報告文學	0	bao4 gao4 wen2 xue2
 報國	0	bao4 guo2
@@ -4210,6 +4218,7 @@
 暴病	0	bao4 bing4
 暴病身亡	0	bao4 bing4 shen1 wang2
 暴脾氣	0	bao4 pi2 qi5
+暴民	0	bao4 min2
 暴發	0	bao4 fa1
 暴發戶	0	bao4 fa1 hu4
 暴風	0	bao4 feng1
@@ -4227,6 +4236,7 @@
 暴殄	0	bao4 tian3
 暴殄天物	0	bao4 tian3 tian1 wu4
 暴殄輕生	0	bao4 tian3 qing1 sheng1
+暴徒	0	bao4 tu2
 暴土	0	bao4 tu3
 暴內陵外	0	bao4 nei4 ling2 wai4
 暴怒	0	bao4 nu4
@@ -4246,6 +4256,7 @@
 暴厲	0	bao4 li4
 暴厲之氣	0	bao4 li4 zhi1 qi4
 暴厲恣睢	0	bao4 li4 ci1 sui1
+暴烈	0	bao4 lie4
 暴斂	0	bao4 lian4
 暴斂橫徵	0	bao4 lian4 heng2 zheng1
 暴亂	0	bao4 luan4
@@ -4613,6 +4624,7 @@
 半邊家庭	0	ban4 bian1 jia1 ting2
 半部論語治天下	0	ban4 bu4 lun2 yu3 zhi4 tian1 xia4
 半坡遺址	0	ban4 po1 yi2 zhi3
+半票	0	ban4 piao4
 半偏	0	ban4 pian1
 半屏山	0	ban4 ping2 shan1
 半瓶醋	0	ban4 ping2 cu4
@@ -4683,6 +4695,7 @@
 半合兒	0	ban4 he2
 半合元音	0	ban4 he2 yuan2 yin1
 半酣	0	ban4 han1
+半憨子	0	ban4 han1 zi5
 半會	0	ban4 hui3
 半紀	0	ban4 ji4
 半價	0	ban4 jia4
@@ -4756,6 +4769,7 @@
 半睡半醒	0	ban4 shui4 ban4 xing3
 半日	0	ban4 ri4
 半日片刻	0	ban4 ri4 pian4 ke4
+半人半鬼	0	ban4 ren2 ban4 gui3
 半人馬星座	0	ban4 ren2 ma3 xing1 zuo4
 半子	0	ban4 zi3
 半自動	0	ban4 zi4 dong4
@@ -5064,6 +5078,7 @@
 坌集	0	ben4 ji2
 奔命	0	ben4 ming4
 奔井投河	0	ben4 jing3 tou2 he2
+笨伯	0	ben4 bo2
 笨笨拉拉	0	ben4 ben4 la1 la1
 笨蛋	0	ben4 dan4
 笨鈍	0	ben4 dun4
@@ -5156,6 +5171,7 @@
 綁赴市曹	0	bang3 fu4 shi4 cao2
 綁腿	0	bang3 tui3
 綁鬼	0	bang3 gui3
+綁架	0	bang3 jia4
 綁住	0	bang3 zhu4
 綁案	0	bang3 an4
 榜牌	0	bang3 pai2
@@ -6471,6 +6487,7 @@
 表率	0	biao3 shuai4
 表姊	0	biao3 zi3
 表字	0	biao3 zi4
+表子	0	biao3 zi5
 表奏	0	biao3 zou4
 表詞	0	biao3 ci2
 表層	0	biao3 ceng2
@@ -6586,6 +6603,7 @@
 鞭毛蟲	0	bian1 mao2 chong2
 鞭毛藻	0	bian1 mao2 zao3
 鞭墓	0	bian1 mu4
+鞭韃	0	bian1 da2
 鞭打	0	bian1 da3
 鞭撻	0	bian1 ta4
 鞭牛	0	bian1 niu2
@@ -6688,6 +6706,7 @@
 扁鵲	0	bian3 que4
 扁食	0	bian3 shi5
 扁簪	0	bian3 zan1
+扁鑽	0	bian3 zuan4
 扁銼	0	bian3 cuo4
 扁額	0	bian3 e2
 扁魚	0	bian3 yu2
@@ -7195,6 +7214,7 @@
 冰天	0	bing1 tian1
 冰天雪地	0	bing1 tian1 xue3 di4
 冰天雪窖	0	bing1 tian1 xue3 jiao4
+冰桶	0	bing1 tong3
 冰冷	0	bing1 leng3
 冰冷無味	0	bing1 leng3 wu2 wei4
 冰裂紋	0	bing1 lie4 wen2
@@ -7605,6 +7625,7 @@
 病歿	0	bing4 mo4
 病媒	0	bing4 mei2
 病媒蚊	0	bing4 mei2 wen2
+病貓	0	bing4 mao1
 病免	0	bing4 mian3
 病母	0	bing4 mu3
 病發	0	bing4 fa1
@@ -7758,6 +7779,7 @@
 捕撈	0	bu3 lao1
 捕快	0	bu3 kuai4
 捕獲	0	bu3 huo4
+捕鯨船	0	bu3 jing1 chuan2
 捕緝	0	bu3 qi4
 捕捉	0	bu3 zhuo1
 捕捉畋獵	0	bu3 zhuo1 tian2 lie4
@@ -8379,6 +8401,7 @@
 不良會	0	bu4 liang2 hui4
 不良之心	0	bu4 liang2 zhi1 xin1
 不良適應	0	bu4 liang2 shi4 ying4
+不良少年	0	bu4 liang2 shao4 nian2
 不良帥	0	bu4 liang2 shuai4
 不良人	0	bu4 liang2 ren2
 不良才	0	bu4 liang2 cai2
@@ -9256,6 +9279,7 @@
 不是沒有	0	bu4 shi4 mei2 you3
 不是風犯	0	bu4 shi4 feng1 fan4
 不是東風壓了西風，就是西風壓了東風	0	bu4 shi4 dong1 feng1 ya1 le5 xi1 feng1 jiu4 shi4 xi1 feng1 ya1 le5 dong1 feng1
+不是東西	0	bu4 shi4 dong1 xi5
 不是頭	0	bu4 shi4 tou2
 不是頭路	0	bu4 shi4 tou2 lu4
 不是頭勢	0	bu4 shi4 tou2 shi4
@@ -9351,6 +9375,7 @@
 不上心	0	bu4 shang4 xin1
 不上串	0	bu4 shang4 chuan4
 不上算	0	bu4 shang4 suan4
+不上眼	0	bu4 shang4 yan3
 不尚	0	bu4 shang4
 不生不滅	0	bu4 sheng1 bu4 mie4
 不生不死	0	bu4 sheng1 bu4 si3
@@ -9374,6 +9399,7 @@
 不舒坦	0	bu4 shu1 tan5
 不輸	0	bu4 shu1
 不淑	0	bu4 shu2
+不熟	0	bu4 shu2
 不數	0	bu4 shu3
 不屬	0	bu4 shu3
 不數日	0	bu4 shu4 ri4
@@ -9714,6 +9740,7 @@
 不侮暗室	0	bu4 wu3 an4 shi4
 不舞之鶴	0	bu4 wu3 zhi1 he4
 不悟	0	bu4 wu4
+不務正業	0	bu4 wu4 zheng4 ye4
 不外	0	bu4 wai4
 不外乎	0	bu4 wai4 hu1
 不為	0	bu4 wei2
@@ -9873,7 +9900,6 @@
 布林代數	0	bu4 lin2 dai4 shu4
 布魯姆費爾德	0	bu4 lu3 mu3 fei4 er3 de2
 布魯奈勒斯基	0	bu4 lu3 nai4 le4 si1 ji1
-布魯勒	0	bu4 lu3 le4
 布魯克納	0	bu4 lu3 ke4 na4
 布魯克林	0	bu4 lu3 ke4 lin2
 布魯克斯	0	bu4 lu3 ke4 si1
@@ -10254,6 +10280,7 @@
 潑浪鼓	0	po1 lang4 gu3
 潑冷水	0	po1 leng3 shui3
 潑哭潑鬧	0	po1 ku1 po1 nao4
+潑猴	0	po1 hou2
 潑悍	0	po1 han4
 潑花團	0	po1 hua1 tuan2
 潑火	0	po1 huo3
@@ -10427,6 +10454,7 @@
 破零三亂	0	po4 ling2 san1 luan4
 破零二落	0	po4 ling2 er4 luo4
 破陸續	0	po4 lu4 xu4
+破鑼嗓子	0	po4 luo2 sang3 zi5
 破落	0	po4 luo4
 破落戶	0	po4 luo4 hu4
 破亂	0	po4 luan4
@@ -10886,6 +10914,7 @@
 陪審	0	pei2 shen3
 陪審團	0	pei2 shen3 tuan2
 陪審制	0	pei2 shen3 zhi4
+陪葬	0	pei2 zang4
 陪葬品	0	pei2 zang4 pin3
 陪坐	0	pei2 zuo4
 陪罪	0	pei2 zui4
@@ -10898,6 +10927,7 @@
 毰毸	0	pei2 sai1
 賠本	0	pei2 ben3
 賠補	0	pei2 bu3
+賠不起	0	pei2 bu4 qi3
 賠不是	0	pei2 bu4 shi4
 賠墊	0	pei2 dian4
 賠了夫人又折兵	0	pei2 le5 fu1 ren2 you4 zhe2 bing1
@@ -11008,6 +11038,7 @@
 配子世代	0	pei4 zi3 shi4 dai4
 配色	0	pei4 se4
 配所	0	pei4 suo3
+配送	0	pei4 song4
 配額	0	pei4 e2
 配偶	0	pei4 ou3
 配偶家族	0	pei4 ou3 jia1 zu2
@@ -11275,7 +11306,6 @@
 炮眼	0	pao4 yan3
 炮位	0	pao4 wei4
 疱疹	0	pao4 zhen3
-疱疹性咽狹症	0	pao4 zhen3 xing4 yan1 xia2 zheng4
 砲火連天	0	pao4 huo3 lian2 tian1
 砲響	0	pao4 xiang3
 𣶐飯	0	pao4 fan4
@@ -11647,6 +11677,7 @@
 畔援	0	pan4 yuan2
 頖宮	0	pan4 gong1
 拚命	0	pan4 ming4
+拚鬥	0	pan4 dou4
 拚老命	0	pan4 lao3 ming4
 拚絕	0	pan4 jue2
 拚棄	0	pan4 qi4
@@ -11802,6 +11833,7 @@
 旁注	0	pang2 zhu4
 旁轉	0	pang2 zhuan3
 旁岔兒	0	pang2 cha4
+旁出	0	pang2 chu1
 旁手	0	pang2 shou3
 旁生	0	pang2 sheng1
 旁生枝節	0	pang2 sheng1 zhi1 jie2
@@ -11871,6 +11903,7 @@
 胖大海	0	pang4 da4 hai3
 胖嘟嘟	0	pang4 du1 du1
 胖墩墩	0	pang4 dun1 dun1
+胖墩兒	0	pang4 dun1
 胖頭魚	0	pang4 tou2 yu2
 胖哥	0	pang4 ge1
 胖高麗	0	pang4 gao1 li5
@@ -12238,6 +12271,7 @@
 披髮垢面	0	pi1 fa3 gou4 mian4
 披髮入山	0	pi1 fa3 ru4 shan1
 披髮藻目	0	pi1 fa3 zao3 mu4
+披髮左衽	0	pi1 fa3 zuo3 ren4
 披髮纓冠	0	pi1 fa3 ying1 guan1
 披房	0	pi1 fang2
 披風	0	pi1 feng1
@@ -12341,6 +12375,7 @@
 劈頭劈臉	0	pi1 tou2 pi1 lian3
 劈頭蓋臉	0	pi1 tou2 gai4 lian3
 劈頭子	0	pi1 tou2 zi5
+劈腿	0	pi1 tui3
 劈腦後	0	pi1 nao3 hou4
 劈蘭	0	pi1 lan2
 劈里啪啦	0	pi1 li3 pa1 la1
@@ -12501,6 +12536,7 @@
 皮件	0	pi2 jian4
 皮匠	0	pi2 jiang5
 皮球	0	pi2 qiu2
+皮裘	0	pi2 qiu2
 皮錫瑞	0	pi2 xi2 rui4
 皮匣	0	pi2 xia2
 皮下注射	0	pi2 xia4 zhu4 she4
@@ -12747,9 +12783,6 @@
 闢築	0	pi4 zhu2
 闢室	0	pi4 shi4
 闢謠	0	pi4 yao2
-鷿鵜	0	pi4 ti2
-鷿鷈	0	pi4 ti2
-鷿鷈膏	0	pi4 ti2 gao1
 撇罷	0	pie1 ba4
 撇風	0	pie1 feng1
 撇打	0	pie1 da3
@@ -12871,6 +12904,7 @@
 嫖婊子	0	piao2 biao3 zi5
 嫖賭	0	piao2 du3
 嫖客	0	piao2 ke4
+嫖妓	0	piao2 ji4
 嫖經	0	piao2 jing1
 嫖娼	0	piao2 chang1
 瓢把子	0	piao2 ba3 zi5
@@ -13144,6 +13178,7 @@
 片甲不回	0	pian4 jia3 bu4 hui2
 片甲不存	0	pian4 jia3 bu4 cun2
 片甲無存	0	pian4 jia3 wu2 cun2
+片假名	0	pian4 jia3 ming2
 片接寸附	0	pian4 jie1 cun4 fu4
 片心	0	pian4 xin1
 片許	0	pian4 xu3
@@ -13323,6 +13358,7 @@
 品調	0	pin3 diao4
 品度	0	pin3 duo4
 品頭題足	0	pin3 tou2 ti2 zu2
+品頭論足	0	pin3 tou2 lun4 zu2
 品題	0	pin3 ti2
 品脫	0	pin3 tuo1
 品弄	0	pin3 nong4
@@ -13756,6 +13792,7 @@
 評斷	0	ping2 duan4
 評頭品足	0	ping2 tou2 pin3 zu2
 評頭評足	0	ping2 tou2 ping2 zu2
+評頭論足	0	ping2 tou2 lun4 zu2
 評彈	0	ping2 tan2
 評理	0	ping2 li3
 評量	0	ping2 liang2
@@ -14201,6 +14238,7 @@
 樸野	0	pu2 ye3
 濮上	0	pu2 shang4
 濮上之音	0	pu2 shang4 zhi1 yin1
+濮上桑間	0	pu2 shang4 sang1 jian1
 襆被	0	pu2 bei4
 襆頭	0	pu2 tou2
 襆頭象簡	0	pu2 tou2 xiang4 jian3
@@ -14517,6 +14555,7 @@
 馬表	0	ma3 biao3
 馬鞭	0	ma3 bian1
 馬扁	0	ma3 bian3
+馬扁兒	0	ma3 bian3
 馬弁	0	ma3 bian4
 馬兵	0	ma3 bing1
 馬補	0	ma3 bu3
@@ -14621,7 +14660,6 @@
 馬來半島	0	ma3 lai2 ban4 dao3
 馬來糕	0	ma3 lai2 gao1
 馬來群島	0	ma3 lai2 qun2 dao3
-馬來西亞	0	ma3 lai2 xi1 ya4
 馬來熊	0	ma3 lai2 xiong2
 馬來亞	0	ma3 lai2 ya4
 馬來亞玻里尼西亞語系	0	ma3 lai2 ya4 bo1 li3 ni2 xi1 ya4 yu3 xi4
@@ -14721,6 +14759,7 @@
 馬槍	0	ma3 qiang1
 馬戲	0	ma3 xi4
 馬戲班	0	ma3 xi4 ban1
+馬戲團	0	ma3 xi4 tuan2
 馬歇爾計畫	0	ma3 xie1 er3 ji4 hua4
 馬銜	0	ma3 xian2
 馬相如	0	ma3 xiang1 ru2
@@ -14866,6 +14905,7 @@
 罵人不吐核	0	ma4 ren2 bu4 tu3 he2
 罵坐	0	ma4 zuo4
 罵坐灌夫	0	ma4 zuo4 guan4 fu1
+罵爺罵媽	0	ma4 ye2 ma4 ma1
 螞蚱	0	ma4 zha5
 摸不清	0	mo1 bu4 qing1
 摸不著	0	mo1 bu4 zhao2
@@ -15101,6 +15141,7 @@
 魔媼	0	mo2 ao3
 魔意	0	mo2 yi4
 魔音傳腦	0	mo2 yin1 chuan2 nao3
+魔王	0	mo2 wang2
 魔王夜叉	0	mo2 wang2 ye4 cha1
 蘑菇	0	mo2 gu5
 劘滅	0	mo2 mie4
@@ -15673,6 +15714,7 @@
 買臣負薪	0	mai3 chen2 fu4 xin1
 買臣覆水	0	mai3 chen2 fu4 shui3
 買船	0	mai3 chuan2
+買春	0	mai3 chun1
 買市	0	mai3 shi4
 買手	0	mai3 shou3
 買山	0	mai3 shan1
@@ -15952,6 +15994,7 @@
 沒法沒天	0	mei2 fa3 mei2 tian1
 沒分豁	0	mei2 fen1 huo4
 沒分曉	0	mei2 fen1 xiao3
+沒分寸	0	mei2 fen1 cun4
 沒縫兒	0	mei2 feng4
 沒福	0	mei2 fu2
 沒福消受	0	mei2 fu2 xiao1 shou4
@@ -16074,6 +16117,7 @@
 沒根藤	0	mei2 gen1 teng2
 沒根基	0	mei2 gen1 ji1
 沒剛性	0	mei2 gang1 xing4
+沒骨頭	0	mei2 gu2 tou5
 沒骨氣	0	mei2 gu3 qi5
 沒過	0	mei2 guo4
 沒規沒矩	0	mei2 gui1 mei2 ju3
@@ -16143,6 +16187,7 @@
 沒下頷的話	0	mei2 xia4 han4 de5 hua4
 沒下脣就不該攬著簫吹	0	mei2 xia4 chun2 jiu4 bu4 gai1 lan3 zhe5 xiao1 chui1
 沒下梢	0	mei2 xia4 shao1
+沒羞	0	mei2 xiu1
 沒羞沒臊	0	mei2 xiu1 mei2 sao4
 沒心	0	mei2 xin1
 沒心沒肺	0	mei2 xin1 mei2 fei4
@@ -16181,6 +16226,7 @@
 沒張倒置	0	mei2 zhang1 dao4 zhi4
 沒張智	0	mei2 zhang1 zhi4
 沒長進	0	mei2 zhang3 jin4
+沒長眼	0	mei2 zhang3 yan3
 沒帳	0	mei2 zhang4
 沒正經	0	mei2 zheng4 jing5
 沒正經的事	0	mei2 zheng4 jing5 de5 shi4
@@ -16403,6 +16449,7 @@
 眉南面北	0	mei2 nan2 mian4 bei3
 眉來眼去	0	mei2 lai2 yan3 qu4
 眉來語去	0	mei2 lai2 yu3 qu4
+眉稜	0	mei2 leng2
 眉棱骨	0	mei2 leng2 gu3
 眉立	0	mei2 li4
 眉高眼低	0	mei2 gao1 yan3 di1
@@ -16794,6 +16841,7 @@
 毛毛	0	mao2 mao2
 毛毛毛	0	mao2 mao2 mao2
 毛毛的	0	mao2 mao2 de5
+毛毛騰騰	0	mao2 mao2 teng2 teng2
 毛毛匠	0	mao2 mao2 jiang4
 毛毛蟲	0	mao2 mao5 chong2
 毛毛雨	0	mao2 mao5 yu3
@@ -16845,6 +16893,7 @@
 毛坑	0	mao2 keng1
 毛坑沒後壁	0	mao2 keng1 mei2 hou4 bi4
 毛孔	0	mao2 kong3
+毛孩子	0	mao2 hai2 zi5
 毛蚶	0	mao2 han1
 毛亨	0	mao2 heng1
 毛烘烘	0	mao2 hong1 hong1
@@ -16906,6 +16955,8 @@
 毛茸	0	mao2 rong2
 毛茸茸	0	mao2 rong2 rong2
 毛子	0	mao2 zi5
+毛子話	0	mao2 zi5 hua4
+毛子人	0	mao2 zi5 ren2
 毛崽子	0	mao2 zai3 zi5
 毛賊	0	mao2 zei2
 毛躁	0	mao2 zao4
@@ -17225,6 +17276,7 @@
 謀生之道	0	mou2 sheng1 zhi1 dao4
 謀人	0	mou2 ren2
 謀如湧泉	0	mou2 ru2 yong3 quan2
+謀刺	0	mou2 ci4
 謀財害命	0	mou2 cai2 hai4 ming4
 謀算	0	mou2 suan4
 謀而後動	0	mou2 er2 hou4 dong4
@@ -17307,6 +17359,7 @@
 蠻觸	0	man2 chu4
 蠻觸相爭	0	man2 chu4 xiang1 zheng1
 蠻觸之爭	0	man2 chu4 zhi1 zheng1
+蠻聲哈剌	0	man2 sheng1 ha1 la4
 蠻書	0	man2 shu1
 蠻子	0	man2 zi5
 蠻做	0	man2 zuo4
@@ -17734,6 +17787,7 @@
 門路	0	men2 lu4
 門羅主義	0	men2 luo2 zhu3 yi4
 門閭	0	men2 lu2
+門高莫對	0	men2 gao1 mo4 dui4
 門崗	0	men2 gang3
 門規	0	men2 gui1
 門館	0	men2 guan3
@@ -17919,6 +17973,7 @@
 芒刺滿身	0	mang2 ci4 man3 shen1
 芒刺在背	0	mang2 ci4 zai4 bei4
 芒草	0	mang2 cao3
+盲胞	0	mang2 bao1
 盲鰻	0	mang2 man2
 盲目	0	mang2 mu4
 盲目不盲心	0	mang2 mu4 bu4 mang2 xin1
@@ -17930,6 +17985,7 @@
 盲幹	0	mang2 gan4
 盲婚啞嫁	0	mang2 hun1 ya3 jia4
 盲棋	0	mang2 qi2
+盲信	0	mang2 xin4
 盲者得鏡	0	mang2 zhe3 de2 jing4
 盲腸	0	mang2 chang2
 盲蛇	0	mang2 she2
@@ -18027,6 +18083,7 @@
 盟書	0	meng2 shu1
 盟友	0	meng2 you3
 盟約	0	meng2 yue1
+蒙胞	0	meng2 bao1
 蒙蔽	0	meng2 bi4
 蒙昧	0	meng2 mei4
 蒙昧無知	0	meng2 mei4 wu2 zhi1
@@ -18569,7 +18626,6 @@
 密封	0	mi4 feng1
 密封遺囑	0	mi4 feng1 yi2 zhu3
 密地	0	mi4 di4
-密點地圖	0	mi4 dian3 di4 tu2
 密電	0	mi4 dian4
 密度	0	mi4 du4
 密度指數	0	mi4 du4 zhi3 shu4
@@ -19605,6 +19661,7 @@
 名宦	0	ming2 huan4
 名蹟	0	ming2 ji1
 名籍	0	ming2 ji2
+名妓	0	ming2 ji4
 名家	0	ming2 jia1
 名節	0	ming2 jie2
 名腳	0	ming2 jiao3
@@ -20082,7 +20139,7 @@
 瞑目而逝	0	ming2 mu4 er2 shi4
 瞑想	0	ming2 xiang3
 瞑子裡	0	ming2 zi5 li3
-螟螣	0	ming2 teng2
+螟螣	0	ming2 te4
 螟蛉	0	ming2 ling2
 螟蛉子	0	ming2 ling2 zi3
 螟害	0	ming2 hai4
@@ -20214,6 +20271,7 @@
 母體	0	mu3 ti3
 母難日	0	mu3 nan4 ri4
 母女	0	mu3 nu3
+母老虎	0	mu3 lao3 hu3
 母老子幼	0	mu3 lao3 zi3 you4
 母國	0	mu3 guo2
 母哈赤	0	mu3 ha1 chi4
@@ -20275,6 +20333,7 @@
 木本植物	0	mu4 ben3 zhi2 wu4
 木本水源	0	mu4 ben3 shui3 yuan2
 木梆	0	mu4 bang1
+木棒	0	mu4 bang4
 木筆	0	mu4 bi3
 木邊之目，田下之心	0	mu4 bian1 zhi1 mu4 tian2 xia4 zhi1 xin1
 矽化木	0	xi4 hua4 mu4
@@ -20513,6 +20572,7 @@
 目光如電	0	mu4 guang1 ru2 dian4
 目光如鏡	0	mu4 guang1 ru2 jing4
 目光如炬	0	mu4 guang1 ru2 ju4
+目光如鼠	0	mu4 guang1 ru2 shu3
 目光所及	0	mu4 guang1 suo3 ji2
 目空四海	0	mu4 kong1 si4 hai3
 目空一切	0	mu4 kong1 yi1 qie4
@@ -21900,6 +21960,7 @@
 肥皂劇	0	fei2 zao4 ju4
 肥皂絲	0	fei2 zao4 si1
 肥油	0	fei2 you2
+肥羊	0	fei2 yang2
 肥羊肉	0	fei2 yang2 rou4
 肥沃	0	fei2 wo4
 肥沃月灣	0	fei2 wo4 yue4 wan1
@@ -22123,6 +22184,7 @@
 廢物	0	fei4 wu4
 廢物利用	0	fei4 wu4 li4 yong4
 廢約	0	fei4 yue1
+廢員	0	fei4 yuan2
 芣苡	0	fou2 yi3
 芣苢	0	fou2 yi3
 否否	0	fou3 fou3
@@ -22520,7 +22582,6 @@
 反毒	0	fan3 du2
 反對	0	fan3 dui4
 反對黨	0	fan3 dui4 dang3
-反動	0	fan3 dong4
 反彈	0	fan3 tan2
 反彈琵琶	0	fan3 tan2 pi2 pa5
 反坦克炮	0	fan3 tan3 ke4 pao4
@@ -23475,6 +23536,7 @@
 奮勇	0	fen4 yong3
 奮勇當先	0	fen4 yong3 dang1 xian1
 奮勇爭先	0	fen4 yong3 zheng1 xian1
+糞便	0	fen4 bian4
 糞門	0	fen4 men2
 糞肥	0	fen4 fei2
 糞夫	0	fen4 fu1
@@ -23545,6 +23607,7 @@
 方關	0	fang1 guan1
 方塊	0	fang1 kuai4
 方塊字	0	fang1 kuai4 zi4
+方塊舞	0	fang1 kuai4 wu3
 方框	0	fang1 kuang1
 方框圖	0	fang1 kuang1 tu2
 方何礙	0	fang1 he2 ai4
@@ -23669,8 +23732,6 @@
 坊佐	0	fang1 zuo3
 坊隅	0	fang1 yu2
 枋頭	0	fang1 tou2
-枋寮鄉	0	fang1 liao2 xiang1
-枋山鄉	0	fang1 shan1 xiang1
 枋子	0	fang1 zi5
 芳名	0	fang1 ming2
 芳菲	0	fang1 fei1
@@ -24029,6 +24090,7 @@
 放禿尾巴鷹	0	fang4 tu1 wei3 ba5 ying1
 放囊的	0	fang4 nang2 de5
 放牛	0	fang4 niu2
+放牛班	0	fang4 niu2 ban1
 放牛歸馬	0	fang4 niu2 gui1 ma3
 放牛吃草	0	fang4 niu2 chi1 cao3
 放年學	0	fang4 nian2 xue2
@@ -24386,6 +24448,7 @@
 風調	0	feng1 diao4
 風定天晴	0	feng1 ding4 tian1 qing2
 風度	0	feng1 du4
+風度翩翩	0	feng1 du4 pian1 pian1
 風鐸	0	feng1 duo2
 風洞	0	feng1 dong4
 風動	0	feng1 dong4
@@ -24773,6 +24836,7 @@
 楓宸	0	feng1 chen2
 楓樹	0	feng1 shu4
 瘋病	0	feng1 bing4
+瘋魔	0	feng1 mo2
 瘋瘋顛顛	0	feng1 feng5 dian1 dian1
 瘋瘋癲癲	0	feng1 feng5 dian1 dian1
 瘋瘋傻傻	0	feng1 feng5 sha3 sha3
@@ -24784,6 +24848,8 @@
 瘋話	0	feng1 hua4
 瘋枝	0	feng1 zhi1
 瘋長	0	feng1 zhang3
+瘋人院	0	feng1 ren2 yuan4
+瘋子	0	feng1 zi5
 峰林	0	feng1 lin2
 峰巒	0	feng1 luan2
 峰迴路轉	0	feng1 hui2 lu4 zhuan3
@@ -24930,7 +24996,6 @@
 逢低承接	0	feng2 di1 cheng2 jie1
 逢年過節	0	feng2 nian2 guo4 jie2
 逢集	0	feng2 ji2
-逢甲大學	0	feng2 jia3 da4 xue2
 逢君	0	feng2 jun1
 逢君之惡	0	feng2 jun1 zhi1 e4
 逢凶化吉	0	feng2 xiong1 hua4 ji2
@@ -25184,6 +25249,7 @@
 夫貴妻榮	0	fu1 gui4 qi1 rong2
 夫家	0	fu1 jia1
 夫君	0	fu1 jun1
+夫妻	0	fu1 qi1
 夫妻本是同林鳥	0	fu1 qi1 ben3 shi4 tong2 lin2 niao3
 夫妻反目	0	fu1 qi1 fan3 mu4
 夫妻店	0	fu1 qi1 dian4
@@ -25695,6 +25761,7 @@
 宓子賤彈鳴琴	0	fu2 zi3 jian4 tan2 ming2 qin2
 虙妃	0	fu2 fei1
 服辯	0	fu2 bian4
+服兵役	0	fu2 bing1 yi4
 服馬	0	fu2 ma3
 服滿	0	fu2 man3
 服冕乘軒	0	fu2 mian3 cheng2 xuan1
@@ -26789,6 +26856,7 @@
 富餘	0	fu4 yu5
 富裕	0	fu4 yu4
 富源	0	fu4 yuan2
+婦德	0	fu4 de2
 婦道家	0	fu4 dao5 jia5
 婦道人家	0	fu4 dao5 ren2 jia5
 婦弟	0	fu4 di4
@@ -27041,6 +27109,7 @@
 達文西	0	da2 wen2 xi1
 韃靼	0	da2 da2
 韃靼海峽	0	da2 da2 hai3 xia2
+韃虜	0	da2 lu3
 打把攔	0	da3 ba3 lan2
 打把式	0	da3 ba3 shi5
 打把勢	0	da3 ba3 shi5
@@ -27117,6 +27186,7 @@
 打馬虎眼	0	da3 ma3 hu5 yan3
 打馬將	0	da3 ma3 jiang4
 打罵	0	da3 ma4
+打罵教育	0	da3 ma4 jiao4 yu4
 打摸	0	da3 mo1
 打磨	0	da3 mo2
 打抹	0	da3 mo3
@@ -27275,6 +27345,7 @@
 打老兒	0	da3 lao3
 打攔	0	da3 lan2
 打攔頭雷	0	da3 lan2 tou2 lei2
+打爛	0	da3 lan4
 打爛帳	0	da3 lan4 zhang4
 打冷嗝	0	da3 leng3 ge2
 打冷槍	0	da3 leng3 qiang1
@@ -27324,6 +27395,7 @@
 打狗不看主人面	0	da3 gou3 bu4 kan4 zhu3 ren2 mian4
 打狗看主人	0	da3 gou3 kan4 zhu3 ren2
 打狗看主人面	0	da3 gou3 kan4 zhu3 ren2 mian4
+打狗也要看主人面	0	da3 gou3 ye3 yao4 kan4 zhu3 ren2 mian4
 打乾噦	0	da3 gan1 yue1
 打乾淨毬兒	0	da3 gan1 jing4 qiu2
 打幹	0	da3 gan4
@@ -27352,6 +27424,7 @@
 打關節	0	da3 guan1 jie2
 打滾	0	da3 gun3
 打滾撒潑	0	da3 gun3 sa1 po1
+打棍出箱	0	da3 gun4 chu1 xiang1
 打棍子	0	da3 gun4 zi5
 打光	0	da3 guang1
 打光棍	0	da3 guang1 gun4
@@ -27922,7 +27995,6 @@
 大劈棺	0	da4 pi1 guan1
 大辟	0	da4 pi4
 大品般若	0	da4 pin3 bo1 re3
-大屏幕電視	0	da4 ping2 mu4 dian4 shi4
 大酺	0	da4 pu2
 大媽	0	da4 ma1
 大媽媽	0	da4 ma1 ma5
@@ -27982,7 +28054,6 @@
 大發慈悲	0	da4 fa1 ci2 bei1
 大法	0	da4 fa3
 大法官	0	da4 fa3 guan1
-大法官會議	0	da4 fa3 guan1 hui4 yi4
 大法小廉	0	da4 fa3 xiao3 lian2
 大法師	0	da4 fa3 shi1
 大費周折	0	da4 fei4 zhou1 zhe2
@@ -28039,6 +28110,7 @@
 大打出手	0	da4 da3 chu1 shou3
 大大法法	0	da4 da5 fa3 fa3
 大大方方	0	da4 da5 fang1 fang1
+大大咧咧	0	da4 da5 lie1 lie1
 大大落落	0	da4 da5 luo4 luo4
 大大小小	0	da4 da5 xiao3 xiao3
 大德	0	da4 de2
@@ -28126,6 +28198,7 @@
 大特寫	0	da4 te4 xie3
 大抬其槓	0	da4 tai2 qi2 gang4
 大逃亡	0	da4 tao2 wang2
+大頭	0	da4 tou2
 大頭兵	0	da4 tou2 bing1
 大頭面目	0	da4 tou2 mian4 mu4
 大頭目	0	da4 tou2 mu4
@@ -28306,6 +28379,7 @@
 大陸隆堆	0	da4 lu4 long2 dui1
 大陸隆起	0	da4 lu4 long2 qi3
 大陸國	0	da4 lu4 guo2
+大陸客	0	da4 lu4 ke4
 大陸海	0	da4 lu4 hai3
 大陸貨	0	da4 lu4 huo4
 大陸架	0	da4 lu4 jia4
@@ -28363,6 +28437,7 @@
 大故	0	da4 gu4
 大括弧	0	da4 gua1 hu2
 大褂	0	da4 gua4
+大鍋	0	da4 guo1
 大鍋飯	0	da4 guo1 fan4
 大鍋菜	0	da4 guo1 cai4
 大國	0	da4 guo2
@@ -28412,6 +28487,7 @@
 大快之事	0	da4 kuai4 zhi1 shi4
 大快人心	0	da4 kuai4 ren2 xin1
 大塊	0	da4 kuai4
+大塊頭	0	da4 kuai4 tou2
 大塊文章	0	da4 kuai4 wen2 zhang1
 大塊兒	0	da4 kuai4
 大魁	0	da4 kui2
@@ -28906,6 +28982,7 @@
 大腸息肉	0	da4 chang2 xi2 rou4
 大腸炎	0	da4 chang2 yan2
 大腸癌	0	da4 chang2 yan2
+大場面	0	da4 chang2 mian4
 大氅	0	da4 chang3
 大成	0	da4 cheng2
 大成殿	0	da4 cheng2 dian4
@@ -28972,6 +29049,7 @@
 大殺風景	0	da4 sha1 feng1 jing3
 大煞	0	da4 sha4
 大煞風景	0	da4 sha1 feng1 jing3
+大舌頭	0	da4 she2 tou5
 大舍	0	da4 she4
 大設設	0	da4 she4 she4
 大赦	0	da4 she4
@@ -29309,6 +29387,7 @@
 得理不饒人	0	de2 li3 bu4 rao2 ren2
 得力	0	de2 li4
 得利	0	de2 li4
+得了	0	de2 liao3
 得臉	0	de2 lian3
 得令	0	de2 ling4
 得隴望蜀	0	de2 long3 wang4 shu3
@@ -29490,7 +29569,6 @@
 德爾班	0	de2 er3 ban1
 德以報怨	0	de2 yi3 bao4 yuan4
 德意志民主共和國	0	de2 yi4 zhi4 min2 zhu3 gong4 he2 guo2
-德意志聯邦共和國	0	de2 yi4 zhi4 lian2 bang1 gong4 he2 guo2
 德意志革命	0	de2 yi4 zhi4 ge2 ming4
 德意志關稅同盟	0	de2 yi4 zhi4 guan1 shui4 tong2 meng2
 德業長昭	0	de2 ye4 chang2 zhao1
@@ -29679,6 +29757,7 @@
 代用品	0	dai4 yong4 pin3
 岱宗	0	dai4 zong1
 岱嶽	0	dai4 yue4
+玳瑁	0	dai4 mei4
 玳瑁梁	0	dai4 mei4 liang2
 玳瑁筵	0	dai4 mei4 yan2
 玳梁	0	dai4 liang2
@@ -30305,6 +30384,7 @@
 悼亡詩	0	dao4 wang2 shi1
 盜版	0	dao4 ban3
 盜不過五女門	0	dao4 bu4 guo4 wu3 nu3 men2
+盜騙	0	dao4 pian4
 盜馬	0	dao4 ma3
 盜馬賊	0	dao4 ma3 zei2
 盜賣	0	dao4 mai4
@@ -30569,6 +30649,7 @@
 兜肚兒	0	dou1 du4
 兜肚	0	dou1 du5
 兜肚斷了帶子	0	dou1 du5 duan4 le5 dai4 zi5
+兜頭	0	dou1 tou2
 兜拖	0	dou1 tuo1
 兜來兜去	0	dou1 lai2 dou1 qu4
 兜攬	0	dou1 lan3
@@ -30712,6 +30793,7 @@
 豆腐西施	0	dou4 fu5 xi1 shi1
 豆腐心	0	dou4 fu3 xin1
 豆腐鯊	0	dou4 fu5 sha1
+豆腐乳	0	dou4 fu5 ru3
 豆腐嘴，刀子心	0	dou4 fu5 zui3 dao1 zi5 xin1
 豆腐衣	0	dou4 fu5 yi1
 豆大	0	dou4 da4
@@ -30803,6 +30885,7 @@
 鬥頭	0	dou4 tou2
 鬥牛	0	dou4 niu2
 鬥牛陣	0	dou4 niu2 zhen4
+鬥牛士	0	dou4 niu2 shi4
 鬥力	0	dou4 li4
 鬥力不如鬥智	0	dou4 li4 bu4 ru2 dou4 zhi4
 鬥麗	0	dou4 li4
@@ -30813,6 +30896,7 @@
 鬥話	0	dou4 hua4
 鬥幌子	0	dou4 huang3 zi5
 鬥鬨	0	dou4 hong4
+鬥雞	0	dou4 ji1
 鬥雞臺	0	dou4 ji1 tai2
 鬥雞走狗	0	dou4 ji1 zou3 gou3
 鬥雞眼	0	dou4 ji1 yan3
@@ -30823,6 +30907,7 @@
 鬥巧	0	dou4 qiao3
 鬥巧爭奇	0	dou4 qiao3 zheng1 qi2
 鬥趣	0	dou4 qu4
+鬥犬	0	dou4 quan3
 鬥犀臺	0	dou4 xi1 tai2
 鬥蟋蟀	0	dou4 xi1 shuai4
 鬥閑氣	0	dou4 xian2 qi4
@@ -30877,7 +30962,6 @@
 丹方	0	dan1 fang1
 丹房	0	dan1 fang2
 丹楓	0	dan1 feng1
-丹楓呦鹿圖	0	dan1 feng1 you1 lu4 tu2
 丹鳳城	0	dan1 feng4 cheng2
 丹鳳眼	0	dan1 feng4 yan3
 丹頂鶴	0	dan1 ding3 he4
@@ -32032,6 +32116,8 @@
 低頭受縛	0	di1 tou2 shou4 fu2
 低頭喪氣	0	di1 tou2 sang4 qi4
 低鈉鹽	0	di1 na4 yan2
+低能	0	di1 neng2
+低能兒	0	di1 neng2 er2
 低年級	0	di1 nian2 ji2
 低欄	0	di1 lan2
 低利	0	di1 li4
@@ -33062,6 +33148,7 @@
 貂珥	0	diao1 er3
 貂羽	0	diao1 yu3
 鳥人	0	diao3 ren2
+弔膀子	0	diao4 bang4 zi5
 弔民	0	diao4 min2
 弔民伐罪	0	diao4 min2 fa1 zui4
 弔奠	0	diao4 dian4
@@ -33138,6 +33225,8 @@
 吊子	0	diao4 zi5
 吊在麵糊盆內	0	diao4 zai4 mian4 hu2 pen2 nei4
 吊嘴	0	diao4 zui3
+吊死	0	diao4 si3
+吊死鬼	0	diao4 si3 gui3
 吊死鬼的裹腳布	0	diao4 si3 gui3 de5 guo3 jiao3 bu4
 吊死鬼搽粉	0	diao4 si3 gui3 cha2 fen3
 吊嗓	0	diao4 sang3
@@ -34488,6 +34577,7 @@
 毒手尊拳	0	du2 shou3 zun1 quan2
 毒日頭	0	du2 ri4 tou5
 毒刺	0	du2 ci4
+毒草	0	du2 cao3
 毒素	0	du2 su4
 毒餌	0	du2 er3
 毒牙	0	du2 ya2
@@ -35704,6 +35794,7 @@
 敦打	0	dun1 da3
 敦敦實實	0	dun1 dun1 shi2 shi2
 敦蹄刷腳	0	dun1 ti2 shua1 jiao3
+敦倫	0	dun1 lun2
 敦克爾克大撤退	0	dun1 ke4 er3 ke4 da4 che4 tui4
 敦厚	0	dun1 hou4
 敦葫蘆，摔馬杓	0	dun1 hu2 lu5 shuai1 ma3 shao2
@@ -36182,6 +36273,7 @@
 恫嚇	0	dong4 he4
 恫疑虛喝	0	dong4 yi2 xu1 he4
 恫疑虛猲	0	dong4 yi2 xu1 he4
+胴體	0	dong4 ti3
 凍剝剝	0	dong4 bo1 bo1
 凍斃	0	dong4 bi4
 凍豆腐	0	dong4 dou4 fu5
@@ -37418,6 +37510,7 @@
 逃家	0	tao2 jia1
 逃嫁	0	tao2 jia4
 逃軍	0	tao2 jun1
+逃妻	0	tao2 qi1
 逃席	0	tao2 xi2
 逃刑	0	tao2 xing2
 逃學	0	tao2 xue2
@@ -37582,6 +37675,7 @@
 套語	0	tao4 yu3
 套用	0	tao4 yong4
 偷薄	0	tou1 bo2
+偷拍	0	tou1 pai1
 偷跑	0	tou1 pao3
 偷目竊望	0	tou1 mu4 qie4 wang4
 偷得浮生半日閒	0	tou1 de2 fu2 sheng1 ban4 ri4 xian2
@@ -37837,7 +37931,6 @@
 頭髮殼子	0	tou2 fa3 ke2 zi5
 頭髮上指	0	tou2 fa3 shang4 zhi3
 頭髮菜	0	tou2 fa3 cai4
-頭份鎮	0	tou2 fen4 zhen4
 頭房	0	tou2 fang2
 頭風	0	tou2 feng1
 頭伏	0	tou2 fu2
@@ -38230,6 +38323,7 @@
 談話會	0	tan2 hua4 hui4
 談今論古	0	tan2 jin1 lun4 gu3
 談經說法	0	tan2 jing1 shuo1 fa3
+談情說愛	0	tan2 qing2 shuo1 ai4
 談屑	0	tan2 xie4
 談笑	0	tan2 xiao4
 談笑封侯	0	tan2 xiao4 feng1 hou2
@@ -38702,6 +38796,7 @@
 堂堂正正	0	tang2 tang2 zheng4 zheng4
 堂帖	0	tang2 tie3
 堂老	0	tang2 lao3
+堂哥	0	tang2 ge1
 堂構	0	tang2 gou4
 堂構更新	0	tang2 gou4 geng1 xin1
 堂鼓	0	tang2 gu3
@@ -38790,6 +38885,7 @@
 趟馬	0	tang4 ma3
 燙馬	0	tang4 ma3
 燙麵	0	tang4 mian4
+燙髮	0	tang4 fa3
 燙蠟	0	tang4 la4
 燙花	0	tang4 hua1
 燙酒	0	tang4 jiu3
@@ -38822,6 +38918,7 @@
 藤牌	0	teng2 pai2
 藤攀葛繞	0	teng2 pan1 ge2 rao4
 藤蔓	0	teng2 man4
+藤條	0	teng2 tiao2
 藤蘿	0	teng2 luo2
 藤輪	0	teng2 lun2
 藤壺	0	teng2 hu2
@@ -39118,6 +39215,7 @@
 鵜鴃	0	ti2 jue2
 鵜形目	0	ti2 xing2 mu4
 體魄	0	ti3 po4
+體毛	0	ti3 mao2
 體貌	0	ti3 mao4
 體面	0	ti3 mian4
 體罰	0	ti3 fa2
@@ -40028,6 +40126,7 @@
 天籟自鳴	0	tian1 lai4 zi4 ming2
 天雷	0	tian1 lei2
 天牢	0	tian1 lao2
+天老	0	tian1 lao3
 天老兒	0	tian1 lao3
 天老爺	0	tian1 lao3 ye2
 天藍色	0	tian1 lan2 se4
@@ -40515,6 +40614,7 @@
 添兵減灶	0	tian1 bing1 jian3 zao4
 添補	0	tian1 bu5
 添盆	0	tian1 pen2
+添忙	0	tian1 mang2
 添墳	0	tian1 fen2
 添房	0	tian1 fang2
 添丁	0	tian1 ding1
@@ -41521,6 +41621,7 @@
 兔脣	0	tu4 chun2
 兔子	0	tu4 zi5
 兔子不吃窩邊草	0	tu4 zi5 bu4 chi1 wo1 bian1 cao3
+兔崽子	0	tu4 zai3 zi5
 兔走烏飛	0	tu4 zou3 wu1 fei1
 兔絲	0	tu4 si1
 兔絲燕麥	0	tu4 si1 yan4 mai4
@@ -41790,6 +41891,7 @@
 駝鳥政策	0	tuo2 niao3 zheng4 ce4
 駝鹿	0	tuo2 lu4
 駝絨	0	tuo2 rong2
+駝子	0	tuo2 zi5
 駝色	0	tuo2 se4
 駝員	0	tuo2 yuan2
 鴕鳥	0	tuo2 niao3
@@ -45317,6 +45419,7 @@
 奴才	0	nu2 cai2
 奴材	0	nu2 cai2
 奴從	0	nu2 cong2
+奴役	0	nu2 yi4
 奴顏婢睞	0	nu2 yan2 bi4 lai4
 奴顏媚骨	0	nu2 yan2 mei4 gu3
 孥戮	0	nu2 lu4
@@ -45780,6 +45883,7 @@
 女花	0	nu3 hua1
 女禍	0	nu3 huo4
 女皇	0	nu3 huang2
+女給	0	nu3 ji3
 女伎	0	nu3 ji4
 女紀	0	nu3 ji4
 女家	0	nu3 jia1
@@ -46099,6 +46203,7 @@
 喇叭筒	0	la3 ba5 tong3
 喇叭口兒	0	la3 ba5 kou3
 喇叭褲	0	la3 ba5 ku4
+喇叭花	0	la3 ba5 hua1
 喇叭蟲	0	la3 ba5 chong2
 喇叭手	0	la3 ba5 shou3
 喇嘛	0	la3 ma5
@@ -47014,6 +47119,7 @@
 老面子	0	lao3 mian4 zi5
 老命	0	lao3 ming4
 老母	0	lao3 mu3
+老母雞	0	lao3 mu3 ji1
 老法子	0	lao3 fa2 zi5
 老佛爺	0	lao3 fo2 ye5
 老廢物	0	lao3 fei4 wu4
@@ -47063,6 +47169,7 @@
 老店	0	lao3 dian4
 老都爺	0	lao3 du1 ye2
 老杜	0	lao3 du4
+老東西	0	lao3 dong1 xi5
 老太	0	lao3 tai4
 老太婆的裹腳布	0	lao3 tai4 po2 de5 guo3 jiao3 bu4
 老太太	0	lao3 tai4 tai5
@@ -48011,6 +48118,7 @@
 郎官	0	lang2 guan1
 郎舅	0	lang2 jiu4
 郎靜山	0	lang2 jing4 shan1
+郎君	0	lang2 jun1
 郎潛白髮	0	lang2 qian2 bo2 fa3
 郎心如鐵	0	lang2 xin1 ru2 tie3
 郎主	0	lang2 zhu3
@@ -50457,6 +50565,7 @@
 柳眉剔豎	0	liu3 mei2 ti1 shu4
 柳眉踢豎	0	liu3 mei2 ti1 shu4
 柳媚花明	0	liu3 mei4 hua1 ming2
+柳門花戶	0	liu3 men2 hua1 hu4
 柳盜跖	0	liu3 dao4 zhi2
 柳丁	0	liu3 ding1
 柳嚲鶯嬌	0	liu3 duo3 ying1 jiao1
@@ -51552,6 +51661,7 @@
 臨危效命	0	lin2 wei2 xiao4 ming4
 臨危致命	0	lin2 wei2 zhi4 ming4
 臨危受命	0	lin2 wei2 shou4 ming4
+臨危授命	0	lin2 wei2 shou4 ming4
 臨危自悔	0	lin2 wei2 zi4 hui3
 臨危自計	0	lin2 wei2 zi4 ji4
 臨危自省	0	lin2 wei2 zi4 xing3
@@ -52050,6 +52160,7 @@
 量化	0	liang4 hua4
 量淺	0	liang4 qian3
 量輕	0	liang4 qing1
+量小非君子，無毒不丈夫	0	liang4 xiao3 fei1 jun1 zi3 wu2 du2 bu4 zhang4 fu1
 量小力微	0	liang4 xiao3 li4 wei2
 量小氣窄	0	liang4 xiao3 qi4 zhai3
 量小易盈	0	liang4 xiao3 yi4 ying2
@@ -53236,6 +53347,7 @@
 裸袖揎衣	0	luo3 xiu4 xuan1 yi1
 裸跣	0	luo3 xian3
 裸線	0	luo3 xian4
+裸照	0	luo3 zhao4
 裸裎	0	luo3 cheng2
 裸身	0	luo3 shen1
 裸身赤體	0	luo3 shen1 chi4 ti3
@@ -53407,6 +53519,7 @@
 落山風	0	luo4 shan1 feng1
 落生	0	luo4 sheng1
 落水	0	luo4 shui3
+落水狗	0	luo4 shui3 gou3
 落水狗上岸	0	luo4 shui3 gou3 shang4 an4
 落水管	0	luo4 shui3 guan3
 落日	0	luo4 ri4
@@ -53994,7 +54107,6 @@
 龍首	0	long2 shou3
 龍山	0	long2 shan1
 龍山落帽	0	long2 shan1 luo4 mao4
-龍山鎮	0	long2 shan1 zhen4
 龍山寺	0	long2 shan1 si4
 龍山文化	0	long2 shan1 wen2 hua4
 龍神	0	long2 shen2
@@ -54340,6 +54452,7 @@
 綠鬢	0	lu4 bin4
 綠鬢朱顏	0	lu4 bin4 zhu1 yan2
 綠皮層	0	lu4 pi2 ceng2
+綠帽	0	lu4 mao4
 綠髮	0	lu4 fa3
 綠肥	0	lu4 fei2
 綠肥紅瘦	0	lu4 fei2 hong2 shou4
@@ -54462,6 +54575,7 @@
 掠人之美	0	lue4 ren2 zhi1 mei3
 掠子	0	lue4 zi5
 掠影	0	lue4 ying3
+略賣	0	lue4 mai4
 略地	0	lue4 di4
 略地攻城	0	lue4 di4 gong1 cheng2
 略地侵城	0	lue4 di4 qin1 cheng2
@@ -54914,8 +55028,6 @@
 葛越	0	ge2 yue4
 噶大克	0	ge2 da4 ke4
 噶倫	0	ge2 lun2
-葛摩	0	ge3 mo2
-葛摩伊斯蘭聯邦共和國	0	ge2 mo2 yi1 si1 lan2 lian2 bang1 gong4 he2 guo2
 葛天八闋	0	ge3 tian1 ba1 que4
 葛天氏	0	ge3 tian1 shi4
 格任亞	0	ge2 ren4 ya4
@@ -55416,6 +55528,7 @@
 高格調	0	gao1 ge2 diao4
 高閣	0	gao1 ge2
 高個子	0	gao1 ge4 zi5
+高個兒	0	gao1 ge4
 高高在上	0	gao1 gao1 zai4 shang4
 高高低低	0	gao1 gao5 di1 di1
 高高下下	0	gao1 gao5 xia4 xia4
@@ -55592,6 +55705,7 @@
 高識遠度	0	gao1 shi4 yuan3 du4
 高識遠見	0	gao1 shi4 yuan3 jian4
 高射炮	0	gao1 she4 pao4
+高燒	0	gao1 shao1
 高手	0	gao1 shou3
 高手如雲	0	gao1 shou3 ru2 yun2
 高手雲集	0	gao1 shou3 yun2 ji2
@@ -56037,6 +56151,7 @@
 狗餂熱煎盤	0	gou3 tian3 re4 jian1 pan2
 狗屠角牴	0	gou3 tu2 jiao3 di3
 狗兔聽提	0	gou3 tu4 ting1 ti2
+狗腿	0	gou3 tui3
 狗腿子	0	gou3 tui3 zi5
 狗拿耗子	0	gou3 na2 hao4 zi5
 狗攬三堆屎	0	gou3 lan3 san1 dui1 shi3
@@ -56057,6 +56172,7 @@
 狗行狼心	0	gou3 xing2 lang2 xin1
 狗心狗行	0	gou3 xin1 gou3 xing4
 狗續貂尾	0	gou3 xu4 diao1 wei3
+狗熊	0	gou3 xiong2
 狗彘	0	gou3 zhi4
 狗彘不食	0	gou3 zhi4 bu4 shi2
 狗彘不如	0	gou3 zhi4 bu4 ru2
@@ -56070,6 +56186,7 @@
 狗吃熱屎	0	gou3 chi1 re4 shi3
 狗蝨	0	gou3 shi1
 狗食	0	gou3 shi2
+狗矢	0	gou3 shi3
 狗屎	0	gou3 shi3
 狗肉	0	gou3 rou4
 狗子夾尾巴	0	gou3 zi5 jia2 wei3 ba5
@@ -56419,6 +56536,7 @@
 乾冰	0	gan1 bing1
 乾撇下	0	gan1 pie1 xia4
 乾片	0	gan1 pian4
+乾媽	0	gan1 ma1
 乾沒	0	gan1 mo4
 乾梅	0	gan1 mei2
 乾妹妹	0	gan1 mei4 mei5
@@ -56472,6 +56590,7 @@
 乾餱以愆	0	gan1 hou2 yi3 qian1
 乾旱	0	gan1 han4
 乾花	0	gan1 hua1
+乾貨	0	gan1 huo4
 乾貨船	0	gan1 huo4 chuan2
 乾霍亂	0	gan1 huo4 luan4
 乾回付	0	gan1 hui2 fu4
@@ -56490,6 +56609,7 @@
 乾虔	0	gan1 qian2
 乾親	0	gan1 qin1
 乾親家	0	gan1 qing4 jia1
+乾洗	0	gan1 xi3
 乾笑	0	gan1 xiao4
 乾薪	0	gan1 xin1
 乾支剌	0	gan1 zhi1 la4
@@ -56564,6 +56684,7 @@
 趕得及	0	gan3 de5 ji2
 趕得上	0	gan3 de5 shang4
 趕到	0	gan3 dao4
+趕到	0	gan3 dao5
 趕檔	0	gan3 dang3
 趕頭水	0	gan3 tou2 shui3
 趕趟兒	0	gan3 tang4
@@ -58298,6 +58419,7 @@
 寡母	0	gua3 mu3
 寡夫	0	gua3 fu1
 寡婦	0	gua3 fu4
+寡婦門前是非多	0	gua3 fu4 men2 qian2 shi4 fei1 duo1
 寡婦死兒子	0	gua3 fu4 si3 er2 zi5
 寡斷	0	gua3 duan4
 寡頭	0	gua3 tou2
@@ -58557,7 +58679,6 @@
 國防	0	guo2 fang2
 國防白皮書	0	guo2 fang2 bai2 pi2 shu1
 國防部	0	guo2 fang2 bu4
-國防大學	0	guo2 fang2 da4 xue2
 國防體制	0	guo2 fang2 ti3 zhi4
 國防體育	0	guo2 fang2 ti3 yu4
 國防科學	0	guo2 fang2 ke1 xue2
@@ -58606,9 +58727,6 @@
 國立博物館	0	guo2 li4 bo2 wu4 guan3
 國立編譯館	0	guo2 li4 bian1 yi4 guan3
 國立大學	0	guo2 li4 da4 xue2
-國立臺灣博物館	0	guo2 li4 tai2 wan1 bo2 wu4 guan3
-國立臺灣圖書館	0	guo2 li4 tai2 wan1 tu2 shu1 guan3
-國立歷史博物館	0	guo2 li4 li4 shi3 bo2 wu4 guan3
 國立教育廣播電臺	0	guo2 li4 jiao4 yu4 guang3 bo4 dian4 tai2
 國立中央圖書館	0	guo2 li4 zhong1 yang1 tu2 shu1 guan3
 國曆	0	guo2 li4
@@ -58629,7 +58747,6 @@
 國科會同步輻射研究中心	0	guo2 ke1 hui4 tong2 bu4 fu2 she4 yan2 jiu4 zhong1 xin1
 國科會國家高速電腦中心	0	guo2 ke1 hui4 guo2 jia1 gao1 su4 dian4 nao3 zhong1 xin1
 國科會國家高速電腦中心圖書館	0	guo2 ke1 hui4 guo2 jia1 gao1 su4 dian4 nao3 zhong1 xin1 tu2 shu1 guan3
-國科會毫微米元件實驗室	0	guo2 ke1 hui4 hao2 wei2 mi3 yuan2 jian4 shi2 yan4 shi4
 國科會晶片設計製作中心	0	guo2 ke1 hui4 jing1 pian4 she4 ji4 zhi4 zuo4 zhong1 xin1
 國科會精密儀器發展中心	0	guo2 ke1 hui4 jing1 mi4 yi2 qi4 fa1 zhan3 zhong1 xin1
 國庫	0	guo2 ku4
@@ -58657,7 +58774,6 @@
 國際	0	guo2 ji4
 國際百科資料供應業務	0	guo2 ji4 bai3 ke1 zi1 liao4 gong1 ying4 ye4 wu4
 國際標	0	guo2 ji4 biao1
-國際標準書碼	0	guo2 ji4 biao1 zhun3 shu1 ma3
 國際標準組織	0	guo2 ji4 biao1 zhun3 zu3 zhi1
 國際標準舞	0	guo2 ji4 biao1 zhun3 wu3
 國際貿易	0	guo2 ji4 mao4 yi4
@@ -58750,8 +58866,6 @@
 國家風險評估	0	guo2 jia1 feng1 xian3 ping2 gu1
 國家大事	0	guo2 jia1 da4 shi4
 國家地震工程研究中心	0	guo2 jia1 di4 zhen4 gong1 cheng2 yan2 jiu4 zhong1 xin1
-國家電影資料館	0	guo2 jia1 dian4 ying3 zi1 liao4 guan3
-國家電影文化中心	0	guo2 jia1 dian4 ying3 wen2 hua4 zhong1 xin1
 國家棟梁	0	guo2 jia1 dong4 liang2
 國家圖書館	0	guo2 jia1 tu2 shu1 guan3
 國家統一委員會	0	guo2 jia1 tong3 yi1 wei3 yuan2 hui4
@@ -59317,6 +59431,7 @@
 怪誕劇	0	guai4 dan4 ju4
 怪底	0	guai4 di3
 怪特	0	guai4 te4
+怪胎	0	guai4 tai1
 怪頭	0	guai4 tou2
 怪談	0	guai4 tan2
 怪膩的	0	guai4 ni4 de5
@@ -59493,6 +59608,7 @@
 龜子	0	gui1 zi3
 龜策	0	gui1 ce4
 龜筴	0	gui1 ce4
+龜縮	0	gui1 suo1
 龜兒子	0	gui1 er2 zi5
 龜文	0	gui1 wen2
 龜文鳥跡	0	gui1 wen2 niao3 ji1
@@ -59801,6 +59917,7 @@
 鬼神不測	0	gui3 shen2 bu4 ce4
 鬼神莫窺	0	gui3 shen2 mo4 kui1
 鬼神莫測	0	gui3 shen2 mo4 ce4
+鬼子	0	gui3 zi5
 鬼子敢爾	0	gui3 zi5 gan3 er3
 鬼卒	0	gui3 zu2
 鬼才	0	gui3 cai2
@@ -60703,6 +60820,7 @@
 灌灌	0	guan4 guan4
 灌口二郎	0	guan4 kou3 er4 lang2
 灌黃湯	0	guan4 huang2 tang1
+灌酒	0	guan4 jiu3
 灌救	0	guan4 jiu4
 灌漿	0	guan4 jiang1
 灌區	0	guan4 qu1
@@ -60771,6 +60889,7 @@
 滾滾紅塵	0	gun3 gun3 hong2 chen2
 滾滾蹡蹡	0	gun3 gun5 qiang1 qiang1
 滾開	0	gun3 kai5
+滾起來	0	gun3 qi3 lai5
 滾球兒	0	gun3 qiu2
 滾馳	0	gun3 chi2
 滾車轍的	0	gun3 che1 zhe2 de5
@@ -61029,7 +61148,6 @@
 廣博	0	guang3 bo2
 廣播	0	guang3 bo4
 廣播電臺	0	guang3 bo4 dian4 tai2
-廣播電視事業處	0	guang3 bo4 dian4 shi4 shi4 ye4 chu4
 廣播段	0	guang3 bo4 duan4
 廣播歌仔戲	0	guang3 bo4 ge1 zi3 xi4
 廣播節	0	guang3 bo4 jie2
@@ -61840,6 +61958,7 @@
 公社	0	gong1 she4
 公設辯護人	0	gong1 she4 bian4 hu4 ren2
 公善	0	gong1 shan4
+公審	0	gong1 shen3
 公升	0	gong1 sheng1
 公生明	0	gong1 sheng1 ming2
 公輸	0	gong1 shu1
@@ -63023,6 +63142,7 @@
 開泰	0	kai1 tai4
 開頭	0	kai1 tou2
 開頭炮	0	kai1 tou2 pao4
+開堂	0	kai1 tang2
 開膛	0	kai1 tang2
 開天闢地	0	kai1 tian1 pi4 di4
 開天窗	0	kai1 tian1 chuang1
@@ -65157,6 +65277,7 @@
 空際	0	kong1 ji4
 空架子	0	kong1 jia4 zi5
 空劫	0	kong1 jie2
+空姐	0	kong1 jie3
 空間	0	kong1 jian1
 空間美	0	kong1 jian1 mei3
 空間分析	0	kong1 jian1 fen1 xi1
@@ -65719,6 +65840,7 @@
 合伙	0	he2 huo3
 合夥	0	he2 huo3
 合夥人	0	he2 huo3 ren2
+合歡	0	he2 huan1
 合歡結	0	he2 huan1 jie2
 合歡山	0	he2 huan1 shan1
 合歡扇	0	he2 huan1 shan4
@@ -66443,6 +66565,7 @@
 海盜	0	hai3 dao4
 海膽	0	hai3 dan3
 海燈	0	hai3 deng1
+海底	0	hai3 di3
 海底摸月	0	hai3 di3 mo1 yue4
 海底地震	0	hai3 di3 di4 zhen4
 海底電纜	0	hai3 di3 dian4 lan3
@@ -66758,6 +66881,7 @@
 害肚子	0	hai4 du4 zi5
 害頭疼	0	hai4 tou2 teng2
 害天災	0	hai4 tian1 zai1
+害鳥	0	hai4 niao3
 害冷	0	hai4 leng3
 害口	0	hai4 kou3
 害苦	0	hai4 ku3
@@ -66847,6 +66971,7 @@
 黑甜鄉	0	hei1 tian2 xiang1
 黑土	0	hei1 tu3
 黑牛生白犢	0	hei1 niu2 sheng1 bai2 du2
+黑奴	0	hei1 nu2
 黑奴籲天錄	0	hei1 nu2 yu4 tian1 lu4
 黑婁婁	0	hei1 lou2 lou2
 黑裡	0	hei1 li5
@@ -66905,6 +67030,7 @@
 黑熊	0	hei1 xiong2
 黑珍珠	0	hei1 zhen1 zhu1
 黑鬒鬒	0	hei1 zhen3 zhen3
+黑種	0	hei1 zhong3
 黑吃黑	0	hei1 chi1 hei1
 黑潮	0	hei1 chao2
 黑沉沉	0	hei1 chen2 chen2
@@ -66954,6 +67080,7 @@
 黑黶子	0	hei1 yan3 zi5
 黑影	0	hei1 ying3
 黑屋子	0	hei1 wu1 zi5
+黑五類	0	hei1 wu3 lei4
 黑尾浮塵子	0	hei1 wei3 fu2 chen2 zi3
 黑王相公	0	hei1 wang2 xiang4 gong1
 黑玉	0	hei1 yu4
@@ -67096,7 +67223,6 @@
 豪言壯語	0	hao2 yan2 zhuang4 yu3
 豪飲	0	hao2 yin3
 豪英	0	hao2 ying1
-豪雨	0	hao2 yu3
 豪雨特報	0	hao2 yu3 te4 bao4
 豪語	0	hao2 yu3
 濠濮間想	0	hao2 pu2 jian1 xiang3
@@ -67111,6 +67237,7 @@
 嚎天動地	0	hao2 tian1 dong4 di4
 嚎天喊地	0	hao2 tian1 han3 di4
 嚎喪	0	hao2 sang5
+蠔油	0	hao2 you2
 好把式	0	hao3 ba3 shi4
 好報	0	hao3 bao4
 好半天	0	hao3 ban4 tian1
@@ -67635,6 +67762,7 @@
 後代	0	hou4 dai4
 後爹	0	hou4 die1
 後凋	0	hou4 diao1
+後段班	0	hou4 duan4 ban1
 後盾	0	hou4 dun4
 後臺	0	hou4 tai2
 後臺老闆	0	hou4 tai2 lao3 ban3
@@ -68344,6 +68472,7 @@
 漢口市	0	han4 kou3 shi4
 漢孔宙碑	0	han4 kong3 zhou4 bei1
 漢和帝	0	han4 he2 di4
+漢化	0	han4 hua4
 漢桓帝	0	han4 huan2 di4
 漢紀	0	han4 ji4
 漢家	0	han4 jia1
@@ -68530,6 +68659,7 @@
 航空包裹	0	hang2 kong1 bao1 guo3
 航空版	0	hang2 kong1 ban3
 航空病	0	hang2 kong1 bing4
+航空母艦	0	hang2 kong1 mu3 jian4
 航空工程	0	hang2 kong1 gong1 cheng2
 航空公司	0	hang2 kong1 gong1 si1
 航空器	0	hang2 kong1 qi4
@@ -69485,6 +69615,7 @@
 護衛	0	hu4 wei4
 護衛艦	0	hu4 wei4 jian4
 護月	0	hu4 yue4
+化子	0	hua1 zi5
 花把戲	0	hua1 ba3 xi4
 花博士	0	hua1 bo2 shi4
 花白	0	hua1 bai2
@@ -69619,6 +69750,7 @@
 花鼓	0	hua1 gu3
 花鼓戲	0	hua1 gu3 xi4
 花瓜	0	hua1 gua1
+花國	0	hua1 guo2
 花果山	0	hua1 guo3 shan1
 花冠	0	hua1 guan1
 花棍舞	0	hua1 gun4 wu3
@@ -69729,6 +69861,7 @@
 花柱	0	hua1 zhu4
 花痴	0	hua1 chi1
 花插	0	hua1 cha1
+花茶	0	hua1 cha2
 花車	0	hua1 che1
 花釵	0	hua1 chai1
 花晨月夕	0	hua1 chen2 yue4 xi4
@@ -70259,6 +70392,7 @@
 活不活，死不死	0	huo2 bu4 huo2 si3 bu4 si3
 活潑	0	huo2 po1
 活菩薩	0	huo2 pu2 sa5
+活埋	0	huo2 mai2
 活埋人	0	huo2 mai2 ren2
 活門	0	huo2 men2
 活門兒	0	huo2 men2
@@ -70295,6 +70429,7 @@
 活該	0	huo2 gai1
 活寡	0	huo2 gua3
 活觀音	0	huo2 guan1 yin1
+活口	0	huo2 kou3
 活口米	0	huo2 kou3 mi3
 活扣兒	0	huo2 kou4
 活化	0	huo2 hua4
@@ -70839,6 +70974,7 @@
 壑谷	0	huo4 gu3
 徊徨	0	huai2 huang2
 徊翔	0	huai2 xiang2
+淮北	0	huai2 bei3
 淮南	0	huai2 nan2
 淮南雞犬	0	huai2 nan2 ji1 quan3
 淮南橘，淮北枳	0	huai2 nan2 ju2 huai2 bei3 zhi3
@@ -71123,6 +71259,7 @@
 回避	0	hui2 bi4
 回飆	0	hui2 biao1
 回稟	0	hui2 bing3
+回部	0	hui2 bu4
 回盤	0	hui2 pan2
 回票面	0	hui2 piao4 mian4
 回片	0	hui2 pian4
@@ -72264,6 +72401,7 @@
 混球兒	0	hun4 qiu2
 混錢	0	hun4 qian2
 混唚	0	hun4 qin4
+混血	0	hun4 xie3
 混血兒	0	hun4 xie3 er2
 混循環小數	0	hun4 xun2 huan2 xiao3 shu4
 混戰	0	hun4 zhan4
@@ -72656,6 +72794,7 @@
 黃化	0	huang2 hua4
 黃話	0	huang2 hua4
 黃貨	0	huang2 huo4
+黃禍	0	huang2 huo4
 黃淮平原	0	huang2 huai2 ping2 yuan2
 黃昏	0	huang2 hun1
 黃昏時分	0	huang2 hun1 shi2 fen4
@@ -72712,6 +72851,7 @@
 黃鐘大呂	0	huang2 zhong1 da4 lu3
 黃鐘毀棄	0	huang2 zhong1 hui3 qi4
 黃鐘長棄	0	huang2 zhong1 chang2 qi4
+黃種人	0	huang2 zhong3 ren2
 黃池	0	huang2 chi2
 黃巢	0	huang2 chao2
 黃巢之亂	0	huang2 chao2 zhi1 luan4
@@ -72857,6 +72997,7 @@
 轟動	0	hong1 dong4
 轟雷貫耳	0	hong1 lei2 guan4 er3
 轟雷掣電	0	hong1 lei2 che4 dian4
+轟烈	0	hong1 lie4
 轟隆	0	hong1 long2
 轟轟	0	hong1 hong1
 轟轟烈烈	0	hong1 hong1 lie4 lie4
@@ -73112,6 +73253,7 @@
 紅線傳	0	hong2 xian4 zhuan4
 紅心	0	hong2 xin1
 紅星	0	hong2 xing1
+紅杏出牆	0	hong2 xing4 chu1 qiang2
 紅杏尚書	0	hong2 xing4 shang4 shu1
 紅學	0	hong2 xue2
 紅躑躅	0	hong2 zhi2 zhu2
@@ -74413,6 +74555,7 @@
 集部	0	ji2 bu4
 集大成	0	ji2 da4 cheng2
 集體	0	ji2 ti3
+集體恐怖營	0	ji2 ti3 kong3 bu4 ying2
 集體經濟	0	ji2 ti3 jing1 ji4
 集體行為	0	ji2 ti3 xing2 wei2
 集體訴訟	0	ji2 ti3 su4 song4
@@ -74856,6 +74999,7 @@
 計算	0	ji4 suan4
 計算機	0	ji4 suan4 ji1
 計算機語言學	0	ji4 suan4 ji1 yu3 yan2 xue2
+計算器	0	ji4 suan4 qi4
 計算尺	0	ji4 suan4 chi3
 計議	0	ji4 yi4
 計無所出	0	ji4 wu2 suo3 chu1
@@ -75831,6 +75975,7 @@
 架設	0	jia4 she4
 架子	0	jia4 zi5
 架子花臉	0	jia4 zi5 hua1 lian3
+架走	0	jia4 zou3
 架兒	0	jia4
 架秧子	0	jia4 yang1 zi5
 駕崩	0	jia4 beng1
@@ -76117,6 +76262,7 @@
 街上	0	jie1 shang5
 街卒	0	jie1 zu2
 街死街埋，路死路埋	0	jie1 si3 jie1 mai2 lu4 si3 lu4 mai2
+街舞	0	jie1 wu3
 嗟憤	0	jie1 fen4
 嗟夫	0	jie1 fu2
 嗟悼	0	jie1 dao4
@@ -76134,6 +76280,7 @@
 嗟怨	0	jie1 yuan4
 孑立	0	jie2 li4
 孑孑	0	jie2 jie2
+孑孓	0	jie2 jue2
 孑身	0	jie2 shen1
 孑然	0	jie2 ran2
 孑然一身	0	jie2 ran2 yi1 shen1
@@ -76236,6 +76383,7 @@
 結核菌	0	jie2 he2 jun4
 結好	0	jie2 hao3
 結喉	0	jie2 hou2
+結夥	0	jie2 huo3
 結匯	0	jie2 hui4
 結會	0	jie2 hui4
 結歡	0	jie2 huan1
@@ -76273,6 +76421,7 @@
 結撰	0	jie2 zhuan4
 結壯	0	jie2 zhuang4
 結狀	0	jie2 zhuang4
+結仇	0	jie2 chou2
 結腸	0	jie2 chang2
 結石	0	jie2 shi2
 結實	0	jie2 shi2
@@ -76382,6 +76531,7 @@
 傑佛士	0	jie2 fo2 shi4
 傑克	0	jie2 ke4
 傑克倫敦	0	jie2 ke4 lun2 dun1
+傑克遜	0	jie2 ke4 sun4
 傑出	0	jie2 chu1
 傑作	0	jie2 zuo4
 楖人	0	jie2 ren2
@@ -76562,6 +76712,7 @@
 截然不同	0	jie2 ran2 bu4 tong2
 截彎取直	0	jie2 wan1 qu3 zhi2
 姐妹	0	jie3 mei4
+姐妹花	0	jie3 mei4 hua1
 姐夫	0	jie3 fu1
 姐姐	0	jie3 jie5
 姐兒	0	jie3
@@ -76952,7 +77103,6 @@
 交通部	0	jiao1 tong1 bu4
 交通密度	0	jiao1 tong1 mi4 du4
 交通法庭	0	jiao1 tong1 fa3 ting2
-交通大學	0	jiao1 tong1 da4 xue2
 交通島	0	jiao1 tong1 dao3
 交通癱瘓	0	jiao1 tong1 tan1 huan4
 交通流量	0	jiao1 tong1 liu2 liang4
@@ -77002,6 +77152,7 @@
 交輝	0	jiao1 hui1
 交回	0	jiao1 hui2
 交會	0	jiao1 hui4
+交歡	0	jiao1 huan1
 交還	0	jiao1 huan2
 交換	0	jiao1 huan4
 交換碼	0	jiao1 huan4 ma3
@@ -77290,7 +77441,6 @@
 蕉鹿夢	0	jiao1 lu4 meng4
 蕉葛	0	jiao1 ge2
 蕉扇	0	jiao1 shan4
-蕉藕	0	jiao1 ou3
 蕉葉	0	jiao1 ye4
 礁溪鄉	0	jiao1 xi1 xiang1
 礁石	0	jiao1 shi2
@@ -77823,7 +77973,6 @@
 教外別傳	0	jiao4 wai4 bie2 chuan2
 教育	0	jiao4 yu4
 教育部	0	jiao4 yu4 bu4
-教育部電算中心	0	jiao4 yu4 bu4 dian4 suan4 zhong1 xin1
 教育部國語推行委員會	0	jiao4 yu4 bu4 guo2 yu3 tui1 xing2 wei3 yuan2 hui4
 教育媒體	0	jiao4 yu4 mei2 ti3
 教育費	0	jiao4 yu4 fei4
@@ -78209,6 +78358,7 @@
 酒荒	0	jiu3 huang1
 酒幌	0	jiu3 huang3
 酒家	0	jiu3 jia1
+酒家女	0	jiu3 jia1 nu3
 酒介齊眉	0	jiu3 jie4 qi2 mei2
 酒戒	0	jiu3 jie4
 酒澆壘塊	0	jiu3 jiao1 lei3 kuai4
@@ -78308,6 +78458,7 @@
 舅祖	0	jiu4 zu3
 舅嫂	0	jiu4 sao3
 舅爺	0	jiu4 ye2
+舅爺	0	jiu4 ye5
 舊邦	0	jiu4 bang1
 舊病	0	jiu4 bing4
 舊病難醫	0	jiu4 bing4 nan2 yi1
@@ -78466,6 +78617,7 @@
 救生	0	jiu4 sheng1
 救生筏	0	jiu4 sheng1 fa2
 救生艇	0	jiu4 sheng1 ting3
+救生圈	0	jiu4 sheng1 quan1
 救生船	0	jiu4 sheng1 chuan2
 救生衣	0	jiu4 sheng1 yi1
 救生員	0	jiu4 sheng1 yuan2
@@ -78575,6 +78727,7 @@
 奸詐	0	jian1 zha4
 奸詐不級	0	jian1 zha4 bu4 ji2
 奸臣	0	jian1 chen2
+奸商	0	jian1 shang1
 奸人	0	jian1 ren2
 奸賊	0	jian1 zei2
 奸言	0	jian1 yan2
@@ -79413,7 +79566,6 @@
 建設	0	jian4 she4
 建設廳	0	jian4 she4 ting1
 建設公債	0	jian4 she4 gong1 zhai4
-建設局	0	jian4 she4 ju2
 建設性	0	jian4 she4 xing4
 建商	0	jian4 shang1
 建樹	0	jian4 shu4
@@ -79487,12 +79639,12 @@
 賤賣	0	jian4 mai4
 賤名	0	jian4 ming2
 賤體	0	jian4 ti3
-賤內	0	jian4 nei4
 賤累	0	jian4 lei3
 賤斂貴發	0	jian4 lian4 gui4 fa1
 賤斂貴出	0	jian4 lian4 gui4 chu1
 賤骨頭	0	jian4 gu2 tou5
 賤貴窮通	0	jian4 gui4 qiong2 tong1
+賤貨	0	jian4 huo4
 賤價	0	jian4 jia4
 賤降	0	jian4 jiang4
 賤妾	0	jian4 qie4
@@ -80275,6 +80427,7 @@
 筋疲力竭	0	jin1 pi2 li4 jie2
 筋疲力盡	0	jin1 pi2 li4 jin4
 筋疲力軟	0	jin1 pi2 li4 ruan3
+筋脈	0	jin1 mai4
 筋膜炎	0	jin1 mo4 yan2
 筋斗	0	jin1 dou3
 筋斗雲	0	jin1 dou3 yun2
@@ -80665,6 +80818,7 @@
 進口家電	0	jin4 kou3 jia1 dian4
 進口稅	0	jin4 kou3 shui4
 進款	0	jin4 kuan3
+進化	0	jin4 hua4
 進化論	0	jin4 hua4 lun4
 進貨	0	jin4 huo4
 進級	0	jin4 ji2
@@ -80791,7 +80945,6 @@
 禁挫	0	jin4 cuo4
 禁所	0	jin4 suo3
 禁遏	0	jin4 e4
-禁役	0	jin4 yi4
 禁夜	0	jin4 ye4
 禁掖	0	jin4 ye4
 禁藥	0	jin4 yao4
@@ -81004,13 +81157,11 @@
 姜太公	0	jiang1 tai4 gong1
 姜太公釣魚	0	jiang1 tai4 gong1 diao4 yu2
 姜夔	0	jiang1 kui2
-姜黃	0	jiang1 huang2
 姜家大被	0	jiang1 jia1 da4 bei4
 姜宸英	0	jiang1 chen2 ying1
 姜尚	0	jiang1 shang4
 姜子牙	0	jiang1 zi3 ya2
 姜維	0	jiang1 wei2
-姜芋	0	jiang1 yu4
 姜嫄	0	jiang1 yuan2
 將本求利	0	jiang1 ben3 qiu2 li4
 將傍	0	jiang1 bang1
@@ -81053,6 +81204,7 @@
 將順	0	jiang1 shun4
 將作大匠	0	jiang1 zuo4 da4 jiang4
 將次	0	jiang1 ci4
+將才	0	jiang1 cai2
 將錯就錯	0	jiang1 cuo4 jiu4 cuo4
 將艾	0	jiang1 ai4
 將愛	0	jiang1 ai4
@@ -81097,7 +81249,6 @@
 薑湯	0	jiang1 tang1
 薑桂	0	jiang1 gui4
 薑桂老辣	0	jiang1 gui4 lao3 la4
-薑黃	0	jiang1 huang2
 薑是老的辣	0	jiang1 shi4 lao3 de5 la4
 疆土	0	jiang1 tu3
 疆理	0	jiang1 li3
@@ -81933,7 +82084,6 @@
 景慕	0	jing3 mu4
 景風	0	jing3 feng1
 景福	0	jing3 fu2
-景德鎮	0	jing3 de2 zhen4
 景點	0	jing3 dian3
 景泰	0	jing3 tai4
 景泰藍	0	jing3 tai4 lan2
@@ -82976,6 +83126,7 @@
 據理	0	ju4 li3
 據理力爭	0	ju4 li3 li4 zheng1
 據理而爭	0	ju4 li3 er2 zheng1
+據悉	0	ju4 xi1
 據常	0	ju4 chang2
 據稱	0	ju4 cheng1
 據床指麾	0	ju4 chuang2 zhi3 hui1
@@ -83202,6 +83353,7 @@
 絕裾而去	0	jue2 ju1 er2 qu4
 絕氣	0	jue2 qi4
 絕契	0	jue2 qi4
+絕情	0	jue2 qing2
 絕席	0	jue2 xi2
 絕絃	0	jue2 xian2
 絕響	0	jue2 xiang3
@@ -84052,6 +84204,7 @@
 淒豔	0	qi1 yan4
 淒婉	0	qi1 wan3
 悽涼	0	qi1 liang2
+悽苦	0	qi1 ku3
 悽惶	0	qi1 huang2
 悽悽	0	qi1 qi1
 悽悽惶惶	0	qi1 qi1 huang2 huang2
@@ -85319,6 +85472,7 @@
 掐指一算	0	qia1 zhi3 yi1 suan4
 掐住	0	qia1 zhu4
 掐算	0	qia1 suan4
+卡脖子	0	qia3 bo2 zi5
 卡子	0	qia3 zi5
 洽辦	0	qia4 ban4
 洽談	0	qia4 tan2
@@ -86007,6 +86161,7 @@
 球膽	0	qiu2 dan3
 球蛋白	0	qiu2 dan4 bai2
 球隊	0	qiu2 dui4
+球體	0	qiu2 ti3
 球童	0	qiu2 tong2
 球僮	0	qiu2 tong2
 球類運動	0	qiu2 lei4 yun4 dong4
@@ -87110,7 +87265,6 @@
 親政	0	qin1 zheng4
 親潮	0	qin1 chao2
 親串	0	qin1 chuan4
-親師語音教育網	0	qin1 shi1 yu3 yin1 jiao4 yu4 wang3
 親事	0	qin1 shi4
 親事	0	qin1 shi5
 親手	0	qin1 shou3
@@ -87371,6 +87525,7 @@
 槍林彈雨	0	qiang1 lin2 dan4 yu3
 槍桿子	0	qiang1 gan3 zi5
 槍桿子裡出政權	0	qiang1 gan3 zi5 li3 chu1 zheng4 quan2
+槍擊	0	qiang1 ji2
 槍決	0	qiang1 jue2
 槍械	0	qiang1 xie4
 槍枝	0	qiang1 zhi1
@@ -87411,7 +87566,6 @@
 強棒	0	qiang2 bang4
 強辯	0	qiang2 bian4
 強賓不壓主	0	qiang2 bin1 bu4 ya1 zhu3
-強風特報	0	qiang2 feng1 te4 bao4
 強大	0	qiang2 da4
 強盜	0	qiang2 dao4
 強盜演戲	0	qiang2 dao4 yan3 xi4
@@ -87442,6 +87596,7 @@
 強化食品	0	qiang2 hua4 shi2 pin3
 強記	0	qiang2 ji4
 強記洽聞	0	qiang2 ji4 qia4 wen2
+強姦	0	qiang2 jian1
 強鹼	0	qiang2 jian3
 強健	0	qiang2 jian4
 強諫	0	qiang2 jian4
@@ -88716,6 +88871,7 @@
 驅蟲效率	0	qu1 chong2 xiao4 lu4
 驅使	0	qu1 shi3
 驅策	0	qu1 ce4
+驅散	0	qu1 san4
 蛆蟲	0	qu1 chong2
 趨拜	0	qu1 bai4
 趨避	0	qu1 bi4
@@ -88971,6 +89127,7 @@
 闕文	0	que1 wen2
 瘸腿	0	que2 tui3
 瘸和尚說法	0	que2 he2 shang5 shuo1 fa3
+瘸子	0	que2 zi5
 怯夫	0	que4 fu1
 怯頭怯惱	0	que4 tou2 que4 nao3
 怯懦	0	que4 nuo4
@@ -89561,6 +89718,7 @@
 窮根究底	0	qiong2 gen1 jiu4 di3
 窮根尋葉	0	qiong2 gen1 xun2 ye4
 窮骨頭	0	qiong2 gu2 tou5
+窮鬼	0	qiong2 gui3
 窮貴極富	0	qiong2 gui4 ji2 fu4
 窮光蛋	0	qiong2 guang1 dan4
 窮工極巧	0	qiong2 gong1 ji2 qiao3
@@ -89699,7 +89857,6 @@
 西賓	0	xi1 bin1
 西濱大橋	0	xi1 bin1 da4 qiao2
 西部	0	xi1 bu4
-西部濱海快速公路	0	xi1 bu4 bin1 hai3 kuai4 su4 gong1 lu4
 西部片	0	xi1 bu4 pian4
 西皮	0	xi1 pi2
 西皮流水	0	xi1 pi2 liu2 shui3
@@ -89923,6 +90080,7 @@
 吸力	0	xi1 li4
 吸力豁剌	0	xi1 li4 huo4 la4
 吸管	0	xi1 guan3
+吸膠	0	xi1 jiao1
 吸氣	0	xi1 qi4
 吸器	0	xi1 qi4
 吸取	0	xi1 qu3
@@ -90080,7 +90238,6 @@
 傒落	0	xi1 luo4
 傒倖	0	xi1 xing4
 溪步	0	xi1 bu4
-溪頭	0	xi1 tou2
 溪藤	0	xi1 teng2
 溪流	0	xi1 liu2
 溪谷	0	xi1 gu3
@@ -90111,7 +90268,6 @@
 畦溝灌溉	0	xi1 gou1 guan4 gai4
 畦逕	0	xi1 jing4
 畦畛	0	xi1 zhen3
-畦作	0	xi1 zuo4
 悉平	0	xi1 ping2
 悉達多	0	xi1 da2 duo1
 悉曇	0	xi1 tan2
@@ -90130,6 +90286,7 @@
 悉索敝賦	0	xi1 suo3 bi4 fu4
 窸窸窣窣	0	xi1 xi1 su4 su4
 窸窣	0	xi1 su4
+蟋蟀	0	xi1 shuai4
 蟋蟀草	0	xi1 shuai4 cao3
 蟋蜴	0	xi1 yi4
 犀兵	0	xi1 bing1
@@ -90266,7 +90423,6 @@
 腊毒	0	xi2 du2
 席不暇暖	0	xi2 bu4 xia2 nuan3
 席帽	0	xi2 mao4
-席夢思	0	xi2 meng4 si1
 席篾	0	xi2 mie4
 席面	0	xi2 mian4
 席面	0	xi2 mian5
@@ -90482,6 +90638,7 @@
 洗耳諦聽	0	xi3 er3 di4 ting1
 洗耳恭聽	0	xi3 er3 gong1 ting1
 洗耳拱聽	0	xi3 er3 gong3 ting1
+洗衣板	0	xi3 yi1 ban3
 洗衣粉	0	xi3 yi1 fen3
 洗衣機	0	xi3 yi1 ji1
 洗牙	0	xi3 ya2
@@ -90643,8 +90800,8 @@
 係獲	0	xi4 huo4
 係頸	0	xi4 jing3
 係頸闕庭	0	xi4 jing3 que4 ting2
-係爭	0	xi4 zheng1
-係爭物	0	xi4 zheng1 wu4
+系爭	0	xi4 zheng1
+系爭物	0	xi4 zheng1 wu4
 係踵	0	xi4 zhong3
 係數	0	xi4 shu4
 繫臂之寵	0	xi4 bi4 zhi1 chong3
@@ -91083,7 +91240,6 @@
 下得	0	xia4 de5
 下得去	0	xia4 de5 qu4
 下大夫	0	xia4 da4 fu1
-下淡水溪	0	xia4 dan4 shui3 xi1
 下蛋	0	xia4 dan4
 下蛋雞	0	xia4 dan4 ji1
 下檔	0	xia4 dang3
@@ -91153,6 +91309,7 @@
 下口	0	xia4 kou3
 下款	0	xia4 kuan3
 下頦	0	xia4 hai2
+下海	0	xia4 hai3
 下頷	0	xia4 han4
 下狠	0	xia4 hen3
 下戶	0	xia4 hu4
@@ -91259,11 +91416,13 @@
 下手	0	xia4 shou3
 下首	0	xia4 shou3
 下壽	0	xia4 shou4
+下身	0	xia4 shen1
 下神	0	xia4 shen2
 下乘	0	xia4 sheng4
 下剩	0	xia4 sheng4
 下書	0	xia4 shu1
 下屬	0	xia4 shu3
+下水	0	xia4 shui3
 下水道	0	xia4 shui3 dao4
 下水道工程	0	xia4 shui3 dao4 gong1 cheng2
 下水道系統	0	xia4 shui3 dao4 xi4 tong3
@@ -91488,6 +91647,7 @@
 邪謀	0	xie2 mou2
 邪門	0	xie2 men2
 邪門歪道	0	xie2 men2 wai1 dao4
+邪法	0	xie2 fa3
 邪道	0	xie2 dao4
 邪道兒	0	xie2 dao4
 邪道	0	xie2 dao5
@@ -91629,6 +91789,7 @@
 血汗	0	xie3 han4
 血汗錢	0	xie3 han4 qian2
 血衚衕	0	xie3 hu2 tong5
+血花	0	xie3 hua1
 血荒	0	xie3 huang1
 血紅	0	xie3 hong2
 血紅蛋白	0	xie3 hong2 dan4 bai2
@@ -91884,6 +92045,7 @@
 消防栓	0	xiao1 fang2 shuan1
 消防員	0	xiao1 fang2 yuan2
 消毒	0	xiao1 du2
+消毒劑	0	xiao1 du2 ji4
 消毒藥	0	xiao1 du2 yao4
 消停	0	xiao1 ting5
 消退	0	xiao1 tui4
@@ -92328,6 +92490,7 @@
 小鬟	0	xiao3 huan2
 小黃門	0	xiao3 huang2 men2
 小紅	0	xiao3 hong2
+小雞	0	xiao3 ji1
 小疾	0	xiao3 ji2
 小己	0	xiao3 ji3
 小計	0	xiao3 ji4
@@ -93005,9 +93168,11 @@
 滫瀡	0	xiu3 sui3
 秀拔	0	xiu4 ba2
 秀眉	0	xiu4 mei2
+秀美	0	xiu4 mei3
 秀媚	0	xiu4 mei4
 秀發	0	xiu4 fa1
 秀髮	0	xiu4 fa3
+秀逗	0	xiu4 dou5
 秀頂	0	xiu4 ding3
 秀女	0	xiu4 nu3
 秀麗	0	xiu4 li4
@@ -94022,6 +94187,7 @@
 縣尹	0	xian4 yin3
 縣尉	0	xian4 wei4
 霰彈	0	xian4 dan4
+獻寶	0	xian4 bao3
 獻曝	0	xian4 pu4
 獻媚	0	xian4 mei4
 獻俘	0	xian4 fu2
@@ -94599,7 +94765,6 @@
 新康德主義	0	xin1 kang1 de2 zhu3 yi4
 新款	0	xin1 kuan3
 新好男人	0	xin1 hao3 nan2 ren2
-新罕布什爾州	0	xin1 han3 bu4 shi2 er3 zhou1
 新恨	0	xin1 hen4
 新花樣	0	xin1 hua1 yang4
 新話	0	xin1 hua4
@@ -94719,7 +94884,6 @@
 新任	0	xin1 ren4
 新儒學	0	xin1 ru2 xue2
 新銳	0	xin1 rui4
-新澤西州	0	xin1 ze2 xi1 zhou1
 新造邦	0	xin1 zao4 bang1
 新蔡縣	0	xin1 cai4 xian4
 新四大件	0	xin1 si4 da4 jian4
@@ -94727,7 +94891,6 @@
 新三大件	0	xin1 san1 da4 jian4
 新歲	0	xin1 sui4
 新愛爾蘭島	0	xin1 ai4 er3 lan2 dao3
-新奧爾良	0	xin1 ao4 er3 liang2
 新安派	0	xin1 an1 pai4
 新醫	0	xin1 yi1
 新夷	0	xin1 yi2
@@ -95288,7 +95451,6 @@
 香麝	0	xiang1 she4
 香山	0	xiang1 shan1
 香山居士	0	xiang1 shan1 ju1 shi4
-香山鄉	0	xiang1 shan1 xiang1
 香扇	0	xiang1 shan4
 香水	0	xiang1 shui3
 香水行	0	xiang1 shui3 hang2
@@ -97231,7 +97393,6 @@
 雪窗螢火	0	xue3 chuang1 ying2 huo3
 雪窗螢几	0	xue3 chuang1 ying2 ji3
 雪獅子向火	0	xue3 shi1 zi5 xiang4 huo3
-雪山	0	xue3 shan1
 雪深	0	xue3 shen1
 雪上加霜	0	xue3 shang4 jia1 shuang1
 雪人	0	xue3 ren2
@@ -97588,6 +97749,7 @@
 懸吊	0	xuan2 diao4
 懸斷	0	xuan2 duan4
 懸榻	0	xuan2 ta4
+懸頭	0	xuan2 tou2
 懸頭刺股	0	xuan2 tou2 ci4 gu3
 懸頭刺骨	0	xuan2 tou2 ci4 gu3
 懸擬	0	xuan2 ni3
@@ -98087,6 +98249,7 @@
 殉國	0	xun4 guo2
 殉節	0	xun4 jie2
 殉教	0	xun4 jiao4
+殉情	0	xun4 qing2
 殉情記	0	xun4 qing2 ji4
 殉職	0	xun4 zhi2
 殉身	0	xun4 shen1
@@ -98134,6 +98297,7 @@
 巽令	0	xun4 ling4
 巽二	0	xun4 er4
 巽言	0	xun4 yan2
+熏香	0	xun4 xiang1
 蕈螂	0	xun4 lang2
 蕈狀雲	0	xun4 zhuang4 yun2
 蕈樹	0	xun4 shu4
@@ -99781,6 +99945,7 @@
 智者不惑	0	zhi4 zhe3 bu4 huo4
 智者千慮，必有一失	0	zhi4 zhe3 qian1 lu4 bi4 you3 yi1 shi1
 智周	0	zhi4 zhou1
+智障	0	zhi4 zhang4
 智珠	0	zhi4 zhu1
 智齒	0	zhi4 chi3
 智士	0	zhi4 shi4
@@ -100069,6 +100234,7 @@
 詐眼兒	0	zha4 yan3
 詐偽	0	zha4 wei4
 詐語	0	zha4 yu3
+榨取	0	zha4 qu3
 榨汁	0	zha4 zhi1
 榨汁機	0	zha4 zhi1 ji1
 榨床	0	zha4 chuang2
@@ -100491,6 +100657,7 @@
 招風攬火	0	zhao1 feng1 lan3 huo3
 招風惹草	0	zhao1 feng1 re3 cao3
 招風惹雨	0	zhao1 feng1 re3 yu3
+招風耳	0	zhao1 feng1 er3
 招蜂引蝶	0	zhao1 feng1 yin3 die2
 招伏	0	zhao1 fu2
 招撫	0	zhao1 fu3
@@ -101080,6 +101247,7 @@
 啁噍	0	zhou1 jiu1
 啁哳	0	zhou1 zha2
 週報	0	zhou1 bao4
+週末	0	zhou1 mo4
 週末效應	0	zhou1 mo4 xiao4 ying4
 週年	0	zhou1 nian2
 週年慶	0	zhou1 nian2 qing4
@@ -101414,6 +101582,7 @@
 站住腳	0	zhan4 zhu4 jiao3
 站赤	0	zhan4 chi4
 站友	0	zhan4 you3
+站衛兵	0	zhan4 wei4 bing1
 站穩	0	zhan4 wen3
 站穩腳跟	0	zhan4 wen3 jiao3 gen1
 湛藍	0	zhan4 lan2
@@ -102088,7 +102257,6 @@
 鎮嚇	0	zhen4 he4
 鎮海縣	0	zhen4 hai3 xian4
 鎮家之寶	0	zhen4 jia1 zhi1 bao3
-鎮江市	0	zhen4 jiang1 shi4
 鎮靜	0	zhen4 jing4
 鎮靜劑	0	zhen4 jing4 ji4
 鎮邪	0	zhen4 xie2
@@ -103054,7 +103222,6 @@
 鄭芝龍	0	zheng4 zhi1 long2
 鄭昭宋聾	0	zheng4 zhao1 song4 long2
 鄭州市	0	zheng4 zhou1 shi4
-鄭振鐸	0	zheng4 zhen4 duo2
 鄭重	0	zheng4 zhong4
 鄭重其事	0	zheng4 zhong4 qi2 shi4
 鄭眾	0	zheng4 zhong4
@@ -103343,9 +103510,11 @@
 豬八戒坐飛機	0	zhu1 ba1 jie4 zuo4 fei1 ji1
 豬婆龍	0	zhu1 po2 long2
 豬排	0	zhu1 pai2
+豬朋狗友	0	zhu1 peng2 gou3 you3
 豬肚	0	zhu1 du3
 豬頭肥	0	zhu1 tou2 fei2
 豬苓	0	zhu1 ling2
+豬玀	0	zhu1 luo2
 豬籠草	0	zhu1 long2 cao3
 豬肝	0	zhu1 gan1
 豬拐子	0	zhu1 guai3 zi5
@@ -103358,6 +103527,7 @@
 豬心瓣膜	0	zhu1 xin1 ban4 mo4
 豬舍	0	zhu1 she4
 豬肉乾	0	zhu1 rou4 gan1
+豬仔	0	zhu1 zai3
 豬鬃	0	zhu1 zong1
 豬鬃草	0	zhu1 zong1 cao3
 豬油	0	zhu1 you2
@@ -105041,7 +105211,6 @@
 中國字	0	zhong1 guo2 zi4
 中國菜	0	zhong1 guo2 cai4
 中國銀行	0	zhong1 guo2 yin2 hang2
-中國文化大學	0	zhong1 guo2 wen2 hua4 da4 xue2
 中國文字	0	zhong1 guo2 wen2 zi4
 中果皮	0	zhong1 guo3 pi2
 中貴人	0	zhong1 gui4 ren2
@@ -105073,9 +105242,9 @@
 中華民國憲法	0	zhong1 hua2 min2 guo2 xian4 fa3
 中華民國資訊產品反仿冒聯盟	0	zhong1 hua2 min2 guo2 zi1 xun4 chan3 pin3 fan3 fang3 mao4 lian2 meng2
 中華民國資訊軟體協會	0	zhong1 hua2 min2 guo2 zi1 xun4 ruan3 ti3 xie2 hui4
+中華民族	0	zhong1 hua2 min2 zu2
 中華大學	0	zhong1 hua2 da4 xue2
 中華大字典	0	zhong1 hua2 da4 zi4 dian3
-中華電視臺	0	zhong1 hua2 dian4 shi4 tai2
 中華新韻	0	zhong1 hua2 xin1 yun4
 中華商場	0	zhong1 hua2 shang1 chang2
 中華兒童百科全書	0	zhong1 hua2 er2 tong2 bai3 ke1 quan2 shu1
@@ -105204,7 +105373,6 @@
 中沙群島	0	zhong1 sha1 qun2 dao3
 中壽	0	zhong1 shou4
 中山	0	zhong1 shan1
-中山大學	0	zhong1 shan1 da4 xue2
 中山狼	0	zhong1 shan1 lang2
 中山陵	0	zhong1 shan1 ling2
 中山高速公路	0	zhong1 shan1 gao1 su4 gong1 lu4
@@ -105266,10 +105434,8 @@
 中央空調系統	0	zhong1 yang1 kong1 tiao2 xi4 tong3
 中央集權	0	zhong1 yang1 ji2 quan2
 中央監控系統	0	zhong1 yang1 jian1 kong4 xi4 tong3
-中央健保局	0	zhong1 yang1 jian4 bao3 ju2
 中央警官學校	0	zhong1 yang1 jing3 guan1 xue2 xiao4
 中央警察大學	0	zhong1 yang1 jing3 cha2 da4 xue2
-中央氣象局	0	zhong1 yang1 qi4 xiang4 ju2
 中央選舉委員會	0	zhong1 yang1 xuan3 ju3 wei3 yuan2 hui4
 中央政府	0	zhong1 yang1 zheng4 fu3
 中央政治會議	0	zhong1 yang1 zheng4 zhi4 hui4 yi4
@@ -105291,6 +105457,7 @@
 中尉	0	zhong1 wei4
 中衛	0	zhong1 wei4
 中浣	0	zhong1 wan3
+中文	0	zhong1 wen2
 中文電腦	0	zhong1 wen2 dian4 nao3
 中文內碼	0	zhong1 wen2 nei4 ma3
 中文輸入法	0	zhong1 wen2 shu1 ru4 fa3
@@ -105303,7 +105470,6 @@
 中原	0	zhong1 yuan2
 中原板蕩	0	zhong1 yuan2 ban3 dang4
 中原標準時間	0	zhong1 yuan2 biao1 zhun3 shi2 jian1
-中原大學	0	zhong1 yuan2 da4 xue2
 中原逐鹿	0	zhong1 yuan2 zhu2 lu4
 中原音韻	0	zhong1 yuan2 yin1 yun4
 中源地震	0	zhong1 yuan2 di4 zhen4
@@ -105532,6 +105698,7 @@
 種族迫害	0	zhong3 zu2 po4 hai4
 種族偏見	0	zhong3 zu2 pian1 jian4
 種族平等	0	zhong3 zu2 ping2 deng3
+種族隔離	0	zhong3 zu2 ge2 li2
 種族歧視	0	zhong3 zu2 qi2 shi4
 種源中心	0	zhong3 yuan2 zhong1 xin1
 踵門	0	zhong3 men2
@@ -105850,6 +106017,7 @@
 吃得消	0	chi1 de5 xiao1
 吃得住	0	chi1 de5 zhu4
 吃到飽	0	chi1 dao4 bao3
+吃豆腐	0	chi1 dou4 fu5
 吃地面	0	chi1 di4 mian4
 吃釘板	0	chi1 ding1 ban3
 吃釘子	0	chi1 ding1 zi5
@@ -105888,6 +106056,7 @@
 吃喝不分	0	chi1 he1 bu4 fen1
 吃喝嫖賭	0	chi1 he1 piao2 du3
 吃喝拉撒睡	0	chi1 he1 la1 sa1 shui4
+吃喝玩樂	0	chi1 he1 wan2 le4
 吃合家歡	0	chi1 he2 jia1 huan1
 吃喝兒	0	chi1 he5
 吃黑飯，護漆柱	0	chi1 hei1 fan4 hu4 qi1 zhu4
@@ -106619,6 +106788,7 @@
 差池	0	cha1 chi2
 差遲	0	cha1 chi2
 差失	0	cha1 shi1
+差數	0	cha1 shu4
 差若豪釐，繆以千里	0	cha1 ruo4 hao2 li2 miu4 yi3 qian1 li3
 差次	0	cha1 ci4
 差錯	0	cha1 cuo4
@@ -107830,6 +108000,7 @@
 醜化	0	chou3 hua4
 醜話	0	chou3 hua4
 醜劇	0	chou3 ju4
+醜小鴨	0	chou3 xiao3 ya1
 醜行	0	chou3 xing4
 醜吒	0	chou3 zha4
 醜事	0	chou3 shi4
@@ -107850,6 +108021,7 @@
 臭罵	0	chou4 ma4
 臭美	0	chou4 mei3
 臭名	0	chou4 ming2
+臭名昭彰	0	chou4 ming2 zhao1 zhang1
 臭名昭著	0	chou4 ming2 zhao1 zhu4
 臭名遠揚	0	chou4 ming2 yuan3 yang2
 臭打	0	chou4 da3
@@ -108799,6 +108971,7 @@
 長日照植物	0	chang2 ri4 zhao4 zhi2 wu4
 長人	0	chang2 ren2
 長子	0	chang2 zi3
+長子	0	chang2 zi5
 長足	0	chang2 zu2
 長足進步	0	chang2 zu2 jin4 bu4
 長嘴獠牙	0	chang2 zui3 liao2 ya2
@@ -109177,6 +109350,7 @@
 撐天柱地	0	cheng1 tian1 zhu4 di4
 撐篙	0	cheng1 gao1
 撐竿跳	0	cheng1 gan1 tiao4
+撐開	0	cheng1 kai1
 撐旱船	0	cheng1 han4 chuan2
 撐家	0	cheng1 jia1
 撐拒	0	cheng1 ju4
@@ -109261,7 +109435,6 @@
 成果	0	cheng2 guo3
 成規	0	cheng2 gui1
 成功	0	cheng2 gong1
-成功大學	0	cheng2 gong1 da4 xue2
 成功嶺	0	cheng2 gong1 ling3
 成功鎮	0	cheng2 gong1 zhen4
 成康之治	0	cheng2 kang1 zhi1 zhi4
@@ -110017,6 +110190,7 @@
 出聲	0	chu1 sheng1
 出書	0	chu1 shu1
 出數兒	0	chu1 shu4
+出水	0	chu1 shui3
 出水芙蓉	0	chu1 shui3 fu2 rong2
 出水口	0	chu1 shui3 kou3
 出水夥計	0	chu1 shui3 huo3 ji5
@@ -110398,6 +110572,7 @@
 礎潤而雨	0	chu3 run4 er2 yu3
 怵迫	0	chu4 po4
 怵魄動心	0	chu4 po4 dong4 xin1
+怵目驚心	0	chu4 mu4 jing1 xin1
 怵惕	0	chu4 ti4
 怵怵忐忐	0	chu4 chu5 tan3 tan3
 怵然	0	chu4 ran2
@@ -112606,6 +112781,7 @@
 石火	0	shi2 huo3
 石火電光	0	shi2 huo3 dian4 guang1
 石灰	0	shi2 hui1
+石灰質	0	shi2 hui1 zhi2
 石灰石	0	shi2 hui1 shi2
 石灰水	0	shi2 hui1 shui3
 石灰乳	0	shi2 hui1 ru3
@@ -113935,6 +114111,7 @@
 沙門氏桿菌	0	sha1 men2 shi4 gan3 jun4
 沙彌	0	sha1 mi2
 沙發	0	sha1 fa1
+沙發床	0	sha1 fa1 chuang2
 沙達特	0	sha1 da2 te4
 沙袋	0	sha1 dai4
 沙嗲	0	sha1 die1
@@ -114072,6 +114249,7 @@
 殺價	0	sha1 jia4
 殺戒	0	sha1 jie4
 殺菌	0	sha1 jun4
+殺菌劑	0	sha1 jun4 ji4
 殺妻求將	0	sha1 qi1 qiu2 jiang4
 殺氣	0	sha1 qi4
 殺氣騰騰	0	sha1 qi4 teng2 teng2
@@ -114754,7 +114932,6 @@
 少年郎	0	shao4 nian2 lang2
 少年觀護所	0	shao4 nian2 guan1 hu4 suo3
 少年人	0	shao4 nian2 ren2
-少年組	0	shao4 nian2 zu3
 少年才俊	0	shao4 nian2 cai2 jun4
 少年維特的煩惱	0	shao4 nian2 wei2 te4 de5 fan2 nao3
 少女	0	shao4 nu3
@@ -114885,6 +115062,7 @@
 收捉	0	shou1 zhuo1
 收場	0	shou1 chang2
 收成	0	shou1 cheng2
+收屍	0	shou1 shi1
 收拾	0	shou1 shi2
 收市	0	shou1 shi4
 收視	0	shou1 shi4
@@ -115489,6 +115667,7 @@
 獸心	0	shou4 xin1
 獸心人面	0	shou4 xin1 ren2 mian4
 獸行	0	shou4 xing4
+獸性	0	shou4 xing4
 獸睡	0	shou4 shui4
 獸醫	0	shou4 yi1
 獸醫學	0	shou4 yi1 xue2
@@ -115673,6 +115852,7 @@
 山搖地動	0	shan1 yao2 di4 dong4
 山遙水遠	0	shan1 yao2 shui3 yuan3
 山藥	0	shan1 yao5
+山藥蛋	0	shan1 yao5 dan4
 山友	0	shan1 you3
 山有扶蘇	0	shan1 you3 fu2 su1
 山有樞	0	shan1 you3 shu1
@@ -116136,7 +116316,6 @@
 深宮	0	shen1 gong1
 深拱	0	shen1 gong3
 深刻	0	shen1 ke4
-深坑鄉	0	shen1 keng1 xiang1
 深恐	0	shen1 kong3
 深海定位器	0	shen1 hai3 ding4 wei4 qi4
 深厚	0	shen1 hou4
@@ -116830,6 +117009,7 @@
 上帝教	0	shang4 di4 jiao4
 上第	0	shang4 di4
 上弔	0	shang4 diao4
+上吊	0	shang4 diao4
 上丁	0	shang4 ding1
 上都	0	shang4 du1
 上洞人	0	shang4 dong4 ren2
@@ -117265,6 +117445,7 @@
 生活領域	0	sheng1 huo2 ling3 yu4
 生活空間	0	sheng1 huo2 kong1 jian1
 生活教育	0	sheng1 huo2 jiao4 yu4
+生活圈	0	sheng1 huo2 quan1
 生活習慣	0	sheng1 huo2 xi2 guan4
 生活型態	0	sheng1 huo2 xing2 tai4
 生活照	0	sheng1 huo2 zhao4
@@ -117320,6 +117501,7 @@
 生殖腺	0	sheng1 zhi2 xian4
 生紙	0	sheng1 zhi3
 生朝	0	sheng1 zhao1
+生張熟魏	0	sheng1 zhang1 shou2 wei4
 生長	0	sheng1 zhang3
 生長點	0	sheng1 zhang3 dian3
 生長輪	0	sheng1 zhang3 lun2
@@ -117437,7 +117619,6 @@
 生物工程	0	sheng1 wu4 gong1 cheng2
 生物科技	0	sheng1 wu4 ke1 ji4
 生物合成	0	sheng1 wu4 he2 cheng2
-生物技術與製藥工業發展推動小組	0	sheng1 wu4 ji4 shu4 yu3 zhi4 yao4 gong1 ye4 fa1 zhan3 tui1 dong4 xiao3 zu3
 生物界	0	sheng1 wu4 jie4
 生物鹼	0	sheng1 wu4 jian3
 生物潛能	0	sheng1 wu4 qian2 neng2
@@ -117759,7 +117940,6 @@
 聖多美普林西比	0	sheng4 duo1 mei3 pu3 lin2 xi1 bi3
 聖多美普林西比民主共和國	0	sheng4 duo1 mei3 pu3 lin2 xi1 bi3 min2 zhu3 gong4 he2 guo2
 聖多斯	0	sheng4 duo1 si1
-聖塔路淇亞	0	sheng4 ta3 lu4 qi2 ya4
 聖女貞德	0	sheng4 nu3 zhen1 de2
 聖靈	0	sheng4 ling2
 聖露西亞	0	sheng4 lu4 xi1 ya4
@@ -117899,6 +118079,7 @@
 輸精管	0	shu1 jing1 guan3
 輸捐	0	shu1 juan1
 輸錢	0	shu1 qian2
+輸血	0	shu1 xie3
 輸寫	0	shu1 xie4
 輸心	0	shu1 xin1
 輸征	0	shu1 zheng1
@@ -118275,6 +118456,7 @@
 熟思	0	shu2 si1
 熟諳	0	shu2 an1
 熟藥	0	shu2 yao4
+熟魏生張	0	shu2 wei4 sheng1 zhang1
 熟語	0	shu2 yu3
 贖命	0	shu2 ming4
 贖當	0	shu2 dang4
@@ -118338,6 +118520,7 @@
 屬員	0	shu3 yuan2
 鼠輩	0	shu3 bei4
 鼠憑社貴	0	shu3 ping2 she4 gui4
+鼠目	0	shu3 mu4
 鼠目寸光	0	shu3 mu4 cun4 guang1
 鼠腹雞腸	0	shu3 fu4 ji1 chang2
 鼠盜	0	shu3 dao4
@@ -118921,6 +119104,7 @@
 摔喪	0	shuai1 sang1
 甩髮	0	shuai3 fa3
 甩大鞋	0	shuai3 da4 xie2
+甩掉	0	shuai3 diao4
 甩脫	0	shuai3 tuo1
 甩臉子	0	shuai3 lian3 zi5
 甩車	0	shuai3 che1
@@ -119554,6 +119738,7 @@
 順口	0	shun4 kou3
 順口答音兒	0	shun4 kou3 da2 yin1
 順口談天	0	shun4 kou3 tan2 tian1
+順口溜	0	shun4 kou3 liu1
 順口開河	0	shun4 kou3 kai1 he2
 順口食	0	shun4 kou3 shi2
 順口兒	0	shun4 kou3
@@ -119669,6 +119854,7 @@
 雙料	0	shuang1 liao4
 雙聯市	0	shuang1 lian2 shi4
 雙陸	0	shuang1 lu4
+雙鉤	0	shuang1 gou1
 雙鉤執筆法	0	shuang1 gou1 zhi2 bi3 fa3
 雙鉤廓填	0	shuang1 gou1 kuo4 tian2
 雙柑斗酒	0	shuang1 gan1 dou3 jiu3
@@ -119750,6 +119936,7 @@
 雙眼皮	0	shuang1 yan3 pi2
 雙音節	0	shuang1 yin1 jie2
 雙氧水	0	shuang1 yang3 shui3
+雙贏	0	shuang1 ying2
 雙務契約	0	shuang1 wu4 qi4 yue1
 雙尾蠍	0	shuang1 wei3 xie1
 雙亡	0	shuang1 wang2
@@ -119855,6 +120042,7 @@
 日久天長	0	ri4 jiu3 tian1 chang2
 日久年深	0	ri4 jiu3 nian2 shen1
 日久見人心	0	ri4 jiu3 jian4 ren2 xin1
+日久生情	0	ri4 jiu3 sheng1 qing2
 日久歲深	0	ri4 jiu3 sui4 shen1
 日久玩生	0	ri4 jiu3 wan4 sheng1
 日久月深	0	ri4 jiu3 yue4 shen1
@@ -120763,6 +120951,7 @@
 人死留名	0	ren2 si3 liu2 ming2
 人算不如天算	0	ren2 suan4 bu4 ru2 tian1 suan4
 人而無信，不知其可	0	ren2 er2 wu2 xin4 bu4 zhi1 qi2 ke3
+人兒	0	ren2
 人一己百	0	ren2 yi1 ji3 bai3
 人義水甜	0	ren2 yi4 shui3 tian2
 人牙兒	0	ren2 ya2
@@ -121551,6 +121740,7 @@
 弱項	0	ruo4 xiang4
 弱植	0	ruo4 zhi2
 弱質	0	ruo4 zhi2
+弱智	0	ruo4 zhi4
 弱者	0	ruo4 zhe3
 弱視	0	ruo4 shi4
 弱勢	0	ruo4 shi4
@@ -122224,6 +122414,7 @@
 姊夫	0	zi3 fu1
 姊姊	0	zi3 zi5
 姊丈	0	zi3 zhang4
+姊兒	0	zi3
 秭歸	0	zi3 gui1
 呰敗	0	zi3 bai4
 呰窳	0	zi3 yu3
@@ -123610,6 +123801,7 @@
 走神兒	0	zou3 shen2
 走繩索	0	zou3 sheng2 suo3
 走水	0	zou3 shui3
+走水槽	0	zou3 shui3 cao2
 走水	0	zou3 shui5
 走順風	0	zou3 shun4 feng1
 走肉行屍	0	zou3 rou4 xing2 shi1
@@ -123652,6 +123844,7 @@
 奏草	0	zou4 cao3
 奏議	0	zou4 yi4
 奏樂	0	zou4 yue4
+揍人	0	zou4 ren2
 驟變	0	zou4 bian4
 驟跌	0	zou4 die2
 驟降	0	zou4 jiang4
@@ -123749,6 +123942,7 @@
 髒亂	0	zang1 luan4
 髒話	0	zang1 hua4
 髒錢	0	zang1 qian2
+髒兮兮	0	zang1 xi1 xi1
 髒心	0	zang1 xin1
 髒字兒	0	zang1 zi4
 駔儈	0	zang3 kuai4
@@ -125843,6 +126037,7 @@
 裁衣	0	cai2 yi1
 裁衣合帳	0	cai2 yi1 he2 zhang4
 裁衣尺	0	cai2 yi1 chi3
+裁員	0	cai2 yuan2
 纔剛	0	cai2 gang1
 纔可	0	cai2 ke3
 纔子	0	cai2 zi5
@@ -126456,6 +126651,7 @@
 殘渣餘孽	0	can2 zha1 yu2 nie4
 殘照	0	can2 zhao4
 殘章斷簡	0	can2 zhang1 duan4 jian3
+殘障	0	can2 zhang4
 殘障福利法	0	can2 zhang4 fu2 li4 fa3
 殘茶剩飯	0	can2 cha2 sheng4 fan4
 殘喘	0	can2 chuan3
@@ -127948,6 +128144,7 @@
 死黨	0	si3 dang3
 死當	0	si3 dang4
 死等	0	si3 deng3
+死敵	0	si3 di2
 死地	0	si3 di4
 死地求生	0	si3 di4 qiu2 sheng1
 死爹哭媽	0	si3 die1 ku1 ma1
@@ -128442,7 +128639,7 @@
 撒潑	0	sa1 po1
 撒潑放刁	0	sa1 po1 fang4 diao1
 撒潑打滾	0	sa1 po1 da3 gun3
-撒泡尿自己照照	0	sa1 pao4 niao4 zi4 ji3 zhao4 zhao5
+撒泡尿自己照照	0	sa1 pao1 niao4 zi4 ji3 zhao4 zhao5
 撒噴	0	sa1 pen1
 撒放	0	sa1 fang4
 撒風撒痴	0	sa1 feng1 sa1 chi1
@@ -129067,6 +129264,7 @@
 三合	0	san1 he2
 三合房	0	san1 he2 fang2
 三合複元音	0	san1 he2 fu4 yuan2 yin1
+三合土	0	san1 he2 tu3
 三合會	0	san1 he2 hui4
 三合院	0	san1 he2 yuan4
 三河	0	san1 he2
@@ -129148,6 +129346,7 @@
 三角錐	0	san1 jiao3 zhui1
 三角尺	0	san1 jiao3 chi3
 三角測量	0	san1 jiao3 ce4 liang2
+三角眼	0	san1 jiao3 yan3
 三腳貓	0	san1 jiao3 mao1
 三腳櫈	0	san1 jiao3 deng4
 三腳兩步	0	san1 jiao3 liang3 bu4
@@ -129792,6 +129991,7 @@
 夙願以償	0	su4 yuan4 yi3 chang2
 泝洄	0	su4 hui2
 訴落	0	su4 luo4
+訴苦	0	su4 ku3
 訴求	0	su4 qiu2
 訴請	0	su4 qing3
 訴權	0	su4 quan2
@@ -130885,6 +131085,7 @@
 送人情	0	song4 ren2 qing2
 送灶	0	song4 zao4
 送葬	0	song4 zang4
+送作堆	0	song4 zuo4 dui1
 送死	0	song4 si3
 送喪	0	song4 sang1
 送祟	0	song4 sui4
@@ -131594,6 +131795,7 @@
 矮巴溜丟	0	ai3 ba1 liu1 diu1
 矮了半截	0	ai3 le5 ban4 jie2
 矮趴趴	0	ai3 pa1 pa1
+矮胖	0	ai3 pang4
 矮凳	0	ai3 deng4
 矮墩墩	0	ai3 dun1 dun1
 矮冬瓜	0	ai3 dong1 gua1
@@ -131967,7 +132169,6 @@
 奧遠	0	ao4 yuan3
 奧運	0	ao4 yun4
 奧運會	0	ao4 yun4 hui4
-澳門	0	ao4 men2
 澳大利亞	0	ao4 da4 li4 ya4
 澳大利亞聯邦	0	ao4 da4 li4 ya4 lian2 bang1
 澳洲	0	ao4 zhou1
@@ -131986,6 +132187,7 @@
 嘔唲	0	ou1 er2
 嘔啞	0	ou1 ya1
 嘔鴉	0	ou1 ya1
+歐巴桑	0	ou1 ba5 sang1
 歐帕林	0	ou1 pa4 lin2
 歐佩克	0	ou1 pei4 ke4
 歐普藝術	0	ou1 pu3 yi4 shu4
@@ -132031,7 +132233,6 @@
 歐陽生	0	ou1 yang2 sheng1
 歐文	0	ou1 wen2
 歐虞體	0	ou1 yu2 ti3
-歐元	0	ou1 yuan2
 毆斃	0	ou1 bi4
 毆罵	0	ou1 ma4
 毆打	0	ou1 da3
@@ -134352,6 +134553,7 @@
 一丸泥	0	yi1 wan2 ni2
 一碗水往平處端	0	yi1 wan3 shui3 wang3 ping2 chu4 duan1
 一文	0	yi1 wen2
+一文不名	0	yi1 wen2 bu4 ming2
 一文不值	0	yi1 wen2 bu4 zhi2
 一文錢逼死英雄漢	0	yi1 wen2 qian2 bi1 si3 ying1 xiong2 han4
 一文如命	0	yi1 wen2 ru2 ming4
@@ -134454,6 +134656,7 @@
 衣甲	0	yi1 jia3
 衣架	0	yi1 jia4
 衣架飯囊	0	yi1 jia4 fan4 nang2
+衣架子	0	yi1 jia4 zi5
 衣巾	0	yi1 jin1
 衣襟	0	yi1 jin1
 衣車	0	yi1 ju1
@@ -135088,6 +135291,7 @@
 已矣	0	yi3 yi3
 已往	0	yi3 wang3
 以白為黑	0	yi3 bai2 wei2 hei1
+以暴制暴	0	yi3 bao4 zhi4 bao4
 以暴易暴	0	yi3 bao4 yi4 bao4
 以暴易亂	0	yi3 bao4 yi4 luan4
 以便	0	yi3 bian4
@@ -135497,7 +135701,6 @@
 易林	0	yi4 lin2
 易感性	0	yi4 gan3 xing4
 易科	0	yi4 ke1
-易科罰金	0	yi4 ke1 fa2 jin1
 易可	0	yi4 ke3
 易開罐	0	yi4 kai1 guan4
 易漢學	0	yi4 han4 xue2
@@ -135820,6 +136023,7 @@
 義大利半島	0	yi4 da4 li4 ban4 dao3
 義大利共和國	0	yi4 da4 li4 gong4 he2 guo2
 義大利獎	0	yi4 da4 li4 jiang3
+義大利菜	0	yi4 da4 li4 cai4
 義地	0	yi4 di4
 義弟	0	yi4 di4
 義帝	0	yi4 di4
@@ -136245,6 +136449,7 @@
 鴨蛋青	0	ya1 dan4 qing1
 鴨蛋雖密也有縫	0	ya1 dan4 sui1 mi4 ye3 you3 feng4
 鴨蛋圓	0	ya1 dan4 yuan2
+鴨頭	0	ya1 tou2
 鴨頭丸帖	0	ya1 tou2 wan2 tie4
 鴨條	0	ya1 tiao2
 鴨綠江	0	ya1 lu4 jiang1
@@ -136292,6 +136497,7 @@
 壓低	0	ya1 di1
 壓碟兒	0	ya1 die2
 壓電效應	0	ya1 dian4 xiao4 ying4
+壓隊	0	ya1 dui4
 壓條	0	ya1 tiao2
 壓條法	0	ya1 tiao2 fa3
 壓痛	0	ya1 tong4
@@ -136380,6 +136586,7 @@
 牙櫱	0	ya2 nie4
 牙郎	0	ya2 lang2
 牙輪	0	ya2 lun2
+牙膏	0	ya2 gao1
 牙垢	0	ya2 gou4
 牙疳	0	ya2 gan1
 牙根	0	ya2 gen1
@@ -136575,7 +136782,6 @@
 亞丁	0	ya4 ding1
 亞丁灣	0	ya4 ding1 wan1
 亞東	0	ya4 dong1
-亞東關係協會	0	ya4 dong1 guan1 xi4 xie2 hui4
 亞特拉斯	0	ya4 te4 la1 si1
 亞特拉斯山脈	0	ya4 te4 la1 si1 shan1 mai4
 亞特蘭大	0	ya4 te4 lan2 da4
@@ -136806,6 +137012,7 @@
 野宿	0	ye3 su4
 野意	0	ye3 yi4
 野意兒	0	ye3 yi4
+野丫頭	0	ye3 ya1 tou5
 野鴨	0	ye3 ya1
 野遊	0	ye3 you2
 野有蔓草	0	ye3 you3 man4 cao3
@@ -136933,6 +137140,7 @@
 夜嚴	0	ye4 yan2
 夜眼	0	ye4 yan3
 夜燕	0	ye4 yan4
+夜鶯	0	ye4 ying1
 夜鷹	0	ye4 ying1
 夜未央	0	ye4 wei4 yang1
 夜晚	0	ye4 wan3
@@ -138137,6 +138345,7 @@
 油花和尚	0	you2 hua1 he2 shang5
 油花伎倆	0	you2 hua1 ji4 liang3
 油花嘴	0	you2 hua1 zui3
+油滑	0	you2 hua2
 油畫	0	you2 hua4
 油夥兒	0	you2 huo3
 油灰	0	you2 hui1
@@ -138593,7 +138802,6 @@
 有勾當	0	you3 gou4 dang1
 有肝膽	0	you3 gan1 dan3
 有感地震	0	you3 gan3 di4 zhen4
-有感電影	0	you3 gan3 dian4 ying3
 有感而發	0	you3 gan3 er2 fa1
 有根兒有派兒	0	you3 gen1 you3 pai4
 有哏	0	you3 gen2
@@ -139140,6 +139348,7 @@
 煙袋哨子	0	yan1 dai4 shao4 zi5
 煙袋嘴兒	0	yan1 dai4 zui3
 煙袋油子	0	yan1 dai4 you2 zi5
+煙斗	0	yan1 dou3
 煙燈	0	yan1 deng1
 煙毒	0	yan1 du2
 煙臺	0	yan1 tai2
@@ -139805,7 +140014,6 @@
 掩體	0	yan3 ti3
 掩涕	0	yan3 ti4
 掩淚	0	yan3 lei4
-掩咯雞	0	yan3 luo4 ji1
 掩骼埋胔	0	yan3 ge2 mai2 zi4
 掩蓋	0	yan3 gai4
 掩口	0	yan3 kou3
@@ -140381,6 +140589,7 @@
 豔陽	0	yan4 yang2
 豔陽天	0	yan4 yang2 tian1
 豔陽高照	0	yan4 yang2 gao1 zhao4
+豔遇	0	yan4 yu4
 灩灩	0	yan4 yan4
 灩澦堆	0	yan4 yu4 dui1
 因變數	0	yin1 bian4 shu4
@@ -141632,6 +141841,7 @@
 揚眉吐氣	0	yang2 mei2 tu3 qi4
 揚眉抵掌	0	yang2 mei2 zhi3 zhang3
 揚名	0	yang2 ming2
+揚名立萬	0	yang2 ming2 li4 wan4
 揚名後世	0	yang2 ming2 hou4 shi4
 揚名顯親	0	yang2 ming2 xian3 qin1
 揚名顯姓	0	yang2 ming2 xian3 xing4
@@ -141693,7 +141903,6 @@
 陽平	0	yang2 ping2
 陽面	0	yang2 mian4
 陽明	0	yang2 ming2
-陽明大學	0	yang2 ming2 da4 xue2
 陽明先生	0	yang2 ming2 xian1 sheng1
 陽明學派	0	yang2 ming2 xue2 pai4
 陽明哲學	0	yang2 ming2 zhe2 xue2
@@ -141745,7 +141954,6 @@
 陽氣	0	yang2 qi4
 陽秋	0	yang2 qiu1
 陽羨	0	yang2 xian4
-陽性	0	yang2 xing4
 陽性植物	0	yang2 xing4 zhi2 wu4
 陽虛發熱	0	yang2 xu1 fa1 re4
 陽宅	0	yang2 zhai2
@@ -141902,6 +142110,7 @@
 養病	0	yang3 bing4
 養病如養虎	0	yang3 bing4 ru2 yang3 hu3
 養不住	0	yang3 bu5 zhu4
+養母	0	yang3 mu3
 養乏	0	yang3 fa2
 養分	0	yang3 fen4
 養蜂	0	yang3 feng1
@@ -142042,7 +142251,6 @@
 英明睿智	0	ying1 ming2 rui4 zhi4
 英畝	0	ying1 mu3
 英發	0	ying1 fa1
-英法海底隧道	0	ying1 fa3 hai3 di3 sui4 dao4
 英法聯軍	0	ying1 fa3 lian2 jun1
 英風	0	ying1 feng1
 英風義氣	0	ying1 feng1 yi4 qi4
@@ -142510,6 +142718,7 @@
 影占	0	ying3 zhan4
 影中蛇	0	ying3 zhong1 she2
 影鈔本	0	ying3 chao1 ben3
+影城	0	ying3 cheng2
 影事	0	ying3 shi4
 影視	0	ying3 shi4
 影視卡	0	ying3 shi4 ka3
@@ -142887,6 +143096,7 @@
 烏狗吃食，白狗當災	0	wu1 gou3 chi1 shi2 bai2 gou3 dang1 zai1
 烏干達	0	wu1 gan1 da2
 烏骨雞	0	wu1 gu3 ji1
+烏龜	0	wu1 gui1
 烏龜亡八	0	wu1 gui1 wang2 ba1
 烏鬼	0	wu1 gui3
 烏克蘭	0	wu1 ke4 lan2
@@ -142999,7 +143209,6 @@
 吳佩孚	0	wu2 pei4 fu2
 吳梅	0	wu2 mei2
 吳鳳	0	wu2 feng4
-吳鳳鄉	0	wu2 feng4 xiang1
 吳大澂	0	wu2 da4 cheng2
 吳道子	0	wu2 dao4 zi3
 吳都	0	wu2 du1
@@ -143874,6 +144083,7 @@
 武大郎吃毒藥	0	wu3 da5 lang2 chi1 du2 yao4
 武德	0	wu3 de2
 武道	0	wu3 dao4
+武鬥	0	wu3 dou4
 武旦	0	wu3 dan4
 武當派	0	wu3 dang1 pai4
 武當山	0	wu3 dang1 shan1
@@ -144110,7 +144320,6 @@
 物傷其類	0	wu4 shang1 qi2 lei4
 物盛則衰	0	wu4 sheng4 ze2 shuai1
 物資	0	wu4 zi1
-物資局	0	wu4 zi1 ju2
 物色	0	wu4 se4
 物以類聚	0	wu4 yi3 lei4 ju4
 物以稀為貴	0	wu4 yi3 xi1 wei2 gui4
@@ -144160,7 +144369,6 @@
 務外	0	wu4 wai4
 婺女	0	wu4 nu3
 婺劇	0	wu4 ju4
-婺川縣	0	wu4 chuan1 xian4
 霧豹	0	wu4 bao4
 霧鬢	0	wu4 bin4
 霧鬢風鬟	0	wu4 bin4 feng1 huan2
@@ -144420,6 +144628,7 @@
 臥龍岡	0	wo4 long2 gang1
 臥鼓偃旗	0	wo4 gu3 yan3 qi2
 臥果兒	0	wo4 guo3
+臥軌	0	wo4 gui3
 臥虎	0	wo4 hu3
 臥虎藏龍	0	wo4 hu3 cang2 long2
 臥具	0	wo4 ju4
@@ -144956,6 +145165,7 @@
 圍觀	0	wei2 guan1
 圍攻	0	wei2 gong1
 圍困	0	wei2 kun4
+圍剿	0	wei2 jiao3
 圍巾	0	wei2 jin1
 圍棋	0	wei2 qi2
 圍棋段位	0	wei2 qi2 duan4 wei4
@@ -145452,6 +145662,7 @@
 偽國	0	wei4 guo2
 偽國民政府	0	wei4 guo2 min2 zheng4 fu3
 偽經	0	wei4 jing1
+偽政權	0	wei4 zheng4 quan2
 偽證	0	wei4 zheng4
 偽裝	0	wei4 zhuang1
 偽鈔	0	wei4 chao1
@@ -145825,6 +146036,7 @@
 晚唐	0	wan3 tang2
 晚田	0	wan3 tian2
 晚年	0	wan3 nian2
+晚娘面孔	0	wan3 niang2 mian4 kong3
 晚娘的拳頭，雲裡的日頭	0	wan3 niang2 de5 quan2 tou5 yun2 li5 de5 ri4 tou2
 晚禮服	0	wan3 li3 fu2
 晚戀	0	wan3 lian4
@@ -145971,7 +146183,6 @@
 萬里長城	0	wan4 li3 chang2 cheng2
 萬曆	0	wan4 li4
 萬靈丹	0	wan4 ling2 dan1
-萬巒鄉	0	wan4 luan2 xiang1
 萬縷千絲	0	wan4 lu3 qian1 si1
 萬綠叢中紅一點	0	wan4 lu4 cong2 zhong1 hong2 yi1 dian3
 萬古	0	wan4 gu3
@@ -146604,6 +146815,7 @@
 亡靈	0	wang2 ling2
 亡故	0	wang2 gu4
 亡國	0	wang2 guo2
+亡國奴	0	wang2 guo2 nu2
 亡國之音	0	wang2 guo2 zhi1 yin1
 亡化	0	wang2 hua4
 亡魂	0	wang2 hun2
@@ -147333,6 +147545,7 @@
 隅頭	0	yu2 tou2
 隅中	0	yu2 zhong1
 隅坐	0	yu2 zuo4
+愚笨	0	yu2 ben4
 愚不可及	0	yu2 bu4 ke3 ji2
 愚眉肉眼	0	yu2 mei2 rou4 yan3
 愚昧	0	yu2 mei4
@@ -148460,7 +148673,6 @@
 鬱火	0	yu4 huo3
 鬱積	0	yu4 ji1
 鬱結	0	yu4 jie2
-鬱金	0	yu4 jin1
 鬱金香	0	yu4 jin1 xiang1
 鬱江	0	yu4 jiang1
 鬱血	0	yu4 xie3
@@ -149226,8 +149438,8 @@
 羱羊	0	yuan2 yang2
 螈蠶	0	yuan2 can2
 員弁	0	yuan2 bian4
-員林鎮	0	yuan2 lin2 zhen4
 員領	0	yuan2 ling3
+員工	0	yuan2 gong1
 員警	0	yuan2 jing3
 員丘山	0	yuan2 qiu1 shan1
 員司	0	yuan2 si1
@@ -150209,3 +150421,4 @@
 步步生蓮華	0	bu4 bu4 sheng1 lian2 hua1
 客語	0	ke4 yu3
 胡毋敬	0	hu2 wu2 jing4
+三心兩意	0	san1 xin1 liang3 yi4

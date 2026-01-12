@@ -86,5 +86,5 @@ update:
 	@make -f makefiles/cedict.mk update
 	@make -f makefiles/moe.mk update
 	@make -f makefiles/upstream.mk update
-	@make -f makefiles/array30.mk clear
+# 	@make -f makefiles/array30.mk clear
 	@make -f makefiles/array30.mk build
