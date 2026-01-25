@@ -39,7 +39,7 @@ EMOJI_DATA_LIST = {
 	"derived_hans.json": "https://github.com/unicode-org/cldr-json/raw/main/cldr-json/cldr-annotations-derived-full/annotationsDerived/zh/annotations.json",
 }
 
-EMOTICONS_PATH = os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'lexicon/emoticons.json'))
+EMOTICONS_PATH = os.path.join(os.getcwd(), 'lexicon', 'emoticons.json')
 COMMON_WORDS_LIST = ['skin tone', '膚色', '肤色']
 
 # Unicode special characters
@@ -410,9 +410,7 @@ def apply_emoticons():
 	db.close()
 
 def apply_ranking():
-	# This function also uses EMOTICONS_PATH.
-	# Ensure the `remove_skin_tone` call here is also updated.
-	file = open(EMOTICONS_PATH, 'r') # Assuming EMOTICONS_PATH is defined and correct
+	file = open(EMOTICONS_PATH, 'r')
 	data = json.load(file)
 	file.close()
 

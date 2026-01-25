@@ -1,6 +1,6 @@
 [project]
-name = "bin"
-version = "0.1.0"
+name = "okidokey-toolkit"
+version = "3.0.0"
 description = "OkidoKey toolkit"
 readme = "README.md"
 requires-python = ">=3.13"
