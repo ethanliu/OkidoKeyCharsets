@@ -82,7 +82,7 @@ $(TMP_DIR)/array30-phrase.processed: $(wildcard $(RAWDATA_DIR)/array30/array30-p
 $(TMP_DIR)/array30-phrase.csv: $(TMP_DIR)/array30-phrase.processed
 	@mkdir -p $(@D)
 	@echo "Converting processed phrase file to CSV: $<"
-	@$(MISE_RUN) txt2csv.py -i $< -o $@ -c 3 1 0
+	@$(BIN_DIR)/txt2csv.py -i $< -o $@ -c 3 1 0
 
 # --- Rules for array30-OkidoKey.cin and array30-OkidoKey-big.cin ---
 # These rules take the .base files (from tmp), add the shortcode/special text,

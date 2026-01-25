@@ -13,10 +13,10 @@ usage:
 
 build:
 	@mkdir -p $(BUILD_QUEUE_DIR)/table
-	@$(MISE_RUN) build.py -c table -t db -i $(TABLE_DIR) -o $(BUILD_QUEUE_DIR)/table
+	@$(BIN_DIR)/build.py -c table -t db -i $(TABLE_DIR) -o $(BUILD_QUEUE_DIR)/table
 
 json:
-	@$(MISE_RUN) resource.py -c table -o $(BUILD_QUEUE_DIR)/DataTables.json
+	@$(BIN_DIR)/resource.py -c table -o $(BUILD_QUEUE_DIR)/DataTables.json
 
 
 

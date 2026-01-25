@@ -1,5 +1,4 @@
 
-MISE_RUN := $(CURDIR)/bin/run.sh
 BIN_DIR := $(CURDIR)/bin
 TMP_DIR = $(CURDIR)/tmp
 

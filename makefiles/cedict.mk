@@ -17,7 +17,7 @@ usage:
 
 pull:
 	@echo "🤝 check new version..."
-	@$(MISE_RUN) cedict.py -d -o $(RAWDATA_DIR)/cedict
+	@$(BIN_DIR)/cedict.py -d -o $(RAWDATA_DIR)/cedict
 
 update:
-	@$(MISE_RUN) cedict.py -i $(RAWDATA_DIR)/cedict/cedict_ts.u8 -o $(LEXICON_DIR)
+	@$(BIN_DIR)/cedict.py -i $(RAWDATA_DIR)/cedict/cedict_ts.u8 -o $(LEXICON_DIR)

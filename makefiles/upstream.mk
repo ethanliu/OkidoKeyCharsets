@@ -68,7 +68,7 @@ array30:
 
 # 	@echo "Patching array phrase..."
 # 	@$(eval file := $(wildcard $(RAWDATA_DIR)/array30/array30-phrase*.txt))
-# 	@$(MISE_RUN) txt2csv.py -i ${file} -o $(LEXICON_DIR)/array30.csv -c 3 1 0
+# 	@$(BIN_DIR)/txt2csv.py -i ${file} -o $(LEXICON_DIR)/array30.csv -c 3 1 0
 
 # @#$(eval txt := '\#\ shortcode\ +\ special\\n')
 # @##sed -i '' -e 's/%gen_inp/${txt}\n%gen_inp/g' $(TABLE_DIR)/array30.cin
@@ -89,7 +89,7 @@ array30:
 # 	@cp ${file} $(TABLE_DIR)/array30-OkidoKey-big.cin
 
 # 	@$(eval phrasefile := $(wildcard $(RAWDATA_DIR)/array30/array30-phrase*.txt))
-# 	@$(MISE_RUN) txt2csv.py -i ${phrasefile} -o $(LEXICON_DIR)/array30.csv -c 3 1 0
+# 	@$(BIN_DIR)/txt2csv.py -i ${phrasefile} -o $(LEXICON_DIR)/array30.csv -c 3 1 0
 
 # 	@TEXT="#\n# 此表格包含簡碼 (%%shortcode) 及特別碼 (%%special)\n#" ; \
 # 	printf "$$TEXT\n" | sed -i '' '5r /dev/stdin' $(TABLE_DIR)/array30-OkidoKey.cin ; \
@@ -121,23 +121,23 @@ array30:
 
 ghcm:
 	@echo "Patching ghcm..."
-	@$(MISE_RUN) rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(MISC_DIR)/ghcm-header.cin
+	@$(BIN_DIR)/rime2cin.py -i $(RAWDATA_DIR)/ghcm/SM.dict.yaml -o $(TABLE_DIR)/ghcm.cin -x $(MISC_DIR)/ghcm-header.cin
 
 jieba:
 	@echo "Patching jieba..."
-	@$(MISE_RUN) jieba2csv.py -i $(RAWDATA_DIR)/jieba/jieba/dict.txt -o ${LEXICON_DIR}/jieba.csv
+	@$(BIN_DIR)/jieba2csv.py -i $(RAWDATA_DIR)/jieba/jieba/dict.txt -o ${LEXICON_DIR}/jieba.csv
 
 
 jyutping:
 	@echo "Patching jyutping..."
-	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3.cin -t tone --header $(MISC_DIR)/jyut6ping3-header.cin
-	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3-toneless.cin -t toneless --header $(MISC_DIR)/jyut6ping3-toneless-header.cin
+	@$(BIN_DIR)/jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3.cin -t tone --header $(MISC_DIR)/jyut6ping3-header.cin
+	@$(BIN_DIR)/jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.chars.dict.yaml -o $(TABLE_DIR)/jyut6ping3-toneless.cin -t toneless --header $(MISC_DIR)/jyut6ping3-toneless-header.cin
 	@echo "Patching jyutping phrase..."
-	@$(MISE_RUN) jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase --header $(LEXICON_DIR)/jyutping.csv.txt
+	@$(BIN_DIR)/jyutping-rime.py -i $(RAWDATA_DIR)/rime-cantonese/jyut6ping3.words.dict.yaml -o $(LEXICON_DIR)/jyutping.csv -t phrase --header $(LEXICON_DIR)/jyutping.csv.txt
 
 mcbpmf:
-# @$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source/Data/phrase.occ -o $(LEXICON_DIR)/mcbopomofo.csv
-	@$(MISE_RUN) mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source -o $(LEXICON_DIR)/mcbopomofo.csv
+# @$(BIN_DIR)/mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source/Data/phrase.occ -o $(LEXICON_DIR)/mcbopomofo.csv
+	@$(BIN_DIR)/mcbpmf2csv.py -i $(RAWDATA_DIR)/McBopomofo/Source -o $(LEXICON_DIR)/mcbopomofo.csv
 
 # moe:
 # 	@curl -o $(RAWDATA_DIR)/moe/sutian.json https://raw.githubusercontent.com/g0v/moedict-webkit/refs/heads/master/t/index.json

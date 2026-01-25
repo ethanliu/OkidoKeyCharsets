@@ -21,7 +21,6 @@ from lib.util import prompt, run, parent_dir
 
 BASE_DIR = parent_dir(__file__, 1)
 BIN_DIR = f"{BASE_DIR}/bin"
-# RUN = f"{BASE_DIR}/bin/run.sh"
 
 def main():
     parser = argparse.ArgumentParser(description='builder')

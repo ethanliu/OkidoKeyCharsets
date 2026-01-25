@@ -12,7 +12,7 @@ usage:
 	@echo $(SYNOPSIS)
 
 test:
-	@$(MISE_RUN) test.py $(BUILD_DIR)
+	@$(BIN_DIR)/test.py $(BUILD_DIR)
 
 dev:
 	@make -f makefiles/dev.mk sync
@@ -40,21 +40,21 @@ all: table lexicon emoji unihan char keyboard
 	@make dist
 
 keyboard:
-	@$(MISE_RUN) resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
+	@$(BIN_DIR)/resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
 
 emoji:
-# 	@$(MISE_RUN) emojidb.py --update -d $(RAWDATA_DIR)/emoji
-	@$(MISE_RUN) emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(BUILD_DIR)/emoji.db
+# 	@$(BIN_DIR)/emojidb.py --update -d $(RAWDATA_DIR)/emoji
+	@$(BIN_DIR)/emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(BUILD_DIR)/emoji.db
 
 emoji-test:
-	@$(MISE_RUN) emojidb.py -test zwj -o $(BUILD_DIR)/emoji.db
-	@$(MISE_RUN) emojidb.py -test ranking -o $(BUILD_DIR)/emoji.db
+	@$(BIN_DIR)/emojidb.py -test zwj -o $(BUILD_DIR)/emoji.db
+	@$(BIN_DIR)/emojidb.py -test ranking -o $(BUILD_DIR)/emoji.db
 
 unihan:
-	@$(MISE_RUN) unihan.py -o $(BUILD_DIR)/Unihan.db
+	@$(BIN_DIR)/unihan.py -o $(BUILD_DIR)/Unihan.db
 
 char:
-	@$(MISE_RUN) character.py -i $(LEXICON_DIR)/symbol.json $(BUILD_DIR)/Character.db
+	@$(BIN_DIR)/character.py -i $(LEXICON_DIR)/symbol.json $(BUILD_DIR)/Character.db
 
 table:
 	@make -f makefiles/table.mk build
