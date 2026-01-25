@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env uv run
 #
 # version: 0.0.3
 # autor: Ethan Liu

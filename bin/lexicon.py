@@ -1,6 +1,9 @@
-#!/usr/bin/env python
-#
-# autor: Ethan Liu
+#!/usr/bin/env uv run
+# /// script
+# dependencies = [
+#   "tqdm",
+# ]
+# ///
 #
 # general purpos utilties for lexicon
 

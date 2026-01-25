@@ -1,6 +1,9 @@
-#!/usr/bin/env python
-#
-# autor: Ethan Liu
+#!/usr/bin/env uv run
+# /// script
+# dependencies = [
+#   "natsort",
+# ]
+# ///
 #
 # build helper for reducing Makefile hassel
 #
@@ -17,7 +20,8 @@ from natsort import os_sorted
 from lib.util import prompt, run, parent_dir
 
 BASE_DIR = parent_dir(__file__, 1)
-RUN = f"{BASE_DIR}/bin/run.sh"
+BIN_DIR = f"{BASE_DIR}/bin"
+# RUN = f"{BASE_DIR}/bin/run.sh"
 
 def main():
     parser = argparse.ArgumentParser(description='builder')
@@ -66,7 +70,7 @@ def _lexicon_db(input_dir: str, output_dir: str):
         if filename.startswith('_'):
             continue
 
-        cmd = f"{RUN} lexicon2db.py -i {path} -o {output_path}"
+        cmd = f"{BIN_DIR}/lexicon2db.py -i {path} -o {output_path}"
         # print(f"-> cmd: {cmd}")
         run(cmd)
 
@@ -139,7 +143,7 @@ def _table_db(input_dir: str, output_dir: str):
             continue
 
         # print(f"-> {filename}")
-        cmd = f"{RUN} cin2db.py -i {path} -o {output_path}"
+        cmd = f"{BIN_DIR}/cin2db.py -i {path} -o {output_path}"
         if filename.startswith("array30"):
             cmd = f"{cmd} -e array"
         # print(f"-> cmd: {cmd}")
