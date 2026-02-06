@@ -1,9 +1,4 @@
 #!/usr/bin/env uv run
-# /// script
-# dependencies = [
-#   "natsort",
-# ]
-# ///
 #
 # build helper for reducing Makefile hassel
 #

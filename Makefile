@@ -11,6 +11,17 @@ endef
 usage:
 	@echo $(SYNOPSIS)
 
+setup:
+	@uv venv
+	@uv sync
+
+clear:
+	@rm -rf .venv uv.lock
+	@uv cache clean
+
+run:
+	@uv run bin/$(SCRIPT)
+
 test:
 	@$(BIN_DIR)/test.py $(BUILD_DIR)
 

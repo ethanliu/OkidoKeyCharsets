@@ -11,3 +11,6 @@ dependencies = [
     "scrapy>=2.14.1",
     "tqdm>=4.67.1",
 ]
+
+[tool.uv]
+package = false

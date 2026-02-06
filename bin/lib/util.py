@@ -1,10 +1,8 @@
 #!/usr/bin/env uv run
 #
-# version: 1.0.1
 # autor: Ethan Liu
 #
 # some common python class, functions, etc.
-#
 #
 
 import sys
@@ -14,6 +12,7 @@ import os
 import unicodedata
 import string
 # from tqdm import tqdm
+import sqlite3
 from itertools import islice
 
 class Colors:
@@ -174,6 +173,22 @@ def dict_factory(cursor, row):
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
     return d
+
+def db_exec(cursor, query, params=None):
+    try:
+        if params:
+            cursor.execute(query, params)
+        else:
+            cursor.execute(query)
+        return None
+    except sqlite3.Error as e:
+        # print("--- EXECUTION ERROR ---")
+        # print(f"Query: {query}")
+        # print(f"Data:  {params}")
+        # print(f"Error: {e}")
+        # Optionally re-raise the error if you want the app to stop
+        # raise e
+        return e
 
 def db_get_all(cursor, query, args = None):
     if args == None:

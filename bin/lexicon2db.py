@@ -11,7 +11,7 @@ import csv
 import re
 import sqlite3
 from tqdm import tqdm
-from lib.util import chunks, strip_accents, db_get_all
+from lib.util import chunks, strip_accents
 
 kPatternPhrase = r"_x([0-9A-F]{4})_"
 
@@ -83,14 +83,16 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    # cursor.execute("CREATE TABLE pinyin (`pinyin` VARCHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE `lexicon` (`phrase` TEXT NOT NULL, `pinyin` VARCHAR(255) DEFAULT NULL, `weight` INTEGER DEFAULT 0, `category_id` INTEGER DEFAULT 0, UNIQUE(`phrase`, `pinyin`, `category_id`))")
+    # cursor.execute("CREATE TABLE pinyin (pinyin VARCHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE lexicon (phrase TEXT NOT NULL, pinyin VARCHAR(255) DEFAULT NULL, weight INTEGER DEFAULT 0, category_id INTEGER DEFAULT 0, UNIQUE(phrase, pinyin, category_id))")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_phrase_nocase ON lexicon (phrase COLLATE NOCASE, category_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_pinyin_nocase ON lexicon (pinyin COLLATE NOCASE, category_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_phrase ON lexicon (phrase, category_id, weight)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_pinyin ON lexicon (pinyin, category_id, weight)")
 
     perform_import(cursor, args.input)
 
     cursor.execute('VACUUM')
-    cursor.execute("CREATE INDEX IF NOT EXISTS `phrase_index` ON `lexicon` (phrase, category_id, weight)")
-    cursor.execute("CREATE INDEX IF NOT EXISTS `pinyin_index` ON `lexicon` (pinyin, category_id, weight)")
 
     db.commit()
     db.close()

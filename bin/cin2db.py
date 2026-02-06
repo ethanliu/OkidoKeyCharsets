@@ -5,15 +5,16 @@
 # convert cin table to sqlite db
 
 import argparse
-import importlib
+# import importlib
 import sys, os
 import sqlite3
 from enum import IntEnum
 from tqdm import tqdm
 from lib.cintable import CinTable, Block
+from lib.util import db_exec, db_get_one, write_file
 # from time import sleep
 
-uu = importlib.import_module("lib.util")
+# uu = importlib.import_module("lib.util")
 
 class Mode(IntEnum):
     CREATE = 1
@@ -26,7 +27,7 @@ class Mode(IntEnum):
         return self.name[0]
 
 def perform_import(cursor, input_path, mode = Mode.CREATE):
-    # tqdm.write(uu.color(f"[{filename}]", fg = 'green'))
+    report_content = ""
     cin = CinTable(input_path, [Block.Chardef])
 
     cursor.execute("PRAGMA synchronous = OFF")
@@ -34,47 +35,29 @@ def perform_import(cursor, input_path, mode = Mode.CREATE):
     cursor.execute("BEGIN TRANSACTION")
 
     if mode == Mode.CREATE:
-        query = "INSERT OR IGNORE INTO `info` (`name`, `value`) VALUES (:name, :value)"
+        query = "INSERT OR IGNORE INTO info (name, value) VALUES (:name, :value)"
         for key in cin.meta:
             value = cin.meta[key]
             if value:
                 args = {'name': key, 'value': value}
                 cursor.execute(query, args)
 
-        query = "INSERT OR IGNORE INTO `keyname` (`key`, `value`) VALUES (:name, :value)"
+        query = "INSERT OR IGNORE INTO keyname (key, value) VALUES (:name, :value)"
         for key in cin.keyname:
             args = {'name': key, 'value': cin.keyname[key]}
             cursor.execute(query, args)
 
-    query1 = "INSERT OR IGNORE INTO `keydef` (`key`) VALUES (:value)"
-    # query2 = "SELECT `rowid` FROM `keydef` WHERE `key` = :value LIMIT 1"
-    query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
-    # query4 = "SELECT `rowid` FROM `chardef` WHERE `char` = :value LIMIT 1"
-    # query5 = "INSERT OR IGNORE INTO `entry` (`keydef_id`, `chardef_id`) VALUES (:kid, :cid)"
-    query6 = "INSERT INTO `entry` (`keydef_id`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `keydef` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+    query1 = "INSERT OR IGNORE INTO keydef (key) VALUES (:value)"
+    # query2 = "SELECT rowid FROM keydef WHERE key = :value LIMIT 1"
+    query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
+    # query4 = "SELECT rowid FROM chardef WHERE char = :value LIMIT 1"
+    # query5 = "INSERT OR IGNORE INTO entry (keydef_id, chardef_id) VALUES (:kid, :cid)"
+    query6 = "INSERT INTO entry (keydef_id, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM keydef AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
     for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.get_name()}[1]"):
         # print(f"{item[0]} => {item[1]}")
         key = item[0]
         value = item[1]
-
-        # old school way, one by one
-        # bossy.cin took 3s
-
-        # # keydef
-        # args = {'value': key}
-        # cursor.execute(query1, args)
-        # keydefId = uu.db_get_one(cursor, query2, args)
-
-        # # chardef
-        # args = {'value': value}
-        # cursor.execute(query3, args)
-        # chardefId = uu.db_get_one(cursor, query4, args)
-
-        # #entry pivot
-        # args = {'kid': keydefId, 'cid': chardefId}
-        # cursor.execute(query5, args)
-
         # v2, keydef and chardef
         cursor.execute(query1,  {'value': key})
         cursor.execute(query3, {'value': value})
@@ -83,23 +66,34 @@ def perform_import(cursor, input_path, mode = Mode.CREATE):
     for item in tqdm(cin.chardef, unit = 'MB', unit_scale = True, ascii = True, desc = f"{cin.get_name()}[2]"):
         key = item[0]
         value = item[1]
-        cursor.execute(query6, {'key': key, 'value': value})
+        # cursor.execute(query6, {'key': key, 'value': value})
+        err = db_exec(cursor, query6, {'key': key, 'value': value})
+        if err:
+            # tqdm.write(f"[entry] duplicate: {key}\t{value}")
+            report_content += f"[ignore] {key}\t{value}\n"
 
     cursor.execute("COMMIT TRANSACTION")
-    cursor.execute('VACUUM')
-    if mode == Mode.CREATE:
-        cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
+
+    if report_content:
+        basename = os.path.splitext(os.path.basename(input_path))[0]
+        report_path = os.path.join('tmp', f"error_{basename}.txt")
+        write_file(report_path, report_content)
+
+    # cursor.execute('VACUUM')
+    # if mode == Mode.CREATE:
+    #     cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
 
 def validate(cursor):
-    cursor.execute("SELECT key, value FROM `keyname` ORDER BY rowid")
+    cursor.execute("SELECT key, value FROM keyname ORDER BY rowid")
     result = cursor.fetchall()
     for item in tqdm(result, unit_scale = True, ascii = True, desc = f"Validation"):
-        query = "SELECT COUNT(rowid) FROM `keydef` WHERE key LIKE :key"
-        check = uu.db_get_one(cursor, query, {'key': f"%{item[0]}%"})
+        query = "SELECT COUNT(rowid) FROM keydef WHERE key LIKE :key"
+        check = db_get_one(cursor, query, {'key': f"%{item[0]}%"})
         if not check or check <= 1:
             tqdm.write(f"[?] keyname: {item[0]} ({item[1]}) never or rarely used")
 
 def plugin_array(cursor, input_path):
+    report_content = ""
     cin = CinTable(input_path, [Block.Shortcode, Block.Special])
     cursor.execute("PRAGMA synchronous = OFF")
     cursor.execute("PRAGMA journal_mode = MEMORY")
@@ -115,12 +109,16 @@ def plugin_array(cursor, input_path):
         entry_table_name = f"entry_{category}"
         entry_keydef_column_name = f"keydef_{category}_id"
 
-        query1 = f"INSERT OR IGNORE INTO `{keydef_table_name}` (`key`) VALUES (:value)"
-        query3 = "INSERT OR IGNORE INTO `chardef` (`char`) VALUES (:value)"
-        query6 = f"INSERT OR IGNORE INTO `{entry_table_name}` (`{entry_keydef_column_name}`, `chardef_id`) SELECT k.rowid AS kid, c.rowid AS cid FROM `{keydef_table_name}` AS k, `chardef` AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+        query1 = f"INSERT OR IGNORE INTO {keydef_table_name} (key) VALUES (:value)"
+        query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
+        query6 = f"INSERT OR IGNORE INTO {entry_table_name} ({entry_keydef_column_name}, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM {keydef_table_name} AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-        cursor.execute(f"CREATE TABLE {keydef_table_name} (`key` VARCHAR(255) UNIQUE NOT NULL)")
-        cursor.execute(f"CREATE TABLE {entry_table_name} (`{entry_keydef_column_name}` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL)")
+        cursor.execute(f"CREATE TABLE {keydef_table_name} (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key VARCHAR(255) UNIQUE NOT NULL)")
+        # cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+        cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY ({entry_keydef_column_name}, chardef_id)) WITHOUT ROWID")
+        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{keydef_table_name}_key_nocase ON {keydef_table_name} (key COLLATE NOCASE)")
+        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_mapping ON {entry_table_name} ({entry_keydef_column_name}, chardef_id)")
+        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_reverse ON {entry_table_name} (chardef_id, {entry_keydef_column_name})")
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
             key = item[0]
@@ -130,14 +128,22 @@ def plugin_array(cursor, input_path):
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[2]"):
             key = item[0]
             value = item[1]
-            cursor.execute(query6, {'key': key, 'value': value})
+            # cursor.execute(query6, {'key': key, 'value': value})
+            err = db_exec(cursor, query6, {'key': key, 'value': value})
+            if err:
+                # tqdm.write(f"[entry] duplicate: {key}\t{value}")
+                report_content += f"[ignore] {key}\t{value}\n"
 
     # commit
     cursor.execute("COMMIT TRANSACTION")
-    cursor.execute('VACUUM')
+    # cursor.execute('VACUUM')
+    if report_content:
+        basename = os.path.splitext(os.path.basename(input_path))[0]
+        report_path = os.path.join('tmp', f"error_{basename}.txt")
+        write_file(report_path, report_content)
 
 def plugin_bossy(cursor):
-    query = "UPDATE `info` SET value = :value WHERE `name` = :name"
+    query = "UPDATE info SET value = :value WHERE name = :name"
     args = {'name': 'ename', 'value': "Bossy"}
     cursor.execute(query, args)
     args = {'name': 'cname', 'value': "謥蝦米"}
@@ -170,11 +176,16 @@ def main():
     cursor = db.cursor()
 
     # main table
-    cursor.execute("CREATE TABLE info (`name` VARCHAR(255) UNIQUE NOT NULL, `value` VARCHAR(255) default '')")
-    cursor.execute("CREATE TABLE keyname (`key` VARCHAR(255) UNIQUE NOT NULL, `value` VARCHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (`key` VARCHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (`char` VARCHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
+    cursor.execute("CREATE TABLE info (name VARCHAR(255) UNIQUE NOT NULL, value VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE keyname (key VARCHAR(255) UNIQUE NOT NULL, value VARCHAR(255) default '')")
+    cursor.execute("CREATE TABLE keydef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key VARCHAR(255) UNIQUE NOT NULL)")
+    cursor.execute("CREATE TABLE chardef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, char VARCHAR(255) UNIQUE NOT NULL)")
+    # cursor.execute("CREATE TABLE entry (keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL, UNIQUE(keydef_id, chardef_id) ON CONFLICT IGNORE)")
+    cursor.execute("CREATE TABLE entry (keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY (keydef_id, chardef_id)) WITHOUT ROWID")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_keydef_key_nocase ON keydef (key COLLATE NOCASE)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_keydef_key ON keydef (key)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_mapping ON entry (keydef_id, chardef_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_reverse ON entry (chardef_id, keydef_id)")
 
     mode = Mode.CREATE
     for index, path in enumerate(args.input):
