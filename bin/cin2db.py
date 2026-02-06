@@ -113,11 +113,8 @@ def plugin_array(cursor, input_path):
         query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
         query6 = f"INSERT OR IGNORE INTO {entry_table_name} ({entry_keydef_column_name}, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM {keydef_table_name} AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
-        cursor.execute(f"CREATE TABLE {keydef_table_name} (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key VARCHAR(255) UNIQUE NOT NULL)")
-        # cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+        cursor.execute(f"CREATE TABLE {keydef_table_name} (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
         cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY ({entry_keydef_column_name}, chardef_id)) WITHOUT ROWID")
-        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{keydef_table_name}_key_nocase ON {keydef_table_name} (key COLLATE NOCASE)")
-        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_mapping ON {entry_table_name} ({entry_keydef_column_name}, chardef_id)")
         cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_reverse ON {entry_table_name} (chardef_id, {entry_keydef_column_name})")
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
@@ -176,15 +173,11 @@ def main():
     cursor = db.cursor()
 
     # main table
-    cursor.execute("CREATE TABLE info (name VARCHAR(255) UNIQUE NOT NULL, value VARCHAR(255) default '')")
-    cursor.execute("CREATE TABLE keyname (key VARCHAR(255) UNIQUE NOT NULL, value VARCHAR(255) default '')")
-    cursor.execute("CREATE TABLE keydef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key VARCHAR(255) UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE chardef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, char VARCHAR(255) UNIQUE NOT NULL)")
-    # cursor.execute("CREATE TABLE entry (keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL, UNIQUE(keydef_id, chardef_id) ON CONFLICT IGNORE)")
+    cursor.execute("CREATE TABLE info (name TEXT PRIMARY KEY, value TEXT default '')")
+    cursor.execute("CREATE TABLE keyname (key TEXT UNIQUE NOT NULL, value TEXT default '')")
+    cursor.execute("CREATE TABLE keydef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
+    cursor.execute("CREATE TABLE chardef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, char TEXT UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY (keydef_id, chardef_id)) WITHOUT ROWID")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_keydef_key_nocase ON keydef (key COLLATE NOCASE)")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_keydef_key ON keydef (key)")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_mapping ON entry (keydef_id, chardef_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_reverse ON entry (chardef_id, keydef_id)")
 
     mode = Mode.CREATE
