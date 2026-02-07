@@ -158,6 +158,39 @@ def remove_skin_tone(hex_codes_string):
 
 	return final_string
 
+# Updated Skin Tone Detection
+def identify_skin_tone(hex_codes_string):
+    if hex_codes_string is None or hex_codes_string == EMOJI_VS:
+        return None, -1
+
+    # Default values
+    parent_hex = hex_codes_string
+    tone_type = 0  # Default to Original/Neutral
+
+    # Check for presence of modifiers
+    # 1F3FB=1, 1F3FC=2, 1F3FD=3, 1F3FE=4, 1F3FF=5
+    found_modifier = False
+    for i, mod_hex in enumerate(sorted(SKIN_TONE_MODIFIERS_HEX)):
+        if mod_hex in hex_codes_string:
+            tone_type = i + 1
+            found_modifier = True
+            break
+
+    if found_modifier:
+        # Create parent_hex by stripping out the modifiers
+        to_remove = SKIN_TONE_MODIFIERS_HEX
+        pattern = r'\b(' + '|'.join(re.escape(s) for s in to_remove) + r')\b'
+        cleaned = re.sub(pattern, "", hex_codes_string).split()
+        parent_hex = ' '.join(cleaned).strip()
+    else:
+        # If no skin tone modifier is present, we check if it's even a "human" emoji
+        # Emojis like 'Rocket' or 'Pizza' should stay as -1 to avoid cluttering
+        # a "Neutral" filter.
+        # Simple heuristic: if it's a Modifier Base, it's tone-capable.
+        pass
+
+    return parent_hex, tone_type
+
 def create_database():
 	if os.path.isfile(DB_PATH):
 		os.remove(DB_PATH)
@@ -165,10 +198,47 @@ def create_database():
 	db = sqlite3.connect(DB_PATH)
 	cursor = db.cursor()
 
-	cursor.execute("CREATE TABLE keydef (`key` VARCHAR(255) UNIQUE NOT NULL)")
-	cursor.execute("CREATE TABLE chardef (`char` VARCHAR(255) UNIQUE NOT NULL, `weight` INTEGER DEFAULT 0)")
-	cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER NOT NULL, `chardef_id` INTEGER NOT NULL, UNIQUE(`keydef_id`, `chardef_id`) ON CONFLICT IGNORE)")
-	cursor.execute("CREATE TABLE category (`chardef_id` INTEGER NOT NULL, `category_id` INTEGER DEFAULT 0)")
+	# keydef: The Search Terms (e.g., "smiling face", "heart")
+	cursor.execute("""
+		CREATE TABLE IF NOT EXISTS keydef (
+			rowid INTEGER PRIMARY KEY AUTOINCREMENT,
+			key TEXT UNIQUE NOT NULL COLLATE NOCASE
+		)
+	""")
+
+	# chardef: The Output (e.g., "1F600" or "1F468 200D 1F3A4")
+	cursor.execute("""
+		CREATE TABLE IF NOT EXISTS chardef (
+			rowid INTEGER PRIMARY KEY AUTOINCREMENT,
+			char TEXT UNIQUE NOT NULL,
+			weight INTEGER DEFAULT 0,
+			skin_tone INTEGER DEFAULT 0,
+			parent_id INTEGER DEFAULT NULL
+		)
+	""")
+
+	# entry: Mapping Search Terms to Hex Strings
+	cursor.execute("""
+		CREATE TABLE IF NOT EXISTS entry (
+			keydef_id INTEGER NOT NULL,
+			chardef_id INTEGER NOT NULL,
+			PRIMARY KEY (keydef_id, chardef_id)
+		) WITHOUT ROWID
+	""")
+
+	# category: Mapping Hex Strings to Categories
+	cursor.execute("""
+		CREATE TABLE IF NOT EXISTS category (
+			category_id INTEGER NOT NULL,
+			chardef_id INTEGER NOT NULL,
+			PRIMARY KEY (category_id, chardef_id)
+		) WITHOUT ROWID
+	""")
+
+	cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_reverse ON entry (chardef_id, keydef_id)")
+	cursor.execute("CREATE INDEX IF NOT EXISTS idx_category_reverse ON category (chardef_id, category_id)")
+	cursor.execute("CREATE INDEX IF NOT EXISTS idx_chardef_weight ON chardef (weight DESC)")
+	cursor.execute("CREATE INDEX IF NOT EXISTS idx_chardef_skin ON chardef (skin_tone, weight DESC)")
 
 	db.commit()
 	db.close()
@@ -207,7 +277,7 @@ def import_from_emoji_data(cursor, file_path):
 
 	filename = os.path.basename(file_path)
 
-	insert_chardef_query = "INSERT OR IGNORE INTO chardef (char) VALUES (:char)"
+	insert_chardef_query = "INSERT OR IGNORE INTO chardef (char, skin_tone, parent_id) VALUES (:char, :skin, :pid)"
 	select_chardef_query = "SELECT rowid FROM chardef WHERE char = :char LIMIT 1"
 	insert_category_query = "INSERT OR IGNORE INTO category (chardef_id, category_id) VALUES (:chardef_id, :category_id)"
 
@@ -257,22 +327,52 @@ def import_from_emoji_data(cursor, file_path):
 
 				for codepoint in range(begin, end + 1):
 					hex_code = f"{codepoint:08X}"  # or :08X for 8 digits
+					# print(hex_code)
 
-					cursor.execute(insert_chardef_query, {'char': hex_code})
+					# cursor.execute(insert_chardef_query, {'char': hex_code})
+					cursor.execute(insert_chardef_query, {
+						'char': hex_code,
+						'skin': -1,
+						'pid': None
+					})
 					chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 					cursor.execute(insert_category_query, {'chardef_id': chardef_id, 'category_id': category_id})
 			else:
 				hex_code = pad_hex_to_8_digits(hex_code_raw)
-				hex_code = remove_skin_tone(hex_code)
+				# hex_code = remove_skin_tone(hex_code)
+				parent_hex, tone = identify_skin_tone(hex_code)
+
 				if not hex_code:
+					continue
+
+				if not parent_hex:
+					# print(f"===> \n{hex_code}\n{hex_code_raw}")
 					continue
 
 				if category_id == EMOJI_CATEGORY_MAP["RGI_Emoji_ZWJ_Sequence"]:
 					if not hex_code.endswith(EMOJI_VS):
 						hex_code = f"{hex_code} {EMOJI_VS}"
 
+				# Step 2: Ensure Parent exists first (to get parent_id)
+				# If the current emoji is already the parent (tone 0), pid is NULL
+				pid = None
+				if tone > 0:
+					# Insert parent if it doesn't exist yet
+					cursor.execute("INSERT OR IGNORE INTO chardef (char, skin_tone) VALUES (?, 0)", (parent_hex,))
+					pid = db_get_one(cursor, select_chardef_query, {'char': parent_hex})
+
 				# print(f"===> \n{hex_code}\n{hex_code_raw}")
-				cursor.execute(insert_chardef_query, {'char': hex_code})
+				# print(parent_hex, tone)
+
+				# Step 3: Insert the current Emoji
+				cursor.execute(insert_chardef_query, {
+					'char': hex_code,
+					'skin': tone,
+					'pid': pid
+				})
+				# cursor.execute(insert_chardef_query, {'char': hex_code})
+
+				# Get the ID of what we just inserted to link to category
 				chardef_id = db_get_one(cursor, select_chardef_query, {'char': hex_code})
 				cursor.execute(insert_category_query, {'chardef_id': chardef_id, 'category_id': category_id})
 
@@ -447,13 +547,14 @@ def test(phrase, dbPath):
 	print(f"\n--- Searching for phrase: '{phrase}' ---")
 	if phrase == 'dev':
 
-		query = "select * from chardef where char like '0001F486%'"
+		query = "select char from chardef where char like '0001F486%'"
+		# query = "select char from chardef where skin_tone = -1"
 		cursor.execute(query)
 		result = cursor.fetchall()
 
 		for item in result:
 			emoji = emojilized(item[0])
-			print(f"{emoji} {item[0]})")
+			print(f"{emoji} {item[0]}")
 
 
 	elif phrase == 'emoji':
