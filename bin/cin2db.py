@@ -110,12 +110,18 @@ def plugin_array(cursor, input_path):
         entry_keydef_column_name = f"keydef_{category}_id"
 
         query1 = f"INSERT OR IGNORE INTO {keydef_table_name} (key) VALUES (:value)"
+        # chardef allows duplicate due to shortcode and special
         query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
-        query6 = f"INSERT OR IGNORE INTO {entry_table_name} ({entry_keydef_column_name}, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM {keydef_table_name} AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+        query6 = f"INSERT INTO {entry_table_name} ({entry_keydef_column_name}, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM {keydef_table_name} AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
 
         cursor.execute(f"CREATE TABLE {keydef_table_name} (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
-        cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY ({entry_keydef_column_name}, chardef_id)) WITHOUT ROWID")
-        cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_reverse ON {entry_table_name} (chardef_id, {entry_keydef_column_name})")
+
+        # while shortcode is poistion award radicals, don't applies to the unique constraint
+        if category == "special":
+            cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY ({entry_keydef_column_name}, chardef_id)) WITHOUT ROWID")
+            cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_reverse ON {entry_table_name} (chardef_id, {entry_keydef_column_name})")
+        elif category == "shortcode":
+            cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
             key = item[0]
@@ -177,7 +183,9 @@ def main():
     cursor.execute("CREATE TABLE keyname (key TEXT UNIQUE NOT NULL, value TEXT default '')")
     cursor.execute("CREATE TABLE keydef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
     cursor.execute("CREATE TABLE chardef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, char TEXT UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE entry (keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY (keydef_id, chardef_id)) WITHOUT ROWID")
+    cursor.execute("CREATE TABLE entry (rowid INTEGER PRIMARY KEY AUTOINCREMENT, keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_mapping ON entry (keydef_id, chardef_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_reverse ON entry (chardef_id, keydef_id)")
 
     mode = Mode.CREATE

@@ -19,20 +19,20 @@ export TEXT_PHRASE
 
 
 build: $(TABLE_DIR)/array30.cin \
-         $(TABLE_DIR)/array-special.cin \
-         $(TABLE_DIR)/array-shortcode.cin \
-         $(TMP_DIR)/array30-phrase.csv \
-         $(TABLE_DIR)/array30-OkidoKey.cin \
-         $(TABLE_DIR)/array30-OkidoKey-big.cin \
-         $(TABLE_DIR)/array30-OkidoKey-phrase.cin \
-         $(TABLE_DIR)/array30-OkidoKey-big-phrase.cin
+		$(TABLE_DIR)/array-special.cin \
+		$(TABLE_DIR)/array-shortcode.cin \
+		$(TMP_DIR)/array30-phrase.csv \
+		$(TABLE_DIR)/array30-OkidoKey.cin \
+		$(TABLE_DIR)/array30-OkidoKey-big.cin \
+		$(TABLE_DIR)/array30-OkidoKey-phrase.cin \
+		$(TABLE_DIR)/array30-OkidoKey-big-phrase.cin
 	@echo "Patching array30 complete."
 	# Clean up specific tmp files including the base copies
 	@rm -f $(TMP_DIR)/array-special-processed.cin \
-	       $(TMP_DIR)/array-shortcode-processed.cin \
-	       $(TMP_DIR)/array30-phrase.processed \
-	       $(TMP_DIR)/array30-OkidoKey.base \
-	       $(TMP_DIR)/array30-OkidoKey-big.base
+		$(TMP_DIR)/array-shortcode-processed.cin \
+		$(TMP_DIR)/array30-phrase.processed \
+		$(TMP_DIR)/array30-OkidoKey.base \
+		$(TMP_DIR)/array30-OkidoKey-big.base
 	@rmdir --ignore-fail-on-non-empty $(TMP_DIR) 2>/dev/null || true # Attempt to remove tmp dir if empty
 
 # --- Core File Copying Rules (Initial Raw Copies to TABLE_DIR) ---
