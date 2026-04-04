@@ -519,7 +519,7 @@
 一小	199	yi4 xiao3
 一小堆	0	yi4 xiao3 dui1
 一小塊	10	yi4 xiao3 kuai4
-一小撮	3	yi4 xiao3 cuo1
+一小撮	3	yi4 xiao3 cuo4
 一小時	66	yi4 xiao3 shi2
 一小時後	2	yi1 xiao3 shi2 hou4
 一小片	3	yi4 xiao3 pian4
@@ -698,7 +698,7 @@
 一撥	4	yi4 bo1
 一播	3	yi4 bo1
 一播出	1	yi4 bo1 chu1
-一撮	5	yi4 cuo1
+一撮	5	yi4 cuo4
 一擁而上	11	yi4 yong3 er2 shang4
 一擊必殺	0	yi1 ji2 bi4 sha1
 一擲千金	2	yi4 zhi2 qian1 jin1
@@ -11374,6 +11374,7 @@
 信用調查	0	xin4 yong4 diao4 cha2
 信用貸款	9	xin4 yong4 dai4 kuan3
 信用部	47	xin4 yong4 bu4
+信用額度	0	xin4 yong4 e2 du4
 信筆	0	xin4 bi3
 信筆拈來	0	xin4 bi3 nian3 lai2
 信筆直書	0	xin4 bi3 zhi2 shu1
@@ -11639,7 +11640,7 @@
 個別性	7	ge4 bie2 xing4
 個別情況	0	ge4 bie2 qing2 kuang4
 個別指導	0	ge4 bie2 zhi3 dao3
-個別教學	2	ge4 bie2 jiao1 xue2
+個別教學	2	ge4 bie2 jiao4 xue2
 個別測驗	0	ge4 bie2 ce4 yan4
 個別現象	0	ge4 bie2 xian4 xiang4
 個別生產	2	ge4 bie2 sheng1 chan3
@@ -12634,6 +12635,7 @@
 健康寶寶	2	jian4 kang1 bao3 bao5
 健康捐	9	jian4 kang1 juan1
 健康操	8	jian4 kang1 cao1
+健康教育	0	jian4 kang1 jiao4 yu4
 健康檢查	20	jian4 kang1 jian3 cha2
 健康的	126	jian4 kang1 de5
 健康食品	26	jian4 kang1 shi2 pin3
@@ -16748,6 +16750,7 @@
 典當	9	dian3 dang4
 典禮	466	dian3 li3
 典章	4	dian3 zhang1
+典章制度	0	dian3 zhang1 zhi4 du4
 典範	177	dian3 fan4
 典籍	20	dian3 ji2
 典藏	433	dian3 cang2
@@ -17323,6 +17326,7 @@
 冷寂	2	leng3 ji2
 冷峻	12	leng3 jun4
 冷巷	0	leng3 xiang4
+冷度	0	leng3 du4
 冷得	10	leng3 de5
 冷感症	7	leng3 gan3 zheng4
 冷戰	95	leng3 zhan4
@@ -21370,6 +21374,7 @@
 勸募者	0	quan4 mu4 zhe3
 勸化	2	quan4 hua4
 勸告	32	quan4 gao4
+勸和	0	quan4 he2
 勸善	4	quan4 shan4
 勸回	0	quan4 hui2
 勸回來	0	quan4 hui2 lai2
@@ -28875,6 +28880,7 @@
 和善	24	he2 shan4
 和好	40	he2 hao3
 和好相處	0	he2 hao3 xiang1 chu3
+和婉	0	he2 wan3
 和室	2	he2 shi4
 和尚	208	he2 shang4
 和局	7	he2 ju2
@@ -28938,6 +28944,7 @@
 和盤托出	4	he2 pan2 tuo1 chu1
 和睦	24	he2 mu4
 和睦相處	1	he2 mu4 xiang1 chu3
+和稀泥	0	huo4 xi1 ni2
 和穆	1	he2 mu4
 和約	12	he2 yue1
 和絃	4	he2 xian2
@@ -35965,6 +35972,7 @@
 多言必失	0	duo1 yan2 bi4 shi1
 多試	4	duo1 shi4
 多話	26	duo1 hua4
+多語教育	0	duo1 yu3 jiao4 yu4
 多說	46	duo1 shuo1
 多說不如多做	0	duo1 shuo1 bu4 ru2 duo1 zuo4
 多說無益	0	duo1 shuo1 wu2 yi4
@@ -36606,6 +36614,7 @@
 大專同學	1	da4 zhuan1 tong2 xue2
 大專學生	14	da4 zhuan1 xue2 sheng1
 大專學生集訓	1	da4 zhuan1 xue2 sheng1 ji2 xun4
+大專教育	0	da4 zhuan1 jiao4 yu4
 大專生	21	da4 zhuan1 sheng1
 大專院校	117	da4 zhuan1 yuan4 xiao4
 大尉	6	da4 wei4
@@ -36657,6 +36666,7 @@
 大幹一場	1	da4 gan4 yi4 chang3
 大幹一票	0	da4 gan4 yi2 piao4
 大店	3	da4 dian4
+大度	0	da4 du4
 大度山	1	da4 du4 shan1
 大度豁達	0	da4 du4 huo4 da2
 大度路	1	da4 du4 lu4
@@ -47394,6 +47404,7 @@
 希臘半島	0	xi1 la4 ban4 dao3
 希臘字母	1	xi1 la4 zi4 mu3
 希臘文	15	xi1 la4 wen2
+希臘正教	0	xi1 la4 zheng4 jiao4
 希臘神話	3	xi1 la4 shen2 hua4
 希臘神話故事	1	xi1 la4 shen2 hua4 gu4 shi4
 希臘話	0	xi1 la4 hua4
@@ -48245,6 +48256,7 @@
 年底止	0	nian2 di3 zhi3
 年庚	5	nian2 geng1
 年度	1792	nian2 du4
+年度預算	0	nian2 du4 yu4 suan4
 年後	442	nian2 hou4
 年復一年	19	nian2 fu4 yi4 nian2
 年息	20	nian2 xi2
@@ -48983,6 +48995,7 @@
 度假	160	du4 jia4
 度假勝地	6	du4 jia4 sheng4 di4
 度假客	1	du4 jia4 ke4
+度假村	0	du4 jia4 cun1
 度君子之腹	0	duo4 jun1 zi3 zhi1 fu4
 度外	22	du4 wai4
 度外置之	0	du4 wai4 zhi4 zhi1
@@ -48995,10 +49008,11 @@
 度牒	0	du4 die2
 度脫劇	1	du4 tuo1 ju4
 度著	0	du4 zhe5
+度蜜月	0	du4 mi4 yue4
 度角	0	du4 jiao3
 度過	232	du4 guo4
 度過難關	7	du4 guo4 nan2 guan1
-度量	42	du4 liang4
+度量	42	duo4 liang4
 度量衡	20	du4 liang4 heng2
 度量衡檢定所	2	du4 liang4 heng2 jian3 ding4 suo3
 座	4006	zuo4
@@ -50970,6 +50984,7 @@
 律令	5	lu4 ling4
 律例	0	lu4 li4
 律動	48	lu4 dong4
+律動教學	0	lu4 dong4 jiao4 xue2
 律呂	0	lu4 lu3
 律己	4	lu4 ji3
 律己甚嚴	0	lu4 ji3 shen4 yan2
@@ -56417,7 +56432,7 @@
 戶告人曉	0	hu4 gao4 ren2 xiao3
 戶外	327	hu4 wai4
 戶外廣告	0	hu4 wai4 guang3 gao4
-戶外教學	7	hu4 wai4 jiao1 xue2
+戶外教學	7	hu4 wai4 jiao4 xue2
 戶外活動	8	hu4 wai4 huo2 dong4
 戶外運動	3	hu4 wai4 yun4 dong4
 戶對門當	0	hu4 dui4 men2 dang1
@@ -57173,6 +57188,7 @@
 打眼	0	da3 yan3
 打瞌睡	33	da3 ke1 shui4
 打瞎	0	da3 xia1
+打知名度	0	da3 zhi1 ming2 du4
 打砲	1	da3 pao4
 打破	434	da3 po4
 打破砂鍋問到底	0	da3 po4 sha1 guo1 wen4 dao4 di3
@@ -61653,7 +61669,7 @@
 接界	2	jie1 jie4
 接的	202	jie1 de5
 接神	0	jie1 shen2
-接種	56	jie1 zhong3
+接種	56	jie1 zhong4
 接穗	0	jie1 sui4
 接管	98	jie1 guan3
 接管人	0	jie1 guan3 ren2
@@ -62526,7 +62542,7 @@
 握著	20	wo4 zhe5
 握風捕影	0	wo4 feng1 bu3 ying3
 揣	113	chuai3
-揣度	1	chuai3 du4
+揣度	1	chuai3 duo4
 揣情	0	chuai3 qing2
 揣摩	46	chuai3 mo2
 揣摹	6	chuai3 mo2
@@ -63566,7 +63582,7 @@
 撩人	1	liao2 ren2
 撩動	0	liao2 dong4
 撩撥	4	liao2 bo1
-撩起	9	liao1 qi3
+撩起	9	liao2 qi3
 撩逗	0	liao2 dou4
 撫	380	fu3
 撫今追昔	2	fu3 jin1 zhui1 xi2
@@ -63594,13 +63610,13 @@
 撫養	46	fu3 yang3
 撫髀興歎	0	fu3 bi4 xing1 tan4
 撬	18	qiao4
-撬不開	0	qiao1 bu4 kai1
-撬動	0	qiao1 dong4
-撬壞	0	qiao1 huai4
-撬起	1	qiao1 qi3
+撬不開	0	qiao4 bu4 kai1
+撬動	0	qiao4 dong4
+撬壞	0	qiao4 huai4
+撬起	1	qiao4 qi3
 撬起來	1	qiao4 qi3 lai2
-撬門	1	qiao1 men2
-撬開	5	qiao1 kai1
+撬門	1	qiao4 men2
+撬開	5	qiao4 kai1
 播	3988	bo4
 播下	20	bo4 xia4
 播出	369	bo4 chu1
@@ -63625,11 +63641,11 @@
 播音員	6	bo4 yin1 yuan2
 播音室	1	bo1 yin1 shi4
 撮	87	cuo4
-撮口呼	0	cuo1 kou3 hu1
-撮合	51	cuo1 he2
-撮和	0	cuo1 he2
-撮弄	0	cuo1 nong4
-撮要	0	cuo1 yao4
+撮口呼	0	cuo4 kou3 hu1
+撮合	51	cuo4 he2
+撮和	0	cuo4 he2
+撮弄	0	cuo4 nong4
+撮要	0	cuo4 yao4
 撰	416	zhuan4
 撰出來	1	zhuan4 chu1 lai2
 撰寫	248	zhuan4 xie3
@@ -64249,7 +64265,7 @@
 擾人	8	rao3 ren2
 擾人清夢	1	rao3 ren2 qing1 meng4
 擾動	18	rao3 dong4
-擾攘	4	rao3 rang3
+擾攘	4	rao3 rang2
 擾民	15	rao3 min2
 擿	0	zhi2
 攀	253	pan1
@@ -64341,7 +64357,7 @@
 攘土	0	rang2 tu3
 攘夷	2	rang2 yi2
 攘奪	0	rang2 duo2
-攘攘	9	rang3 rang3
+攘攘	9	rang2 rang2
 攘災	0	rang2 zai1
 攘袂	0	rang2 mei4
 攘除	0	rang2 chu2
@@ -65678,13 +65694,13 @@
 教士隊	0	jiao4 shi4 dui4
 教好	14	jiao1 hao3
 教委會	2	jiao4 wei3 hui4
-教學	2107	jiao1 xue2
+教學	2107	jiao4 xue2
 教學不倦	0	jiao4 xue2 bu2 juan4
-教學內容	11	jiao1 xue2 nei4 rong2
-教學區	5	jiao1 xue2 qu1
-教學大綱	0	jiao1 xue2 da4 gang1
+教學內容	11	jiao4 xue2 nei4 rong2
+教學區	5	jiao4 xue2 qu1
+教學大綱	0	jiao4 xue2 da4 gang1
 教學法	35	jiao4 xue2 fa3
-教學用	4	jiao1 xue2 yong4
+教學用	4	jiao4 xue2 yong4
 教學相長	12	jiao4 xue2 xiang1 zhang3
 教學組長	3	jiao4 xue2 zu3 zhang3
 教學計劃	0	jiao4 xue2 ji4 hua4
@@ -65801,7 +65817,7 @@
 教訓	222	jiao4 xun4
 教訓法	0	jiao4 xun4 fa3
 教評會	10	jiao4 ping2 hui4
-教誨	21	jiao4 hui3
+教誨	21	jiao4 hui4
 教課	36	jiao1 ke4
 教起	8	jiao1 qi3
 教起來	4	jiao1 qi3 lai2
@@ -85207,6 +85223,7 @@
 溼地	85	shi1 di4
 溼度	25	shi1 du4
 溼度器	0	shi1 du4 qi4
+溼度計	0	shi1 du4 ji4
 溼氣	5	shi1 qi4
 溼潤	11	shi1 run4
 溼熱	1	shi1 re4
@@ -89002,7 +89019,7 @@
 熙	256	xi1
 熙來攘往	10	xi1 lai2 rang2 wang3
 熙攘	11	xi1 rang2
-熙熙攘攘	7	xi1 xi1 rang3 rang3
+熙熙攘攘	7	xi1 xi1 rang2 rang2
 熚	0	bi4
 熛	1	biao1
 熜	0	zong3
@@ -90585,6 +90602,7 @@
 特異性	7	te4 yi4 xing4
 特種	88	te4 zhong3
 特種兵	0	te4 zhong3 bing1
+特種考試	0	te4 zhong3 kao3 shi4
 特種行業	4	te4 zhong3 hang2 ye4
 特種部隊	13	te4 zhong3 bu4 dui4
 特稱	3	te4 cheng1
@@ -93275,6 +93293,7 @@
 甜不辣	6	tian2 bu2 la4
 甜八寶	0	tian2 ba1 bao3
 甜味	33	tian2 wei4
+甜度	0	tian2 du4
 甜得	0	tian2 de5
 甜心	9	tian2 xin1
 甜心菜	0	tian2 xin1 cai4
@@ -101869,6 +101888,7 @@
 種牛	4	zhong3 niu2
 種牛痘	0	zhong4 niu2 dou4
 種瓜得瓜	0	zhong4 gua1 de2 gua1
+種瓜得瓜種豆得豆	0	zhong4 gua1 de2 gua1 zhong4 dou4 de2 dou4
 種田	29	zhong4 tian2
 種畜	4	zhong3 chu4
 種痘	0	zhong4 dou4
@@ -101878,8 +101898,9 @@
 種花	38	zhong4 hua1
 種花草	2	zhong4 hua1 cao3
 種花蒔草	1	zhong4 hua1 shi2 cao3
+種苗	0	zhong3 miao2
 種菜	36	zhong4 cai4
-種豆得豆	0	zhong4 dou4 de5 dou4
+種豆得豆	0	zhong4 dou4 de2 dou4
 種豬	3	zhong3 zhu1
 種起	3	zhong3 qi3
 種雞	1	zhong3 ji1
@@ -106129,6 +106150,7 @@
 紛紛	765	fen1 fen1
 紛紛揚揚	1	fen1 fen1 yang2 yang2
 紛紛擾擾	10	fen1 fen1 rao3 rao3
+紛紛攘攘	0	fen1 fen1 rang2 rang2
 紛紛議論	2	fen1 fen1 yi4 lun4
 紛紜	36	fen1 yun2
 紛至沓來	4	fen1 zhi4 ta4 lai2
@@ -109368,7 +109390,7 @@
 美言	7	mei3 yan2
 美詞	1	mei3 ci2
 美語	38	mei3 yu3
-美語教學	2	mei3 yu3 jiao1 xue2
+美語教學	2	mei3 yu3 jiao4 xue2
 美語課	2	mei3 yu3 ke4
 美語課程	0	mei3 yu3 ke4 cheng2
 美談	9	mei3 tan2
@@ -113154,7 +113176,7 @@
 臄	1	jue2
 臅	0	chu4
 臆	38	yi4
-臆度	0	yi4 du4
+臆度	0	yi4 duo4
 臆想	4	yi4 xiang3
 臆測	28	yi4 ce4
 臆造	0	yi4 zao4
@@ -115244,6 +115266,7 @@
 花叢	15	hua1 cong2
 花名	3	hua1 ming2
 花呢	3	hua1 ni2
+花和尚	0	hua1 he2 shang4
 花唇巧舌	0	hua1 chun2 qiao3 she2
 花商	1	hua1 shang1
 花嘴花舌	0	hua1 zui3 hua1 she2
@@ -124531,9 +124554,9 @@
 誦讀	13	song4 du2
 誧	0	pu3
 誨	46	hui4
-誨人不倦	4	hui3 ren2 bu2 juan4
-誨淫	2	hui3 yin2
-誨盜	2	hui3 dao4
+誨人不倦	4	hui4 ren2 bu4 juan4
+誨淫	2	hui4 yin2
+誨盜	2	hui4 dao4
 誨盜誨淫	0	hui3 dao4 hui3 yin2
 說	48822	yue4
 說一不二	0	shuo1 yi1 bu2 er4
@@ -124784,6 +124807,7 @@
 調幅	28	tiao2 fu2
 調度	77	diao4 du4
 調度士	0	diao4 du4 shi4
+調度室	0	diao4 du4 shi4
 調弄	0	tiao2 nong4
 調式	11	diao4 shi4
 調往	10	diao4 wang3
@@ -124917,7 +124941,7 @@
 諄諄	11	zhun1 zhun1
 諄諄告誡	0	zhun1 zhun1 gao4 jie4
 諄諄地	0	zhun1 zhun1 di4
-諄諄教誨	1	zhun1 zhun1 jiao4 hui3
+諄諄教誨	1	zhun1 zhun1 jiao4 hui4
 諅	0	ji1
 諆	0	qi1
 談	6582	tan2
@@ -132634,6 +132658,7 @@
 通性	48	tong1 xing4
 通情達理	2	tong1 qing2 da2 li3
 通才	14	tong1 cai2
+通才教育	0	tong1 cai2 jiao4 yu4
 通指	6	tong1 zhi3
 通敵	3	tong1 di2
 通明	15	tong1 ming2
@@ -132711,6 +132736,7 @@
 通說	10	tong1 shuo1
 通論	2	tong1 lun4
 通識	79	tong1 shi4
+通識教育	0	tong1 shi4 jiao4 yu4
 通識課	20	tong1 shi4 ke4
 通譯	10	tong1 yi4
 通讀	2	tong1 du2
@@ -134253,7 +134279,7 @@
 遠超過	37	yuan3 chao1 guo4
 遠足	12	yuan3 zu2
 遠距	242	yuan3 ju4
-遠距教學	21	yuan3 ju4 jiao1 xue2
+遠距教學	21	yuan3 ju4 jiao4 xue2
 遠距離	8	yuan3 ju4 li2
 遠路	11	yuan3 lu4
 遠近	59	yuan3 jin4
@@ -136798,7 +136824,7 @@
 量子場論	2	liang4 zi3 chang3 lun4
 量子物理	5	liang4 zi3 wu4 li3
 量子論	1	liang4 zi3 lun4
-量度	5	liang2 du4
+量度	5	liang2 duo4
 量杯	3	liang2 bei1
 量測	64	liang2 ce4
 量產	81	liang4 chan3
@@ -143240,6 +143266,7 @@
 零八憲章	0	ling2 ba1 xian4 zhang1
 零分	11	ling2 fen1
 零南	1	ling2 nan2
+零和	0	ling2 he2
 零和遊戲	3	ling2 he2 you2 xi4
 零售	197	ling2 shou4
 零售價	12	ling2 shou4 jia4
@@ -143409,7 +143436,7 @@
 電勢差	0	dian4 shi4 cha1
 電化	12	dian4 hua4
 電化學	3	dian4 hua4 xue2
-電化教學	0	dian4 hua4 jiao1 xue2
+電化教學	0	dian4 hua4 jiao4 xue2
 電化設備	0	dian4 hua4 she4 bei4
 電匯	2	dian4 hui4
 電台	394	dian4 tai2
@@ -143497,6 +143524,7 @@
 電廠	287	dian4 chang3
 電弧	0	dian4 hu2
 電影	3520	dian4 ying3
+電影分級制度	0	dian4 ying3 fen1 ji2 zhi4 du4
 電影劇本	2	dian4 ying3 ju4 ben3
 電影圈	16	dian4 ying3 quan1
 電影圖書館	1	dian4 ying3 tu2 shu1 guan3
@@ -143634,7 +143662,7 @@
 電腦老師	0	dian4 nao3 lao3 shi1
 電腦課	14	dian4 nao3 ke4
 電腦軟體業	1	dian4 nao3 ruan3 ti3 ye4
-電腦輔助教學	4	dian4 nao3 fu3 zhu4 jiao1 xue2
+電腦輔助教學	4	dian4 nao3 fu3 zhu4 jiao4 xue2
 電腦輔助設計	1	dian4 nao3 fu3 zhu4 she4 ji4
 電腦迷	1	dian4 nao3 mi2
 電荷	11	dian4 he4
@@ -146781,6 +146809,7 @@
 飽和	63	bao3 he2
 飽和度	4	bao3 he2 du4
 飽和狀態	1	bao3 he2 zhuang4 tai4
+飽和脂肪	0	bao3 he2 zhi1 fang2
 飽和脂肪酸	3	bao3 he2 zhi1 fang2 suan1
 飽和點	1	bao3 he2 dian3
 飽嗝	0	bao3 ge2
