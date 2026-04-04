@@ -49,12 +49,14 @@ $(TABLE_DIR)/%.cin: $(RAWDATA_DIR)/array30/OpenVanilla/%.cin
 
 $(TMP_DIR)/array30-OkidoKey.base: $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-regular*.cin
 	@mkdir -p $(@D)
-	@cp $< $@
+# 	@cp $< $@
+	@cp $(lastword $^) $@
 .INTERMEDIATE: $(TMP_DIR)/array30-OkidoKey.base
 
 $(TMP_DIR)/array30-OkidoKey-big.base: $(RAWDATA_DIR)/array30/OkidoKey/array30-OkidoKey-big*.cin
 	@mkdir -p $(@D)
-	@cp $< $@
+# 	@cp $< $@
+	@cp $(lastword $^) $@
 .INTERMEDIATE: $(TMP_DIR)/array30-OkidoKey-big.base
 
 
