@@ -56,10 +56,7 @@ keyboard:
 emoji:
 # 	@$(BIN_DIR)/emojidb.py --update -d $(RAWDATA_DIR)/emoji
 	@$(BIN_DIR)/emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(BUILD_DIR)/emoji.db
-
-emoji-test:
-	@$(BIN_DIR)/emojidb.py -test zwj -o $(BUILD_DIR)/emoji.db
-	@$(BIN_DIR)/emojidb.py -test ranking -o $(BUILD_DIR)/emoji.db
+	@$(BIN_DIR)/emojidb.py --test -o $(BUILD_DIR)/emoji.db
 
 unihan:
 	@$(BIN_DIR)/unihan.py -o $(BUILD_DIR)/Unihan.db
