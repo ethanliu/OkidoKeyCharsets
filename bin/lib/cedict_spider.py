@@ -8,77 +8,72 @@
 # https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.zip
 
 
-import os
+# import os
+from pathlib import Path
+from urllib.parse import urlparse
+# from lib.util import read_file, write_file
+
 from scrapy import Spider, Request
+from scrapy.http import Response
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
-# from scrapy.item import Item, Field
-from urllib.parse import urlparse
-from lib.util import read_file, write_file
 
 class CedictSpider(Spider):
     name = 'cedict'
     start_urls = ['https://www.mdbg.net/chinese/dictionary?page=cc-cedict']
     # start_urls = ['http://localhost/tmp/cedict.html']
     base_url = 'https://www.mdbg.net/chinese'
-    download_dir = ''
+    download_dir: Path
 
-    def __init__(self, download_dir = None, *args, **kwargs):
-        super(CedictSpider, self).__init__(*args, **kwargs)
-        self.download_dir = download_dir
+    def __init__(self, download_dir=None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.download_dir = Path(download_dir) if download_dir else Path('downloads')
 
     def parse(self, response):
-        # Extract URLs from the index page
-        # version
         release_date = response.css('p.description strong::text').get()
-        needs_update = self.update_version(release_date)
 
-        if needs_update == False:
-            print("[cedict] already update-to-date")
+        # update_version returns a boolean
+        if not self.update_version(release_date):
+            print("❌ Already up-to-date")
             return
 
-        # Get download links
         links = response.css('p.description a::attr(href)').getall()
         for link in links:
             if link.endswith('_mdbg.zip'):
-                # print(f"Download link: {link}")
                 yield Request(
-                    url = f"{self.base_url}/{link}",
-                    callback = self.download_file,
+                    url=f"{self.base_url}/{link}",
+                    callback=self.download_file
                 )
 
-    def update_version(self, version):
-        path = f"{self.download_dir}/VERSION"
-        current_version = read_file(path)
-        if current_version == version:
+    def update_version(self, version: str) -> bool:
+        # Ensure we are working with a Path object
+        dir_path = Path(self.download_dir)
+        version_file = dir_path / "VERSION"
+
+        dir_path.mkdir(parents=True, exist_ok=True)
+
+        # Use path.read_text() instead of custom read_file if you want to drop lib.util
+        if version_file.exists() and version_file.read_text(encoding='utf-8') == version:
             return False
-        write_file(path, version)
+
+        version_file.write_text(version, encoding='utf-8')
         return True
 
-    def download_file(self, response):
-        # print(response)
-        # print(self.download_dir)
-        # print(response.url)
 
-        if not os.path.exists(self.download_dir):
-            os.makedirs(self.download_dir)
+    def download_file(self, response: Response):
+        url_path = urlparse(response.url).path
+        file_name = Path(url_path).name
+        file_path = self.download_dir / file_name
 
-        # Generate a filename from the URL
-        file_name = os.path.basename(urlparse(response.url).path)
-        file_path = os.path.join(self.download_dir, file_name)
-
-        if os.path.exists(file_path):
-            print(f"[exists] {file_path}")
+        if file_path.exists():
+            self.logger.warning(f"❌ same version already exists: {file_path.name}")
             return
 
         try:
-            with open(file_path, 'wb') as f:
-                f.write(response.body)
-            print(f"[new] {file_path}")
+            file_path.write_bytes(response.body)
+            self.logger.info(f"✅ new version downloaded: {file_path.name}")
         except Exception as e:
-            # self.logger.error(f"Failed to download {response.url}: {str(e)}")
-            print(f"Failed to download {response.url}: {str(e)}")
-        pass
+            self.logger.error(f"Failed to download {response.url}: {e}")
 
 def run_spider(download_dir):
     settings = get_project_settings()

@@ -137,7 +137,7 @@ def _table_db(input_dir: str, output_dir: str):
             continue
 
         # print(f"-> {filename}")
-        cmd = f"{BIN_DIR}/cin2db.py -i {path} -o {output_path}"
+        cmd = f"{BIN_DIR}/cin2db.py -v -i {path} -o {output_path}"
         if filename.startswith("array30"):
             cmd = f"{cmd} -e array"
         # print(f"-> cmd: {cmd}")

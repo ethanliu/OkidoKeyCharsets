@@ -23,7 +23,9 @@ run:
 	@uv run bin/$(SCRIPT)
 
 test:
-	@$(BIN_DIR)/test.py $(BUILD_DIR)
+# 	@$(BIN_DIR)/test.py $(BUILD_DIR)
+	@echo "run test:"
+	@uv run bin/cin2db.py -i table/array30-OkidoKey.cin -o ./tmp/array-test.db -e array
 
 dev:
 	@make -f makefiles/dev.mk sync
@@ -56,6 +58,9 @@ keyboard:
 emoji:
 # 	@$(BIN_DIR)/emojidb.py --update -d $(RAWDATA_DIR)/emoji
 	@$(BIN_DIR)/emojidb.py --run -d $(RAWDATA_DIR)/emoji -o $(BUILD_DIR)/emoji.db
+	@$(BIN_DIR)/emojidb.py --test -o $(BUILD_DIR)/emoji.db
+
+emoji-test:
 	@$(BIN_DIR)/emojidb.py --test -o $(BUILD_DIR)/emoji.db
 
 unihan:

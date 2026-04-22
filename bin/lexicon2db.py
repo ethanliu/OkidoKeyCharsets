@@ -83,16 +83,16 @@ def main():
     db = sqlite3.connect(args.output)
     cursor = db.cursor()
 
-    # cursor.execute("CREATE TABLE pinyin (pinyin TEXT UNIQUE NOT NULL)")
-    cursor.execute("CREATE TABLE lexicon (phrase TEXT NOT NULL COLLATE NOCASE, pinyin TEXT DEFAULT NULL COLLATE NOCASE, weight INTEGER DEFAULT 0, category_id INTEGER DEFAULT 0, UNIQUE(phrase, pinyin, category_id))")
-    # cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_phrase_nocase ON lexicon (phrase COLLATE NOCASE, category_id)")
-    # cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_pinyin_nocase ON lexicon (pinyin COLLATE NOCASE, category_id)")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_phrase_full ON lexicon (phrase, category_id, weight DESC)")
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_pinyin_full ON lexicon (pinyin, category_id, weight DESC)")
+    cursor.execute("CREATE TABLE IF NOT EXISTS lexicon (phrase TEXT NOT NULL COLLATE NOCASE, pinyin TEXT DEFAULT NULL COLLATE NOCASE, weight INTEGER DEFAULT 0, category_id INTEGER DEFAULT 0, UNIQUE(phrase, pinyin, category_id))")
+
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_pinyin_search ON lexicon (category_id, pinyin, weight DESC, phrase)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_phrase_search ON lexicon (category_id, phrase, weight DESC)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_lexicon_snippets ON lexicon (category_id, weight DESC, phrase)")
 
     perform_import(cursor, args.input)
 
     cursor.execute('VACUUM')
+    cursor.execute("PRAGMA user_version = 3")
 
     db.commit()
     db.close()

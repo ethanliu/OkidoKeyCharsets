@@ -15,12 +15,22 @@ usage:
 	@echo $(SYNOPSIS)
 	@echo $(TMP_DIR)
 
-update: idioms revised concised-csv
+update: idioms-xlsx revised concised-xls
 
 pull:
 	@echo "🤝 Checking version..."
 	@$(BIN_DIR)/moe2csv.py -d -o $(RAWDATA_DIR)/moe/src
 # @$(BIN_DIR)/moe-spider.py $(RAWDATA_DIR)/moe/src
+
+dict1:
+	@$(eval version = $(notdir $(wildcard $(RAWDATA_DIR)/moe/dict_revised_*.xlsx)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_revised_\(.*\)\.xlsx/\1/' ))
+	@echo "revised: ${version}"
+	@sed -i '' -e 's/本詞庫來源版本：.*\n/本詞庫來源版本：${version}\n/g' $(LEXICON_DIR)/moe-revised.csv.txt
+	@in2csv $(RAWDATA_DIR)/moe/dict_revised_${version}.xlsx > $(TMP_DIR)/tmp1.csv
+
+dict2:
+	@csvcut -c 字詞名,注音一式,釋義 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
 
 revised:
 	@$(eval version = $(notdir $(wildcard $(RAWDATA_DIR)/moe/dict_revised_*.xlsx)))
@@ -36,7 +46,18 @@ revised:
 # original dict_idioms_2020_20230629.xls came with incomplete fomular binding to foreign file
 # must manually save as another copy to fix above question before using csvkit
 
-idioms:
+idioms-xlsx:
+	@$(eval version = $(notdir $(wildcard $(RAWDATA_DIR)/moe/dict_idioms_*.xlsx)))
+	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xlsx/\1/' ))
+	@echo "idioms: ${version}"
+	@sed -i '' -e 's/本詞庫來源版本：.*\n/本詞庫來源版本：${version}\n/g' $(LEXICON_DIR)/moe-idioms.csv.txt
+	@in2csv $(RAWDATA_DIR)/moe/dict_idioms_${version}.xlsx > $(TMP_DIR)/tmp1.csv
+	@csvcut -c 成語,注音 $(TMP_DIR)/tmp1.csv > $(TMP_DIR)/tmp2.csv
+	@$(BIN_DIR)/moe2csv.py -i $(TMP_DIR)/tmp2.csv -o $(LEXICON_DIR)/moe-idioms.csv
+	@-rm $(TMP_DIR)/tmp1.csv
+	@-rm $(TMP_DIR)/tmp2.csv
+
+idioms-xls:
 	@$(eval version = $(notdir $(wildcard $(RAWDATA_DIR)/moe/dict_idioms_*.xls)))
 	@$(eval version = $(shell echo '${version}' | sed 's/dict_idioms_\(.*\)\.xls/\1/' ))
 	@echo "idioms: ${version}"

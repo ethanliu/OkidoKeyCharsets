@@ -74,6 +74,8 @@ def perform_import(cursor, input_path, mode = Mode.CREATE):
 
     cursor.execute("COMMIT TRANSACTION")
 
+    # PRAGMA user_version =
+
     if report_content:
         basename = os.path.splitext(os.path.basename(input_path))[0]
         report_path = os.path.join('tmp', f"error_{basename}.txt")
@@ -84,13 +86,47 @@ def perform_import(cursor, input_path, mode = Mode.CREATE):
     #     cursor.execute("CREATE UNIQUE INDEX keydef_index ON keydef (key)")
 
 def validate(cursor):
-    cursor.execute("SELECT key, value FROM keyname ORDER BY rowid")
-    result = cursor.fetchall()
-    for item in tqdm(result, unit_scale = True, ascii = True, desc = f"Validation"):
-        query = "SELECT COUNT(rowid) FROM keydef WHERE key LIKE :key"
-        check = db_get_one(cursor, query, {'key': f"%{item[0]}%"})
-        if not check or check <= 1:
-            tqdm.write(f"[?] keyname: {item[0]} ({item[1]}) never or rarely used")
+    try:
+        print("\n[1] Metadata (info table):")
+        cursor.execute("SELECT name, value FROM info LIMIT 5")
+        for row in cursor.fetchall():
+            print(f"    {row[0]}: {row[1]}")
+
+        print("\n[2] Keyname Map (first 5):")
+        cursor.execute("SELECT key, value FROM keyname LIMIT 5")
+        for row in cursor.fetchall():
+            print(f"    {row[0]} \t=> {row[1]}")
+
+        # Random Sample of Key-Character Entries
+        # This joins keydef, chardef, and entry to show actual input mappings
+        print("\n[3] Sample Entries (key -> char):")
+        query = """
+            SELECT k.key, c.char
+            FROM entry e
+            JOIN keydef k ON e.keydef_id = k.rowid
+            JOIN chardef c ON e.chardef_id = c.rowid
+            LIMIT 10
+        """
+        cursor.execute(query)
+        for row in cursor.fetchall():
+            print(f"    {row[0]} \t=> {row[1]}")
+
+        # Table Statistics
+        print("\n[4] Database Stats (Row Counts):")
+        tables = ['info', 'keyname', 'keydef', 'chardef', 'entry']
+        for table in tables:
+            cursor.execute(f"SELECT COUNT(*) FROM {table}")
+            count = cursor.fetchone()[0]
+            print(f"    {table:10}: {count} rows")
+
+        # Check user_version (set by your plugins)
+        cursor.execute("PRAGMA user_version")
+        version = cursor.fetchone()[0]
+        print(f"\n[5] SQLite User Version: {version}")
+
+    except sqlite3.Error as e:
+        print(f"SQLite Error: {e}")
+        sys.exit(0)
 
 def plugin_array(cursor, input_path):
     report_content = ""
@@ -99,40 +135,54 @@ def plugin_array(cursor, input_path):
     cursor.execute("PRAGMA journal_mode = MEMORY")
     cursor.execute("BEGIN TRANSACTION")
 
+    # user raw query string, for re-use friendly
+    def import_shortcode(cursor):
+        cursor.execute("CREATE TABLE keydef_shortcode (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
+        cursor.execute("CREATE TABLE entry_shortcode (rowid INTEGER PRIMARY KEY AUTOINCREMENT, keydef_shortcode_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+        cursor.execute("CREATE INDEX idx_entry_shortcode_covering ON entry_shortcode (keydef_shortcode_id, rowid, chardef_id)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_shortcode_reverse ON entry_shortcode (chardef_id, keydef_shortcode_id)")
+
+        query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
+        query1 = "INSERT OR IGNORE INTO keydef_shortcode (key) VALUES (:value)"
+        query6 = "INSERT INTO entry_shortcode (keydef_shortcode_id, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM keydef_shortcode AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+        return query3, query1, query6
+
+    def import_special(cursor):
+        cursor.execute("CREATE TABLE keydef_special (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
+        cursor.execute("CREATE TABLE entry_special (rowid INTEGER PRIMARY KEY AUTOINCREMENT, keydef_special_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+        cursor.execute("CREATE INDEX idx_entry_special_covering ON entry_special (keydef_special_id, rowid, chardef_id)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_special_reverse ON entry_special (chardef_id, keydef_special_id)")
+
+        query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
+        query1 = "INSERT OR IGNORE INTO keydef_special (key) VALUES (:value)"
+        query6 = "INSERT INTO entry_special (keydef_special_id, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM keydef_special AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
+        return query3, query1, query6
+
     for category in cin.extra:
         rows = cin.extra[category]
         if not rows:
             # tqdm.write(f"No data for {category}")
             continue
 
-        keydef_table_name = f"keydef_{category}"
-        entry_table_name = f"entry_{category}"
-        entry_keydef_column_name = f"keydef_{category}_id"
-
-        query1 = f"INSERT OR IGNORE INTO {keydef_table_name} (key) VALUES (:value)"
-        # chardef allows duplicate due to shortcode and special
-        query3 = "INSERT OR IGNORE INTO chardef (char) VALUES (:value)"
-        query6 = f"INSERT INTO {entry_table_name} ({entry_keydef_column_name}, chardef_id) SELECT k.rowid AS kid, c.rowid AS cid FROM {keydef_table_name} AS k, chardef AS c WHERE 1 AND k.key = :key AND c.char = :value ORDER BY c.rowid ASC"
-
-        cursor.execute(f"CREATE TABLE {keydef_table_name} (rowid INTEGER PRIMARY KEY AUTOINCREMENT, key TEXT UNIQUE NOT NULL COLLATE NOCASE)")
-
-        # while shortcode is poistion award radicals, don't applies to the unique constraint
-        if category == "special":
-            cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL, PRIMARY KEY ({entry_keydef_column_name}, chardef_id)) WITHOUT ROWID")
-            cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{entry_table_name}_reverse ON {entry_table_name} (chardef_id, {entry_keydef_column_name})")
-        elif category == "shortcode":
-            cursor.execute(f"CREATE TABLE {entry_table_name} ({entry_keydef_column_name} INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
+        # tqdm.write(f"Importing {category}")
+        if category == "shortcode":
+            insert_chardef, insert_keydef, insert_entry = import_shortcode(cursor)
+        elif category == "special":
+            insert_chardef, insert_keydef, insert_entry = import_special(cursor)
+        else:
+            tqdm.write(f"unknown {category}")
+            break
 
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[1]"):
             key = item[0]
             value = item[1]
-            cursor.execute(query1,  {'value': key})
-            cursor.execute(query3, {'value': value})
+            cursor.execute(insert_keydef, {'value': key})
+            cursor.execute(insert_chardef, {'value': value})
+
         for item in tqdm(rows, unit = 'MB', unit_scale = True, ascii = True, desc = f"{category}[2]"):
             key = item[0]
             value = item[1]
-            # cursor.execute(query6, {'key': key, 'value': value})
-            err = db_exec(cursor, query6, {'key': key, 'value': value})
+            err = db_exec(cursor, insert_entry, {'key': key, 'value': value})
             if err:
                 # tqdm.write(f"[entry] duplicate: {key}\t{value}")
                 report_content += f"[ignore] {key}\t{value}\n"
@@ -185,7 +235,7 @@ def main():
     cursor.execute("CREATE TABLE chardef (rowid INTEGER PRIMARY KEY AUTOINCREMENT, char TEXT UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (rowid INTEGER PRIMARY KEY AUTOINCREMENT, keydef_id INTEGER NOT NULL, chardef_id INTEGER NOT NULL)")
 
-    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_mapping ON entry (keydef_id, chardef_id)")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_covering ON entry (keydef_id, rowid, chardef_id)")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_entry_reverse ON entry (chardef_id, keydef_id)")
 
     mode = Mode.CREATE
@@ -196,16 +246,21 @@ def main():
         perform_import(cursor, path, mode)
         db.commit()
 
-    if args.plugin:
-        match args.plugin:
-            case "array":
-                plugin_array(cursor, args.input[0])
-            case "bossy":
-                plugin_bossy(cursor)
-        db.commit()
+    version = 4
+    if args.plugin == "array":
+        plugin_array(cursor, args.input[0])
+        version = 6
+    elif args.plugin == "bossy":
+        plugin_bossy(cursor)
+        version = 4
+
+    cursor.execute(f"PRAGMA user_version = {version}")
+    # cursor.execute("ANALYZE")
+    db.commit()
 
     if args.validate:
         validate(cursor)
+        pass
 
     db.close()
 
