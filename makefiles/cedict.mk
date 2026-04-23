@@ -2,6 +2,7 @@
 include config.mk
 
 # the syntax of sed in this Makefile is specified for macOS
+VERSION := $(shell cat $(RAWDATA_DIR)/cedict/VERSION)
 
 define SYNOPSIS
 
@@ -21,3 +22,5 @@ pull:
 
 update:
 	@$(BIN_DIR)/cedict.py -i $(RAWDATA_DIR)/cedict/cedict_ts.u8 -o $(LEXICON_DIR)
+	@sed -i '' 's/^本詞庫來源版本：.*/本詞庫來源版本：${VERSION}/' $(LEXICON_DIR)/cedict-hans.csv.txt
+	@sed -i '' 's/^本詞庫來源版本：.*/本詞庫來源版本：${VERSION}/' $(LEXICON_DIR)/cedict-hant.csv.txt
