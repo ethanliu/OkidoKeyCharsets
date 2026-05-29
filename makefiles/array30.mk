@@ -75,7 +75,7 @@ $(TMP_DIR)/array-shortcode-processed.cin: $(TABLE_DIR)/array-shortcode.cin
 .INTERMEDIATE: $(TMP_DIR)/array-shortcode-processed.cin
 
 # Processed phrase file (filtered by tab)
-$(TMP_DIR)/array30-phrase.processed: $(wildcard $(RAWDATA_DIR)/array30/array30-phrase*.txt)
+$(TMP_DIR)/array30-phrase.processed: $(wildcard $(RAWDATA_DIR)/array30/array30_spec/array30-phrase*.txt)
 	@mkdir -p $(@D)
 	@echo "Filtering raw phrase file: $< -> $@"
 	@grep '\t' $< > $@
@@ -115,7 +115,7 @@ $(TABLE_DIR)/array30-OkidoKey-big.cin: $(TMP_DIR)/array30-OkidoKey-big.base \
 
 # --- Rules for array30-OkidoKey-phrase.cin (copy of above, then phrase content, then special/shortcode at end) ---
 
-PHRASE_FILE := $(wildcard $(RAWDATA_DIR)/array30/array30-phrase*.txt)
+PHRASE_FILE := $(wildcard $(RAWDATA_DIR)/array30/array30_spec/array30-phrase*.txt)
 
 $(TABLE_DIR)/array30-OkidoKey-phrase.cin: $(TMP_DIR)/array30-OkidoKey.base \
                                             $(TMP_DIR)/array30-phrase.processed \
