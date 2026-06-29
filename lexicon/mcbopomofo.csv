@@ -1599,6 +1599,7 @@
 丁字形	0	ding1 zi4 xing2
 丁字褲	5	ding1 zi4 ku4
 丁字鎬	0	ding1 zi4 hao4
+丁學忠	0	ding1 xue2 zhong1
 丁守中	31	ding1 shou3 zhong1
 丁憂	1	ding1 you1
 丁母憂	0	ding1 mu3 you1
@@ -1704,6 +1705,9 @@
 七小時後	0	qi1 xiao3 shi2 hou4
 七尺	1	qi1 chi3
 七尺之驅	0	qi1 chi3 zhi1 qu1
+七局	1	qi1 ju2
+七局上半	1	qi1 ju2 shang4 ban4
+七局下半	1	qi1 ju2 xia4 ban4
 七層	8	qi1 ceng2
 七層樓	5	qi1 ceng2 lou2
 七巧板	3	qi1 qiao3 ban3
@@ -2062,6 +2066,8 @@
 三小片	0	san1 xiao3 pian4
 三尺	17	san1 chi3
 三局	13	san1 ju2
+三局上半	1	san1 ju2 shang4 ban4
+三局下半	1	san1 ju2 xia4 ban4
 三屆	57	san1 jie4
 三層	31	san1 ceng2
 三層樓	8	san1 ceng2 lou2
@@ -5973,8 +5979,8 @@
 九寨溝	3	jiu3 zhai4 gou1
 九小時後	0	jiu3 xiao3 shi2 hou4
 九局	14	jiu3 ju2
-九局上半	0	jiu3 ju2 shang4 ban4
-九局下半	0	jiu3 ju2 xia4 ban4
+九局上半	1	jiu3 ju2 shang4 ban4
+九局下半	1	jiu3 ju2 xia4 ban4
 九屆	20	jiu3 jie4
 九層塔	11	jiu3 ceng2 ta3
 九層雲外	0	jiu3 ceng2 yun2 wai4
@@ -6735,8 +6741,8 @@
 二專制	0	er4 zhuan1 zhi4
 二尖瓣	0	er4 jian1 ban4
 二局	8	er4 ju2
-二局上半	0	er4 ju2 shang4 ban4
-二局下半	0	er4 ju2 xia4 ban4
+二局上半	1	er4 ju2 shang4 ban4
+二局下半	1	er4 ju2 xia4 ban4
 二屆	104	er4 jie4
 二屆國代	1	er4 jie4 guo2 dai4
 二屆國代選舉	0	er4 jie4 guo2 dai4 xuan3 ju3
@@ -7236,8 +7242,8 @@
 五小時後	0	wu3 xiao3 shi2 hou4
 五尺	4	wu3 chi3
 五局	9	wu3 ju2
-五局上半	0	wu3 ju2 shang4 ban4
-五局下半	0	wu3 ju2 xia4 ban4
+五局上半	1	wu3 ju2 shang4 ban4
+五局下半	1	wu3 ju2 xia4 ban4
 五屆	60	wu3 jie4
 五層	22	wu3 ceng2
 五層樓	8	wu3 ceng2 lou2
@@ -10095,6 +10101,7 @@
 何月何日	0	he2 yue4 he2 ri4
 何樂不為	3	he2 le4 bu4 wei2
 何樂而不為	5	he2 le4 er2 bu4 wei2
+何欣純	0	he2 xin1 chun2
 何止	7	he2 zhi3
 何況	276	he2 kuang4
 何況是	19	he2 kuang4 shi4
@@ -12983,6 +12990,7 @@
 傅利葉	1	fu4 li4 ye4
 傅園	0	fu4 yuan2
 傅培梅	6	fu4 pei2 mei2
+傅崐萁	0	fu4 kun1 qi2
 傅斯年	11	fu4 si1 nian2
 傅會	4	fu4 hui4
 傅會牽合	0	fu4 hui4 qian1 he2
@@ -15684,8 +15692,8 @@
 八小時後	0	ba1 xiao3 shi2 hou4
 八尺	2	ba1 chi3
 八局	9	ba1 ju2
-八局上半	0	ba1 ju2 shang4 ban4
-八局下半	0	ba1 ju2 xia4 ban4
+八局上半	1	ba1 ju2 shang4 ban4
+八局下半	1	ba1 ju2 xia4 ban4
 八屆	19	ba1 jie4
 八層	8	ba1 ceng2
 八層樓	3	ba1 ceng2 lou2
@@ -16301,8 +16309,8 @@
 六尺褌	0	liu4 chi3 kun1
 六尾	0	liu4 wei3
 六局	5	liu4 ju2
-六局上半	0	liu4 ju2 shang4 ban4
-六局下半	0	liu4 ju2 xia4 ban4
+六局上半	1	liu4 ju2 shang4 ban4
+六局下半	1	liu4 ju2 xia4 ban4
 六屆	23	liu4 jie4
 六巷	11	liu4 xiang4
 六師	3	liu4 shi1
@@ -20282,6 +20290,7 @@
 劈面	1	pi1 mian4
 劈頭	12	pi1 tou2
 劉	2558	liu2
+劉世芳	0	liu2 shi4 fang1
 劉伯溫	3	liu2 bo2 wen1
 劉保佑	0	liu2 bao3 you4
 劉備	20	liu2 bei4
@@ -20299,6 +20308,7 @@
 劉小如	19	liu2 xiao3 ru2
 劉少奇	42	liu2 shao3 qi2
 劉師培	1	liu2 shi1 pei2
+劉建國	0	liu2 jian4 guo2
 劉德凱	6	liu2 de2 kai3
 劉德華	51	liu2 de2 hua2
 劉徽	0	liu2 hui1
@@ -23075,6 +23085,7 @@
 卓	402	zhuo2
 卓別林	8	zhuo2 bie2 lin2
 卓有成效	1	zhuo2 you3 cheng2 xiao4
+卓榮泰	0	zhuo2 rong2 tai4
 卓溪	3	zhuo2 xi1
 卓溪鄉	1	zhuo2 xi1 xiang1
 卓然	6	zhuo2 ran2
@@ -27314,6 +27325,7 @@
 吉利	60	ji2 li4
 吉利果	0	ji2 li4 guo3
 吉利話	0	ji2 li4 hua4
+吉力吉撈	0	ji2 li4 ji2 lao1
 吉力馬札羅山	1	ji2 li4 ma3 zha2 luo2 shan1
 吉卜賽	1	ji2 bu3 sai4
 吉卜賽人	0	ji2 bu3 sai4 ren2
@@ -28208,6 +28220,7 @@
 吳孟達	1	wu2 meng4 da2
 吳宇森	23	wu2 yu3 sen1
 吳宗憲	9	wu2 zong1 xian4
+吳崢	0	wu2 zheng1
 吳廣	1	wu2 guang3
 吳建豪	6	wu2 jian4 hao2
 吳彥祖	0	wu2 yan4 zu3
@@ -28220,7 +28233,9 @@
 吳承恩	3	wu2 cheng2 en1
 吳敦義	62	wu2 dun1 yi4
 吳敬梓	0	wu2 jing4 zi3
+吳春城	0	wu2 chun1 cheng2
 吳樂天	11	wu2 le4 tian1
+吳沛憶	0	wu2 pei4 yi4
 吳淑珍	34	wu2 shu2 zhen1
 吳淞	6	wu2 song1
 吳淞江	1	wu2 song1 jiang1
@@ -28230,6 +28245,7 @@
 吳炫三	15	wu2 xuan4 san1
 吳牛喘月	0	wu2 niu2 chuan3 yue4
 吳王	8	wu2 wang2
+吳琪銘	0	wu2 qi2 ming2
 吳祥木	11	wu2 xiang2 mu4
 吳秉叡	6	wu2 bing3 rui4
 吳稚暉	4	wu2 zhi4 hui1
@@ -28529,6 +28545,7 @@
 呂明賜	35	lu3 ming2 ci4
 呂氏春秋	27	lu3 shi4 chun1 qiu1
 呂洞賓	0	lu3 dong4 bin1
+呂玉玲	0	lu3 yu4 ling2
 呂秀蓮	101	lu3 xiu4 lian2
 呃	59	e4
 呃逆	0	e4 ni4
@@ -28682,6 +28699,7 @@
 周旋到底	1	zhou1 xuan2 dao4 di3
 周日	36	zhou1 ri4
 周易	36	zhou1 yi4
+周春米	0	zhou1 chun1 mi3
 周書	4	zhou1 shu1
 周朝	12	zhou1 chao2
 周期	51	zhou1 qi2
@@ -28711,6 +28729,7 @@
 周美青	4	zhou1 mei3 qing1
 周而復始	4	zhou1 er2 fu4 shi3
 周至	2	zhou1 zhi4
+周萬來	0	zhou1 wan4 lai2
 周蕙	0	zhou1 hui4
 周薪	0	zhou1 xin1
 周角	0	zhou1 jiao3
@@ -46304,6 +46323,7 @@
 崎嶇不平	3	qi2 qu1 bu4 ping2
 崎嶇難走	1	qi2 qu1 nan2 zou3
 崏	0	min2
+崐	0	kun1
 崑	95	kun1
 崑劇	13	kun1 ju4
 崑山	13	kun1 shan1
@@ -49251,6 +49271,8 @@
 廔	2	lou2
 廕	0	yin4
 廖	672	liao4
+廖偉翔	0	liao4 wei3 xiang2
+廖先翔	0	liao4 xian1 xiang2
 廖化作先鋒	0	liao4 hua4 zuo4 xian1 feng1
 廖述良	0	liao4 shu4 liang2
 廗	0	dai4
@@ -50090,6 +50112,9 @@
 張友驊	1	zhang1 you3 hua2
 張口	12	zhang1 kou3
 張口結舌	3	zhang1 kou3 jie2 she2
+張啓楷	0	zhang1 qi3 kai3
+張善政	0	zhang1 shan4 zheng4
+張嘉郡	0	zhang1 jia1 jun4
 張嘴	20	zhang1 zui3
 張嘴說話	1	zhang1 zui3 shuo1 hua4
 張國榮	27	zhang1 guo2 rong2
@@ -50101,6 +50126,7 @@
 張學友	18	zhang1 xue2 you3
 張學良	18	zhang1 xue2 liang2
 張安樂	2	zhang1 an1 le4
+張宏陸	0	zhang1 hong2 lu1
 張宗昌	0	zhang1 zong1 chang1
 張家	52	zhang1 jia1
 張家口	10	zhang1 jia1 kou3
@@ -50115,6 +50141,7 @@
 張惶	2	zhang1 huang2
 張惶失措	0	zhang1 huang2 shi1 cuo4
 張愛玲	83	zhang1 ai4 ling2
+張慶忠	0	zhang1 qing4 zhong1
 張憲義	3	zhang1 xian4 yi4
 張懸	1	zhang1 xuan2
 張掖	0	zhang1 yi4
@@ -50131,6 +50158,7 @@
 張昭鼎	5	zhang1 zhao1 ding3
 張晨光	12	zhang1 chen2 guang1
 張景森	14	zhang1 jing3 sen1
+張智倫	0	zhang1 zhi4 lun2
 張曼娟	3	zhang1 man4 juan1
 張曼玉	13	zhang1 man4 yu4
 張望	20	zhang1 wang4
@@ -50185,6 +50213,7 @@
 張鎬哲	1	zhang1 hao4 zhe2
 張開	98	zhang1 kai1
 張開著	1	zhang1 kai1 zhe5
+張雅琳	0	zhang1 ya3 lin2
 張雅琴	5	zhang1 ya3 qin2
 張雨生	7	zhang1 yu3 sheng1
 張震嶽	1	zhang1 zhen4 yue4
@@ -51292,13 +51321,17 @@
 徐向前	0	xu2 xiang4 qian2
 徐娘半老	1	xu2 niang2 ban4 lao3
 徐家匯	7	xu2 jia1 hui4
+徐富癸	0	xu2 fu4 gui3
 徐小虎	4	xu2 xiao3 hu3
 徐展元	1	xu2 zhan3 yuan2
 徐州	16	xu2 zhou1
+徐巧芯	0	xu2 qiao3 xin1
 徐徐	26	xu2 xu2
 徐徐的	3	xu2 xu2 de5
 徐志摩	30	xu2 zhi4 mo2
 徐懷鈺	4	xu2 huai2 yu4
+徐榛蔚	0	xu2 zhen1 wei4
+徐欣瑩	0	xu2 xin1 ying2
 徐步	0	xu2 bu4
 徐步當車	0	xu2 bu4 dang1 ju1
 徐生明	26	xu2 sheng1 ming2
@@ -56449,6 +56482,7 @@
 戴罪立功	0	dai4 zui4 li4 gong1
 戴菊鳥	3	dai4 ju2 niao3
 戴著	51	dai4 zhe5
+戴資穎	0	dai4 zi1 ying3
 戴走	0	dai4 zou3
 戴起	4	dai4 qi3
 戴起來	1	dai4 qi3 lai2
@@ -66531,6 +66565,8 @@
 斃命	17	bi4 ming4
 斃掉	0	bi4 diao4
 斄	0	li4
+斅	0	xue2
+斆	0	xue2
 文	34721	wen2
 文不加點	0	wen2 bu4 jia1 dian3
 文不對題	4	wen2 bu4 dui4 ti2
@@ -66787,6 +66823,7 @@
 文體	95	wen2 ti3
 文魁	4	wen2 kui2
 文鳥科	5	wen2 niao3 ke1
+斈	0	xue2
 斌	161	bin1
 斐	146	fei3
 斐冷翠	0	fei3 leng3 cui4
@@ -72306,14 +72343,17 @@
 李傳偉	5	li3 chuan2 wei3
 李光耀	45	li3 guang1 yao4
 李克勤	8	li3 ke4 qin2
+李克強	0	li3 ke4 qiang2
 李勉之	2	li3 mian3 zhi1
 李叔同	1	li3 shu2 tong2
 李商隱	7	li3 shang1 yin3
 李嗣涔	5	li3 si4 cen2
 李嘉誠	3	li3 jia1 cheng2
+李四川	0	li3 si4 chuan1
 李國修	3	li3 guo2 xiu1
 李國超	6	li3 guo2 chao1
 李國鼎	14	li3 guo2 ding3
+李坤城	0	li3 kun1 cheng2
 李壽全	1	li3 shou4 quan2
 李天燊	1	li3 tian1 shen1
 李天祿	10	li3 tian1 lu4
@@ -72344,17 +72384,20 @@
 李敖	55	li3 ao2
 李斯	16	li3 si1
 李斯特	8	li3 si1 te4
+李昆澤	0	li3 kun1 ze2
 李明亮	48	li3 ming2 liang4
 李明博	1	li3 ming2 bo2
 李春姬	1	li3 chun1 ji1
 李時珍	1	li3 shi2 zhen1
 李杜軒	3	li3 du4 xuan1
+李柏毅	0	li3 bo2 yi4
 李梅樹	5	li3 mei2 shu4
 李樹	12	li3 shu4
 李正皓	0	li3 zheng4 hao4
 李永得	8	li3 yong3 de2
 李永萍	22	li3 yong3 ping2
 李泰祥	12	li3 tai4 xiang2
+李洋	0	li3 yang2
 李淵	10	li3 yuan1
 李清照	4	li3 qing1 zhao4
 李炳輝	17	li3 bing3 hui1
@@ -73045,8 +73088,11 @@
 林下	25	lin2 xia4
 林中斌	7	lin2 zhong1 bin1
 林享能	10	lin2 xiang3 neng2
+林佳龍	0	lin2 jia1 long2
+林俊憲	0	lin2 jun4 xian4
 林信彰	14	lin2 xin4 zhang1
 林信義	57	lin2 xin4 yi4
+林倩綺	0	lin2 qian4 qi3
 林內	25	lin2 nei4
 林內鄉	7	lin2 nei4 xiang1
 林全	85	lin2 quan2
@@ -73066,6 +73112,7 @@
 林口長庚醫院	9	lin2 kou3 chang2 geng1 yi1 yuan4
 林右昌	0	lin2 you4 chang1
 林哲瑄	3	lin2 zhe2 xuan1
+林國成	0	lin2 guo2 cheng2
 林園	45	lin2 yuan2
 林園區	3	lin2 yuan2 qu1
 林園廠	2	lin2 yuan2 chang3
@@ -73088,15 +73135,20 @@
 林宅	7	lin2 zhai2
 林安梧	3	lin2 an1 wu2
 林宗仁	8	lin2 zong1 ren2
+林宜瑾	0	lin2 yi2 jin3
 林宥嘉	8	lin2 you4 jia1
 林家	90	lin2 jia1
+林家正	0	lin2 jia1 zheng4
 林家花園	7	lin2 jia1 hua1 yuan2
+林岱樺	0	lin2 dai4 hua4
 林帶	3	lin2 dai4
 林強	11	lin2 qiang2
+林德福	0	lin2 de2 fu2
 林志炫	5	lin2 zhi4 xuan4
 林志穎	11	lin2 zhi4 ying3
 林恩宇	1	lin2 en1 yu3
 林慧萍	9	lin2 hui4 ping2
+林憶君	0	lin2 yi4 jun1
 林憶蓮	5	lin2 yi4 lian2
 林懷民	23	lin2 huai2 min2
 林投	9	lin2 tou2
@@ -73110,6 +73162,7 @@
 林智勝	6	lin2 zhi4 sheng4
 林智堅	0	lin2 zhi4 jian1
 林書豪	103	lin2 shu1 hao2
+林月琴	0	lin2 yue4 qin2
 林朝煌	14	lin2 chao2 huang2
 林木	132	lin2 mu4
 林木分化	0	lin2 mu4 fen1 hua4
@@ -73123,6 +73176,7 @@
 林森北路	8	lin2 sen1 bei3 lu4
 林森南路	2	lin2 sen1 nan2 lu4
 林森路	4	lin2 sen1 lu4
+林楚茵	0	lin2 chu3 yin1
 林業	67	lin2 ye4
 林業處	2	lin2 ye4 chu4
 林業道路	0	lin2 ye4 dao4 lu4
@@ -73134,10 +73188,12 @@
 林毅夫	82	lin2 yi4 fu1
 林母	1	lin2 mu3
 林氏	12	lin2 shi4
+林沛祥	0	lin2 pei4 xiang2
 林泓育	11	lin2 hong2 yu4
 林洋港	46	lin2 yang2 gang3
 林海	35	lin2 hai3
 林海音	25	lin2 hai3 yin1
+林淑芬	0	lin2 shu2 fen1
 林清玄	9	lin2 qing1 xuan2
 林源朗	5	lin2 yuan2 lang3
 林濁水	14	lin2 zhuo2 shui3
@@ -73180,6 +73236,7 @@
 林道	22	lin2 dao4
 林邊	26	lin2 bian1
 林邊鄉	5	lin2 bian1 xiang1
+林郁婷	0	lin2 yu4 ting2
 林郁方	14	lin2 yu4 fang1
 林重謨	48	lin2 chong2 mo2
 林野	6	lin2 ye3
@@ -73696,10 +73753,12 @@
 柯卡犬	1	ke1 ka3 quan3
 柯受良	3	ke1 shou4 liang2
 柯夢波丹	1	ke1 meng4 po1 dan1
+柯建銘	0	ke1 jian4 ming2
 柯文哲	35	ke1 wen2 zhe2
 柯普蘭	0	ke1 pu3 lan2
 柯林頓	229	ke1 lin2 dun4
 柯江會談	5	ke1 jiang1 hui4 tan2
+柯美蘭	0	ke1 mei3 lan2
 柯賜海	0	ke1 ci4 hai3
 柯達	29	ke1 da2
 柯金源	14	ke1 jin1 yuan2
@@ -74954,6 +75013,7 @@
 楊懷民	2	yang2 huai2 min2
 楊振寧	14	yang2 zhen4 ning2
 楊振忠	2	yang2 zhen4 zhong1
+楊文科	0	yang2 wen2 ke1
 楊朝祥	17	yang2 chao2 xiang2
 楊朱	8	yang2 zhu1
 楊松弦	3	yang2 song1 xian2
@@ -74975,6 +75035,7 @@
 楊清瓏	3	yang2 qing1 long2
 楊清順	2	yang2 qing1 shun4
 楊牧	6	yang2 mu4
+楊瓊瓔	0	yang2 qiong2 ying1
 楊登魁	5	yang2 deng1 kui2
 楊秀清	0	yang2 xiu4 qing1
 楊秋興	9	yang2 qiu1 xing1
@@ -74988,6 +75049,7 @@
 楊貴媚	7	yang2 gui4 mei4
 楊過	6	yang2 guo4
 楊金欉	3	yang2 jin1 cong4
+楊金龍	0	yang2 jin1 long2
 楊青矗	3	yang2 qing1 chu4
 楊順清	13	yang2 shun4 qing1
 楊麗花	14	yang2 li4 hua1
@@ -80091,7 +80153,10 @@
 江口	16	jiang1 kou3
 江口地區	0	jiang1 kou3 di4 qu1
 江名	0	jiang1 ming2
+江啟臣	0	jiang1 qi3 chen2
 江國慶	28	jiang1 guo2 qing4
+江國豪	0	jiang1 guo2 hao2
+江坤宇	0	jiang1 kun1 yu3
 江夏	2	jiang1 xia4
 江子翠	2	jiang1 zi3 cui4
 江宜樺	9	jiang1 yi2 hua4
@@ -80368,6 +80433,7 @@
 沈下	5	chen2 xia4
 沈下去	3	chen2 xia4 qu4
 沈不住氣	1	chen2 bu2 zhu4 qi4
+沈伯洋	0	shen3 bo2 yang2
 沈住氣	0	chen2 zhu4 qi4
 沈冤	1	chen2 yuan1
 沈厚	0	chen2 hou4
@@ -80380,6 +80446,7 @@
 沈思	39	chen2 si1
 沈思往事	0	chen2 si1 wang3 shi4
 沈悶	27	chen2 men4
+沈慶京	0	shen3 qing4 jing1
 沈括	0	shen3 gua1
 沈文程	3	shen3 wen2 cheng2
 沈文裕	0	shen3 wen2 yu4
@@ -80401,6 +80468,7 @@
 沈痛	13	chen2 tong4
 沈痼	0	chen2 gu4
 沈痾	4	chen2 e1
+沈發惠	0	shen3 fa1 hui4
 沈睡	24	chen2 shui4
 沈睡不醒	0	chen2 shui4 bu4 xing3
 沈砂池	0	chen2 sha1 chi2
@@ -82236,6 +82304,7 @@
 洪亮	6	hong2 liang4
 洪仲丘	9	hong2 zhong4 qiu1
 洪奇昌	35	hong2 qi2 chang1
+洪孟楷	0	hong2 meng4 kai3
 洪峰	2	hong2 feng1
 洪建全基金會	1	hong2 jian4 quan2 ji1 jin1 hui4
 洪慈庸	4	hong2 ci2 yong1
@@ -82255,6 +82324,7 @@
 洪熙官	0	hong2 xi1 guan1
 洪爐	2	hong2 lu2
 洪玉欽	16	hong2 yu4 qin1
+洪申翰	0	hong2 shen1 han4
 洪福	17	hong2 fu2
 洪福齊天	1	hong2 fu2 qi2 tian1
 洪秀全	0	hong2 xiu4 quan2
@@ -83250,6 +83320,7 @@
 浿	0	pei4
 涀	0	xian4
 涂	109	tu2
+涂權吉	0	tu2 quan2 ji2
 涂醒哲	44	tu2 xing3 zhe2
 涂阿玉	7	tu2 a1 yu4
 涂鴻欽	7	tu2 hong2 qin1
@@ -84761,6 +84832,7 @@
 游離份子	0	you2 li2 fen4 zi3
 游離能	0	you2 li2 neng2
 游離輻射	0	you2 li2 fu2 she4
+游顥	0	you2 hao4
 游魚得水	0	you2 yu2 de2 shui3
 渹	0	hong1
 渺	115	miao3
@@ -90281,6 +90353,7 @@
 牛津	49	niu2 jin1
 牛津大學	4	niu2 jin1 da4 xue2
 牛津街	4	niu2 jin1 jie1
+牛煦庭	0	niu2 xu3 ting2
 牛犁歌	4	niu2 li2 ge1
 牛犁陣	1	niu2 li2 zhen4
 牛犢	1	niu2 du2
@@ -92027,6 +92100,7 @@
 王宇佐	9	wang2 yu3 zuo3
 王守仁	15	wang2 shou3 ren2
 王安石	16	wang2 an1 shi2
+王安祥	0	wang2 an1 xiang2
 王定宇	9	wang2 ding4 yu3
 王室	42	wang2 shi4
 王室貴族	0	wang2 shi4 gui4 zu2
@@ -92045,9 +92119,11 @@
 王弼	3	wang2 bi4
 王心凌	0	wang2 xin1 ling2
 王志剛	15	wang2 zhi4 gang1
+王忠銘	0	wang2 zhong1 ming2
 王思婷	53	wang2 si1 ting2
 王惕吾	0	wang2 ti4 wu2
 王惠珍	23	wang2 hui4 zhen1
+王惠美	0	wang2 hui4 mei3
 王政	6	wang2 zheng4
 王效蘭	4	wang2 xiao4 lan2
 王敦	5	wang2 dun1
@@ -92075,12 +92151,14 @@
 王生明路	1	wang2 sheng1 ming2 lu4
 王祖賢	5	wang2 zu3 xian2
 王維	38	wang2 wei2
+王美惠	0	wang2 mei3 hui4
 王義川	0	wang2 yi4 chuan1
 王羲之	16	wang2 xi1 zhi1
 王老五	1	wang2 lao3 wu3
 王考	1	wang2 kao3
 王者	12	wang2 zhe3
 王者之風	1	wang2 zhe3 zhi1 feng1
+王育敏	0	wang2 yu4 min3
 王育誠	3	wang2 yu4 cheng2
 王船祭	4	wang2 chuan2 ji4
 王莽	6	wang2 mang3
@@ -92096,6 +92174,8 @@
 王鏡銘	4	wang2 jing4 ming2
 王陽明	12	wang2 yang2 ming2
 王雪紅	13	wang2 xue3 hong2
+王鴻薇	0	wang2 hong2 wei2
+王齊麟	0	wang2 qi2 lin2
 玎	0	ding1
 玒	0	hong2
 玓	4	di4
@@ -94469,7 +94549,6 @@
 畜生	34	chu4 sheng1
 畜產	32	xu4 chan3
 畜產品	7	xu4 chan3 pin3
-畜試所	0	chu4 shi4 suo3
 畜試所	0	chu4 shi4 suo3
 畜類	1	chu4 lei4
 畜養	3	xu4 yang3
@@ -97134,6 +97213,7 @@
 盧江	0	lu2 jiang1
 盧溝橋	2	lu2 gou1 qiao2
 盧甘斯克	0	lu2 gan1 si1 ke4
+盧秀燕	0	lu2 xiu4 yan4
 盩	0	zhou1
 盪	459	dang4
 盪來盪去	2	dang4 lai2 dang4 qu4
@@ -99075,6 +99155,7 @@
 石岡區	0	shi2 gang1 qu1
 石岡鄉	3	shi2 gang1 xiang1
 石崇	1	shi2 chong2
+石崇良	0	shi2 chong2 liang2
 石川	3	shi2 chuan1
 石川氏鮭魚	15	shi2 chuan1 shi4 gui1 yu2
 石川縣	3	shi2 chuan1 xian4
@@ -109147,6 +109228,7 @@
 羅布	4	luo2 bu4
 羅布泊	1	luo2 bu4 bo2
 羅帷	0	luo2 wei2
+羅廷瑋	0	luo2 ting2 wei3
 羅德島	8	luo2 de2 dao3
 羅德西亞	0	luo2 de2 xi1 ya3
 羅德隊	2	luo2 de2 dui4
@@ -109158,7 +109240,9 @@
 羅斯卓波維奇	2	luo2 si1 zhuo2 po1 wei2 qi2
 羅斯福	94	luo2 si1 fu2
 羅斯福路	17	luo2 si1 fu2 lu4
+羅明才	0	luo2 ming2 cai2
 羅星塔	1	luo2 xing1 ta3
+羅智強	0	luo2 zhi4 qiang2
 羅曼史	19	luo2 man4 shi3
 羅曼尼康帝	0	luo2 man4 ni2 kang1 di4
 羅曼羅蘭	11	luo2 man4 luo2 lan2
@@ -109188,6 +109272,7 @@
 羅網	11	luo2 wang3
 羅織	18	luo2 zhi1
 羅羅	2	luo2 luo2
+羅美玲	0	luo2 mei3 ling2
 羅致	16	luo2 zhi4
 羅致人材	0	luo2 zhi4 ren2 cai2
 羅興樑	5	luo2 xing1 liang2
@@ -109796,6 +109881,8 @@
 翁婿	1	weng1 xu4
 翁嫗	0	weng1 yu4
 翁岳生	14	weng1 yue4 sheng1
+翁曉玲	0	weng1 xiao3 ling2
+翁章梁	0	weng1 zhang1 liang2
 翁豐堉	0	weng1 feng1 yu4
 翁金珠	22	weng1 jin1 zhu1
 翂	0	fen1
@@ -116101,6 +116188,7 @@
 范振宗	77	fan4 zhen4 zong1
 范蠡	1	fan4 li2
 范陽	1	fan4 yang2
+范雲	0	fan4 yun2
 茄	220	jia1
 茄冬樹	1	qie2 dong1 shu4
 茄子	17	qie2 zi5
@@ -116605,10 +116693,12 @@
 莊景賀	2	zhuang1 jing3 he4
 莊智淵	5	zhuang1 zhi4 yuan1
 莊淑旂	51	zhuang1 shu2 qi2
+莊瑞雄	0	zhuang1 rui4 xiong2
 莊田	0	zhuang1 tian2
 莊稼	15	zhuang1 jia4
 莊稼人	0	zhuang1 jia4 ren2
 莊稼漢	5	zhuang1 jia4 han4
+莊翠雲	0	zhuang1 cui4 yun2
 莊裡	2	zhuang1 li3
 莊重	24	zhuang1 zhong4
 莊院	0	zhuang1 yuan4
@@ -117241,6 +117331,7 @@
 萬緒千端	0	wan4 xu4 qian1 duan1
 萬緒千頭	0	wan4 xu4 qian1 tou2
 萬縣	5	wan4 xian4
+萬美玲	0	wan4 mei3 ling2
 萬聖節	49	wan4 sheng4 jie2
 萬能	55	wan4 neng2
 萬能工專	0	wan4 neng2 gong1 zhuan1
@@ -117434,6 +117525,7 @@
 葇	0	rou2
 葉	3398	ye4
 葉丁仁	4	ye4 ding1 ren2
+葉元之	0	ye4 yuan2 zhi1
 葉克膜	3	ye4 ke4 mo2
 葉公好龍	0	she4 gong1 hao4 long2
 葉公超	3	ye4 gong1 chao1
@@ -117537,6 +117629,7 @@
 葚	3	shen4
 葛	561	ge2
 葛天氏	1	ge2 tian1 shi4
+葛如鈞	0	ge3 ru2 jun1
 葛妮絲派特洛	3	ge3 ni2 si1 pai4 te4 luo4
 葛布	0	ge3 bu4
 葛拉芙	53	ge3 la1 fu2
@@ -118100,6 +118193,7 @@
 蔡健雅	3	cai4 jian4 ya3
 蔡元培	24	cai4 yuan2 pei2
 蔡兆陽	9	cai4 zhao4 yang2
+蔡其昌	0	cai4 qi2 chang1
 蔡卓妍	7	cai4 zhuo2 yan2
 蔡同榮	31	cai4 tong2 rong2
 蔡幸娟	1	cai4 xing4 juan1
@@ -118108,6 +118202,7 @@
 蔡明亮	19	cai4 ming2 liang4
 蔡明憲	0	cai4 ming2 xian4
 蔡明里	2	cai4 ming2 li3
+蔡易餘	0	cai4 yi4 yu2
 蔡正仁	1	cai4 zheng4 ren2
 蔡溫義	3	cai4 wen1 yi4
 蔡煌瑯	31	cai4 huang2 lang2
@@ -118880,6 +118975,7 @@
 蘇州市	1	su1 zhou1 shi4
 蘇州碼	0	su1 zhou1 ma3
 蘇州話	2	su1 zhou1 hua4
+蘇巧慧	0	su1 qiao3 hui4
 蘇建和	75	su1 jian4 he2
 蘇彝士	5	su1 yi2 shi4
 蘇彝士運河	4	su1 yi2 shi4 yun4 he2
@@ -118901,6 +118997,7 @@
 蘇比克灣	3	su1 bi3 ke4 wan1
 蘇活	6	su1 huo2
 蘇活族	0	su1 huo2 zu2
+蘇清泉	0	su1 qing1 quan2
 蘇澳	49	su1 ao4
 蘇澳港	9	su1 ao4 gang3
 蘇澳鎮	6	su1 ao4 zhen4
@@ -123736,14 +123833,18 @@
 許多國家	24	xu3 duo1 guo2 jia1
 許多許多	6	xu3 duo1 xu3 duo1
 許如芸	0	xu3 ru2 yun2
+許宇甄	0	xu3 yu3 zhen1
+許忠信	0	xu3 zhong1 xin4
 許慎	2	xu3 shen4
 許效舜	10	xu3 xiao4 shun4
 許文龍	4	xu3 wen2 long2
 許昌	4	xu3 chang1
 許是	278	xu3 shi4
+許智傑	0	xu3 zhi4 jie2
 許榮淑	10	xu3 rong2 shu2
 許氏鍵盤	15	xu3 shi4 jian4 pan2
 許水德	19	xu3 shui3 de2
+許淑華	0	xu3 shu2 hua2
 許績勝	9	xu3 ji1 sheng4
 許聖杰	3	xu3 sheng4 jie2
 許聞廉	1	xu3 wen2 lian2
@@ -125564,6 +125665,7 @@
 謝函	2	xie4 han2
 謝啟大	15	xie4 qi3 da4
 謝國城	1	xie4 guo2 cheng2
+謝國樑	0	xie4 guo2 liang2
 謝天	19	xie4 tian1
 謝天謝地	8	xie4 tian1 xie4 di4
 謝孝	0	xie4 xiao4
@@ -125587,6 +125689,7 @@
 謝絕參觀	0	xie4 jue2 can1 guan1
 謝罪	17	xie4 zui4
 謝聰敏	7	xie4 cong1 min3
+謝衣鳳	0	xie4 yi1 feng4
 謝謝	1223	xie4 xie5
 謝謝你	46	xie4 xie5 ni3
 謝謝妳	3	xie4 xie5 ni3
@@ -125595,6 +125698,7 @@
 謝長亨	24	xie4 chang2 heng1
 謝長廷	105	xie4 chang2 ting2
 謝霆鋒	4	xie4 ting2 feng1
+謝龍介	0	xie4 long2 jie4
 謞	0	xue4
 謠	371	yao2
 謠傳	11	yao2 chuan2
@@ -128032,10 +128136,12 @@
 賴婚	0	lai4 hun1
 賴帳	6	lai4 zhang4
 賴床	11	lai4 chuang2
+賴惠員	0	lai4 hui4 yuan2
 賴掉	1	lai4 diao4
 賴於	37	lai4 yu2
 賴比瑞亞	7	lai4 bi3 rui4 ya3
 賴清德	21	lai4 qing1 de2
+賴瑞隆	0	lai4 rui4 long2
 賴皮	6	lai4 pi2
 賴索托	5	lai4 suo3 tuo1
 賴聲川	0	lai4 sheng1 chuan1
@@ -128942,7 +129048,6 @@
 趥	0	qiu1
 趧	0	ti2
 趨	1618	cu4
-趨之若騖	3	qu1 zhi1 ruo4 wu4
 趨之若鶩	32	qu1 zhi1 ruo4 wu4
 趨光性	6	qu1 guang1 xing4
 趨其所好	0	qu1 qi2 suo3 hao4
@@ -135315,10 +135420,14 @@
 邱創煥	11	qiu1 chuang4 huan4
 邱創良	2	qiu1 chuang4 liang2
 邱吉爾	10	qiu1 ji2 er3
+邱垂正	0	qiu1 chui2 zheng4
 邱太三	13	qiu1 tai4 san1
 邱復生	3	qiu1 fu4 sheng1
+邱志偉	0	qiu1 zhi4 wei3
+邱慧洳	0	qiu1 hui4 ru4
 邱毅	40	qiu1 yi4
 邱義仁	22	qiu1 yi4 ren2
+邱若華	0	qiu1 ruo4 hua2
 邱議瑩	5	qiu1 yi4 ying2
 邲	0	bi4
 邳	0	pei2
@@ -135435,10 +135544,13 @@
 郭台銘	19	guo1 tai2 ming2
 郭品超	8	guo1 pin3 chao1
 郭嚴文	2	guo1 yan2 wen2
+郭國文	0	guo1 guo2 wen2
 郭婉容	30	guo1 wan3 rong2
+郭婞淳	0	guo1 xing4 chun2
 郭子儀	17	guo1 zi3 yi2
 郭富城	8	guo1 fu4 cheng2
 郭振泰	1	guo1 zhen4 tai4
+郭昱晴	0	guo1 yu4 qing2
 郭書瑤	5	guo1 shu1 yao2
 郭李建夫	5	guo1 li3 jian4 fu1
 郭正亮	13	guo1 zheng4 liang4
@@ -135780,6 +135892,7 @@
 鄭成功	65	zheng4 cheng2 gong1
 鄭文燦	19	zheng4 wen2 can4
 鄭昌明	2	zheng4 chang1 ming2
+鄭正鈐	0	zheng4 zheng4 qian2
 鄭經	8	zheng4 jing1
 鄭良偉	9	zheng4 liang2 wei3
 鄭芝龍	9	zheng4 zhi1 long2
@@ -138603,10 +138716,12 @@
 鍼鋒相對	0	zhen1 feng1 xiang1 dui4
 鍼黹	0	zhen1 zhi3
 鍾	862	zhong1
+鍾佳濱	0	zhong1 jia1 bin1
 鍾子期	0	zhong1 zi3 qi2
 鍾山	2	zhong1 shan1
 鍾情	36	zhong1 qing2
 鍾愛	31	zhong1 ai4
+鍾東錦	0	zhong1 dong1 jin3
 鍾楚紅	3	zhong1 chu3 hong2
 鍾漢良	1	zhong1 han4 liang2
 鍾理和	116	zhong1 li3 he2
@@ -141591,16 +141706,20 @@
 陳亭妃	28	chen2 ting2 fei1
 陳今佩	10	chen2 jin1 pei4
 陳今珮	9	chen2 jin1 pei4
+陳俊宇	0	chen2 jun4 yu3
 陳信安	2	chen2 xin4 an1
 陳倉暗度	0	chen2 cang1 an4 du4
 陳倬民	1	chen2 zhuo2 min2
 陳偉殷	56	chen2 wei3 yin1
 陳健治	15	chen2 jian4 zhi4
+陳傑憲	0	chen2 jie2 xian4
 陳傳興	1	chen2 chuan2 xing1
+陳光復	0	chen2 guang1 fu4
 陳其南	9	chen2 qi2 nan2
 陳其美	1	chen2 qi2 mei3
 陳其邁	23	chen2 qi2 mai4
 陳冠任	8	chen2 guan4 ren4
+陳冠廷	0	chen2 guan4 ting2
 陳冲	21	chen2 chong1
 陳列	217	chen2 lie4
 陳列品	4	chen2 lie4 pin3
@@ -141612,6 +141731,7 @@
 陳啟禮	66	chen2 qi3 li3
 陳圓圓	1	chen2 yuan2 yuan2
 陳執信	1	chen2 zhi2 xin4
+陳培瑜	0	chen2 pei2 yu2
 陳壽	3	chen2 shou4
 陳大豐	1	chen2 da4 feng1
 陳奇祿	13	chen2 qi2 lu4
@@ -141653,6 +141773,7 @@
 陳明真	2	chen2 ming2 zhen1
 陳映真	15	chen2 ying4 zhen1
 陳昭南	9	chen2 zhao1 nan2
+陳昭姿	0	chen2 zhao1 zi1
 陳昭榮	4	chen2 zhao1 rong2
 陳時中	0	chen2 shi2 zhong1
 陳曉東	4	chen2 xiao3 dong1
@@ -141661,10 +141782,13 @@
 陳榮捷	1	chen2 rong2 jie2
 陳正然	4	chen2 zheng4 ran2
 陳水扁	572	chen2 shui3 bian3
+陳永康	0	chen2 yong3 kang1
 陳永淘	3	chen2 yong3 tao2
 陳江和	3	chen2 jiang1 he2
+陳淑姿	0	chen2 shu2 zi1
 陳淑樺	1	chen2 shu2 hua4
 陳淑麗	7	chen2 shu2 li4
+陳清龍	0	chen2 qing1 long2
 陳漢典	3	chen2 han4 dian3
 陳澄波	11	chen2 cheng2 po1
 陳澄雄	4	chen2 cheng2 xiong2
@@ -141672,6 +141796,7 @@
 陳為廷	26	chen2 wei2 ting2
 陳獨秀	13	chen2 du2 xiu4
 陳玉玫	2	chen2 yu4 mei2
+陳玉珍	0	chen2 yu4 zhen1
 陳珊妮	1	chen2 shan1 ni2
 陳瑞昌	1	chen2 rui4 chang1
 陳田錨	4	chen2 tian2 mao2
@@ -141682,9 +141807,11 @@
 陳皮梅	2	chen2 pi2 mei2
 陳省身	7	chen2 xing3 shen1
 陳福海	0	chen2 fu2 hai3
+陳秀寶	0	chen2 xiu4 bao3
 陳秀雄	3	chen2 xiu4 xiong2
 陳立夫	7	chen2 li4 fu1
 陳純甄	2	chen2 chun2 zhen1
+陳素月	0	chen2 su4 yue4
 陳維昭	18	chen2 wei2 zhao1
 陳綺貞	5	chen2 qi3 zhen1
 陳美鳳	9	chen2 mei3 feng4
@@ -141700,6 +141827,7 @@
 陳芳明	7	chen2 fang1 ming2
 陳若曦	6	chen2 ruo4 xi1
 陳英士	2	chen2 ying1 shi4
+陳菁徽	0	chen2 jing1 hui1
 陳菊	64	chen2 ju2
 陳蘭皋	4	chen2 lan2 gao1
 陳規	1	chen2 gui1
@@ -141723,7 +141851,9 @@
 陳長文	16	chen2 chang2 wen2
 陳陳相因	2	chen2 chen2 xiang1 yin1
 陳雅琳	2	chen2 ya3 lin2
+陳雪生	0	chen2 xue3 sheng1
 陳香梅	8	chen2 xiang1 mei2
+陳駿季	0	chen2 jun4 ji4
 陳高	0	chen2 gao1
 陴	0	pi2
 陵	340	ling2
@@ -145918,6 +146048,7 @@
 顏回	5	yan2 hui2
 顏如玉	4	yan2 ru2 yu4
 顏容	0	yan2 rong2
+顏寬恆	0	yan2 kuan1 heng2
 顏文字	4	yan2 wen2 zi4
 顏料	51	yan2 liao4
 顏料商	0	yan2 liao4 shang1
@@ -146058,6 +146189,7 @@
 顧盼自如	0	gu4 pan4 zi4 ru2
 顧盼自得	1	gu4 pan4 zi4 de2
 顧盼自雄	0	gu4 pan4 zi4 xiong2
+顧立雄	0	gu4 li4 xiong2
 顧笑	0	gu4 xiao4
 顧著	14	gu4 zhe5
 顧返	0	gu4 fan3
@@ -147298,6 +147430,7 @@
 饒州	0	rao2 zhou1
 饒平	1	rao2 ping2
 饒恕	10	rao2 shu4
+饒慶鈴	0	rao2 qing4 ling2
 饒有	7	rao2 you3
 饒沃	0	rao2 wo4
 饒河	4	rao2 he2
@@ -147705,6 +147838,7 @@
 馬拉糕	0	ma3 la1 gao1
 馬拉馬拉	3	ma3 la1 ma3 la1
 馬掌	2	ma3 zhang3
+馬文君	0	ma3 wen2 jun1
 馬文才	2	ma3 wen2 cai2
 馬斯垂克條約	1	ma3 si1 chui2 ke4 tiao2 yue1
 馬札兒人	0	ma3 zha2 er2 ren2
@@ -149164,6 +149298,7 @@
 高遷	0	gao1 qian1
 高邁	0	gao1 mai4
 高醫	23	gao1 yi1
+高金素梅	0	gao1 jin1 su4 mei2
 高錳酸鉀	0	gao1 meng3 suan1 jia3
 高鐵	275	gao1 tie3
 高鐵站	4	gao1 tie3 zhan4
@@ -149849,6 +149984,7 @@
 魯凱族	27	lu3 kai3 zu2
 魯國	24	lu3 guo2
 魯恭王	2	lu3 gong1 wang2
+魯明哲	0	lu3 ming2 zhe2
 魯智深	0	lu3 zhi4 shen1
 魯本斯	3	lu3 ben3 si1
 魯濱遜	2	lu3 bin1 xun4
@@ -151005,6 +151141,7 @@
 麥片	44	mai4 pian4
 麥片粥	1	mai4 pian4 zhou1
 麥特戴蒙	2	mai4 te4 dai4 meng2
+麥玉珍	0	mai4 yu4 zhen1
 麥田	22	mai4 tian2
 麥當勞	90	mai4 dang1 lao2
 麥稈	1	mai4 gan3
@@ -151180,10 +151317,12 @@
 黃之鋒	7	huang2 zhi1 feng1
 黃乙玲	2	huang2 yi3 ling2
 黃人	7	huang2 ren2
+黃仁	0	huang2 ren2
 黃仁宇	5	huang2 ren2 yu3
 黃俊中	7	huang2 jun4 zhong1
 黃俊雄	10	huang2 jun4 xiong2
 黃信介	14	huang2 xin4 jie4
+黃偉哲	0	huang2 wei3 zhe2
 黃克林	33	huang2 ke4 lin2
 黃勝雄	2	huang2 sheng4 xiong2
 黃包車	2	huang2 bao1 che1
@@ -151219,9 +151358,13 @@
 黃平洋	41	huang2 ping2 yang2
 黃底黑字	0	huang2 di3 hei1 zi4
 黃庭堅	4	huang2 ting2 jian1
+黃建豪	0	huang2 jian4 hao2
+黃建賓	0	huang2 jian4 bin1
 黃復興	5	huang2 fu4 xing1
 黃志芳	1	huang2 zhi4 fang1
 黃志龍	2	huang2 zhi4 long2
+黃捷	0	huang2 jie2
+黃敏惠	0	huang2 min3 hui4
 黃斑	6	huang2 ban1
 黃昆輝	18	huang2 kun1 hui1
 黃昏	133	huang2 hun1
@@ -151270,6 +151413,7 @@
 黃牛肉	6	huang2 niu2 rou4
 黃牛肉店	1	huang2 niu2 rou4 dian4
 黃牛肉麵	4	huang2 niu2 rou4 mian4
+黃珊珊	0	huang2 shan1 shan1
 黃瓜	18	huang2 gua1
 黃瓜皮	0	huang2 gua1 pi2
 黃疸	16	huang2 dan3
@@ -151288,6 +151432,7 @@
 黃砂	0	huang2 sha1
 黃磷	1	huang2 lin2
 黃禍	6	huang2 huo4
+黃秀芳	0	huang2 xiu4 fang1
 黃秋生	5	huang2 qiu1 sheng1
 黃種	15	huang2 zhong3
 黃種人	7	huang2 zhong3 ren2
@@ -152411,6 +152556,7 @@
 龑	0	yan3
 龒	0	long2
 龔	105	gong1
+龔明鑫	0	gong1 ming2 xin1
 龕	23	kan1
 龘	1	ta4
 龜	547	jun1
@@ -152448,3 +152594,5 @@
 龤	0	xie2
 兀	0	wu4
 嗀	0	huo4
+𡻈	0	zhen1
+𢻯	0	xue2
