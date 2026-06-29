@@ -28,6 +28,15 @@ emoji-test:
 
 sync:
 	@echo "Distribute resource files...\n"
+	@for file in DefaultKeyboardLayouts.json ; do \
+		if [[ -f "$(BUILD_QUEUE_DIR)/$${file}" ]]; then \
+			echo "[v] $${file}" ; \
+			cp $(BUILD_QUEUE_DIR)/$${file} $(KEYBOARD_PACKAGE_DIR)/$${file} ; \
+		else \
+			echo "[404] $${file}" ; \
+		fi ; \
+	done;
+
 	@for file in DataTables.json KeyboardLayouts.json Lexicon.json ; do \
 		if [[ -f "$(BUILD_QUEUE_DIR)/$${file}" ]]; then \
 			echo "[v] $${file}" ; \
@@ -37,14 +46,14 @@ sync:
 		fi ; \
 	done;
 
-	@for file in KeyMapping.json ; do \
-		if [[ -f "./$${file}" ]]; then \
-			echo "[v] $${file}" ; \
-			cp $${file} $(SRC_DIR)/$${file} ; \
-		else \
-			echo "[404] $${file}" ; \
-		fi ; \
-	done;
+# 	@for file in KeyMapping.json ; do \
+# 		if [[ -f "./$${file}" ]]; then \
+# 			echo "[v] $${file}" ; \
+# 			cp $${file} $(SRC_DIR)/$${file} ; \
+# 		else \
+# 			echo "[404] $${file}" ; \
+# 		fi ; \
+# 	done;
 
 	@for file in emoji.db Character.db Unihan.db ; do \
 		if [[ -f "$(BUILD_DIR)/$${file}" ]]; then \

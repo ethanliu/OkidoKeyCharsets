@@ -19,7 +19,6 @@ from country import get_country_data
 # Global Variables
 
 EMOTICONS_PATH = os.path.join(os.getcwd(), 'lexicon', 'emoticons.json')
-COUNTRY_CSV_PATH = os.path.join(os.getcwd(), 'misc', 'countries.csv')
 
 EMOJI_DATA_LIST = {
     "emoji-test.txt": "https://www.unicode.org/Public/17.0.0/emoji/emoji-test.txt",
@@ -44,8 +43,6 @@ SKIN_TONE_MAP = {
     "0001F3FB": 1, "0001F3FC": 2, "0001F3FD": 3, "0001F3FE": 4, "0001F3FF": 5
 }
 
-# --- Utility Functions ---
-
 def pad_hex_to_8_digits(hex_code):
     hex_code = hex_code.upper().replace('U+', '').replace('0X', '')
     return ' '.join([f"{int(node, 16):08X}" for node in hex_code.split() if node])
@@ -60,61 +57,58 @@ def emojilized(hex_string):
 def analyze_emoji(hex_codes_string):
     nodes = hex_codes_string.split()
 
-    # Extract skin tones
     found_tones = [SKIN_TONE_MAP[n] for n in nodes if n in SKIN_TONE_MAP]
-
-    # Metadata flags
     is_skin = 1 if found_tones else 0
+
+    # A "Neutral" emoji has no skin tone but is the source for others
+    is_neutral = 1 if not is_skin else 0
     is_zwj = 1 if ZWJ in nodes else 0
     has_vs = 1 if EMOJI_VS in nodes else 0
 
     tone1 = found_tones[0] if len(found_tones) > 0 else 0
     tone2 = found_tones[1] if len(found_tones) > 1 else 0
 
-    # We remove Skin Tones and VS to find the "Base" version
+    # Strip skin tones and variation selectors to find the family ID
     parent_nodes = [n for n in nodes if n not in SKIN_TONE_MAP and n != EMOJI_VS]
 
-    # Clean up ZWJ artifacts (remove double ZWJs or trailing ZWJs)
+    # Clean up ZWJ artifacts
     final_parent_nodes = []
     for node in parent_nodes:
         if node == ZWJ and (not final_parent_nodes or final_parent_nodes[-1] == ZWJ):
             continue
         final_parent_nodes.append(node)
 
-    # If the sequence ended in a ZWJ after stripping, remove it
     if final_parent_nodes and final_parent_nodes[-1] == ZWJ:
         final_parent_nodes.pop()
 
     parent_hex = ' '.join(final_parent_nodes)
 
-    # If the parent is identical to original, set to None
-    if parent_hex == hex_codes_string:
-        parent_hex = None
+    # If it's a simple emoji (like a heart or smile),
+    # ensure parent_hex isn't empty
+    if not parent_hex:
+        parent_hex = hex_codes_string
 
-    return is_skin, is_zwj, has_vs, tone1, tone2, parent_hex
+    return is_skin, is_neutral, is_zwj, has_vs, tone1, tone2, parent_hex
 
 def _collect_keywords(string_list, prefix):
     return [item.replace(prefix, '').strip() for item in string_list]
 
+# Remove Variation Selectors (FE00 through FE0F)
 def normalize_emoji_hex(char):
-    # Remove Variation Selectors (FE00 through FE0F)
-    # These are what differentiate fully-qualified from minimally-qualified
     clean_char = re.sub(r'[\ufe00-\ufe0f]', '', char)
-    # Convert to hex sequence
     return ' '.join(f"{ord(c):08X}" for c in clean_char)
     # return ' '.join(f"{ord(c):08X}" for c in char)
-
-# --- Database Core ---
 
 def create_database():
     if os.path.isfile(DB_PATH): os.remove(DB_PATH)
     db = sqlite3.connect(DB_PATH)
     cursor = db.cursor()
 
-    # Added metadata columns to chardef
     cursor.execute("""
         CREATE TABLE chardef (
             `char` VARCHAR(255) UNIQUE NOT NULL,
+            `is_base_template` INTEGER DEFAULT 0,
+            `is_neutral` INTEGER DEFAULT 0,
             `is_skin_tone` INTEGER DEFAULT 0,
             `is_zwj` INTEGER DEFAULT 0,
             `has_vs` INTEGER DEFAULT 0,
@@ -128,11 +122,21 @@ def create_database():
     cursor.execute("CREATE TABLE keydef (`key` VARCHAR(255) UNIQUE NOT NULL)")
     cursor.execute("CREATE TABLE entry (`keydef_id` INTEGER, `chardef_id` INTEGER, UNIQUE(`keydef_id`, `chardef_id`))")
 
-    cursor.execute("CREATE INDEX idx_emoji_ranking ON chardef(is_skin_tone, weight)")
-    cursor.execute("CREATE INDEX idx_emoji_lookup ON chardef(skin_tone_1, skin_tone_2, weight)")
+    # remove_diacritics: strips accents and diacritics from characters during tokenization
+    cursor.execute("""
+        CREATE VIRTUAL TABLE emoji_search USING fts5(
+            keywords,
+            chardef_id UNINDEXED,
+            tokenize="trigram remove_diacritics 1"
+        );
+    """)
+
+    cursor.execute("CREATE INDEX idx_emoji_ranking ON chardef(is_base_template, is_skin_tone, weight)")
+    cursor.execute("CREATE INDEX idx_emoji_lookup ON chardef(is_base_template, skin_tone_1, skin_tone_2, weight)")
     cursor.execute("CREATE INDEX idx_parent_lookup ON chardef(weight, parent_hex)")
     cursor.execute("CREATE INDEX idx_entry_lookup ON entry(keydef_id, chardef_id)")
     cursor.execute("CREATE INDEX idx_entry_reverse_lookup ON entry(chardef_id, keydef_id)")
+    cursor.execute("CREATE INDEX idx_parent_hex ON chardef(parent_hex);")
 
     db.commit()
     db.close()
@@ -156,12 +160,10 @@ def import_from_emoji_test(cursor, file_path):
                 current_subgroup = line.split(":", 1)[1].strip()
                 continue
 
-            # 2. Skip comments and empty lines
             if not line or line.startswith("#"):
                 continue
 
-            # 3. Parse Data Line
-            # Example: 1F44B 1F3FB ; fully-qualified # 👋🏻 E1.0 waving hand: light skin tone
+            # Sample: 1F44B 1F3FB ; fully-qualified # 👋🏻 E1.0 waving hand: light skin tone
             parts = line.split(";")
             if len(parts) < 2: continue
 
@@ -172,22 +174,17 @@ def import_from_emoji_test(cursor, file_path):
             if status != "fully-qualified":
                 continue
 
-            # 4. Standardize Hex
             h_code = pad_hex_to_8_digits(hex_raw)
+            is_skin, is_neutral, is_zwj, has_vs, tone1, tone2, parent = analyze_emoji(h_code)
 
-            # 5. Extract Skin Tones and Parent (using the logic we built)
-            is_skin, is_zwj, has_vs, tone1, tone2, parent = analyze_emoji(h_code)
-
-            # 6. Insert into DB
             cursor.execute("""
                 INSERT OR IGNORE INTO chardef
-                (char, is_skin_tone, is_zwj, has_vs, skin_tone_1, skin_tone_2, parent_hex)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, (h_code, is_skin, is_zwj, has_vs, tone1, tone2, parent))
+                (char, is_skin_tone, is_neutral, is_zwj, has_vs, skin_tone_1, skin_tone_2, parent_hex)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """, (h_code, is_skin, is_neutral, is_zwj, has_vs, tone1, tone2, parent))
 
     cursor.execute("COMMIT TRANSACTION")
 
-# Create the emoji database base on emoji-data.txt and zwj
 def apply_emojis(basedir):
     db = sqlite3.connect(DB_PATH)
     cursor = db.cursor()
@@ -215,7 +212,6 @@ def apply_annotations(data_dir):
     db.close()
 
 
-# Parses CLDR annotation data
 def apply_annotation_data(cursor, path):
     filename = os.path.basename(path)
     file = open(path, 'r')
@@ -285,7 +281,6 @@ def apply_annotation_data(cursor, path):
             keywords = _collect_keywords(annotations.get('tts', []), 'keycap: ')
             keywords.append('keycap')
 
-        # Handle keywords and insert into DB
         for keyword in keywords:
             _keyword = keyword.strip()
             if any(words in _keyword for words in COMMON_WORDS_LIST):
@@ -299,7 +294,6 @@ def apply_annotation_data(cursor, path):
                 cursor.execute(insert_entry_query, {'kid': keydef_id, 'cid': chardef_id})
 
     cursor.execute("COMMIT TRANSACTION")
-
 
 def apply_ranking():
     file = open(EMOTICONS_PATH, 'r')
@@ -328,6 +322,29 @@ def apply_ranking():
     db.commit()
     db.close()
 
+def populate_search_index():
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM emoji_search;")
+
+    cursor.execute("""
+        INSERT INTO emoji_search (chardef_id, keywords)
+        SELECT
+            e.chardef_id,
+            GROUP_CONCAT(k.key, ' ') || ' ' || GROUP_CONCAT(k.key, '') as keywords
+        FROM entry e
+        JOIN keydef k ON e.keydef_id = k.rowid
+        GROUP BY e.chardef_id;
+    """)
+
+    cursor.execute("INSERT INTO emoji_search(emoji_search) VALUES('optimize')")
+
+    conn.commit()
+    cursor.execute("VACUUM")
+
+    conn.close()
+
 def update_resources(basedir):
     os.makedirs(basedir, exist_ok=True)
     pool = urllib3.PoolManager()
@@ -345,11 +362,10 @@ def update_resources(basedir):
     print("Update finished")
 
 
-def test_fetch_random_emoji_with_keywords(cursor):
-    """Fetches a random emoji and all its associated keywords."""
+def test_emoji_keywords(cursor):
     print("--- Test: Random Emoji -> Keywords ---")
 
-    # 1. Get a random chardef_id and its character string
+    # random chardef_id and its character string
     cursor.execute("SELECT rowid, `char` FROM chardef ORDER BY RANDOM() LIMIT 1")
     result = cursor.fetchone()
 
@@ -360,7 +376,7 @@ def test_fetch_random_emoji_with_keywords(cursor):
     char_id, hex_code = result
     emoji = emojilized(hex_code)
 
-    # 2. Fetch all keys associated with this chardef
+    # fetch all keys associated with this chardef
     cursor.execute("""
         SELECT k.`key`
         FROM keydef k
@@ -375,11 +391,10 @@ def test_fetch_random_emoji_with_keywords(cursor):
     print(f"Keywords: {', '.join(keywords) if keywords else 'None found'}")
     print("\n")
 
-def test_fetch_random_keyword_with_emojis(cursor):
-    """Fetches a random keyword and all emojis associated with it."""
+def test_keyword_emojis(cursor):
     print("--- Test: Random Keyword -> Emojis ---")
 
-    # 1. Get a random keyword
+    # random keyword
     cursor.execute("SELECT rowid, `key` FROM keydef ORDER BY RANDOM() LIMIT 1")
     result = cursor.fetchone()
 
@@ -389,7 +404,7 @@ def test_fetch_random_keyword_with_emojis(cursor):
 
     key_id, keyword = result
 
-    # 2. Fetch all emojis (converted to hex) associated with this keyword
+    # fetch all emojis associated with this keyword
     cursor.execute("""
         SELECT c.`char`
         FROM chardef c
@@ -401,10 +416,63 @@ def test_fetch_random_keyword_with_emojis(cursor):
 
     print(f"Keyword: '{keyword}'")
     # print(f"Associated Emojis (hex): {', '.join(hex_codes) if hex_code else 'None found'}")
+    print(f"Associated Emojis:")
     for hex_code in rows:
-        print(f"Associated Emojis ({emojilized(hex_code)}): {hex_code if hex_code else 'None found'}")
+        print(f"{emojilized(hex_code)} => {hex_code if hex_code else 'None found'}")
 
     print("\n")
+
+def test_skin_tone(cursor):
+    query = """
+        SELECT
+            DISTINCT chardef.char
+        FROM
+            chardef, keydef, entry
+        WHERE 1
+            AND keydef.key LIKE "%醫%"
+            AND keydef.rowid = entry.keydef_id
+            AND chardef.rowid = entry.chardef_id
+        GROUP BY chardef.char
+        ORDER BY
+            chardef.weight DESC
+    """
+
+    cursor.execute(query)
+    rows = [row[0] for row in cursor.fetchall()]
+    print("all emojis has keyword")
+    for hex_code in rows:
+        print(f"{emojilized(hex_code)} => {hex_code if hex_code else 'None found'}")
+
+
+    query = """
+        WITH RankedEmojis AS (
+            SELECT
+                c.char,
+                c.weight,
+                ROW_NUMBER() OVER (
+                    PARTITION BY c.parent_hex
+                    ORDER BY
+                        (c.skin_tone_1 = 3) DESC,
+                        c.is_skin_tone DESC,
+                        c.weight DESC
+                ) as rank
+            FROM chardef c
+            JOIN entry e ON c.rowid = e.chardef_id
+            JOIN keydef k ON k.rowid = e.keydef_id
+            WHERE k.key LIKE '%醫%'
+        )
+        SELECT char
+        FROM RankedEmojis
+        WHERE rank = 1
+        ORDER BY weight DESC;
+    """
+
+    cursor.execute(query)
+    rows = [row[0] for row in cursor.fetchall()]
+    print("all emojis has keyword and prefferred skin tone")
+    for hex_code in rows:
+        print(f"{emojilized(hex_code)} => {hex_code if hex_code else 'None found'}")
+
 
 def test(dbPath):
     if not os.path.isfile(dbPath):
@@ -414,8 +482,9 @@ def test(dbPath):
     cursor = db.cursor()
 
     print("\n\n")
-    test_fetch_random_emoji_with_keywords(cursor)
-    test_fetch_random_keyword_with_emojis(cursor)
+    test_emoji_keywords(cursor)
+    test_keyword_emojis(cursor)
+    test_skin_tone(cursor)
 
     db.close()
 
@@ -457,6 +526,7 @@ def main():
         apply_emojis(args.dir)
         apply_annotations(args.dir)
         apply_ranking()
+        populate_search_index()
 
         sys.exit(0)
 

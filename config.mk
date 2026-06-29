@@ -12,3 +12,4 @@ MISC_DIR := $(CURDIR)/misc
 BUILD_QUEUE_DIR := $(BUILD_DIR)/queue
 
 SRC_DIR := $(CURDIR)/../baker4/baker/baker/Supporting\ Files/
+KEYBOARD_PACKAGE_DIR := $(CURDIR)/../baker4/KeyboardKitPackage/Sources/KeyboardKitPackage/

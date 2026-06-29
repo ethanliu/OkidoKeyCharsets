@@ -15,6 +15,9 @@ setup:
 	@uv venv
 	@uv sync
 
+uvup:
+	@uv lock --upgrade
+
 clear:
 	@rm -rf .venv uv.lock
 	@uv cache clean
@@ -52,7 +55,11 @@ all: table lexicon emoji unihan char keyboard
 
 	@make dist
 
+# keyboard-legacy:
+# 	@$(BIN_DIR)/resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayoutsLegacy.json
+
 keyboard:
+	@$(BIN_DIR)/resource.py -c default_keyboard -o $(BUILD_QUEUE_DIR)/DefaultKeyboardLayouts.json
 	@$(BIN_DIR)/resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
 
 emoji:
@@ -79,9 +86,7 @@ dist:
 	@make -f makefiles/dist.mk build
 	@make -f makefiles/dev.mk sync
 	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/github
-	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/github
 	@cp -a $(BUILD_QUEUE_DIR)/*.json $(DIST_DIR)/gitlab
-	@cp -a $(CURDIR)/KeyMapping.json $(DIST_DIR)/gitlab
 
 json:
 	@make -f makefiles/table.mk json
