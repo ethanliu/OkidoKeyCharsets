@@ -24,6 +24,9 @@ update: pull patch
 	@echo "Update local files..."
 	@cp $(RAWDATA_DIR)/cin-tables/bsm.cin $(TABLE_DIR)/stroke-bsm.cin
 	@cp $(RAWDATA_DIR)/cin-tables/g6code.cin $(TABLE_DIR)/stroke-g6code.cin
+	@cp $(RAWDATA_DIR)/cin-tables/dayi2.cin $(TABLE_DIR)/dayi2.cin
+	@cp $(RAWDATA_DIR)/cin-tables/dayi3.cin $(TABLE_DIR)/dayi3.cin
+	@cp $(RAWDATA_DIR)/cin-tables/dayi4.cin $(TABLE_DIR)/dayi4.cin
 	@echo "fin."
 
 patch: array10 ghcm jyutping mcbpmf
