@@ -173,8 +173,71 @@ def parse_function_key_row(row_str):
             features.append(fnkey)
     return features
 
+def build_keyboard(output_path):
+    # outputPath = f"{cwd}/KeyboardLayouts.json"
+    charset_path = f"{base_dir}/charset"
+
+    jsondata = {
+        'version': (datetime.now()).strftime(f'%Y%m%d%H%M%S'),
+        "charsets": {},
+    }
+
+    categories = {
+        "bpmf": "bpmf",
+        "symbol": "symbol",
+        "easy": "cangjie",
+    }
+
+    for path in sorted(glob.glob(f"{charset_path}/*.charset.json")):
+        file = open(path, 'r')
+        data = json.load(file)
+        file.close()
+        # print(path)
+
+        category = os.path.basename(path).split(".")[0]
+        if category == "default":
+            continue
+
+        for ck, cv in categories.items():
+            if category.startswith(ck):
+                category = cv
+
+        for item in data:
+            name = item['name']
+            if not name or name.startswith('_'):
+                continue
+
+            # if not 'name' in item:
+            #     print("name missing")
+            #     continue
+
+            if not 'charsets' in item:
+                print("charsets missing")
+                continue
+
+            if name in jsondata['charsets']:
+                print(f"[exists] {name}")
+                continue
+
+            jsondata['charsets'][name] = {
+                'description': item['description'] or '',
+                'charsets': item['charsets'],
+                'category': category
+            }
+
+            if 'keynameType' in item:
+                jsondata['charsets'][name]['keynameType'] = item['keynameType']
+
+            if 'flicks' in item:
+                jsondata['charsets'][name]['flicks'] = item['flicks']
+
+            if 'popups' in item:
+                jsondata['charsets'][name]['popups'] = item['popups']
+
+    create_json_file(output_path, jsondata)
+
 # build hydrated keyboard layouts
-def build_keyboard(charset_dir, mapping_path, output_path, default_layout):
+def build_hydrated_keyboard(charset_dir, mapping_path, output_path, default_layout):
     mapping_raw = load_json_file(mapping_path)
     symbols_map = mapping_raw.get("symbol", {})
     numerics_map = mapping_raw.get("numeric", {})
@@ -401,22 +464,28 @@ def build_lexicon(outputPath):
 
 def main():
     arg_reader = argparse.ArgumentParser(description='Resource files generator')
-    arg_reader.add_argument('-c', '--category', required = True, choices=['default_keyboard', 'keyboard', 'lexicon', 'table'], help='Resource category')
+    arg_reader.add_argument('-c', '--category', required = True, choices=['default_keyboard2', 'keyboard2', 'keyboard', 'lexicon', 'table'], help='Resource category')
     arg_reader.add_argument('-o', '--output', type = str, required = True, help='Output file path')
 
     args = arg_reader.parse_args()
     # print(args, len(sys.argv))
 
+    print('->', args.category)
+
     match args.category:
         case 'keyboard':
             build_keyboard(
+                output_path=args.output,
+            )
+        case 'keyboard2':
+            build_hydrated_keyboard(
                 output_path=args.output,
                 charset_dir=f"{base_dir}/charset",
                 mapping_path=f"{base_dir}/KeyMapping.json",
                 default_layout=False
             )
-        case 'default_keyboard':
-            build_keyboard(
+        case 'default_keyboard2':
+            build_hydrated_keyboard(
                 output_path=args.output,
                 charset_dir=f"{base_dir}/charset",
                 mapping_path=f"{base_dir}/KeyMapping.json",

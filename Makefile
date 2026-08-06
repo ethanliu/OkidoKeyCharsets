@@ -55,12 +55,12 @@ all: table lexicon emoji unihan char keyboard
 
 	@make dist
 
-# keyboard-legacy:
-# 	@$(BIN_DIR)/resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayoutsLegacy.json
-
 keyboard:
-	@$(BIN_DIR)/resource.py -c default_keyboard -o $(BUILD_QUEUE_DIR)/DefaultKeyboardLayouts.json
 	@$(BIN_DIR)/resource.py -c keyboard -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
+
+keyboard2:
+	@$(BIN_DIR)/resource.py -c default_keyboard2 -o $(BUILD_QUEUE_DIR)/DefaultKeyboardLayouts.json
+	@$(BIN_DIR)/resource.py -c keyboard2 -o $(BUILD_QUEUE_DIR)/KeyboardLayouts.json
 
 emoji:
 # 	@$(BIN_DIR)/emojidb.py --update -d $(RAWDATA_DIR)/emoji
