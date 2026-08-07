@@ -15,8 +15,7 @@ usage:
 	@echo $(SYNOPSIS)
 	@echo $(TMP_DIR)
 
-# update: idioms-xlsx revised concised-xls
-update: idioms-xlsx
+update: idioms-xlsx revised concised-xls
 
 pull:
 	@echo "🤝 Checking version..."

@@ -21,10 +21,22 @@ def load_json_file(path):
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def create_json_file(path, content):
-    print(color(f"{os.path.basename(path)} created.", fg = 'cyan'))
+# def create_json_file(path, content):
+#     print(color(f"{os.path.basename(path)} created.", fg = 'cyan'))
+#     with open(path, 'w', encoding='utf-8') as f:
+#         json.dump(content, f, ensure_ascii=False, separators=(',', ':'))
+
+def create_json_file(path, content, compact=True):
+    print(color(f"{os.path.basename(path)} created.", fg='cyan'))
+
+    # Configure formatting based on the compact flag
+    if compact:
+        kwargs = {'separators': (',', ':')}
+    else:
+        kwargs = {'indent': 2}
+
     with open(path, 'w', encoding='utf-8') as f:
-        json.dump(content, f, ensure_ascii=False, separators=(',', ':'))
+        json.dump(content, f, ensure_ascii=False, **kwargs)
 
 # TODO: patching additional description directly
 # def patchTableHeaders():
@@ -372,6 +384,7 @@ def build_table(outputPath):
             category = "pinying"
 
         content['category'] = category
+        content['summary'] = generate_table_summary(db_filename)
 
         # additional headers
         headerpath = f"{base_dir}/misc/{filename}"
@@ -395,6 +408,61 @@ def build_table(outputPath):
                 jsondata['splits'][db_filename][repo] = len(list)
 
     create_json_file(outputPath, jsondata)
+
+def generate_table_summary(path: str):
+    db_path = f"{base_dir}/build/queue/table/{path}"
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Helper function to safely check table existence and get row counts
+    def get_table_count(table_name: str) -> int:
+        cursor.execute(
+            "SELECT count(*) FROM sqlite_master WHERE type='table' AND name=?",
+            (table_name,),
+        )
+        if cursor.fetchone()[0] > 0:
+            cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
+            return cursor.fetchone()[0]
+        return 0
+
+    # Retrieve info metadata into a dict if present
+    info_data = {}
+    cursor.execute(
+        "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='info'"
+    )
+    if cursor.fetchone()[0] > 0:
+        cursor.execute("SELECT name, value FROM info")
+        info_data = dict(cursor.fetchall())
+
+    # Get row counts across core tables
+    total_chars = get_table_count("chardef")
+    total_keys = get_table_count("keydef")
+    total_entries = get_table_count("entry")
+
+    # Shortcode & Special stats
+    total_keys_short = get_table_count("keydef_shortcode")
+    total_entries_short = get_table_count("entry_shortcode")
+    total_keys_special = get_table_count("keydef_special")
+    total_entries_special = get_table_count("entry_special")
+
+    conn.close()
+
+    # Construct and print the report
+# Build Time: {info_data.get('build_time', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))}
+# Name: {info_data.get('ename', info_data.get('cname', 'N/A'))}
+    report = f"""Unique Characters: {total_chars:,}
+Standard Key Definitions: {total_keys:,}
+Standard Mapping Entries: {total_entries:,}
+"""
+    if total_keys_short or total_keys_special:
+        report = f"""{report}
+Shortcode Key Definitions: {total_keys_short:,}
+Shortcode Mapping Entries: {total_entries_short:,}
+Special Key Definitions: {total_keys_special:,}
+Special Mapping Entries: {total_entries_special:,}
+"""
+
+    return report
 
 def build_lexicon(outputPath):
     target = "lexicon"
@@ -469,8 +537,6 @@ def main():
 
     args = arg_reader.parse_args()
     # print(args, len(sys.argv))
-
-    print('->', args.category)
 
     match args.category:
         case 'keyboard':

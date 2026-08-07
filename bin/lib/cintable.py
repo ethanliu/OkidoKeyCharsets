@@ -217,4 +217,3 @@ Total Duplicate Chardef: {len(self.duplicate_chardef)}"""
 
     def validate(self):
         self.remove_duplicate_chardef
-
