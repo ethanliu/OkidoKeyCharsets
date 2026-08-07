@@ -15,7 +15,7 @@ collaborative effort, with users providing entries and corrections to the main f
 
 ### 關於本詞庫
 
-本詞庫來源版本：2026-05-28 00:40:39 GMT
+本詞庫來源版本：2026-08-07 08:04:28 GMT
 
 取簡體中文字詞及拼音資料。
 保留以 xx5 表示一些無法標示音標的字詞。
